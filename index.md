@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-13 (Jehad personal-vault import + 13 May AIO-IT standup ingest — 122 inbox items processed: standup source + 63 new wiki pages (62 decisions, 1 project hub `assessify-hr-assessment-platform`) + 22 near-identical DUPs skipped + 36 divergent DUPs filed under `sources/jehad-vault/` with canonical cross-refs. Earlier today: AIO migration to Git executed; `processes/prime-radiant-instance-setup.md` extracted. See log.md for the batch-ingest entry and follow-ups: concepts-folder cleanup, unresolved meeting-source refs, AIP-21 manual close still pending in Linear, lint pass recommended next session.)_
+_Updated: 2026-05-13 (3 Arxiv research papers ingested via Web Clipper — MAGMA (multi-graph agent memory), Recursive Language Models (MIT CSAIL, third paradigm for long context), Transformers-are-GNNs (Cambridge, foundational framing). 3 pulses, 2 concept updates (agent-memory promoted from 2-axis to 3-axis taxonomy; context-engineering promoted from 2-mode to 3-mode), agent-memory-2026-q2 brief refreshed with 4th observable pattern (multi-graph relational) and Mnemon confidence upgrade from medium → high based on MAGMA's independent validation, light update to post-rag-agent-data-stack brief. Earlier today: Jehad personal-vault import + 13 May AIO-IT standup — 122 items processed. See log.md.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 
@@ -224,6 +224,9 @@ _(none yet)_
 
 ## Pulse
 
+- [2026-05-13-transformers-are-graph-neural-networks](pulse/2026-05-13-transformers-are-graph-neural-networks.md) — Cambridge; foundational framing — Transformers ≡ GNNs on fully-connected token graphs winning the hardware lottery. [high]
+- [2026-05-13-recursive-language-models](pulse/2026-05-13-recursive-language-models.md) — MIT CSAIL; third paradigm for long context (after RAG and compaction): LLM treats prompt as REPL variable, recursively self-calls. [high]
+- [2026-05-13-magma-multi-graph-agentic-memory](pulse/2026-05-13-magma-multi-graph-agentic-memory.md) — UT Dallas / U. Florida; multi-graph (semantic/temporal/causal/entity) agentic memory; same four-graph shape as Mnemon — independent convergence. [high]
 - [2026-05-13-claude-os-concept-surfaced](pulse/2026-05-13-claude-os-concept-surfaced.md) — Jehad's Hostinger+APIs/MCPs research direction; depends on Drive webhooks outcome. [low]
 - [2026-05-12-vivian-balakrishnan-llm-wiki-government](pulse/2026-05-12-vivian-balakrishnan-llm-wiki-government.md) — Singapore Foreign Minister running personal LLM wiki on Raspberry Pi; keynoting AI Engineering Conference 16–17 May; Bonaventure knows him personally; potential advocate inside SG government. [high]
 - [2026-05-12-mnemon-llm-supervised-memory](pulse/2026-05-12-mnemon-llm-supervised-memory.md) — Mnemon (open-source, Go binary, four-graph store) surfaces as the LLM-supervised pattern; closest external system to the Prime Radiant discipline applied at agent-runtime layer. [medium]
@@ -237,7 +240,6 @@ _(none yet)_
 - [2026-04-22-google-agentic-data-cloud](pulse/2026-04-22-google-agentic-data-cloud.md) — Google rewires BigQuery + data catalog around autonomous agents at Cloud Next 2026. [high]
 - [2026-04-14-claude-code-routines](pulse/2026-04-14-claude-code-routines.md) — Claude Code introduces routines (research preview): scheduled / event-driven automations. [high]
 - [2026-04-08-claude-managed-agents-launch](pulse/2026-04-08-claude-managed-agents-launch.md) — Anthropic launches Claude Managed Agents; cloud-hosted agent execution platform. [high]
-
 ## Briefs
 
 - [prime-radiant-storage-substrate](briefs/prime-radiant-storage-substrate.md) — Prime Radiant moves off Google Drive to Git as the canonical substrate; resolves Drive's stream-on-demand + cross-Workspace identity failure modes; Jehad-specific setup runbook for AIO migration; Marketing follows from-scratch on Git. [active, high]

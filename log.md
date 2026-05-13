@@ -1035,3 +1035,39 @@ Each entry below: `<source written>` → `<canonical updated>` (similarity score
 - `inbox/.manifest.json` — full per-file plan (kept for traceability)
 - `inbox/.ingest-report.json` — full per-file result (kept for traceability)
 
+
+## [2026-05-13 14:05] batch-ingest | 3 Arxiv research papers via Web Clipper — multi-graph memory + recursive LMs + transformers-as-GNNs | 3 items
+
+**Strategy:** Web Clipper markdown landed in inbox; per CLAUDE.md §5.1 article rules, filed sources, created per-paper pulses with strategic-implication framing, updated affected concept pages and the agent-memory brief. Image-handling: arxiv.org is on the cowork egress block-list so WebFetch is unavailable — remote image URLs preserved in the source markdown (arxiv hosting is durable; if/when arxiv.org gets added to the allowlist, a later pass can localise the figures).
+
+### Volume
+- **3** source articles filed in `sources/articles/`
+- **3** pulse entries created
+- **2** concept pages updated (agent-memory, context-engineering)
+- **2** briefs updated (agent-memory-2026-q2 — substantive refresh; post-rag-agent-data-stack — addendum paragraph)
+- **3** inbox files moved to `inbox/.processed/2026-05/`
+
+### Sources filed
+- `sources/articles/magma-multi-graph-agentic-memory.md` — Jiang et al., UT Dallas / U. Florida; arxiv 2601.03236v2; multi-graph (semantic/temporal/causal/entity) agentic memory architecture; outperforms SOTA on LoCoMo and LongMemEval.
+- `sources/articles/recursive-language-models.md` — Zhang / Kraska / Khattab, MIT CSAIL; arxiv 2512.24601v3; LLM treats long prompts as REPL-environment variable, programmatically inspects + recursively self-calls; +26% over compaction, +130% over CodeAct, +13% over Claude Code on GPT-5; handles inputs >10× context window at comparable cost.
+- `sources/articles/transformers-are-graph-neural-networks.md` — Joshi, Cambridge; arxiv 2506.22084v1; theoretical framing: Transformers ≡ GNNs on fully-connected token graphs winning the "hardware lottery" over sparse message-passing.
+
+### Pulses created
+- `pulse/2026-05-13-magma-multi-graph-agentic-memory.md` — MAGMA validates Mnemon's 5/12 four-graph proposal experimentally; two independent surfacings of the same architectural shape within 48 hours = strong convergence signal; the multi-graph pattern is now a distinct row in the agent-memory taxonomy alongside files-as-memory / harness-as-memory / memory-palace.
+- `pulse/2026-05-13-recursive-language-models.md` — Third paradigm for long context after RAG and compaction; inference-time programmatic context engineering (the LLM does the shaping, not the data layer); directly adjacent to Jehad's Claude OS direction from this morning's standup.
+- `pulse/2026-05-13-transformers-are-graph-neural-networks.md` — Foundational theoretical complement to the multi-graph empirical work; hardware-lottery framing useful when evaluating future architectures (sparse approaches lose until hardware shifts).
+
+### Concept updates
+- `decisions/concepts/agent-memory.md` — Added a third taxonomic axis: **relational-structure axis** (multi-graph) alongside the existing storage axis and LLM-role axis. New table for the four relational dimensions. Added theoretical complement section linking the Transformers-are-GNNs framing. Noted that Prime Radiant's frontmatter (`departments` = entity, `related` = semantic, dated decision/lesson links = causal/temporal) is itself a primitive multi-graph applied at the institutional-KB layer.
+- `decisions/concepts/context-engineering.md` — Promoted from "two scales" to "three modes": added inference-time programmatic context engineering as the third mode (was: compilation-stage + in-session). New section linking the Claude OS adjacency. Open questions extended.
+
+### Brief updates
+- `briefs/agent-memory-2026-q2.md` — Substantive refresh: added "Update 2026-05-13" lede paragraph noting the two-axes-now-three-axes shift; expanded "Three observable patterns" table to **four observable patterns** with multi-graph relational as the new row; added adjacent-paradigm section for RLM (orthogonal-not-competing with memory architectures); added MAGMA to vendor signals; **upgraded Mnemon confidence from medium to high** based on MAGMA's independent experimental validation of the same shape; appended new sources to the source list.
+- `briefs/post-rag-agent-data-stack.md` — Light touch: added "Update 2026-05-13" paragraph noting RLM as a third paradigm complementary to (not displacing) the compilation-stage bet; cross-linked the Claude OS direction; added 2 sources and 2 related slugs to frontmatter.
+
+### Notes / follow-ups
+- **Arxiv egress blocked.** WebFetch for image URLs failed with `cowork-egress-blocked` (arxiv.org not on the network allowlist). Remote image refs preserved in source markdown; figures are clickable from Obsidian. If/when arxiv.org is allow-listed (Team Owner: Settings → Capabilities), a follow-up pass can localise figures.
+- **Confidence upgrade logged.** Mnemon moved from medium → high in the agent-memory brief on the basis of MAGMA's independent surfacing of the same four-dimensional shape with experimental validation. Worth re-checking when independent reproductions of MAGMA's LoCoMo / LongMemEval numbers appear.
+- **CLAUDE.md framing candidate.** The multi-graph framing — `departments` as entity edges, `related` as semantic edges, dated decision/lesson chains as temporal/causal — is currently implicit in the schema. Worth making explicit in CLAUDE.md v0.10 since the agent-memory community has now converged on the four-dimensional vocabulary; using it explicitly buys cross-domain legibility (a Marketing-Prime-Radiant practitioner reading this CLAUDE.md will recognise the framing from RFM / Mnemon / MAGMA).
+- **Ingest counter.** This adds 3 ingests on top of the earlier 122-item batch today. Cumulative since last lint: well over the 10-ingest trigger. Lint pass remains recommended next session.
+
