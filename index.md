@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-13 (Storage-substrate brief filed — Prime Radiant moves off Google Drive to Git as the canonical substrate; Jehad-specific setup runbook included; AIO instance migrates first, Marketing follows from-scratch on Git, schema-doc update queued. Yesterday: Andrew onboarding-review 3pm session ingest — Marketing PR Outputs reordered (plans/campaigns first); three-pillar themes spine articulated; AI-washing content discipline filed as lesson; website-architecture open question filed; CRM timing committed ~5-6 weeks; FactSet de-emphasised. Bonaventure AI Native CEO call (3rd foundational brief, Singapore lead market, HTML format adopted).)_
+_Updated: 2026-05-13 (AIO migration to Git executed end-to-end; `processes/prime-radiant-instance-setup.md` extracted from the empirical sequence with embedded bash script for repeatable use on Marketing and subsequent department instances. Earlier today: storage-substrate brief filed — Prime Radiant moves off Google Drive to Git as the canonical substrate; Jehad-specific setup runbook included; AIO instance migrates first, Marketing follows from-scratch on Git, schema-doc update queued. Yesterday: Andrew onboarding-review 3pm session ingest — Marketing PR Outputs reordered (plans/campaigns first); three-pillar themes spine articulated; AI-washing content discipline filed as lesson; website-architecture open question filed; CRM timing committed ~5-6 weeks; FactSet de-emphasised. Bonaventure AI Native CEO call (3rd foundational brief, Singapore lead market, HTML format adopted).)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 
@@ -82,6 +82,7 @@ _(none yet)_
 - [ai-policy-gate-approval](processes/ai-policy-gate-approval.md) — reusable governance process for moving an AI tool from active use to formal approval; 4-of-4 gate, 8-step flow, 4-system coordination.
 - [ai-registry](processes/ai-registry.md) — Linear AIR management conventions; reference page pointing at the canonical `/ai-registry` skill.
 - [ai-tool-evaluation](processes/ai-tool-evaluation.md) — Janus's gate-based AI tool evaluation framework; reference page pointing at the canonical `/ai-tool-evaluation` skill.
+- [prime-radiant-instance-setup](processes/prime-radiant-instance-setup.md) — curator-side runbook for standing up a new Prime Radiant instance end-to-end; embedded bash script automates repo + local-vault + initial-commit-and-push; GUI sequence for branch protection, Obsidian, Cowork.
 - [standup](processes/standup.md) — AIO daily standup workflow (Fireflies → Monday → Linear AIP → Notion); reference page pointing at the canonical `/standup` skill (v3.13).
 
 ## Projects

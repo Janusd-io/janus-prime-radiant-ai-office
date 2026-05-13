@@ -873,3 +873,55 @@ The original lint checked body wikilinks but didn't cross-validate `related:` fi
 5. **CLAUDE.md §1 / §2 / §3 schema update** (v0.10): replace Google Drive references with Git substrate description; formalise `~/janus/prime-radiant/<instance>/` per-machine path convention; add Cowork-side `git pull` / `git commit` / `git push` to the workflow steps in §5.1 (ingest), §5.2 (query), §5.3 (lint).
 6. **Extract `processes/prime-radiant-member-setup.md`** as the generalised runbook once Jehad's setup actually runs successfully.
 7. **Marketing instance from-scratch on Git** as step 2 of the migration sequence (post-Jehad-AIO; one-week delay).
+
+## [2026-05-13 09:51] aio-migration-executed | drive → git | scaffold complete
+- driver: Michael — executed the AIO substrate migration end-to-end immediately after the brief filing. This entry documents the actual run as the empirical record the runbook is extracted from.
+
+### Migration steps actually performed (chronological)
+1. GitHub repo `Janusd-io/janus-prime-radiant-ai-office` created (private).
+2. Collaborators set: AI-Office team (Write role, future-joiner default); Michael + Jehad direct (Admin role).
+3. Source files materialised from Drive (Finder → Available offline on the source folder + wait).
+4. Vault moved via Finder from the Drive path to `~/janus/prime-radiant/ai-office/` (hidden files included — `.obsidian/`, `.DS_Store` carried over).
+5. `.gitignore` written with the 4-line standard (`.DS_Store`, `.obsidian/workspace.json`, `.obsidian/workspace-mobile.json`, `.obsidian/cache`).
+6. `git init` → initial commit (`Initial import from Drive vault (2026-05-13)`, sha 135bfd9) → push to remote.
+7. Branch renamed from `master` → `main` locally, pushed, default branch swapped on GitHub web, remote `master` deleted.
+8. Branch protection rule created on `main` with `Require linear history` checked; not enforced due to Free Org tier (deferred upgrade decision flagged).
+9. Obsidian opened against the new vault location; Community plugins enabled; Git plugin (vinzent03 v2.38.2, 2.5M+ downloads) installed and enabled; auto-pull-on-startup, 5-min auto-pull, 5-min auto-commit-and-sync, merge sync method, pull-before-push, `vault backup: {{date}} {{hostname}}` commit message configured.
+10. Plugin enablement committed (.obsidian/community-plugins.json + .obsidian/plugins/obsidian-git/data.json) and pushed.
+11. Cowork project repointed at the new local path (verified mount cleanly).
+
+### Process page extracted
+- created: processes/prime-radiant-instance-setup.md — curator-side runbook with embedded bash script (`prime-radiant-instance-setup.sh`) automating steps 1, 3, 4, 5, 6 of the above sequence. GUI-required steps (2 collaborators, 7-8 branch ops/protection in web UI, 9 Obsidian, 10 commit, 11 Cowork) walked through after the script's summary. Marketing instance is the first scripted execution; expected reduction from ~2h unscripted to ≤10min scripted for the scaffold portion.
+- updated: index.md — added new process to Processes section; refreshed `_Updated:_` header.
+
+### Cross-references
+- This run validates the [[prime-radiant-storage-substrate]] brief's recommendation in concrete terms (Drive failure mode resolved, cross-Workspace identity decoupled, content discipline aligned with substrate).
+- [[janus-prime-radiant-build]] hub gets implicit update — the template-repo strategy is now operationalised for migrating instances, not just bootstrapping new ones. Suggest adding a "Migration executed" note to the project hub in the next routine pass.
+- Empirical lessons folded into [[prime-radiant-instance-setup]]: `git init` defaults to `master` on older configs (use `--initial-branch=main` explicitly); GitHub Free tier doesn't enforce branch protection on private repos (Team tier required); the Obsidian Git plugin's modern UI labels "Auto Backup" as "Auto commit-and-sync."
+
+### Judgment calls
+- **Runbook page over standalone-script-file.** Considered creating a `scripts/` top-level folder; rejected for now per "let the pattern emerge" — script embedded inline in the runbook keeps the artifact count low and the documentation co-located. If multiple scripts accumulate, extract to `processes/scripts/` or similar.
+- **Migration mode + fresh mode in one script** (vs. two scripts). The two cases differ only in step 4 (source copy vs. template clone); a single script with an optional second argument is simpler than maintaining two parallel scripts.
+- **Did NOT update CLAUDE.md §1 / §2 / §3** in this pass. Schema-doc edits remain queued (item 5 of the prior log entry); the brief and runbook reference the current Drive-shaped CLAUDE.md without contradicting it explicitly, and the schema-update needs its own dedicated pass with version bump.
+- **Did NOT yet file the 2026-05-12 Fireflies transcript** (item 1 of the prior log entry). Still queued. Both the brief and the runbook reference it by its expected slug.
+- **Did NOT yet extract `processes/prime-radiant-member-setup.md`** (item 6 of the prior log entry). Per the brief's plan, that extraction happens after Jehad's first run validates Appendix A; not before.
+
+### Volume + counters
+- 1 page created (processes/prime-radiant-instance-setup.md)
+- 1 page updated (index.md — `_Updated:_` header and Processes section)
+- 0 sources filed
+- Ingest counter unchanged (this isn't an ingest)
+
+### Follow-up items still queued (carry-over from prior entry, status updated)
+1. ⏳ **File the 2026-05-12 Fireflies transcript** — pending.
+2. ✅ **Create `janus-prime-radiant-ai-office` repo** — done.
+3. ✅ **Grant Jehad write access** — done (via direct admin + AI-Office team).
+4. ⏳ **Execute Appendix A on Jehad's Mac** — next up.
+5. ⏳ **CLAUDE.md §1 / §2 / §3 schema update (v0.10)** — pending.
+6. ⏳ **Extract `processes/prime-radiant-member-setup.md`** — pending (after Jehad's run).
+7. ⏳ **Marketing instance from-scratch on Git** — pending (post-Jehad-AIO).
+
+### New follow-up items from this entry
+8. ⏳ **GitHub Team upgrade decision** — defer until Marketing onboards Andrew, or upgrade now if AIO budget allows. ~$4/seat/month; gates enforced branch protection on private repos.
+9. ⏳ **Run the new script for Marketing instance setup** — first scripted execution; will surface any runbook gaps to fold back into the page.
+10. ⏳ **Update [[janus-prime-radiant-build]] hub** with a "Migration executed" note in the next routine pass.
