@@ -3,16 +3,18 @@ type: brief
 title: Post-RAG agent data stack — why compilation-stage knowledge is the Janus Prime Radiant bet
 slug: post-rag-agent-data-stack
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-13
 departments: [ai-office, engineering]
 confidence: high
-sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud, agent-native-architectures, anthropic-building-effective-agents, a2a-mcp-five-integration-patterns, retrieval-after-rag-turbopuffer]
-related: [retrieval-augmented-generation, context-engineering, agentic-ai, model-context-protocol, agent-to-agent-protocol, pinecone, google-cloud, anthropic, llm-wiki, janus-prime-radiant-build, agent-memory-2026-q2, ai-tool-evaluation, 2026-05-04-pinecone-nexus-launch, 2026-04-22-google-agentic-data-cloud, 2026-05-07-llm-wiki-extends-to-marketing-domain]
+sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud, agent-native-architectures, anthropic-building-effective-agents, a2a-mcp-five-integration-patterns, retrieval-after-rag-turbopuffer, recursive-language-models]
+related: [retrieval-augmented-generation, context-engineering, agentic-ai, model-context-protocol, agent-to-agent-protocol, pinecone, google-cloud, anthropic, llm-wiki, janus-prime-radiant-build, agent-memory-2026-q2, ai-tool-evaluation, 2026-05-04-pinecone-nexus-launch, 2026-04-22-google-agentic-data-cloud, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-13-recursive-language-models, 2026-05-13-claude-os-concept-surfaced]
 ---
 
 # The post-RAG agent data stack
 
 The post-RAG architectural pattern — *pre-compiled knowledge artefacts beat runtime retrieval* — is the second foundational aha behind Janus's [[janus-prime-radiant-build|Janus Prime Radiant direction]]. Pinecone Nexus and Google Agentic Data Cloud confirm at vendor scale what Janus is building at department scale: **Janus Prime Radiant *is* the compilation-stage knowledge layer**, with markdown + frontmatter as the canonical compile target and an LLM as the maintenance engine. The AIO wiki validates this at the department level; the company-wide bet is sibling wiki instances per domain (marketing first per [[2026-05-07-llm-wiki-extends-to-marketing-domain]], then others). (The other foundational aha: see [[agent-memory-2026-q2]].)
+
+**Update 2026-05-13:** A third paradigm for the same underlying problem surfaced this week — [[2026-05-13-recursive-language-models|Recursive Language Models]] (MIT CSAIL). RLM doesn't displace the compilation-stage bet; it solves a *different* failure mode (dense access across a single long prompt at inference time, when neither pre-compilation nor compaction can help). The two are complementary: compilation-stage knowledge layers (Prime Radiant, Pinecone Nexus, Google Knowledge Catalog) are the durable substrate; RLM-style inference-time programmatic context is the in-the-moment tool. Worth noting because [[2026-05-13-claude-os-concept-surfaced|Jehad's Claude OS direction]] from this morning's standup is gesturing at a hybrid — Claude reads the compiled substrate through purpose-built APIs/MCPs rather than through raw file access — which is RLM intuition applied to the compiled-knowledge layer.
 
 ## Why this matters to Janus
 

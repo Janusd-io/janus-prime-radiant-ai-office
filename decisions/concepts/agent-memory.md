@@ -6,8 +6,8 @@ created: 2026-05-06
 updated: 2026-05-13
 departments: [ai-office]
 confidence: high
-sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory]
-related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation]
+sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory, magma-multi-graph-agentic-memory, transformers-are-graph-neural-networks]
+related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation, 2026-05-13-magma-multi-graph-agentic-memory, 2026-05-13-transformers-are-graph-neural-networks, 2026-05-12-mnemon-llm-supervised-memory]
 ---
 
 # Agent Memory
@@ -40,6 +40,21 @@ A finer-grained decomposition surfaced by the Mnemon project ([[mnemon-github-re
 | **LLM-Supervised** | External supervisor of a standalone binary | Mnemon |
 
 The two taxonomies are not redundant: the storage axis (where memory lives) and the LLM-role axis (who decides what to store) are orthogonal. Mnemon, for example, is "Files-as-memory" on the storage axis *and* "LLM-Supervised" on the role axis. Anthropic's Managed Agents are "Files-as-memory" on storage *and* effectively "LLM-Embedded" (the platform decides). The role axis is the better predictor of vendor lock-in; the storage axis is the better predictor of portability mechanics. See [[2026-05-12-mnemon-llm-supervised-memory]] for the surfacing pulse entry.
+
+A third axis crystallised in mid-May 2026 with two independent surfacings of the same shape: **the relational-structure axis** — how memory items are *connected* to each other. The dominant pattern is monolithic semantic similarity (one big vector store, retrieve by cosine distance). The emerging pattern is **multi-graph**: four orthogonal graphs over the same memory items, one per relational dimension.
+
+| Relational dimension | What it captures | Example query it unblocks |
+|---|---|---|
+| **Semantic** | Conceptual similarity / topic | "What did we say about CRM evaluation?" |
+| **Temporal** | When things happened | "What changed between April and May?" |
+| **Causal** | What led to what | "Why did we reject Viktor?" |
+| **Entity** | Who/what was involved | "Every decision Bonaventure has touched" |
+
+This decomposition was surfaced independently by Mnemon ([[mnemon-github-readme]], 2026-05-12 README) and MAGMA ([[magma-multi-graph-agentic-memory]], arxiv 2601, 2026-05-13) within 48 hours — same four dimensions, same architectural carve-up. MAGMA validates the approach experimentally on LoCoMo and LongMemEval, removing the single-data-point hedge that previously qualified the Mnemon entry. See [[2026-05-13-magma-multi-graph-agentic-memory]].
+
+**Theoretical complement.** [[transformers-are-graph-neural-networks|Joshi 2026]] (arxiv 2506) argues that Transformers are mathematically GNNs operating on fully-connected token graphs — the dense-matrix implementation winning the "hardware lottery" over true sparse message-passing. Read together with the empirical multi-graph memory work: the agent-memory community is making *explicit and persistent* the same graph-structured representation the model uses implicitly during attention. Convergent or principled is an open question.
+
+The relational-structure axis is orthogonal to the storage axis and the LLM-role axis. The Janus Prime Radiant wiki itself is a primitive multi-graph (`departments` = entity edges, `related` = semantic edges, dated decision/lesson links = causal/temporal edges) — operating the same shape MAGMA and Mnemon are validating at the agent-runtime layer, at the institutional-KB layer instead.
 
 ## Short-term vs long-term
 
