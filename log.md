@@ -1071,3 +1071,18 @@ Each entry below: `<source written>` → `<canonical updated>` (similarity score
 - **CLAUDE.md framing candidate.** The multi-graph framing — `departments` as entity edges, `related` as semantic edges, dated decision/lesson chains as temporal/causal — is currently implicit in the schema. Worth making explicit in CLAUDE.md v0.10 since the agent-memory community has now converged on the four-dimensional vocabulary; using it explicitly buys cross-domain legibility (a Marketing-Prime-Radiant practitioner reading this CLAUDE.md will recognise the framing from RFM / Mnemon / MAGMA).
 - **Ingest counter.** This adds 3 ingests on top of the earlier 122-item batch today. Cumulative since last lint: well over the 10-ingest trigger. Lint pass remains recommended next session.
 
+
+## [2026-05-13 14:25] schema-update | CLAUDE.md v0.10 — multi-graph framing + new fields | scope-tight
+
+Bumped CLAUDE.md to v0.10. Two additions in this pass:
+
+1. **Multi-graph framing made explicit (§4 new subsection: "Frontmatter as multi-graph encoding").** The wiki's frontmatter now formally encodes a four-graph structure (entity / semantic / temporal / causal edges) per the agent-memory community vocabulary that converged in mid-May 2026 with Mnemon (2026-05-12) and MAGMA (2026-05-13). Added a table mapping each edge type to its frontmatter encoding and body encoding, an orthogonality note ("a single page contributes to multiple graphs simultaneously"), curation guidance ("ask which edges the new content adds, not just what goes in the body"), and a cross-layer framing note tying the AIO instance to the agent-runtime layer's same shape. Concept page [[agent-memory]] is the inbound reference for anyone wanting the cross-layer comparison.
+
+2. **`decided_by` and `captured_by` formalised in the schema.** Both fields had already surfaced organically (`decided_by` from `/standup`'s decision-record output; `captured_by` from Jehad's vault import frontmatter). Promoting them to the schema makes them a first-class part of the entity-edge graph rather than vestigial metadata. Field rules added; `owner` clarified to require an entity slug (`michael-bruck`), not a bare first name.
+
+### Scope discipline
+- Did NOT do the Drive → Git substrate language rewrite previously slated for v0.10. That work is non-trivial (touches §1 / §2 / §3 / §5.1-5.3) and deserves its own pass. **Deferred to v0.11.** Status line in CLAUDE.md notes the deferral explicitly.
+
+### Cross-references / next steps
+- The schema linter Monday item (2912631119) from this morning's standup now has a v0.10-aware target: a linter should check four-axis edge presence per page type (e.g., decision pages must have `decided_by` + at least one causal `sources` entry + at least one entity edge), not just frontmatter field presence.
+- Marketing instance CLAUDE.md derivation will now inherit the multi-graph framing — relevant to Andrew's onboarding and to the federation pattern.

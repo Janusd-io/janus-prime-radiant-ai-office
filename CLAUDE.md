@@ -187,7 +187,9 @@ updated: YYYY-MM-DD
 departments: [ai-office, it-ops, office-of-ceo, hr, finance, marketing, engineering, training, iso]
 countries: [sg, gb, us]   # ISO 3166-1 alpha-2 codes; expandable as Janus expands
 status: active | resolved | dormant | archived | superseded
-owner: michael           # for project / decision / question
+owner: michael-bruck     # for project / decision / question; entity slug, not bare first name
+decided_by: michael-bruck   # for decision pages — who made the call
+captured_by: jehad-altoutou   # provenance — whose contribution / ingest produced this page (optional)
 confidence: high | medium | low | rumor   # for vendor / pulse / brief
 sources: [karpathy-llm-wiki, 2026-04-22-vendor-eval-cursor]   # source slugs
 related: [linear, ai-registry-v2]   # other wiki page slugs
@@ -200,7 +202,9 @@ related: [linear, ai-registry-v2]   # other wiki page slugs
 - `departments` is required for any page tied to operational work. Omit for universal `concept` pages with no organizational locus.
 - `countries` is required for pages with geographic specificity — country launches, country-specific vendor availability, jurisdiction-bound processes (HR, legal, tax). Omit when truly geo-agnostic.
 - `status` is required for `project`, `decision`, `question`, `lesson`. Optional elsewhere.
-- `owner` is required for `project`, `decision`, `question`.
+- `owner` is required for `project`, `decision`, `question`. Use the entity slug (`michael-bruck`), not the bare first name — this makes the field a clean entity edge.
+- `decided_by` is required for `decision` pages. The entity slug of whoever made the call. Distinct from `owner` (who carries the decision forward).
+- `captured_by` is optional but encouraged. The entity slug of whoever's contribution or ingest pass produced the page. Useful provenance when a page comes from a personal-vault import (`captured_by: jehad-altoutou`) or a meeting transcript pass (`captured_by: claude` for fully-automated ingest).
 - `confidence` is required for `vendor`, `pulse`, `brief`.
 - `sources` lists the slugs (not paths) of items in `sources/` that informed the page. Update when new sources reinforce or contradict the page.
 - `related` lists wiki page slugs (any folder) for explicit cross-linking. Use Obsidian-style `[[wikilinks]]` in the body too — both are useful.
@@ -216,6 +220,23 @@ Do not invent new departments without proposing an addition first (file as a `qu
 ### Country vocabulary (expandable)
 
 ISO 3166-1 alpha-2 codes. Lowercase. Currently in scope: `sg` (Singapore — opens 2026 W19), `gb` (UK — opens 2026 W20). Add others as Janus opens new offices.
+
+### Frontmatter as multi-graph encoding
+
+The frontmatter fields collectively encode this wiki as a **four-graph structure** over its pages. This isn't decorative — it's the same four-dimensional decomposition the agent-memory community converged on in mid-May 2026 (independently surfaced by Mnemon's four-graph store on 2026-05-12 and validated experimentally by MAGMA on 2026-05-13; see [[agent-memory]] for the cross-layer taxonomy and [[2026-05-13-magma-multi-graph-agentic-memory]] for the surfacing). Making the framing explicit here buys cross-domain legibility: anyone reading from the agent-memory literature immediately recognises what the wiki is doing, and downstream tooling (schema linters, query helpers, federation cross-references) can target this four-axis vocabulary as first-class operations.
+
+| Edge type | Frontmatter encoding | Body encoding | Example query it answers |
+|---|---|---|---|
+| **Entity** | `departments`, `owner`, `decided_by`, `captured_by`; `related` when the target is a person / department / vendor / client | `[[person]]` / `[[department]]` / `[[vendor]]` wikilinks | "Every decision Bonaventure has touched." |
+| **Semantic** | `related` when the target is a concept / brief / project | `[[concept]]` wikilinks; `## Adjacent concepts` sections; `## Related` footers | "What do we know about agent memory?" |
+| **Temporal** | `created`, `updated`; date-prefixed slugs for `decision` / `lesson` / `pulse` | Dated body claims ("As of 2026-05-13, …") | "What changed between April and May?" |
+| **Causal** | `sources` (precedent pages); chains of decision / lesson links via `related` | `## Why` / `## Evidence` sections; explicit "supersedes" prose; decision-record templates | "Why did we reject Viktor?" |
+
+The four dimensions are **orthogonal** — a single page contributes to multiple graphs simultaneously. A decision page like `2026-05-13-andrew-soane-first-cross-dept-prime-radiant-rollout.md` has temporal edges (date prefix, `created`, `updated`), entity edges (`decided_by: michael-bruck`, `[[andrew-soane]]` body link), semantic edges (`related` to other rollout / federation decisions), and causal edges (`sources: [2026-05-13-aio-it-meeting]` pointing at the meeting where the call was made).
+
+**Practical guidance for LLM-side curation.** When updating a page, ask which edges the new content adds or strengthens, not just "what content goes in the body." If a decision is being filed, make sure `decided_by`, `sources` (causal predecessor), and `related` (semantic and entity neighbours) are all populated — content alone without edges produces orphan pages even when the prose is good. When ingesting a meeting transcript, the edges to spend effort on are causal (which decisions did this meeting produce) and entity (who was in the room) — those are the edges the body alone won't reliably encode.
+
+**Cross-layer framing.** Janus Prime Radiant is a long-term, multi-graph, file-based, human-and-LLM-co-maintained knowledge structure — the same architectural shape Mnemon and MAGMA validate at the agent-runtime layer, instantiated at the institutional-KB layer instead. Future schema iteration should preserve the four-axis vocabulary so cross-instance federation (per-department Prime Radiants) and agent-side tooling (Claude OS, MCP-mediated vault access) inherit a shared mental model rather than rederive it.
 
 ---
 
