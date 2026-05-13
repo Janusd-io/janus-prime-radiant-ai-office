@@ -1,6 +1,8 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.9, 2026-05-11. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.10, 2026-05-13. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+>
+> *v0.10 changes (2026-05-13):* explicit multi-graph framing added to §4 (the frontmatter encodes four orthogonal edge types — entity, semantic, temporal, causal — matching the agent-memory community vocabulary that converged in mid-May 2026); `captured_by` and `decided_by` fields formalised in the frontmatter schema. The Drive → Git substrate language rewrite previously slated for v0.10 has been deferred to v0.11 to keep this bump scoped.
 
 ---
 
