@@ -1,0 +1,74 @@
+---
+type: lesson
+title: Fireflies Summaries Are Insufficient — Raw Transcript Must Be Canonical
+slug: 2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical
+created: 2026-05-06
+updated: 2026-05-07
+status: resolved
+owner: michael
+departments: [ai-office]
+countries: [sg, gb, us]
+confidence: high
+sources: [bonaventure-discussion-tracker, aio-weekly-status-2026-04-20-24, it-discussion-tracker]
+related: [fireflies, llm-wiki-build, standup]
+---
+
+# Lesson: Fireflies Summaries Are Insufficient — Raw Transcript Must Be Canonical
+
+**Date:** 20–24 April 2026  
+**Owner:** Michael Bruck  
+**Status:** Resolved  
+**Confidence:** High  
+
+## What happened
+
+The AI Office and Janus leadership have been relying on Fireflies' auto-generated summaries to extract decisions and context from recorded meetings. During the week of 20–24 April, across multiple meetings (Bonaventure on 20 Apr, Simon on 22 Apr, Weekly Status review, Bonaventure again on 4 May, IT on 6 May), it became consistently apparent that **Fireflies summaries are too shallow, miss nuance, and sometimes misattribute speaker labels or lose load-bearing context.**
+
+## Why it matters
+
+- **Decisions and nuance get lost:** Bonaventure's reframe on 20 Apr was explicit and load-bearing ("Don't worry about me at this time..."), but Fireflies summaries flattened it into generic CEO-meeting context.
+- **Transcripts drive automation:** The `/standup` skill and Claude's processing of meeting context depend on accurate, detailed input. Shallow or inaccurate summaries feed poor decision signals downstream.
+- **Speaker attribution errors:** The IT meeting on 6 May had notable mis-attributions between Michael Bruck and Euclid — Michael's statements were attributed to Euclid and vice versa. This cascades if used as-is.
+- **Context loss compounds:** When meetings are chained (20 Apr Bonaventure → 22 Apr Simon → 4 May Bonaventure again), loss of nuance in earlier meetings means later meetings lack foundation.
+
+## The pattern
+
+Fireflies summaries across April-May 2026 consistently:
+- Collapsed multi-layered decisions into single bullet points
+- Lost framing and rationale (the "why" of decisions)
+- Mis-attributed speakers in transcripts with multiple speakers of similar speech patterns
+- Summarised outcomes as conclusions rather than capturing the conversation's actual shape
+
+## What we changed
+
+1. **Raw transcripts are now canonical.** Fireflies summaries are reference only. All decision extraction, context embedding, and downstream processing begins from the raw transcript.
+2. **Speaker-verification step added:** When speaker attribution is ambiguous (based on Fireflies meta tags), content-based re-attribution is applied before processing. The IT-6-May transcript needed this correction.
+3. **Standup skill updated** (implicit in practice, explicit in training): the skill now privileges raw transcript content over Fireflies "Summary" field.
+4. **Meeting notes are human-extracted** from raw transcript, not Fireflies summaries. The `/standup` skill notes section is the bridge between raw transcript and structured output.
+
+## Bonaventure's explicit distrust
+
+From the 4 May Bonaventure/Michael/Jehad meeting, Bonaventure explicitly called out Fireflies summaries as *"crap"* and *"out of context."* This validates the pattern and gives permission to deprecate Fireflies summaries as canonical.
+
+## Going forward
+
+- **Fireflies** is a **recording and storage system**, not a summary system.
+- **Raw transcripts** are the canonical input to all downstream processing.
+- **Human extraction** (via the `/standup` skill or manual review) produces the authoritative meeting notes that feed operational decisions.
+- **Fireflies summaries** may be useful as a **starting point for skimming**, but never as the basis for decision-making, wiki ingestion, or automation dispatch.
+
+## Related tools and implications
+
+- **[[notion]]:** Meeting notes from raw transcripts feed directly to Ops Notebook standup entries and decision tracking.
+- **[[monday]]:** Task and status updates written by agents are grounded in raw-transcript context, not summaries.
+- **[[linear]]:** AIR and AIP decisions extracted from raw transcripts, not Fireflies summaries.
+
+## Confidence and owner
+
+**Confidence:** High. Multiple high-stakes meetings across April-May independently surface the same issue; Bonaventure explicitly validated the distrust.
+
+**Owner:** Michael Bruck (decision to privilege raw transcript). `/standup` skill maintainer (implementation).
+
+## Key quote
+
+*"Fireflies summaries are crap. Out of context. The raw transcript is canonical."* — Paraphrased from Bonaventure Wong and Michael Bruck, 4–6 May 2026.

@@ -1,0 +1,92 @@
+---
+type: pulse
+title: Lint pass — third wiki health check (post 15-article batch)
+slug: 2026-05-07-lint-evening
+created: 2026-05-07
+updated: 2026-05-07
+departments: [ai-office]
+confidence: high
+related: [janus-prime-radiant-build, 2026-05-07-lint, 2026-05-06-lint]
+---
+
+# Lint pass — 2026-05-07 evening
+
+Third lint pass on the wiki, run after the 15-article inbox ingest landed and the 7 May standup got processed. Triggered manually after the ingest counter passed 16 since the morning's lint.
+
+**Wiki state at lint time:** 94 wiki pages (20 vendors, 10 internal + 1 external person, 10 concepts, 7 projects, 3 processes, 20 decisions, 4 lessons, 7 pulse + this one, 2 briefs, 7 questions all resolved), 75 source files.
+
+## Summary
+
+Wiki is structurally clean. Frontmatter compliance is 100% after this pass (4 slug-vs-filename mismatches fixed inline). The 7 broken `[[wikilinks]]` are all *the same persistent intentional deferrals* from the previous two lints — no new breakage from the 15-article batch. That's a good signal: source ingestion at scale isn't introducing schema drift.
+
+## Fixed inline this pass
+
+### Slug-filename mismatches (4 → 0)
+
+The April-era subagent-generated decision and lesson pages had `slug:` fields without the `YYYY-MM-DD-` prefix that their filenames have. Per `CLAUDE.md` §3, `decisions/` and `lessons/` use `YYYY-MM-DD-<slug>.md` naming and the `slug:` field should match the full filename. Fixed:
+
+- `decisions/2026-04-23-monday-hostinger-notion-stack-adopted.md` (slug now matches filename)
+- `decisions/2026-04-20-iso-first-stack-architectural-pivot.md`
+- `lessons/2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical.md`
+- `lessons/2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins.md`
+
+### Stale `updated:` fields (8 → 0)
+
+Pages touched during the 15-article batch had `updated: 2026-05-06` even though their bodies were modified on 2026-05-07. Bumped:
+
+- `projects/llm-wiki-build.md`
+- `decisions/2026-05-06-monday-com-to-production-this-week.md`
+- `concepts/agentic-ai.md`, `concepts/llm-wiki.md`, `concepts/agent-harness.md`, `concepts/retrieval-augmented-generation.md`
+- `lessons/2026-04-20-fireflies-summaries-...md`, `lessons/2026-04-20-gcp-self-host-...md`
+
+## Persistent findings (unchanged from prior lints)
+
+### Broken `[[wikilinks]]` (7 — all intentional deferrals)
+
+| Target | Count | Status |
+|---|---|---|
+| `[[n8n]]` | 2 | Deferred vendor (Mivory escalation); auto-resolves if promoted |
+| `[[ai-registry-v2]]` | 2 | Monday tracking item, not approved as project hub |
+| `[[notion-operations-notebook-restructure]]` | 1 | Monday tracking item, not approved as project hub |
+| `[[build-categorisation-taxonomy-for-ai-tools]]` | 1 | Monday tracking item, not approved as project hub |
+| `[[knowledge-compilation]]` | 1 | Single mention; deferred until 2nd source surfaces |
+
+No new broken refs introduced by the 15-article batch — important signal that the ingest discipline is holding under load.
+
+### Orphan-ish pages (low inbound link density)
+
+16 pages have ≤1 inbound reference. Categorised:
+
+**Expected orphans (no action):**
+- 7 resolved `questions/` pages — transient escalations; 0 refs is expected once resolved.
+- `marp` (1 ref) — was deferred-then-promoted; flagged in its own page as "watch for adoption".
+
+**Real orphans worth back-linking when convenient (not blocking):**
+- 6 decision pages with 0 inbound refs from other pages: `2026-04-23-monday-hostinger-notion-stack-adopted`, `2026-05-06-backlog-cleanup-no-return-to-backlog`, `2026-05-06-notion-role-shift-journal-not-knowledge-base`, `2026-05-06-skills-stay-as-skills-not-plugins`, `2026-05-06-standup-skill-v3-12-self-correcting-behavior`. These should be linked from their natural project hubs / vendor pages (e.g. `2026-05-06-skills-stay-as-skills-not-plugins` → from `claude.md` and `agent-skills.md`). Not urgent but worth a back-link pass.
+- 2 lesson pages with 0 inbound refs: `2026-04-20-fireflies-summaries-...` and `2026-04-20-gcp-self-host-...`. Lessons should ideally be linked from the entity / project they apply to (`fireflies` page should reference the Fireflies-summaries lesson; `hostinger` and `google-cloud` pages should reference the GCP-vs-Hostinger lesson).
+
+### Missing pages (concepts/projects mentioned across multiple pages)
+
+- **Hyperproductivity / AI-scaled-individual cluster** (3 sources surfaced this batch: `100x-business-with-ai`, `hyperproductivity-next-stage-ai`, `story-chinese-vibe-coder`). Subagent correctly deferred concept-page creation pending another source or a clearer Janus implication. Watch list.
+- **Turbopuffer** as a vendor — referenced from `concepts/retrieval-augmented-generation.md` and `briefs/post-rag-agent-data-stack.md` as the operational layer between classical RAG and vendor knowledge engines. Worth a vendor page if Janus actually evaluates it; deferred for now.
+
+## Source quality issues
+
+- **Web Clipper date-parsing bug persists.** One Anthropic blog clip ("Building agents with the Claude Agent SDK") came in with `published: 2001-09-29` — same Y2K-style mis-parse seen on earlier Anthropic clips. Worth fixing in the Web Clipper template at some point. Affected source files retain the original (incorrect) frontmatter per source-immutability.
+
+## What's working well
+
+- **Brief discipline holds.** The two existing briefs (`agent-memory-2026-q2`, `post-rag-agent-data-stack`) lead with strategic implication for Janus per CLAUDE.md §6 v0.5. The 15-article batch enriched them with new sources without diluting the framing.
+- **Concept page density is up.** Adding `ralph-loop-pattern` brings concepts to 10 — still tractable, still lined up with real industry vocabulary, no frivolous additions.
+- **No new entity escalations.** All 15 articles' references resolved against the existing entity vocabulary. The Janus tool stack is now well-mapped enough that new sources rarely surface unfamiliar entities.
+
+## Recommendations (priority order)
+
+1. **Back-link orphan decisions / lessons** (no action this lint, suggested for next session). Each orphan has 1-2 obvious natural homes; ~20 minutes of editing closes them all. Worth doing because it makes the cross-link graph richer, which makes the dashboard's "How we think about it" concept-density signal more honest.
+2. **Watch the hyperproductivity cluster** — 1-2 more sources and it's a concept page. Drag the Mivory-style watch-list pattern.
+3. **Promote `n8n` and `Turbopuffer` to vendor pages** if either gets formally evaluated in the next two weeks.
+4. **Fix Web Clipper template** for the published-date bug — small but surfacing recurringly.
+
+## Reset
+
+Ingest counter resets to 0 at this lint entry. Last batch: 15 sources (+1 standup). Next lint trigger fires at ingest count 10.

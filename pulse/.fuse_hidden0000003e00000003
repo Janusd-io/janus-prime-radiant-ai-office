@@ -1,0 +1,129 @@
+---
+type: pulse
+title: Lint pass — first wiki health check
+slug: 2026-05-06-lint
+created: 2026-05-06
+updated: 2026-05-06
+departments: [ai-office]
+confidence: high
+related: [llm-wiki-build]
+---
+
+# Lint pass — 2026-05-06
+
+First lint pass on the wiki. Triggered manually after the ingest counter passed the 10-threshold (counter was at 27).
+
+**Wiki state at lint time:** 31 wiki pages (11 vendors, 9 concepts, 5 pulse entries, 3 resolved questions, 2 people, 1 project), 27 source files, 0 decisions / lessons / processes / clients / briefs.
+
+## Summary
+
+The wiki is healthy structurally. Frontmatter compliance is 100%. The `related:` field on every page resolves to a valid wiki slug. The non-trivial findings all stem from the wiki growing in waves rather than uniformly — vendor pages were created *after* the pulse/concept pages that reference the same subjects, so older pages don't yet link to newer vendor pages. Easy to fix with a small pass.
+
+The most important finding is a missing page: `ai-tool-evaluation` is referenced in 6 places but doesn't exist as a wiki page despite being a real Janus framework.
+
+---
+
+## Findings
+
+### 1. Broken `[[wikilinks]]` (3 distinct targets, 8 total occurrences)
+
+| Target | Occurrences | Recommended action |
+|---|---|---|
+| `[[ai-tool-evaluation]]` | 6 (pinecone, marp, agent-memory, agent-skills, model-context-protocol, pulse/2026-05-04-pinecone-nexus-launch) | **Create** as `processes/ai-tool-evaluation.md`. The Janus AI Tool Evaluation framework is a real methodology (the `ai-tool-evaluation` skill loads it). It's referenced widely across the wiki *because* it's load-bearing for vendor evaluation work. Should be a process page, not a concept page — it's a methodology/runbook, not a definition. Also has multiple gates (G1, G2, G3) that may warrant atomic decision pages. |
+| `[[knowledge-compilation]]` | 1 (concepts/retrieval-augmented-generation.md) | **Defer.** Single mention. Either remove the link, or create the concept page once a second source surfaces. |
+| `[[wikilinks]]` | 1 (entities/vendors/obsidian.md) | **Fix.** This is a false positive — the obsidian.md page is describing the Obsidian feature called "wikilinks" using literal `[[wikilinks]]` syntax. Should be escaped or quoted. Recommended fix: rewrite as "supports `[[wikilink]]` syntax" with backticks. |
+
+### 2. Style inconsistency: title-form vs slug-form wikilinks
+
+In `entities/people/andrej-karpathy.md`, both `[[LLM Wiki]]` and `[[llm-wiki]]` appear — the former uses the page title, the latter uses the slug. CLAUDE.md doesn't currently mandate a form. Recommended: **use slug form everywhere** for grep-ability, consistency, and to avoid Obsidian aliasing surprises. Add this to CLAUDE.md §6 (tone/style).
+
+### 3. Stale linkage from older pages to newer vendor pages
+
+Five pulse entries and several concept pages reference subjects that *now* have vendor pages but weren't backfilled with `[[vendor]]` wikilinks:
+
+| Page | Subject without explicit wikilink to existing vendor page |
+|---|---|
+| `pulse/2026-05-04-pinecone-nexus-launch.md` | mentions Pinecone heavily, no `[[pinecone]]` wikilink in body |
+| `pulse/2026-04-22-google-agentic-data-cloud.md` | no `[[google-cloud]]` |
+| `pulse/2026-04-22-google-skills-repository.md` | no `[[google-cloud]]` |
+| `pulse/2026-04-08-claude-managed-agents-launch.md` | no `[[claude]]` or `[[anthropic]]` |
+| `pulse/2026-04-14-claude-code-routines.md` | no `[[claude]]` or `[[anthropic]]` |
+| `concepts/agent-memory.md` | mentions Claude Managed Agents but no `[[claude]]` |
+| `concepts/agent-harness.md` | mentions Claude Code performance but no `[[claude]]` |
+| `concepts/model-context-protocol.md` | mentions Anthropic; no `[[anthropic]]` |
+| `concepts/agent-skills.md` | mentions Anthropic; no `[[anthropic]]` |
+
+Recommended action: **backfill pass.** Single sweep adding `[[pinecone]]`, `[[google-cloud]]`, `[[claude]]`, `[[anthropic]]` wikilinks at first mention in each affected page. Mechanical and reversible. I can do this on approval.
+
+### 4. Orphan-ish vendor pages (low inbound link density)
+
+| Page | Inbound refs | Note |
+|---|---|---|
+| `entities/vendors/marp.md` | 1 | Only the resolved questions page references it. |
+| `entities/vendors/openclaw.md` | 1 | Same. Confidence: low; flagged in the page itself as needing a second source. |
+| `entities/vendors/pinecone.md` | 1 | Will be resolved by the backfill pass in finding 3. |
+
+After finding 3 is fixed, only `marp` and `openclaw` remain orphan-ish. Both are flagged correctly in their own page bodies as "watch for adoption / second source." No action needed beyond what's already proposed.
+
+### 5. Missing pages (concepts/entities mentioned but no page)
+
+Beyond the broken-wikilink targets in finding 1, no other concepts/entities are mentioned across multiple pages without their own page. The wiki's coverage is honest.
+
+A few mentioned-once items worth flagging as "watch for promotion to their own page":
+- KnowQL (Pinecone declarative query language) — currently covered inside `entities/vendors/pinecone.md` and the Nexus pulse entry. Promote to a concept page if KnowQL gets adopted as a portable standard.
+- Iceberg / Apache Iceberg — already deferred in the resolved three-article question.
+- Memex (Vannevar Bush) — mentioned in `concepts/llm-wiki.md` once. Defer; create only if we cite it again.
+
+### 6. Brief candidates ready
+
+Two briefs have enough source density to be worth writing:
+
+- **`briefs/agent-memory-2026-q2.md`** — six+ sources from the May 6 batch (agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture). Concept page exists; brief would synthesise the 2026-Q2 vendor moves and the open portability question.
+- **`briefs/post-rag-agent-data-stack.md`** — five+ sources (better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud, agent-native-architectures, anthropic-building-effective-agents). Cross-cuts Pinecone Nexus, Google Agentic Data Cloud, and the broader RAG-is-ending narrative.
+
+Recommended: **write both** when next session has time. Each is ~30-45 minutes of synthesis work. They're the kind of pages that justify the wiki — atemporal current views compounded from many dated sources.
+
+### 7. Question aging
+
+All 3 questions/ pages were created and resolved on 2026-05-06. No aging concern. Worth considering a `questions/.resolved/` subfolder convention if the resolved-questions list grows; for now, the index sections "Questions (open)" and "Questions (resolved)" are doing the job.
+
+### 8. Unresolved escalations
+
+None. All escalations resolved within hours.
+
+### 9. Contradictions
+
+Not yet a concern at this scale. The wiki is one day old and the source set is curated; pages that touch the same subject (e.g., agent-memory + Claude Managed Agents) currently agree because they were written in the same session from the same source pool. Re-check at next lint after diverse new sources arrive.
+
+### 10. Stale claims
+
+Not yet a concern. All `updated:` fields are within 24 hours of `created:`. Re-check after a meaningful time gap on the wiki.
+
+### 11. Source quality issues (out of lint scope but worth noting)
+
+The Web Clipper produced several Anthropic-blog sources with `published: 2001-04-XX` instead of `2026-04-XX` — looks like a Y2K-style date-parsing bug in the clipper template. Affected: claude-managed-agents-launch, claude-managed-agents-memory, claude-managed-agents-quickstart (and possibly others — full sweep needed). Schema fixup deferred per Michael's direction; checking on next batch to see if the bug persists.
+
+### 12. Schema deviations observed
+
+- **Batch-ingest log entries.** The May 6 23-article ingest was logged as one entry instead of 23 per `CLAUDE.md` §5.1. Recommendation: amend §5.1 to permit batch entries when sources share a clear unit of work (e.g., a Mivory backfill, a multi-article topic dump). Acceptable threshold: one batch entry per natural unit of work; per-source entries when sources are unrelated.
+- **`[[wikilinks]]` style not enforced.** Add to §6: "Use slug form (kebab-case) for `[[wikilinks]]`, not title form. Obsidian aliases work, but slug form is grep-friendly and consistent."
+
+---
+
+## Recommended remediation (priority order)
+
+1. **Create `processes/ai-tool-evaluation.md`.** The 6 broken `[[ai-tool-evaluation]]` references are the single biggest lint finding. The page should document the Janus AI Tool Evaluation Framework — gates G1/G2/G3, criteria, owners. Likely material for this is in the `ai-tool-evaluation` skill files; lift and adapt.
+2. **Backfill missing wikilinks** (finding 3). Mechanical pass; ~15 minutes; reversible.
+3. **Fix `[[wikilinks]]` false positive** in `obsidian.md` (one-line edit).
+4. **Standardise andrej-karpathy.md** to slug form `[[llm-wiki]]` (one-line edit).
+5. **Write the two ready briefs** — agent-memory-2026-q2 and post-rag-agent-data-stack.
+6. **Amend CLAUDE.md** for batch-ingest log entries and wikilink slug-form guidance (v0.3 → v0.4).
+7. **Resolve resolved-questions accumulation** if it grows — for now leave in place.
+
+None of these are blocking. The wiki is in good shape; this is hygiene.
+
+---
+
+## Reset
+
+Ingest counter resets to 0 at this lint entry. Next lint trigger fires at ingest count 10.

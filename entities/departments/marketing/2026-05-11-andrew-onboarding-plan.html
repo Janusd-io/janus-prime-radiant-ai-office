@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Prime Radiant — Onboarding Plan (revised 2026-05-12)</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --ink-3: #64748b;
+    --line: #e2e8f0;
+    --line-2: #cbd5e1;
+    --accent: #4f46e5;
+    --accent-soft: #eef2ff;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --ok: #047857;
+    --ok-soft: #d1fae5;
+    --future: #94a3b8;
+    --future-soft: #f1f5f9;
+    --pillar-society: #047857;
+    --pillar-society-soft: #d1fae5;
+    --pillar-business: #1d4ed8;
+    --pillar-business-soft: #dbeafe;
+    --pillar-individual: #b45309;
+    --pillar-individual-soft: #fef3c7;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .slide-num {
+    position: absolute;
+    top: 24px; right: 32px;
+    font-size: 12px;
+    color: var(--ink-3);
+    letter-spacing: 0.08em;
+    font-variant-numeric: tabular-nums;
+  }
+  .slide-brand {
+    position: absolute;
+    top: 24px; left: 32px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-3);
+    letter-spacing: 0.16em;
+  }
+  .slide-brand span { color: var(--accent); }
+  .revision-tag {
+    position: absolute;
+    top: 24px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--warn);
+    background: var(--warn-soft);
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.08em;
+  }
+  h1, h2, h3 { margin: 0; font-weight: 700; }
+  h1 { font-size: 56px; line-height: 1.1; letter-spacing: -0.02em; }
+  h2 { font-size: 40px; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 12px; }
+  h3 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px 0; font-size: 18px; line-height: 1.55; color: var(--ink-2); }
+  .lede { font-size: 22px; color: var(--ink-2); margin-bottom: 28px; max-width: 900px; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Title slide */
+  .title-slide {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  }
+  .title-slide h1 { font-size: 64px; max-width: 900px; }
+  .title-slide .sub { font-size: 22px; color: var(--ink-2); margin-top: 16px; max-width: 800px; }
+  .title-slide .meta { margin-top: 40px; font-size: 14px; color: var(--ink-3); letter-spacing: 0.06em; }
+
+  /* Layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
+  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; align-items: stretch; }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card-accent { border-color: var(--accent); background: var(--accent-soft); }
+  .card-warn { border-color: var(--warn); background: var(--warn-soft); }
+  .card-ok { border-color: var(--ok); background: var(--ok-soft); }
+  .card-future {
+    border-color: var(--future);
+    background: var(--future-soft);
+    border-style: dashed;
+  }
+  .card-future .card-title, .card-future .card-body { color: var(--ink-3); }
+  .card-tag {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .card-warn .card-tag { color: var(--warn); }
+  .card-ok .card-tag { color: var(--ok); }
+  .card-future .card-tag { color: var(--future); }
+  .card-title { font-size: 18px; font-weight: 700; color: var(--ink); margin: 0; }
+  .card-body { font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+  .card-meta { font-size: 11px; color: var(--ink-3); font-style: italic; margin-top: 4px; }
+
+  /* Pillar cards */
+  .pillar-society { border-color: var(--pillar-society); background: var(--pillar-society-soft); }
+  .pillar-society .card-tag { color: var(--pillar-society); }
+  .pillar-business { border-color: var(--pillar-business); background: var(--pillar-business-soft); }
+  .pillar-business .card-tag { color: var(--pillar-business); }
+  .pillar-individual { border-color: var(--pillar-individual); background: var(--pillar-individual-soft); }
+  .pillar-individual .card-tag { color: var(--pillar-individual); }
+
+  /* Bullet lists */
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 18px;
+    color: var(--ink);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li .num {
+    flex: none;
+    width: 28px; height: 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    margin-top: 2px;
+  }
+  ul.clean li .label { font-weight: 600; }
+  ul.clean li .body { color: var(--ink-2); font-size: 16px; margin-top: 4px; }
+
+  /* Callouts */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    padding: 20px 24px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 24px;
+    max-width: 900px;
+  }
+  .callout-warn {
+    background: var(--warn-soft);
+    border-left-color: var(--warn);
+  }
+  .callout-ok {
+    background: var(--ok-soft);
+    border-left-color: var(--ok);
+  }
+  .callout .callout-label {
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .callout-warn .callout-label { color: var(--warn); }
+  .callout-ok .callout-label { color: var(--ok); }
+  .callout .callout-body { font-size: 18px; color: var(--ink); }
+
+  /* SVG containers */
+  .diagram { margin-top: 16px; }
+
+  /* Footer nav hint */
+  .nav-hint {
+    position: fixed;
+    bottom: 16px; right: 24px;
+    font-size: 11px;
+    color: var(--ink-3);
+    letter-spacing: 0.05em;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+
+  /* Print: one slide per page */
+  @media print {
+    body { scroll-snap-type: none; overflow: visible; height: auto; }
+    .slide { min-height: auto; page-break-after: always; padding: 40px; border-bottom: none; }
+    .nav-hint, .slide-num { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ Slide 1: Title ============ -->
+<section class="slide title-slide" id="s1">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="revision-tag">REVISED — 2026-05-12</div>
+  <div class="slide-num">01 / 12</div>
+  <div class="eyebrow">Marketing — Onboarding plan · v2</div>
+  <h1>Standing up Marketing's brain.</h1>
+  <p class="sub">Updated post-walkthrough on 12 May. Outputs reordered (plans &amp; campaigns lead). Three-pillar themes spine added. FactSet de-emphasised. CRM timing committed. Tooling install scheduled.</p>
+  <div class="meta">Andrew Soane × Michael Bruck · Plan of record · v2 — 2026-05-12 · Original walkthrough 2026-05-11</div>
+</section>
+
+<!-- ============ Slide 2: What we're building ============ -->
+<section class="slide" id="s2">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">02 / 12</div>
+  <div class="eyebrow">What we're building</div>
+  <h2>A working brain for the Marketing function.</h2>
+  <p class="lede">Inputs come in from where you already work. Synthesis comes out in shapes you actually need — plans and campaigns first, white papers as one delivery format among several.</p>
+
+  <div class="diagram">
+    <svg viewBox="0 0 1100 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1100px;height:auto;">
+      <!-- Inputs column -->
+      <g font-family="-apple-system, sans-serif">
+        <text x="80" y="32" font-size="12" font-weight="700" fill="#4f46e5" letter-spacing="2">INPUTS</text>
+        <g>
+          <rect x="20" y="50" width="200" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+          <text x="120" y="74" text-anchor="middle" font-size="14" fill="#0f172a">LinkedIn / Sales Navigator</text>
+        </g>
+        <g>
+          <rect x="20" y="100" width="200" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+          <text x="120" y="124" text-anchor="middle" font-size="14" fill="#0f172a">Your meetings (Fireflies)</text>
+        </g>
+        <g>
+          <rect x="20" y="150" width="200" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+          <text x="120" y="174" text-anchor="middle" font-size="14" fill="#0f172a">Articles (Web Clipper)</text>
+        </g>
+        <g>
+          <rect x="20" y="200" width="200" height="40" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+          <text x="120" y="224" text-anchor="middle" font-size="14" fill="#0f172a">Slack threads (bookmarked)</text>
+        </g>
+        <g opacity="0.5">
+          <rect x="20" y="250" width="200" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="120" y="274" text-anchor="middle" font-size="14" fill="#64748b">CRM &amp; news sources (later)</text>
+        </g>
+      </g>
+
+      <!-- Arrows in -->
+      <g stroke="#cbd5e1" stroke-width="1.5" fill="none">
+        <path d="M 230 70 L 410 155" marker-end="url(#arrow)"/>
+        <path d="M 230 120 L 410 160" marker-end="url(#arrow)"/>
+        <path d="M 230 170 L 410 165" marker-end="url(#arrow)"/>
+        <path d="M 230 220 L 410 170" marker-end="url(#arrow)"/>
+        <path d="M 230 270 L 410 175" marker-end="url(#arrow)" stroke-dasharray="3,3" opacity="0.5"/>
+      </g>
+
+      <!-- Brain (center) -->
+      <g>
+        <circle cx="550" cy="160" r="105" fill="#4f46e5"/>
+        <text x="550" y="148" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">The brain</text>
+        <text x="550" y="172" text-anchor="middle" font-size="11" fill="#c7d2fe" letter-spacing="1.5">JANUS PRIME RADIANT</text>
+        <text x="550" y="190" text-anchor="middle" font-size="11" fill="#c7d2fe" letter-spacing="1.5">· MARKETING ·</text>
+      </g>
+
+      <!-- Arrows out -->
+      <g stroke="#cbd5e1" stroke-width="1.5" fill="none">
+        <path d="M 660 145 L 855 80" marker-end="url(#arrow)"/>
+        <path d="M 660 155 L 855 130" marker-end="url(#arrow)"/>
+        <path d="M 660 165 L 855 180" marker-end="url(#arrow)"/>
+        <path d="M 660 175 L 855 230" marker-end="url(#arrow)"/>
+      </g>
+
+      <!-- Outputs column (REORDERED) -->
+      <g font-family="-apple-system, sans-serif">
+        <text x="945" y="32" font-size="12" font-weight="700" fill="#047857" letter-spacing="2">OUTPUTS</text>
+        <g>
+          <rect x="860" y="60" width="220" height="40" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="1.5"/>
+          <text x="970" y="84" text-anchor="middle" font-size="14" fill="#0f172a">Plans &amp; campaigns</text>
+        </g>
+        <g>
+          <rect x="860" y="110" width="220" height="40" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="1.5"/>
+          <text x="970" y="134" text-anchor="middle" font-size="14" fill="#0f172a">Briefs &amp; positioning</text>
+        </g>
+        <g>
+          <rect x="860" y="160" width="220" height="40" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="1.5"/>
+          <text x="970" y="184" text-anchor="middle" font-size="14" fill="#0f172a">POVs &amp; thought leadership</text>
+        </g>
+        <g>
+          <rect x="860" y="210" width="220" height="40" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="1.5"/>
+          <text x="970" y="234" text-anchor="middle" font-size="14" fill="#0f172a">White papers &amp; assets</text>
+        </g>
+      </g>
+
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#cbd5e1"/>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="callout callout-ok">
+    <div class="callout-label">Revision note</div>
+    <div class="callout-body">Outputs reordered per Andrew (12 May session). Marketing is not a white-paper-generation engine — campaigns and plans lead; white papers are one delivery format among several.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 3: Why staged ============ -->
+<section class="slide" id="s3">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">03 / 12</div>
+  <div class="eyebrow">Why staged, why now</div>
+  <h2>Starting small is the fastest path to value.</h2>
+  <p class="lede">There's a lot this could eventually do — automated news-clipping, CRM, market data sources, campaign automation. We'll build toward all of it. But the wrong move is waiting until everything's plumbed before you start.</p>
+
+  <div class="grid-3" style="margin-top: 24px;">
+    <div class="card card-accent">
+      <div class="card-tag">Reason 1</div>
+      <div class="card-title">You get value immediately</div>
+      <div class="card-body">SG launch is this week. The ICP and Persona work has been in your head. Real blockers, addressable now.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Reason 2</div>
+      <div class="card-title">We learn what <em>you</em> want</div>
+      <div class="card-body">Three weeks of you using a simple version teaches us more about what to build than three weeks of me speculating about your workflow.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Reason 3</div>
+      <div class="card-title">The brain accumulates context</div>
+      <div class="card-body">By the time the CRM is plumbed in, the brain already knows your ICP, Personas, themes, country plans. CRM data slots into context that's already understood.</div>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-label">CRM timing committed (12 May)</div>
+    <div class="callout-body">~2–3 weeks to a HubSpot recommendation Bonaventure agrees with. ~3 more weeks for SaaS terms + setup. End-May / first-week-June for decision; mid-June live. <strong>CRM is not in the critical path.</strong> Google Sheets is the interim system of record for Singapore-launch leads.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 4: The four stages ============ -->
+<section class="slide" id="s4">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">04 / 12</div>
+  <div class="eyebrow">The roadmap</div>
+  <h2>Four stages. Iterating throughout.</h2>
+
+  <div class="diagram" style="margin: 32px 0;">
+    <svg viewBox="0 0 1100 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1100px;height:auto;" font-family="-apple-system, sans-serif">
+      <!-- Timeline base line -->
+      <line x1="40" y1="120" x2="1060" y2="120" stroke="#cbd5e1" stroke-width="2"/>
+
+      <!-- Stage 1 (this week) -->
+      <rect x="40" y="80" width="240" height="80" rx="8" fill="#4f46e5"/>
+      <text x="160" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#c7d2fe" letter-spacing="2">STAGE 1</text>
+      <text x="160" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Get operational</text>
+      <text x="160" y="150" text-anchor="middle" font-size="12" fill="#c7d2fe">Thu/Fri this week</text>
+
+      <!-- Stage 2 (weeks 3-4) -->
+      <rect x="290" y="80" width="240" height="80" rx="8" fill="#0891b2"/>
+      <text x="410" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#cffafe" letter-spacing="2">STAGE 2</text>
+      <text x="410" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">First synthesis</text>
+      <text x="410" y="150" text-anchor="middle" font-size="12" fill="#cffafe">Weeks 2–4</text>
+
+      <!-- Stage 3 (weeks 5-8) -->
+      <rect x="540" y="80" width="240" height="80" rx="8" fill="#059669"/>
+      <text x="660" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#a7f3d0" letter-spacing="2">STAGE 3</text>
+      <text x="660" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">CRM lands · app scoped</text>
+      <text x="660" y="150" text-anchor="middle" font-size="12" fill="#a7f3d0">Mid-June onward</text>
+
+      <!-- Stage 4 (beyond) -->
+      <rect x="790" y="80" width="270" height="80" rx="8" fill="#475569"/>
+      <text x="925" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#cbd5e1" letter-spacing="2">STAGE 4</text>
+      <text x="925" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Automation &amp; integrations</text>
+      <text x="925" y="150" text-anchor="middle" font-size="12" fill="#cbd5e1">Months · prioritised by your wishlist</text>
+
+      <!-- Today marker -->
+      <circle cx="40" cy="120" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+      <text x="40" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">TODAY</text>
+      <line x1="40" y1="68" x2="40" y2="80" stroke="#0f172a" stroke-width="2"/>
+
+      <!-- SG luncheon marker (July 8/9) -->
+      <circle cx="640" cy="120" r="8" fill="#b45309" stroke="#ffffff" stroke-width="2"/>
+      <text x="640" y="60" text-anchor="middle" font-size="11" font-weight="700" fill="#b45309">SG LUNCHEON</text>
+      <text x="640" y="74" text-anchor="middle" font-size="11" fill="#b45309">8/9 July</text>
+      <line x1="640" y1="80" x2="640" y2="112" stroke="#b45309" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <div class="grid-4">
+    <div class="card">
+      <div class="card-title">Stage 1 — get operational</div>
+      <div class="card-body">Tools set up. Reference docs drafted. Backfill from Fireflies. Connector reset. <strong>Thursday–Friday this week.</strong></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Stage 2 — first synthesis</div>
+      <div class="card-body">Brain produces its first POV draft. SG launch landing page goes live. We refine based on what's working.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Stage 3 — CRM &amp; app</div>
+      <div class="card-body">HubSpot lands (mid-June). Richer signals come online. Custom dashboard scoped — informed, not guessed.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Stage 4 — automation</div>
+      <div class="card-body">News-clipping automation. Market data feeds. Campaign tie-ins. Priority set by what you've actually been wishing for.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Slide 5: NEW — Three-pillar messaging spine ============ -->
+<section class="slide" id="s5">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">05 / 12</div>
+  <div class="eyebrow">The messaging spine</div>
+  <h2>Three pillars. Society → Business → Individual.</h2>
+  <p class="lede">Every campaign, brief, POV and white paper ladders up to one of these. Same spine Bonaventure articulated on the 12 May CEO call, reordered to lead with audience-of-impact. Drives content categorisation and (when it lands) website navigation.</p>
+
+  <div class="grid-3" style="margin-top: 24px;">
+    <div class="card pillar-society">
+      <div class="card-tag">Pillar 1 · Audience: society</div>
+      <div class="card-title">Sustainability &amp; ESG agenda</div>
+      <div class="card-body">AI as the lever that finally makes sustainability and ESG actionable at REIT / asset-management scale. Impact on society. PM-of-Singapore framing aligned.</div>
+    </div>
+    <div class="card pillar-business">
+      <div class="card-tag">Pillar 2 · Audience: business</div>
+      <div class="card-title">AI as a growth engine</div>
+      <div class="card-body">Top-line growth and acquisition optionality, not cost reduction. "Keep your workforce; let Janus give you the 10× top line you couldn't have gotten without technology." M&amp;A acquisition thesis sits here.</div>
+    </div>
+    <div class="card pillar-individual">
+      <div class="card-tag">Pillar 3 · Audience: individual</div>
+      <div class="card-title">Augment &amp; upskill the worker</div>
+      <div class="card-body">"AI will not replace you — AI with people who uses AI and a company uses AI will acquire your position." Upskilling, certification, training. "Uber for engineers" model. Union framing.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">How the spine flows</div>
+    <div class="callout-body">Each pillar gives the next audience a reason to engage. Society wants impact → business delivers it through AI → workers are upskilled to deliver business outcomes. Order outputs by who you're talking to: investors / asset managers get Pillar 2 first; broad market gets Pillar 1; HR / union audiences get Pillar 3.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 6: What I need from you (Stage 1) ============ -->
+<section class="slide" id="s6">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">06 / 12</div>
+  <div class="eyebrow">Stage 1 · What I need from you</div>
+  <h2>Five reference docs. Working drafts in ~1 week.</h2>
+  <p class="lede">Skeletons exist for all five. You fill them in; you're not starting from a blank page. Andrew committed on 12 May to working drafts within ~1 week, cross-tallied against Bonaventure's parallel work.</p>
+
+  <div class="grid-5" style="margin-top: 24px;">
+    <div class="card card-warn">
+      <div class="card-tag">Time-critical</div>
+      <div class="card-title">Country plan — Singapore</div>
+      <div class="card-body">Launch window open now. Top accounts, channel strategy, 8/9 July luncheon, white-paper promotion sequencing, 90-day calendar.</div>
+    </div>
+    <div class="card">
+      <div class="card-tag">Lower priority</div>
+      <div class="card-title">Country plan — UK</div>
+      <div class="card-body">ABM-only for now (Fairfax Round Capital conversation continues). No outbound marketing; Singapore is the main focus.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Foundation</div>
+      <div class="card-title">Ideal Customer Profile</div>
+      <div class="card-body">Working draft exists. Needs cross-tally with Bonaventure's parallel ICP repository — you've been working independently. Reconcile within the week.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Foundation — SG focus</div>
+      <div class="card-title">Target Personas</div>
+      <div class="card-body"><strong>GPs &amp; LPs (asset managers)</strong> as the Singapore-launch focus. Wider Persona work (CFO, COO, Head of Sustainability, etc.) follows.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Foundation</div>
+      <div class="card-title">Topic taxonomy</div>
+      <div class="card-body">Themes structured around the three pillars (Society / Business / Individual). Sub-topics: AI in real estate / asset management / sustainability / PE / credit / banking.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">My ask</div>
+    <div class="callout-body">Five working drafts within ~1 week — yours, not mine. Cross-tally with Bonaventure's parallel work. The brain works better with imperfect drafts it can react to than with blanks.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 7: What I'll do (Stage 1) ============ -->
+<section class="slide" id="s7">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">07 / 12</div>
+  <div class="eyebrow">Stage 1 · What I'll do</div>
+  <h2>Get you set up. Thursday–Friday this week.</h2>
+
+  <ul class="clean" style="margin-top: 24px; max-width: 950px;">
+    <li>
+      <span class="num">1</span>
+      <span>
+        <span class="label">Cowork setup + connector reset.</span>
+        <div class="body">Mount the Marketing vault to your Claude account. Reset the connector warnings you've been seeing. Cowork is your primary interface to the brain.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">2</span>
+      <span>
+        <span class="label">Obsidian + Web Clipper install.</span>
+        <div class="body">Browsing + authoring surface; one-click article capture. Both Mac-native — straightforward install since you're on Mac.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">3</span>
+      <span>
+        <span class="label">Fireflies bulk backfill.</span>
+        <div class="body">All your meeting transcripts since you joined (mid-April onwards). One command via the brain's connector. Immediate-seed of context so the brain knows your conversations from day one.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">4</span>
+      <span>
+        <span class="label">Notion / Drive one-time ingest.</span>
+        <div class="body">Relevant docs from you and Bonaventure — mission, multi-year strategy, country planning, anything worth capturing. <em>Note: Notion is one source among several, not the source of truth — Claude defaults to suggesting it but we're not standardising on it for Marketing PR.</em></div>
+      </span>
+    </li>
+    <li>
+      <span class="num">5</span>
+      <span>
+        <span class="label">Federation plumbing.</span>
+        <div class="body">Make sure what you produce flows toward Bonaventure (and toward IT-Ops, ISO, the other brains) without you needing to do anything special.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">6</span>
+      <span>
+        <span class="label">Onboarding deck revision (this artefact).</span>
+        <div class="body">This deck becomes the plan of record. Revised post-walkthrough on 12 May; future revisions captured the same way as the work progresses.</div>
+      </span>
+    </li>
+  </ul>
+
+  <div class="callout callout-ok">
+    <div class="callout-label">Window</div>
+    <div class="callout-body">Thursday / Friday this week works — Bonaventure on holiday from Wednesday means lower-traffic days for the focused install session.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 8: Your toolkit ============ -->
+<section class="slide" id="s8">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">08 / 12</div>
+  <div class="eyebrow">Your toolkit</div>
+  <h2>Three tools now. A custom app later.</h2>
+  <p class="lede">Cowork is your conversation with the brain. Obsidian is your view of it. Web Clipper is how you feed it articles. Each does one thing well; together they cover Stage-1 use cases.</p>
+
+  <div class="grid-4" style="margin-top: 24px;">
+    <div class="card card-accent">
+      <div class="card-tag">Primary</div>
+      <div class="card-title">Claude Cowork</div>
+      <div class="card-body">You talking to the brain. Ask it to ingest things, query things, synthesize things, draft things. Uses your existing Claude account. <em>Note: Cowork has access to your drive; the chat/messaging surface doesn't.</em></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Obsidian</div>
+      <div class="card-body">Browsing + authoring surface. See the knowledge graph build up; navigate between related pages; write directly when you want to.</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Web Clipper</div>
+      <div class="card-body">One click puts an article in the brain's inbox. The brain extracts, tags, and links it. Your most repeatable signal source right now.</div>
+    </div>
+    <div class="card card-future">
+      <div class="card-tag">Later</div>
+      <div class="card-title">Custom dashboard / app</div>
+      <div class="card-body">Scoped after you've used Cowork for ~3 weeks and know what views you want pinned. Building before then is guessing.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Slide 9: The mesh — how brains stay connected ============ -->
+<section class="slide" id="s9">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">09 / 12</div>
+  <div class="eyebrow">How brains stay connected</div>
+  <h2>One folder, two views. The mesh.</h2>
+  <p class="lede">Every department gets its own brain — Marketing, AI Office, ISO, IT-Ops, Finance, HR, eventually Bonaventure's company-level twin. Between any two brains, a single shared folder carries the joint work.</p>
+
+  <div class="diagram" style="margin-top: 16px;">
+    <svg viewBox="0 0 1100 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1100px;height:auto;" font-family="-apple-system, sans-serif">
+      <!-- AI Office brain -->
+      <circle cx="320" cy="190" r="120" fill="#4f46e5" opacity="0.92"/>
+      <text x="320" y="180" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">AI Office</text>
+      <text x="320" y="205" text-anchor="middle" font-size="14" fill="#c7d2fe">brain</text>
+
+      <!-- Marketing brain -->
+      <circle cx="780" cy="190" r="120" fill="#059669" opacity="0.92"/>
+      <text x="780" y="180" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Marketing</text>
+      <text x="780" y="205" text-anchor="middle" font-size="14" fill="#a7f3d0">brain</text>
+
+      <!-- Shared folder bridge -->
+      <rect x="490" y="155" width="120" height="70" rx="10" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+      <text x="550" y="185" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">SHARED</text>
+      <text x="550" y="203" text-anchor="middle" font-size="11" fill="#475569">subfolder</text>
+      <text x="550" y="217" text-anchor="middle" font-size="11" fill="#475569">(joint work)</text>
+
+      <!-- Connectors -->
+      <line x1="430" y1="190" x2="490" y2="190" stroke="#0f172a" stroke-width="2"/>
+      <line x1="610" y1="190" x2="670" y2="190" stroke="#0f172a" stroke-width="2"/>
+
+      <!-- Future brain stubs -->
+      <g opacity="0.55">
+        <circle cx="180" cy="60" r="42" fill="#94a3b8" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="180" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">IT-Ops</text>
+
+        <circle cx="180" cy="320" r="42" fill="#94a3b8" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="180" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">ISO</text>
+
+        <circle cx="920" cy="60" r="42" fill="#94a3b8" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="920" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">HR</text>
+
+        <circle cx="920" cy="320" r="42" fill="#94a3b8" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="920" y="324" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Finance</text>
+      </g>
+
+      <!-- BW digital twin (top) -->
+      <g>
+        <rect x="475" y="20" width="150" height="50" rx="10" fill="#0f172a"/>
+        <text x="550" y="42" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="1">BONAVENTURE</text>
+        <text x="550" y="58" text-anchor="middle" font-size="11" fill="#94a3b8">company-level twin</text>
+      </g>
+      <line x1="550" y1="70" x2="550" y2="155" stroke="#0f172a" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+      <!-- Labels -->
+      <text x="550" y="350" text-anchor="middle" font-size="13" fill="#64748b" font-style="italic">Same folder. AIO sees it at <tspan font-family="monospace" fill="#0f172a">entities/departments/marketing/</tspan>. You see it at <tspan font-family="monospace" fill="#0f172a">entities/departments/ai-office/</tspan>.</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ Slide 10: Singapore launch campaign ============ -->
+<section class="slide" id="s10">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">10 / 12</div>
+  <div class="eyebrow">Singapore launch · 8/9 July luncheon</div>
+  <h2>The first concrete campaign. <60 days out.</h2>
+  <p class="lede">Personas locked: GPs and LPs (asset managers). Campaign mix: paid + organic social + PR + landing-page-with-lead-capture. White paper as anchor; multiple promotions.</p>
+
+  <div class="grid-4" style="margin-top: 24px;">
+    <div class="card card-warn">
+      <div class="card-tag">Days, not weeks</div>
+      <div class="card-title">Singapore landing page</div>
+      <div class="card-body">Single page: white-paper headlines + registration form + data-privacy notice. Form pushes to Google Sheets (CRM interim). On <strong>janusd.com</strong> with country sub-path (open architecture Q — see slide 11).</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Mix</div>
+      <div class="card-title">Campaign channels</div>
+      <div class="card-body">Paid advertising · organic social · PR (Business Times tried; other PR being explored) · landing-page lead capture. LinkedIn-first intelligence sourcing; Twitter secondary.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">Funnel</div>
+      <div class="card-title">Lead nurture</div>
+      <div class="card-body">Capture → Google Sheets → invite list for the 8/9 July luncheon → nurture sequence. Target: tens to low hundreds of qualified records — signal-quality over scale.</div>
+    </div>
+    <div class="card">
+      <div class="card-tag">Content angle</div>
+      <div class="card-title">Anti-AI-washing series</div>
+      <div class="card-body">"Name three things that make it AI" — first social post out today. Series potential. Light-touch positioning: Janus is the substance behind the substance-free competitors.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Slide 11: Open questions ============ -->
+<section class="slide" id="s11">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">11 / 12</div>
+  <div class="eyebrow">Open questions to resolve</div>
+  <h2>Four items needing alignment.</h2>
+  <p class="lede">All four sequenced ahead of, or alongside, the Singapore-launch execution. Some need Bonaventure; some need internal Marketing decisions.</p>
+
+  <div class="grid-2" style="margin-top: 24px;">
+    <div class="card card-warn">
+      <div class="card-tag">Needs Bonaventure</div>
+      <div class="card-title">Website architecture</div>
+      <div class="card-body">One Janus site with country sub-paths (Andrew + Michael) vs standalone country sites (anticipated Bonaventure). Affects URL pattern on the SG landing page. <em>"A mighty battle" expected.</em></div>
+    </div>
+    <div class="card card-warn">
+      <div class="card-tag">Needs cross-tally</div>
+      <div class="card-title">ICP / Personas reconciliation</div>
+      <div class="card-body">Andrew's working draft vs Bonaventure's parallel ICP repository. Andrew working independently to date — needs to consolidate in the week.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">CMS roadmap</div>
+      <div class="card-title">Marketing-CRM vs sales-CRM</div>
+      <div class="card-body">Andrew needs marketing-campaign-management capabilities (campaigns, sequences, analytics), not just sales pipeline. Affects HubSpot edition choice / alternative selection.</div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">CMS roadmap</div>
+      <div class="card-title">CMS platform decision</div>
+      <div class="card-body">Wix, Firebase, or build? Multilingual support is a hard requirement. Sequenced after the Singapore landing-page launch — short-term standalone HTML is fine.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Slide 12: Action items + close ============ -->
+<section class="slide title-slide" id="s12">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">12 / 12</div>
+  <div class="eyebrow">Action items · 12 May → end of week</div>
+  <h1>From "plan" to "in motion."</h1>
+
+  <div class="grid-2" style="margin-top: 32px; max-width: 1000px;">
+    <div>
+      <h3 style="color: var(--accent); margin-bottom: 12px;">Andrew — this week</h3>
+      <ul class="clean">
+        <li><span class="num">1</span><span><span class="label">First AI-washing social post — today.</span><div class="body">Light-touch series opener.</div></span></li>
+        <li><span class="num">2</span><span><span class="label">ICP + Personas + Topic taxonomy drafts.</span><div class="body">Working drafts within ~1 week, cross-tallied with Bonaventure.</div></span></li>
+        <li><span class="num">3</span><span><span class="label">Singapore landing page.</span><div class="body">In days, pending website-architecture call.</div></span></li>
+        <li><span class="num">4</span><span><span class="label">Find 45–60 min window.</span><div class="body">For the tooling install session.</div></span></li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color: var(--ok); margin-bottom: 12px;">Michael — this week</h3>
+      <ul class="clean">
+        <li><span class="num">1</span><span><span class="label">Cowork + Obsidian + Web Clipper install.</span><div class="body">Thursday or Friday on your Mac.</div></span></li>
+        <li><span class="num">2</span><span><span class="label">Bulk Fireflies ingest.</span><div class="body">All your meetings since mid-April. First-content seed.</div></span></li>
+        <li><span class="num">3</span><span><span class="label">Connector reset.</span><div class="body">Clear the Cowork connector warnings you've been seeing.</div></span></li>
+        <li><span class="num">4</span><span><span class="label">Deck revision (this artefact).</span><div class="body">Updated 12 May per session — now plan of record.</div></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="meta" style="margin-top: 32px;">— Andrew Soane × Michael Bruck · 12 May 2026 · revision 2</div>
+</section>
+
+<div class="nav-hint">← → arrows to navigate · scroll · press F for fullscreen</div>
+
+<script>
+  // Keyboard navigation between slides
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  function currentSlideIndex() {
+    const y = window.scrollY + window.innerHeight / 2;
+    for (let i = 0; i < slides.length; i++) {
+      const r = slides[i].getBoundingClientRect();
+      const top = r.top + window.scrollY;
+      const bottom = top + r.height;
+      if (y >= top && y < bottom) return i;
+    }
+    return 0;
+  }
+  function goTo(i) {
+    if (i < 0) i = 0;
+    if (i >= slides.length) i = slides.length - 1;
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+      e.preventDefault();
+      goTo(currentSlideIndex() + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+      e.preventDefault();
+      goTo(currentSlideIndex() - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      goTo(0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      goTo(slides.length - 1);
+    } else if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+  });
+</script>
+
+</body>
+</html>

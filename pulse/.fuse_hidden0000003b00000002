@@ -1,0 +1,90 @@
+---
+type: pulse
+title: Lint pass — second wiki health check
+slug: 2026-05-07-lint
+created: 2026-05-07
+updated: 2026-05-07
+departments: [ai-office]
+confidence: high
+related: [llm-wiki-build, 2026-05-06-lint]
+---
+
+# Lint pass — 2026-05-07
+
+Second lint pass on the wiki, run after extensive Phase 2/4/5 ingest activity (Notion sub-pages, Linear AIR, Monday Automations) and the resolution of three escalations (project hubs, AI Policy gate process, Linear AIR vendor candidates).
+
+**Wiki state at lint time:** 81 wiki pages (20 vendors, 9 concepts, 6 projects, 17 decisions, 3 lessons, 6 pulse, 2 briefs, 2 processes, 7 questions, 5 internal people, 1 external person), 59 source files.
+
+## Summary
+
+Wiki structurally healthy. Frontmatter compliance was at 1 issue (now fixed). 13 broken `[[wikilinks]]` — 3 fixed in this pass; the remaining 10 cluster around three known patterns documented below.
+
+## Findings
+
+### 1. Fixed in this pass (3)
+
+| Target | Location | Fix |
+|---|---|---|
+| `[[gb]]` | `projects/singapore-news-monitoring.md` | Replaced with plain text "UK offices opening 2026 W20". `gb` is an ISO country code used in frontmatter `countries:` filtering, not a wiki page slug — should not appear as a wikilink. |
+| `[[lessons]]` | `decisions/2026-05-06-monday-com-to-production-this-week.md` | Replaced with backtick-quoted folder reference `lessons/` — the original was a folder reference incorrectly written as a wikilink. |
+| `owner` field missing | `lessons/2026-05-05-notion-degrades-as-ai-searchable-kb.md` | Added `owner: michael`. Lessons require owner per `CLAUDE.md` §4. |
+
+### 2. Persistent: skill references (3)
+
+| Target | Locations |
+|---|---|
+| `[[/standup]]`, `[[standup\|...]]` × 3 | `entities/vendors/monday.md`, `decisions/2026-05-06-notion-role-shift-...`, `decisions/2026-05-06-standup-skill-v3-12-...` |
+
+The wiki has no convention for *referring to a skill* (skills live outside the wiki at `~/.claude/skills/`). Three options:
+- **(A)** Add a `skills/` reference folder with stub pages that point at the canonical skill files (mirror of the `processes/ai-tool-evaluation.md` pattern).
+- **(B)** Amend `CLAUDE.md` §6: skill names use plain text in backticks (`/standup`), never wikilinks.
+- **(C)** Mixed — major skills get reference pages; minor skills are mentioned with backticks only.
+
+Recommended: **(C)**. The standup skill is heavily referenced and warrants a `processes/standup.md` reference page; smaller / less-referenced skills can stay as backtick mentions. Awaiting your call.
+
+### 3. Persistent: Monday tracking items not promoted to project hubs (4)
+
+| Target | Locations |
+|---|---|
+| `[[ai-registry-v2]]` × 2 | `decisions/2026-05-06-ai-tool-taxonomy-...`, `decisions/2026-05-06-standup-skill-v3-12-...` |
+| `[[notion-operations-notebook-restructure]]` × 1 | `decisions/2026-05-06-notion-role-shift-...` |
+| `[[build-categorisation-taxonomy-for-ai-tools]]` × 1 | `decisions/2026-05-06-ai-tool-taxonomy-...` |
+| `[[iso-officer-process-documentation]]` × 1 | `decisions/2026-05-06-standup-skill-v3-12-...` |
+
+These are Monday tracking item references the subagent wrote when filing decision pages from the 6 May standup. They weren't on the approved project-hub list (which had 5 items: recruitment-automation-pipeline, singapore-news-monitoring, it-department-standup-pilot, it-helpdesk-triage-bot, crm-evaluation-and-selection).
+
+Recommendation: **leave broken** for now. They auto-resolve if/when promoted to project hubs in a future ingest. The ISO officer process documentation is a recurring blocker on AIO standups and is the strongest candidate for promotion when the ISO facilitation work matures.
+
+### 4. Persistent: deferred entities (3)
+
+| Target | Locations | Status |
+|---|---|---|
+| `[[n8n]]` × 2 | `decisions/2026-04-23-monday-hostinger-...`, `lessons/2026-04-20-gcp-self-host-...` | Deferred per Mivory escalation — Janus mentions n8n comparatively but hasn't evaluated it. Auto-resolves if promoted. |
+| `[[knowledge-compilation]]` × 1 | `concepts/retrieval-augmented-generation.md` | Single mention; deferred from previous lint until a second source surfaces. |
+
+No action; these are healthy deferrals.
+
+### 5. Frontmatter compliance — clean
+
+After fixing `notion-degrades-as-ai-searchable-kb.md` (added owner), all 81 wiki pages pass frontmatter compliance.
+
+### 6. New brief candidates surfacing
+
+The mass of new May decisions and Monday automations is starting to suggest a brief on **Janus AI Office operating model 2026-Q2** — what does the AIO do, how does it operate, what's the methodology stack (Fireflies → Monday → Linear AIR → Notion + standup skill)? Defer for now; mark as a watch item when the IT pilot ships and a second department validates the methodology generalises.
+
+### 7. Schema observations
+
+- The `[[wikilinks]]` style guidance in `CLAUDE.md` §6 (slug form) needs a parallel rule for skills. Recommend adding to v0.5: skill references use backticks, not wikilinks, unless a `processes/<skill>.md` reference page exists in which case the wikilink targets that.
+- Country tags (`countries: [sg, gb, ...]`) in frontmatter remain a filter axis, not a wiki target. Worth one-line clarification in `CLAUDE.md` §4 that ISO codes are filter-only and shouldn't be `[[wikilinked]]`.
+
+## Recommended next actions (priority order)
+
+1. **Decide skill-reference convention** (Section 2). Option (C) recommended — create `processes/standup.md` reference page; backtick smaller skill mentions.
+2. **Consider promoting `iso-officer-process-documentation`** to a project hub (Section 3) — it's a recurring blocker that has earned narrative space.
+3. **Schema amendment v0.4 → v0.5** covering skill-reference convention and ISO-code-not-a-wikilink clarification (Section 7).
+
+Items 1 and 3 together would close most of the remaining lint tail. Item 2 is judgment.
+
+## Reset
+
+Ingest counter resets to 0 at this lint entry. Last ingest count: 18 (4 Linear + 14 Monday). Next lint trigger fires at ingest count 10.

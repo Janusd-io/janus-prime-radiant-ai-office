@@ -1,0 +1,25 @@
+---
+type: vendor
+title: Notion
+slug: notion
+created: 2026-05-06
+updated: 2026-05-12
+departments: [ai-office, it-ops, office-of-ceo]
+status: active
+confidence: high
+related: [michael-bruck, janus-prime-radiant-build]
+---
+
+# Notion
+
+Workspace, wiki, and docs platform. At Janus, primary use is the **Operations Notebook** — the forward-looking journal / reporting surface for AIO operations.
+
+## Scope at Janus
+
+The Operations Notebook is where the `/standup` skill writes daily standup logs (`## AIO DD Mon YYYY` entries) consolidating decisions, next-step planning, and registry/evaluation outcomes from each day. Beyond the standup journal, Notion also hosts project documentation tied to active Monday projects and ad-hoc internal documentation.
+
+## Relationship to this wiki
+
+Notion is authoritative for the daily operations narrative — what was discussed, what was decided, what's queued next. This wiki ingests Notion pages selectively, focused on the standup-log entries which are the densest carrier of decisions and rationale. Per `CLAUDE.md` §5.1.
+
+The wiki is the **synthesis layer over Notion**, not a replacement for it. Notion structure (databases, sub-pages) often maps to wiki entities — extract carefully to avoid duplicating lookup data that's better served from Notion directly.
