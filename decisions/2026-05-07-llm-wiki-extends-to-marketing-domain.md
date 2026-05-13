@@ -6,7 +6,8 @@ created: 2026-05-07
 updated: 2026-05-07
 departments: [ai-office, marketing]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-07]
 related: [llm-wiki, janus-prime-radiant-build, andrew-soane, singapore-news-monitoring, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag]
 ---

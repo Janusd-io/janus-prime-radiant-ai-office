@@ -5,7 +5,7 @@ slug: 2026-05-06-mivory-batch-1-new-entity-candidates
 created: 2026-05-06
 updated: 2026-05-06
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [claude-managed-agents-launch, claude-code-routines, marp-homepage, openclaw-assistant-ryancarson, mempalace-milla-jovovich, arscontexta-claude-code-plugin, cheap-claude-tokens-china, your-harness-your-memory-hwchase17, elvis-saravia-personal-research-kb]
 related: [2026-04-08-claude-managed-agents-launch, 2026-04-14-claude-code-routines, 2026-04-22-google-skills-repository, anthropic, marp, openclaw, claude]
 ---

@@ -7,6 +7,7 @@ updated: 2026-05-11
 departments: [ai-office]
 status: resolved
 owner: michael-bruck
+decided_by: michael-bruck
 sources: [2026-05-11-aio-standup-with-jehad]
 related: [michael-bruck, jehad-altoutou, bonaventure-wong, 2026-05-11-html-over-powerpoint-for-read-only-content]
 ---

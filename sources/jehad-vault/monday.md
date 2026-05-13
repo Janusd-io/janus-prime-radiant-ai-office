@@ -8,7 +8,7 @@ departments: [ai-office, hr, marketing, it-ops]
 status: active
 confidence: high
 sources: [jehad-vault-import-2026-05-13]
-related: [linear, monday-com]
+related: [linear, monday]
 captured_by: jehad-altoutou
 ---
 

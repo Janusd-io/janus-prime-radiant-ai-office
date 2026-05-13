@@ -6,7 +6,8 @@ created: 2026-05-06
 updated: 2026-05-07
 departments: [ai-office, it-ops, marketing]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-06]
 ---
 

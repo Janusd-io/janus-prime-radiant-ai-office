@@ -5,7 +5,8 @@ slug: 2026-04-20-iso-first-stack-architectural-pivot
 created: 2026-05-06
 updated: 2026-05-13
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 departments: [ai-office, office-of-ceo]
 countries: [sg, gb, us]
 confidence: high

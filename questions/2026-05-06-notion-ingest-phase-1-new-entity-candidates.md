@@ -5,7 +5,7 @@ slug: 2026-05-06-notion-ingest-phase-1-new-entity-candidates
 created: 2026-05-06
 updated: 2026-05-06
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [aio-operations-notebook-meta, aio-2026-05-01, aio-2026-05-04, aio-2026-05-05, aio-2026-05-06]
 related: [janus-prime-radiant-build, fireflies, slack, monday, wispr-flow, assessify, deel, hostinger, jehad-altoutou, bonaventure-wong, andrew-soane, simon-tarskih]
 ---

@@ -7,6 +7,7 @@ updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: jehad-altoutou
+decided_by: jehad-altoutou
 sources: [automations-2889202957, jehad-vault-2026-05-06-standup-skill-v3-12-self-correcting-behavior]
 related: [standup, ai-registry-v2, linear, iso-compliance-programme]
 ---

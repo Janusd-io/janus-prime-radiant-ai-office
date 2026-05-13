@@ -224,6 +224,7 @@ _(none yet)_
 
 ## Pulse
 
+- [2026-05-13-lint](pulse/2026-05-13-lint.md) — post v0.10 schema bump; 46 fm violations auto-fixed (owner normalisation + decided_by); 13 slug-alias rewrites; remediations deferred: concepts-folder migration, 8 missing-page stubs, ~10 unresolved meeting refs.
 - [2026-05-13-transformers-are-graph-neural-networks](pulse/2026-05-13-transformers-are-graph-neural-networks.md) — Cambridge; foundational framing — Transformers ≡ GNNs on fully-connected token graphs winning the hardware lottery. [high]
 - [2026-05-13-recursive-language-models](pulse/2026-05-13-recursive-language-models.md) — MIT CSAIL; third paradigm for long context (after RAG and compaction): LLM treats prompt as REPL variable, recursively self-calls. [high]
 - [2026-05-13-magma-multi-graph-agentic-memory](pulse/2026-05-13-magma-multi-graph-agentic-memory.md) — UT Dallas / U. Florida; multi-graph (semantic/temporal/causal/entity) agentic memory; same four-graph shape as Mnemon — independent convergence. [high]

@@ -7,6 +7,7 @@ updated: 2026-05-11
 departments: [ai-office, it-ops, office-of-ceo]
 status: resolved
 owner: bonaventure-wong
+decided_by: bonaventure-wong
 sources: [2026-05-11-aio-standup-with-jehad]
 related: [bonaventure-wong, michael-bruck, jehad-altoutou, euclid-wong, notion, 2026-05-06-notion-role-shift-journal-not-knowledge-base, janus-prime-radiant-build]
 ---

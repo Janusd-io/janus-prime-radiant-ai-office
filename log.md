@@ -1086,3 +1086,36 @@ Bumped CLAUDE.md to v0.10. Two additions in this pass:
 ### Cross-references / next steps
 - The schema linter Monday item (2912631119) from this morning's standup now has a v0.10-aware target: a linter should check four-axis edge presence per page type (e.g., decision pages must have `decided_by` + at least one causal `sources` entry + at least one entity edge), not just frontmatter field presence.
 - Marketing instance CLAUDE.md derivation will now inherit the multi-graph framing — relevant to Andrew's onboarding and to the federation pattern.
+
+## [2026-05-13 18:30] lint | post v0.10 schema bump | 327 pages scanned
+
+First lint after today's three ingest passes (122-file Jehad import, 3 Arxiv papers, CLAUDE.md v0.10 bump).
+
+### Inline fixes applied
+- 33 × `owner: michael` → `owner: michael-bruck` (v0.10: owner must be entity slug)
+- 27 × decision pages got `decided_by:` added (= owner value as safe default)
+- 13 × slug-alias rewrites: `whisperflow`→`wispr-flow`, `monday-com`→`monday`, `gcp`→`google-cloud`
+- 1 × `entities/departments/marketing/README.md` given minimal frontmatter (resolves the lone orphan)
+- 54 unique files modified
+
+### Net effect
+- Frontmatter violations: 46 → **0** ✅
+- Broken wikilinks: 192 refs / unique → 181 refs / 79 unique slugs
+- Broken `related:` refs: 62 → 30
+- Orphans: 1 → 0
+
+### Findings → `pulse/2026-05-13-lint.md`
+Three remediation categories surfaced (not auto-fixed, await your call):
+1. **Schema drift** — 13 concepts still in `decisions/concepts/`. Deferred to dedicated migration pass.
+2. **Missing-page promotions** — 8 candidate stubs (`n8n`, `notebooklm`, `marketo`, `github` as vendors; `knowledge-compilation` as concept; `vivian-balakrishnan` as person; `claude-code`/`anthropic-claude` as `claude` aliases).
+3. **Jehad's meeting-source refs** — ~10 meeting slugs Jehad referenced never made it into `sources/meetings/`. Stubs recommended for the 5+ ref meetings.
+
+### Clean
+0 stale claims · 0 orphans (post-fix) · 0 aging questions · 0 stale escalations · 0 duplicate slugs.
+
+### Schema-doc follow-up for v0.11
+- `README.md` files in federation subfolders don't fit the slug=filename rule. Either exclude README.md from the rule, or rename to `<dept>-federation.md`.
+
+### Counters
+- Ingest counter reset (most recent lint = this entry).
+- Lint cadence: previous lint 2026-05-12; this lint resolves 125+ items of accumulated ingest pressure.

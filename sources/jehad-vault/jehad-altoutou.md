@@ -41,7 +41,7 @@ Janus AI Office. Author and owner of the `/standup` skill (v3.13 at 2026-05-11).
 
 Primary engineering owner of:
 - the `/standup` skill (v3.x evolution, ISO alignment in progress)
-- recruitment-pipeline implementation work on the [[monday-com]] HR Dashboard board
+- recruitment-pipeline implementation work on the [[monday]] HR Dashboard board
 - the Fireflies webhook architecture for interview transcripts ([[2026-05-04-centralised-fireflies-webhook-for-interviews]])
 - the upcoming ISO facilitation skill build for [[simon-tarskih]]
 - the recruitment scoring Claude skill ([[2026-05-05-recruitment-scoring-as-claude-skill]])

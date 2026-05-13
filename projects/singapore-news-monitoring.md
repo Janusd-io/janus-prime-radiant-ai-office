@@ -7,7 +7,7 @@ updated: 2026-05-13
 departments: [marketing, ai-office]
 countries: [sg]
 status: active
-owner: michael
+owner: michael-bruck
 sources: [aio-2026-05-06, automations-2894742266, automations-2896179151, 2026-05-12-bonaventure-ai-native-call, jehad-vault-singapore-news-monitoring]
 related: [bonaventure-wong, andrew-soane, jehad-altoutou, slack, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-vivian-balakrishnan-llm-wiki-government, ingest-2026-05-12-1730-vivian-balakrishnan-and-factset]
 ---

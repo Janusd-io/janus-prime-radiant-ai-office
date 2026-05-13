@@ -6,6 +6,7 @@ created: 2026-05-12
 updated: 2026-05-12
 status: resolved
 owner: andrew-soane
+decided_by: andrew-soane
 departments: [marketing, ai-office]
 sources: [2026-05-12-andrew-onboarding-review]
 related: [andrew-soane, marketing-prime-radiant, bonaventure-wong, ai-native-janus-positioning, 2026-05-11-andrew-onboarding-plan]

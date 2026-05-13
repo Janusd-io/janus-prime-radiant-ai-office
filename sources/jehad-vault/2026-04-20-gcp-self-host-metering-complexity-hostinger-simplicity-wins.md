@@ -10,7 +10,7 @@ status: resolved
 owner: michael-bruck
 confidence: high
 sources: [jehad-vault-import-2026-05-13]
-related: [hostinger, gcp, n8n]
+related: [hostinger, google-cloud, n8n]
 captured_by: jehad-altoutou
 ---
 
@@ -31,7 +31,7 @@ In parallel, [[hostinger]] was evaluated as a simpler alternative (flat-rate VPS
 
 ## Why the old assumption failed
 
-The original design assumed [[gcp]] because Janus was already using Google Cloud for departmental services and managed services are GCP's strength. But n8n is not a GCP-native workload — it's a self-hosted container application. GCP's metering model (per-invocation, per-request) is designed for bursty, event-driven workloads, not steady-state container hosting. Hostinger's flat-rate VPS is the right tool for the job.
+The original design assumed [[google-cloud]] because Janus was already using Google Cloud for departmental services and managed services are GCP's strength. But n8n is not a GCP-native workload — it's a self-hosted container application. GCP's metering model (per-invocation, per-request) is designed for bursty, event-driven workloads, not steady-state container hosting. Hostinger's flat-rate VPS is the right tool for the job.
 
 ## The decision
 

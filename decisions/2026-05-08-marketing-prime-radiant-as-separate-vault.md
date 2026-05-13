@@ -8,6 +8,7 @@ sources: [jehad-vault-2026-05-08-marketing-prime-radiant-as-separate-vault]
 departments: [marketing, ai-office]
 status: resolved
 owner: michael-bruck
+decided_by: michael-bruck
 related: [marketing, marketing-prime-radiant, janus-prime-radiant-build, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, llm-wiki]
 ---
 

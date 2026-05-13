@@ -6,7 +6,7 @@ created: 2026-05-07
 updated: 2026-05-13
 departments: [ai-office]
 sources: [jehad-vault-import-2026-05-13]
-related: [jehad-altoutou, michael-bruck, ai-tool-evaluation, ai-tool-evaluation-framework, fireflies, monday-com, notion, linear, claude-code, standup-skill]
+related: [jehad-altoutou, michael-bruck, ai-tool-evaluation, ai-tool-evaluation-framework, fireflies, monday, notion, linear, claude-code, standup-skill]
 captured_by: jehad-altoutou
 ---
 
@@ -24,7 +24,7 @@ Janus AI Office's end-to-end post-standup processing pipeline: **Fireflies → M
 
 For each AIO standup, the skill consumes the [[fireflies]] transcript and writes:
 - A **Clean Meeting Summary** (5–7 bullets) plus time-bucketed next steps into the [[notion]] Operations Notebook (`## AIO DD Mon YYYY`).
-- Atomic [[monday-com]] updates: status changes, source-bumps, sub-item creates, Description Updates — all on the AIO Automations board (`5095012818`).
+- Atomic [[monday]] updates: status changes, source-bumps, sub-item creates, Description Updates — all on the AIO Automations board (`5095012818`).
 - Linear AIP status reconciliation (read-only by default; updates only when the transcript or completed Monday execution authorises it).
 
 ## Architecture (3-phase: Analyse → Plan → Execute)

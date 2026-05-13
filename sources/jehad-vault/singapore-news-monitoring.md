@@ -42,7 +42,7 @@ Fuel **round-table breakfast events** Bonaventure wants to seed; output is **con
 - **Per-source scrapers** — Jehad has prior scraper experience; build per-outlet scrapers for chosen Singapore sources.
 - **Semantic ranking** — score each item against Janus theme prompts.
 - **Slack delivery** — post curated items to a dedicated channel; format includes source, summary, why-it-matters reasoning.
-- Possibly involves [[whisperflow]] for voice-summary outputs (Phase 2, speculative).
+- Possibly involves [[wispr-flow]] for voice-summary outputs (Phase 2, speculative).
 
 ## Active dependencies
 

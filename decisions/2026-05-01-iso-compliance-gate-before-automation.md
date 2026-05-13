@@ -6,7 +6,8 @@ created: 2026-05-06
 updated: 2026-05-13
 departments: [ai-office, it-ops]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-01, jehad-vault-2026-05-01-iso-compliance-gate-before-automation]
 related: [ai-tool-evaluation]
 ---

@@ -5,7 +5,7 @@ slug: 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins
 created: 2026-05-06
 updated: 2026-05-13
 status: resolved
-owner: michael
+owner: michael-bruck
 departments: [ai-office, it-ops]
 countries: [sg, gb, us]
 confidence: high

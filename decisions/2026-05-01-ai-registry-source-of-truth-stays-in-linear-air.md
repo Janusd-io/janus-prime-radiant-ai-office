@@ -6,7 +6,8 @@ created: 2026-05-06
 updated: 2026-05-13
 departments: [ai-office]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-01, jehad-vault-2026-05-01-ai-registry-source-of-truth-stays-in-linear-air]
 related: [linear, ai-tool-evaluation, janus-prime-radiant-build]
 ---

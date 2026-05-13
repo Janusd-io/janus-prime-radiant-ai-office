@@ -5,7 +5,7 @@ slug: 2026-05-06-three-article-ingest-new-vendor-candidates
 created: 2026-05-06
 updated: 2026-05-06
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud]
 related: [2026-05-04-pinecone-nexus-launch, 2026-04-22-google-agentic-data-cloud, pinecone, google-cloud]
 ---

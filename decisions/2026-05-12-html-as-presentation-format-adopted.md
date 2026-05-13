@@ -5,7 +5,8 @@ slug: 2026-05-12-html-as-presentation-format-adopted
 created: 2026-05-12
 updated: 2026-05-12
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 departments: [ai-office, marketing, office-of-ceo]
 confidence: high
 sources: [2026-05-12-bonaventure-ai-native-call]

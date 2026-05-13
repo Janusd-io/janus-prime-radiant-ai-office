@@ -7,6 +7,7 @@ updated: 2026-05-13
 departments: [marketing, ai-office]
 status: resolved
 owner: michael-bruck
+decided_by: michael-bruck
 sources: [2026-05-08-andrew-marketing-prime-radiant, jehad-vault-2026-05-08-marketing-prime-radiant-greenlit-with-andrew]
 related: [andrew-soane, marketing, marketing-prime-radiant, janus-prime-radiant-build, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-as-separate-vault, llm-wiki]
 ---

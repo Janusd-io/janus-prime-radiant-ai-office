@@ -5,7 +5,7 @@ slug: ingest-2026-05-12-1730-vivian-balakrishnan-and-factset
 created: 2026-05-12
 updated: 2026-05-12
 departments: [ai-office, office-of-ceo, marketing]
-owner: michael
+owner: michael-bruck
 status: active
 sources: [2026-05-12-bonaventure-ai-native-call]
 related: [bonaventure-wong, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-vivian-balakrishnan-llm-wiki-government, singapore-news-monitoring]

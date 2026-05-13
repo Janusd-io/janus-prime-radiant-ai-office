@@ -8,7 +8,7 @@ departments: [ai-office, engineering, it-ops]
 status: active
 confidence: high
 sources: [jehad-vault-import-2026-05-13]
-related: [gcp]
+related: [google-cloud]
 captured_by: jehad-altoutou
 ---
 

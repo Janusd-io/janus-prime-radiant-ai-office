@@ -7,6 +7,7 @@ updated: 2026-05-13
 departments: [hr, ai-office]
 status: resolved
 owner: jehad-altoutou
+decided_by: jehad-altoutou
 sources: [aio-2026-05-07, jehad-vault-2026-05-07-rubric-scoring-as-claude-skill]
 related: [claude, recruitment-automation-pipeline, agent-skills, 2026-05-05-recruitment-scoring-as-claude-skill]
 ---

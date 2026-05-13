@@ -6,7 +6,8 @@ created: 2026-05-06
 updated: 2026-05-06
 departments: [ai-office]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-06]
 related: [linear, ai-tool-evaluation]
 ---

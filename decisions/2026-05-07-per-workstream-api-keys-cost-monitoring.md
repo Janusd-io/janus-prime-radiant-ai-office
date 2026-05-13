@@ -7,6 +7,7 @@ updated: 2026-05-07
 departments: [ai-office, finance, hr]
 status: resolved
 owner: jehad-altoutou
+decided_by: jehad-altoutou
 sources: [aio-2026-05-07]
 related: [claude, ann-greed, recruitment-automation-pipeline]
 ---

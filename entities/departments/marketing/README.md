@@ -1,3 +1,13 @@
+---
+type: department
+title: AIO × Marketing federation subfolder
+slug: marketing-readme
+created: 2026-05-12
+updated: 2026-05-13
+departments: [ai-office, marketing]
+related: [peer-to-peer-mesh-federation-pattern, marketing-prime-radiant, andrew-soane, ai-office, marketing]
+---
+
 # AIO × Marketing — shared subfolder
 
 > Mesh-federation subfolder per [[peer-to-peer-mesh-federation-pattern]]. This folder is the canonical home for content the AIO and Marketing Prime Radiant instances share — joint decisions, joint meeting notes, joint synthesis. Both vaults ingest from this folder.

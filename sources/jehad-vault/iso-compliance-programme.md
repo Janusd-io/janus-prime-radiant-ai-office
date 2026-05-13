@@ -8,7 +8,7 @@ departments: [it-ops, ai-office, office-of-ceo]
 status: active
 owner: michael-bruck
 sources: [jehad-vault-import-2026-05-13]
-related: [simon-tarskih, bonaventure-wong, michael-bruck, jehad-altoutou, ai-tool-evaluation-framework, ai-tool-evaluation-iso-procedure, iso-certification-programme, iso-ims-puls, whisperflow]
+related: [simon-tarskih, bonaventure-wong, michael-bruck, jehad-altoutou, ai-tool-evaluation-framework, ai-tool-evaluation-iso-procedure, iso-certification-programme, iso-ims-puls, wispr-flow]
 captured_by: jehad-altoutou
 ---
 
@@ -35,7 +35,7 @@ Multi-track programme:
 | **ISO documentation foundation** | Input → activities → output template captured for Janus's processes (the work Simon facilitates). | [[simon-tarskih]] | Recurring blocker — Michael following up across multiple AIO standups. |
 | **AI Tool Evaluation framework ISO alignment** | Make [[ai-tool-evaluation-framework]]'s gates and dossier requirements ISO-compliant. | [[michael-bruck]] + Simon Tarskih | Active. |
 | **Standup skill v3.x ISO alignment** | Skill v3.x continues iterating until ISO-aligned; v2.1 stays in production until v3 ships. | [[jehad-altoutou]] | Active. |
-| **ISO facilitation skill build** | New Claude skill scaffolding Simon's facilitated sessions; candidate consumer of [[whisperflow]] for voice capture. | [[jehad-altoutou]] | In definition. |
+| **ISO facilitation skill build** | New Claude skill scaffolding Simon's facilitated sessions; candidate consumer of [[wispr-flow]] for voice capture. | [[jehad-altoutou]] | In definition. |
 | **ISO compliance gate enforcement** | Automation projects can't begin until ISO documentation for the relevant scope is complete. | [[michael-bruck]] | Policy active. |
 
 ## Roles
@@ -47,7 +47,7 @@ Multi-track programme:
 
 ## Cross-references
 
-- Tools / vendors implicated: [[whisperflow]] (voice capture for facilitation), [[claude-code]] (skill substrate), [[notion]] (Operations Notebook journal), [[fireflies]] (transcripts of facilitated sessions).
+- Tools / vendors implicated: [[wispr-flow]] (voice capture for facilitation), [[claude-code]] (skill substrate), [[notion]] (Operations Notebook journal), [[fireflies]] (transcripts of facilitated sessions).
 - Adjacent process: AI Policy gate — separate but adjacent governance gate; ISO is foundational, AI Policy gate is operational.
 
 ## Open / pending

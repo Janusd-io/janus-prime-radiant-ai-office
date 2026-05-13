@@ -8,7 +8,7 @@ departments: [ai-office, it-ops]
 status: resolved
 owner: michael-bruck
 sources: [jehad-vault-import-2026-05-13]
-related: [ai-tool-evaluation-framework, iso-certification-programme, iso-ims-puls, whisperflow]
+related: [ai-tool-evaluation-framework, iso-certification-programme, iso-ims-puls, wispr-flow]
 captured_by: jehad-altoutou
 ---
 
@@ -29,7 +29,7 @@ Without the ISO documentation in place, automation projects risk shipping into a
 ## Implications
 
 - Automation projects are blocked until ISO documentation for the relevant scope is complete.
-- A new skill ("Build ISO facilitation skill for Simon") is being developed with input/activities/output schema, draft questions list, and [[whisperflow|Whisper Flow]] voice-capture integration.
+- A new skill ("Build ISO facilitation skill for Simon") is being developed with input/activities/output schema, draft questions list, and [[wispr-flow|Whisper Flow]] voice-capture integration.
 - ISO standards interpretation must align with Bonaventure's and Simon's expectations — judgement call rather than mechanical compliance.
 
 ## Related

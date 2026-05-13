@@ -5,7 +5,7 @@ title: Should Cowork formal approval (item 2891633403) create a process page or 
 created: 2026-05-06
 updated: 2026-05-07
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [automations-2891633403]
 related: [ai-policy-gate-approval]
 ---

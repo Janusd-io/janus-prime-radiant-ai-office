@@ -5,7 +5,7 @@ title: Which Monday items justify their own project hub pages?
 created: 2026-05-06
 updated: 2026-05-07
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [automations-2881310536, automations-2891609456, automations-2891633403, automations-2894742266, automations-2896179151, automations-2896120147, automations-2896117600]
 related: [recruitment-automation-pipeline, singapore-news-monitoring, it-department-standup-pilot, it-helpdesk-triage-bot, crm-evaluation-and-selection]
 ---

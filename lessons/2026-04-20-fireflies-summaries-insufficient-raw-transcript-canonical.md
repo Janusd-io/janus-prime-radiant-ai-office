@@ -5,7 +5,7 @@ slug: 2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical
 created: 2026-05-06
 updated: 2026-05-13
 status: resolved
-owner: michael
+owner: michael-bruck
 departments: [ai-office]
 countries: [sg, gb, us]
 confidence: high

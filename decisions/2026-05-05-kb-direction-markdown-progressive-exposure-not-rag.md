@@ -6,7 +6,8 @@ created: 2026-05-06
 updated: 2026-05-13
 departments: [ai-office]
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 sources: [aio-2026-05-05, jehad-vault-2026-05-05-kb-direction-markdown-progressive-exposure-not-rag]
 related: [llm-wiki, janus-prime-radiant-build, retrieval-augmented-generation, post-rag-agent-data-stack, andrej-karpathy]
 ---

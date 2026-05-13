@@ -5,7 +5,7 @@ slug: 2026-05-06-karpathy-gist-new-vendor-candidates
 created: 2026-05-06
 updated: 2026-05-06
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [karpathy-llm-wiki]
 related: [llm-wiki, janus-prime-radiant-build, claude, vs-code, zed]
 ---

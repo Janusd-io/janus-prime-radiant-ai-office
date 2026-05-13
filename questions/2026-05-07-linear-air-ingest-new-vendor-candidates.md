@@ -5,7 +5,7 @@ slug: 2026-05-07-linear-air-ingest-new-vendor-candidates
 created: 2026-05-07
 updated: 2026-05-07
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [air-39, air-38, air-20, air-21]
 related: [nemoclaw, viktor, openclaw]
 ---

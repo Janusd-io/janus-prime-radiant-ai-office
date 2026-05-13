@@ -5,7 +5,8 @@ slug: 2026-04-23-monday-hostinger-notion-stack-adopted
 created: 2026-05-06
 updated: 2026-05-12
 status: resolved
-owner: michael
+owner: michael-bruck
+decided_by: michael-bruck
 departments: [ai-office, it-ops, office-of-ceo]
 countries: [sg, gb, us]
 confidence: high

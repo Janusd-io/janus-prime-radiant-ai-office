@@ -7,6 +7,7 @@ updated: 2026-05-06
 departments: [ai-office, marketing]
 status: resolved
 owner: jehad-altoutou
+decided_by: jehad-altoutou
 sources: [aio-2026-05-06]
 ---
 

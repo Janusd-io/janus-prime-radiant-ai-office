@@ -6,6 +6,7 @@ created: 2026-05-12
 updated: 2026-05-12
 status: resolved
 owner: bonaventure-wong
+decided_by: bonaventure-wong
 departments: [office-of-ceo, marketing, ai-office]
 countries: [sg, ae, gb]
 confidence: high

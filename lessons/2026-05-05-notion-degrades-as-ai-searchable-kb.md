@@ -6,7 +6,7 @@ created: 2026-05-06
 updated: 2026-05-07
 departments: [ai-office]
 status: resolved
-owner: michael
+owner: michael-bruck
 sources: [aio-2026-05-05, aio-2026-05-06]
 related: [notion, llm-wiki, janus-prime-radiant-build, retrieval-augmented-generation, post-rag-agent-data-stack]
 ---

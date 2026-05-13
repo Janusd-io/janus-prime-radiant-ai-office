@@ -6,7 +6,7 @@ created: 2026-05-07
 updated: 2026-05-13
 departments: [marketing, ai-office, office-of-ceo]
 status: active
-owner: michael
+owner: michael-bruck
 sources: [aio-2026-05-06, andrew-marketing-discussion-tracker, automations-2882205554, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, jehad-vault-crm-evaluation-and-selection]
 related: [andrew-soane, bonaventure-wong, michael-bruck, euclid-wong, ai-tool-evaluation, 2026-05-06-monday-com-to-production-this-week, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market]
 ---
