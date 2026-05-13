@@ -1,0 +1,970 @@
+[
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical.md",
+    "type": "lesson",
+    "slug": "2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical",
+    "target": "lessons/2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical.md",
+    "status": "DUP",
+    "title": "Fireflies summaries are insufficient \u2014 raw transcript must be canonical"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins.md",
+    "type": "lesson",
+    "slug": "2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins",
+    "target": "lessons/2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins.md",
+    "status": "DUP",
+    "title": "GCP metering complexity vs Hostinger simplicity \u2014 self-host default changed"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-20-iso-first-stack-architectural-pivot.md",
+    "type": "decision",
+    "slug": "2026-04-20-iso-first-stack-architectural-pivot",
+    "target": "decisions/2026-04-20-iso-first-stack-architectural-pivot.md",
+    "status": "DUP",
+    "title": "ISO-First Stack Architectural Pivot \u2014 CEO Executive Management System Reframe"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-decommission-signature-hound.md",
+    "type": "decision",
+    "slug": "2026-04-22-decommission-signature-hound",
+    "target": "decisions/2026-04-22-decommission-signature-hound.md",
+    "status": "NEW",
+    "title": "Decommission Signature Hound dependency"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-evaluate-openai-codex-as-claude-fallback.md",
+    "type": "decision",
+    "slug": "2026-04-22-evaluate-openai-codex-as-claude-fallback",
+    "target": "decisions/2026-04-22-evaluate-openai-codex-as-claude-fallback.md",
+    "status": "NEW",
+    "title": "Evaluate OpenAI Codex as a Claude Code fallback"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-move-obsidian-to-sandbox.md",
+    "type": "decision",
+    "slug": "2026-04-22-move-obsidian-to-sandbox",
+    "target": "decisions/2026-04-22-move-obsidian-to-sandbox.md",
+    "status": "NEW",
+    "title": "Move Obsidian from production to sandbox"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-per-user-data-control-hard-requirement-agent-platforms.md",
+    "type": "decision",
+    "slug": "2026-04-22-per-user-data-control-hard-requirement-agent-platforms",
+    "target": "decisions/2026-04-22-per-user-data-control-hard-requirement-agent-platforms.md",
+    "status": "DUP",
+    "title": "Per-user, source-platform-faithful access control is a hard requirement for agent/integration platforms"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-reject-victor-slack-agent.md",
+    "type": "decision",
+    "slug": "2026-04-22-reject-victor-slack-agent",
+    "target": "decisions/2026-04-22-reject-victor-slack-agent.md",
+    "status": "NEW",
+    "title": "Reject Victor Slack agent over RBAC failure"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-22-self-host-n8n-on-hostinger.md",
+    "type": "decision",
+    "slug": "2026-04-22-self-host-n8n-on-hostinger",
+    "target": "decisions/2026-04-22-self-host-n8n-on-hostinger.md",
+    "status": "NEW",
+    "title": "Self-host n8n on Hostinger instead of GCP"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-04-23-monday-hostinger-notion-stack-adopted.md",
+    "type": "decision",
+    "slug": "2026-04-23-monday-hostinger-notion-stack-adopted",
+    "target": "decisions/2026-04-23-monday-hostinger-notion-stack-adopted.md",
+    "status": "DUP",
+    "title": "Monday.com + Hostinger + Notion tech stack adopted as Janus operations foundation"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-ai-registry-source-of-truth-stays-in-linear-air.md",
+    "type": "decision",
+    "slug": "2026-05-01-ai-registry-source-of-truth-stays-in-linear-air",
+    "target": "decisions/2026-05-01-ai-registry-source-of-truth-stays-in-linear-air.md",
+    "status": "DUP",
+    "title": "AI Tools Registry source of truth stays in Linear AIR; Monday AITR deprecated"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-build-recruitment-tracker-in-hr-dashboard.md",
+    "type": "decision",
+    "slug": "2026-05-01-build-recruitment-tracker-in-hr-dashboard",
+    "target": "decisions/2026-05-01-build-recruitment-tracker-in-hr-dashboard.md",
+    "status": "NEW",
+    "title": "Add a recruitment tracker module to the HR dashboard"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-fireflies-webhooks-for-post-interview-scoring.md",
+    "type": "decision",
+    "slug": "2026-05-01-fireflies-webhooks-for-post-interview-scoring",
+    "target": "decisions/2026-05-01-fireflies-webhooks-for-post-interview-scoring.md",
+    "status": "NEW",
+    "title": "Use Fireflies webhooks to feed post-interview scoring"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-google-drive-folder-structure-for-cvs.md",
+    "type": "decision",
+    "slug": "2026-05-01-google-drive-folder-structure-for-cvs",
+    "target": "decisions/2026-05-01-google-drive-folder-structure-for-cvs.md",
+    "status": "NEW",
+    "title": "Google Drive folder structure for CV storage"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-iso-compliance-gate-before-automation.md",
+    "type": "decision",
+    "slug": "2026-05-01-iso-compliance-gate-before-automation",
+    "target": "decisions/2026-05-01-iso-compliance-gate-before-automation.md",
+    "status": "DUP",
+    "title": "ISO compliance becomes a gate before automation projects begin"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-park-easter-egg-critical-thinking-assessment.md",
+    "type": "decision",
+    "slug": "2026-05-01-park-easter-egg-critical-thinking-assessment",
+    "target": "decisions/2026-05-01-park-easter-egg-critical-thinking-assessment.md",
+    "status": "NEW",
+    "title": "Park the Easter-egg critical-thinking assessment"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-remove-emergency-maternity-paid-from-leave-types.md",
+    "type": "decision",
+    "slug": "2026-05-01-remove-emergency-maternity-paid-from-leave-types",
+    "target": "decisions/2026-05-01-remove-emergency-maternity-paid-from-leave-types.md",
+    "status": "NEW",
+    "title": "Remove Emergency and Maternity-Paid from current leave types"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-slack-front-end-deel-back-end-for-leave.md",
+    "type": "decision",
+    "slug": "2026-05-01-slack-front-end-deel-back-end-for-leave",
+    "target": "decisions/2026-05-01-slack-front-end-deel-back-end-for-leave.md",
+    "status": "NEW",
+    "title": "Slack remains leave-request front-end; Deel.com is back-end"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-01-wait-for-bonaventure-hr-template-before-finalising.md",
+    "type": "decision",
+    "slug": "2026-05-01-wait-for-bonaventure-hr-template-before-finalising",
+    "target": "decisions/2026-05-01-wait-for-bonaventure-hr-template-before-finalising.md",
+    "status": "NEW",
+    "title": "\"Wait for Bonaventure's HR Claude template before finalising assessment format\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-ai-policy-gate-is-binary-four-of-four.md",
+    "type": "decision",
+    "slug": "2026-05-04-ai-policy-gate-is-binary-four-of-four",
+    "target": "decisions/2026-05-04-ai-policy-gate-is-binary-four-of-four.md",
+    "status": "NEW",
+    "title": "AI policy evaluation gate is a 4-of-4 hard binary check"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-centralised-fireflies-webhook-for-interviews.md",
+    "type": "decision",
+    "slug": "2026-05-04-centralised-fireflies-webhook-for-interviews",
+    "target": "decisions/2026-05-04-centralised-fireflies-webhook-for-interviews.md",
+    "status": "DUP",
+    "title": "Centralised Fireflies webhook for interview transcripts"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-discard-fireflies-summary.md",
+    "type": "decision",
+    "slug": "2026-05-04-discard-fireflies-summary",
+    "target": "decisions/2026-05-04-discard-fireflies-summary.md",
+    "status": "NEW",
+    "title": "\"Ignore Fireflies' own summary; use only the raw transcript\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-iso-source-input-activity-output-template.md",
+    "type": "decision",
+    "slug": "2026-05-04-iso-source-input-activity-output-template",
+    "target": "decisions/2026-05-04-iso-source-input-activity-output-template.md",
+    "status": "NEW",
+    "title": "Adopt Source/Input/Activity/Output as the standard ISO-style template for every pipeline stage"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-monday-for-projects-linear-for-registry.md",
+    "type": "decision",
+    "slug": "2026-05-04-monday-for-projects-linear-for-registry",
+    "target": "decisions/2026-05-04-monday-for-projects-linear-for-registry.md",
+    "status": "NEW",
+    "title": "\"Split tool tracking from project tracking: Linear for AI Registry, Monday for projects\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-recruitment-execution-on-hr-dashboard-board.md",
+    "type": "decision",
+    "slug": "2026-05-04-recruitment-execution-on-hr-dashboard-board",
+    "target": "decisions/2026-05-04-recruitment-execution-on-hr-dashboard-board.md",
+    "status": "DUP",
+    "title": "Recruitment automation execution lives on the HR Dashboard Monday board"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-reject-vs-watchlist-rejection-paths.md",
+    "type": "decision",
+    "slug": "2026-05-04-reject-vs-watchlist-rejection-paths",
+    "target": "decisions/2026-05-04-reject-vs-watchlist-rejection-paths.md",
+    "status": "NEW",
+    "title": "Split rejection into hard-reject and watch-list with documented rationale"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-standup-confidence-bands.md",
+    "type": "decision",
+    "slug": "2026-05-04-standup-confidence-bands",
+    "target": "decisions/2026-05-04-standup-confidence-bands.md",
+    "status": "NEW",
+    "title": "Use three confidence bands for standup-skill auto-updates"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-04-tool-intake-form-fields.md",
+    "type": "decision",
+    "slug": "2026-05-04-tool-intake-form-fields",
+    "target": "decisions/2026-05-04-tool-intake-form-fields.md",
+    "status": "NEW",
+    "title": "Lock the Slack intake form fields for new AI tool requests"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-crm-shortlist-for-evaluation.md",
+    "type": "decision",
+    "slug": "2026-05-05-crm-shortlist-for-evaluation",
+    "target": "decisions/2026-05-05-crm-shortlist-for-evaluation.md",
+    "status": "NEW",
+    "title": "\"CRM shortlist for AI Registry evaluation: HubSpot, Attio, Monday CRM, Salesforce\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-defer-finance-and-legal-from-tool-eval-pipeline.md",
+    "type": "decision",
+    "slug": "2026-05-05-defer-finance-and-legal-from-tool-eval-pipeline",
+    "target": "decisions/2026-05-05-defer-finance-and-legal-from-tool-eval-pipeline.md",
+    "status": "NEW",
+    "title": "Finance/contracts/legal are not part of the tool-evaluation pipeline"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-five-marketing-capabilities-scoped.md",
+    "type": "decision",
+    "slug": "2026-05-05-five-marketing-capabilities-scoped",
+    "target": "decisions/2026-05-05-five-marketing-capabilities-scoped.md",
+    "status": "NEW",
+    "title": "Scope five core marketing capabilities for AI build-out"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-flow-first-skill-later.md",
+    "type": "decision",
+    "slug": "2026-05-05-flow-first-skill-later",
+    "target": "decisions/2026-05-05-flow-first-skill-later.md",
+    "status": "NEW",
+    "title": "Document the evaluation flow first; convert to a Claude skill later"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-github-as-skill-library.md",
+    "type": "decision",
+    "slug": "2026-05-05-github-as-skill-library",
+    "target": "decisions/2026-05-05-github-as-skill-library.md",
+    "status": "NEW",
+    "title": "\"GitHub is the skill library, treated as source code\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-janus-needs-a-crm.md",
+    "type": "decision",
+    "slug": "2026-05-05-janus-needs-a-crm",
+    "target": "decisions/2026-05-05-janus-needs-a-crm.md",
+    "status": "NEW",
+    "title": "Janus must adopt a CRM despite the long-term SaaS-replacement vision"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-kb-direction-markdown-progressive-exposure-not-rag.md",
+    "type": "decision",
+    "slug": "2026-05-05-kb-direction-markdown-progressive-exposure-not-rag",
+    "target": "decisions/2026-05-05-kb-direction-markdown-progressive-exposure-not-rag.md",
+    "status": "DUP",
+    "title": "KB direction \u2014 Markdown + front-matter YAML + progressive exposure; not RAG"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-markdown-as-canonical-format.md",
+    "type": "decision",
+    "slug": "2026-05-05-markdown-as-canonical-format",
+    "target": "decisions/2026-05-05-markdown-as-canonical-format.md",
+    "status": "NEW",
+    "title": "Markdown is the canonical interchange format for AI-marketing source material"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-move-eval-table-to-shared-google-doc.md",
+    "type": "decision",
+    "slug": "2026-05-05-move-eval-table-to-shared-google-doc",
+    "target": "decisions/2026-05-05-move-eval-table-to-shared-google-doc.md",
+    "status": "NEW",
+    "title": "Move the evaluation framework table from Word to a shared Google Doc"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-notion-degrades-as-ai-searchable-kb.md",
+    "type": "lesson",
+    "slug": "2026-05-05-notion-degrades-as-ai-searchable-kb",
+    "target": "lessons/2026-05-05-notion-degrades-as-ai-searchable-kb.md",
+    "status": "DUP",
+    "title": "Notion degrades as an AI-searchable knowledge base at scale"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-policy-baked-into-skill-not-separate-input.md",
+    "type": "decision",
+    "slug": "2026-05-05-policy-baked-into-skill-not-separate-input",
+    "target": "decisions/2026-05-05-policy-baked-into-skill-not-separate-input.md",
+    "status": "NEW",
+    "title": "\"AI policy is baked into the skill, not passed as a separate input\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-recruitment-scoring-as-claude-skill.md",
+    "type": "decision",
+    "slug": "2026-05-05-recruitment-scoring-as-claude-skill",
+    "target": "decisions/2026-05-05-recruitment-scoring-as-claude-skill.md",
+    "status": "DUP",
+    "title": "Recruitment scoring moves from a Bonaventure project + thread to a reusable Claude skill"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-skills-follow-input-activity-output-structure.md",
+    "type": "decision",
+    "slug": "2026-05-05-skills-follow-input-activity-output-structure",
+    "target": "decisions/2026-05-05-skills-follow-input-activity-output-structure.md",
+    "status": "NEW",
+    "title": "Skills will be written in input/activity/output ISO structure"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-slack-is-canonical-source-of-tool-requests.md",
+    "type": "decision",
+    "slug": "2026-05-05-slack-is-canonical-source-of-tool-requests",
+    "target": "decisions/2026-05-05-slack-is-canonical-source-of-tool-requests.md",
+    "status": "NEW",
+    "title": "Slack is the canonical source for AI tool-evaluation requests"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-stand-up-ai-marketing-workspace.md",
+    "type": "decision",
+    "slug": "2026-05-05-stand-up-ai-marketing-workspace",
+    "target": "decisions/2026-05-05-stand-up-ai-marketing-workspace.md",
+    "status": "NEW",
+    "title": "Stand up dedicated AI-marketing workspace (Claude project + Drive folder + Slack channel)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-start-with-source-and-input-only.md",
+    "type": "decision",
+    "slug": "2026-05-05-start-with-source-and-input-only",
+    "target": "decisions/2026-05-05-start-with-source-and-input-only.md",
+    "status": "NEW",
+    "title": "\"Document only source and input first, defer activity/output\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-05-website-build-in-house-not-agency.md",
+    "type": "decision",
+    "slug": "2026-05-05-website-build-in-house-not-agency",
+    "target": "decisions/2026-05-05-website-build-in-house-not-agency.md",
+    "status": "NEW",
+    "title": "\"Build the new Janus website in-house with Lovable + Claude, not an agency\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-add-claude-cowork-to-approved-tools.md",
+    "type": "decision",
+    "slug": "2026-05-06-add-claude-cowork-to-approved-tools",
+    "target": "decisions/2026-05-06-add-claude-cowork-to-approved-tools.md",
+    "status": "NEW",
+    "title": "Add Claude Cowork to the v3 approved-tools list"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-ai-tool-taxonomy-scope-policy.md",
+    "type": "decision",
+    "slug": "2026-05-06-ai-tool-taxonomy-scope-policy",
+    "target": "decisions/2026-05-06-ai-tool-taxonomy-scope-policy.md",
+    "status": "DUP",
+    "title": "AI Registry scope \u2014 exclude non-AI SaaS tools (Monday, Notion, Deel, Xero, Airwallex)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-andrew-as-standup-skill-rollout-pilot.md",
+    "type": "decision",
+    "slug": "2026-05-06-andrew-as-standup-skill-rollout-pilot",
+    "target": "decisions/2026-05-06-andrew-as-standup-skill-rollout-pilot.md",
+    "status": "DUP",
+    "title": "Andrew is the formal standup-skill rollout pilot"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-backlog-cleanup-no-return-to-backlog.md",
+    "type": "decision",
+    "slug": "2026-05-06-backlog-cleanup-no-return-to-backlog",
+    "target": "decisions/2026-05-06-backlog-cleanup-no-return-to-backlog.md",
+    "status": "DUP",
+    "title": "Backlog cleanup principle \u2014 post-evaluation tools never return to Backlog"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-monday-com-to-production-this-week.md",
+    "type": "decision",
+    "slug": "2026-05-06-monday-com-to-production-this-week",
+    "target": "decisions/2026-05-06-monday-com-to-production-this-week.md",
+    "status": "DUP",
+    "title": "Push Monday.com from sandbox to production this week (CRM lock-in same window)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-monday-not-an-ai-tool.md",
+    "type": "decision",
+    "slug": "2026-05-06-monday-not-an-ai-tool",
+    "target": "decisions/2026-05-06-monday-not-an-ai-tool.md",
+    "status": "NEW",
+    "title": "Monday.com is not an AI tool and stays out of the AI registry"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-monday-rollout-standard-issue.md",
+    "type": "decision",
+    "slug": "2026-05-06-monday-rollout-standard-issue",
+    "target": "decisions/2026-05-06-monday-rollout-standard-issue.md",
+    "status": "NEW",
+    "title": "Monday.com will be rolled out company-wide as standard issue"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-notion-role-shift-journal-not-knowledge-base.md",
+    "type": "decision",
+    "slug": "2026-05-06-notion-role-shift-journal-not-knowledge-base",
+    "target": "decisions/2026-05-06-notion-role-shift-journal-not-knowledge-base.md",
+    "status": "DUP",
+    "title": "Notion's role shifts to journal + dept pages; AI-searchable knowledge moves to Markdown/YAML"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-pilot-knowledge-pipeline-with-it.md",
+    "type": "decision",
+    "slug": "2026-05-06-pilot-knowledge-pipeline-with-it",
+    "target": "decisions/2026-05-06-pilot-knowledge-pipeline-with-it.md",
+    "status": "NEW",
+    "title": "Pilot the Fireflies-to-Monday-Notion-Linear knowledge pipeline with IT Ops first"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-skills-stay-as-skills-not-plugins.md",
+    "type": "decision",
+    "slug": "2026-05-06-skills-stay-as-skills-not-plugins",
+    "target": "decisions/2026-05-06-skills-stay-as-skills-not-plugins.md",
+    "status": "DUP",
+    "title": "Skills remain as skills (not plugins)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-slack-tool-intake-as-agentic-workflow-not-bot.md",
+    "type": "decision",
+    "slug": "2026-05-06-slack-tool-intake-as-agentic-workflow-not-bot",
+    "target": "decisions/2026-05-06-slack-tool-intake-as-agentic-workflow-not-bot.md",
+    "status": "DUP",
+    "title": "Slack tool-intake is an agentic workflow, not a bot"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-06-standup-skill-v3-12-self-correcting-behavior.md",
+    "type": "decision",
+    "slug": "2026-05-06-standup-skill-v3-12-self-correcting-behavior",
+    "target": "decisions/2026-05-06-standup-skill-v3-12-self-correcting-behavior.md",
+    "status": "DUP",
+    "title": "Standup skill v3.12 demonstrates self-correcting behavior in Linear AIR"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-ai-office-and-it-pilot-drive-structure.md",
+    "type": "decision",
+    "slug": "2026-05-07-ai-office-and-it-pilot-drive-structure",
+    "target": "decisions/2026-05-07-ai-office-and-it-pilot-drive-structure.md",
+    "status": "NEW",
+    "title": "AI Office and IT pilot the Shared Drive + groups structure first"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-ai-office-knowledge-stack-stays-internal.md",
+    "type": "decision",
+    "slug": "2026-05-07-ai-office-knowledge-stack-stays-internal",
+    "target": "decisions/2026-05-07-ai-office-knowledge-stack-stays-internal.md",
+    "status": "NEW",
+    "title": "\"AI Office's Linear/Monday/Notion/Fireflies/Claude stack stays AI-Office-internal\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-department-head-owns-contributors.md",
+    "type": "decision",
+    "slug": "2026-05-07-department-head-owns-contributors",
+    "target": "decisions/2026-05-07-department-head-owns-contributors.md",
+    "status": "NEW",
+    "title": "\"Department heads, not IT, manage contributor membership on their drives\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-google-groups-drive-permissions.md",
+    "type": "decision",
+    "slug": "2026-05-07-google-groups-drive-permissions",
+    "target": "decisions/2026-05-07-google-groups-drive-permissions.md",
+    "status": "NEW",
+    "title": "\"Drive permissions are managed via Google Groups, not per-user grants\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-google-shared-drives-as-company-doc-store.md",
+    "type": "decision",
+    "slug": "2026-05-07-google-shared-drives-as-company-doc-store",
+    "target": "decisions/2026-05-07-google-shared-drives-as-company-doc-store.md",
+    "status": "NEW",
+    "title": "Google Shared Drives are the company-wide document store"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-llm-wiki-extends-to-marketing-domain.md",
+    "type": "decision",
+    "slug": "2026-05-07-llm-wiki-extends-to-marketing-domain",
+    "target": "decisions/2026-05-07-llm-wiki-extends-to-marketing-domain.md",
+    "status": "DUP",
+    "title": "LLM Wiki prototype validated; pattern extends to marketing-domain knowledge tool"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-llm-wiki-validates-capture-everything.md",
+    "type": "lesson",
+    "slug": "2026-05-07-llm-wiki-validates-capture-everything",
+    "target": "lessons/2026-05-07-llm-wiki-validates-capture-everything.md",
+    "status": "DUP",
+    "title": "LLM Wiki validates the \"capture everything\" thesis \u2014 knowledge surfaces only when written down"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-per-workstream-api-keys-cost-monitoring.md",
+    "type": "decision",
+    "slug": "2026-05-07-per-workstream-api-keys-cost-monitoring",
+    "target": "decisions/2026-05-07-per-workstream-api-keys-cost-monitoring.md",
+    "status": "DUP",
+    "title": "Per-workstream Claude API keys with weekly cost reporting to HR + finance"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-public-restricted-folder-split-per-department.md",
+    "type": "decision",
+    "slug": "2026-05-07-public-restricted-folder-split-per-department",
+    "target": "decisions/2026-05-07-public-restricted-folder-split-per-department.md",
+    "status": "NEW",
+    "title": "Each department Shared Drive splits into a public and a restricted folder"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-07-rubric-scoring-as-claude-skill.md",
+    "type": "decision",
+    "slug": "2026-05-07-rubric-scoring-as-claude-skill",
+    "target": "decisions/2026-05-07-rubric-scoring-as-claude-skill.md",
+    "status": "DUP",
+    "title": "HR Rubric scoring rebuilt as a reusable Claude skill (API direct; MCP for low-volume only)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-ai-ops-three-phase-orchestration.md",
+    "type": "decision",
+    "slug": "2026-05-08-ai-ops-three-phase-orchestration",
+    "target": "decisions/2026-05-08-ai-ops-three-phase-orchestration.md",
+    "status": "NEW",
+    "title": "\"AI Ops task pipeline structured as three-phase orchestration (Analyze, Plan, Execute)\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-assessify-mcp-as-hr-claude-surface.md",
+    "type": "decision",
+    "slug": "2026-05-08-assessify-mcp-as-hr-claude-surface",
+    "target": "decisions/2026-05-08-assessify-mcp-as-hr-claude-surface.md",
+    "status": "NEW",
+    "title": "Assessify exposes recruitment pipeline to Claude via MCP"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-fireflies-summaries-rejected-use-raw-transcript.md",
+    "type": "decision",
+    "slug": "2026-05-08-fireflies-summaries-rejected-use-raw-transcript",
+    "target": "decisions/2026-05-08-fireflies-summaries-rejected-use-raw-transcript.md",
+    "status": "NEW",
+    "title": "Reject Fireflies summaries; ingest only raw transcripts"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-iso-process-template-shape.md",
+    "type": "decision",
+    "slug": "2026-05-08-iso-process-template-shape",
+    "target": "decisions/2026-05-08-iso-process-template-shape.md",
+    "status": "NEW",
+    "title": "\"ISO/IMS process documents follow Simon's standard structure: source, receiver, inputs, activities, controls, resources\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-marketing-prime-radiant-as-separate-vault.md",
+    "type": "decision",
+    "slug": "2026-05-08-marketing-prime-radiant-as-separate-vault",
+    "target": "decisions/2026-05-08-marketing-prime-radiant-as-separate-vault.md",
+    "status": "DUP",
+    "title": "Marketing Prime Radiant \u2014 separate Drive vault + own CLAUDE.md"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-marketing-prime-radiant-greenlit-with-andrew.md",
+    "type": "decision",
+    "slug": "2026-05-08-marketing-prime-radiant-greenlit-with-andrew",
+    "target": "decisions/2026-05-08-marketing-prime-radiant-greenlit-with-andrew.md",
+    "status": "DUP",
+    "title": "Marketing Prime Radiant greenlit with Andrew"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-new-recruiter-owns-rubric-fine-tuning.md",
+    "type": "decision",
+    "slug": "2026-05-08-new-recruiter-owns-rubric-fine-tuning",
+    "target": "decisions/2026-05-08-new-recruiter-owns-rubric-fine-tuning.md",
+    "status": "NEW",
+    "title": "Incoming recruiter (starts next month) will own scorecard and JD fine-tuning"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-obsidian-as-personal-and-dept-brain.md",
+    "type": "decision",
+    "slug": "2026-05-08-obsidian-as-personal-and-dept-brain",
+    "target": "decisions/2026-05-08-obsidian-as-personal-and-dept-brain.md",
+    "status": "NEW",
+    "title": "Adopt Obsidian as the substrate for personal and department-level Janus brains with shared-folder federation"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-package-iso-template-as-skill.md",
+    "type": "decision",
+    "slug": "2026-05-08-package-iso-template-as-skill",
+    "target": "decisions/2026-05-08-package-iso-template-as-skill.md",
+    "status": "NEW",
+    "title": "Package the ISO process generator as a reusable Claude skill for other departments"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-per-department-prime-radiant-instances.md",
+    "type": "decision",
+    "slug": "2026-05-08-per-department-prime-radiant-instances",
+    "target": "decisions/2026-05-08-per-department-prime-radiant-instances.md",
+    "status": "NEW",
+    "title": "Each Janus department gets its own Prime Radiant instance"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-prime-radiant-storage-on-shared-drive.md",
+    "type": "decision",
+    "slug": "2026-05-08-prime-radiant-storage-on-shared-drive",
+    "target": "decisions/2026-05-08-prime-radiant-storage-on-shared-drive.md",
+    "status": "NEW",
+    "title": "\"Prime Radiant vault lives on Janus Google Shared Drive, not personal Drive\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-signals-sensors-inferences-input-architecture.md",
+    "type": "lesson",
+    "slug": "2026-05-08-signals-sensors-inferences-input-architecture",
+    "target": "lessons/2026-05-08-signals-sensors-inferences-input-architecture.md",
+    "status": "DUP",
+    "title": "Signals \u2192 sensors \u2192 inferences \u2014 design the input array, the AI does the rest"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-08-wiki-vs-brain-metaphor-by-audience.md",
+    "type": "lesson",
+    "slug": "2026-05-08-wiki-vs-brain-metaphor-by-audience",
+    "target": "lessons/2026-05-08-wiki-vs-brain-metaphor-by-audience.md",
+    "status": "DUP",
+    "title": "\"Wiki\" vs \"brain\" \u2014 the supporting metaphor needs to match the audience"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-generalise-factset-to-news-sources.md",
+    "type": "decision",
+    "slug": "2026-05-12-generalise-factset-to-news-sources",
+    "target": "decisions/2026-05-12-generalise-factset-to-news-sources.md",
+    "status": "NEW",
+    "title": "\"Drop FactSet name from the deck; generalise to 'news sources / information gathering'\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-interim-lead-capture-via-google-form-sheet.md",
+    "type": "decision",
+    "slug": "2026-05-12-interim-lead-capture-via-google-form-sheet",
+    "target": "decisions/2026-05-12-interim-lead-capture-via-google-form-sheet.md",
+    "status": "NEW",
+    "title": "\"Interim Singapore lead capture via Google Form into Google Sheets, pre-CRM\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-reorder-deck-outputs.md",
+    "type": "decision",
+    "slug": "2026-05-12-reorder-deck-outputs",
+    "target": "decisions/2026-05-12-reorder-deck-outputs.md",
+    "status": "NEW",
+    "title": "\"Reorder the deck's 'outputs' section: plans/campaigns first, then briefs/positioning, then POVs/white papers/assets\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-single-domain-gems-com-with-country-paths.md",
+    "type": "decision",
+    "slug": "2026-05-12-single-domain-gems-com-with-country-paths",
+    "target": "decisions/2026-05-12-single-domain-gems-com-with-country-paths.md",
+    "status": "NEW",
+    "title": "\"Single gems.com domain with country sub-paths, not standalone country sites\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-start-marketing-prime-radiant-without-waiting-for-crm.md",
+    "type": "decision",
+    "slug": "2026-05-12-start-marketing-prime-radiant-without-waiting-for-crm",
+    "target": "decisions/2026-05-12-start-marketing-prime-radiant-without-waiting-for-crm.md",
+    "status": "NEW",
+    "title": "Start the marketing Prime Radiant rollout this week without waiting for the CRM"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-12-three-messaging-pillars.md",
+    "type": "decision",
+    "slug": "2026-05-12-three-messaging-pillars",
+    "target": "decisions/2026-05-12-three-messaging-pillars.md",
+    "status": "NEW",
+    "title": "\"Three messaging pillars: SG sustainability, AI as growth engine, individual augmentation\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-13-andrew-soane-first-cross-dept-prime-radiant-rollout.md",
+    "type": "decision",
+    "slug": "2026-05-13-andrew-soane-first-cross-dept-prime-radiant-rollout",
+    "target": "decisions/2026-05-13-andrew-soane-first-cross-dept-prime-radiant-rollout.md",
+    "status": "NEW",
+    "title": "Andrew Soane is the first cross-department Prime Radiant rollout"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-13-defer-paid-github-org-pending-bonaventure-approval.md",
+    "type": "decision",
+    "slug": "2026-05-13-defer-paid-github-org-pending-bonaventure-approval",
+    "target": "decisions/2026-05-13-defer-paid-github-org-pending-bonaventure-approval.md",
+    "status": "NEW",
+    "title": "\"Defer paid GitHub org upgrade pending Bonaventure's approval\""
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-13-migrate-prime-radiant-vaults-from-google-drive-to-github.md",
+    "type": "decision",
+    "slug": "2026-05-13-migrate-prime-radiant-vaults-from-google-drive-to-github",
+    "target": "decisions/2026-05-13-migrate-prime-radiant-vaults-from-google-drive-to-github.md",
+    "status": "NEW",
+    "title": "Migrate Prime Radiant vaults from Google Shared Drive to GitHub"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-2026-05-13-prefer-html-over-powerpoint-for-claude-generated-decks.md",
+    "type": "decision",
+    "slug": "2026-05-13-prefer-html-over-powerpoint-for-claude-generated-decks",
+    "target": "decisions/2026-05-13-prefer-html-over-powerpoint-for-claude-generated-decks.md",
+    "status": "NEW",
+    "title": "Prefer HTML over PowerPoint for Claude-generated decks"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-agent-harness.md",
+    "type": "concept",
+    "slug": "agent-harness",
+    "target": "decisions/concepts/agent-harness.md",
+    "status": "DUP",
+    "title": "Agent Harness"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-agent-memory.md",
+    "type": "concept",
+    "slug": "agent-memory",
+    "target": "decisions/concepts/agent-memory.md",
+    "status": "DUP",
+    "title": "Agent Memory"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-agent-skills.md",
+    "type": "concept",
+    "slug": "agent-skills",
+    "target": "decisions/concepts/agent-skills.md",
+    "status": "DUP",
+    "title": "Agent Skills"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-agent-to-agent-protocol.md",
+    "type": "concept",
+    "slug": "agent-to-agent-protocol",
+    "target": "decisions/concepts/agent-to-agent-protocol.md",
+    "status": "DUP",
+    "title": "Agent-to-Agent Protocol (A2A)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-agentic-ai.md",
+    "type": "concept",
+    "slug": "agentic-ai",
+    "target": "decisions/concepts/agentic-ai.md",
+    "status": "DUP",
+    "title": "Agentic AI"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-ai-policy-gate-approval.md",
+    "type": "process",
+    "slug": "ai-policy-gate-approval",
+    "target": "processes/ai-policy-gate-approval.md",
+    "status": "DUP",
+    "title": "AI Policy Gate Approval"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-ai-tool-evaluation.md",
+    "type": "process",
+    "slug": "ai-tool-evaluation",
+    "target": "processes/ai-tool-evaluation.md",
+    "status": "DUP",
+    "title": "AI Tool Evaluation Framework"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-assessify-hr-assessment-platform.md",
+    "type": "project",
+    "slug": "assessify-hr-assessment-platform",
+    "target": "projects/assessify-hr-assessment-platform.md",
+    "status": "NEW",
+    "title": "Assessify \u2014 HR Assessment Platform"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-claude.md",
+    "type": "vendor",
+    "slug": "claude",
+    "target": "entities/vendors/claude.md",
+    "status": "DUP",
+    "title": "Claude (Anthropic product family)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-context-engineering.md",
+    "type": "concept",
+    "slug": "context-engineering",
+    "target": "decisions/concepts/context-engineering.md",
+    "status": "DUP",
+    "title": "Context Engineering"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-crm-evaluation-and-selection.md",
+    "type": "project",
+    "slug": "crm-evaluation-and-selection",
+    "target": "projects/crm-evaluation-and-selection.md",
+    "status": "DUP",
+    "title": "CRM Evaluation & Selection"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-gist-pattern-as-template-replacement.md",
+    "type": "concept",
+    "slug": "gist-pattern-as-template-replacement",
+    "target": "decisions/concepts/gist-pattern-as-template-replacement.md",
+    "status": "DUP",
+    "title": "Gist pattern \u2014 adaptable starting points instead of rigid templates"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-google-cloud.md",
+    "type": "vendor",
+    "slug": "google-cloud",
+    "target": "entities/vendors/google-cloud.md",
+    "status": "DUP",
+    "title": "Google Cloud"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-iso-compliance-programme.md",
+    "type": "project",
+    "slug": "iso-compliance-programme",
+    "target": "projects/iso-compliance-programme.md",
+    "status": "DUP",
+    "title": "ISO Compliance Programme"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-it-department-standup-pilot.md",
+    "type": "project",
+    "slug": "it-department-standup-pilot",
+    "target": "projects/it-department-standup-pilot.md",
+    "status": "DUP",
+    "title": "IT Department Standup Methodology Pilot"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-it-helpdesk-triage-bot.md",
+    "type": "project",
+    "slug": "it-helpdesk-triage-bot",
+    "target": "projects/it-helpdesk-triage-bot.md",
+    "status": "DUP",
+    "title": "IT Helpdesk Triage Bot"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-janus-prime-radiant-build.md",
+    "type": "project",
+    "slug": "janus-prime-radiant-build",
+    "target": "projects/janus-prime-radiant-build.md",
+    "status": "DUP",
+    "title": "Janus Prime Radiant Build"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-jehad-altoutou.md",
+    "type": "person",
+    "slug": "jehad-altoutou",
+    "target": "entities/internal/jehad-altoutou.md",
+    "status": "DUP",
+    "title": "Jehad Altoutou"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-marketing-prime-radiant.md",
+    "type": "project",
+    "slug": "marketing-prime-radiant",
+    "target": "projects/marketing-prime-radiant.md",
+    "status": "DUP",
+    "title": "Janus Prime Radiant \u00b7 Marketing"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-marp.md",
+    "type": "vendor",
+    "slug": "marp",
+    "target": "entities/vendors/marp.md",
+    "status": "DUP",
+    "title": "Marp"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-monday.md",
+    "type": "vendor",
+    "slug": "monday",
+    "target": "entities/vendors/monday.md",
+    "status": "DUP",
+    "title": "Monday"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-nemoclaw.md",
+    "type": "vendor",
+    "slug": "nemoclaw",
+    "target": "entities/vendors/nemoclaw.md",
+    "status": "DUP",
+    "title": "NemoClaw"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-openclaw.md",
+    "type": "vendor",
+    "slug": "openclaw",
+    "target": "entities/vendors/openclaw.md",
+    "status": "DUP",
+    "title": "OpenClaw"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-ralph-loop-pattern.md",
+    "type": "concept",
+    "slug": "ralph-loop-pattern",
+    "target": "decisions/concepts/ralph-loop-pattern.md",
+    "status": "DUP",
+    "title": "Ralph Loop Pattern"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-recruitment-automation-pipeline.md",
+    "type": "project",
+    "slug": "recruitment-automation-pipeline",
+    "target": "projects/recruitment-automation-pipeline.md",
+    "status": "DUP",
+    "title": "Recruitment Automation Pipeline"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-singapore-news-monitoring.md",
+    "type": "project",
+    "slug": "singapore-news-monitoring",
+    "target": "projects/singapore-news-monitoring.md",
+    "status": "DUP",
+    "title": "Singapore News Monitoring Agent"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-standup.md",
+    "type": "process",
+    "slug": "standup",
+    "target": "processes/standup.md",
+    "status": "DUP",
+    "title": "Standup Skill (AIO daily standup workflow)"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-viktor.md",
+    "type": "vendor",
+    "slug": "viktor",
+    "target": "entities/vendors/viktor.md",
+    "status": "DUP",
+    "title": "Viktor"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-vs-code.md",
+    "type": "vendor",
+    "slug": "vs-code",
+    "target": "entities/vendors/vs-code.md",
+    "status": "DUP",
+    "title": "Visual Studio Code"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-wispr-flow.md",
+    "type": "vendor",
+    "slug": "wispr-flow",
+    "target": "entities/vendors/wispr-flow.md",
+    "status": "DUP",
+    "title": "Wispr Flow"
+  },
+  {
+    "inbox": "personal-jehad-altoutou-zed.md",
+    "type": "vendor",
+    "slug": "zed",
+    "target": "entities/vendors/zed.md",
+    "status": "DUP",
+    "title": "Zed"
+  }
+]

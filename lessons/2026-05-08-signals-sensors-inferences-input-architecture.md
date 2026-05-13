@@ -3,11 +3,11 @@ type: lesson
 title: Signals → sensors → inferences — design the input array, the AI does the rest
 slug: 2026-05-08-signals-sensors-inferences-input-architecture
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-13
 departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
-sources: [2026-05-08-andrew-marketing-prime-radiant]
+sources: [2026-05-08-andrew-marketing-prime-radiant, jehad-vault-2026-05-08-signals-sensors-inferences-input-architecture]
 related: [andrew-soane, prime-radiant-three-layer-architecture, janus-prime-radiant-build, marketing-prime-radiant, agentic-ai, agent-memory]
 ---
 

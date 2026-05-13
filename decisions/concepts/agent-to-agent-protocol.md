@@ -3,10 +3,10 @@ type: concept
 title: Agent-to-Agent Protocol (A2A)
 slug: agent-to-agent-protocol
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-13
 departments: [ai-office, engineering]
 confidence: medium
-sources: [a2a-mcp-five-integration-patterns]
+sources: [a2a-mcp-five-integration-patterns, jehad-vault-agent-to-agent-protocol]
 related: [model-context-protocol, agentic-ai]
 ---
 

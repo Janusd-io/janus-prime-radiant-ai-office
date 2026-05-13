@@ -3,10 +3,10 @@ type: concept
 title: Agent Memory
 slug: agent-memory
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office]
 confidence: high
-sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme]
+sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory]
 related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation]
 ---
 

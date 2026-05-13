@@ -3,7 +3,8 @@ type: person
 title: Jehad Altoutou
 slug: jehad-altoutou
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-13
+sources: [jehad-vault-jehad-altoutou]
 departments: [ai-office]
 related: [michael-bruck, janus-prime-radiant-build, fireflies, monday, peer-to-peer-mesh-federation-pattern, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, iso-compliance-programme]
 ---

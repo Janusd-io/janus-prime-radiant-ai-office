@@ -3,7 +3,8 @@ type: process
 title: AI Tool Evaluation Framework
 slug: ai-tool-evaluation
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
+sources: [jehad-vault-ai-tool-evaluation]
 departments: [ai-office, it-ops]
 related: [linear, claude, anthropic, janus-prime-radiant-build, 2026-05-06-backlog-cleanup-no-return-to-backlog]
 ---

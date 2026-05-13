@@ -3,11 +3,11 @@ type: project
 title: Recruitment Automation Pipeline
 slug: recruitment-automation-pipeline
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [hr, ai-office]
 status: active
 owner: jehad-altoutou
-sources: [aio-2026-05-04, aio-2026-05-05, automations-2881310536]
+sources: [aio-2026-05-04, aio-2026-05-05, automations-2881310536, jehad-vault-recruitment-automation-pipeline]
 related: [assessify, deel, fireflies, claude, jehad-altoutou, andrew-soane, bonaventure-wong, theresa-wong, mariam-mahmood, 2026-05-04-recruitment-execution-on-hr-dashboard-board, 2026-05-04-centralised-fireflies-webhook-for-interviews, 2026-05-05-recruitment-scoring-as-claude-skill]
 ---
 

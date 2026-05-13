@@ -3,11 +3,11 @@ type: vendor
 title: Google Cloud
 slug: google-cloud
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office, engineering, it-ops]
 status: active
 confidence: high
-sources: [google-agentic-data-cloud, google-skills-repository, a2a-mcp-five-integration-patterns]
+sources: [google-agentic-data-cloud, google-skills-repository, a2a-mcp-five-integration-patterns, jehad-vault-google-cloud]
 related: [agentic-ai, model-context-protocol, agent-to-agent-protocol, agent-skills, 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins, hostinger]
 ---
 

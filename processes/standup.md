@@ -3,14 +3,15 @@ type: process
 title: Standup Skill (AIO daily standup workflow)
 slug: standup
 created: 2026-05-07
-updated: 2026-05-12
+updated: 2026-05-13
+sources: [jehad-vault-standup]
 departments: [ai-office]
-related: [jehad-altoutou, michael-bruck, ai-tool-evaluation, fireflies, monday, notion, linear, claude, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox, 2026-05-06-standup-skill-v3-12-self-correcting-behavior, april-2026-aio-transcripts-recovery]
+related: [jehad-altoutou, michael-bruck, ai-tool-evaluation, fireflies, monday, notion, linear, claude, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox, 2026-05-06-standup-skill-v3-12-self-correcting-behavior, april-2026-aio-transcripts-recovery, janus-prime-radiant-build]
 ---
 
 # Standup Skill
 
-Janus AI Office's end-to-end post-standup processing pipeline: **Fireflies → Monday → Linear AIP → Notion**. Owned by [[jehad-altoutou]]; currently at v3.13 (2026-05-06).
+Janus AI Office's end-to-end post-standup processing pipeline: **Fireflies → Monday → Linear AIP → Notion → Prime Radiant inbox**. Owned by [[jehad-altoutou]]; **currently at v3.15 (2026-05-13) in production**.
 
 > **For execution, use the skill.** This wiki page is a short reference for cross-linking and high-level orientation, not a duplicate of the skill. The canonical implementation lives at `~/.claude/skills/standup/SKILL.md` and may have moved ahead of what's summarised here.
 
@@ -53,6 +54,8 @@ Net effect: anyone opening a touched Monday item sees a Description Update with 
 
 ## Version history (recent)
 
+- **v3.15 (2026-05-13)** — Step 5G writes standup logs to the Prime Radiant vault inbox via the Google Drive MCP connector (not via filesystem path). First production run produced [[2026-05-13-aio-it-meeting]]. Closes the dual-write loop proposed in [[ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox]] and aligns with the [[notion]] deprecation timeline (end of May 2026).
+- **v3.14** — Wiki inbox dual-write spec landed (`standup-skill-v3.14-wiki-inbox-mirror-spec.md`); routing via filesystem path tried and proven unreliable, motivating the v3.15 MCP-connector switch.
 - **v3.13 (2026-05-06)** — Context Coverage Invariant extended to every touched item.
 - **v3.12 (~2026-05-05)** — Description Update with prominent header; Monday API limitation documented (set_item_description_content returns HTTP 500 on freshly-created items); self-correcting sub-skill orchestration validated. See [[2026-05-06-standup-skill-v3-12-self-correcting-behavior]] for the decision record on the orchestration pattern.
 - **v3.11** — Mandatory Context Update on creates (Step 3G).
@@ -109,6 +112,6 @@ Retention window: 14 days of full content on the master Operations Notebook page
 
 The transcripts this skill consumes are durable backstops, not ephemeral inputs. When Notion or Monday surfaces fail or lose data, the canonical record can be reconstructed from raw [[fireflies]] transcripts. The [[april-2026-aio-transcripts-recovery]] project is the live validation: ~22 April 2026 standup entries lost from Notion (Notion glitch) are being recovered by re-running raw transcripts through the synthesis pipeline. The Fireflies-as-backstop property is what makes the standup skill safe to evolve aggressively without risking institutional memory.
 
-## Pending v3.14 — wiki inbox dual-write
+## Vault inbox dual-write (landed v3.15, 2026-05-13)
 
-Open escalation: [[ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox]]. The 2026-05-11 standup surfaced a proposal to extend `/standup` so it writes a markdown version of every standup to the AIO Prime Radiant `inbox/` folder in addition to the Notion entry. Provisionally agreed; question page captures the routing / what-gets-written / order / failure-mode questions awaiting [[michael-bruck|Michael]]'s sign-off. A separate spec exists at `standup-skill-v3.14-wiki-inbox-mirror-spec.md` in the vault root.
+Originally proposed in [[ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox]]; spec landed as `standup-skill-v3.14-wiki-inbox-mirror-spec.md`; routing shipped in v3.15 once the filesystem-path approach was ruled out in favour of the Google Drive MCP connector (per [[2026-05-13-aio-it-meeting]]). Standup logs are now written both to the [[notion]] Operations Notebook and to the Prime Radiant vault `inbox/` via Drive MCP — the same dual-write pattern that carries the AIO through the Notion deprecation window (end of May 2026).

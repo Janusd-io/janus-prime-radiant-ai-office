@@ -3,11 +3,11 @@ type: project
 title: Janus Prime Radiant Build
 slug: janus-prime-radiant-build
 created: 2026-05-05
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office]
 status: active
 owner: michael
-sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call]
+sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, jehad-vault-janus-prime-radiant-build]
 related: [llm-wiki, michael-bruck, jehad-altoutou, obsidian, linear, notion, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag, 2026-05-05-notion-degrades-as-ai-searchable-kb, peer-to-peer-mesh-federation-pattern, 2026-05-11-bonaventure-prime-radiant-shoutout, 2026-05-11-notion-restricted-to-aio-no-broad-rollout, 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain, ai-native-janus-positioning, 2026-05-12-html-as-presentation-format-adopted]
 ---
 
@@ -66,6 +66,11 @@ This project was authorised on 2026-05-05 ([[aio-2026-05-05]]). The originating 
 - **Internal branding open question:** multiple sub-names are in circulation for the user-facing surface (Prime Radiant, Nomi, brain, wiki, Pulse, PULS). See [[2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain]] — consolidation conversation pending with [[andrew-soane|Andrew]]. The internal *system* name stays Janus Prime Radiant; what the user-facing surface gets called for non-technical audiences is open.
 - **Commercial-asset framing locked (2026-05-12).** Per [[ai-native-janus-positioning]] — Bonaventure on the AI Native CEO call: *"this is eventually going to be part of our selling point."* Prime Radiant is no longer internal-tooling-only; it's the operational proof point under the [[ai-native-janus-positioning|three-pillar messaging spine]]. Externalisability, polish, and demo-readiness now matter for non-AIO audiences. Also captured a gamification idea from Bonaventure for onboarding ("Have you connected Fireflies? Have you tested this?") — feature direction for whichever skill owns user onboarding (currently `/janus-pulse`).
 - **Employee-centric architecture framing reinforced (2026-05-12).** Bonaventure: *"everything is kind of connected to the user because that's how you're onboard yourself onto us... that unique identity that might be very valuable. And then whatever you connect through it, this could be the centre of everything."* User identity drives authority chart drives access boundaries drives ISO scope. Aligns with the [[peer-to-peer-mesh-federation-pattern]] design intent and the personal-vault-feeds-department-vault pattern.
+- **Drive connector replaces path-based mounting for Cowork onboarding (2026-05-13).** Andrew's Cowork mounting failure root-caused to path-based workspace mounting unreliability; Google Drive MCP connector is the supported alternative. Two prerequisite Monday sub-items under Prime Radiant: (1) move Andrew's vault to his `.com` Drive (2912592151); (2) set up Drive connector in Cowork (2912593759). Sequencing: vault migration before connector. Per [[2026-05-13-aio-it-meeting]].
+- **Vault-event ingest direction set (2026-05-13).** Kafka evaluated and rejected as event broker (<100 events/day; overkill). Drive webhooks API to be investigated as the right-sized replacement for cron-based ingest (Monday 2912592197). Adjacent research stream "Claude OS" (Hostinger-hosted vault files exposed via purpose-built APIs/MCPs; 2912590122) approved for exploration under Engage data architecture — depends on Drive webhooks research outcome.
+- **Schema governance surfaces as a new requirements layer (2026-05-13).** Euclid's 5,000-document personal vault validates the Prime Radiant architecture at scale but surfaces schema drift as a real risk; schema linter + ISO 27001 evidence-chain cross-linking are now first-class requirements for both repos (Monday 2912631119, 2912592188). Folds into the `entities/departments/iso/` federation pattern.
+- **Standup skill v3.15 in production (2026-05-13).** Step 5G now writes to the Drive vault inbox via MCP connector (not filesystem path). Today's standup file is the first v3.15 Step 5G output — feedback loop closed (skill output lands as wiki ingest input).
+- **Notion deprecation target confirmed: end of May 2026 (2026-05-13).** Dual-write to vault inbox via Step 5G is the transition path. Hard date; subsequent decisions should plan around Notion being offline as a Janus surface from June.
 
 ## Nomenclature anchors (immutable by schema)
 

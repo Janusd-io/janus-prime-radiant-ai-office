@@ -3,11 +3,11 @@ type: project
 title: IT Helpdesk Triage Bot
 slug: it-helpdesk-triage-bot
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [it-ops, ai-office]
 status: active
 owner: jehad-altoutou
-sources: [aio-2026-05-06, it-discussion-tracker, automations-2896117600]
+sources: [aio-2026-05-06, it-discussion-tracker, automations-2896117600, jehad-vault-it-helpdesk-triage-bot]
 related: [slack, jehad-altoutou, andrey-timokhov, euclid-wong, it-department-standup-pilot, 2026-05-06-slack-tool-intake-as-agentic-workflow-not-bot]
 ---
 

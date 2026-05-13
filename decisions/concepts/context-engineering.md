@@ -3,10 +3,10 @@ type: concept
 title: Context Engineering
 slug: context-engineering
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [ai-office]
 confidence: high
-sources: [better-models-wont-save-your-agent, openai-agents-sdk-session-memory]
+sources: [better-models-wont-save-your-agent, openai-agents-sdk-session-memory, jehad-vault-context-engineering]
 related: [retrieval-augmented-generation, agentic-ai, agent-memory, agent-harness]
 ---
 

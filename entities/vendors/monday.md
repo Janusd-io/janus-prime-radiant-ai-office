@@ -3,11 +3,11 @@ type: vendor
 title: Monday
 slug: monday
 created: 2026-05-06
-updated: 2026-05-11
+updated: 2026-05-13
 departments: [ai-office, hr, marketing, it-ops]
 status: active
 confidence: high
-sources: [aio-2026-05-01, aio-2026-05-04, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad]
+sources: [aio-2026-05-01, aio-2026-05-04, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, jehad-vault-monday]
 related: [linear, 2026-05-01-ai-registry-source-of-truth-stays-in-linear-air, 2026-05-06-monday-com-to-production-this-week, 2026-05-04-recruitment-execution-on-hr-dashboard-board, aio-skills-sor-architecture-jehad]
 ---
 

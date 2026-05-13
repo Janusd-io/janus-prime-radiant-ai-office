@@ -3,11 +3,11 @@ type: decision
 title: AI Tools Registry source of truth stays in Linear AIR; Monday AITR deprecated
 slug: 2026-05-01-ai-registry-source-of-truth-stays-in-linear-air
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: michael
-sources: [aio-2026-05-01]
+sources: [aio-2026-05-01, jehad-vault-2026-05-01-ai-registry-source-of-truth-stays-in-linear-air]
 related: [linear, ai-tool-evaluation, janus-prime-radiant-build]
 ---
 

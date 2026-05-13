@@ -3,7 +3,8 @@ type: decision
 title: Marketing Prime Radiant — separate Drive vault + own CLAUDE.md
 slug: 2026-05-08-marketing-prime-radiant-as-separate-vault
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-13
+sources: [jehad-vault-2026-05-08-marketing-prime-radiant-as-separate-vault]
 departments: [marketing, ai-office]
 status: resolved
 owner: michael-bruck

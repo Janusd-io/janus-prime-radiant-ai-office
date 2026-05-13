@@ -3,11 +3,11 @@ type: decision
 title: KB direction — Markdown + front-matter YAML + progressive exposure; not RAG
 slug: 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: michael
-sources: [aio-2026-05-05]
+sources: [aio-2026-05-05, jehad-vault-2026-05-05-kb-direction-markdown-progressive-exposure-not-rag]
 related: [llm-wiki, janus-prime-radiant-build, retrieval-augmented-generation, post-rag-agent-data-stack, andrej-karpathy]
 ---
 

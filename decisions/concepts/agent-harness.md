@@ -3,10 +3,10 @@ type: concept
 title: Agent Harness
 slug: agent-harness
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [ai-office, engineering]
 confidence: medium
-sources: [your-harness-your-memory-hwchase17, claude-code-limits-harness-pawelhuryn, building-agents-claude-agent-sdk, anatomy-of-claude-folder, harness-design-long-running-apps, 100x-business-with-ai]
+sources: [your-harness-your-memory-hwchase17, claude-code-limits-harness-pawelhuryn, building-agents-claude-agent-sdk, anatomy-of-claude-folder, harness-design-long-running-apps, 100x-business-with-ai, jehad-vault-agent-harness]
 related: [agent-memory, agentic-ai, model-context-protocol, ralph-loop-pattern]
 ---
 

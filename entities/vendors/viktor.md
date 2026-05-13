@@ -3,11 +3,11 @@ type: vendor
 title: Viktor
 slug: viktor
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [ai-office]
 status: archived
 confidence: medium
-sources: [air-38]
+sources: [air-38, jehad-vault-viktor]
 related: [ai-tool-evaluation, 2026-04-22-per-user-data-control-hard-requirement-agent-platforms]
 ---
 

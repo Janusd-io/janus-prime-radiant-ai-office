@@ -3,11 +3,11 @@ type: decision
 title: Per-user, source-platform-faithful access control is a hard requirement for agent/integration platforms
 slug: 2026-04-22-per-user-data-control-hard-requirement-agent-platforms
 created: 2026-04-22
-updated: 2026-05-07
+updated: 2026-05-13
 status: resolved
 owner: michael
 departments: [ai-office]
-sources: [air-38]
+sources: [air-38, jehad-vault-2026-04-22-per-user-data-control-hard-requirement-agent-platforms]
 related: [viktor]
 ---
 

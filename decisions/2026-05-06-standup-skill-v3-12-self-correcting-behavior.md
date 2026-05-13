@@ -3,11 +3,11 @@ type: decision
 slug: 2026-05-06-standup-skill-v3-12-self-correcting-behavior
 title: Standup skill v3.12 demonstrates self-correcting behavior in Linear AIR
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: jehad-altoutou
-sources: [automations-2889202957]
+sources: [automations-2889202957, jehad-vault-2026-05-06-standup-skill-v3-12-self-correcting-behavior]
 related: [standup, ai-registry-v2, linear, iso-compliance-programme]
 ---
 

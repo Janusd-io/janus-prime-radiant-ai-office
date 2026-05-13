@@ -3,11 +3,11 @@ type: decision
 title: HR Rubric scoring rebuilt as a reusable Claude skill (Claude API direct; MCP for low-volume only)
 slug: 2026-05-07-rubric-scoring-as-claude-skill
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [hr, ai-office]
 status: resolved
 owner: jehad-altoutou
-sources: [aio-2026-05-07]
+sources: [aio-2026-05-07, jehad-vault-2026-05-07-rubric-scoring-as-claude-skill]
 related: [claude, recruitment-automation-pipeline, agent-skills, 2026-05-05-recruitment-scoring-as-claude-skill]
 ---
 

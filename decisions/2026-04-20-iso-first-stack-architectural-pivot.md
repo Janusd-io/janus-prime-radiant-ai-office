@@ -3,13 +3,13 @@ type: decision
 title: ISO-First Stack Architectural Pivot — CEO Executive Management System Reframe
 slug: 2026-04-20-iso-first-stack-architectural-pivot
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 status: resolved
 owner: michael
 departments: [ai-office, office-of-ceo]
 countries: [sg, gb, us]
 confidence: high
-sources: [bonaventure-reframe-analysis-2026-04-20, sor-tooling-analysis-notion-vs-monday, simon-iso-programme-discovery-2026-04]
+sources: [bonaventure-reframe-analysis-2026-04-20, sor-tooling-analysis-notion-vs-monday, simon-iso-programme-discovery-2026-04, jehad-vault-2026-04-20-iso-first-stack-architectural-pivot]
 related: [janus-prime-radiant-build, iso-compliance-programme, simon-tarskih]
 ---
 

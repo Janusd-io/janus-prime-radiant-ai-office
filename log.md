@@ -925,3 +925,113 @@ The original lint checked body wikilinks but didn't cross-validate `related:` fi
 8. ⏳ **GitHub Team upgrade decision** — defer until Marketing onboards Andrew, or upgrade now if AIO budget allows. ~$4/seat/month; gates enforced branch protection on private repos.
 9. ⏳ **Run the new script for Marketing instance setup** — first scripted execution; will surface any runbook gaps to fold back into the page.
 10. ⏳ **Update [[janus-prime-radiant-build]] hub** with a "Migration executed" note in the next routine pass.
+
+## [2026-05-13 13:20] batch-ingest | Jehad personal-vault import + 2026-05-13 AIO-IT standup | 122 items
+
+**Strategy (per Michael, this session):** NEW slugs filed directly into target folders; DUPs with body-similarity ≥0.85 discarded as near-identical; DUPs with similarity <0.85 filed under `sources/jehad-vault/<slug>.md` and added to the canonical page's `sources:` frontmatter (preserves Jehad's articulation without overwriting curated canonical content). `pr-backup-*` source refs in Jehad's frontmatter normalised to a single `jehad-vault-import-2026-05-13` marker. `audience: [...]` lines (non-schema) stripped.
+
+### Volume
+- **1** standup source filed: `sources/meetings/2026-05-13-aio-it-meeting.md`
+- **63** new wiki pages created from Jehad's vault
+  - 62 decisions, 1 project
+- **22** DUPs skipped (sim ≥ 0.85, near-identical to canonical)
+- **36** DUPs filed under `sources/jehad-vault/` and cross-referenced from canonical pages
+- **122** inbox files moved to `inbox/.processed/2026-05/`
+
+### Standup ingest — 2026-05-13 AIO-IT meeting
+- Filed source: `sources/meetings/2026-05-13-aio-it-meeting.md` (Jehad / Michael / Euclid; 72 min; standup-skill v3.15)
+- Updated: `projects/janus-prime-radiant-build.md` — added 5 bullets to Program-level sub-effort: Drive connector for Andrew, Drive webhooks vs Kafka direction, schema linter + ISO 27001 cross-linking, standup skill v3.15 in production, Notion deprecation target (end of May 2026).
+- Updated: `entities/vendors/notion.md` — status changed to `deprecating`; added deprecation section with hard date (end of May 2026) and dual-write transition path.
+- Updated: `processes/standup.md` — bumped to v3.15 in production; added Step 5G Drive-MCP-connector vault-inbox write; promoted v3.14 dual-write section from pending to landed.
+- Created: `pulse/2026-05-13-claude-os-concept-surfaced.md` — Jehad's Hostinger+APIs/MCPs Claude OS research direction (confidence: low; depends on Drive webhooks outcome).
+- **Not acted on (Linear-side):** AIP-21 manual close — flagged for Michael to action in Linear (10th consecutive run of the Linear/Monday conflict).
+
+### New decisions filed (62)
+Date breakdown: 5×04-22, 7×05-01, 8×05-04, 14×05-05, 9×05-06, 7×05-07, 8×05-08, 6×05-12, 2×05-13. Slugs follow the date-prefixed convention. Examples (full list in `inbox/.ingest-report.json`):
+  - `decisions/2026-04-22-decommission-signature-hound.md`
+  - `decisions/2026-04-22-evaluate-openai-codex-as-claude-fallback.md`
+  - `decisions/2026-04-22-move-obsidian-to-sandbox.md`
+  - `decisions/2026-04-22-reject-victor-slack-agent.md`
+  - `decisions/2026-04-22-self-host-n8n-on-hostinger.md`
+  - `decisions/2026-05-01-build-recruitment-tracker-in-hr-dashboard.md`
+  - `decisions/2026-05-01-fireflies-webhooks-for-post-interview-scoring.md`
+  - `decisions/2026-05-01-google-drive-folder-structure-for-cvs.md`
+  - … plus 54 more
+
+### New project hub (1)
+- `projects/assessify-hr-assessment-platform.md` — project hub distinct from existing `entities/vendors/assessify.md` (vendor entity vs project execution).
+
+### DUPs filed as Jehad-vault sources (36)
+Each entry below: `<source written>` → `<canonical updated>` (similarity score).
+  - `sources/jehad-vault/crm-evaluation-and-selection.md` → `projects/crm-evaluation-and-selection.md` (sim 0.10)
+  - `sources/jehad-vault/claude.md` → `entities/vendors/claude.md` (sim 0.16)
+  - `sources/jehad-vault/janus-prime-radiant-build.md` → `projects/janus-prime-radiant-build.md` (sim 0.17)
+  - `sources/jehad-vault/jehad-altoutou.md` → `entities/internal/jehad-altoutou.md` (sim 0.24)
+  - `sources/jehad-vault/marketing-prime-radiant.md` → `projects/marketing-prime-radiant.md` (sim 0.25)
+  - `sources/jehad-vault/iso-compliance-programme.md` → `projects/iso-compliance-programme.md` (sim 0.36)
+  - `sources/jehad-vault/it-helpdesk-triage-bot.md` → `projects/it-helpdesk-triage-bot.md` (sim 0.43)
+  - `sources/jehad-vault/viktor.md` → `entities/vendors/viktor.md` (sim 0.46)
+  - `sources/jehad-vault/agent-memory.md` → `decisions/concepts/agent-memory.md` (sim 0.53)
+  - `sources/jehad-vault/2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical.md` → `lessons/2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical.md` (sim 0.55)
+  - `sources/jehad-vault/2026-05-08-marketing-prime-radiant-as-separate-vault.md` → `decisions/2026-05-08-marketing-prime-radiant-as-separate-vault.md` (sim 0.56)
+  - `sources/jehad-vault/standup.md` → `processes/standup.md` (sim 0.58)
+  - `sources/jehad-vault/2026-05-08-signals-sensors-inferences-input-architecture.md` → `lessons/2026-05-08-signals-sensors-inferences-input-architecture.md` (sim 0.59)
+  - `sources/jehad-vault/monday.md` → `entities/vendors/monday.md` (sim 0.61)
+  - `sources/jehad-vault/singapore-news-monitoring.md` → `projects/singapore-news-monitoring.md` (sim 0.63)
+  - `sources/jehad-vault/2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins.md` → `lessons/2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins.md` (sim 0.64)
+  - `sources/jehad-vault/2026-05-07-rubric-scoring-as-claude-skill.md` → `decisions/2026-05-07-rubric-scoring-as-claude-skill.md` (sim 0.65)
+  - `sources/jehad-vault/gist-pattern-as-template-replacement.md` → `decisions/concepts/gist-pattern-as-template-replacement.md` (sim 0.68)
+  - `sources/jehad-vault/agent-skills.md` → `decisions/concepts/agent-skills.md` (sim 0.68)
+  - `sources/jehad-vault/2026-05-06-notion-role-shift-journal-not-knowledge-base.md` → `decisions/2026-05-06-notion-role-shift-journal-not-knowledge-base.md` (sim 0.72)
+  - `sources/jehad-vault/2026-05-08-wiki-vs-brain-metaphor-by-audience.md` → `lessons/2026-05-08-wiki-vs-brain-metaphor-by-audience.md` (sim 0.72)
+  - `sources/jehad-vault/2026-04-20-iso-first-stack-architectural-pivot.md` → `decisions/2026-04-20-iso-first-stack-architectural-pivot.md` (sim 0.73)
+  - `sources/jehad-vault/2026-05-05-kb-direction-markdown-progressive-exposure-not-rag.md` → `decisions/2026-05-05-kb-direction-markdown-progressive-exposure-not-rag.md` (sim 0.75)
+  - `sources/jehad-vault/2026-04-22-per-user-data-control-hard-requirement-agent-platforms.md` → `decisions/2026-04-22-per-user-data-control-hard-requirement-agent-platforms.md` (sim 0.76)
+  - `sources/jehad-vault/recruitment-automation-pipeline.md` → `projects/recruitment-automation-pipeline.md` (sim 0.79)
+  - `sources/jehad-vault/google-cloud.md` → `entities/vendors/google-cloud.md` (sim 0.79)
+  - `sources/jehad-vault/2026-05-06-standup-skill-v3-12-self-correcting-behavior.md` → `decisions/2026-05-06-standup-skill-v3-12-self-correcting-behavior.md` (sim 0.80)
+  - `sources/jehad-vault/agent-harness.md` → `decisions/concepts/agent-harness.md` (sim 0.80)
+  - `sources/jehad-vault/wispr-flow.md` → `entities/vendors/wispr-flow.md` (sim 0.81)
+  - `sources/jehad-vault/2026-05-01-iso-compliance-gate-before-automation.md` → `decisions/2026-05-01-iso-compliance-gate-before-automation.md` (sim 0.81)
+  - `sources/jehad-vault/2026-05-08-marketing-prime-radiant-greenlit-with-andrew.md` → `decisions/2026-05-08-marketing-prime-radiant-greenlit-with-andrew.md` (sim 0.81)
+  - `sources/jehad-vault/agent-to-agent-protocol.md` → `decisions/concepts/agent-to-agent-protocol.md` (sim 0.83)
+  - `sources/jehad-vault/2026-05-01-ai-registry-source-of-truth-stays-in-linear-air.md` → `decisions/2026-05-01-ai-registry-source-of-truth-stays-in-linear-air.md` (sim 0.83)
+  - `sources/jehad-vault/context-engineering.md` → `decisions/concepts/context-engineering.md` (sim 0.84)
+  - `sources/jehad-vault/2026-05-07-llm-wiki-validates-capture-everything.md` → `lessons/2026-05-07-llm-wiki-validates-capture-everything.md` (sim 0.85)
+  - `sources/jehad-vault/ai-tool-evaluation.md` → `processes/ai-tool-evaluation.md` (sim 0.85)
+
+### DUPs skipped — near-identical (22)
+  - `decisions/2026-04-23-monday-hostinger-notion-stack-adopted.md`
+  - `decisions/2026-05-04-centralised-fireflies-webhook-for-interviews.md`
+  - `decisions/2026-05-04-recruitment-execution-on-hr-dashboard-board.md`
+  - `decisions/2026-05-05-recruitment-scoring-as-claude-skill.md`
+  - `decisions/2026-05-06-ai-tool-taxonomy-scope-policy.md`
+  - `decisions/2026-05-06-andrew-as-standup-skill-rollout-pilot.md`
+  - `decisions/2026-05-06-backlog-cleanup-no-return-to-backlog.md`
+  - `decisions/2026-05-06-monday-com-to-production-this-week.md`
+  - `decisions/2026-05-06-skills-stay-as-skills-not-plugins.md`
+  - `decisions/2026-05-06-slack-tool-intake-as-agentic-workflow-not-bot.md`
+  - `decisions/2026-05-07-llm-wiki-extends-to-marketing-domain.md`
+  - `decisions/2026-05-07-per-workstream-api-keys-cost-monitoring.md`
+  - `decisions/concepts/agentic-ai.md`
+  - `decisions/concepts/ralph-loop-pattern.md`
+  - `entities/vendors/marp.md`
+  - `entities/vendors/nemoclaw.md`
+  - `entities/vendors/openclaw.md`
+  - `entities/vendors/vs-code.md`
+  - `entities/vendors/zed.md`
+  - `lessons/2026-05-05-notion-degrades-as-ai-searchable-kb.md`
+  - `processes/ai-policy-gate-approval.md`
+  - `projects/it-department-standup-pilot.md`
+
+### Notes / follow-ups for next pass
+- **Schema drift surfaced.** Existing `decisions/concepts/` folder violates CLAUDE.md §2 (concepts are supposed to be top-level). All 8 concept DUPs in this import collided there; new concepts would go to top-level `concepts/`. Mixed home creates lint risk. Candidate for the next scheduled lint pass — propose mass-move `decisions/concepts/*.md` → `concepts/*.md` with backlink rewrite.
+- **Unresolved meeting-source refs.** Jehad's frontmatter references several meeting slugs that don't exist in `sources/meetings/` (e.g. `2026-05-05-may-05-11-03-am` [8 refs], `2026-05-04-bonaventure-michael-jehad-and-andrew-meeting` [7 refs], `2026-05-01-recruitment-and-leave-management-dashboard-meeting` [7 refs], etc.). Left as-is in newly-filed pages — lint will surface them.
+- **`captured_by: jehad-altoutou` preserved** in frontmatter of all new pages — useful provenance signal even though not in the locked CLAUDE.md schema. Candidate for v0.10 schema addition.
+- **AIP-21 manual close** still pending (10th consecutive run conflict; action lives in Linear, not the wiki).
+- **Lint trigger.** This single batch represents the equivalent of >10 ingests (122 items, 100 wiki pages created or sources filed). Recommend running the lint pass next session.
+
+### Files generated/used during this run
+- `inbox/.manifest.json` — full per-file plan (kept for traceability)
+- `inbox/.ingest-report.json` — full per-file result (kept for traceability)
+

@@ -3,11 +3,11 @@ type: lesson
 title: LLM Wiki validates the "capture everything" thesis — knowledge surfaces only when written down
 slug: 2026-05-07-llm-wiki-validates-capture-everything
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: michael
-sources: [aio-2026-05-07]
+sources: [aio-2026-05-07, jehad-vault-2026-05-07-llm-wiki-validates-capture-everything]
 related: [llm-wiki, janus-prime-radiant-build, 2026-05-05-notion-degrades-as-ai-searchable-kb, 2026-05-07-llm-wiki-extends-to-marketing-domain]
 ---
 

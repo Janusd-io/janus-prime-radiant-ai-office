@@ -3,11 +3,11 @@ type: vendor
 title: Wispr Flow
 slug: wispr-flow
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-13
 departments: [ai-office]
 status: active
 confidence: medium
-sources: [aio-2026-05-01]
+sources: [aio-2026-05-01, jehad-vault-wispr-flow]
 related: [linear, fireflies, ai-tool-evaluation]
 ---
 

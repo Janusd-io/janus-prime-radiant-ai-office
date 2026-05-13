@@ -3,10 +3,10 @@ type: concept
 title: Agent Skills
 slug: agent-skills
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office, engineering]
 confidence: high
-sources: [google-skills-repository, skill-graphs-arscontexta]
+sources: [google-skills-repository, skill-graphs-arscontexta, jehad-vault-agent-skills]
 related: [model-context-protocol, agentic-ai, llm-wiki, 2026-05-06-skills-stay-as-skills-not-plugins]
 ---
 

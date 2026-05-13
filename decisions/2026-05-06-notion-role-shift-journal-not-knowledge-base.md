@@ -3,11 +3,11 @@ type: decision
 slug: 2026-05-06-notion-role-shift-journal-not-knowledge-base
 title: Notion's role shifts to journal + dept pages; AI-searchable knowledge moves to Markdown/YAML
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [ai-office]
 status: resolved
 owner: michael
-sources: [automations-2882088507]
+sources: [automations-2882088507, jehad-vault-2026-05-06-notion-role-shift-journal-not-knowledge-base]
 related: [llm-wiki, janus-prime-radiant-build, notion, monday, linear, standup]
 ---
 

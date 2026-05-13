@@ -3,11 +3,11 @@ type: lesson
 title: "Wiki" vs "brain" — the supporting metaphor needs to match the audience
 slug: 2026-05-08-wiki-vs-brain-metaphor-by-audience
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-13
 departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
-sources: [2026-05-08-andrew-marketing-prime-radiant]
+sources: [2026-05-08-andrew-marketing-prime-radiant, jehad-vault-2026-05-08-wiki-vs-brain-metaphor-by-audience]
 related: [andrew-soane, llm-wiki, marketing-prime-radiant, janus-prime-radiant-build]
 ---
 

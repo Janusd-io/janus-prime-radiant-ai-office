@@ -3,13 +3,13 @@ type: lesson
 title: Fireflies Summaries Are Insufficient — Raw Transcript Must Be Canonical
 slug: 2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-13
 status: resolved
 owner: michael
 departments: [ai-office]
 countries: [sg, gb, us]
 confidence: high
-sources: [bonaventure-discussion-tracker, aio-weekly-status-2026-04-20-24, it-discussion-tracker]
+sources: [bonaventure-discussion-tracker, aio-weekly-status-2026-04-20-24, it-discussion-tracker, jehad-vault-2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical]
 related: [fireflies, janus-prime-radiant-build, standup]
 ---
 

@@ -3,13 +3,13 @@ type: lesson
 title: GCP Metering Complexity vs Hostinger Simplicity — Self-Host Default Changed
 slug: 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-05-13
 status: resolved
 owner: michael
 departments: [ai-office, it-ops]
 countries: [sg, gb, us]
 confidence: high
-sources: [aio-completed-action-items-archive, aio-weekly-status-2026-04-20-24]
+sources: [aio-completed-action-items-archive, aio-weekly-status-2026-04-20-24, jehad-vault-2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins]
 related: [hostinger, google-cloud, n8n]
 ---
 

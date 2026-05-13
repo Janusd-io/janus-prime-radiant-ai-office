@@ -3,9 +3,9 @@ type: concept
 title: Gist pattern — adaptable starting points instead of rigid templates
 slug: gist-pattern-as-template-replacement
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-13
 departments: [marketing, ai-office]
-sources: [karpathy-llm-wiki, 2026-05-08-andrew-marketing-prime-radiant]
+sources: [karpathy-llm-wiki, 2026-05-08-andrew-marketing-prime-radiant, jehad-vault-gist-pattern-as-template-replacement]
 related: [llm-wiki, andrej-karpathy, prime-radiant-three-layer-architecture, marketing-prime-radiant, janus-prime-radiant-build]
 ---
 

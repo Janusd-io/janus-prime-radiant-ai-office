@@ -3,11 +3,11 @@ type: project
 title: ISO Compliance Programme
 slug: iso-compliance-programme
 created: 2026-05-07
-updated: 2026-05-12
+updated: 2026-05-13
 departments: [iso, it-ops, ai-office, office-of-ceo]
 status: active
 owner: michael
-sources: [aio-2026-05-01, aio-2026-05-04, aio-2026-05-05, aio-2026-05-06, simon-iso-programme-discovery-2026-04, bonaventure-reframe-analysis-2026-04-20, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call]
+sources: [aio-2026-05-01, aio-2026-05-04, aio-2026-05-05, aio-2026-05-06, simon-iso-programme-discovery-2026-04, bonaventure-reframe-analysis-2026-04-20, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, jehad-vault-iso-compliance-programme]
 related: [iso, simon-tarskih, bonaventure-wong, michael-bruck, jehad-altoutou, ai-tool-evaluation, standup, wispr-flow, 2026-05-01-iso-compliance-gate-before-automation, 2026-04-20-iso-first-stack-architectural-pivot, ai-native-janus-positioning]
 ---
 
