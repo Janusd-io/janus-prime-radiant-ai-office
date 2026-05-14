@@ -1,24 +1,31 @@
 # Wiki Index
 
-_Updated: 2026-05-14 (decisions/concepts/ → concepts/ migration executed; 13 concept files moved to top-level concepts/; 6 jehad-vault provenance headers updated; index Concepts section already pointed at the new path so no edit needed. Broken-refs recount net improved: 181 → 149. Resolves the top remediation item from yesterday's lint report.)_
+_Updated: 2026-05-14 (lint remediation pass executed — 9 missing-page stubs created (n8n, notebooklm, marketo, github, openai vendors + claude-code & anthropic-claude redirects + knowledge-compilation concept + vivian-balakrishnan person), 9 meeting-source stubs filed for the 5+ ref Jehad-vault meetings, no body refs rewritten. Recount: broken refs 149 → 82 (-67), broken unique slugs 66 → 49 (-17). Both lint-report remediation buckets crossed off; decisions/concepts → concepts/ migration also done earlier today.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 
 ## Vendors
 
 - [anthropic](entities/vendors/anthropic.md) — AI safety/research company; parent of the Claude product family. [active, high]
+- [anthropic-claude](entities/vendors/anthropic-claude.md) — legacy slug for the Claude product family; thin redirect to [[claude]]. [superseded]
 - [assessify](entities/vendors/assessify.md) — HR/candidate-assessment platform; bridge for Janus recruitment automation pipeline. [active, medium]
 - [claude](entities/vendors/claude.md) — Anthropic product family: Claude models, Claude Code, Claude Managed Agents, Cowork, Claude in Chrome. [active, high]
+- [claude-code](entities/vendors/claude-code.md) — Anthropic's CLI/IDE coding agent; thin pointer to umbrella [[claude]] entry. [active, high]
 - [deel](entities/vendors/deel.md) — HR/payroll platform; used as headless backend at Janus. [active, medium]
 - [fireflies](entities/vendors/fireflies.md) — meeting transcription; system of record for "what was said" at Janus. [active, high]
+- [github](entities/vendors/github.md) — code hosting + version control; confirmed substrate for Prime Radiant vault sync as of 2026-05-13. [active, high]
 - [google-cloud](entities/vendors/google-cloud.md) — GCP arm; Agentic Data Cloud, Skills Repo, A2A protocol push. [active, high]
 - [hostinger](entities/vendors/hostinger.md) — hosting/infrastructure; Sandbox in Linear AIR. [active, medium]
 - [linear](entities/vendors/linear.md) — issue tracker; system of record for the AI Tool Registry (AIR). [active, high]
+- [marketo](entities/vendors/marketo.md) — Adobe Marketo Engage; marketing automation candidate signal source. [monitored, low]
 - [marp](entities/vendors/marp.md) — markdown-based slide/presentation tool. [active, high]
 - [monday](entities/vendors/monday.md) — work management; primary execution surface for Janus tasks/projects. [active, high]
+- [n8n](entities/vendors/n8n.md) — open-source workflow automation; self-hosted on Hostinger; operational plumbing for AIO ingestion pipelines. [active, medium]
 - [nemoclaw](entities/vendors/nemoclaw.md) — NVIDIA enterprise-hardened OpenClaw derivative; production tier-1 agent infrastructure (AIR-39). [active, medium]
+- [notebooklm](entities/vendors/notebooklm.md) — Google's note-taking+Q&A product; retired 2026-05-11 in favour of HTML outputs. [archived, medium]
 - [notion](entities/vendors/notion.md) — workspace and docs; Operations Notebook journal/reporting surface. [active, high]
 - [obsidian](entities/vendors/obsidian.md) — markdown editor; the wiki interface. [high]
+- [openai](entities/vendors/openai.md) — frontier model / agent-platform vendor; Janus posture: monitor, not adopt as primary. [monitored, high]
 - [openclaw](entities/vendors/openclaw.md) — open-source AI agent framework; OSS baseline for [[nemoclaw]]. [active, medium]
 - [pinecone](entities/vendors/pinecone.md) — vector DB pivoting to "knowledge engine" with Nexus. [active, high]
 - [slack](entities/vendors/slack.md) — real-time messaging; AI Hub channel + AI Internal Hub agentic workflow target. [active, high]
@@ -34,6 +41,7 @@ _(none yet)_
 ## People (external)
 
 - [andrej-karpathy](entities/people/andrej-karpathy.md) — AI researcher; authored the LLM Wiki gist that inspired this wiki. [high]
+- [vivian-balakrishnan](entities/people/vivian-balakrishnan.md) — SG Foreign Minister; runs personal LLM wiki on Raspberry Pi; potential SG-government advocate for Prime Radiant pattern (relationship via Bonaventure). [high]
 - [yusuf-apple-dubai](entities/people/yusuf-apple-dubai.md) — Apple Store Dubai sales associate; 3rd-year CS student at AUD; potential internship candidate for non-technical-AIO-rollout interface role. [active, low]
 
 ## People (internal)
@@ -70,6 +78,7 @@ _(none yet)_
 - [agentic-ai](concepts/agentic-ai.md) — umbrella term for autonomous, tool-using AI systems; broad framing. [high]
 - [context-engineering](concepts/context-engineering.md) — discipline of pre-shaping data into agent-usable knowledge. [high]
 - [gist-pattern-as-template-replacement](concepts/gist-pattern-as-template-replacement.md) — Karpathy gist pattern as a replacement for rigid templates; adaptable starting points expanded by LLM under local context. [high]
+- [knowledge-compilation](concepts/knowledge-compilation.md) — pre-compiled knowledge artefacts beat runtime retrieval; the architectural pattern behind Prime Radiant, Pinecone Nexus, Google Knowledge Catalog. [high]
 - [llm-wiki](concepts/llm-wiki.md) — methodology for LLM-maintained personal/organisational knowledge bases. [high]
 - [model-context-protocol](concepts/model-context-protocol.md) — MCP; vertical protocol for LLM-to-tools integration. [high]
 - [peer-to-peer-mesh-federation-pattern](concepts/peer-to-peer-mesh-federation-pattern.md) — mesh federation for the Prime Radiant rollout; each department-to-department relationship gets its own shared subfolder; filesystem-level federation, not event-broker. [high]

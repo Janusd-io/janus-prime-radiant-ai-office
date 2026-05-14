@@ -1149,3 +1149,52 @@ Crossed off the top remediation item from the 2026-05-13 lint report (`pulse/202
 
 ### Follow-up
 Two remediation buckets remain from the lint report (deferred from yesterday): missing-page promotions (8 candidate stubs) and Jehad's unresolved meeting-source refs (~10 slugs). Lint will keep surfacing them until they're triaged.
+
+## [2026-05-14 06:25] lint-followup | missing-page promotions + meeting-source stubs | 18 files created
+
+Crossed off both remaining remediation buckets from `pulse/2026-05-13-lint.md`.
+
+### Entity / concept / person stubs created (9 files)
+- `entities/vendors/n8n.md` — open-source workflow automation; operational plumbing self-hosted on Hostinger.
+- `entities/vendors/notebooklm.md` — Google's NotebookLM; archived (retired 2026-05-11 in favour of HTML).
+- `entities/vendors/marketo.md` — Adobe Marketo Engage; monitored, low confidence, low-priority signal source for Marketing.
+- `entities/vendors/github.md` — GitHub itself; the confirmed Prime Radiant vault substrate post-migration.
+- `entities/vendors/openai.md` — OpenAI; monitored, not adopted; Janus picks Anthropic on long-term memory grounds.
+- `entities/vendors/claude-code.md` — thin redirect to umbrella `[[claude]]` entry; resolves `[[claude-code]]` body refs cleanly.
+- `entities/vendors/anthropic-claude.md` — thin redirect to umbrella `[[claude]]` entry; resolves legacy `[[anthropic-claude]]` refs in Jehad-vault sources without modifying source content.
+- `concepts/knowledge-compilation.md` — concept page promoted from the "promote on second source" placeholder note in `context-engineering`; now justified by 2+ vendor instantiations (Pinecone Nexus, Google Knowledge Catalog) plus Prime Radiant as the file-based instance.
+- `entities/people/vivian-balakrishnan.md` — SG Foreign Minister; LLM-wiki adopter; potential government advocate for Prime Radiant pattern (relationship through Bonaventure).
+
+### Meeting-source stubs created (9 files)
+All 8 meetings at the 5+ inbound-ref threshold from Jehad's vault batch + 1 bonus (queued explicitly):
+- `sources/meetings/2026-04-22-it-team-meeting.md` (5 decision refs)
+- `sources/meetings/2026-05-01-recruitment-and-leave-management-dashboard-meeting.md` (7)
+- `sources/meetings/2026-05-04-bonaventure-michael-jehad-and-andrew-meeting.md` (7)
+- `sources/meetings/2026-05-05-may-05-11-03-am.md` (8)
+- `sources/meetings/2026-05-05-michael-jehad-andrew-weekly-meeting.md` (6)
+- `sources/meetings/2026-05-07-michael-jehad-euclid-andre-it-operations.md` (6)
+- `sources/meetings/2026-05-08-jehad-michael-bonaventure-meeting.md` (5)
+- `sources/meetings/2026-05-12-aio-andrew-marketing.md` (6)
+- `sources/meetings/2026-05-12-prime-radiant-marketing-setup-debug.md` (3 — bonus; queued from storage-substrate brief)
+
+Each stub has: frontmatter (date, attendees inferred from slug, source_type: stub), a clear "stub page" notice, the list of decisions that reference it (as `[[wikilinks]]` with their titles), and a "transcript pending recovery" note. The frontmatter pattern allows future replacement with the full transcript without needing to touch the inbound references.
+
+### Broken-refs recount
+- Pre-this-pass: 149 refs / 66 unique slugs (post-concepts-migration)
+- Post-this-pass: **82 refs / 49 unique slugs** (-67 refs / -17 unique)
+- Excludes lint reports per usual convention (lint reports mention every broken slug in their bodies by design)
+
+### Remaining broken-refs profile (49 unique slugs)
+Three buckets:
+- **Pseudo-slugs to leave** (~7 slugs, 17 refs): `unknown-speaker-1/2/3` (Fireflies artefacts), `ai-tool-evaluation-framework` (alias for the `ai-tool-evaluation` process), `ai-registry-v2` (draft slug, no real page intended), `wikilink`/`wikilinks` (referenced in CLAUDE.md prose).
+- **Below-threshold meetings** (~2 slugs, 8 refs): the two 4-ref Jehad meetings not stubbed this pass.
+- **CRM/marketing/IT vendor candidates** (~10 slugs, ~25 refs): hubspot, attio, salesforce, zendesk, wix — these are mentioned in CRM evaluation / marketing PR context but don't have pages yet. Worth promoting in a later pass when the CRM evaluation completes and the winner becomes a real adopt-or-reject question.
+
+### Lint report status
+Both remediation buckets in `pulse/2026-05-13-lint.md` past-tensed. Original content kept beneath the resolved notices for audit. Lint findings for 2026-05-13 are now fully resolved end-to-end.
+
+### Index updates
+- 7 new vendors merged into `## Vendors` section (alphabetical)
+- 1 new concept merged into `## Concepts`
+- 1 new external person merged into `## People (external)`
+- Header note updated to reflect today's two passes (concepts migration + this remediation)
