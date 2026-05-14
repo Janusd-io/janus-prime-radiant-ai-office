@@ -1,0 +1,23 @@
+---
+type: source
+source_type: laptop
+title: entrance
+slug: entrance
+created: 2026-04-16
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/brightbean-studio/templates/allauth/layouts/entrance.html
+original_size: 42
+original_ext: .html
+category: docs
+extracted_with: pandoc
+extracted_at: "2026-05-14T09:51:39Z"
+---
+
+# entrance
+
+_Extracted from `brightbean-studio/templates/allauth/layouts/entrance.html` on 2026-05-14._
+
+{% extends "allauth/layouts/base.html" %}

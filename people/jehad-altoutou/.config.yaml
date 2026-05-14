@@ -1,0 +1,10 @@
+# Janus brain — per-person config for Jehad Altoutou (jehad-altoutou)
+# Lives inside the shared dept vault. Read by apply-meeting-digests.py and
+# the enrichment subagent. Edit freely; one key per line, simple YAML.
+
+person_slug: jehad-altoutou
+person_name: "Jehad Altoutou"
+primary_dept: ai-office
+task_tracker: monday
+captured_by: jehad-altoutou
+created: 2026-05-14

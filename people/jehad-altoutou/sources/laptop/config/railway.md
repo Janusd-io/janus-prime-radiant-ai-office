@@ -1,0 +1,32 @@
+---
+type: source
+source_type: laptop
+title: railway
+slug: railway
+created: 2026-04-16
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/brightbean-studio/railway.toml
+original_size: 132
+original_ext: .toml
+category: config
+extracted_with: config-fenced
+extracted_at: "2026-05-14T09:51:36Z"
+---
+
+# railway
+
+_Extracted from `brightbean-studio/railway.toml` on 2026-05-14._
+
+```toml
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+```

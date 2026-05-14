@@ -1,0 +1,69 @@
+---
+type: source
+source_type: laptop
+title: idea_card
+slug: idea-card
+created: 2026-04-16
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/brightbean-studio/templates/composer/partials/idea_card.html
+original_size: 1748
+original_ext: .html
+category: docs
+extracted_with: pandoc
+extracted_at: "2026-05-14T09:51:39Z"
+---
+
+# idea_card
+
+_Extracted from `brightbean-studio/templates/composer/partials/idea_card.html` on 2026-05-14._
+
+<div class="idea-card relative" idea-id="{{ idea.id }}"
+tags="{{ idea.tags_payload_json|escape }}"
+data-media="{{ idea.media_payload_json|escape }}" draggable="true"
+@dragstart="startDrag($event, '{{ idea.id }}')"
+@dragend="endDrag($event)"
+@click="openEdit('{{ idea.id }}', '{{ idea.title|escapejs }}', '{{ idea.description|escapejs }}', $el.dataset.tags, '{{ group_id }}', $el.dataset.media)">
+
+{% if idea.cover_media and idea.cover_media.file %}
+
+<div class="-mx-3 -mt-3 mb-2 rounded-t-lg overflow-hidden flex items-center justify-center h-[120px]">
+
+{% if idea.cover_media.media_type == 'video' %}
+
+{% else %} <img src="%7B%7B%20idea.cover_media.file.url%20%7D%7D"
+class="max-h-full max-w-full object-contain" /> {% endif %}
+
+</div>
+
+{% endif %} {% if idea.media_count \> 1 %}
+
+<div class="absolute right-2 top-2 inline-flex items-center justify-center min-w-[24px] h-6 px-1.5 rounded-full text-[10px] font-semibold bg-black/65 text-white">
+
++{{ idea.media_count\|add:"-1" }}
+
+</div>
+
+{% endif %}
+
+#### {{ idea.title }}
+
+{% if idea.description %}
+
+{{ idea.description\|truncatechars:120 }}
+
+{% endif %} {% if idea.tags %}
+
+<div class="flex flex-wrap gap-1 mt-2">
+
+{% for tag in idea.tags %}
+<span class="inline-block px-1.5 py-0.5 text-[10px] font-medium bg-stone-100 text-stone-500 rounded">{{
+tag }}</span> {% endfor %}
+
+</div>
+
+{% endif %}
+
+</div>

@@ -2,3 +2,7 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache
+# Added by scaffold-person-subtree.sh
+people/*/private/
+people/*/.review-queue.md
+.state/

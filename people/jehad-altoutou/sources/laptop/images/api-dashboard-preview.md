@@ -1,0 +1,25 @@
+---
+type: source
+source_type: laptop
+title: api-dashboard-preview
+slug: api-dashboard-preview
+created: 2026-04-23
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/Desktop/Claude Projects/Dubai-Property-Leads/public/api-dashboard-preview.png
+original_size: 694182
+original_ext: .png
+category: images
+extracted_with: tesseract
+extracted_at: "2026-05-14T09:51:46Z"
+ocr_char_count: 0
+needs_vision_description: true
+---
+
+# api-dashboard-preview
+
+_Extracted from `Desktop/Claude Projects/Dubai-Property-Leads/public/api-dashboard-preview.png` on 2026-05-14._
+
+_(no text extracted by OCR — image may be visual-only; the Phase 5 enrichment subagent should describe it via vision)_

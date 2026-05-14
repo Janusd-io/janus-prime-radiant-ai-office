@@ -1,0 +1,250 @@
+---
+type: source
+source_type: laptop
+title: feeds_tab
+slug: feeds-tab
+created: 2026-04-16
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/brightbean-studio/templates/composer/partials/feeds_tab.html
+original_size: 19828
+original_ext: .html
+category: docs
+extracted_with: pandoc
+extracted_at: "2026-05-14T09:51:39Z"
+---
+
+# feeds_tab
+
+_Extracted from `brightbean-studio/templates/composer/partials/feeds_tab.html` on 2026-05-14._
+
+<div class="h-full"
+x-data="{ showAddModal: {% if show_add_modal %}true{% else %}false{% endif %}, customUrl: '{{ add_rss_url|default:''|escapejs }}' }"
+x-init="if (showAddModal) { $nextTick(() =&gt; $refs.customUrlInput &amp;&amp; $refs.customUrlInput.focus()) }">
+
+{% if feeds %}
+
+<div class="h-full flex flex-col min-h-0">
+
+<div class="flex items-center justify-between gap-3 mb-5">
+
+<div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap min-w-0">
+
+All feeds
+
+{% for feed in feeds %}
+
+{{ feed.name }}
+
+{% endfor %}
+
+</div>
+
+<div class="flex items-center gap-2">
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy0zLjUgaC0zLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiB2aWV3Ym94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgNXYxNE01IDEyaDE0IiAvPjwvc3ZnPg=="
+class="w-3.5 h-3.5" /> Add Feed
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy0zLjUgaC0zLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiB2aWV3Ym94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYuMjQgNy43NmwtMS44MDQgNS40MTFhMi4xIDIuMSAwIDAxLTEuMjY1IDEuMjY1TDcuNzYgMTYuMjRsMS44MDQtNS40MTFhMi4xIDIuMSAwIDAxMS4yNjUtMS4yNjVMMTYuMjQgNy43NnoiIC8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiPjwvY2lyY2xlPjwvc3ZnPg=="
+class="w-3.5 h-3.5" /> Explore Curated Feeds
+
+</div>
+
+</div>
+
+<div class="flex items-center justify-between mb-3">
+
+<div class="text-sm text-stone-500">
+
+{{ total_event_count }} recent events
+
+</div>
+
+<div class="text-xs text-stone-400">
+
+{% if last_refreshed_at %}Last refreshed {{ last_refreshed_at\|timesince
+}} ago{% endif %}
+
+</div>
+
+</div>
+
+{% if selected_feed %}
+
+<div class="mb-3 p-3 border border-stone-200 rounded-xl bg-white"
+x-data="{ openFeedMenu: false, showDeleteFeedModal: false }"
+@click.away="openFeedMenu = false">
+
+<div class="flex items-center justify-between gap-3">
+
+<div class="flex items-center gap-2 min-w-0">
+
+<div class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center flex-shrink-0">
+
+{% if selected_feed.favicon_url %}
+<img src="%7B%7B%20selected_feed.favicon_url%20%7D%7D"
+class="w-4 h-4 rounded object-contain" loading="lazy"
+onerror="this.style.display=&#39;none&#39;; this.nextElementSibling.classList.remove(&#39;hidden&#39;);"
+alt="{{ selected_feed.name }} icon" /> {% endif %} <img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy00IGgtNCB0ZXh0LXN0b25lLTQwMCB7JSBpZiBzZWxlY3RlZF9mZWVkLmZhdmljb25fdXJsICV9aGlkZGVueyUgZW5kaWYgJX0iIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiB2aWV3Ym94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik00IDExYTkgOSAwIDAxOSA5IiAvPjxwYXRoIGQ9Ik00IDRhMTYgMTYgMCAwMTE2IDE2IiAvPjxjaXJjbGUgY3g9IjUiIGN5PSIxOSIgcj0iMSI+PC9jaXJjbGU+PC9zdmc+"
+class="w-4 h-4 text-stone-400 {% if selected_feed.favicon_url %}hidden{% endif %}" />
+
+</div>
+
+#### {{ selected_feed.name }}
+
+</div>
+
+<div class="relative flex-shrink-0">
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy00IGgtNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHZpZXdib3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjUiIGN5PSIxMiIgcj0iMSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkiIGN5PSIxMiIgcj0iMSI+PC9jaXJjbGU+PC9zdmc+"
+class="w-4 h-4" />
+
+<div class="absolute right-0 top-[calc(100%+6px)] min-w-[140px] bg-white border border-stone-200 rounded-lg shadow-lg p-1 z-20"
+x-show="openFeedMenu" x-cloak="" x-transition="">
+
+Delete Feed
+
+</div>
+
+</div>
+
+</div>
+
+<div class="fixed inset-0 z-[230] flex items-center justify-center"
+x-show="showDeleteFeedModal" x-cloak=""
+@keydown.escape.window="showDeleteFeedModal = false">
+
+<div class="fixed inset-0 bg-black/30"
+@click="showDeleteFeedModal = false">
+
+</div>
+
+<div class="relative bg-white rounded-2xl shadow-xl w-full max-w-[420px] mx-4 p-6"
+@click.stop="">
+
+### Delete Feed
+
+Remove <span class="font-semibold text-stone-800">{{ selected_feed.name
+}}</span> from your feeds?
+
+{% csrf_token %}
+
+<div class="flex items-center justify-end gap-2">
+
+Cancel
+
+Delete Feed
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endif %}
+
+<div id="feed-events-list"
+class="space-y-3 flex-1 min-h-0 overflow-y-auto pr-1">
+
+{% include "composer/partials/feed_events_batch.html" with
+show_empty=True %}
+
+</div>
+
+</div>
+
+{% else %}
+
+<div class="flex flex-col lg:flex-row items-center justify-center gap-8 py-12">
+
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left max-w-md">
+
+## Add your First Feed
+
+Subscribe to your favorite blogs, websites, or creators to get the
+latest content ideas.
+
+<div class="flex items-center gap-3">
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy00IGgtNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHZpZXdib3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMiA1djE0TTUgMTJoMTQiIC8+PC9zdmc+"
+class="w-4 h-4" /> Add Feed
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy00IGgtNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHZpZXdib3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xNi4yNCA3Ljc2bC0xLjgwNCA1LjQxMWEyLjEgMi4xIDAgMDEtMS4yNjUgMS4yNjVMNy43NiAxNi4yNGwxLjgwNC01LjQxMWEyLjEgMi4xIDAgMDExLjI2NS0xLjI2NUwxNi4yNCA3Ljc2eiIgLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCI+PC9jaXJjbGU+PC9zdmc+"
+class="w-4 h-4" /> Explore Curated Feeds
+
+</div>
+
+</div>
+
+<div class="flex-shrink-0">
+
+![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIzIiBoZWlnaHQ9IjI0NCIgdmlld2JveD0iMCAwIDMyMyAyNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiPjxyZWN0IHdpZHRoPSIzMjMiIGhlaWdodD0iMjIyIiByeD0iOC40MjEwNSIgZmlsbD0iI0VFRjVFQiIgLz48ZyBmaWx0ZXI9InVybCgjZmlsdGVyMF9kZGRfMjEwNl81NTI4OCkiPjxyZWN0IHg9IjU2LjM1MDkiIHk9IjMyLjM0OTkiIHdpZHRoPSIxNjIuMTA1IiBoZWlnaHQ9IjEzMS4yMjgiIHJ4PSI2LjY2NjY3IiBmaWxsPSJ3aGl0ZSIgLz48cmVjdCB4PSI1Ni4zNTA5IiB5PSIzMi4zNDk5IiB3aWR0aD0iMTYyLjEwNSIgaGVpZ2h0PSIxMzEuMjI4IiByeD0iNi42NjY2NyIgc3Ryb2tlPSIjMjEzMTMwIiBzdHJva2Utd2lkdGg9IjAuNzAxNzU0IiAvPjxyZWN0IHg9IjcwLjAzNTIiIHk9IjQ0LjYzMDQiIHdpZHRoPSIzMC44NzcyIiBoZWlnaHQ9IjMwLjg3NzIiIHJ4PSIxNS40Mzg2IiBmaWxsPSIjRDlGMUQxIiAvPjxwYXRoIGQ9Ik04MC43OTU0IDU5LjQ4NDJDODIuMTkxMyA1OS40ODQyIDgzLjUzIDYwLjAzODcgODQuNTE3IDYxLjAyNTdDODUuNTA0IDYyLjAxMjggODYuMDU4NiA2My4zNTE1IDg2LjA1ODYgNjQuNzQ3M004MC43OTU0IDU1LjM5MDZDODMuMjc3IDU1LjM5MDYgODUuNjU2OSA1Ni4zNzY0IDg3LjQxMTYgNTguMTMxMUM4OS4xNjYzIDU5Ljg4NTkgOTAuMTUyMSA2Mi4yNjU4IDkwLjE1MjEgNjQuNzQ3M004MS45NjUgNjQuMTYyNkM4MS45NjUgNjQuNDg1NSA4MS43MDMyIDY0Ljc0NzMgODEuMzgwMiA2NC43NDczQzgxLjA1NzIgNjQuNzQ3MyA4MC43OTU0IDY0LjQ4NTUgODAuNzk1NCA2NC4xNjI2QzgwLjc5NTQgNjMuODM5NiA4MS4wNTcyIDYzLjU3NzggODEuMzgwMiA2My41Nzc4QzgxLjcwMzIgNjMuNTc3OCA4MS45NjUgNjMuODM5NiA4MS45NjUgNjQuMTYyNloiIHN0cm9rZT0iIzIxMjAxQyIgc3Ryb2tlLXdpZHRoPSIxLjA1MjYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHJlY3QgeD0iMTA2LjUyNiIgeT0iNTYuNTYwMSIgd2lkdGg9Ijk4LjI0NTYiIGhlaWdodD0iNy4wMTc1NCIgcng9IjMuNTA4NzciIGZpbGw9IiNFQUU4RTUiIC8+PHJlY3QgeD0iNzAuMDM1MiIgeT0iODIuNTI1NCIgd2lkdGg9IjMwLjg3NzIiIGhlaWdodD0iMzAuODc3MiIgcng9IjE1LjQzODYiIGZpbGw9IiNEOUYxRDEiIC8+PHJlY3QgeD0iNzAuMDM1MiIgeT0iODIuNTI1NCIgd2lkdGg9IjMwLjg3NzIiIGhlaWdodD0iMzAuODc3MiIgcng9IjE1LjQzODYiIGZpbGw9IiNEOUYxRDEiIC8+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzIxMDZfNTUyODgpIj48cGF0aCBkPSJNODAuNzk1NiAxMDMuODEySDkwLjE1MjNDOTAuNDYyNSAxMDMuODEyIDkwLjc2IDEwMy42ODggOTAuOTc5MyAxMDMuNDY5QzkxLjE5ODYgMTAzLjI1IDkxLjMyMTkgMTAyLjk1MiA5MS4zMjE5IDEwMi42NDJMOTEuMzIxOSA5My4yODUzQzkxLjMyMTkgOTIuOTc1MSA5MS4xOTg3IDkyLjY3NzYgOTAuOTc5MyA5Mi40NTgzQzkwLjc2IDkyLjIzODkgOTAuNDYyNSA5Mi4xMTU3IDkwLjE1MjMgOTIuMTE1N0g4My4xMzQ3QzgyLjgyNDYgOTIuMTE1NyA4Mi41MjcxIDkyLjIzODkgODIuMzA3NyA5Mi40NTgzQzgyLjA4ODQgOTIuNjc3NiA4MS45NjUyIDkyLjk3NTEgODEuOTY1MiA5My4yODUzTDgxLjk2NTEgMTAyLjY0MkM4MS45NjUxIDEwMi45NTIgODEuODQxOSAxMDMuMjUgODEuNjIyNiAxMDMuNDY5QzgxLjQwMzIgMTAzLjY4OCA4MS4xMDU3IDEwMy44MTIgODAuNzk1NiAxMDMuODEyWk04MC43OTU2IDEwMy44MTJDODAuNDg1NCAxMDMuODEyIDgwLjE4NzkgMTAzLjY4OCA3OS45Njg1IDEwMy40NjlDNzkuNzQ5MiAxMDMuMjUgNzkuNjI2IDEwMi45NTIgNzkuNjI2IDEwMi42NDJMNzkuNjI2IDk3LjM3ODlDNzkuNjI2IDk2LjczNTYgODAuMTUyMyA5Ni4yMDkzIDgwLjc5NTYgOTYuMjA5M0g4MS45NjUyTTg4Ljk4MjcgOTkuMTMzM0g4NC4zMDQzTTg3LjIyODMgMTAxLjQ3Mkg4NC4zMDQzTTg0LjMwNDMgOTQuNDU0OUg4OC45ODI3TDg4Ljk4MjcgOTYuNzk0MUg4NC4zMDQzTDg0LjMwNDMgOTQuNDU0OVoiIHN0cm9rZT0iIzIxMjAxQyIgc3Ryb2tlLXdpZHRoPSIxLjA1MjYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PC9nPjxyZWN0IHg9IjEwNi41MjYiIHk9Ijk0LjQ1NTEiIHdpZHRoPSI5OC4yNDU2IiBoZWlnaHQ9IjcuMDE3NTQiIHJ4PSIzLjUwODc3IiBmaWxsPSIjRUFFOEU1IiAvPjxyZWN0IHg9IjcwLjAzNTIiIHk9IjEyMC40MiIgd2lkdGg9IjMwLjg3NzIiIGhlaWdodD0iMzAuODc3MiIgcng9IjE1LjQzODYiIGZpbGw9IiNEOUYxRDEiIC8+PHJlY3QgeD0iNzAuMDM1MiIgeT0iMTIwLjQyIiB3aWR0aD0iMzAuODc3MiIgaGVpZ2h0PSIzMC44NzcyIiByeD0iMTUuNDM4NiIgZmlsbD0iI0Q5RjFEMSIgLz48ZyBjbGlwLXBhdGg9InVybCgjY2xpcDFfMjEwNl81NTI4OCkiPjxwYXRoIGQ9Ik05MS4zMjE5IDEzNS44NThDOTEuMzIxOSAxMzkuMDg4IDg4LjcwMzcgMTQxLjcwNiA4NS40NzM5IDE0MS43MDZNOTEuMzIxOSAxMzUuODU4QzkxLjMyMTkgMTMyLjYyOCA4OC43MDM3IDEzMC4wMSA4NS40NzM5IDEzMC4wMU05MS4zMjE5IDEzNS44NThINzkuNjI2TTg1LjQ3MzkgMTQxLjcwNkM4Mi4yNDQyIDE0MS43MDYgNzkuNjI2IDEzOS4wODggNzkuNjI2IDEzNS44NThNODUuNDczOSAxNDEuNzA2QzgzLjk3MjMgMTQwLjEyOSA4My4xMzQ3IDEzOC4wMzYgODMuMTM0NyAxMzUuODU4QzgzLjEzNDcgMTMzLjY4MSA4My45NzIzIDEzMS41ODcgODUuNDczOSAxMzAuMDFNODUuNDczOSAxNDEuNzA2Qzg2Ljk3NTUgMTQwLjEyOSA4Ny44MTMxIDEzOC4wMzYgODcuODEzMSAxMzUuODU4Qzg3LjgxMzEgMTMzLjY4MSA4Ni45NzU1IDEzMS41ODcgODUuNDczOSAxMzAuMDFNNzkuNjI2IDEzNS44NThDNzkuNjI2IDEzMi42MjggODIuMjQ0MiAxMzAuMDEgODUuNDczOSAxMzAuMDEiIHN0cm9rZT0iIzIxMjAxQyIgc3Ryb2tlLXdpZHRoPSIxLjA1MjYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PC9nPjxyZWN0IHg9IjEwNi41MjYiIHk9IjEzMi4zNSIgd2lkdGg9Ijk4LjI0NTYiIGhlaWdodD0iNy4wMTc1NCIgcng9IjMuNTA4NzciIGZpbGw9IiNFQUU4RTUiIC8+PC9nPjxwYXRoIGQ9Ik0xNzIuODUyIDI0Mi45NEMxOTQuOTY2IDI0Mi45NCAyMTIuODkzIDIyNS4wMiAyMTIuODk0IDIwMi45MTRMMjEyLjg5NCAxOTMuNzE5QzIxMi44OTMgMTkzLjUyNSAyMTIuNzM2IDE5My4zNjggMjEyLjU0MyAxOTMuMzY4QzIxMi4zNDkgMTkzLjM2OCAyMTIuMTkyIDE5My41MjUgMjEyLjE5MSAxOTMuNzE5TDIxMi4xOTEgMjAyLjkxNEMyMTIuMTkxIDIyNC42MzIgMTk0LjU3OSAyNDIuMjM5IDE3Mi44NTIgMjQyLjIzOUMxNTEuMTI0IDI0Mi4yMzkgMTMzLjUxMSAyMjQuNjMyIDEzMy41MTEgMjAyLjkxNEwxMzMuNTExIDE0Mi42NDhDMTMzLjUxMSAxNDIuNDU1IDEzMy4zNTQgMTQyLjI5NyAxMzMuMTYgMTQyLjI5N0MxMzIuOTY2IDE0Mi4yOTcgMTMyLjgxIDE0Mi40NTUgMTMyLjgxIDE0Mi42NDhMMTMyLjgxIDIwMi45MTRDMTMyLjgxIDIyNS4wMiAxNTAuNzM3IDI0Mi45NCAxNzIuODUyIDI0Mi45NFoiIGZpbGw9IiMyMTMxMzAiIC8+PHJlY3QgeD0iMTU1LjM1MSIgeT0iMTQ5LjM5NCIgd2lkdGg9IjEzMC4yOTgiIGhlaWdodD0iNDQuMjEwNSIgcng9IjUuMjYzMTYiIGZpbGw9IiNGRkZGRjkiIC8+PHJlY3QgeD0iMTU1LjM1MSIgeT0iMTQ5LjM5NCIgd2lkdGg9IjEzMC4yOTgiIGhlaWdodD0iNDQuMjEwNSIgcng9IjUuMjYzMTYiIHN0cm9rZT0iIzIxMzEzMCIgc3Ryb2tlLXdpZHRoPSIwLjcwMTc1NCIgLz48cmVjdCB4PSIxNjMiIHk9IjE1Ni4wNjEiIHdpZHRoPSIzMC44NzcyIiBoZWlnaHQ9IjMwLjg3NzIiIHJ4PSIxNS40Mzg2IiBmaWxsPSIjRkZCQjhBIiAvPjxyZWN0IHg9IjE2MyIgeT0iMTU2LjA2MSIgd2lkdGg9IjMwLjg3NzIiIGhlaWdodD0iMzAuODc3MiIgcng9IjE1LjQzODYiIGZpbGw9IiNGRkQ4ODkiIC8+PHBhdGggZD0iTTE3NC4zNDUgMTcxLjQ5OUgxODIuNTMyTTE3OC40MzkgMTY3LjQwNUwxNzguNDM5IDE3NS41OTIiIHN0cm9rZT0iIzIxMjAxQyIgc3Ryb2tlLXdpZHRoPSIxLjA1MjYzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+PHJlY3QgeD0iMTk5LjQ5MSIgeT0iMTY3Ljk5OSIgd2lkdGg9IjczIiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNFQUU4RTUiIC8+PHBhdGggZD0iTTExOS42MDkgMTU2LjA5NkwxMzMuMTczIDE0Mi40NTNMMTQ2LjY5OCAxNTYuMDk2IiBzdHJva2U9IiMyMTMxMzAiIHN0cm9rZS13aWR0aD0iMC43MDE3NTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz48ZGVmcz48ZmlsdGVyIGlkPSJmaWx0ZXIwX2RkZF8yMTA2XzU1Mjg4IiB4PSI0NC43NzE5IiB5PSIzMC41OTU1IiB3aWR0aD0iMTg1LjI2MyIgaGVpZ2h0PSIxNTUuNzg5IiBmaWx0ZXJ1bml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+PGZlZmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiPjwvZmVmbG9vZD48ZmVjb2xvcm1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiPjwvZmVjb2xvcm1hdHJpeD48ZmVtb3JwaG9sb2d5IHJhZGl1cz0iNS42MTQwNCIgb3BlcmF0b3I9ImVyb2RlIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzIxMDZfNTUyODgiPjwvZmVtb3JwaG9sb2d5PjxmZW9mZnNldCBkeT0iMTEuMjI4MSI+PC9mZW9mZnNldD48ZmVnYXVzc2lhbmJsdXIgc3RkZGV2aWF0aW9uPSI4LjQyMTA1Ij48L2ZlZ2F1c3NpYW5ibHVyPjxmZWNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9Im91dCI+PC9mZWNvbXBvc2l0ZT48ZmVjb2xvcm1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwLjEyOTQxMiAwIDAgMCAwIDAuMTI1NDkgMCAwIDAgMCAwLjEwOTgwNCAwIDAgMCAwLjEyIDAiPjwvZmVjb2xvcm1hdHJpeD48ZmVibGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18yMTA2XzU1Mjg4Ij48L2ZlYmxlbmQ+PGZlY29sb3JtYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIj48L2ZlY29sb3JtYXRyaXg+PGZlbW9ycGhvbG9neSByYWRpdXM9IjIuODA3MDIiIG9wZXJhdG9yPSJlcm9kZSIgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9ImVmZmVjdDJfZHJvcFNoYWRvd18yMTA2XzU1Mjg4Ij48L2ZlbW9ycGhvbG9neT48ZmVvZmZzZXQgZHk9IjIuODA3MDIiPjwvZmVvZmZzZXQ+PGZlZ2F1c3NpYW5ibHVyIHN0ZGRldmlhdGlvbj0iMi44MDcwMiI+PC9mZWdhdXNzaWFuYmx1cj48ZmVjb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiPjwvZmVjb21wb3NpdGU+PGZlY29sb3JtYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC4xMjk0MTIgMCAwIDAgMCAwLjEyNTQ5IDAgMCAwIDAgMC4xMDk4MDQgMCAwIDAgMC4xMiAwIj48L2ZlY29sb3JtYXRyaXg+PGZlYmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvd18yMTA2XzU1Mjg4IiByZXN1bHQ9ImVmZmVjdDJfZHJvcFNoYWRvd18yMTA2XzU1Mjg4Ij48L2ZlYmxlbmQ+PGZlY29sb3JtYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIj48L2ZlY29sb3JtYXRyaXg+PGZlbW9ycGhvbG9neSByYWRpdXM9IjAuNzAxNzU0IiBvcGVyYXRvcj0iZGlsYXRlIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0iZWZmZWN0M19kcm9wU2hhZG93XzIxMDZfNTUyODgiPjwvZmVtb3JwaG9sb2d5PjxmZW9mZnNldD48L2Zlb2Zmc2V0PjxmZWdhdXNzaWFuYmx1ciBzdGRkZXZpYXRpb249IjAuMzUwODc3Ij48L2ZlZ2F1c3NpYW5ibHVyPjxmZWNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9Im91dCI+PC9mZWNvbXBvc2l0ZT48ZmVjb2xvcm1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwLjEyOTQxMiAwIDAgMCAwIDAuMTI1NDkgMCAwIDAgMCAwLjEwOTgwNCAwIDAgMCAwLjA4IDAiPjwvZmVjb2xvcm1hdHJpeD48ZmVibGVuZCBtb2RlPSJub3JtYWwiIGluMj0iZWZmZWN0Ml9kcm9wU2hhZG93XzIxMDZfNTUyODgiIHJlc3VsdD0iZWZmZWN0M19kcm9wU2hhZG93XzIxMDZfNTUyODgiPjwvZmVibGVuZD48ZmVibGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDNfZHJvcFNoYWRvd18yMTA2XzU1Mjg4IiByZXN1bHQ9InNoYXBlIj48L2ZlYmxlbmQ+PC9maWx0ZXI+PGNsaXBwYXRoIGlkPSJjbGlwMF8yMTA2XzU1Mjg4Ij48cmVjdCB3aWR0aD0iMTQuMDM1MSIgaGVpZ2h0PSIxNC4wMzUxIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIC0xLjMzNzk1ZS0wNiAxIDc4LjQ1NjMgOTAuOTQ2MykiIC8+PC9jbGlwcGF0aD48Y2xpcHBhdGggaWQ9ImNsaXAxXzIxMDZfNTUyODgiPjxyZWN0IHdpZHRoPSIxNC4wMzUxIiBoZWlnaHQ9IjE0LjAzNTEiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgLTEuMzU5ODhlLTA2IDEgNzguNDU2MyAxMjguODQxKSIgLz48L2NsaXBwYXRoPjwvZGVmcz48L3N2Zz4=)
+
+</div>
+
+</div>
+
+{% endif %}
+
+<div class="fixed inset-0 z-[220] flex items-center justify-center"
+x-show="showAddModal" x-cloak=""
+@keydown.escape.window="showAddModal = false">
+
+<div class="fixed inset-0 bg-black/30" @click="showAddModal = false">
+
+</div>
+
+<div class="relative bg-white rounded-2xl shadow-xl w-full max-w-[560px] mx-4 p-6"
+@click.stop="">
+
+<img
+src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy01IGgtNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHZpZXdib3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxsaW5lIHgxPSIxOCIgeTE9IjYiIHgyPSI2IiB5Mj0iMTgiPjwvbGluZT48bGluZSB4MT0iNiIgeTE9IjYiIHgyPSIxOCIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+"
+class="w-5 h-5" />
+
+### Add RSS Feed
+
+RSS URLs are links to automatically get updates from a blog or news
+site. The link is usually made up of the website's domain name, followed
+by "/feed" or "/rss".
+
+{% if add_error %}
+
+<div class="mb-4 px-3 py-2 rounded-lg border border-red-200 bg-red-50 text-sm text-red-700">
+
+{{ add_error }}
+
+</div>
+
+{% endif %}
+
+{% csrf_token %}
+
+<div>
+
+RSS URL
+
+</div>
+
+<div class="flex items-center justify-end gap-2">
+
+Cancel
+
+Add Feed
+
+</div>
+
+</div>
+
+</div>
+
+</div>

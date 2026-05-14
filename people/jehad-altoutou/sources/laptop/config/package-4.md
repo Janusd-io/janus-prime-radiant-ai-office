@@ -1,0 +1,67 @@
+---
+type: source
+source_type: laptop
+title: package
+slug: package-4
+created: 2026-04-23
+captured_by: jehad-altoutou
+audience: personal
+sensitivity: dept
+sensitivity_confidence: 0.5
+original_path: /Users/jehad/Desktop/Claude Projects/Dubai-Property-Leads/package.json
+original_size: 987
+original_ext: .json
+category: config
+extracted_with: config-fenced
+extracted_at: "2026-05-14T09:51:46Z"
+---
+
+# package
+
+_Extracted from `Desktop/Claude Projects/Dubai-Property-Leads/package.json` on 2026-05-14._
+
+```json
+{
+  "name": "dubai-leads",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "@sendgrid/mail": "^8.1.6",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "jimp": "^0.16.1",
+    "jose": "^6.2.2",
+    "lucide-react": "^0.577.0",
+    "next": "16.1.6",
+    "nodemailer": "^8.0.2",
+    "papaparse": "^5.5.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "stripe": "^20.4.1",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.11",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "^6.4.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+
+```
