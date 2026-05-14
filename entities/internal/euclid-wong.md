@@ -10,7 +10,7 @@ related: [andrey-timokhov, michael-bruck, jehad-altoutou, ai-policy-gate-approva
 
 # Euclid Wong
 
-Head of **three teams** at Janus — **IT**, **Project Management**, and **Operations**. Working closely with the AI Office on tool governance, sandbox-to-production handoffs, IT approved-tools list management, and the Project Management Prime Radiant rollout. Manages [[andrey-timokhov]] on the IT side; Lysander Liu, Rosa Wu, and Spike Zhao on the Project Management side (full team roles to be filled in once Deel is set up).
+Head of **three teams** at Janus — **IT**, **Project Management**, and **Operations**. Working closely with the AI Office on tool governance, sandbox-to-production handoffs, IT approved-tools list management, and the Project Management Prime Radiant rollout. Manages [[andrey-timokhov]] on the IT side; Lysander Liu (Head of Project Management), Rosa Wu (Co-head of Project Management), and Spike Zhao (Digital modeling engineer) on the Project Management side.
 
 ## Areas of involvement
 
@@ -29,7 +29,7 @@ Co-attendee on the AI ↔ IT meetings (2026-05-06 was the most recent; surfaced 
 Euclid runs **three distinct teams** at Janus:
 
 - **IT** — production systems, tool governance, infrastructure. [[andrey-timokhov|Andrey]] on this team.
-- **Project Management** — project delivery function. Lysander Liu, Rosa Wu, and Spike Zhao on this team (full role detail TBC once Deel is set up).
+- **Project Management** — project delivery function. **Lysander Liu** (Head of Project Management) and **Rosa Wu** (Co-head of Project Management) co-lead the team; **Spike Zhao** (Digital modeling engineer) on the delivery side. Roles confirmed 2026-05-14.
 - **Operations** — operational backbone.
 
 Structurally important for the Prime Radiant rollout: Euclid wearing all three hats simplifies federation between IT-Ops and Project Management rollouts (shared architecture decisions; no inter-leadership coordination cost).

@@ -1393,3 +1393,38 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Personal-vaults-shelved decision page: now reflects the technical-sync-blocker reason.
 - Project hub: two-orgs split documented.
 - Pending follow-ups (not actioned this pass): refresh the company-wide intro deck to reflect personal-vault deferral (still on the queue from earlier today); Spike's role pinned down once Deel is set up; Marketing vault possibly needs to be migrated from `Janusd-io` to `Janusd-com` (TBC — depends on where it currently lives).
+
+## [2026-05-14 14:20] standup-proposal deck round 3 + role confirmations
+- driver: Michael — four refinements after reading round 2:
+  1. Start from the Janus Prime Radiant template (https://github.com/Janusd-io/janus-prime-radiant-template) and tailor for Project Management — name the template starting point explicitly.
+  2. Tooling list mentions Claude with Cowork or Code, not just Cowork.
+  3. Confirmed role titles: Lysander = Head of Project Management; Rosa Wu = Co-head of Project Management; Spike Zhao = Digital modeling engineer.
+  4. Slide 2 (28 phases) typeface too small; bigger pills.
+
+### Deck changes (2026-05-14-project-management-prime-radiant-standup-proposal.html)
+- **Slide 1 attendee row** — three role corrections:
+  - "Lysander Liu — Senior Project Manager · workflow author" → "Head of Project Management · workflow author".
+  - "Rosa Wu — Project Management team" → "Co-head of Project Management".
+  - "Spike Zhao — Project Management team · role TBC pending Deel" → "Digital modeling engineer".
+- **Slide 2 phase pills** — font-size 12px → 16px; padding 4×10 → 8×16; gap 6 → 10; phase-stage labels 11px → 13px. Slide reads more confidently at projector / share-screen scale.
+- **Slide 3 step 1** — rewritten to name the template explicitly. "We start from the generic `janus-prime-radiant-template` on github.com/Janusd-io/janus-prime-radiant-template — the same starting point every Janus department instance uses — and create a private team repo for you under the `Janusd-com` organisation." Step 2 reframed from "Vault initialised against your workflow" to "Vault tailored to your workflow" to signal the template→tailor sequencing.
+- **Slide 3 step 3 tooling list** — Cowork bullet rewritten as a Claude bullet: "Claude — accessed via either Cowork (desktop file-aware surface) or Claude Code (CLI / IDE-integrated). Pick whichever fits how you already work; both speak to the same vault." Lets the team pick the surface; doesn't force Cowork on people who'd rather use Code.
+
+### Wiki updates (roles confirmed → entity escalation unblocked)
+- entities/internal/euclid-wong.md — opening paragraph + Three Teams section updated with confirmed titles (Lysander = Head of Project Management; Rosa Wu = Co-head; Spike = Digital modeling engineer). Removed "TBC once Deel is set up" framing — now confirmed.
+- entities/departments/it-ops.md — Project Management team listing updated with confirmed titles; "pending Deel rollout" wording removed.
+- questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — both entity sections rewritten:
+  - Lysander: role now "Head of Project Management" (confirmed); confidence upgraded note updated.
+  - Spike: role now "Digital modeling engineer" (confirmed); confidence:medium → confidence:high; added context that his asking style during the workflow walkthrough is consistent with the Digital modeling engineer remit (Phases 16–18 of the workflow — digital delivery / single-point testing).
+  - Recommendation block + new "Status update (2026-05-14)" section: original Spike-role-TBC blocker resolved; both pages ready to create on approval; neither needs to wait for Deel.
+
+### Operational consequence
+- **Entity escalation is unblocked.** Lysander Liu and Spike Zhao can both have their pages created on Michael's approval. No further role-clarification work needed before publishing. Awaiting his nod to proceed.
+
+### Judgment calls
+- **Spike's asking-style inference made explicit on his entity-page outline** — added a line linking his probing of digital delivery / single-point testing to the Digital modeling engineer remit. Confirms that the contributions captured in the meeting are characteristic of his role, not random — useful for the entity page's substantiating content.
+- **Rosa Wu still has no entity escalation of her own** — she was named in this escalation question's "Lysander/Rosa Wu group" historical reference but did not get her own entry until now. Worth flagging as a follow-up: Rosa as Co-head of Project Management is a peer to Lysander in seniority and deserves a page on the same footing. Either fold into this same escalation question or open a new one. Asked Michael to clarify in the next exchange if he wants Rosa promoted on the same footing.
+- **Claude-via-Cowork-or-Code framing.** Two specific reasons for the rewrite:
+  - The team is on Windows; Cowork on Windows may have install friction we haven't yet validated. Claude Code is more battle-tested across platforms.
+  - Code is the more developer-friendly surface; some of the team (Spike especially, given his engineering role) may prefer it over Cowork's desktop UI.
+- **No new decision page filed** for the template-starting-point or the Claude-via-Cowork-or-Code framing. Both are operational tooling choices, not strategic decisions. They live in the standup-proposal deck and (via this log) in the program-level project hub when Michael next touches it.

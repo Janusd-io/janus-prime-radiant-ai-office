@@ -22,10 +22,10 @@ Janus's combined department covering **three teams** under [[euclid-wong|Euclid]
 - **[[euclid-wong]]** — Head of all three teams (IT + Project Management + Operations).
 - **IT team:**
   - **[[andrey-timokhov]]** — IT team member (mentioned as "Andre" in some earlier source files; canonical name andrey-timokhov).
-- **Project Management team** (full roles pending Deel rollout):
-  - **Lysander Liu** — senior Project Manager; authored the canonical [[project-management-digital-delivery-workflow|28-phase workflow]]. Entity page pending (see [[ingest-2026-05-14-lysander-liu-and-spike-zhao]]).
-  - **Rosa Wu** — Project Management team. Entity page pending.
-  - **Spike Zhao** — Project Management team, exact role TBC until Deel is set up. Entity page pending.
+- **Project Management team** (titles confirmed 2026-05-14):
+  - **Lysander Liu** — **Head of Project Management**; authored the canonical [[project-management-digital-delivery-workflow|28-phase workflow]]. Entity page pending (see [[ingest-2026-05-14-lysander-liu-and-spike-zhao]]).
+  - **Rosa Wu** — **Co-head of Project Management**. Entity page pending.
+  - **Spike Zhao** — **Digital modeling engineer**. Entity page pending.
 - **Operations team:** roles TBC; full team detail surfaces once Deel is in place.
 
 ## Prime Radiant instance

@@ -29,33 +29,32 @@ Both are substantively referenced from the [[project-management-digital-delivery
 **Sources backing the page:** [[2026-05-14-pm-workflow-walkthrough-lysander]] — Lysander walked through the entire 28-phase PM digital delivery workflow over ~60 minutes; this is the canonical-process content the PM Prime Radiant initialises against. [[2026-05-06-andrew-as-standup-skill-rollout-pilot]] previously names "the Lysander/Rosa Wu group" as the PM team. Multiple inbound references will now exist in this wiki after this ingest.
 
 **Proposed page outline:**
-- Role: senior PM (PM team — under [[euclid-wong|Euclid]] as PM Lead).
-- Substantive expertise: end-to-end digital delivery process — initiation, planning, parallel-track execution, business delivery, training, UAT, verification. Has deep mental model of where AI helps vs where PM must own.
+- Role: **Head of Project Management** at Janus (confirmed 2026-05-14, under [[euclid-wong|Euclid]] who heads IT, Project Management, and Operations).
+- Substantive expertise: end-to-end digital delivery process — initiation, planning, parallel-track execution, business delivery, training, UAT, verification. Has deep mental model of where AI helps vs where the Project Manager must own.
 - Captured contributions on file:
   - The [[project-management-digital-delivery-workflow|canonical workflow page]] — authored by him, transcribed by us.
   - The [[2026-05-14-ai-bounded-role-in-project-management|30–60% bounded-role principle]].
   - The acknowledgement that drove the [[2026-05-14-project-management-document-management-gap|document-management gap lesson]].
 - Working language: Chinese-primary (the 14 May session was conducted predominantly in Mandarin).
-- Federation status: PM instance is rollout pilot #2 (after [[andrew-soane|Andrew]] / Marketing). Lysander likely becomes the PM Prime Radiant curator alongside [[euclid-wong|Euclid]] when the instance stands up.
+- Federation status: Project Management instance is rollout pilot #2 (after [[andrew-soane|Andrew]] / Marketing). Likely becomes the Project Management Prime Radiant curator alongside Rosa Wu (co-head) when the instance stands up.
 
-**Confidence:** high (single deep source, but the source is substantive enough to ground a high-confidence entity).
+**Confidence:** high — role now confirmed; substantive workflow contribution on record.
 
 ## 2 · Spike Zhao (internal)
 
 **Sources backing the page:** [[2026-05-14-pm-workflow-walkthrough-lysander]] — Spike was the principal interlocutor with Lysander throughout the meeting, asking clarifying questions about scope (Phase 4 handoff vs Phase 3 supplementary gathering), AI involvement, the BIP kickoff committee composition, the trial-run scope question, and the per-scenario training cadence.
 
 **Proposed page outline:**
-- Role: PM team or PM-adjacent business role — exact title TBC. Asking style suggests senior business stakeholder, possibly sales / PM interface or PM business analyst.
+- Role: **Digital modeling engineer** (confirmed 2026-05-14, on the Project Management team under [[euclid-wong|Euclid]]).
 - Substantive contributions in the meeting:
   - Pushed on whether AI's draft contributions need full review (yes — confirmed by Lysander).
   - Pushed on what the verification meeting committee composition is (project management committee + sales + marketing lead).
   - Pushed on per-scenario training cadence vs full single-shot (per-scenario; formal training is non-negotiable even when execution-time learning has happened).
+  - Asking style during the workflow walkthrough is consistent with a technically-deep delivery-side role — the Digital modeling engineer remit (3D modelling, IoT delivery, point-binding, single-point testing per Phases 16–18 of the workflow) explains why he probed those areas specifically.
 - Working language: Chinese-primary on this call.
-- Federation status: pending — needs Michael's read on whether Spike is on the PM team proper or in an adjacent function.
+- Federation status: Project Management Prime Radiant pilot — Spike sits on the delivery-engineering side; his work plugs into Phases 16–18 (digital delivery / single-point testing) of the [[project-management-digital-delivery-workflow|workflow]].
 
-**Confidence:** medium (single source, role not yet pinned down precisely).
-
-**Open question on Spike's exact role:** the transcript doesn't give a definitive title. He could be (a) senior PM peer to Lysander, (b) PM-side business analyst, (c) sales-PMO bridge, (d) something else. Worth confirming his function before the page goes live so it doesn't anchor an incorrect framing.
+**Confidence:** high — role confirmed 2026-05-14.
 
 ---
 
@@ -67,11 +66,11 @@ Both are substantively referenced from the [[project-management-digital-delivery
 
 ## Recommendation
 
-**Option 1 — create both** — Lysander at confidence:high, Spike at confidence:medium with the role-clarification flag. This matches the OpenAI / Vivian Balakrishnan precedent where escalated entity creation tracked with their inbound-reference density.
+**Option 1 — create both** — Lysander at confidence:high (Head of Project Management); Spike at confidence:high (Digital modeling engineer). Roles confirmed by Michael 2026-05-14. Escalation is now unblocked; both pages can be created on approval.
 
-For Spike specifically, a short clarification before publishing would help — what's his actual function on the PM team?
+## Status update (2026-05-14)
 
-Once approved, both pages get created. If Spike's role detail surfaces in your reply, I'll bake it in directly.
+Original blocker on Spike's role-TBC has been resolved. Michael confirmed: Lysander = Head of Project Management; Rosa Wu = Co-head of Project Management; Spike Zhao = Digital modeling engineer. Both entity pages now ready to create on approval — neither needs to wait for the Deel rollout.
 
 ## Related
 

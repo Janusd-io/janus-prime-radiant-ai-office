@@ -195,12 +195,12 @@
   .phase-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    margin: 12px 0;
+    gap: 10px;
+    margin: 14px 0 18px;
   }
   .phase {
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: 16px;
+    padding: 8px 16px;
     border-radius: 999px;
     background: var(--accent-soft);
     color: var(--accent-dark);
@@ -208,13 +208,13 @@
     border: 1px solid var(--accent);
   }
   .phase-stage {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--ink-3);
-    margin-top: 14px;
-    margin-bottom: 6px;
+    margin-top: 18px;
+    margin-bottom: 8px;
   }
 
   /* Folder-tree visual */
@@ -288,15 +288,15 @@
     </div>
     <div class="attendee">
       <div class="name">Lysander Liu</div>
-      <div class="role">Senior Project Manager · workflow author</div>
+      <div class="role">Head of Project Management · workflow author</div>
     </div>
     <div class="attendee">
       <div class="name">Rosa Wu</div>
-      <div class="role">Project Management team</div>
+      <div class="role">Co-head of Project Management</div>
     </div>
     <div class="attendee">
       <div class="name">Spike Zhao</div>
-      <div class="role">Project Management team · role TBC pending Deel</div>
+      <div class="role">Digital modeling engineer</div>
     </div>
   </div>
 
@@ -377,24 +377,24 @@
     <li>
       <span class="num">1</span>
       <span>
-        <span class="label">Project Management team vault stood up (GitHub-backed).</span>
-        <div class="body">We create a private GitHub repo for the team under the <code>Janusd-com</code> organisation. Each of you gets a local clone on your machine that stays in sync automatically — you never touch GitHub directly, the tooling handles it. This becomes the canonical Project Management knowledge store, replacing the ad-hoc "each Project Manager has their own files" pattern Lysander flagged.</div>
+        <span class="label">Project Management team vault stood up — starting from the Janus Prime Radiant template.</span>
+        <div class="body">We start from the generic <code>janus-prime-radiant-template</code> on <a href="https://github.com/Janusd-io/janus-prime-radiant-template">github.com/Janusd-io/janus-prime-radiant-template</a> — the same starting point every Janus department instance uses — and create a private team repo for you under the <code>Janusd-com</code> organisation. Each of you gets a local clone on your machine that stays in sync automatically. You never touch GitHub directly; the tooling handles it. The template gives the vault its baseline structure; the next step tailors it for Project Management.</div>
       </span>
     </li>
     <li>
       <span class="num">2</span>
       <span>
-        <span class="label">Vault is initialised against your 28-phase workflow.</span>
-        <div class="body">The folder structure mirrors how you actually work (see next slide). The first templates inside it come from the workflow itself: project charter, formal handoff minutes, project management plan, plan review minutes, BIP kickoff brief, verification plan, training matrix. Each phase has its expected inputs / outputs as starter docs. This is the "running start" content — you do not start from a blank page.</div>
+        <span class="label">Vault tailored to your 28-phase workflow.</span>
+        <div class="body">The folder structure is adapted from the template so it mirrors how Project Management actually works (see next slide). The first templates inside it come from your workflow: project charter, formal handoff minutes, project management plan, plan review minutes, BIP kickoff brief, verification plan, training matrix. Each phase has its expected inputs / outputs as starter docs. This is the "running start" content — you do not start from a blank page.</div>
       </span>
     </li>
     <li>
       <span class="num">3</span>
       <span>
         <span class="label">Tooling installed on your machines (single session, ~60–90 minutes).</span>
-        <div class="body">Six things, most of them you already have or will use seamlessly:
+        <div class="body">Six things, most of which you already have or will use seamlessly:
           <ul style="margin: 6px 0 0 0; padding-left: 18px; font-size: 14px; color: var(--ink-2);">
-            <li><strong>Cowork</strong> — your conversation with the brain.</li>
+            <li><strong>Claude</strong> — accessed via either <strong>Cowork</strong> (desktop file-aware surface) or <strong>Claude Code</strong> (CLI / IDE-integrated). Pick whichever fits how you already work; both speak to the same vault.</li>
             <li><strong>Obsidian + GitHub plugin</strong> — your view into the vault; the GitHub plugin handles the sync silently so you only see the file structure.</li>
             <li><strong>Web Clipper</strong> — one-click article capture into the inbox.</li>
             <li><strong>Fireflies connector</strong> — meetings flow into the brain automatically.</li>
