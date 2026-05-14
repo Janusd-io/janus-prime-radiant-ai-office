@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PM Prime Radiant — Follow-up walkthrough</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --ink-3: #64748b;
+    --line: #e2e8f0;
+    --line-2: #cbd5e1;
+    --accent: #4f46e5;
+    --accent-soft: #eef2ff;
+    --accent-dark: #312e81;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --ok: #047857;
+    --ok-soft: #d1fae5;
+    --future: #94a3b8;
+    --future-soft: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .slide-num {
+    position: absolute;
+    top: 24px; right: 32px;
+    font-size: 12px;
+    color: var(--ink-3);
+    letter-spacing: 0.08em;
+    font-variant-numeric: tabular-nums;
+  }
+  .slide-brand {
+    position: absolute;
+    top: 24px; left: 32px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-3);
+    letter-spacing: 0.16em;
+  }
+  .slide-brand span { color: var(--accent); }
+  h1, h2, h3 { margin: 0; font-weight: 700; }
+  h1 { font-size: 56px; line-height: 1.05; letter-spacing: -0.02em; }
+  h2 { font-size: 40px; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 12px; }
+  h3 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px 0; font-size: 18px; line-height: 1.55; color: var(--ink-2); }
+  .lede { font-size: 22px; color: var(--ink-2); margin-bottom: 24px; max-width: 940px; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Hero (title) slide */
+  .hero-slide {
+    background: linear-gradient(135deg, #312e81 0%, #4f46e5 60%, #6366f1 100%);
+    color: #fff;
+  }
+  .hero-slide .eyebrow { color: #c7d2fe; }
+  .hero-slide h1 { color: #fff; max-width: 980px; }
+  .hero-slide .sub { font-size: 23px; color: #e0e7ff; margin-top: 20px; max-width: 880px; line-height: 1.45; }
+  .hero-slide .meta { margin-top: 40px; font-size: 13px; color: #c7d2fe; letter-spacing: 0.10em; text-transform: uppercase; }
+  .hero-slide .slide-brand { color: #c7d2fe; }
+  .hero-slide .slide-brand span { color: #fff; }
+  .hero-slide .slide-num { color: #c7d2fe; }
+
+  /* Layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-accent { border-color: var(--accent); background: var(--accent-soft); }
+  .card-warn { border-color: var(--warn); background: var(--warn-soft); }
+  .card-ok { border-color: var(--ok); background: var(--ok-soft); }
+  .card-future { border-color: var(--future); background: var(--future-soft); border-style: dashed; }
+  .card-future .card-title, .card-future .card-body { color: var(--ink-3); }
+  .card-tag {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .card-warn .card-tag { color: var(--warn); }
+  .card-ok .card-tag { color: var(--ok); }
+  .card-future .card-tag { color: var(--future); }
+  .card-title { font-size: 18px; font-weight: 700; color: var(--ink); margin: 0; }
+  .card-body { font-size: 14px; color: var(--ink-2); line-height: 1.55; }
+
+  /* Bullet lists */
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 18px;
+    color: var(--ink);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li .num {
+    flex: none;
+    width: 28px; height: 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .check {
+    flex: none;
+    width: 28px; height: 28px;
+    background: var(--ok);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .pending {
+    flex: none;
+    width: 28px; height: 28px;
+    background: #fff;
+    color: var(--ink-3);
+    border: 2px solid var(--line-2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .label { font-weight: 600; }
+  ul.clean li .body { color: var(--ink-2); font-size: 15px; margin-top: 4px; line-height: 1.5; }
+
+  /* Callouts */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    padding: 18px 24px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 22px;
+    max-width: 960px;
+  }
+  .callout-warn { background: var(--warn-soft); border-left-color: var(--warn); }
+  .callout-ok { background: var(--ok-soft); border-left-color: var(--ok); }
+  .callout .callout-label {
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .callout-warn .callout-label { color: var(--warn); }
+  .callout-ok .callout-label { color: var(--ok); }
+  .callout .callout-body { font-size: 18px; color: var(--ink); line-height: 1.5; }
+
+  /* Folder-tree visual */
+  .tree {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.65;
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 22px;
+    color: var(--ink);
+    white-space: pre;
+    overflow-x: auto;
+  }
+  .tree .folder { color: var(--accent); font-weight: 600; }
+  .tree .file { color: var(--ink-2); }
+  .tree .note { color: var(--ink-3); font-style: italic; }
+
+  /* Footer nav hint */
+  .nav-hint {
+    position: fixed;
+    bottom: 16px; right: 24px;
+    font-size: 11px;
+    color: var(--ink-3);
+    letter-spacing: 0.05em;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+
+  @media print {
+    body { scroll-snap-type: none; overflow: visible; height: auto; }
+    .slide { min-height: auto; page-break-after: always; padding: 40px; border-bottom: none; }
+    .nav-hint, .slide-num { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ Slide 1: Where we left it ============ -->
+<section class="slide hero-slide" id="s1">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">01 / 05</div>
+  <div class="eyebrow">PM Prime Radiant — Follow-up walkthrough</div>
+  <h1>Where we left it.<br>Where we go from here.</h1>
+  <p class="sub">Follow-up to our intro session. We covered the architecture, the inbox-first ingestion model, and the personal → department → company layering. Today we go from concept to a Program Management instance that captures and synthesises your work.</p>
+
+  <div style="margin-top: 32px; max-width: 920px;">
+    <div style="font-size: 12px; color: #c7d2fe; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px;">From the intro — what we landed on</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 14px 18px;">
+        <div style="font-weight: 600; color: #fff; font-size: 16px;">PM is pilot #2</div>
+        <div style="color: #c7d2fe; font-size: 14px; margin-top: 4px;">Following Andrew / Marketing. Your team is the second department to onboard.</div>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 14px 18px;">
+        <div style="font-weight: 600; color: #fff; font-size: 16px;">GitHub is the canonical store</div>
+        <div style="color: #c7d2fe; font-size: 14px; margin-top: 4px;">Replaces the previously-planned Google Shared Drive. Skill provisions accounts silently — you never touch GitHub directly.</div>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 14px 18px;">
+        <div style="font-weight: 600; color: #fff; font-size: 16px;">Inbox-first ingestion</div>
+        <div style="color: #c7d2fe; font-size: 14px; margin-top: 4px;">Drop documents in the inbox; the brain parses front-matter and routes them to the right vault sections.</div>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 14px 18px;">
+        <div style="font-weight: 600; color: #fff; font-size: 16px;">Six action items captured</div>
+        <div style="color: #c7d2fe; font-size: 14px; margin-top: 4px;">Speaker tagging, IT session, GitHub permissions, folder taxonomy, document upload, dashboard design.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta">For Rosa &amp; Lysander · PM Prime Radiant follow-up · 2026-05-13</div>
+</section>
+
+<!-- ============ Slide 2: What's ready since the intro ============ -->
+<section class="slide" id="s2">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">02 / 05</div>
+  <div class="eyebrow">Progress since the intro</div>
+  <h2>Three of six already in motion.</h2>
+  <p class="lede">From the action items we agreed in the intro — here's the state. Three are done or in flight; today we close out the next two together.</p>
+
+  <ul class="clean" style="max-width: 980px; margin-top: 12px;">
+    <li>
+      <span class="check">✓</span>
+      <span>
+        <span class="label">Speaker tagging — done.</span>
+        <div class="body">Jehad tagged speakers on the intro transcript. Rosa = Speaker 2, Euclid = Speaker 4 going forward. Recordings now ingest cleanly into the brain with names attached.</div>
+      </span>
+    </li>
+    <li>
+      <span class="check">✓</span>
+      <span>
+        <span class="label">GitHub repo permissions — provisioned.</span>
+        <div class="body">PM team accounts set up. Sync runs silently in the background; you'll never touch GitHub directly. Your local folder stays in sync with the canonical store automatically.</div>
+      </span>
+    </li>
+    <li>
+      <span class="check">✓</span>
+      <span>
+        <span class="label">Folder taxonomy — drafted (we walk through it today).</span>
+        <div class="body">I've sketched a proposed structure for product / project content separation. See the next slide — we walk through it together and you tell me what's wrong with it.</div>
+      </span>
+    </li>
+    <li>
+      <span class="pending">4</span>
+      <span>
+        <span class="label">Document upload to the inbox — starts today.</span>
+        <div class="body">Once we agree the folder structure, you start dropping documents in. The brain takes over from there.</div>
+      </span>
+    </li>
+    <li>
+      <span class="pending">5</span>
+      <span>
+        <span class="label">IT / Operations follow-up — scheduling.</span>
+        <div class="body">Sibling session to this one — Jehad to set up.</div>
+      </span>
+    </li>
+    <li>
+      <span class="pending">6</span>
+      <span>
+        <span class="label">Dynamic dashboards — longer-horizon (Rosa's track).</span>
+        <div class="body">We scope this once enough documents are in the system that the dashboards have something to summarise. Probably 2–3 weeks out. Worth talking about today to seed the requirements.</div>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ Slide 3: The decision today — product/project separation ============ -->
+<section class="slide" id="s3">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">03 / 05</div>
+  <div class="eyebrow">The decision we make today</div>
+  <h2>Product vs project — folder structure to react to.</h2>
+  <p class="lede">The intro flagged this as the prerequisite to ingestion: how do we separate product-level content from project-level content? Below is a proposal. The aim is that you push back, refine, or replace — by the end of this meeting we have a structure you can start uploading into.</p>
+
+  <div class="grid-2" style="margin-top: 8px;">
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">Proposed structure</div>
+      <div class="tree"><span class="folder">program-management/</span>
+├── <span class="folder">products/</span>
+│   ├── <span class="folder">&lt;product-name&gt;/</span>
+│   │   ├── <span class="file">overview.md</span>     <span class="note"># what it is</span>
+│   │   ├── <span class="file">roadmap.md</span>      <span class="note"># where it's going</span>
+│   │   ├── <span class="file">stakeholders.md</span> <span class="note"># who cares</span>
+│   │   └── <span class="folder">decisions/</span>    <span class="note"># product-level</span>
+│   └── ...
+├── <span class="folder">projects/</span>
+│   ├── <span class="folder">&lt;project-name&gt;/</span>
+│   │   ├── <span class="file">brief.md</span>        <span class="note"># scope &amp; goals</span>
+│   │   ├── <span class="file">status.md</span>       <span class="note"># live state</span>
+│   │   ├── <span class="folder">meetings/</span>     <span class="note"># transcripts</span>
+│   │   ├── <span class="folder">decisions/</span>    <span class="note"># project-level</span>
+│   │   ├── <span class="folder">raid/</span>         <span class="note"># risks, assumptions...</span>
+│   │   └── <span class="file">products.md</span>     <span class="note"># which products it touches</span>
+│   └── ...
+├── <span class="folder">stakeholders/</span>         <span class="note"># cross-cutting people</span>
+├── <span class="folder">processes/</span>            <span class="note"># PM playbooks</span>
+└── <span class="folder">retros/</span>               <span class="note"># lessons across projects</span></div>
+    </div>
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">Why this shape</div>
+      <ul class="clean">
+        <li>
+          <span class="num">1</span>
+          <span>
+            <span class="label">Products are durable. Projects are episodic.</span>
+            <div class="body">A product persists across many projects; a project finishes. Putting products at the top level keeps long-lived knowledge where you can find it. Projects link <em>up</em> into products via <span style="font-family: monospace;">products.md</span>.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span>
+            <span class="label">Decisions live at both levels.</span>
+            <div class="body">A "we'll always do X" lives at the product level. A "we did X this time" lives at the project level. The brain can synthesise across both.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span>
+            <span class="label">Retros are cross-project.</span>
+            <div class="body">Lessons learnt apply across projects — not buried inside one. The brain pulls patterns out of them as they accumulate.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span>
+            <span class="label">Stakeholders are cross-cutting.</span>
+            <div class="body">One person can be a stakeholder on many projects and products. Pulling them out keeps the relationship-mapping clean.</div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-label">Things to discuss before we lock</div>
+    <div class="callout-body">Where does a portfolio sit (above products)? Do programmes go between products and projects, or are they a flat tag? Where does third-party / vendor / partner content live? Where do internal-PM-team artefacts (templates, checklists) sit — under processes/ or somewhere else?</div>
+  </div>
+</section>
+
+<!-- ============ Slide 4: Today's hands-on session ============ -->
+<section class="slide" id="s4">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">04 / 05</div>
+  <div class="eyebrow">What we do together today</div>
+  <h2>End the meeting with PM uploading its first documents.</h2>
+  <p class="lede">~60 minutes. Live, on your machines. We work through the structure, install the tools, and get the first batch of docs into the inbox before you leave the call.</p>
+
+  <ul class="clean" style="margin-top: 14px; max-width: 980px;">
+    <li>
+      <span class="num">1</span>
+      <span>
+        <span class="label">Walk the folder taxonomy. Push back hard.</span>
+        <div class="body">~10 min. We go through the proposal above. You tell me where it's wrong for how PM actually works. We adjust until it fits.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">2</span>
+      <span>
+        <span class="label">Install Cowork, Obsidian, Web Clipper on Rosa's machine and Lysander's.</span>
+        <div class="body">~15 min. Cowork is your interface to the brain. Obsidian shows you what's in it. Web Clipper grabs articles and meeting notes with one click. All Mac-native; quick to install.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">3</span>
+      <span>
+        <span class="label">Pick your first 3–5 documents to upload.</span>
+        <div class="body">~10 min. Something current — a project brief in flight, a recent status update, a retro from last sprint, a stakeholder map. Real work, not test files. We watch the brain process them live.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">4</span>
+      <span>
+        <span class="label">Ask the brain its first questions.</span>
+        <div class="body">~10 min. With your documents in, you ask it things — summarise this brief, what are the open RAIDs on project X, who is the stakeholder we haven't followed up with. See what it gets right; flag what it doesn't.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">5</span>
+      <span>
+        <span class="label">Talk through the dashboard horizon (Rosa).</span>
+        <div class="body">~10 min. What would you want to see if the brain were rendering a PM dashboard? Portfolio rollup? Project health? Dependency map? RAID heatmap? Seed the requirements; we scope it once data volume is sufficient.</div>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ Slide 5: What's next — commitments + horizon ============ -->
+<section class="slide" id="s5">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">05 / 05</div>
+  <div class="eyebrow">What's next</div>
+  <h2>By next week. By next month. By next quarter.</h2>
+  <p class="lede">Three time horizons. We close the meeting with each of us knowing what we owe the others — and you walk away with PM's instance live and feeding.</p>
+
+  <div class="grid-3" style="margin-top: 18px;">
+    <div class="card card-ok">
+      <div class="card-tag">By next week</div>
+      <div class="card-title">PM instance is live and ingesting</div>
+      <div class="card-body">
+        <strong>From PM:</strong> upload 10–20 documents into the inbox; run a personal vault each (Rosa + Lysander) alongside the team brain; ask the brain at least one real question per day.<br><br>
+        <strong>From AIO:</strong> tune the inbox routing as your specific document shapes come in; resolve anything that mis-files; check in mid-week.
+      </div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-tag">By next month</div>
+      <div class="card-title">First synthesis flows + federation with AIO</div>
+      <div class="card-body">
+        Brain has enough context to produce real syntheses — status rollups, RAID summaries, cross-project pattern recognition. Shared PM × AIO mesh subfolder set up — anything we work on jointly lives there, visible to both teams.<br><br>
+        Sibling IT-Ops session has happened by this point (Euclid wears both hats); some cross-team federation already in place.
+      </div>
+    </div>
+    <div class="card card-future">
+      <div class="card-tag">By next quarter</div>
+      <div class="card-title">Dynamic dashboards + cross-instance views</div>
+      <div class="card-body">
+        Rosa's dashboard track is live — visualisation prompts surface PM state in the formats Janus leadership wants to see. Cross-instance views start to emerge as Marketing / ISO / HR / Finance instances come online behind us. PM contributes to (and reads from) the company-level digital twin.
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-ok" style="margin-top: 26px;">
+    <div class="callout-label">The one ask before we close</div>
+    <div class="callout-body">Each of you commits, before this meeting ends: <em>"I will upload at least N documents to the inbox by the end of this week, and I will use the brain at least once a day for the next five working days, even when it would have been faster to just ask a colleague."</em> The brain compounds in direct proportion to that discipline. Five days of forced use, then it starts repaying you.</div>
+  </div>
+</section>
+
+<div class="nav-hint">← → arrows · scroll · F for fullscreen</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  function currentSlideIndex() {
+    const y = window.scrollY + window.innerHeight / 2;
+    for (let i = 0; i < slides.length; i++) {
+      const r = slides[i].getBoundingClientRect();
+      const top = r.top + window.scrollY;
+      const bottom = top + r.height;
+      if (y >= top && y < bottom) return i;
+    }
+    return 0;
+  }
+  function goTo(i) {
+    if (i < 0) i = 0;
+    if (i >= slides.length) i = slides.length - 1;
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+      e.preventDefault(); goTo(currentSlideIndex() + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+      e.preventDefault(); goTo(currentSlideIndex() - 1);
+    } else if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+    else if (e.key === 'End') { e.preventDefault(); goTo(slides.length - 1); }
+    else if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+  });
+</script>
+
+</body>
+</html>
