@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:36Z"
 
 # model
 
-_Extracted from `VibeVoice/vllm_plugin/model.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vllm_plugin/model.py` on 2026-05-14._
 
 ```python
 """

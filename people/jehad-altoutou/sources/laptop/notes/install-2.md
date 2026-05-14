@@ -27,9 +27,9 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/INSTALL.md` 
 
 - macOS 14+ (Linux untested; see REWRITE-SPEC.md out-of-scope notes)
 - Python 3.10+
-- `gh` CLI authenticated to GitHub (member of the `Janusd-io` org)
-- Claude Desktop with the Code or Cowork tab
-- Obsidian.app installed
+- `gh` CLI authenticated to [[github|GitHub]] (member of the `Janusd-io` org)
+- Claude Desktop with the Code or [[cowork|Cowork]] tab
+- [[obsidian|Obsidian]].app installed
 - `graphify` (the installer attempts to install via pipx if missing)
 
 ## Install from the repo

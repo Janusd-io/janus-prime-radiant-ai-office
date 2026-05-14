@@ -107,7 +107,7 @@ Map to template **Q2** table.
 **Probing — go category by category to prompt their memory:**
 
 - **AI tools** — "Anything Claude, ChatGPT, Copilot, internal agents?"
-- **Development / specialist tools** — "VS Code, Figma, n8n, Linear, etc.?"
+- **Development / specialist tools** — "VS Code, Figma, n8n, [[linear|Linear]], etc.?"
 - **Infrastructure** — "Servers, hosting, cloud accounts?"
 - **Productivity** — "Notion, Slack, Monday, email, calendar?"
 

@@ -20,6 +20,6 @@ needs_vision_description: true
 
 # janusd-icon-200
 
-_Extracted from `assessify/public/janusd-icon-200.png` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/public/janusd-icon-200.png` on 2026-05-14._
 
 _(no text extracted by OCR — image may be visual-only; the Phase 5 enrichment subagent should describe it via vision)_

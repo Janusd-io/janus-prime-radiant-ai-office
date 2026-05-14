@@ -19,13 +19,13 @@ sensitivity_reason: "Session-handoff note for engineering — operational, no PI
 
 # HANDOFF
 
-_Extracted from `assessify/HANDOFF.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/HANDOFF.md` on 2026-05-14._
 
 # Handoff — Assessify
 
 > Single-file summary for the next Claude session. Read this first. Then read
 > `AGENTS.md` (token-efficiency rules + brain pointer) and
-> `/Users/jehad/Documents/Obsidian Vault/03 Projects/Assessify/_BRAIN.md`
+> `/Users/jehad/Documents/[[obsidian|Obsidian]] Vault/03 Projects/Assessify/_BRAIN.md`
 > (canonical project brain). Ignore the 614 auto-graphified `*().md` files in
 > the same Obsidian folder.
 
@@ -41,7 +41,7 @@ page now ("Schedule Interview" modal). Up next: provisioning Google
 Workspace + GCP OAuth so the bot creates real calendar events.
 
 - Repo: `/Users/jehad/assessify/` · branch: `main` · **many uncommitted changes from today's session — see `git status`**
-- Prod: `https://assessify.janusd.io` (Hostinger Docker, rsync deploy)
+- Prod: `https://assessify.janusd.io` ([[hostinger|Hostinger]] Docker, rsync deploy)
 - Last commit: `239d765` (pre-session); rsync deploys since then are on prod but uncommitted locally
 - Monday board: 8 existing items moved to Done + 2 new items created (Phase 1.D, Team onboarding)
 
@@ -75,13 +75,13 @@ Workspace + GCP OAuth so the bot creates real calendar events.
 | `8424762` | feat(team): `/admin/team` + Employee↔LineManager FK + 9 MCP `team_*` tools |
 | `9e56e70` | fix(leave): HR full name in signature |
 
-Prod `.env` was updated with: `GOOGLE_MOCK=1`, `INTERVIEW_MAILBOX_EMAIL`, `INTERVIEW_TIMEZONE=Asia/Dubai`, `INTERVIEW_BUSINESS_HOURS_START=9`, `_END=18`, `INTERVIEW_DEFAULT_DURATION_MIN=60`, `FIREFLIES_INVITE_EMAIL=fred@fireflies.ai`.
+Prod `.env` was updated with: `GOOGLE_MOCK=1`, `INTERVIEW_MAILBOX_EMAIL`, `INTERVIEW_TIMEZONE=Asia/Dubai`, `INTERVIEW_BUSINESS_HOURS_START=9`, `_END=18`, `INTERVIEW_DEFAULT_DURATION_MIN=60`, `FIREFLIES_INVITE_EMAIL=fred@[[fireflies|fireflies]].ai`.
 
 ---
 
 ## Open threads — what's queued in the user's head
 
-### 1. Google Workspace + GCP provisioning (Jehad owns; unblocks flipping `GOOGLE_MOCK=0`)
+### 1. [[google-workspace|Google Workspace]] + GCP provisioning (Jehad owns; unblocks flipping `GOOGLE_MOCK=0`)
 
 The Phase 1.D code is complete and live in mock mode. To go live:
 
@@ -180,7 +180,7 @@ Earlier sessions burned tokens on whole-file reads, per-edit `tsc`, verbose reca
 - **Auto-memory** (persistent feedback/project notes): `/Users/jehad/.claude/projects/-Users-jehad-assessify/memory/MEMORY.md`
 - **Project instructions** (efficiency rules + breaking-changes warning): `/Users/jehad/assessify/AGENTS.md` (loaded via `CLAUDE.md`)
 - **Monday board** (HR Dashboard — Recruitment & Leave Management): https://janusd-company.monday.com/boards/5095636727
-- **GitHub repo**: https://github.com/Jehada-Janusd/HR-Assessment-Platform
+- **[[github|GitHub]] repo**: https://github.com/Jehada-Janusd/HR-Assessment-Platform
 
 ---
 

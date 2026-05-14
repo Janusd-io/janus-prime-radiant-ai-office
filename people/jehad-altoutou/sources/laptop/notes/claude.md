@@ -19,6 +19,6 @@ sensitivity_reason: "Trivial pointer file (@AGENTS.md) — no content"
 
 # CLAUDE
 
-_Extracted from `assessify/CLAUDE.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/CLAUDE.md` on 2026-05-14._
 
 @AGENTS.md

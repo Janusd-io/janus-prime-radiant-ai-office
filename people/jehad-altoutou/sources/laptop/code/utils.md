@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # utils
 
-_Extracted from `assessify/src/lib/utils.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/utils.ts` on 2026-05-14._
 
 ```typescript
 import { clsx, type ClassValue } from "clsx"

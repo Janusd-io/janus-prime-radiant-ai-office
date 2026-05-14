@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # VibeVoice_Realtime
 
-_Extracted from `VibeVoice/Figures/VibeVoice_Realtime.png` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/VibeVoice_Realtime.png` on 2026-05-14._
 
 Speech Chunk Last Speech Chunk
 

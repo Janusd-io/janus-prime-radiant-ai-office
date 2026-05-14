@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # route
 
-_Extracted from `assessify/src/app/api/slack/interactive/route.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/api/slack/interactive/route.ts` on 2026-05-14._
 
 ```typescript
 import { NextRequest, NextResponse } from "next/server";

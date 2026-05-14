@@ -16,7 +16,7 @@ extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:36Z"
 ---
 
-# linkedin
+# [[linkedin|linkedin]]
 
 _Extracted from `brightbean-studio/providers/linkedin.py` on 2026-05-14._
 

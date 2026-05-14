@@ -705,7 +705,7 @@ The better we build the IMS here in Dubai — the faster and more reliably we op
 
 ## Slide 15
 
-PULS First Voice — your input shapes the system
+[[puls-first-voice|PULS First Voice]] — your input shapes the system
 
 To build a system that reflects how we work, we need input from everyone. Your answers become the foundation of PULS — your processes, your KPIs, your tools.
 

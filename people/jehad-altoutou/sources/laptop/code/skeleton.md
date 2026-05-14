@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # skeleton
 
-_Extracted from `assessify/src/components/ui/skeleton.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/components/ui/skeleton.tsx` on 2026-05-14._
 
 ```tsx
 import { cn } from "@/lib/utils"

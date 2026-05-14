@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # dpm_solver
 
-_Extracted from `VibeVoice/vibevoice/schedule/dpm_solver.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/schedule/dpm_solver.py` on 2026-05-14._
 
 ```python
 # Copyright 2024 TSAIL Team and The HuggingFace Team. All rights reserved.

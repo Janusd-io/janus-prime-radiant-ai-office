@@ -27,7 +27,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references
 
 ## The document
 
-- **Title:** Process Elements Table according to ISO 9001 Figure 1 Logic
+- **Title:** Process Elements Table according to [[iso-9001-figure-1|ISO 9001 Figure 1]] Logic
 - **Process:** Management of Internal AI Tools
 - **Document reference:** IMS-PRC-AI-001
 - **Format:** Table with 9 numbered process stages
@@ -77,14 +77,14 @@ If your department's process is going to slot into Simon's IMS, your documentati
 | 1. Request / Proposal | Path A (meeting via `/standup`) or Path B (Slack request) in `sub-process-tool-evaluation.md` |
 | 2. Stage 1 — Intake & Triage | `/ai-registry` performs intake; Gate 1 control |
 | 3. Stage 2 — Technical Qualification | Gate 2 in our 4-gate model (we'd collapse to 3 to match Simon) |
-| 4. Stage 3 — Sandbox & Domain Expert | Sandbox + 5-area stress test (Domain Expert = requester for simple cases, designated SME for complex) |
+| 4. Stage 3 — Sandbox & Domain Expert | Sandbox + [[5-area-stress-test|5-area stress test]] (Domain Expert = requester for simple cases, designated SME for complex) |
 | 5. Stage 4 — Approval Decision | Decision point at end of evaluation + requester sign-off |
 | 6. IT Readiness | Handover package to IT department |
-| 7. AI Tools Register Listing | Linear AIR status → Active |
+| 7. AI Tools Register Listing | [[linear|Linear]] AIR status → Active |
 | 8. Production Use | Tool live · all employees have access |
 | 9. Ongoing Review | **Currently a gap in our docs** — needs Stage 9 added |
 
-See [10-GAP-ANALYSIS-vs-SIMON.md](https://github.com/Jehada-Janusd/janus-puls-onboarding/blob/main/10-GAP-ANALYSIS-vs-SIMON.md) in the GitHub repo for the full mapping and gap analysis.
+See [10-GAP-ANALYSIS-vs-SIMON.md](https://[[github|github]].com/Jehada-Janusd/janus-puls-onboarding/blob/main/10-GAP-ANALYSIS-vs-SIMON.md) in the GitHub repo for the full mapping and gap analysis.
 
 ## When in doubt
 

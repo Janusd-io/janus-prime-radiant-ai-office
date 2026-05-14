@@ -161,7 +161,7 @@ class="w-8 h-8 rounded-full object-cover"
 style="border: 2px solid #E7E5E4;" /> {% else %}
 
 <div class="w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-bold text-white"
-style="background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);">
+style="background: [[linear|linear]]-gradient(135deg, #F58529, #DD2A7B, #8134AF);">
 
 {{
 p.account.account_name\|default:p.account.account_handle\|make_list\|first\|upper
@@ -458,7 +458,7 @@ class="w-4 h-4" /> Share </span>
 </div>
 
 {% elif p.account.platform == "linkedin_personal" or p.account.platform
-== "linkedin_company" %} {# ─── LinkedIn ─── professional feed card \#}
+== "linkedin_company" %} {# ─── [[linkedin|LinkedIn]] ─── professional feed card \#}
 
 <div class="bg-white">
 

@@ -20,6 +20,6 @@ needs_vision_description: true
 
 # icon
 
-_Extracted from `assessify/src/app/icon.png` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/icon.png` on 2026-05-14._
 
 _(no text extracted by OCR — image may be visual-only; the Phase 5 enrichment subagent should describe it via vision)_

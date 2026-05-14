@@ -23,11 +23,11 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/README.md` o
 
 # /janus-brain
 
-The one-and-only skill for Janus's Prime Radiant programme — single-vault model (rewrite 2026-05-14).
+The one-and-only skill for Janus's [[prime-radiant|Prime Radiant]] programme — single-vault model (rewrite 2026-05-14).
 
 **Trigger:** `/janus-brain` in Claude Desktop
 
-**What it does:** clones your department's shared Prime Radiant GitHub repo (`Janusd-io/janus-prime-radiant-<dept>`) as your single Obsidian vault at `~/janus/prime-radiant/`, scaffolds your `people/<your-slug>/` subtree inside it, pulls your Notion + Fireflies + laptop content via Claude Desktop's MCP connectors, classifies sensitivity (`dept` / `self` / `confidential`) and routes private items to a gitignored `private/`, then commits + pushes to the shared dept repo. Multiple teammates contribute to the same dept repo.
+**What it does:** clones your department's shared Prime Radiant [[github|GitHub]] repo (`Janusd-io/janus-prime-radiant-<dept>`) as your single [[obsidian|Obsidian]] vault at `~/janus/prime-radiant/`, scaffolds your `people/<your-slug>/` subtree inside it, pulls your Notion + [[fireflies|Fireflies]] + laptop content via Claude Desktop's MCP connectors, classifies sensitivity (`dept` / `self` / `confidential`) and routes private items to a gitignored `private/`, then commits + pushes to the shared dept repo. Multiple teammates contribute to the same dept repo.
 
 **Subcommands** (for repeat use after first run): `sync`, `status`, `exclude`, `reset`. See `SKILL.md`.
 
@@ -52,7 +52,7 @@ The skill walks through Phases 0-8 (pre-flight → identity + task tracker → b
 
 ## After first run
 
-Sync runs continuously via the Obsidian Git community plugin (auto-pull + auto-commit-and-push every 5 min). No cron required. See `ENROLLMENT.md` step 4 for the one-time plugin setup.
+Sync runs continuously via the [[obsidian-git|Obsidian Git]] community plugin (auto-pull + auto-commit-and-push every 5 min). No cron required. See `ENROLLMENT.md` step 4 for the one-time plugin setup.
 
 To pull yesterday's Fireflies meetings or fresh Notion entries on demand:
 

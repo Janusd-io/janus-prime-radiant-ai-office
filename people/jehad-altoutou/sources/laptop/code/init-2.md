@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # __init__
 
-_Extracted from `VibeVoice/vibevoice/schedule/__init__.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/schedule/__init__.py` on 2026-05-14._
 
 ```python
 

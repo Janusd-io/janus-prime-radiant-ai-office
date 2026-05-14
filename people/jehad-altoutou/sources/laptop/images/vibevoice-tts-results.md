@@ -18,7 +18,7 @@ ocr_char_count: 427
 needs_vision_description: false
 ---
 
-# VibeVoice-TTS-results
+# [[vibevoice|VibeVoice]]-TTS-results
 
 _Extracted from `VibeVoice/Figures/VibeVoice-TTS-results.jpg` on 2026-05-14._
 
@@ -40,7 +40,7 @@ Output Speech Length (Seconds) 7
 Preference Realism Richness
 = VibeVoice-7B VibeVoice-1.5B
 2000 _ , SesameAlLabs-CSM
-Gemini-2.5-Pro-Preview-TTS Eleven-V3 (Alpha)
+[[gemini|Gemini]]-2.5-Pro-Preview-TTS Eleven-V3 (Alpha)
 Nari-Labs-Dia
 SpeechSSM MoonCast
 1000 MOSS-TTSD

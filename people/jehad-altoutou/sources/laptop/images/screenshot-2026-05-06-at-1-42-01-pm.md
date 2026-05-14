@@ -22,7 +22,7 @@ needs_vision_description: false
 
 _Extracted from `Desktop/Screenshot 2026-05-06 at 1.42.01 PM.png` on 2026-05-14._
 
-Assessify acmin
+[[assessify|Assessify]] acmin
 
 9§ Dashboard
 J _ Invites
@@ -51,7 +51,7 @@ API Docs
 
 Settings
 
-Jehad Altoutou Admin
+[[jehad-altoutou|Jehad Altoutou]] Admin
 jehada@janusd.io
 
 b
@@ -69,7 +69,7 @@ Email terence.yeo@calibration.demo CV file Terence Yeo Qing Kai - Weak CV.docx P
 Phone Drive file (awaiting Drive upload) Post-interview pending
 Nationality Singaporean Drive folder (awaiting Drive folder) > Score history (1)
 Notice period Immediately Available Uploaded at (pending)
-LinkedIn
+[[linkedin|LinkedIn]]
 Source agency
 Agency Ignite Search and Selection
 CONFIDENTIAL — PRE-INTERVIEW ASSESSMENT PACKAGE

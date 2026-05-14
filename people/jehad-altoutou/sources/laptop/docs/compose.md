@@ -96,8 +96,8 @@ block extra_head %} <style>
         letter-spacing: -0.02em;
     }
     .pi-facebook   { background: #1877F2; }
-    .pi-instagram  { background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF); }
-    .pi-linkedin   { background: #0A66C2; }
+    .pi-instagram  { background: [[linear|linear]]-gradient(135deg, #F58529, #DD2A7B, #8134AF); }
+    .pi-[[linkedin|linkedin]]   { background: #0A66C2; }
     .pi-linkedin_personal { background: #0A66C2; }
     .pi-linkedin_company  { background: #0A66C2; }
     .pi-tiktok     { background: #010101; }

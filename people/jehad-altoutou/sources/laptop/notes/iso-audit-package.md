@@ -19,11 +19,11 @@ sensitivity_reason: "Internal ISO 27001 audit package for Assessify — for auth
 
 # iso-audit-package
 
-_Extracted from `assessify/docs/iso-audit-package.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/docs/iso-audit-package.md` on 2026-05-14._
 
 # Assessify — ISO/IEC 27001:2022 Audit Package
 
-**Document Owner:** Jehad Altoutou, Janus Digital
+**Document Owner:** [[jehad-altoutou|Jehad Altoutou]], Janus Digital
 **System Owner / Technical Lead:** Jehad Altoutou
 **Document Version:** 1.0
 **Effective Date:** 28 April 2026
@@ -52,9 +52,9 @@ This document describes the controls implemented to protect the confidentiality,
 
 | Asset | Type | Location | Data classification |
 | --- | --- | --- | --- |
-| Assessify production application | Software | Hostinger VPS (Malaysia, Kuala Lumpur) | Internal |
+| Assessify production application | Software | [[hostinger|Hostinger]] VPS (Malaysia, Kuala Lumpur) | Internal |
 | Production database | SQLite file in Docker volume | Hostinger VPS, encrypted at rest by VPS provider | **Confidential** (PII) |
-| Source code repository | GitHub private repo | github.com (SaaS) | Internal |
+| Source code repository | [[github|GitHub]] private repo | github.com (SaaS) | Internal |
 | Email-delivery service | Resend API | SaaS provider | Internal (transit only) |
 | Reverse proxy | Caddy 2 | Hostinger VPS | Internal |
 | Workflow automation | n8n | Adjacent Hostinger container | Internal |

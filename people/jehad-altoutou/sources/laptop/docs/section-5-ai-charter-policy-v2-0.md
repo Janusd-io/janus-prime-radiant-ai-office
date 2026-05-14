@@ -110,7 +110,7 @@ avoiding vendor lock-in:
   integration with our central technology stack and future automation
   layers.
 
-# **5.4 AI Tool Evaluation & Approval Framework**
+# **5.4 [[ai-tool-evaluation-framework|AI Tool Evaluation & Approval Framework]]**
 
 All proposed AI tools must pass through a formal four-stage, gate-based
 evaluation process before being listed in the AI Registry and approved
@@ -155,7 +155,7 @@ following criteria is rejected immediately:</p></th>
 </tbody>
 </table>
 
-- Integration compatibility with Google Workspace and Slack
+- Integration compatibility with [[google-workspace|Google Workspace]] and Slack
 
 - Full data portability in a standard, non-proprietary format
 

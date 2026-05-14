@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # convert_nnscaler_checkpoint_to_transformers
 
-_Extracted from `VibeVoice/vibevoice/scripts/convert_nnscaler_checkpoint_to_transformers.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/scripts/convert_nnscaler_checkpoint_to_transformers.py` on 2026-05-14._
 
 ```python
 #!/usr/bin/env python

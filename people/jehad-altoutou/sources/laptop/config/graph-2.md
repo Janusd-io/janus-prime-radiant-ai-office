@@ -208,7 +208,7 @@ _Extracted from `brightbean-studio/graphify-out/graph.json` on 2026-05-14._
       "norm_label": "required_scopes()"
     },
     {
-      "label": "LinkedIn provider variant for personal profile posting.  Uses the Community Mana",
+      "label": "[[linkedin|LinkedIn]] provider variant for personal profile posting.  Uses the Community Mana",
       "file_type": "rationale",
       "source_file": "providers/linkedin_personal.py",
       "source_location": "L1",
@@ -9847,7 +9847,7 @@ _Extracted from `brightbean-studio/graphify-out/graph.json` on 2026-05-14._
       "norm_label": "short icon label for platform badges."
     },
     {
-      "label": "Stores per-instance OAuth app registrations for Mastodon federation.",
+      "label": "Stores per-instance OAuth app registrations for Mastodon [[federation|federation]].",
       "file_type": "rationale",
       "source_file": "apps/social_accounts/models.py",
       "source_location": "L165",

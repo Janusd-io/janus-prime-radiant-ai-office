@@ -22,10 +22,10 @@ needs_vision_description: false
 
 _Extracted from `Desktop/Screenshot 2026-05-13 at 9.18.13 AM.png` on 2026-05-14._
 
-eee Janus Prime Radiant — Al Office - Obsidian 1.12.7
+eee [[janus-prime-radiant|Janus Prime Radiant]] — Al Office - [[obsidian|Obsidian]] 1.12.7
 
 An error occurred while loading Obsidian. Error: ETIMEDOUT: connection timed out, scandir '/Users/jehad/Library/CloudStorage/GoogleDrive-
-jehada@janusd.io/Shared drives/Janus Al Office/Janus Prime Radiant — Al Office/entities/departments/marketing'
+jehada@janusd.io/Shared drives/Janus Al Office/Janus [[prime-radiant|Prime Radiant]] — Al Office/entities/departments/marketing'
 
 Reload app
 

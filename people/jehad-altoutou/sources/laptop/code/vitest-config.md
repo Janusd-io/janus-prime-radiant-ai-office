@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # vitest.config
 
-_Extracted from `assessify/vitest.config.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/vitest.config.ts` on 2026-05-14._
 
 ```typescript
 import { defineConfig } from "vitest/config";

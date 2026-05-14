@@ -20,6 +20,6 @@ needs_vision_description: true
 
 # favicon
 
-_Extracted from `assessify/public/favicon.png` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/public/favicon.png` on 2026-05-14._
 
 Ji uanus

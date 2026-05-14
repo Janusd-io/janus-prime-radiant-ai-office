@@ -32,7 +32,7 @@ The skill exists in two places at any time:
 | Location | Purpose |
 |---|---|
 | `~/.claude/skills/ims-enrolment/` | **Runtime** — what Claude Desktop loads and runs |
-| `~/Documents/janus-puls-onboarding/skills/ims-enrolment/` | **Source** — what the installer copies from, and what GitHub serves to other employees |
+| `~/Documents/janus-puls-onboarding/skills/ims-enrolment/` | **Source** — what the installer copies from, and what [[github|GitHub]] serves to other employees |
 
 `install.sh` copies **repo → global** (one-way). The repo is the source of truth for distribution.
 
@@ -140,7 +140,7 @@ Tag in git after each version: `git tag v1.4 && git push --tags`.
 4. Update `scripts/sync-skill-from-global.sh`'s required-files check if you added new mandatory files
 5. Update `install.sh` and `install.ps1` `required=()` lists if you added new mandatory files
 6. Update `INSTALL.md` if the install steps changed
-7. Update Obsidian `07 ISO IMS PULS/IMS Enrolment Skill.md` with the new version info
+7. Update [[obsidian|Obsidian]] `07 [[iso-ims-puls|ISO IMS PULS]]/[[ims-enrolment|IMS Enrolment]] Skill.md` with the new version info
 8. Update `~/.claude/projects/-Users-jehad/memory/reference_iso_ims_puls.md`
 9. Commit + push
 10. Optionally tag in git

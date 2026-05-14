@@ -21,15 +21,15 @@ sensitivity_reason: "Public-internal onboarding guide shipped in the bootstrap r
 
 _Extracted from `Documents/janus-brain-bootstrap/ENROLLMENT.md` on 2026-05-14._
 
-# Enrollment — onboarding a Janus employee into the Prime Radiant programme
+# Enrollment — onboarding a Janus employee into the [[prime-radiant|Prime Radiant]] programme
 
-This guide walks one employee from zero to a working Janus brain: a **single GitHub-backed Obsidian vault** at `~/janus/prime-radiant/` — a clone of their department's shared Prime Radiant repo — populated with their Notion + Fireflies + selected laptop content. Per-person content lives in `people/<your-slug>/` inside that shared repo. Multiple teammates contribute to the same dept repo over time.
+This guide walks one employee from zero to a working Janus brain: a **single [[github|GitHub]]-backed [[obsidian|Obsidian]] vault** at `~/janus/prime-radiant/` — a clone of their department's shared Prime Radiant repo — populated with their Notion + [[fireflies|Fireflies]] + selected laptop content. Per-person content lives in `people/<your-slug>/` inside that shared repo. Multiple teammates contribute to the same dept repo over time.
 
-> **2026-05-14 rewrite.** This document describes the single-vault model from [`REWRITE-SPEC.md`](REWRITE-SPEC.md). The earlier two-vault model (separate private personal repo + dept clone + federation) has been retired. See [HANDOVER.md §15](HANDOVER.md) for the migration story.
+> **2026-05-14 rewrite.** This document describes the single-vault model from [`REWRITE-SPEC.md`](REWRITE-SPEC.md). The earlier two-vault model (separate private personal repo + dept clone + [[federation|federation]]) has been retired. See [HANDOVER.md §15](HANDOVER.md) for the migration story.
 
 **Time:** ~15 minutes of mostly watching. Two confirmation prompts (Identity + Task tracker).
 
-**Substrate:** Git on GitHub under the `Janusd-io` org. Each dept gets one private repo (`Janusd-io/janus-prime-radiant-<dept>`), and every employee in that dept clones it as their single Obsidian vault. Sync runs continuously via the Obsidian Git plugin — no cron jobs.
+**Substrate:** Git on GitHub under the `Janusd-io` org. Each dept gets one private repo (`Janusd-io/janus-prime-radiant-<dept>`), and every employee in that dept clones it as their single Obsidian vault. Sync runs continuously via the [[obsidian-git|Obsidian Git]] plugin — no cron jobs.
 
 ---
 
@@ -53,7 +53,7 @@ This guide walks one employee from zero to a working Janus brain: a **single Git
 
 ## 1. Prerequisites (~2 min)
 
-1. **Claude Desktop** is installed and has the Code (or Cowork) tab. Fireflies and Notion connectors are connected (Settings → Connectors).
+1. **Claude Desktop** is installed and has the Code (or [[cowork|Cowork]]) tab. Fireflies and Notion connectors are connected (Settings → Connectors).
 2. **`gh` CLI** is installed and authenticated to GitHub.
    ```bash
    brew install gh           # if missing
@@ -83,7 +83,7 @@ The skill autopilots through 8 phases:
 | Phase | What happens |
 | --- | --- |
 | **0. Pre-flight** | Verifies tools, MCP connectors, vault-root hygiene |
-| **1. Identity + task tracker** | Asks you to confirm your name + dept, then asks which task tracker (Linear / Monday / Asana / Notion tasks / none / other) for action-item formatting |
+| **1. Identity + task tracker** | Asks you to confirm your name + dept, then asks which task tracker ([[linear|Linear]] / Monday / Asana / Notion tasks / none / other) for action-item formatting |
 | **2. Bootstrap + scaffold** | `bootstrap-dept-vault.sh` clones (or creates from template) `Janusd-io/janus-prime-radiant-<your-dept>` to `~/janus/prime-radiant/`. `scaffold-person-subtree.sh` creates your `people/<slug>/` subtree |
 | **3. Cloud pulls** | Notion → `people/<slug>/sources/notion/`. Fireflies meetings → `people/<slug>/meetings/` (note + sibling `.transcript.md`) |
 | **3.5. Meeting parser** | One Claude subagent per meeting, in parallel. Produces a standup-schema digest (Summary · Decisions · Action items · 🎯 This week · 🏔️ Long horizon · Findings · Open questions · Blockers · Tool mentions · Topics · Related). Raw transcript is split out to the sibling file and linked from the note. Action items are formatted per your `task_tracker` |
@@ -159,5 +159,5 @@ Any content from the old personal vault you still want is recoverable from your 
 
 ## 9. Contact
 
-- **Programme questions, dept-vocabulary changes** → Michael Bruck
-- **Installer / sync / parser issues** → Jehad Altoutou (`jehada@janusd.io`)
+- **Programme questions, dept-vocabulary changes** → [[michael-bruck|Michael Bruck]]
+- **Installer / sync / parser issues** → [[jehad-altoutou|Jehad Altoutou]] (`jehada@janusd.io`)

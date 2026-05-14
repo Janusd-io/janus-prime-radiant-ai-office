@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # auth-scope
 
-_Extracted from `assessify/src/lib/auth-scope.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/auth-scope.ts` on 2026-05-14._
 
 ```typescript
 // Recruitment auth scoping helpers (Phase 1.A).

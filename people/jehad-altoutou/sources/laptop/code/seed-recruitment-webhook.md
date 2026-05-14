@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # seed-recruitment-webhook
 
-_Extracted from `assessify/scripts/seed-recruitment-webhook.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/scripts/seed-recruitment-webhook.ts` on 2026-05-14._
 
 ```typescript
 // Idempotent seeder for the recruitment n8n webhook (Phase 1.B).

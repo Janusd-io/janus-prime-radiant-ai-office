@@ -17,7 +17,7 @@ sensitivity_confidence: 0.90
 sensitivity_reason: "Public welcome doc for /ims-enrolment skill — dept-shareable onboarding pointer."
 ---
 
-# IMS Enrolment - Start Here
+# [[ims-enrolment|IMS Enrolment]] - Start Here
 
 _Extracted from `Desktop/IMS Enrolment - Start Here.md` on 2026-05-14._
 
@@ -38,7 +38,7 @@ The `/ims-enrolment` skill is now installed in your Claude Desktop.
 
 A folder on your Desktop called **`<Your Department> - IMS Enrolment`** containing:
 
-- Process documents (parent + sub-processes) in the ISO 9001 Figure 1 shape
+- Process documents (parent + sub-processes) in the [[iso-9001-figure-1|ISO 9001 Figure 1]] shape
 - ChatGPT prompts you can paste to generate polished diagrams
 - First Voice questionnaire for each person in your department
 - A `HANDOVER-BUNDLE.docx` ready to send to Simon (ISO Lead)

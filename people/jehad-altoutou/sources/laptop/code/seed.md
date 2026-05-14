@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # seed
 
-_Extracted from `assessify/prisma/seed.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/prisma/seed.ts` on 2026-05-14._
 
 ```typescript
 import "dotenv/config";

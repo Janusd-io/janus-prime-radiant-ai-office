@@ -23,9 +23,9 @@ _Extracted from `Documents/janus-brain-bootstrap/README.md` on 2026-05-14._
 
 # janus-brain-bootstrap
 
-Installer + source for the **`/janus-brain`** Claude Code skill — the single-vault Prime Radiant onboarding pipeline for Janus employees.
+Installer + source for the **`/janus-brain`** [[claude-code|Claude Code]] skill — the single-vault [[prime-radiant|Prime Radiant]] onboarding pipeline for Janus employees.
 
-> **2026-05-14 architecture rewrite.** This skill now follows the **single-vault model** described in [`REWRITE-SPEC.md`](REWRITE-SPEC.md). One GitHub repo per department; every employee in that dept clones it as their single Obsidian vault and contributes to it. The earlier two-vault model (private personal repo + sibling dept repo + federation) has been retired. See also [HANDOVER.md §15](HANDOVER.md).
+> **2026-05-14 architecture rewrite.** This skill now follows the **single-vault model** described in [`REWRITE-SPEC.md`](REWRITE-SPEC.md). One [[github|GitHub]] repo per department; every employee in that dept clones it as their single [[obsidian|Obsidian]] vault and contributes to it. The earlier two-vault model (private personal repo + sibling dept repo + [[federation|federation]]) has been retired. See also [HANDOVER.md §15](HANDOVER.md).
 
 ---
 
@@ -37,7 +37,7 @@ Installer + source for the **`/janus-brain`** Claude Code skill — the single-v
 - **Per-person content** lives inside the shared vault at `people/<person-slug>/` with subfolders `sources/`, `meetings/`, `private/`.
 - **Dept-shared content** (decisions, projects, processes, vendors, concepts, top-level people-stubs) lives at the vault root.
 - **`private/` and `.review-queue.md` are gitignored** — they never reach GitHub. The Phase 5 enrichment subagent classifies each source as `dept` | `self` | `confidential`; private items are routed there automatically.
-- **Sync** runs continuously via the Obsidian Git community plugin (auto-pull + auto-commit-and-push every 5 min). No cron.
+- **Sync** runs continuously via the [[obsidian-git|Obsidian Git]] community plugin (auto-pull + auto-commit-and-push every 5 min). No cron.
 
 ```text
 ~/janus/prime-radiant/                          ← single clone of dept repo
@@ -64,9 +64,9 @@ Installer + source for the **`/janus-brain`** Claude Code skill — the single-v
 | Phase | Action |
 | --- | --- |
 | **0. Pre-flight** | Tools, MCP connectors, vault-root path hygiene |
-| **1. Identity + task tracker** | Detect git user, look up in `departments.yaml`, ask which task tracker (Linear / Monday / Asana / Notion tasks / none / other) |
+| **1. Identity + task tracker** | Detect git user, look up in `departments.yaml`, ask which task tracker ([[linear|Linear]] / Monday / Asana / Notion tasks / none / other) |
 | **2. Bootstrap + scaffold** | `bootstrap-dept-vault.sh` clones (or creates from template) the dept repo as the single vault; `scaffold-person-subtree.sh` creates `people/<slug>/` |
-| **3. Cloud pulls** | Notion → `people/<slug>/sources/notion/`; Fireflies meetings → `people/<slug>/meetings/` (note + sibling `.transcript.md`) |
+| **3. Cloud pulls** | Notion → `people/<slug>/sources/notion/`; [[fireflies|Fireflies]] meetings → `people/<slug>/meetings/` (note + sibling `.transcript.md`) |
 | **3.5. Meeting parser** | One subagent per meeting, parallel. Produces standup-schema digest (Summary · Decisions · Action items · 🎯 This week · 🏔️ Long horizon · Findings · Open questions · Blockers · Tool mentions · Topics · Related). Action items rendered per the user's `task_tracker`. Raw transcript stays in the sibling file, never inlined. |
 | **4. Laptop walk** | Manifest of in-scope files |
 | **4.5. Content extraction** | pdftotext / pandoc / pandas / tesseract → markdown |
@@ -95,7 +95,7 @@ Every source that lands in the vault carries `sensitivity` and `sensitivity_conf
 gh repo clone Janusd-io/janus-brain-bootstrap ~/Documents/janus-brain-bootstrap
 ~/Documents/janus-brain-bootstrap/install.sh
 # Restart Claude Desktop
-# Type /janus-brain in the Code or Cowork tab
+# Type /janus-brain in the Code or [[cowork|Cowork]] tab
 ```
 
 Verify: `./install.sh --check`. Uninstall: `./install.sh --uninstall` (keeps the vault).
@@ -154,4 +154,4 @@ janus-brain-bootstrap/
 
 ## Owner / contact
 
-Jehad Altoutou — AI Operations Engineer · jehada@janusd.io. Programme owner: Michael Bruck.
+[[jehad-altoutou|Jehad Altoutou]] — AI Operations Engineer · jehada@janusd.io. Programme owner: [[michael-bruck|Michael Bruck]].

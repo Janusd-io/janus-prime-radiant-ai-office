@@ -24,14 +24,14 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/a
 # Diagram Prompt — Sub-Process: Platform & Tool Development
 
 > Filled-in example for the AI Department's platform development process.
-> 9 stages from pain point to live. Worked example: Assessify.
+> 9 stages from pain point to live. Worked example: [[assessify|Assessify]].
 > Paste between `---PROMPT---` into ChatGPT. Mermaid backup in `sub-process-platform-development.md` Section 2.
 
 ---PROMPT---
 
-Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"Platform & Tool Development Process — Janus Digital"** with subtitle **"From pain point to live · 9 stages · Obsidian as the living spine · Worked example: Assessify"**.
+Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"[[platform-development-process|Platform & Tool Development Process]] — Janus Digital"** with subtitle **"From pain point to live · 9 stages · [[obsidian|Obsidian]] as the living spine · Worked example: Assessify"**.
 
-**Style:** Clean corporate / McKinsey-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. ISO palette:
+**Style:** Clean corporate / [[mckinsey|McKinsey]]-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. ISO palette:
 - Process stage boxes: light blue `#E6F0FF` with navy `#1A4480` border
 - Controls (top): soft yellow `#FFF8D6` with amber `#996600` border
 - Resources (bottom): soft pink `#FFE8E8` with deep red `#990000` border
@@ -49,7 +49,7 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 - Sandbox isolation — no production data
 - Standing rule: never `docker compose down -v` unless schema changed
 - Graphify before review (AI agents read the graph, not raw source)
-- 5-area stress test (functionality · UI/UX · security · APIs · stability)
+- [[5-area-stress-test|5-area stress test]] (functionality · UI/UX · security · APIs · stability)
 - Requester sign-off + IT acceptance gates
 - Documentation triad mandatory (README · SOP · implementation plan)
 - Obsidian-as-living-docs invariant (stale notes = process failure)
@@ -76,7 +76,7 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 5. **Graphify + Obsidian sync** — `/graphify --update --obsidian` · graph dump per major change
 
 **Row 2:**
-6. **AI / agentic layer** — n8n workflows · MCP skills · Claude Code skills · auto-chained 42001 Gate 1
+6. **AI / [[agentic-layer|agentic layer]]** — n8n workflows · MCP skills · [[claude-code|Claude Code]] skills · auto-chained 42001 Gate 1
 7. **Stress test + internal demo** — 5-area test · requester runs real use case in sandbox
 8. **Documentation** — README + SOP + implementation plan (all three required)
 9. **IT handover + go-live** — handover package · IT accepts · production deployment · status → Active
@@ -85,7 +85,7 @@ Add a small purple-border callout near stages 2 and 5: **"Obsidian project note 
 
 **FOURTH BOX — OUTPUTS:**
 - Live platform (production URL)
-- GitHub repo
+- [[github|GitHub]] repo
 - Obsidian project note (living)
 - Graphify dump (`_COMMUNITY_*.md` notes)
 - README · SOP · implementation plan
@@ -102,8 +102,8 @@ Add a small purple-border callout near stages 2 and 5: **"Obsidian project note 
 Four columns:
 - **Knowledge spine (purple):** Obsidian Vault (`03 Projects/` · `02 Skills/` · `05 Tech Stacks/` · `99 Graphify/`) · `/brain` skill · per-project auto-memory
 - **Graphify (purple):** `~/.local/bin/graphify` · `--obsidian-dir` flag · ~2400× token efficiency
-- **Stacks & AI:** Next.js · Prisma · Drizzle · Postgres · Tailwind · shadcn · n8n · Claude · OpenAI · Codex · Antigravity · AI Gateway
-- **Infra:** Hostinger VPS · Vercel · Neon · Docker · Linear AIP / AIR · Monday board `5095012818`
+- **Stacks & AI:** Next.js · Prisma · Drizzle · Postgres · Tailwind · shadcn · n8n · Claude · [[openai|OpenAI]] · Codex · Antigravity · AI Gateway
+- **Infra:** [[hostinger|Hostinger]] VPS · Vercel · Neon · Docker · [[linear|Linear]] AIP / AIR · Monday board `5095012818`
 
 **KPI BOX (dashed line):** Header "MONITORING & MEASUREMENT":
 - Time pain-point → live (target ≤ 3 months)

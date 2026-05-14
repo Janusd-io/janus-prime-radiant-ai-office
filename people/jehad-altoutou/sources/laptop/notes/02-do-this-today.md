@@ -33,7 +33,7 @@ _Extracted from `Documents/janus-puls-onboarding/02-DO-THIS-TODAY.md` on 2026-05
 
 > Hi Simon,
 >
-> Got the deck — will send my PULS First Voice answers by end of week. Also happy to lead the AI/IT tooling discussion (Step 4 on slide 17) — can we schedule 30 mins this week?
+> Got the deck — will send my [[puls-first-voice|PULS First Voice]] answers by end of week. Also happy to lead the AI/IT tooling discussion (Step 4 on slide 17) — can we schedule 30 mins this week?
 >
 > One clarifying question first: am I the named Process Owner for **C1 (AI System Design & Development)**, **C2 (Software Development & Release)** and **S2 (IT Infrastructure & Data Governance)**, or is that being split with Michael?
 >

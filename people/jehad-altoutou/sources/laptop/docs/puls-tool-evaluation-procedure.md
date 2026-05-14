@@ -28,7 +28,7 @@ mentioned it” to “live in production for the whole company” at Janus
 Digital.**
 
 > Two intake paths converge at one evaluation pipeline. The pipeline is
-> gate-driven (pass/fail at each gate), uses Linear AIR as the sole
+> gate-driven (pass/fail at each gate), uses [[linear|Linear]] AIR as the sole
 > source of truth for the AI Systems Register, and ends only when IT has
 > deployed the tool company-wide and the requester has confirmed it
 > solves the original use case.
@@ -48,7 +48,7 @@ Digital.**
 
     flowchart LR
         %% Two entry points
-        MEET["<b>Path A — Meeting mention</b><br/>Fireflies transcript captures tool name<br/>/standup skill (v3.11) dispatches /ai-registry<br/>auto-chains /ai-tool-evaluation Gate 1"]
+        MEET["<b>Path A — Meeting mention</b><br/>[[fireflies|Fireflies]] transcript captures tool name<br/>/[[standup-skill|standup skill]] (v3.11) dispatches /ai-registry<br/>auto-chains /ai-tool-evaluation Gate 1"]
         SLACK["<b>Path B — Slack request</b> <i>(to be built)</i><br/>User posts in #ai-tool-requests channel<br/>Webhook → AI agent<br/>Agent invokes /ai-registry + /ai-tool-evaluation"]
 
         INTAKE["<b>Intake</b><br/>Capture: tool name · vendor · use case · requester · jurisdiction"]
@@ -162,7 +162,7 @@ the AIR-N issue.
 | **Gate 1 — Initial fitness** | Cost · vendor reputation · basic capability match · TOS reasonable | Tool is plausibly worth evaluating; not blacklisted vendor; fits a known need |
 | **Gate 2 — Security & data** | Security posture · data residency · encryption · access controls · audit logs · breach history | No critical security findings; data handling acceptable for jurisdictions (UAE / SG / UK); SOC 2 or equivalent if processing sensitive data |
 | **Gate 3 — AI governance (ISO 42001)** | AI Impact Assessment · model card · training data transparency · bias risk · explainability · human-oversight provisions | AI risks identified and mitigatable; impact assessment completed; conforms to 42001 §8.2 |
-| **Gate 4 — Operational fit** | Stack integration · SSO support · API quality · SLA · pricing model · exit strategy | Integrates with our stack (Next.js / Vercel / Hostinger); we can leave without lock-in |
+| **Gate 4 — Operational fit** | Stack integration · SSO support · API quality · SLA · pricing model · exit strategy | Integrates with our stack (Next.js / Vercel / [[hostinger|Hostinger]]); we can leave without lock-in |
 
 **Decision logic:**
 
@@ -179,7 +179,7 @@ the AIR-N issue.
 | 4.1 | Provision the tool in an isolated sandbox environment | Sandbox account / instance |
 | 4.2 | Connect minimal test data (no production secrets, no client data) | Sandbox configured |
 | 4.3 | Requester runs their **actual use case** end-to-end in the sandbox | Use case validated or invalidated |
-| 4.4 | AI Ops applies the standard 5-area stress test: functionality · UI/UX · security · APIs · stability | Stress test results recorded |
+| 4.4 | AI Ops applies the standard [[5-area-stress-test|5-area stress test]]: functionality · UI/UX · security · APIs · stability | Stress test results recorded |
 | 4.5 | Sandbox findings documented as a comment on AIR-N | Audit trail |
 | 4.6 | **Requester sign-off gate** — requester confirms (in writing, on AIR-N or Slack) that the tool meets their original need | Signed off OR rejected |
 
@@ -206,7 +206,7 @@ Once sandbox sign-off is obtained:
 
 | Control | Where it fires | Why |
 |----|----|----|
-| **Single source of truth — Linear AIR** | All stages | No parallel registries; no Monday AI Tools Registry writes |
+| **Single source of truth — Linear AIR** | All stages | No parallel registries; no Monday [[ai-tools-registry|AI Tools Registry]] writes |
 | `/ai-registry` **is the only writer to AIR** | Stages 2 + 5 | Prevents schema drift, enforces the related-tools check |
 | **Subagent Dispatch Gate** | Path A intake (Phase 2.4 of `/standup`) | Drops low-signal mentions before they create registry noise |
 | **Auto-chained Gate 1 on new tools** | After Stage 2 (per `/standup` v3.10+) | Guarantees no new tool enters AIR without an AI Impact Assessment — **direct ISO 42001 §8.2 satisfaction** |

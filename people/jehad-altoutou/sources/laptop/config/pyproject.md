@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # pyproject
 
-_Extracted from `VibeVoice/pyproject.toml` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/pyproject.toml` on 2026-05-14._
 
 ```toml
 [build-system]

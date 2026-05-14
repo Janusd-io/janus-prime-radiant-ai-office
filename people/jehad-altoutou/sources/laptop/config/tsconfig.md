@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # tsconfig
 
-_Extracted from `assessify/tsconfig.json` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/tsconfig.json` on 2026-05-14._
 
 ```json
 {

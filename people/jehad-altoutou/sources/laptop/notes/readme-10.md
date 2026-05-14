@@ -42,7 +42,7 @@ Read in order. Each file builds on the previous.
 | 6 | [06-FIRST-VOICE-FINAL.md](./06-FIRST-VOICE-FINAL.md) | **Send-ready.** First Voice answers addressed to Simon. Send when he asks for the form. |
 | 7 | [07-MEETING-TO-TASK-WORKFLOW.md](./07-MEETING-TO-TASK-WORKFLOW.md) | The actual SOP for "meeting → task → build" — implements Activity 1 of your AI Ops process. Becomes part of the C1 / C2 / S2 process documents. ISO clause map included. |
 | 8 | [08-TOOL-EVALUATION-PROCEDURE.md](./08-TOOL-EVALUATION-PROCEDURE.md) | AI Tool Evaluation & Onboarding — two intake paths (meeting + Slack) → registry check → Gates 1-4 → sandbox → IT handover. Includes the implementation gap for the Slack-webhook path. Maps directly to ISO 42001 §8.2. |
-| 9 | [09-PLATFORM-DEVELOPMENT-PROCESS.md](./09-PLATFORM-DEVELOPMENT-PROCESS.md) | Platform & Tool Development Process — how a whole platform (e.g. Assessify) goes from pain point to live, with Obsidian as the living source of truth. Worked example: Assessify, end to end. Becomes the Activities section of the C2 IMS process document. |
+| 9 | [09-PLATFORM-DEVELOPMENT-PROCESS.md](./09-PLATFORM-DEVELOPMENT-PROCESS.md) | [[platform-development-process|Platform & Tool Development Process]] — how a whole platform (e.g. [[assessify|Assessify]]) goes from pain point to live, with [[obsidian|Obsidian]] as the living source of truth. Worked example: Assessify, end to end. Becomes the Activities section of the C2 IMS process document. |
 | 10 | [10-GAP-ANALYSIS-vs-SIMON.md](./10-GAP-ANALYSIS-vs-SIMON.md) | Gap analysis: our docs vs. Simon's IMS-PRC-AI-001 v0.4. ~70% overlap. 10 specific gaps with effort estimates (~3 dev-days total). Plus the HR architecture question (Option 1 vs Option 2) with a recommendation. Living doc — close items as resolved. |
 
 ---
@@ -80,11 +80,11 @@ Anyone on the team can find it on the Desktop. No internal paths to navigate.
 
 Open Claude Desktop. Say:
 
-> *"Install the IMS enrolment skill from the Janus PULS repo."*
+> *"Install the [[ims-enrolment|IMS enrolment]] skill from the Janus PULS repo."*
 
 Claude proposes the install command. Approve the Bash tool call. Restart Claude Desktop when it finishes.
 
-**Requires:** access to this GitHub repo (ask Jehad to add you as a collaborator) or a zip from Jehad.
+**Requires:** access to this [[github|GitHub]] repo (ask Jehad to add you as a collaborator) or a zip from Jehad.
 
 #### Path B — Terminal (macOS / Linux)
 
@@ -194,7 +194,7 @@ That's the entire deck. Everything else — "Predictive Unified Live System," "L
 
 ## Your job, briefly
 
-1. Fill the **PULS First Voice** form for your role (15 min). Pre-filled in [04-FORMAL-RESPONSE.md](./04-FORMAL-RESPONSE.md).
+1. Fill the **[[puls-first-voice|PULS First Voice]]** form for your role (15 min). Pre-filled in [04-FORMAL-RESPONSE.md](./04-FORMAL-RESPONSE.md).
 2. Lead the **AI/IT tooling discussion** (Step 4 on slide 17). Recommendation drafted.
 3. Find out from Michael whether you own **C1 / C2 / S2** as Process Owner.
 4. If yes → write those process documents using the 7-section ISO 9001 template.

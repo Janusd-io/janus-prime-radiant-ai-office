@@ -21,7 +21,7 @@ sensitivity_reason: "Jehad's IMS First Voice questionnaire response to Simon —
 
 _Extracted from `Desktop/PULS-First-Voice-Jehad.docx` on 2026-05-14._
 
-# PULS First Voice — AI Operations Engineer
+# [[puls-first-voice|PULS First Voice]] — AI Operations Engineer
 
 **Submitted by:** Jehad — AI Operations Engineer, Janus Digital
 **Process areas:** C1 AI System Design & Development · C2 Software
@@ -46,9 +46,9 @@ to walk through any section in our tooling sync.
   requirements are gathered face-to-face.
 - **Internal — Slack:** Slack channels for async requests, feature
   ideas, and support questions from other departments.
-- **Internal — leadership:** Michael Bruck (AI Projects lead) for
+- **Internal — leadership:** [[michael-bruck|Michael Bruck]] (AI Projects lead) for
   strategic priority and approval.
-- **External — vendors:** Anthropic (Claude), OpenAI, Vercel, Hostinger,
+- **External — vendors:** [[anthropic|Anthropic]] (Claude), [[openai|OpenAI]], Vercel, [[hostinger|Hostinger]],
   Airwallex, n8n.
 - **External — regulators:** UAE, Singapore, UK (jurisdiction-specific
   requirements when applicable).
@@ -108,9 +108,9 @@ to walk through any section in our tooling sync.
 
 ### AI
 
-- Claude AI (Claude API + Claude Code)
+- Claude AI (Claude API + [[claude-code|Claude Code]])
 - OpenAI (GPT models, Codex)
-- Antigravity (Gemini skills system, 1,328+ modules)
+- Antigravity ([[gemini|Gemini]] skills system, 1,328+ modules)
 - AI Gateway (provider routing)
 
 ### Development
@@ -125,15 +125,15 @@ to walk through any section in our tooling sync.
 
 - Vercel (frontend / API hosting)
 - Hostinger VPS (Ubuntu 24.04, Docker, Caddy) — runs n8n + Postgres
-- GitHub (source control, CI/CD)
-- Cloudflare / GoDaddy (DNS)
+- [[github|GitHub]] (source control, CI/CD)
+- Cloudflare / [[godaddy|GoDaddy]] (DNS)
 
 ### Productivity & comms
 
 - Notion (documentation)
-- Linear (issues, CAPA, audit findings)
+- [[linear|Linear]] (issues, CAPA, audit findings)
 - Slack (team comms)
-- Obsidian (knowledge brain / personal knowledge graph)
+- [[obsidian|Obsidian]] (knowledge brain / personal [[knowledge-graph|knowledge graph]])
 
 > **Note for the AI Systems Register (ISO 42001):** Claude AI, OpenAI,
 > Antigravity, Claude Code, Codex, AI Gateway and any agent built on top

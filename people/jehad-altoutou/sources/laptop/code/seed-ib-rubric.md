@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # seed-ib-rubric
 
-_Extracted from `assessify/scripts/seed-ib-rubric.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/scripts/seed-ib-rubric.ts` on 2026-05-14._
 
 ```typescript
 // Idempotent seeder for the Associate Investment Banker (REIB) pre-interview

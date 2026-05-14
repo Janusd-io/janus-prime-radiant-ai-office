@@ -21,7 +21,7 @@ sensitivity_reason: "Jehad's PULS process doc for platform development — dept-
 
 _Extracted from `Desktop/PULS-Platform-Development-Process.docx` on 2026-05-14._
 
-# Platform & Tool Development Process
+# [[platform-development-process|Platform & Tool Development Process]]
 
 **How a new internal platform — a custom tool, not a third-party
 purchase — goes from “we have a problem” to “live for the company” at
@@ -33,7 +33,7 @@ Janus Digital.**
 > Where 07 is “small task → ship” and 08 is “evaluate someone else’s
 > tool”, this document covers “build a whole platform from scratch when
 > no good off-the-shelf option exists.” Worked example throughout:
-> **Assessify** — the HR assessment platform we built when manual hiring
+> **[[assessify|Assessify]]** — the HR assessment platform we built when manual hiring
 > assessments became a bottleneck.
 
 | Field | Value |
@@ -41,8 +41,8 @@ Janus Digital.**
 | **Process Owner** | Jehad — AI Operations Engineer |
 | **Covers IMS processes** | C1 AI System Design & Development · C2 Software Development & Release · S2 IT Infrastructure & Data Governance · A2 Intellectual Property Management |
 | **Related ISO clauses** | 9001 §8.3 (design and development) · 9001 §8.5 (production and service provision) · 9001 §7.5 (documented information) · 27001 A.8 (asset management) · 27001 A.8.25-A.8.34 (secure development) · 42001 §6.1 (AI risk) · 42001 §8.2 (AI Impact Assessment for embedded AI components) |
-| **Knowledge surface** | Obsidian Vault (`/Users/jehad/Documents/Obsidian Vault/03 Projects/`) — every platform has a living project note · Graphify dumps for AI-agent consumption |
-| **Source of truth for project state** | The Obsidian project note · the GitHub repo · the deployed instance |
+| **Knowledge surface** | [[obsidian|Obsidian]] Vault (`/Users/jehad/Documents/Obsidian Vault/03 Projects/`) — every platform has a living project note · Graphify dumps for AI-agent consumption |
+| **Source of truth for project state** | The Obsidian project note · the [[github|GitHub]] repo · the deployed instance |
 | **Last updated** | 8 May 2026 |
 
 ------------------------------------------------------------------------
@@ -59,9 +59,9 @@ weeks-to-months and needs:
   applies instead)
 - Strategic approval from leadership before sunk cost grows
 - A deliberate stack choice that fits Janus’s standard tech stacks
-- A knowledge graph that lets AI agents reason about the codebase as it
+- A [[knowledge-graph|knowledge graph]] that lets AI agents reason about the codebase as it
   grows
-- An agentic AI layer where useful (we’re an AI-first company — most
+- An [[agentic-ai|agentic AI]] layer where useful (we’re an AI-first company — most
   internal platforms get one)
 - A real handover to IT, not just a Docker container running on
   someone’s laptop
@@ -100,9 +100,9 @@ handover for custom domain + HTTPS.
 
         RCV["<b>RECEIVERS OF OUTPUTS</b><br/>Requesting department (end-users)<br/>IT department (operates it)<br/>All employees (eventual access)<br/>Internal Audit (full trail)<br/>AI agents (via Graphify + MCP)"]
 
-        CTRL["<b>CONTROLS</b><br/>Build vs buy decision (08 first)<br/>Strategic approval gate (Michael)<br/>Stack alignment with existing stacks<br/>Phased build with control points<br/>5-area stress test before handover<br/>Requester sign-off · IT acceptance<br/>Graphify before code review"]
+        CTRL["<b>CONTROLS</b><br/>Build vs buy decision (08 first)<br/>Strategic approval gate (Michael)<br/>Stack alignment with existing stacks<br/>Phased build with control points<br/>[[5-area-stress-test|5-area stress test]] before handover<br/>Requester sign-off · IT acceptance<br/>Graphify before code review"]
 
-        RES["<b>RESOURCES</b><br/>Stacks: SaaS Default · AI App · Creative Dev<br/>AI tools: Claude AI · OpenAI · Codex · Antigravity<br/>Infra: Hostinger VPS · Vercel · Neon · Docker<br/>Knowledge: Obsidian Vault · Graphify · /brain"]
+        RES["<b>RESOURCES</b><br/>Stacks: SaaS Default · AI App · Creative Dev<br/>AI tools: Claude AI · [[openai|OpenAI]] · Codex · Antigravity<br/>Infra: [[hostinger|Hostinger]] VPS · Vercel · Neon · Docker<br/>Knowledge: Obsidian Vault · Graphify · /brain"]
 
         KPI["<b>MONITORING & MEASUREMENT</b><br/>Time pain-point → live (target ≤ 3 months) · Phase completion vs plan<br/>Stress-test pass rate · Defect rate post-IT · Adoption rate by requester<br/>AI components passing 42001 Gate 1 · Obsidian note freshness"]
 
@@ -133,7 +133,7 @@ handover for custom domain + HTTPS.
 |----|----|
 | A pain point is captured — usually surfaced in standup (Path A — see [07](./07-MEETING-TO-TASK-WORKFLOW.md)), via Slack, or directly from a department head | One-paragraph problem statement |
 | Determine: is this a feature, an external tool, or a whole platform? | Decision: continue here only if “platform” |
-| **Build vs buy gate** — first run the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md). Only proceed if no third-party tool clears Gates 1-4 for the use case | Documented “no fit” outcome on Linear AIR if applicable |
+| **Build vs buy gate** — first run the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md). Only proceed if no third-party tool clears Gates 1-4 for the use case | Documented “no fit” outcome on [[linear|Linear]] AIR if applicable |
 
 **Assessify example:** Pain point — manual hiring assessments.
 Build-vs-buy review — checked off-the-shelf platforms (none integrated
@@ -205,7 +205,7 @@ verified live
 Assessment Editor, Scoring Engine, Analytics, Auth, Email, Webhook
 Dispatcher, File Validation, Easter Eggs.
 
-### Stage 6 — AI / agentic layer
+### Stage 6 — AI / [[agentic-layer|agentic layer]]
 
 If the platform benefits from agentic AI (most internal platforms do),
 this stage adds it.
@@ -214,21 +214,21 @@ this stage adds it.
 |----|----|
 | Identify the agentic surface: which workflows can an AI agent drive? | Agent boundary defined |
 | Build n8n workflows for orchestration where event-driven automation fits | n8n workflow set |
-| Build a Claude Code skill OR an MCP connector for direct platform control by Claude / Cursor / agents | Skill file · MCP server |
+| Build a [[claude-code|Claude Code]] skill OR an MCP connector for direct platform control by Claude / Cursor / agents | Skill file · MCP server |
 | Register the AI components in Linear AIR (auto-handled if mentioned in standup; otherwise manual via `/ai-registry`) | AIR-N entries |
 | Auto-chained Gate 1 evaluation runs (per [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md)) | Gate 1 comments on AIR |
 
 **Assessify example:** - n8n workflows hosted at
 `https://n8n.srv1086109.hstgr.cloud` — webhook `POST` from Assessify
 form submissions, switch on `formType`, branches for Bank Details and
-Personal Data, Google Drive upload, HTML → Google Doc conversion, Slack
+Personal Data, [[google-drive|Google Drive]] upload, HTML → Google Doc conversion, Slack
 notification, error handler workflow logging to Google Sheets + Slack -
 MCP-driven peer skill: `[[assessify-hr]]` (path:
 `/Users/jehad/Documents/Obsidian Vault/AI Office Brain/Skills/assessify-hr.md`)
 — drives the full Assessify domain model (assessments, sections,
 questions, job roles, departments, competencies, candidate invites,
 sessions, candidates, lookup) directly from Claude - Naming convention:
-British English in all assessment text · job role names match Deel ·
+British English in all assessment text · job role names match [[deel|Deel]] ·
 competency names stable across roles
 
 ### Stage 7 — Stress test + internal demo
@@ -339,7 +339,7 @@ Obsidian artifact. The vault is the audit trail.
 | **Graphify** | Binary at `~/.local/bin/graphify` · skill at `~/.claude/skills/graphify/SKILL.md` · `/brain` skill at `~/.claude/commands/brain.md` for project lifecycle management |
 | **Standard tech stacks** | SaaS Default Stack (Next.js · Prisma · SQLite/Postgres · Tailwind · shadcn · Docker · n8n · Resend) · AI App Stack · Creative Dev Stack |
 | **AI tooling** | Claude AI · OpenAI · Claude Code · Codex · Antigravity · AI Gateway |
-| **Infrastructure** | Hostinger VPS (production · `n8n.janusd.io`) · Vercel (Next.js apps) · Neon Postgres · Docker · Cloudflare / GoDaddy DNS |
+| **Infrastructure** | Hostinger VPS (production · `n8n.janusd.io`) · Vercel (Next.js apps) · Neon Postgres · Docker · Cloudflare / [[godaddy|GoDaddy]] DNS |
 | **Tracking** | Linear AIP team (project tasks) · Linear AIR team (AI tool / component registry) · Monday Automations board (`5095012818`) |
 | **Per-project auto-memory** | `~/.claude/projects/-Users-jehad-<project>/memory/` — survives across all conversations, separate from main vault |
 

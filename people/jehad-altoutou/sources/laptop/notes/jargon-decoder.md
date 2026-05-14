@@ -54,7 +54,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references
 | **ISO 42001:2023** | AI management. Proves you govern AI responsibly — impact assessments, human oversight, lifecycle management. Brand new. |
 | **ISO 27701:2025** | Privacy extension to 27001. Adds GDPR-style PII controls. Listed in the deck as "applicable, certifiable." |
 | **ISO 20000-1:2018** | IT service management. ITIL-style operations. Listed as "applicable, certifiable." |
-| **ISO 22301:2019** | Business continuity. Disaster recovery. Listed as "applicable, certifiable." |
+| **ISO 22301:2019** | Business continuity. [[disaster-recovery|Disaster recovery]]. Listed as "applicable, certifiable." |
 | **ISO 27017** / **27018** | Cloud security + PII-in-clouds. Listed as "supporting" — not directly certified but applied. |
 | **ISO 50001** / **41001** | Energy + facility management. **Client environment** — for the buildings Janus monitors, not Janus itself. |
 
@@ -65,7 +65,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references
 | Concept | Plain English |
 |---|---|
 | **PDCA — Plan-Do-Check-Act** | The repeating loop every ISO process must show: plan it, do it, check it worked, act on what you learned. Slide 7 of the deck. |
-| **ISO 9001 Figure 1** | The standard process diagram from slide 8. Sources → Inputs → Activities → Outputs → Receivers, with controls on top and resources below. **Every process document must follow this shape.** |
+| **[[iso-9001-figure-1|ISO 9001 Figure 1]]** | The standard process diagram from slide 8. Sources → Inputs → Activities → Outputs → Receivers, with controls on top and resources below. **Every process document must follow this shape.** |
 | **RACI** | Responsible · Accountable · Consulted · Informed. The role assignment per step in a process. |
 | **Risk register** | A list of every risk to the business with likelihood, impact, mitigation, owner. ISO 27001 + 42001 both require one. |
 | **AI Impact Assessment** | An ISO 42001 requirement — for every AI feature, document its purpose, risks, mitigations, oversight before deploying. |
@@ -112,7 +112,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references
 
 **Don't know who to ask?**
 - ISO/compliance/process questions → ISO lead
-- Ownership and budget questions → Michael Bruck
+- Ownership and budget questions → [[michael-bruck|Michael Bruck]]
 - Tooling and drafting → Claude (me) or your own engineering instinct
 
 **Worried this is huge?** It is. But: deck says "~6 months orientation," the whole company contributes (not just you), and the ISO lead drafts most of the documents from First Voice answers. Your direct authoring is much smaller than it looks.

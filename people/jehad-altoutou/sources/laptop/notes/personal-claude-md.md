@@ -23,7 +23,7 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/templates/pe
 
 # CLAUDE.md — {{PERSON}} (`people/{{PERSON_SLUG}}/` inside the {{PRIMARY_DEPT}} vault)
 
-> **Status:** Per-person rulebook v0.2 (single-vault model, rewrite 2026-05-14). Scaffolded {{DATE}} by `/janus-brain`. **This file is the contract for everything {{PERSON}} captures into the shared {{PRIMARY_DEPT}} Prime Radiant.** Edit it when rules feel wrong — do not silently deviate.
+> **Status:** Per-person rulebook v0.2 (single-vault model, rewrite 2026-05-14). Scaffolded {{DATE}} by `/janus-brain`. **This file is the contract for everything {{PERSON}} captures into the shared {{PRIMARY_DEPT}} [[prime-radiant|Prime Radiant]].** Edit it when rules feel wrong — do not silently deviate.
 
 > **Important:** the surrounding repo is **shared with your teammates** in the {{PRIMARY_DEPT}} department. Anything you commit to `people/{{PERSON_SLUG}}/sources/` or `people/{{PERSON_SLUG}}/meetings/` is visible to them once pushed. Genuinely private items go in `people/{{PERSON_SLUG}}/private/`, which is **gitignored** and never leaves your laptop. The enrichment subagent classifies sensitivity (`dept` | `self` | `confidential`) per source and routes accordingly; items below 0.7 confidence are logged to `.review-queue.md` for you to confirm.
 
@@ -31,7 +31,7 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/templates/pe
 
 ## 1. Purpose
 
-This file scopes **{{PERSON}}'s personal subtree** (`people/{{PERSON_SLUG}}/`) inside the shared {{PRIMARY_DEPT}} Prime Radiant vault. The repo is one of the dept-tier Prime Radiants under `Janusd-io/janus-prime-radiant-<dept>`; every teammate clones the same repo as their single Obsidian vault and contributes to it. Your subtree captures everything you personally touched (meetings, Notion entries, laptop docs) before it surfaces in dept-shared structures (decisions, projects, vendors, concepts at the vault root).
+This file scopes **{{PERSON}}'s personal subtree** (`people/{{PERSON_SLUG}}/`) inside the shared {{PRIMARY_DEPT}} Prime Radiant vault. The repo is one of the dept-tier Prime Radiants under `Janusd-io/janus-prime-radiant-<dept>`; every teammate clones the same repo as their single [[obsidian|Obsidian]] vault and contributes to it. Your subtree captures everything you personally touched (meetings, Notion entries, laptop docs) before it surfaces in dept-shared structures (decisions, projects, vendors, concepts at the vault root).
 
 ### Three purposes
 
@@ -41,7 +41,7 @@ This file scopes **{{PERSON}}'s personal subtree** (`people/{{PERSON_SLUG}}/`) i
 
 ### Where this fits
 
-The wiki is **the synthesis layer**. Linear, Notion, Fireflies, Slack, Monday remain authoritative for their respective domains. This wiki holds {{PERSON}}'s *narrative* and *cross-cutting analysis* across them.
+The wiki is **the synthesis layer**. [[linear|Linear]], Notion, [[fireflies|Fireflies]], Slack, Monday remain authoritative for their respective domains. This wiki holds {{PERSON}}'s *narrative* and *cross-cutting analysis* across them.
 
 ### Curation
 
@@ -99,7 +99,7 @@ briefs/            → synthesis output: state-of-X, comparisons, quarterly reca
 
 ---
 
-## 3. Naming conventions
+## 3. [[naming-conventions|Naming conventions]]
 
 - **All filenames are kebab-case**, lowercase, no spaces, no underscores.
 - ASCII only. Strip diacritics. Replace `&` with `and`.
@@ -120,7 +120,7 @@ briefs/            → synthesis output: state-of-X, comparisons, quarterly reca
 | `decisions/` | `YYYY-MM-DD-<slug>.md` | `2026-04-15-adopt-linear-for-ai-registry.md` |
 | `lessons/` | `YYYY-MM-DD-<slug>.md` | `2026-03-02-fireflies-summaries-too-shallow.md` |
 | `questions/` | `<question-slug>.md` | `do-we-need-a-vector-store.md` |
-| `pulse/` | `YYYY-MM-DD-<slug>.md` | `2026-05-01-anthropic-skills-ga.md` |
+| `pulse/` | `YYYY-MM-DD-<slug>.md` | `2026-05-01-[[anthropic|anthropic]]-skills-ga.md` |
 | `briefs/` | `<topic>.md` or `<topic>-YYYY-qN.md` | `agent-frameworks-2026-q2.md` |
 | `sources/laptop/` | `<rel-source-path-as-slug>.md` | `documents-clients-acme-notes.md` |
 | `sources/meetings/` | `YYYY-MM-DD-<meeting-slug>.md` | `2026-04-22-vendor-eval-cursor.md` |
@@ -163,7 +163,7 @@ captured_by: {{PERSON_SLUG}}    # liability anchor — set on capture, never str
 - `status` is required for `project`, `decision`, `question`, `lesson`.
 - `owner` is required for `project`, `decision`, `question`.
 - `confidence` is required for `vendor`, `pulse`, `brief`.
-- `audience` is required for every wiki page (used by federation; see §5.5). Defaults to `[department]` when uncertain (per user preference 2026-05-11).
+- `audience` is required for every wiki page (used by [[federation|federation]]; see §5.5). Defaults to `[department]` when uncertain (per user preference 2026-05-11).
 - `sources` lists the slugs (not paths) of items in `sources/` that informed the page.
 - `related` lists wiki page slugs. Use Obsidian-style `[[wikilinks]]` in the body too.
 

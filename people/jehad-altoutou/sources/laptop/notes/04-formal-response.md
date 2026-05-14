@@ -21,7 +21,7 @@ sensitivity_reason: "PULS First Voice formal response — work content for IMS s
 
 _Extracted from `Documents/janus-puls-onboarding/04-FORMAL-RESPONSE.md` on 2026-05-14._
 
-# PULS First Voice — AI Operations Engineer
+# [[puls-first-voice|PULS First Voice]] — AI Operations Engineer
 
 **Submitted by:** Jehad — AI Operations Engineer, Janus Digital
 **IMS processes covered:** C1 AI System Design & Development · C2 Software Development & Release · S2 IT Infrastructure & Data Governance
@@ -103,8 +103,8 @@ flowchart LR
 |---|---|
 | **Internal — meetings** | Department / team kickoff and requirements meetings |
 | **Internal — Slack** | Slack channels for async requests, ideas, and support questions |
-| **Internal — leadership** | Michael Bruck (AI Projects lead) — strategic direction, approval |
-| **External — vendors** | Anthropic (Claude) · OpenAI · Vercel · Hostinger · Neon · Airwallex · n8n |
+| **Internal — leadership** | [[michael-bruck|Michael Bruck]] (AI Projects lead) — strategic direction, approval |
+| **External — vendors** | [[anthropic|Anthropic]] (Claude) · [[openai|OpenAI]] · Vercel · [[hostinger|Hostinger]] · Neon · Airwallex · n8n |
 | **External — regulators** | UAE · Singapore (MAS / IMDA) · UK (ICO / FCA) — when jurisdiction-specific |
 | **Other interested parties** | Internal auditors · Certification body |
 
@@ -165,11 +165,11 @@ flowchart LR
 |---|---|
 | **Process Owner** | Jehad — AI Operations Engineer (accountable) |
 | **People** | AI Projects team (lead: Michael Bruck) · Process Owners across the 20 IMS processes |
-| **Infrastructure** | Hostinger VPS (Ubuntu 24.04, Docker) · Vercel · Neon Postgres · Cloudflare · GoDaddy |
-| **AI tools** | Claude AI · OpenAI · Claude Code · Codex · Antigravity (1,328+ Gemini skill modules) · AI Gateway · 22 custom Claude Code skills |
+| **Infrastructure** | Hostinger VPS (Ubuntu 24.04, Docker) · Vercel · Neon Postgres · Cloudflare · [[godaddy|GoDaddy]] |
+| **AI tools** | Claude AI · OpenAI · [[claude-code|Claude Code]] · Codex · Antigravity (1,328+ [[gemini|Gemini]] skill modules) · AI Gateway · 22 custom Claude Code skills |
 | **Dev tools** | Cursor / VS Code · Next.js 15 · React · TypeScript · Tailwind · shadcn/ui · Drizzle ORM · n8n |
-| **Productivity** | Notion · Linear · Slack · GitHub |
-| **Knowledge** | Obsidian Brain (personal knowledge graph) · ISO standards · vendor documentation |
+| **Productivity** | Notion · [[linear|Linear]] · Slack · [[github|GitHub]] |
+| **Knowledge** | [[obsidian|Obsidian]] Brain (personal [[knowledge-graph|knowledge graph]]) · ISO standards · vendor documentation |
 
 ### ⑧ Monitoring & Measurement (current state + asks)
 

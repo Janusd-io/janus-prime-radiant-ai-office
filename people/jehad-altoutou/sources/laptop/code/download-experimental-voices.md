@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # download_experimental_voices
 
-_Extracted from `VibeVoice/demo/download_experimental_voices.sh` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/demo/download_experimental_voices.sh` on 2026-05-14._
 
 ```bash
 #!/usr/bin/env bash

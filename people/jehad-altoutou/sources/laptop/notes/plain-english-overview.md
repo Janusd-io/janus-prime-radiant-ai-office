@@ -120,13 +120,13 @@ For every one of the 20 documents, there are **7 things** that must be filled in
 
 The ISO guy's deck has six "next steps" on slide 17. Most of those are HIS job (define process landscape, pick certification body, etc.). Only some involve you. Here's what's actually on YOUR plate, in priority order:
 
-### TASK 1 — Fill in your PULS First Voice form (15 minutes)
+### TASK 1 — Fill in your [[puls-first-voice|PULS First Voice]] form (15 minutes)
 
 This is the form he's about to send everyone. He'll send it after the kickoff session. Don't wait for it — answer the 6 questions now and send it back. The 6 questions are:
 
 1. **Your work — inputs & outputs.** What kicks off your work? What do you produce? Who do you send it to?
 2. **Controls and check points.** Where are the quality checks in your work?
-3. **Tools & systems you use.** Just list every tool you use — software, AI services, platforms. The AI department maintains the AI Systems Register (Linear AIR — required by ISO 42001) and has already evaluated every AI tool that's in use at Janus. You don't need to add anything to Linear AIR yourself.
+3. **Tools & systems you use.** Just list every tool you use — software, AI services, platforms. The AI department maintains the AI Systems Register ([[linear|Linear]] AIR — required by ISO 42001) and has already evaluated every AI tool that's in use at Janus. You don't need to add anything to Linear AIR yourself.
 4. **Your KPIs.** How do you know if you're doing well?
 5. **What you need to work better.** What's blocking you — access, info, training, clarity?
 6. **Your questions & ideas.** Anything you want to say.
@@ -137,7 +137,7 @@ This is the form he's about to send everyone. He'll send it after the kickoff se
 
 The ISO guy needs to decide: **what software will Janus actually use to run the IMS and build PULS?** This is your meeting because you're the AI/IT person. Show up with a recommendation.
 
-✅ I already drafted the recommendation in the other file (Section "PULS Tooling Proposal"). It says: use Notion (he already chose it) + n8n on your existing Hostinger VPS + a Next.js dashboard on Vercel + Linear for CAPA + Claude API for the predictive layer. Cost: ~$90-190/mo. Timeline: 8 weeks to Dubai pilot.
+✅ I already drafted the recommendation in the other file (Section "PULS Tooling Proposal"). It says: use Notion (he already chose it) + n8n on your existing [[hostinger|Hostinger]] VPS + a Next.js dashboard on Vercel + Linear for CAPA + Claude API for the predictive layer. Cost: ~$90-190/mo. Timeline: 8 weeks to Dubai pilot.
 
 ### TASK 3 — Find out if you're a Process Owner (5 minutes — ask Michael)
 
@@ -147,7 +147,7 @@ The ISO guy needs to assign one C-level person as Process Owner for each of the 
 - **C2 — Software Development & Release**
 - **S2 — IT Infrastructure & Data Governance**
 
-❓ Action: Ask Michael Bruck — "Am I the named Process Owner for C1, C2, and S2? If yes, I'll start drafting those documents. If you want to split or assign elsewhere, let me know."
+❓ Action: Ask [[michael-bruck|Michael Bruck]] — "Am I the named Process Owner for C1, C2, and S2? If yes, I'll start drafting those documents. If you want to split or assign elsewhere, let me know."
 
 ### TASK 4 — IF you are a Process Owner: write the document(s)
 
@@ -161,7 +161,7 @@ Eventually someone has to actually build the live dashboard. The deck strongly i
 
 - A Next.js + Postgres + Vercel app
 - Reads from Notion (docs of record)
-- Reads from n8n / Linear / GitHub (operational signals)
+- Reads from n8n / Linear / [[github|GitHub]] (operational signals)
 - Shows live KPI tiles per process, traffic-light status
 - Multi-entity filter (Dubai / SG / UK / future)
 - Auth (Clerk works; or whatever Janus already uses)

@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # streamer
 
-_Extracted from `VibeVoice/vibevoice/modular/streamer.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/modular/streamer.py` on 2026-05-14._
 
 ```python
 from __future__ import annotations

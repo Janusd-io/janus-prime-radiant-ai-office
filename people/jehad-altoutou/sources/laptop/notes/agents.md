@@ -19,7 +19,7 @@ sensitivity_reason: "Internal coding-agent rulebook — operational"
 
 # AGENTS
 
-_Extracted from `assessify/AGENTS.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/AGENTS.md` on 2026-05-14._
 
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
@@ -43,7 +43,7 @@ back to the project brain below.
 ## Project brain — read this before exploring the codebase
 
 A curated, hand-maintained summary of Assessify lives at:
-**`/Users/jehad/Documents/Obsidian Vault/03 Projects/Assessify/_BRAIN.md`**
+**`/Users/jehad/Documents/[[obsidian|Obsidian]] Vault/03 Projects/Assessify/_BRAIN.md`**
 
 Always consult `_BRAIN.md` first when you need:
 

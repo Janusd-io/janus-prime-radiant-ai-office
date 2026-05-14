@@ -27,7 +27,7 @@ _Extracted from `Documents/janus-puls-onboarding/03-YOUR-5-TASKS.md` on 2026-05-
 
 ---
 
-## Task 1 — Fill your PULS First Voice form (15 minutes)
+## Task 1 — Fill your [[puls-first-voice|PULS First Voice]] form (15 minutes)
 
 The ISO lead will send everyone a 6-question form. Don't wait — answer it now and send it back.
 
@@ -61,9 +61,9 @@ The recommended stack (already drafted in [04-FORMAL-RESPONSE.md](./04-FORMAL-RE
 | Layer | Tool | Why |
 |---|---|---|
 | Document of record | **Notion** | Already chosen by the ISO lead in slide 6 |
-| Automation | **n8n** on Hostinger VPS | Already running in production at `n8n.janusd.io` |
+| Automation | **n8n** on [[hostinger|Hostinger]] VPS | Already running in production at `n8n.janusd.io` |
 | PULS dashboard | **Next.js + Drizzle + Neon Postgres + Vercel** | Same stack as the AirWallex platform — proven |
-| CAPA / audit findings | **Linear** | Already used by the AI Projects team |
+| CAPA / audit findings | **[[linear|Linear]]** | Already used by the AI Projects team |
 | Predictive layer | **Claude API** via AI Gateway | Existing skills + 42001 governance fits |
 | Identity | **Clerk** | Vercel Marketplace, free under 10k MAU |
 | Comms | **Slack** (Chat SDK) | Already integrated for AirWallex |

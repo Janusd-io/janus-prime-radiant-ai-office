@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # RubricForm
 
-_Extracted from `assessify/src/app/admin/recruitment/rubrics/RubricForm.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/admin/recruitment/rubrics/RubricForm.tsx` on 2026-05-14._
 
 ```tsx
 "use client";

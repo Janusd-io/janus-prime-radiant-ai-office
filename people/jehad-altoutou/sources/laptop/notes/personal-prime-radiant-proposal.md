@@ -23,7 +23,7 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/briefs/perso
 
 ---
 type: brief
-title: Personal Prime Radiant — why per-employee instances are the missing tier
+title: Personal [[prime-radiant|Prime Radiant]] — why per-employee instances are the missing tier
 slug: personal-prime-radiant-proposal
 created: 2026-05-11
 updated: 2026-05-11
@@ -39,9 +39,9 @@ related: [janus-prime-radiant-build, ai-office, marketing-prime-radiant, standup
 
 # Personal Prime Radiant — why per-employee instances are the missing tier
 
-The Prime Radiant pattern federates from a department instance up toward a Janus-wide knowledge twin via the `entities/departments/` layer (per [[janus-prime-radiant-build]] and [[2026-05-08-marketing-prime-radiant-as-separate-vault]]). What it doesn't yet have is a **per-employee tier below the department instance** — the signal-capture layer that turns each person's laptop, Fireflies meetings, and curated reading into a contributing source for their department's Prime Radiant.
+The Prime Radiant pattern federates from a department instance up toward a Janus-wide knowledge twin via the `entities/departments/` layer (per [[janus-prime-radiant-build]] and [[2026-05-08-marketing-prime-radiant-as-separate-vault]]). What it doesn't yet have is a **per-employee tier below the department instance** — the signal-capture layer that turns each person's laptop, [[fireflies|Fireflies]] meetings, and curated reading into a contributing source for their department's Prime Radiant.
 
-This brief proposes filling that gap with a **Personal Prime Radiant** per employee — same CLAUDE.md schema (derived from AIO v0.8), federation flowing up via the locked `departments:` vocabulary, scaffolded and maintained by a Claude Code skill (`/janus-brain`). The proposal is escalated to AIO for Michael's review before any roll-out beyond Jehad's own laptop.
+This brief proposes filling that gap with a **Personal Prime Radiant** per employee — same CLAUDE.md schema (derived from AIO v0.8), [[federation|federation]] flowing up via the locked `departments:` vocabulary, scaffolded and maintained by a [[claude-code|Claude Code]] skill (`/janus-brain`). The proposal is escalated to AIO for Michael's review before any roll-out beyond Jehad's own laptop.
 
 ## Why this matters to AIO
 
@@ -76,7 +76,7 @@ Example flows:
 |---|---|---|---|
 | Notes from an AIO 1:1 with Jehad | `[department]` | `[ai-office]` | `AIO/inbox/personal-jehad-altoutou-<slug>.md` |
 | Cross-dept meeting with HR + IT-Ops attendees | `[departments:hr,it-ops]` | `[hr, it-ops]` | HR `inbox/` AND IT-Ops `inbox/` |
-| Article: Anthropic Claude Skills GA | `[org]` | `[ai-office]` | AIO + every other dept instance + Org instance (when it exists) |
+| Article: [[anthropic|Anthropic]] Claude Skills GA | `[org]` | `[ai-office]` | AIO + every other dept instance + Org instance (when it exists) |
 | Personal performance review | `[personal]` | `[]` | Nowhere — stays local |
 | 1:1 with CEO about confidential strategy | `[ceo-only]` | `[]` | CEO instance only (when it exists) |
 
@@ -90,7 +90,7 @@ Fireflies meetings pull nightly via per-user API key (per [[2026-05-04-centralis
 
 ## Open questions for Michael
 
-1. **Naming.** Should this be "Personal Prime Radiant · `<Person>`" (matches AIO precedent) or something narrower like "Prime Radiant — `<Person>` Personal"? Current skill uses `Janus Prime Radiant · <Person> (Personal)` — happy to align with whatever convention you set.
+1. **Naming.** Should this be "Personal Prime Radiant · `<Person>`" (matches AIO precedent) or something narrower like "Prime Radiant — `<Person>` Personal"? Current skill uses `[[janus-prime-radiant|Janus Prime Radiant]] · <Person> (Personal)` — happy to align with whatever convention you set.
 
 2. **Federation cadence.** Skill currently federates after every ingest pass (so nightly). Alternative: weekly batch federation so personal instances have time to settle before contributing. Trade-off: nightly is fresher, weekly gives the personal curator a chance to review/edit before federating.
 

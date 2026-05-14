@@ -1579,7 +1579,7 @@ Cards & Post Preview
 <div class="section-desc">
 
 Cards lift on hover with a shadow bloom and transparent border - the
-same "reveal" interaction used by Sprout Social and Linear. Metric
+same "reveal" interaction used by Sprout Social and [[linear|Linear]]. Metric
 callouts use the display serif for editorial weight.
 
 </div>
@@ -1712,7 +1712,7 @@ Social Suite
 
 </div>
 
-<div class="platform-dot" style="background:#0A66C2" title="LinkedIn">
+<div class="platform-dot" style="background:#0A66C2" title="[[linkedin|LinkedIn]]">
 
 in
 

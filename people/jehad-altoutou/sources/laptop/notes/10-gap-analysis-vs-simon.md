@@ -48,7 +48,7 @@ Simon's doc has **9 numbered stages** with **8 forms (F1-F8)**. Mine has **5 sta
 | 4 | **Stage 3 — Sandbox and Domain Expert Evaluation** (Gate 3) | F4 | Stage 4 — Sandbox deployment & requester validation | 🟡 Partial — we have requester, not a designated Domain Expert role |
 | 5 | **Stage 4 — Approval Decision** | F5 | Implicit at end of our Stage 3 + Stage 4 sign-off | 🟡 Partial — no consolidated approval dossier |
 | 6 | **IT Readiness / Deployment Preparation** | F6 | Stage 5 — IT handover & company-wide deployment | 🟢 Good — same activity; need form template |
-| 7 | **AI Tools Register Listing** | F7 | Final Linear AIR status → Active in Stage 5 | 🟢 Good — Linear AIR entry serves as F7 |
+| 7 | **AI Tools Register Listing** | F7 | Final [[linear|Linear]] AIR status → Active in Stage 5 | 🟢 Good — Linear AIR entry serves as F7 |
 | 8 | **Production Use / Implementation** | (training record) | Implicit "all employees have access" final state | 🟡 Partial — no explicit user training/guidance record |
 | 9 | **Ongoing Review, Re-evaluation, Suspension, De-listing** | F8 | **❌ Not covered** | 🔴 Missing entirely |
 
@@ -87,7 +87,7 @@ Simon's doc has **9 numbered stages** with **8 forms (F1-F8)**. Mine has **5 sta
 |---|---|---|
 | Stage 1 (Gate 1 — Intake) | Triage | Vendor reputation · pricing reasonableness · request completeness · obvious red flags (blacklisted vendor, obvious TOS issues) |
 | Stage 2 (Gate 2 — Technical) | Technical qualification | Security posture · data residency · encryption · audit logs · 42001 AI governance · operational fit (stack integration · SSO · API · SLA · exit) |
-| Stage 3 (Gate 3 — Sandbox) | Practical validation | Use case satisfied · 5-area stress test pass · output quality · workflow integration without parallel processes |
+| Stage 3 (Gate 3 — Sandbox) | Practical validation | Use case satisfied · [[5-area-stress-test|5-area stress test]] pass · output quality · workflow integration without parallel processes |
 
 **Effort:** Update doc 08 Section 2 + Section 3 controls table. Half a day.
 
@@ -116,7 +116,7 @@ This satisfies Simon's separation of "user perspective" from "technical perspect
 |---|---|
 | AI Department / Evaluator | Jehad — AI Operations Engineer |
 | Head of AI Native | TBD — confirm with Michael |
-| Head of AI Office | Michael Bruck (AI Projects lead) |
+| Head of AI Office | [[michael-bruck|Michael Bruck]] (AI Projects lead) |
 | Department Head | Per requesting department (HR head · Finance head · etc.) |
 | IT / Security / Legal | TBD per Janus org chart |
 | Approval authority for Stage 4 | TBD — likely Michael for routine, escalates to Top Management for high-risk |
@@ -246,7 +246,7 @@ This is **not about doc 08**. It's about how Janus structures the **HR-related I
 
 - **Today (10 entities):** sized like an SME → Option 1 (Integrated) fits the current reality
 - **2027 target (20+ entities/year):** approaching enterprise → Option 2 (Decentralized) becomes necessary
-- **Assessify is HR-domain** — already covered under "TA & Onboarding" in Option 1, or "Talent Acquisition" in Option 2
+- **[[assessify|Assessify]] is HR-domain** — already covered under "TA & Onboarding" in Option 1, or "Talent Acquisition" in Option 2
 
 **Recommendation to Simon:**
 

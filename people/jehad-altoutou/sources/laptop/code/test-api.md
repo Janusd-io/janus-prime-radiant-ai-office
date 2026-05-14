@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:36Z"
 
 # test_api
 
-_Extracted from `VibeVoice/vllm_plugin/tests/test_api.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vllm_plugin/tests/test_api.py` on 2026-05-14._
 
 ```python
 #!/usr/bin/env python3

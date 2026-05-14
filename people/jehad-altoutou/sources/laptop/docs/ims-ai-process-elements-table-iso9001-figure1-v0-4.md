@@ -21,7 +21,7 @@ sensitivity_reason: "Same Simon IMS-PRC-AI-001 process elements table as v0-4-1 
 
 _Extracted from `Desktop/IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4.docx` on 2026-05-14._
 
-**Process Elements Table according to ISO 9001 Figure 1 Logic**
+**Process Elements Table according to [[iso-9001-figure-1|ISO 9001 Figure 1]] Logic**
 
 **Process: Management of Internal AI Tools**
 

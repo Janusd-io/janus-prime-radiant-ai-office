@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # manifest
 
-_Extracted from `assessify/graphify-out/manifest.json` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/graphify-out/manifest.json` on 2026-05-14._
 
 ```json
 {

@@ -21,11 +21,11 @@ sensitivity_reason: "Comprehensive build-session handover. Contains email addres
 
 _Extracted from `Documents/janus-brain-bootstrap/HANDOVER.md` on 2026-05-14._
 
-# HANDOVER — Janus Brain bootstrap
+# HANDOVER — [[janus-brain-bootstrap|Janus Brain bootstrap]]
 
 > Last updated: 2026-05-14 (end of focused build session 2026-05-12 → 2026-05-14)
-> Owner: Jehad Altoutou · AI Operations Engineer · `jehada@janusd.io`
-> Programme owner: Michael Bruck (`michael-bruck@janusd.io`)
+> Owner: [[jehad-altoutou|Jehad Altoutou]] · AI Operations Engineer · `jehada@janusd.io`
+> Programme owner: [[michael-bruck|Michael Bruck]] (`michael-bruck@janusd.io`)
 
 A self-contained context document for the next Claude session (or any collaborator) to pick up from where we left. Read this first.
 
@@ -33,11 +33,11 @@ A self-contained context document for the next Claude session (or any collaborat
 
 ## 1. TL;DR
 
-The `/janus-brain` skill creates a private GitHub-backed Obsidian "Personal Prime Radiant" vault for any Janus employee, populates it from their Notion + Fireflies + laptop content, clones the canonical department vault as a sibling, and federates curated knowledge into the dept vault's inbox/.
+The `/janus-brain` skill creates a private [[github|GitHub]]-backed [[obsidian|Obsidian]] "Personal [[prime-radiant|Prime Radiant]]" vault for any Janus employee, populates it from their Notion + [[fireflies|Fireflies]] + laptop content, clones the canonical department vault as a sibling, and federates curated knowledge into the dept vault's inbox/.
 
-- **Substrate:** Git on GitHub under `Janusd-io` org (migrated off Google Drive on 2026-05-13 per Michael's brief)
-- **Deployment surface:** Claude Desktop → Code tab (or Cowork)
-- **Sync model:** Obsidian Git plugin (continuous, 5-min) + optional launchd auto-sync (daily, triggers `/janus-brain sync` via AppleScript)
+- **Substrate:** Git on GitHub under `Janusd-io` org (migrated off [[google-drive|Google Drive]] on 2026-05-13 per Michael's brief)
+- **Deployment surface:** Claude Desktop → Code tab (or [[cowork|Cowork]])
+- **Sync model:** [[obsidian-git|Obsidian Git]] plugin (continuous, 5-min) + optional launchd auto-sync (daily, triggers `/janus-brain sync` via AppleScript)
 - **User enrollment:** Jehad enrolled himself on 2026-05-13. Real data flowed through. Andrew (Marketing) is the next planned enrollment.
 - **Production state:** Pipeline is production-grade for first-time enrollment of a Janus employee in a known department. One known gap (Phase 4.5 wasn't run in Jehad's enrollment — needs `/janus-brain sync` with full extraction selected).
 
@@ -52,7 +52,7 @@ All under [`Janusd-io`](https://github.com/Janusd-io) GitHub org, all private.
 | [`janus-brain-bootstrap`](https://github.com/Janusd-io/janus-brain-bootstrap) | Skill installer + scripts + docs (this repo) | Jehad | `main` HEAD has all the work below |
 | [`janus-prime-radiant-template`](https://github.com/Janusd-io/janus-prime-radiant-template) | Dept-tier canonical template (v0.9.0) | Michael | Stable; cloned by `bootstrap-dept-vault.sh` |
 | [`janus-prime-radiant-personal-template`](https://github.com/Janusd-io/janus-prime-radiant-personal-template) | Personal-tier canonical template (v0.1.0) | Jehad | **Created this session.** Cloned by `bootstrap-personal-vault.sh` |
-| [`janus-prime-radiant-ai-office`](https://github.com/Janusd-io/janus-prime-radiant-ai-office) | Live AIO dept vault | Michael | Exists with template baseline + 121 inbox items from Jehad's federation |
+| [`janus-prime-radiant-ai-office`](https://github.com/Janusd-io/janus-prime-radiant-ai-office) | Live AIO dept vault | Michael | Exists with template baseline + 121 inbox items from Jehad's [[federation|federation]] |
 | `janus-prime-radiant-personal-jehad-altoutou` | Jehad's personal vault | Jehad | Created during enrollment. 507 files. |
 | _(future)_ `janus-prime-radiant-personal-andrew-soane` | Andrew's personal vault | Andrew | Will be auto-created when Andrew runs `/janus-brain` |
 | _(future)_ `janus-prime-radiant-marketing` | Marketing dept vault | Andrew (curator) | Will be auto-created from template on Andrew's first run if it doesn't yet exist |
@@ -264,7 +264,7 @@ Likely "what's next" topics:
 - **The 19 broken wikilinks**: build a stub-creation pass that runs after Phase 6 to auto-create empty entity stubs for unresolved `[[wikilink]]` targets. ~30 min.
 - **Schema-version CI**: GitHub Action that compares `TEMPLATE-VERSION` between dept template and personal template; fails if they don't match a known compatibility table. ~45 min.
 - **Andrew's actual enrollment**: walk him through it (or remotely diagnose if he hits anything).
-- **Per-tool extensibility** (Linear, HubSpot, Figma, Asana ingest) — earlier we discussed a hybrid where MCP-mediated tools get pulled during `/janus-brain sync`. Foundation is there; just needs MCP-call additions to Phase 3. ~half-day.
+- **Per-tool extensibility** ([[linear|Linear]], [[hubspot|HubSpot]], Figma, Asana ingest) — earlier we discussed a hybrid where MCP-mediated tools get pulled during `/janus-brain sync`. Foundation is there; just needs MCP-call additions to Phase 3. ~half-day.
 - **Promotion gate** (curator-side workflow that reviews dept `inbox/` and promotes to canonical) — separate skill or extension. Worth building once 3+ contributors are federating to a dept vault.
 - **Cross-vault search / unified query** — once 5+ depts have repos, build a query layer that searches across them. Not urgent.
 
@@ -285,7 +285,7 @@ These should be respected in future sessions:
 | **Image handling: both OCR + vision** (tesseract first, vision model for visual-heavy) | User explicit |
 | **Federation dedup**: skip identical pushes, enrich on overlap | User explicit, this conversation |
 | **Subagent does FULL extraction from raw transcript**, not delegate to Fireflies' shallow AI output | User explicit, 2026-05-13 (with strong opinion: "we don't trust fireflies summary, tasks, action items extractions, they're lame and not proper") |
-| **No "Generated with Claude Code" branding** in PRs/commits | From CLAUDE.md memory |
+| **No "Generated with [[claude-code|Claude Code]]" branding** in PRs/commits | From CLAUDE.md memory |
 | **Authorization is per-action**, not blanket | From CLAUDE.md base instructions |
 
 ---
@@ -439,8 +439,8 @@ janus-brain-bootstrap/
 
 - **Jehad Altoutou** (this repo, installer, personal-tier programme) — `jehada@janusd.io`
 - **Michael Bruck** (Prime Radiant programme owner, dept-tier template, schema) — `michael-bruck@janusd.io`
-- **Bonaventure Wong** (CEO, org admin) — for GitHub Teams / repo permission escalations
-- **Simon Tarskih** (ISO Lead, IMS programme) — for compliance + audit-chain concerns
+- **[[bonaventure-wong|Bonaventure Wong]]** (CEO, org admin) — for GitHub Teams / repo permission escalations
+- **[[simon-tarskih|Simon Tarskih]]** (ISO Lead, IMS programme) — for compliance + audit-chain concerns
 
 ---
 

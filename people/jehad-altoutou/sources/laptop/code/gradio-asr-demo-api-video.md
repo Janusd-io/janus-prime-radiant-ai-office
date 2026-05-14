@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:36Z"
 
 # gradio_asr_demo_api_video
 
-_Extracted from `VibeVoice/vllm_plugin/scripts/gradio_asr_demo_api_video.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vllm_plugin/scripts/gradio_asr_demo_api_video.py` on 2026-05-14._
 
 ```python
 #!/usr/bin/env python

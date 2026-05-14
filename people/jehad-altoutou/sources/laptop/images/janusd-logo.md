@@ -20,6 +20,6 @@ needs_vision_description: true
 
 # janusd-logo
 
-_Extracted from `assessify/public/janusd-logo.png` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/public/janusd-logo.png` on 2026-05-14._
 
 Ji uanus

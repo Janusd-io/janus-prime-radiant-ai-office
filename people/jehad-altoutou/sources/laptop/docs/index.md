@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # index
 
-_Extracted from `VibeVoice/demo/web/index.html` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/demo/web/index.html` on 2026-05-14._
 
 VibeVoice-Realtime TTS Demo
 
@@ -115,7 +115,7 @@ VibeVoice-Realtime TTS Demo
   #streamingPreviewContainer {
     border-radius: 14px;
     border: 1px solid var(--border);
-    background: linear-gradient(135deg, #eef2ff 0%, #f7f9ff 100%);
+    background: [[linear|linear]]-gradient(135deg, #eef2ff 0%, #f7f9ff 100%);
     padding: 18px 20px;
     box-shadow: inset 0 1px 2px rgba(85, 98, 255, 0.12);
   }

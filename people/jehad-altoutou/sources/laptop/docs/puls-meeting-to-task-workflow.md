@@ -21,7 +21,7 @@ sensitivity_reason: "Operational process documentation Jehad authored for PULS/I
 
 _Extracted from `Desktop/PULS-Meeting-to-Task-Workflow.docx` on 2026-05-14._
 
-# Meeting → Task → Build Workflow
+# [[meeting-to-task-workflow|Meeting → Task → Build Workflow]]
 
 **How requirements become tasks become deployed software at Janus
 Digital — AI Operations.**
@@ -45,9 +45,9 @@ Digital — AI Operations.**
 ## 1. The flow at a glance (ISO 9001:2015 Figure 1)
 
     flowchart LR
-        SRC["<b>SOURCES OF INPUTS</b><br/>Internal meetings (departments / teams)<br/>Slack channels<br/>Cross-department requests<br/>Leadership direction (Michael Bruck)"]
+        SRC["<b>SOURCES OF INPUTS</b><br/>Internal meetings (departments / teams)<br/>Slack channels<br/>Cross-department requests<br/>Leadership direction ([[michael-bruck|Michael Bruck]])"]
 
-        IN["<b>INPUTS</b><br/>Fireflies meeting transcript (canonical)<br/>Slack thread context<br/>Existing Monday / Linear / Notion state"]
+        IN["<b>INPUTS</b><br/>[[fireflies|Fireflies]] meeting transcript (canonical)<br/>Slack thread context<br/>Existing Monday / [[linear|Linear]] / Notion state"]
 
         subgraph ACT ["<b>ACTIVITIES</b> — 3-phase model: Analyse · Plan · Execute"]
             direction LR
@@ -61,7 +61,7 @@ Digital — AI Operations.**
 
         CTRL["<b>CONTROLS</b><br/>Notion idempotency check<br/>Subagent Dispatch Gate<br/>Conflict Safety on Linear AIP<br/>No-orphan invariant<br/>Strict Write Safety<br/>Execution Control Mode (large runs)"]
 
-        RES["<b>RESOURCES</b><br/>Fireflies (transcript)<br/>Monday Automations (board 5095012818)<br/>Linear AIP (tasks) + AIR (AI tool registry)<br/>Notion Operations Notebook<br/>Claude Desktop (skill orchestrator)"]
+        RES["<b>RESOURCES</b><br/>Fireflies (transcript)<br/>Monday Automations (board 5095012818)<br/>Linear AIP (tasks) + AIR ([[ai-tool-registry|AI tool registry]])<br/>Notion Operations Notebook<br/>Claude Desktop (skill orchestrator)"]
 
         KPI["<b>MONITORING & MEASUREMENT</b><br/>Notion entries posted per meeting · Subagent failure rate<br/>AIP conflicts unresolved · Owner orphans · Time from meeting end to plan ready"]
 
@@ -216,7 +216,7 @@ Fireflies transcript → the original meeting.
 | **ISO 9001:2015 §7.5** Documented information | Notion entries + Final Execution Reports retained as objective evidence |
 | **ISO 9001:2015 §8.5.6** Control of changes | Conflict Safety + Strict Write Safety prevent uncontrolled changes |
 | **ISO/IEC 27001:2022 §A.5** Information security policies | Subagent Dispatch Gate + Strict Write Safety enforce policy at write time |
-| **ISO/IEC 27001:2022 §A.8** Asset management | Linear AIR maintains the AI Tools Registry as a managed asset register |
+| **ISO/IEC 27001:2022 §A.8** Asset management | Linear AIR maintains the [[ai-tools-registry|AI Tools Registry]] as a managed asset register |
 | **ISO/IEC 42001:2023 §6.1** AI risk management | Auto-chained Gate 1 evaluation on every new AI tool registered |
 | **ISO/IEC 42001:2023 §8.2** AI System Impact Assessment | Sibling `/ai-tool-evaluation` skill performs formal Gate 1-4 evaluations stored as Linear AIR comments |
 
@@ -235,7 +235,7 @@ described above.
 For meetings outside the AI Office (cross-department, vendor calls,
 etc.), the same workflow applies but Fireflies search keywords change
 and the parent-project routing targets different Monday groups (see
-standup skill’s Department Group Routing reference).
+[[standup-skill|standup skill]]’s Department Group Routing reference).
 
 ------------------------------------------------------------------------
 

@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # MOS-preference
 
-_Extracted from `VibeVoice/Figures/MOS-preference.png` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/MOS-preference.png` on 2026-05-14._
 
 Human Preference *t
 
@@ -42,7 +42,7 @@ u VibeVoice-7B
 
 ~ VibeVoice-1.5B
 
-™ Gemini-2.5-Pro-Preview-TTS
+™ [[gemini|Gemini]]-2.5-Pro-Preview-TTS
 
 _ Eleven-V3(Alpha)
 

@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # migration
 
-_Extracted from `assessify/prisma/migrations/20260505000000_jobrole_jd_fields/migration.sql` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/prisma/migrations/20260505000000_jobrole_jd_fields/migration.sql` on 2026-05-14._
 
 ```sql
 -- Phase 1.B: structured Job Description fields on JobRole.

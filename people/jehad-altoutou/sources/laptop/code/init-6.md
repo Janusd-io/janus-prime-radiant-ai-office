@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:36Z"
 
 # __init__
 
-_Extracted from `VibeVoice/vllm_plugin/__init__.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vllm_plugin/__init__.py` on 2026-05-14._
 
 ```python
 """VibeVoice vLLM Plugin - Registers VibeVoice model for vLLM inference.

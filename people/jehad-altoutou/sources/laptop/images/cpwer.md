@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # cpWER
 
-_Extracted from `VibeVoice/Figures/cpWER.jpg` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/cpWER.jpg` on 2026-05-14._
 
 45
 40
@@ -51,7 +51,7 @@ mw VibeVoice-ASR
 
 AMI_IHM
 
-= Gemini-2.5-Pro
+= [[gemini|Gemini]]-2.5-Pro
 
 AMISDM
 

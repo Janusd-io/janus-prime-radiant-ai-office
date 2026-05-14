@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # timestep_sampler
 
-_Extracted from `VibeVoice/vibevoice/schedule/timestep_sampler.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/schedule/timestep_sampler.py` on 2026-05-14._
 
 ```python
 import math

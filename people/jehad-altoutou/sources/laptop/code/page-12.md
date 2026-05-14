@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # page
 
-_Extracted from `assessify/src/app/admin/hr-forms/[id]/page.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/admin/hr-forms/[id]/page.tsx` on 2026-05-14._
 
 ```tsx
 import { requireAuth } from "@/lib/auth";

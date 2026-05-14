@@ -44,7 +44,7 @@ task_tracker: {{TASK_TRACKER}}
 **Date:** {{DATE}}
 **Attendees:** {{ATTENDEES}}
 **Duration:** {{DURATION}} min
-**Fireflies:** [original meeting]({{FIREFLIES_URL}})
+**[[fireflies|Fireflies]]:** [original meeting]({{FIREFLIES_URL}})
 
 ---
 

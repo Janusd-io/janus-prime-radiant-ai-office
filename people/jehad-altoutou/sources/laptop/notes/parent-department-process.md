@@ -166,7 +166,7 @@ flowchart LR
 | **Process Owner** | [Named C-level — single point of accountability] |
 | **People** | [Roles · team size · reporting lines] |
 | **Infrastructure** | [Buildings · servers · hardware · network] |
-| **Tools & systems** | [Software, AI tools, platforms — just list them. The AI department maintains the AI Systems Register (Linear AIR) and verifies every AI tool has been Gate 1-4 evaluated before reaching other departments.] |
+| **Tools & systems** | [Software, AI tools, platforms — just list them. The AI department maintains the AI Systems Register ([[linear|Linear]] AIR) and verifies every AI tool has been Gate 1-4 evaluated before reaching other departments.] |
 | **Knowledge** | [Internal knowledge sources · external sources · standards followed] |
 | **Budget** | [Annual budget envelope · cost categories] |
 

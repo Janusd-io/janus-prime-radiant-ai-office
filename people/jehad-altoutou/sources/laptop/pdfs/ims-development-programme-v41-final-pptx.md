@@ -665,7 +665,7 @@ and AI together.
 The better we build the IMS here in Dubai — the faster and more reliably we open every new entity. Your contribution here has
 direct impact on the company's ability to grow.
 
-PULS First Voice — your input shapes the system
+[[puls-first-voice|PULS First Voice]] — your input shapes the system
 To build a system that reflects how we work, we need input from everyone. Your answers become the foundation of PULS — your processes, your KPIs, your tools.
 After this session you will receive PULS First Voice — a short form, 10–15 minutes. Your answers are used to define your process, responsibilities and KPIs inside PULS.
 

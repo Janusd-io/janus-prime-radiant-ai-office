@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # modular_vibevoice_diffusion_head
 
-_Extracted from `VibeVoice/vibevoice/modular/modular_vibevoice_diffusion_head.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/modular/modular_vibevoice_diffusion_head.py` on 2026-05-14._
 
 ```python
 import math

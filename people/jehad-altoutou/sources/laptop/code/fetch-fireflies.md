@@ -16,7 +16,7 @@ extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
 ---
 
-# fetch-fireflies
+# fetch-[[fireflies|fireflies]]
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/scripts/fetch-fireflies.py` on 2026-05-14._
 

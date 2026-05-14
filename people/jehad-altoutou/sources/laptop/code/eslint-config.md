@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # eslint.config
 
-_Extracted from `assessify/eslint.config.mjs` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/eslint.config.mjs` on 2026-05-14._
 
 ```mjs
 import { defineConfig, globalIgnores } from "eslint/config";

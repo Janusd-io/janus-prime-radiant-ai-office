@@ -78,7 +78,7 @@ The diagram is **the same shape at every level**:
 3. **Forces clarity** — you can't have a process without inputs, outputs, controls, and resources. If you can't fill in a section, your process isn't really defined
 4. **Drillable** — the same shape works at parent process level, sub-process level, and individual task level
 
-## Mermaid template (paste this into Notion or GitHub for an interactive version)
+## Mermaid template (paste this into Notion or [[github|GitHub]] for an interactive version)
 
 ```mermaid
 flowchart LR
@@ -119,7 +119,7 @@ flowchart LR
 | "What's the difference between Controls and Resources?" | Controls = the rules. Resources = the things. A control might say "every release must have a peer review." The resource is the reviewer and the review tool. |
 | "What's the difference between Inputs and Sources?" | Sources = the *origin* (who/what). Inputs = the *content* (what's actually transmitted). A source might be "the HR team's Slack channel." The input is "the new-hire request message itself." |
 | "Are Activities the workflow or the procedure?" | Activities are the workflow — the named steps. The procedure (the how-to) is referenced from each activity but lives in supporting documentation. |
-| "What if my Activities are non-sequential or parallel?" | That's fine. Draw the diagram with parallel branches. ISO doesn't require linear sequences. |
+| "What if my Activities are non-sequential or parallel?" | That's fine. Draw the diagram with parallel branches. ISO doesn't require [[linear|linear]] sequences. |
 
 ## Source
 

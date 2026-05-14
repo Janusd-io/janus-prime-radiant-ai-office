@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # realtime_model_inference_from_file
 
-_Extracted from `VibeVoice/demo/realtime_model_inference_from_file.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/demo/realtime_model_inference_from_file.py` on 2026-05-14._
 
 ```python
 import argparse

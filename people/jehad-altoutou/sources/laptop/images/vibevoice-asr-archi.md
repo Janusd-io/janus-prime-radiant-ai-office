@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # VibeVoice_ASR_archi
 
-_Extracted from `VibeVoice/Figures/VibeVoice_ASR_archi.png` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/VibeVoice_ASR_archi.png` on 2026-05-14._
 
 [A\ Acoustic Tokenizer Encoder
 [S\ Semantic Tokenizer Encoder
@@ -31,13 +31,13 @@ GB Continuous Latent
 Rich Transcription
 77 Who - When ~—- What --~-~s
 
-Speaker 1, 0~ 10.25, Welcome to Vibe...
+[[unknown-speaker-1|Speaker 1]], 0~ 10.25, Welcome to Vibe...
 
 e------
 
 I
 !
-Speaker 2, 10.3 ~ 33.33, Nice to meet...
+[[speaker-2-unidentified|Speaker 2]], 10.3 ~ 33.33, Nice to meet...
 I
 1
 !

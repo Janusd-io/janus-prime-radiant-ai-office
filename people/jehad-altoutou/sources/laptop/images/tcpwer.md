@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # tcpWER
 
-_Extracted from `VibeVoice/Figures/tcpWER.jpg` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/tcpWER.jpg` on 2026-05-14._
 
 70
 
@@ -44,7 +44,7 @@ mVibeVoice-ASR
 
 AMLIHM
 
-= Gemini-2.5-Pro
+= [[gemini|Gemini]]-2.5-Pro
 64.86
 
 AMILSDM

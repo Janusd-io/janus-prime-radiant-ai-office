@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # audio_utils
 
-_Extracted from `VibeVoice/vibevoice/processor/audio_utils.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/processor/audio_utils.py` on 2026-05-14._
 
 ```python
 import os

@@ -172,7 +172,7 @@ flowchart LR
 
 - **Parent process:** `parent-process.md`
 - **Other sub-processes in this department:** `sub-process-[other-slug].md`
-- **External references:** [Linear AIR · Notion handover docs · GitHub repos]
+- **External references:** [[[linear|Linear]] AIR · Notion handover docs · [[github|GitHub]] repos]
 
 ---
 

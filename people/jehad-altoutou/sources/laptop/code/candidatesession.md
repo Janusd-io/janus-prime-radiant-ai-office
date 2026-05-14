@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # CandidateSession
 
-_Extracted from `assessify/src/generated/prisma/models/CandidateSession.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/generated/prisma/models/CandidateSession.ts` on 2026-05-14._
 
 ```typescript
 

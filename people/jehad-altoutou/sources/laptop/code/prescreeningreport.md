@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # PreScreeningReport
 
-_Extracted from `assessify/src/app/admin/recruitment/[id]/PreScreeningReport.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/admin/recruitment/[id]/PreScreeningReport.tsx` on 2026-05-14._
 
 ```tsx
 // Phase 1.B v2: HR-equivalent pre-screening report renderer.

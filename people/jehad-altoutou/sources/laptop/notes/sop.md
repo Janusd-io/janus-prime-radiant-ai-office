@@ -19,15 +19,15 @@ sensitivity_reason: "Internal operations manual — no PII, operational only"
 
 # SOP
 
-_Extracted from `assessify/SOP.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/SOP.md` on 2026-05-14._
 
 # Assessify — Standard Operating Procedure (SOP)
 
 **Version:** 1.3
 **Last Updated:** 28 April 2026
-**Owner:** Jehad Altoutou — Janusd
+**Owner:** [[jehad-altoutou|Jehad Altoutou]] — Janusd
 
-> **Recent:** v1.3 (28 Apr 2026) — MCP up to 57 tools (Round 3); admin auth gate on every `/api/admin/*` endpoint; rate limit on `/api/mcp`; Next.js 16.2.4 (HIGH advisory patched); GitHub Actions CI; Dockerfile entrypoint now runs migrations on fresh-install path too.
+> **Recent:** v1.3 (28 Apr 2026) — MCP up to 57 tools (Round 3); admin auth gate on every `/api/admin/*` endpoint; rate limit on `/api/mcp`; Next.js 16.2.4 (HIGH advisory patched); [[github|GitHub]] Actions CI; Dockerfile entrypoint now runs migrations on fresh-install path too.
 
 > **Docs:** [📖 README](README.md) · [📘 SOP (full operations manual)](SOP.md)
 
@@ -173,7 +173,7 @@ docker compose up -d app
 # Data is preserved — only the app code is replaced
 ```
 
-### Production Deploy (Hostinger VPS)
+### Production Deploy ([[hostinger|Hostinger]] VPS)
 
 Production runs at `https://assessify.janusd.io` on a Hostinger Ubuntu VPS behind Caddy. The stack lives at `/opt/stacks/assessify/` and is **not** a git clone — files are synced manually via `rsync` over SSH.
 
@@ -383,7 +383,7 @@ n8n receives this, parses the JSON, and can:
 
 - Extract base64 files as binary
 - Build formatted tables/PDFs
-- Route to Google Drive, SharePoint, etc.
+- Route to [[google-drive|Google Drive]], SharePoint, etc.
 - Send notifications
 
 ---

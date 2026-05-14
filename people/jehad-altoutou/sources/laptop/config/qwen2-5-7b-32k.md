@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # qwen2.5_7b_32k
 
-_Extracted from `VibeVoice/vibevoice/configs/qwen2.5_7b_32k.json` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/configs/qwen2.5_7b_32k.json` on 2026-05-14._
 
 ```json
 {

@@ -23,7 +23,7 @@ _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/SKILL.md` on
 
 ---
 name: janus-brain
-description: One-shot Janus employee brain bootstrap into the single dept-shared Prime Radiant vault. Clones the employee's department GitHub repo (Janusd-io/janus-prime-radiant-<dept>) as their one local Obsidian vault at ~/janus/prime-radiant, scaffolds people/<slug>/ inside it, pulls their Notion + Fireflies + laptop content via MCP and parallel Claude subagents, classifies sensitivity (dept | self | confidential) and routes private items to a gitignored people/<slug>/private/, then commits + pushes back to the shared dept repo. Multiple teammates push to the same dept repo. Invoke when an employee says "/janus-brain", "set up my Janus brain", "onboard me into the wiki", "bring my work into Obsidian". Assumes Claude Desktop is connected to Fireflies and Notion via MCP and `gh` CLI is authenticated to the Janusd-io org. Substrate: Git on GitHub (per 2026-05-13 brief). Single-vault rewrite per 2026-05-14 REWRITE-SPEC.md. Aligned with the Janus Prime Radiant programme (Michael Bruck, program owner).
+description: One-shot Janus employee brain bootstrap into the single dept-shared [[prime-radiant|Prime Radiant]] vault. Clones the employee's department [[github|GitHub]] repo (Janusd-io/janus-prime-radiant-<dept>) as their one local [[obsidian|Obsidian]] vault at ~/janus/prime-radiant, scaffolds people/<slug>/ inside it, pulls their Notion + [[fireflies|Fireflies]] + laptop content via MCP and parallel Claude subagents, classifies sensitivity (dept | self | confidential) and routes private items to a gitignored people/<slug>/private/, then commits + pushes back to the shared dept repo. Multiple teammates push to the same dept repo. Invoke when an employee says "/janus-brain", "set up my Janus brain", "onboard me into the wiki", "bring my work into Obsidian". Assumes Claude Desktop is connected to Fireflies and Notion via MCP and `gh` CLI is authenticated to the Janusd-io org. Substrate: Git on GitHub (per 2026-05-13 brief). Single-vault rewrite per 2026-05-14 REWRITE-SPEC.md. Aligned with the [[janus-prime-radiant|Janus Prime Radiant]] programme ([[michael-bruck|Michael Bruck]], program owner).
 trigger: /janus-brain
 ---
 
@@ -35,7 +35,7 @@ The entry point for Janus's Prime Radiant programme. Run once. Get the shared de
 
 ## Pre-flight (what should already be true)
 
-- Claude Desktop is running with **Code** or **Cowork** tab access, this skill installed via `~/Documents/janus-brain-bootstrap/install.sh`
+- Claude Desktop is running with **Code** or **[[cowork|Cowork]]** tab access, this skill installed via `~/Documents/janus-brain-bootstrap/install.sh`
 - `gh` CLI installed and authenticated (`gh auth login`); GitHub user has access to the `Janusd-io` org
 - **Fireflies MCP** connected in Claude Desktop (Settings → Connectors → Fireflies)
 - **Notion MCP** connected in Claude Desktop (Settings → Connectors → Notion)
@@ -54,7 +54,7 @@ A single fully-populated **dept Prime Radiant vault** at:
 
 …backed by the shared dept GitHub repo `Janusd-io/janus-prime-radiant-<dept-slug>` that the whole department contributes to. Inside the vault, dept-shared content lives at the root (`decisions/`, `projects/`, `processes/`, `vendors/`, `concepts/`, `people/`) and your personal content lives at `people/<your-slug>/` with subfolders `sources/`, `meetings/`, `private/` (the last is gitignored). Items the enrichment classifier scores `self` or `confidential` (or `dept` with confidence < 0.7) get routed to `private/` and never reach GitHub.
 
-No cron jobs are installed. Sync runs continuously via the Obsidian Git community plugin (auto-pull on open + auto-commit-and-push every 5 min).
+No cron jobs are installed. Sync runs continuously via the [[obsidian-git|Obsidian Git]] community plugin (auto-pull on open + auto-commit-and-push every 5 min).
 
 ---
 
@@ -100,7 +100,7 @@ If any check fails: stop, tell the user what's missing, give them the fix comman
 
    > Which task tracker should I file your action items into?
    >
-   > 1. **Linear** — `- [ ] @assignee text (due: X) — file in Linear AIP`
+   > 1. **[[linear|Linear]]** — `- [ ] @assignee text (due: X) — file in Linear AIP`
    > 2. **Monday** — `- [ ] @assignee text (due: X) — Monday`
    > 3. **Asana** — plain checkbox (Asana-native syntax coming in v2)
    > 4. **Notion tasks** — plain checkbox (Notion-native syntax coming in v2)
@@ -272,7 +272,7 @@ Split the `included` list into chunks of 18-22 files each, grouped by source dir
 
 Each subagent receives the prompt from `~/.claude/skills/janus-brain/prompts/enrichment-subagent.md` with substitutions: `CHUNK_NUM`, `TOTAL_CHUNKS`, `PERSON_SLUG`, `DEPT_SLUGS`, `VAULT_PATH`, `OUT_FILE`, file list.
 
-**Sensitivity classification** — every source frontmatter must have `sensitivity` (one of `dept` | `self` | `confidential`) and `sensitivity_confidence` (0.0–1.0). Heuristics in the subagent:
+**[[sensitivity-classification|Sensitivity classification]]** — every source frontmatter must have `sensitivity` (one of `dept` | `self` | `confidential`) and `sensitivity_confidence` (0.0–1.0). Heuristics in the subagent:
 
 - credentials / API keys / passwords → `confidential`
 - HR / salary / performance review / legal / health / family / personal finance → `confidential`
@@ -441,4 +441,4 @@ If the user's scope balloons past 1000 files at Phase 4, **stop and narrow**.
 
 ## Janus Prime Radiant programme
 
-This skill implements the Janus Prime Radiant programme (Michael Bruck, programme owner) under the **single-vault model** (rewrite 2026-05-14). One GitHub repo per department; every employee in that dept clones it as their single Obsidian vault and contributes to it via Git. The personal repo + federation machinery from the earlier two-vault design has been deleted. A future read-only "CEO brain" skill will federate across dept repos — out of scope here. Substrate (Git on GitHub) per Michael's 2026-05-13 brief.
+This skill implements the Janus Prime Radiant programme (Michael Bruck, programme owner) under the **single-vault model** (rewrite 2026-05-14). One GitHub repo per department; every employee in that dept clones it as their single Obsidian vault and contributes to it via Git. The personal repo + [[federation|federation]] machinery from the earlier two-vault design has been deleted. A future read-only "CEO brain" skill will federate across dept repos — out of scope here. Substrate (Git on GitHub) per Michael's 2026-05-13 brief.

@@ -21,15 +21,15 @@ sensitivity_reason: "Design rationale for the janus-brain skill — internal dep
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/references/prime-radiant-personal.md` on 2026-05-14._
 
-# Personal Prime Radiant — the pattern
+# Personal [[prime-radiant|Prime Radiant]] — the pattern
 
-The personal-tier instance of [Janus Prime Radiant](https://drive.google.com/drive/folders/1GWBIIo1gsextmEgJv9fx2fJDWv9ABpuD). One vault per Janus employee, derived from the AIO CLAUDE.md v0.8 schema, federating up to the relevant Department Prime Radiant via `departments:` + `audience:` frontmatter.
+The personal-tier instance of [[[janus-prime-radiant|Janus Prime Radiant]]](https://drive.google.com/drive/folders/1GWBIIo1gsextmEgJv9fx2fJDWv9ABpuD). One vault per Janus employee, derived from the AIO CLAUDE.md v0.8 schema, federating up to the relevant Department Prime Radiant via `departments:` + `audience:` frontmatter.
 
 This document is the design rationale and the canonical reference for the skill's behaviour. The user-facing rulebook lives in `templates/personal-claude-md.md` (gets copied into the user's vault as `CLAUDE.md` on scaffold).
 
 ## Why personal-tier
 
-The AIO Prime Radiant captures **what Michael curates** — high-signal but one perspective. As Prime Radiant scales to Marketing, HR, Finance, etc., each curator faces the same bottleneck. The personal tier turns every employee's laptop and Fireflies attendance into a contributing sensor array that feeds the department instance.
+The AIO Prime Radiant captures **what Michael curates** — high-signal but one perspective. As Prime Radiant scales to Marketing, HR, Finance, etc., each curator faces the same bottleneck. The personal tier turns every employee's laptop and [[fireflies|Fireflies]] attendance into a contributing sensor array that feeds the department instance.
 
 Without the personal tier:
 - Knowledge stays trapped on individual laptops
@@ -58,7 +58,7 @@ Org (when it exists; cross-dept public synthesis)
 CEO (Bonaventure; superset read-only)
 ```
 
-Federation is push-only and upward. A department instance never writes back to a personal instance. The Org instance never writes to a department instance.
+[[federation|Federation]] is push-only and upward. A department instance never writes back to a personal instance. The Org instance never writes to a department instance.
 
 ## Schema additions vs AIO v0.8
 

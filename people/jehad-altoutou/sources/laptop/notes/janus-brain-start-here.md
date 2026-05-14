@@ -27,7 +27,7 @@ The `/janus-brain` skill is now installed in your Claude Desktop.
 
 ## What it does
 
-Scans your laptop (Documents, Desktop, project folders), pulls your Notion entries + Fireflies meetings via the MCP connectors you have set up in Claude Desktop, and turns everything into a Personal Prime Radiant — your own Obsidian vault aligned with Michael's Janus Prime Radiant programme.
+Scans your laptop (Documents, Desktop, project folders), pulls your Notion entries + [[fireflies|Fireflies]] meetings via the MCP connectors you have set up in Claude Desktop, and turns everything into a Personal [[prime-radiant|Prime Radiant]] — your own [[obsidian|Obsidian]] vault aligned with Michael's [[janus-prime-radiant|Janus Prime Radiant]] programme.
 
 It then syncs your vault to your department's Drive folder so the rest of your team can see your contributions.
 
@@ -45,7 +45,7 @@ It then syncs your vault to your department's Drive folder so the rest of your t
 ## Subcommands (after first run)
 
 - `/janus-brain sync` — pull yesterday's Notion + Fireflies + re-enrich any new laptop files
-- `/janus-brain status` — health check (last cron run, vault size, federation queue)
+- `/janus-brain status` — health check (last cron run, vault size, [[federation|federation]] queue)
 - `/janus-brain exclude <pattern>` — add to your privacy filter
 - `/janus-brain federate` — re-run department federation only
 - `/janus-brain reset` — wipe state, keep vault

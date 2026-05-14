@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # vibevoice_streaming_processor
 
-_Extracted from `VibeVoice/vibevoice/processor/vibevoice_streaming_processor.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/processor/vibevoice_streaming_processor.py` on 2026-05-14._
 
 ```python
 import math

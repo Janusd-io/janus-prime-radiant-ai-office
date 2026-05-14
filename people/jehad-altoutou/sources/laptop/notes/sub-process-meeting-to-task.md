@@ -21,7 +21,7 @@ sensitivity_reason: "IMS sub-process doc — Meeting->Task->Build workflow; work
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/ai-department/sub-process-meeting-to-task.md` on 2026-05-14._
 
-# Meeting → Task → Build Workflow
+# [[meeting-to-task-workflow|Meeting → Task → Build Workflow]]
 
 **How requirements become tasks become deployed software at Janus Digital — AI Operations.**
 
@@ -87,7 +87,7 @@ flowchart LR
 
 | # | Step | What happens | Tool |
 |---|---|---|---|
-| 1.1 | Retrieve transcript | Fetch the Fireflies recording of the meeting (broad keyword + ±1 day window) | Fireflies API |
+| 1.1 | Retrieve transcript | Fetch the [[fireflies|Fireflies]] recording of the meeting (broad keyword + ±1 day window) | Fireflies API |
 | 1.2 | Build Meeting Intelligence Digest | Construct structured summary from raw transcript: attendees · topics · decisions · open questions · action items · blockers · tool mentions · implied next steps. **The Fireflies auto-summary is treated as a weak hint, never canonical.** | Claude (analysis) |
 | 1.3 | Notion idempotency check | Look for an existing `## AIO <DD Mon YYYY>` entry. If found, ask user: skip / rerun / abort — **no writes occur until decision is made.** | Notion API |
 | 1.4 | Parse Digest into typed items | Convert each action / decision / question into typed records ready for matching | Claude (parsing) |
@@ -98,7 +98,7 @@ flowchart LR
 
 | # | Step | What happens |
 |---|---|---|
-| 2.1 | Confidence-scored matching | Match each parsed item against existing Monday tasks / Linear AIP issues / Notion entries. Score each match: high (≥85%) · medium (60-84%) · low (<60%) |
+| 2.1 | Confidence-scored matching | Match each parsed item against existing Monday tasks / [[linear|Linear]] AIP issues / Notion entries. Score each match: high (≥85%) · medium (60-84%) · low (<60%) |
 | 2.2 | Duplicate detection | Apply keyword rules to flag near-duplicates of work already in flight |
 | 2.3 | Parent project routing | Prefer attaching new sub-items to existing parent projects rather than creating new top-level items |
 | 2.4 | Subagent Dispatch Gate | For each AI tool mention in the transcript, evaluate whether the mention has enough signal to justify dispatching `/ai-registry` or `/ai-tool-evaluation` subagents. Low-signal mentions are dropped here. |
@@ -169,7 +169,7 @@ Audit traceability runs end-to-end: every deployed feature can be traced backwar
 | **Transcript source** | Fireflies (canonical — auto-summary disregarded) |
 | **Task surface** | Monday Automations board `5095012818` |
 | **Issue tracker** | Linear AIP team (project tasks) |
-| **AI tool registry** | Linear AIR team — sole source of truth, written only via `/ai-registry` subagent |
+| **[[ai-tool-registry|AI tool registry]]** | Linear AIR team — sole source of truth, written only via `/ai-registry` subagent |
 | **Journal** | Notion Operations Notebook (`https://www.notion.so/335114fc090c81919a6ecd2f2cacc64a`) |
 | **Sibling skills** | `/ai-registry` (registry CRUD + related-tools check) · `/ai-tool-evaluation` (Gate 1-4 methodology) |
 
@@ -211,7 +211,7 @@ Audit traceability runs end-to-end: every deployed feature can be traced backwar
 | **ISO 9001:2015 §7.5** Documented information | Notion entries + Final Execution Reports retained as objective evidence |
 | **ISO 9001:2015 §8.5.6** Control of changes | Conflict Safety + Strict Write Safety prevent uncontrolled changes |
 | **ISO/IEC 27001:2022 §A.5** Information security policies | Subagent Dispatch Gate + Strict Write Safety enforce policy at write time |
-| **ISO/IEC 27001:2022 §A.8** Asset management | Linear AIR maintains the AI Tools Registry as a managed asset register |
+| **ISO/IEC 27001:2022 §A.8** Asset management | Linear AIR maintains the [[ai-tools-registry|AI Tools Registry]] as a managed asset register |
 | **ISO/IEC 42001:2023 §6.1** AI risk management | Auto-chained Gate 1 evaluation on every new AI tool registered |
 | **ISO/IEC 42001:2023 §8.2** AI System Impact Assessment | Sibling `/ai-tool-evaluation` skill performs formal Gate 1-4 evaluations stored as Linear AIR comments |
 
@@ -228,7 +228,7 @@ User says: "Process today's standup"
 
 In Claude Desktop, the `/standup` skill orchestrates the entire flow described above.
 
-For meetings outside the AI Office (cross-department, vendor calls, etc.), the same workflow applies but Fireflies search keywords change and the parent-project routing targets different Monday groups (see standup skill's Department Group Routing reference).
+For meetings outside the AI Office (cross-department, vendor calls, etc.), the same workflow applies but Fireflies search keywords change and the parent-project routing targets different Monday groups (see [[standup-skill|standup skill]]'s Department Group Routing reference).
 
 ---
 

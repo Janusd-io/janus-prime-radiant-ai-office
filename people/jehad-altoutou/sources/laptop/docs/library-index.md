@@ -100,7 +100,7 @@ block extra_head %} <style>
     border-radius: var(--radius-sm, 0.25rem);
   }
   .ml-thumb-placeholder {
-    background: linear-gradient(135deg, var(--surface-2, #F5F5F4) 0%, var(--surface-1, #FAFAF9) 100%);
+    background: [[linear|linear]]-gradient(135deg, var(--surface-2, #F5F5F4) 0%, var(--surface-1, #FAFAF9) 100%);
   }
   @keyframes ml-shimmer {
     0% { background-position: -200% 0; }

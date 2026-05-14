@@ -76,8 +76,8 @@ _Extracted from `brightbean-studio/templates/organizations/cross_calendar.html` 
 
     /* Platform icon badges */
     .pi-facebook   { background: #1877F2; }
-    .pi-instagram  { background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF); }
-    .pi-linkedin   { background: #0A66C2; }
+    .pi-instagram  { background: [[linear|linear]]-gradient(135deg, #F58529, #DD2A7B, #8134AF); }
+    .pi-[[linkedin|linkedin]]   { background: #0A66C2; }
     .pi-tiktok     { background: #010101; }
     .pi-youtube    { background: #FF0000; }
     .pi-pinterest  { background: #E60023; }

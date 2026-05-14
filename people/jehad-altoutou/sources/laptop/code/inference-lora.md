@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:36Z"
 
 # inference_lora
 
-_Extracted from `VibeVoice/finetuning-asr/inference_lora.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/finetuning-asr/inference_lora.py` on 2026-05-14._
 
 ```python
 #!/usr/bin/env python

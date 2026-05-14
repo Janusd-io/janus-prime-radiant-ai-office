@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # cost
 
-_Extracted from `assessify/graphify-out/cost.json` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/graphify-out/cost.json` on 2026-05-14._
 
 ```json
 {

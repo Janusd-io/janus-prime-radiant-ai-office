@@ -20,11 +20,11 @@ needs_vision_description: false
 
 # DER
 
-_Extracted from `VibeVoice/Figures/DER.jpg` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/DER.jpg` on 2026-05-14._
 
 DER (Diarization Error Rate) !
 
-mVibeVoice-ASR =Gemini-2.5-Pro = Gemini-3-Pro
+mVibeVoice-ASR =[[gemini|Gemini]]-2.5-Pro = Gemini-3-Pro
 
 46.23
 45 43.04

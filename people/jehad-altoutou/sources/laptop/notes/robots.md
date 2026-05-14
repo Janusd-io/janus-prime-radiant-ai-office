@@ -19,7 +19,7 @@ sensitivity_reason: "Public robots.txt — by definition public"
 
 # robots
 
-_Extracted from `assessify/public/robots.txt` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/public/robots.txt` on 2026-05-14._
 
 User-agent: *
 Allow: /

@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # docker-compose
 
-_Extracted from `assessify/docker-compose.yml` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/docker-compose.yml` on 2026-05-14._
 
 ```yaml
 services:

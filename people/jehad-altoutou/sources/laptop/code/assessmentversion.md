@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # AssessmentVersion
 
-_Extracted from `assessify/src/generated/prisma/models/AssessmentVersion.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/generated/prisma/models/AssessmentVersion.ts` on 2026-05-14._
 
 ```typescript
 

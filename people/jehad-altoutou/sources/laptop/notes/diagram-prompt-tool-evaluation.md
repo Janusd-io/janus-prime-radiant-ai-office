@@ -31,7 +31,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/a
 
 Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"AI Tool Evaluation & Onboarding Procedure — Janus Digital"** with subtitle **"Two intake paths · gate-driven evaluation · sandbox validation · IT handover"**.
 
-**Style:** Clean corporate / McKinsey-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. Color palette:
+**Style:** Clean corporate / [[mckinsey|McKinsey]]-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. Color palette:
 - Intake Path A (live): light blue `#E6F0FF` with navy `#1A4480` border
 - Intake Path B (to be built): light orange `#FFF3E0` with orange `#E65100` border (signals "not yet built")
 - Gate / decision diamonds: yellow `#FFF8D6` with amber `#996600` border
@@ -45,7 +45,7 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 **TWO INTAKE BOXES:**
 
 **Path A — Meeting mention** (light blue, "LIVE" badge):
-- Fireflies transcript captures tool name
+- [[fireflies|Fireflies]] transcript captures tool name
 - `/standup` skill (v3.11) dispatches `/ai-registry`
 - Auto-chains `/ai-tool-evaluation` Gate 1
 
@@ -56,7 +56,7 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 
 **INTAKE BOX (after merge):** "Capture: tool name · vendor · use case · requester · jurisdiction"
 
-**REGISTRY CHECK (diamond):** "Already in Linear AIR?" — Two exits: "Yes — existing" → link to existing entry; "No — new" → create AIR-N issue.
+**REGISTRY CHECK (diamond):** "Already in [[linear|Linear]] AIR?" — Two exits: "Yes — existing" → link to existing entry; "No — new" → create AIR-N issue.
 
 **EXISTING TOOL BOX:** Link requester · notify status (Active / Rejected / In-Eval) · procedure ends here for duplicates.
 
@@ -75,7 +75,7 @@ Two exits from Gates block:
 
 **REJECTED — GATE FAILURE (red):** Failure reason as AIR-N comment · status → Rejected · Slack notification with reason.
 
-**SANDBOX BOX:** Provision in isolated environment (no production data) · requester runs actual use case · 5-area stress test (functionality · UI/UX · security · APIs · stability) · findings documented on AIR-N.
+**SANDBOX BOX:** Provision in isolated environment (no production data) · requester runs actual use case · [[5-area-stress-test|5-area stress test]] (functionality · UI/UX · security · APIs · stability) · findings documented on AIR-N.
 
 **SANDBOX VALIDATION (diamond):** "Use case satisfied?" — Yes → Sign-off; No → Rejected.
 
@@ -94,4 +94,4 @@ Two exits from Gates block:
 
 ---PROMPT---
 
-**Mermaid backup:** `sub-process-tool-evaluation.md` Section 1 renders natively on GitHub.
+**Mermaid backup:** `sub-process-tool-evaluation.md` Section 1 renders natively on [[github|GitHub]].

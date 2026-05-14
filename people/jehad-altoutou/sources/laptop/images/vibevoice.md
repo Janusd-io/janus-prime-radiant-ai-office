@@ -18,7 +18,7 @@ ocr_char_count: 348
 needs_vision_description: false
 ---
 
-# VibeVoice
+# [[vibevoice|VibeVoice]]
 
 _Extracted from `VibeVoice/Figures/VibeVoice.jpg` on 2026-05-14._
 
@@ -35,11 +35,11 @@ VibeVoice
 
 OO0O0O000 © oem eee —
 ,~ Voice Prompt -~. ,-~-~- Text Script ---~,. “Pegi
-' Speaker 4: ; | Speaker 1: Welcome to ... |
+' Speaker 4: ; | [[unknown-speaker-1|Speaker 1]]: Welcome to ... |
 
 I
 
-| Speaker 2: To Speaker 2: Nice to...
+| [[speaker-2-unidentified|Speaker 2]]: To Speaker 2: Nice to...
 
 I
 | ae |

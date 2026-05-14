@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # setup
 
-_Extracted from `assessify/tests/setup.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/tests/setup.ts` on 2026-05-14._
 
 ```typescript
 import { execSync } from "node:child_process";

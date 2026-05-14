@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # app
 
-_Extracted from `VibeVoice/demo/web/app.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/demo/web/app.py` on 2026-05-14._
 
 ```python
 import datetime

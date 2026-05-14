@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # modeling_vibevoice_streaming_inference
 
-_Extracted from `VibeVoice/vibevoice/modular/modeling_vibevoice_streaming_inference.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/modular/modeling_vibevoice_streaming_inference.py` on 2026-05-14._
 
 ```python
 from dataclasses import dataclass

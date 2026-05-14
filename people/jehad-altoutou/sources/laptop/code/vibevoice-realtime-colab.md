@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # vibevoice_realtime_colab
 
-_Extracted from `VibeVoice/demo/vibevoice_realtime_colab.ipynb` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/demo/vibevoice_realtime_colab.ipynb` on 2026-05-14._
 
 ```ipynb
 {

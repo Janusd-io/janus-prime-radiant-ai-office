@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # invites
 
-_Extracted from `assessify/src/lib/operations/invites.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/operations/invites.ts` on 2026-05-14._
 
 ```typescript
 import { prisma } from "@/lib/db";

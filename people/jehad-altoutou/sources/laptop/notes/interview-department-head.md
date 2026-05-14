@@ -29,7 +29,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/prompts/in
 
 > "We're going to define how the [Department] functions as a whole. Think of this as the **front page** of your department's manual — anyone reading it should understand what your team does, who you serve, and how you measure success. We'll spend about 30-45 minutes here.
 >
-> I'll ask 7 questions matching the ISO 9001 Figure 1 schematic. After we finish, every activity you mention in Q3 will get its own detailed sub-process document — but for now, **stay at the department level**. Don't drill into the how-to of each activity yet."
+> I'll ask 7 questions matching the [[iso-9001-figure-1|ISO 9001 Figure 1]] schematic. After we finish, every activity you mention in Q3 will get its own detailed sub-process document — but for now, **stay at the department level**. Don't drill into the how-to of each activity yet."
 
 ## Pacing
 

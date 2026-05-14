@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # validation
 
-_Extracted from `assessify/src/lib/mcp/validation.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/mcp/validation.ts` on 2026-05-14._
 
 ```typescript
 import { prisma } from "@/lib/db";

@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # seed-recruitment
 
-_Extracted from `assessify/scripts/seed-recruitment.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/scripts/seed-recruitment.ts` on 2026-05-14._
 
 ```typescript
 // Idempotent seeder for Phase 1.A recruitment data.

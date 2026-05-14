@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # sections
 
-_Extracted from `assessify/src/lib/operations/sections.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/operations/sections.ts` on 2026-05-14._
 
 ```typescript
 import { prisma } from "@/lib/db";

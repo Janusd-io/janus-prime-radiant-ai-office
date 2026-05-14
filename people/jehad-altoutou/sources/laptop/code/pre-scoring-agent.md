@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # pre-scoring-agent
 
-_Extracted from `assessify/src/lib/recruitment/pre-scoring-agent.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/recruitment/pre-scoring-agent.ts` on 2026-05-14._
 
 ```typescript
 // Pre-interview scoring agent (Phase 1.B v2).

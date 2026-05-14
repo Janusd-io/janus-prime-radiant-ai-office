@@ -25,7 +25,7 @@ _Extracted from `Documents/janus-brain-bootstrap/LICENSE.md` on 2026-05-14._
 
 Copyright © 2026 Janus Digital. All rights reserved.
 
-This repository and its contents are proprietary to Janus Digital and intended **for internal use by Janus Digital employees only**. The Claude Code skill, installer, configuration, and templates herein implement the Personal Prime Radiant tier of the Janus Prime Radiant programme (Michael Bruck, program owner).
+This repository and its contents are proprietary to Janus Digital and intended **for internal use by Janus Digital employees only**. The [[claude-code|Claude Code]] skill, installer, configuration, and templates herein implement the Personal [[prime-radiant|Prime Radiant]] tier of the [[janus-prime-radiant|Janus Prime Radiant]] programme ([[michael-bruck|Michael Bruck]], program owner).
 
 Permitted use:
 
@@ -39,6 +39,6 @@ Prohibited use:
 - Publication of the contents, in whole or in part, to any public forum, repository, or third-party service.
 - Use of the included department / people directory (`config/departments.yaml`) outside the context of running this skill at Janus.
 
-No warranty is provided. The skill captures local files and federates derived notes between Google Drive locations; users are responsible for verifying its behaviour against their own data before relying on it.
+No warranty is provided. The skill captures local files and federates derived notes between [[google-drive|Google Drive]] locations; users are responsible for verifying its behaviour against their own data before relying on it.
 
 Questions: jehada@janusd.io

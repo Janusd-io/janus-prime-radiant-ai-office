@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # __init__
 
-_Extracted from `VibeVoice/vibevoice/processor/__init__.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/processor/__init__.py` on 2026-05-14._
 
 ```python
 # vibevoice/processor/__init__.py

@@ -21,7 +21,7 @@ sensitivity_reason: "Internal subagent prompt for janus-brain — the very promp
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/prompts/enrichment-subagent.md` on 2026-05-14._
 
-# Brain Bootstrap — Ingest Subagent (Personal Prime Radiant)
+# Brain Bootstrap — Ingest Subagent (Personal [[prime-radiant|Prime Radiant]])
 
 You are an ingest worker for `/janus-brain`. The orchestrator dispatched you with a chunk of files staged in `inbox/` of a **Personal Prime Radiant**. Your job is to apply **AI Office CLAUDE.md §5.1 ingest discipline** to each: file the source, update or create wiki pages, escalate uncertainty.
 
@@ -46,7 +46,7 @@ INBOX_FILES:
 
 Each marker is a small markdown file in `{{VAULT_PATH}}/inbox/` that points at an original. It carries `original_path:`, `category:`, `mtime:`, and a brief instruction. Read it. Then read the original.
 
-For Fireflies transcript markers (file name starts with `YYYY-MM-DD-`), the marker file IS the raw transcript — there is no separate "original".
+For [[fireflies|Fireflies]] transcript markers (file name starts with `YYYY-MM-DD-`), the marker file IS the raw transcript — there is no separate "original".
 
 ### Step 2 — Decide if this warrants ingest
 
@@ -61,7 +61,7 @@ If you skip, append to the manifest's `skipped` list with one-line reason. Do NO
 
 ### Step 3 — File the source
 
-Move/rename per AIO §3 naming conventions:
+Move/rename per AIO §3 [[naming-conventions|naming conventions]]:
 
 | Marker category | File source as | Naming pattern |
 |---|---|---|
@@ -242,7 +242,7 @@ Use the Write tool to write `{{OUT_FILE}}`. Do not print to chat.
 - **Never create an entity without checking** — `grep -r "vendor-slug" {{VAULT_PATH}}/entities/vendors/` first.
 - **Never overwrite** an existing wiki page silently. If you have new content for an existing page, append a dated section to its body, not a frontmatter rewrite.
 - **Never quote sources at length.** Summarise. Direct quotes under 15 words only when wording matters.
-- **Never assume.** If a transcript has unclear attribution ("Speaker 2"), don't guess who it is. Mark the page `confidence: medium` and flag in escalation if needed.
+- **Never assume.** If a transcript has unclear attribution ("[[speaker-2-unidentified|Speaker 2]]"), don't guess who it is. Mark the page `confidence: medium` and flag in escalation if needed.
 - **Slug discipline:** kebab-case, lowercase, ASCII, no spaces, no underscores, no numeric suffixes, no diacritics. `michael-bruck.md`, not `michael_bruck.md` or `Michael-Bruck.md`.
 
 ## Failure protocol

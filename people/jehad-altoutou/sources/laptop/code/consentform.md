@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # ConsentForm
 
-_Extracted from `assessify/src/app/oauth/authorize/ConsentForm.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/oauth/authorize/ConsentForm.tsx` on 2026-05-14._
 
 ```tsx
 "use client";

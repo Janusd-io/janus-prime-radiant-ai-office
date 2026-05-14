@@ -21,7 +21,7 @@ sensitivity_reason: "Empty First Voice questionnaire template — public-interna
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/first-voice-questionnaire.md` on 2026-05-14._
 
-# PULS First Voice — [PERSON NAME], [ROLE]
+# [[puls-first-voice|PULS First Voice]] — [PERSON NAME], [ROLE]
 
 **Submitted by:** [Name] — [Role / job title], [Department], Janus Digital
 **Reports to:** [Manager name / Department head]
@@ -101,7 +101,7 @@ Following the IMS Development Programme deck, here are my answers to the six PUL
 
 ### AI tools (if any)
 
-- [List Claude, OpenAI, internal AI agents, etc.]
+- [List Claude, [[openai|OpenAI]], internal AI agents, etc.]
 
 ### Development / specialist tools
 
@@ -113,7 +113,7 @@ Following the IMS Development Programme deck, here are my answers to the six PUL
 
 ### Productivity & communication
 
-- [Notion · Linear · Slack · Monday · etc.]
+- [Notion · [[linear|Linear]] · Slack · Monday · etc.]
 
 > **About the AI Systems Register (ISO 42001):** every AI tool you use *should already be* in **Linear AIR** — the AI department maintains this register and runs Gate 1-4 evaluation on every tool before it reaches you. **You don't need to create AIR entries** — just list the tools you use here, and the AI department will verify coverage. If you list a tool that turns out to be unregistered, that's a finding for the AI department to action (not a blocker on you).
 

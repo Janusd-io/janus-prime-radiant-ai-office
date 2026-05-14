@@ -78,7 +78,7 @@ Any path with **any segment** starting with `.` (relative to `$HOME`) is exclude
 
 The only way to scan a dotfolder is to add an explicit override to `user-exclude.txt` *negating* the pattern — currently not supported, by design. Talk to ops if you have a legitimate need.
 
-## Per-note privacy (federation gate)
+## Per-note privacy ([[federation|federation]] gate)
 
 Even if a file passes all five layers and gets enriched, the enrichment subagent can mark it private (`"private": true` in the record, `#private` tag in frontmatter). Private notes:
 

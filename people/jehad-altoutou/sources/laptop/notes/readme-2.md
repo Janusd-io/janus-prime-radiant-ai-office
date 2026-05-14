@@ -19,7 +19,7 @@ sensitivity_reason: "Internal install guide for HR — operational"
 
 # README
 
-_Extracted from `assessify/skills/assessify-hr/README.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/skills/assessify-hr/README.md` on 2026-05-14._
 
 # Assessify HR Skill for Claude Desktop
 
@@ -65,7 +65,7 @@ Claude Desktop uses **Projects** to load custom instructions. The skill is just 
 ## Updating the skill later
 
 When this `SKILL.md` is updated in the repo:
-1. Pull the latest from GitHub (or Jehad sends you the new file).
+1. Pull the latest from [[github|GitHub]] (or Jehad sends you the new file).
 2. Go back into the `Assessify HR` project → Instructions.
 3. Replace the pasted content with the new `SKILL.md` body.
 

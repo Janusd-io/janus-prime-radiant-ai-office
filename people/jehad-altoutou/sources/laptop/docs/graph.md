@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # graph
 
-_Extracted from `assessify/graphify-out/graph.html` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/graphify-out/graph.html` on 2026-05-14._
 
 <div id="graph">
 

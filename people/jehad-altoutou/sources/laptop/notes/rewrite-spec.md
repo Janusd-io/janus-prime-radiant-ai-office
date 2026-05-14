@@ -27,7 +27,7 @@ Signed-off by Jehad on 2026-05-14. Supersedes the two-vault model in HANDOVER.md
 
 ## Architecture
 
-**One GitHub repo per department.** Every employee in that dept clones it as their single Obsidian vault. Their personal content lives in `people/<slug>/`; shared dept content at repo root. Sync = Obsidian Git plugin push/pull.
+**One [[github|GitHub]] repo per department.** Every employee in that dept clones it as their single [[obsidian|Obsidian]] vault. Their personal content lives in `people/<slug>/`; shared dept content at repo root. Sync = [[obsidian-git|Obsidian Git]] plugin push/pull.
 
 **Repos (Janusd-io):** `janus-prime-radiant-ai-office`, `…-marketing`, `…-hr`, `…-it-ops`, `…-finance`, `…-iso`, `…-pm`, `…-office-of-ceo`. Created on first contributor enrollment from `janus-prime-radiant-template`.
 
@@ -57,10 +57,10 @@ Signed-off by Jehad on 2026-05-14. Supersedes the two-vault model in HANDOVER.md
 
 1. **Pre-flight** — existing checks
 2. **Identity** — git config + `config/departments.yaml` lookup
-3. **Task-tracker prompt** — Linear / Monday / Asana / Notion tasks / none / other → `people/<slug>/.config.yaml`
+3. **Task-tracker prompt** — [[linear|Linear]] / Monday / Asana / Notion tasks / none / other → `people/<slug>/.config.yaml`
 4. **Clone dept repo** — create from template if missing. Single clone at `~/janus/prime-radiant/`.
 5. **Scaffold `people/<slug>/`** subtree
-6. **Notion + Fireflies pulls** → `people/<slug>/sources/` and `people/<slug>/meetings/`
+6. **Notion + [[fireflies|Fireflies]] pulls** → `people/<slug>/sources/` and `people/<slug>/meetings/`
 7. **Phase 3.5 meeting parser** — output follows `/standup` skill schema:
    - Frontmatter: `meeting_id`, `date`, `attendees`, `dept_scope`, `sensitivity`, `task_tracker`
    - Sections: `## Summary`, `## Decisions`, `## Action items`, `## This week`, `## Long-horizon`, `## Findings`, `## Open questions`, `## Related` (wikilinks)
@@ -73,7 +73,7 @@ Signed-off by Jehad on 2026-05-14. Supersedes the two-vault model in HANDOVER.md
    - `self|confidential` → routes to `people/<slug>/private/` (gitignored)
    - confidence < 0.7 → logged to `.review-queue.md`
 10. **Apply + lint** — wikilinks resolve across whole vault (single namespace)
-11. **Commit + push** to dept repo. No federation step.
+11. **Commit + push** to dept repo. No [[federation|federation]] step.
 
 ## What's deleted
 
@@ -93,7 +93,7 @@ Signed-off by Jehad on 2026-05-14. Supersedes the two-vault model in HANDOVER.md
 - `config/departments.yaml` — keep dept list, drop personal repo refs
 - `templates/meeting-source.md` — rewrite to standup-schema shape
 - `prompts/meeting-parser-subagent.md` — rewrite to produce standup-schema output
-- `prompts/enrichment-subagent.md` — add sensitivity classification
+- `prompts/enrichment-subagent.md` — add [[sensitivity-classification|sensitivity classification]]
 - `scripts/discover.sh` / `bootstrap-dept-vault.sh` — single-vault flow
 - `install.sh` — drop personal-vault subcommand
 - `templates/personal-claude-md.md` → becomes the `people/<slug>/CLAUDE.md` template

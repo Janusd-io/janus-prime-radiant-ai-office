@@ -23,7 +23,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/
 
 # ChatGPT Diagram Prompt — [PROCESS TITLE]
 
-> **How to use:** Copy everything between the two `---PROMPT---` markers below into ChatGPT (GPT-5 or GPT-4o with image generation). It produces a high-quality, wide, ISO-grade diagram of your process. Below the prompt is a **Mermaid backup** — if ChatGPT garbles the text (it sometimes does on text-heavy diagrams), open the Mermaid block in your process doc on GitHub or paste it into [mermaid.live](https://mermaid.live) to export as PNG/SVG.
+> **How to use:** Copy everything between the two `---PROMPT---` markers below into ChatGPT (GPT-5 or GPT-4o with image generation). It produces a high-quality, wide, ISO-grade diagram of your process. Below the prompt is a **Mermaid backup** — if ChatGPT garbles the text (it sometimes does on text-heavy diagrams), open the Mermaid block in your process doc on [[github|GitHub]] or paste it into [mermaid.live](https://mermaid.live) to export as PNG/SVG.
 
 ---
 
@@ -32,7 +32,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/
 The skill auto-populates the placeholders below from your completed process document. If you're filling in by hand:
 
 - `[PROCESS TITLE]` — the name of your process (e.g., *"HR Department · Parent Process"* or *"Talent Acquisition — Hiring Workflow"*)
-- `[SUBTITLE]` — short descriptor (e.g., *"ISO 9001 Figure 1 schematic · [N] activities"*)
+- `[SUBTITLE]` — short descriptor (e.g., *"[[iso-9001-figure-1|ISO 9001 Figure 1]] schematic · [N] activities"*)
 - `[SOURCES LIST]` — bullet list from Section 2 of your process doc
 - `[INPUTS LIST]` — bullet list from Section 3
 - `[ACTIVITIES LIST]` — numbered list from Section 4 (the steps with one-line descriptions)
@@ -51,7 +51,7 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 
 **Style requirements:**
 
-- Clean corporate / management-consulting aesthetic, similar to a McKinsey or Deloitte slide
+- Clean corporate / management-consulting aesthetic, similar to a [[mckinsey|McKinsey]] or [[deloitte|Deloitte]] slide
 - Flat design, soft drop shadows on boxes, rounded corners (8px radius)
 - White background
 - Sans-serif typography (Inter, Helvetica Neue, or SF Pro), all text crisp and readable

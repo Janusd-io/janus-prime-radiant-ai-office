@@ -20,7 +20,7 @@ needs_vision_description: false
 
 # language_distribution_horizontal
 
-_Extracted from `VibeVoice/Figures/language_distribution_horizontal.png` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/language_distribution_horizontal.png` on 2026-05-14._
 
 English
 Chinese

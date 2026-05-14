@@ -19,7 +19,7 @@ sensitivity_reason: "Internal project README — operational"
 
 # README
 
-_Extracted from `assessify/README.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/README.md` on 2026-05-14._
 
 # Assessify
 
@@ -100,7 +100,7 @@ A production-grade hiring assessment platform built for Janusd. Delivers immersi
 - Audit logging for all admin + MCP write actions (login, user mgmt, MCP tool calls, with IP + user-agent)
 - Server-side assessment time-limit enforcement (auto-expires sessions)
 - Automated database backup with 30-day rotation (`backup.sh`, runs nightly via cron on prod)
-- GitHub Actions CI runs typecheck + lint + full vitest suite on every push and PR
+- [[github|GitHub]] Actions CI runs typecheck + lint + full vitest suite on every push and PR
 
 ### PDF Export
 - Print-ready HTML report for any candidate session

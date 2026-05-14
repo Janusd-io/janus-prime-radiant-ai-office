@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # radio-group
 
-_Extracted from `assessify/src/components/ui/radio-group.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/components/ui/radio-group.tsx` on 2026-05-14._
 
 ```tsx
 "use client"

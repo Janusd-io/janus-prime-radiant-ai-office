@@ -19,7 +19,7 @@ sensitivity_reason: "Internal HR-facing skill instructions for Assessify MCP —
 
 # SKILL
 
-_Extracted from `assessify/skills/assessify-hr/SKILL.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/skills/assessify-hr/SKILL.md` on 2026-05-14._
 
 ---
 name: assessify-hr

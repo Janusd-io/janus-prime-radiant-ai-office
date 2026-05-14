@@ -23,10 +23,10 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/SKILL.md` 
 
 ---
 name: ims-enrolment
-description: "Enrol a Janus Digital department or team into the IMS (Integrated Management System) for ISO 9001 / 27001 / 42001 certification. Guides any department head through documenting their work in the ISO 9001 Figure 1 schematic — parent process first (how the department functions as a whole), then sub-processes (one per activity). Produces ISO-grade artefacts: parent process document, sub-process documents, First Voice questionnaire, and a handover bundle for Simon (ISO Lead). Use when a department needs to onboard into the IMS programme and has no idea where to start. Trigger phrases: 'enrol [department] into IMS', 'help [team] document their processes for ISO', 'IMS onboarding for [department]'. Two purposes: (1) provide complete understanding of the IMS programme, (2) guide the department through documentation. AI Department is the worked example shipped with the skill."
+description: "Enrol a Janus Digital department or team into the IMS (Integrated Management System) for ISO 9001 / 27001 / 42001 certification. Guides any department head through documenting their work in the [[iso-9001-figure-1|ISO 9001 Figure 1]] schematic — parent process first (how the department functions as a whole), then sub-processes (one per activity). Produces ISO-grade artefacts: parent process document, sub-process documents, First Voice questionnaire, and a handover bundle for Simon (ISO Lead). Use when a department needs to onboard into the IMS programme and has no idea where to start. Trigger phrases: 'enrol [department] into IMS', 'help [team] document their processes for ISO', 'IMS onboarding for [department]'. Two purposes: (1) provide complete understanding of the IMS programme, (2) guide the department through documentation. AI Department is the worked example shipped with the skill."
 ---
 
-# Skill: IMS Enrolment — Department Onboarding into ISO Programme
+# Skill: [[ims-enrolment|IMS Enrolment]] — Department Onboarding into ISO Programme
 
 **Version:** 1.4
 **Owner:** Jehad — AI Operations Engineer, Janus Digital
@@ -49,7 +49,7 @@ Same 7 sections (per slide 9 of Simon's deck) in every document.
 AI Department is the worked example — use it when others say "I don't get it".
 ```
 
-This skill **never writes to Linear AIR or the Monday AI Tools Registry**. Output artefacts are markdown + Word docs handed to Simon and the department head.
+This skill **never writes to [[linear|Linear]] AIR or the Monday [[ai-tools-registry|AI Tools Registry]]**. Output artefacts are markdown + Word docs handed to Simon and the department head.
 
 ---
 
@@ -112,7 +112,7 @@ Parse the output:
 - If output contains both `✓ Skill installed` AND `✓ pandoc available` → **verification passed, proceed silently to Phase 1**
 - If output contains `✗ Skill not installed` → offer to run `bash ~/Documents/janus-puls-onboarding/install.sh` (full install) before continuing. Do NOT proceed to Phase 1 until install succeeds.
 - If output contains `⚠ pandoc not installed` → warn the user that Phase 5c (Word doc export) will fail, propose `brew install pandoc` (macOS) or `sudo apt install pandoc` (Linux), but allow Phases 1-5b to continue.
-- If the Bash command fails (script not found) → tell the user the install script is missing, propose cloning the repo: `git clone https://github.com/Jehada-Janusd/janus-puls-onboarding.git ~/Documents/janus-puls-onboarding` then re-run Phase 0.
+- If the Bash command fails (script not found) → tell the user the install script is missing, propose cloning the repo: `git clone https://[[github|github]].com/Jehada-Janusd/janus-puls-onboarding.git ~/Documents/janus-puls-onboarding` then re-run Phase 0.
 
 **Resume detection:** also check for an existing enrolment in progress:
 
@@ -384,7 +384,7 @@ After a successful run, the department has a folder on the **Desktop** so anyone
 **Optional secondary copies:**
 
 - Backup in `~/Documents/janus-puls-onboarding/department-enrolments/<department>/` (for version control via git)
-- Obsidian mirror at `07 ISO IMS PULS/Department Enrolments/<department>/` (for in-vault navigation)
+- [[obsidian|Obsidian]] mirror at `07 [[iso-ims-puls|ISO IMS PULS]]/Department Enrolments/<department>/` (for in-vault navigation)
 
 These are optional — the Desktop folder is the canonical user-facing location.
 

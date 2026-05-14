@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # calibrate-rubric
 
-_Extracted from `assessify/scripts/calibrate-rubric.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/scripts/calibrate-rubric.ts` on 2026-05-14._
 
 ```typescript
 // Calibration runner for the Phase 1.B v2 pre-screening agent.

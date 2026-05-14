@@ -17,7 +17,7 @@ sensitivity_confidence: 0.95
 sensitivity_reason: "Formal Janus Digital AI Tool Evaluation Framework DRAFT v0.1 — AI Office authored, mandatory company-wide governance document"
 ---
 
-# Janus Digital — AI Tool Evaluation & Approval Framework
+# Janus Digital — [[ai-tool-evaluation-framework|AI Tool Evaluation & Approval Framework]]
 
 _Extracted from `Desktop/Janus Digital — AI Tool Evaluation & Approval Framework.docx` on 2026-05-14._
 
@@ -45,7 +45,7 @@ process, not with the requesting employee.
 | **Term** | **Definition** |
 |----|----|
 | **Tool** | A user-facing application or service that employees interact with directly to perform their work (e.g., a legal research assistant, a design application, a transcription service). |
-| **Infrastructure** | A platform, library, or service that operates below the user-facing layer and enables other tools, agents, or automations to function. End users do not interact with it directly (e.g., Google Cloud, Google AI Studio, Claude Console). |
+| **Infrastructure** | A platform, library, or service that operates below the user-facing layer and enables other tools, agents, or automations to function. End users do not interact with it directly (e.g., [[google-cloud|Google Cloud]], Google AI Studio, Claude Console). |
 | **Requester** | Any Janus Digital employee who identifies a candidate tool or infrastructure component. |
 | **Evaluator** | The AI & Technology office (or delegate) responsible for conducting the formal assessment. |
 | **Domain Expert** | A subject-matter specialist from the relevant department (e.g., Legal, Finance, HR) who assesses functional fit. |
@@ -100,7 +100,7 @@ weighting.
 
 | **\#** | **Criterion** | **Rationale** | **Evidence Required** |
 |----|----|----|----|
-| G1.1 | **Google Workspace / Cloud Integration** — The candidate must integrate with or export to the Janus Digital Google Cloud/Drive ecosystem. | Per Sovereignty Standard (Section 5.2.2). Non-negotiable infrastructure dependency. | Published documentation or marketplace listing confirming Google integration. |
+| G1.1 | **[[google-workspace|Google Workspace]] / Cloud Integration** — The candidate must integrate with or export to the Janus Digital Google Cloud/Drive ecosystem. | Per Sovereignty Standard (Section 5.2.2). Non-negotiable infrastructure dependency. | Published documentation or marketplace listing confirming Google integration. |
 | G1.2 | **Slack Integration** — The candidate must integrate with Slack, or at minimum provide webhook/notification capability into Slack. | Slack is the mandated internal communication and workflow hub. A tool that cannot surface within Slack creates a parallel portal, which is prohibited. | Published Slack App Directory listing, documented webhook support, or confirmed MCP connector. |
 | G1.3 | **Data Portability** — The candidate must permit full export of all user data and generated outputs in a standard, non-proprietary format. | Per Sovereignty Standard (Section 5.2.2). Vendor lock-in is rejected. | Export functionality documented; format specification identified (e.g., CSV, JSON, Markdown, PDF). |
 | G1.4 | **Data Training Exclusion** — The candidate must contractually guarantee that client or internal data input into the platform is not used to train its models or any third-party models. | Per Data Security Boundaries (Section 5.2.3). Prerequisite for processing any data beyond public information. | Enterprise terms of service, data processing agreement (DPA), or equivalent contractual clause. |
@@ -152,7 +152,7 @@ progression.
 | G2.5 | **Ease of Adoption** — The learning curve is proportionate to the benefit. Non-technical users can achieve basic proficiency within a defined onboarding window. | 0 = Requires specialist training exceeding 2 weeks. 5 = Intuitive; productive within 1 hour. |
 | G2.6 | **Multi-Platform Accessibility** — The candidate is accessible across desktop, web, and mobile environments without degraded functionality. | 0 = Single platform only. 5 = Full feature parity across all platforms. |
 | G2.7 | **Audit Trail / Logging** — The candidate provides activity logs sufficient for compliance and internal audit requirements. | 0 = No logging. 5 = Comprehensive, exportable audit trail with user-level attribution. |
-| G2.8 | **Gemini / Core AI Platform Integration** — The candidate integrates with Gemini as the core enterprise AI platform, via Workspace extension, Google AI Studio connector, Vertex AI, or equivalent pathway. | 0 = No integration path with Gemini. 5 = Native Gemini integration with full feature support. |
+| G2.8 | **[[gemini|Gemini]] / Core AI Platform Integration** — The candidate integrates with Gemini as the core enterprise AI platform, via Workspace extension, Google AI Studio connector, Vertex AI, or equivalent pathway. | 0 = No integration path with Gemini. 5 = Native Gemini integration with full feature support. |
 
 #### 5.3.3 Nice to Have (Scored 0–5)
 

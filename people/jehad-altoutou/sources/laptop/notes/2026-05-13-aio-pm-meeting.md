@@ -26,19 +26,19 @@ title: "AIO, Project Management Meeting — 13 May 2026"
 date: 2026-05-13
 meeting_type: project_management
 attendees:
-  - Jehad Altoutou
-  - Michael Bruck
+  - [[jehad-altoutou|Jehad Altoutou]]
+  - [[michael-bruck|Michael Bruck]]
   - Euclid (PM Lead)
-  - Rosa (PM Team)
+  - [[rosa|Rosa]] (PM Team)
 duration_minutes: 97
 fireflies_id: 01KRGKF94R785XZNVKGKTB840J
-fireflies_url: https://app.fireflies.ai/view/01KRGKF94R785XZNVKGKTB840J
+fireflies_url: https://app.[[fireflies|fireflies]].ai/view/01KRGKF94R785XZNVKGKTB840J
 standup_skill_version: v3.16
 privacy: public
 tags:
   - prime-radiant
   - vault-rollout
-  - github
+  - [[github|github]]
   - project-management
   - knowledge-graph
 ---
@@ -54,19 +54,19 @@ tags:
 
 ## Clean Meeting Summary
 
-- **Prime Radiant architecture demo** delivered to Euclid and Rosa — covered the full personal → department → company vault hierarchy, inbox-first ingestion workflow, and the CLAUDE.md meta-skill brain. First exposure for the PM team to the system they will be onboarding onto.
+- **[[prime-radiant|Prime Radiant]] architecture demo** delivered to Euclid and Rosa — covered the full personal → department → company vault hierarchy, inbox-first ingestion workflow, and the CLAUDE.md meta-skill brain. First exposure for the PM team to the system they will be onboarding onto.
 - **GitHub confirmed as canonical file store** for Prime Radiant across all departments, replacing the previously planned Google Shared Drive structure. The Shared Drive project has been formally deprecated. GitHub accounts are provisioned silently by the skill — users never need to touch GitHub directly.
 - **Inbox-first ingestion workflow** demonstrated — documents placed in the inbox folder are parsed and routed to appropriate vault sections based on front-matter metadata. Requires product/project folder separation to be agreed before upload.
 - **Product/project content separation** agreed as a prerequisite for PM team ingestion. Michael to facilitate with Euclid and Rosa so content lands in the correct vault sections and avoids misclassification.
 - **PM team vault rollout kicked off** — Euclid confirmed as pilot #2 (following Andrew). Six action sub-items created under the Prime Radiant Monday parent covering the full onboarding sequence: speaker tagging, IT onboarding session, GitHub permissions, folder taxonomy, document upload, and dashboard design.
 - **Dynamic dashboards and visualisation prompts** scoped as a longer-horizon deliverable (Rosa). Will surface Prime Radiant knowledge base data in actionable formats once the ingestion pipeline is stable and document volume is sufficient.
-- **Fireflies speaker tags** remain as Speaker 1–4 post-recording. Only Jehad (recording owner) can tag retroactively. Confirmed mapping: Speaker 4 = Euclid, Speaker 2 = Rosa. Tagging queued as an immediate next step.
+- **Fireflies speaker tags** remain as [[unknown-speaker-1|Speaker 1]]–4 post-recording. Only Jehad (recording owner) can tag retroactively. Confirmed mapping: Speaker 4 = Euclid, [[speaker-2-unidentified|Speaker 2]] = Rosa. Tagging queued as an immediate next step.
 
 ---
 
 ## Decisions Made
 
-- GitHub is the canonical file store for Prime Radiant; Google Shared Drive structure project deprecated.
+- [[2026-05-13-github-canonical-prime-radiant-substrate|GitHub is the canonical file store for Prime Radiant; Google Shared Drive structure project deprecated]].
 - Inbox-first ingestion is the standard onboarding pattern for all departments.
 - PM team is pilot #2 for vault rollout (after Andrew / Marketing).
 - Product/project folder separation must be defined before document upload begins.
@@ -95,7 +95,7 @@ tags:
 
 | Item | Action | ID |
 |---|---|---|
-| Prime Radiant — company-wide knowledge graph | Source bumped + substantive Update + next-step stub | [2900825519](https://janusd-company.monday.com/boards/5095012818/pulses/2900825519) |
+| Prime Radiant — company-wide [[knowledge-graph|knowledge graph]] | Source bumped + substantive Update + next-step stub | [2900825519](https://janusd-company.monday.com/boards/5095012818/pulses/2900825519) |
 | Engage large-scale data architecture specialist | Source bumped + substantive Update + next-step stub | [2882208018](https://janusd-company.monday.com/boards/5095012818/pulses/2882208018) |
 | Notion Operations Notebook restructure | Source bumped + Description backfill | [2882088507](https://janusd-company.monday.com/boards/5095012818/pulses/2882088507) |
 | Implement company-wide Google Shared Drive structure | **Deprecated** — Status set to Deprecated + deprecation rationale + Description Update | [2898141770](https://janusd-company.monday.com/boards/5095012818/pulses/2898141770) |
@@ -110,10 +110,10 @@ tags:
 
 ---
 
-## Linear AIP Reconciliation
+## [[linear|Linear]] AIP Reconciliation
 
 - No new AIP-N references in transcript. No new AIP issues required.
-- **AIP-21 carry-forward (10th run):** Linear status = Done (completedAt 2026-04-24). Monday Assessify HR platform = In Testing (active expansion). AIP-23 is the live successor. **Manual resolution required — strongly escalated.**
+- **AIP-21 carry-forward (10th run):** Linear status = Done (completedAt 2026-04-24). Monday [[assessify|Assessify]] HR platform = In Testing (active expansion). AIP-23 is the live successor. **Manual resolution required — strongly escalated.**
 
 ---
 

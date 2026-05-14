@@ -97,7 +97,7 @@ Five sub-categories:
 
 - **People** — Process Owner, team roles, headcount
 - **Infrastructure** — Physical buildings, servers, networks
-- **Tools & systems** — Software, AI services, platforms. **For AI tools specifically:** every AI tool in use at Janus already lives in Linear AIR (the AI Systems Register required by ISO 42001) because the AI department evaluates and registers each tool before any department starts using it. Other departments just list the tools they use; the AI department cross-checks AIR coverage.
+- **Tools & systems** — Software, AI services, platforms. **For AI tools specifically:** every AI tool in use at Janus already lives in [[linear|Linear]] AIR (the AI Systems Register required by ISO 42001) because the AI department evaluates and registers each tool before any department starts using it. Other departments just list the tools they use; the AI department cross-checks AIR coverage.
 - **Knowledge** — Internal expertise, external standards, documentation
 - **Budget** — Annual envelope, cost categories
 
@@ -126,7 +126,7 @@ The Process Owner is the person who:
 
 For C-level processes, the Process Owner should be a department head or above.
 
-## How the 7 sections relate to ISO 9001 Figure 1
+## How the 7 sections relate to [[iso-9001-figure-1|ISO 9001 Figure 1]]
 
 ```
 Figure 1 element              7-section number

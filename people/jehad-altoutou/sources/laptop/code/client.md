@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # client
 
-_Extracted from `assessify/src/generated/prisma/client.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/generated/prisma/client.ts` on 2026-05-14._
 
 ```typescript
 

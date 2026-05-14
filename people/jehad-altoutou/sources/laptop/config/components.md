@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # components
 
-_Extracted from `assessify/components.json` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/components.json` on 2026-05-14._
 
 ```json
 {

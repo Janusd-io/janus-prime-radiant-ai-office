@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # LeaveForm
 
-_Extracted from `assessify/src/app/leave/new/LeaveForm.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/leave/new/LeaveForm.tsx` on 2026-05-14._
 
 ```tsx
 "use client";

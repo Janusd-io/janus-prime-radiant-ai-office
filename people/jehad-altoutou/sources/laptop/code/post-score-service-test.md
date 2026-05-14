@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # post-score-service.test
 
-_Extracted from `assessify/src/lib/__tests__/post-score-service.test.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/lib/__tests__/post-score-service.test.ts` on 2026-05-14._
 
 ```typescript
 import { describe, expect, it } from "vitest";

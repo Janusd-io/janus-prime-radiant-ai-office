@@ -21,7 +21,7 @@ sensitivity_reason: "Template document for the IMS-enrolment skill — internal 
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/handover-to-simon.md` on 2026-05-14._
 
-# [DEPARTMENT NAME] — IMS Enrolment Handover Bundle
+# [DEPARTMENT NAME] — [[ims-enrolment|IMS Enrolment]] Handover Bundle
 
 **To:** Simon (ISO Lead)
 **From:** [Department head name], [Role], Janus Digital
@@ -83,13 +83,13 @@ The **[Department Name]** has completed its IMS enrolment using the `/ims-enrolm
 
 This bundle was generated using the **`/ims-enrolment`** skill (v1.0) in Claude Desktop. The skill walked the department head through:
 
-- **Phase 1 — Foundation:** Read the IMS deck summary, ISO 9001 Figure 1 schematic, the 7-section template, and the AI Department worked example
+- **Phase 1 — Foundation:** Read the IMS deck summary, [[iso-9001-figure-1|ISO 9001 Figure 1]] schematic, the 7-section template, and the AI Department worked example
 - **Phase 2 — Parent process interview:** 7-section structured interview with the department head produced `parent-process.md`
 - **Phase 3 — Sub-process interviews:** One interview per activity from Phase 2's list, with the activity owner, produced each `sub-process-*.md`
 - **Phase 4 — First Voice:** Each department member completed their individual questionnaire
 - **Phase 5 — Handover:** This bundle, generated for your review
 
-Source skill: `~/.claude/skills/ims-enrolment/SKILL.md` (also available in the [Janus PULS Onboarding repo](https://github.com/Jehada-Janusd/janus-puls-onboarding) under `skills/ims-enrolment/`)
+Source skill: `~/.claude/skills/ims-enrolment/SKILL.md` (also available in the [Janus PULS Onboarding repo](https://[[github|github]].com/Jehada-Janusd/janus-puls-onboarding) under `skills/ims-enrolment/`)
 
 ## Next steps proposed
 

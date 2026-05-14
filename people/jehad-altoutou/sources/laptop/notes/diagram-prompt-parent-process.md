@@ -31,7 +31,7 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/a
 
 Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"AI Department — Parent Process Schematic (per ISO 9001:2015 Figure 1)"**.
 
-**Style:** Clean corporate / McKinsey-style. Flat design, soft drop shadows, rounded corners (8px). White background. Sans-serif typography (Inter / SF Pro). ISO palette: navy `#1A4480` on activity boxes, amber `#996600` on the controls box, deep red `#990000` on the resources box, green `#1B5E20` on the KPI box, mid-grey `#666` on neutral boxes. All arrows clean with arrowheads.
+**Style:** Clean corporate / [[mckinsey|McKinsey]]-style. Flat design, soft drop shadows, rounded corners (8px). White background. Sans-serif typography (Inter / SF Pro). ISO palette: navy `#1A4480` on activity boxes, amber `#996600` on the controls box, deep red `#990000` on the resources box, green `#1B5E20` on the KPI box, mid-grey `#666` on neutral boxes. All arrows clean with arrowheads.
 
 **Layout:** Controls box full width across the top. Below it: Sources → Inputs → Activities → Outputs → Receivers, left to right. Resources box full width across the bottom. KPI box attached to Activities with a dashed line.
 
@@ -43,8 +43,8 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 **LEFTMOST BOX — SOURCES OF INPUTS:**
 - Internal — meetings (departments / teams)
 - Internal — Slack channels
-- Internal — Michael Bruck (AI Projects lead)
-- External vendors — Anthropic · OpenAI · Vercel · Hostinger · Airwallex · n8n
+- Internal — [[michael-bruck|Michael Bruck]] (AI Projects lead)
+- External vendors — [[anthropic|Anthropic]] · [[openai|OpenAI]] · Vercel · [[hostinger|Hostinger]] · Airwallex · n8n
 - External regulators — UAE · SG · UK
 
 **SECOND BOX — INPUTS:**
@@ -75,10 +75,10 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 
 **BOTTOM BOX — RESOURCES — Process Owner: Jehad (AI Operations Engineer):**
 Four columns:
-- **AI Tools:** Claude AI · OpenAI · Claude Code · Codex · Antigravity · AI Gateway
+- **AI Tools:** Claude AI · OpenAI · [[claude-code|Claude Code]] · Codex · Antigravity · AI Gateway
 - **Dev Stack:** Next.js 15 · React · TypeScript · Drizzle · n8n · shadcn/ui
-- **Infra:** Hostinger VPS · Vercel · Neon Postgres · GitHub
-- **Productivity:** Notion · Linear · Slack · Obsidian Brain
+- **Infra:** Hostinger VPS · Vercel · Neon Postgres · [[github|GitHub]]
+- **Productivity:** Notion · [[linear|Linear]] · Slack · [[obsidian|Obsidian]] Brain
 
 **KPI BOX (dashed line to Activities) — MONITORING & MEASUREMENT:**
 - Stress-test pass rate (target 5/5 for handover)

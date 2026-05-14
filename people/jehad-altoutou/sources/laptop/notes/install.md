@@ -31,11 +31,11 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/INSTALL.md
 
 Open Claude Desktop and type:
 
-> *"Install the IMS enrolment skill from the Janus PULS repo."*
+> *"Install the [[ims-enrolment|IMS enrolment]] skill from the Janus PULS repo."*
 
 Claude will propose running the install script. Approve the Bash tool call. Restart Claude Desktop when it finishes. Done.
 
-**Requires:** You must have access to the GitHub repo `Jehada-Janusd/janus-puls-onboarding` (ask Jehad), OR a local clone at `~/Documents/janus-puls-onboarding`, OR a zip from Jehad.
+**Requires:** You must have access to the [[github|GitHub]] repo `Jehada-Janusd/janus-puls-onboarding` (ask Jehad), OR a local clone at `~/Documents/janus-puls-onboarding`, OR a zip from Jehad.
 
 ---
 

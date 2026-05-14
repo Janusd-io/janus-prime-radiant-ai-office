@@ -79,7 +79,7 @@ AI Configuration & Integration
 Build and deploy Claude Skills (SKILL.md packages), standardising repeated workflows
 across the team
 Architect MCP servers for Claude and a custom Vertex AI Extensions/Function Calling
-compatibility layer for Gemini
+compatibility layer for [[gemini|Gemini]]
 Build a centralised Context Repository and prototype RAG/knowledge base integration
 pathways
 Manage System Prompts across Gemini Enterprise, Vertex AI, and Claude; enforce API
@@ -90,11 +90,11 @@ Solution Engineering & Automation
 •​
 •​
 
-Use AI-assisted development (Cursor, Claude Code, Gemini Code Assist) to rapidly
+Use AI-assisted development (Cursor, [[claude-code|Claude Code]], Gemini Code Assist) to rapidly
 build and deploy scripts, Slack Apps, and workflow automations
 Build Slack Apps serving as the employee front-end—chatbots, approval workflows,
 dashboards, and AI agent interfaces
-Connect disparate systems (Slack, Google Workspace, and CRMs) using n8n, Make,
+Connect disparate systems (Slack, [[google-workspace|Google Workspace]], and CRMs) using n8n, Make,
 and Google AppScript
 
 Enterprise Slack Platform & Security
@@ -152,7 +152,7 @@ MCP server configuration for Claude; Function Calling for Gemini; AI-assisted ID
 Google AppScript, Vertex AI / Google AI Studio familiarity
 AWS KMS/EKM, Terraform, GitOps, DLP, SIEM integration
 Slack Certified Administrator and Slack Certified Developer (both required)
-Active GitHub profile mandatory—applications without one will not be considered
+Active [[github|GitHub]] profile mandatory—applications without one will not be considered
 
 Preferred
 •​

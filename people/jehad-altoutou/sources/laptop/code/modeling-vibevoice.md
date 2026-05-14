@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # modeling_vibevoice
 
-_Extracted from `VibeVoice/vibevoice/modular/modeling_vibevoice.py` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/vibevoice/modular/modeling_vibevoice.py` on 2026-05-14._
 
 ```python
 # copied from https://github.com/vibevoice-community/VibeVoice/blob/main/vibevoice/modular/modeling_vibevoice.py

@@ -20,6 +20,6 @@ needs_vision_description: true
 
 # VibeVoice_logo_white
 
-_Extracted from `VibeVoice/Figures/VibeVoice_logo_white.png` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/Figures/VibeVoice_logo_white.png` on 2026-05-14._
 
 _(no text extracted by OCR — image may be visual-only; the Phase 5 enrichment subagent should describe it via vision)_

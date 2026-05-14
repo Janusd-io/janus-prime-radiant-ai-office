@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:32Z"
 
 # factories
 
-_Extracted from `assessify/tests/factories.ts` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/tests/factories.ts` on 2026-05-14._
 
 ```typescript
 import { prisma } from "@/lib/db";

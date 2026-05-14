@@ -19,12 +19,12 @@ sensitivity_reason: "Public open-source Microsoft README clone in user's workspa
 
 # README
 
-_Extracted from `VibeVoice/README.md` on 2026-05-14._
+_Extracted from `[[vibevoice|VibeVoice]]/README.md` on 2026-05-14._
 
 <div align="center">
 
 ## 🎙️ VibeVoice: Open-Source Frontier Voice AI
-[![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=githubpages)](https://microsoft.github.io/VibeVoice)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=githubpages)](https://microsoft.[[github|github]].io/VibeVoice)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
 [![TTS Report](https://img.shields.io/badge/TTS-Report-red?logo=arxiv)](https://openreview.net/pdf?id=FihSkzyxdv)
 [![ASR Report](https://img.shields.io/badge/ASR-Report-yellow?logo=arxiv)](https://arxiv.org/pdf/2601.18184)

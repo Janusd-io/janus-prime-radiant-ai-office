@@ -18,7 +18,7 @@ extracted_at: "2026-05-14T09:51:33Z"
 
 # layout
 
-_Extracted from `assessify/src/app/admin/layout.tsx` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/src/app/admin/layout.tsx` on 2026-05-14._
 
 ```tsx
 import { getSession } from "@/lib/auth";

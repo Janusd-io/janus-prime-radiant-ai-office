@@ -21,20 +21,20 @@ sensitivity_reason: "Operational platform-development process owned by Jehad; re
 
 _Extracted from `Documents/janus-puls-onboarding/09-PLATFORM-DEVELOPMENT-PROCESS.md` on 2026-05-14._
 
-# Platform & Tool Development Process
+# [[platform-development-process|Platform & Tool Development Process]]
 
 **How a new internal platform — a custom tool, not a third-party purchase — goes from "we have a problem" to "live for the company" at Janus Digital.**
 
 > This is the long-form sibling of [07-MEETING-TO-TASK-WORKFLOW.md](./07-MEETING-TO-TASK-WORKFLOW.md) and [08-TOOL-EVALUATION-PROCEDURE.md](./08-TOOL-EVALUATION-PROCEDURE.md). Where 07 is "small task → ship" and 08 is "evaluate someone else's tool", this document covers "build a whole platform from scratch when no good off-the-shelf option exists."
-> Worked example throughout: **Assessify** — the HR assessment platform we built when manual hiring assessments became a bottleneck.
+> Worked example throughout: **[[assessify|Assessify]]** — the HR assessment platform we built when manual hiring assessments became a bottleneck.
 
 | Field | Value |
 |---|---|
 | **Process Owner** | Jehad — AI Operations Engineer |
 | **Covers IMS processes** | C1 AI System Design & Development · C2 Software Development & Release · S2 IT Infrastructure & Data Governance · A2 Intellectual Property Management |
 | **Related ISO clauses** | 9001 §8.3 (design and development) · 9001 §8.5 (production and service provision) · 9001 §7.5 (documented information) · 27001 A.8 (asset management) · 27001 A.8.25-A.8.34 (secure development) · 42001 §6.1 (AI risk) · 42001 §8.2 (AI Impact Assessment for embedded AI components) |
-| **Knowledge surface** | Obsidian Vault (`/Users/jehad/Documents/Obsidian Vault/03 Projects/`) — every platform has a living project note · Graphify dumps for AI-agent consumption |
-| **Source of truth for project state** | The Obsidian project note · the GitHub repo · the deployed instance |
+| **Knowledge surface** | [[obsidian|Obsidian]] Vault (`/Users/jehad/Documents/Obsidian Vault/03 Projects/`) — every platform has a living project note · Graphify dumps for AI-agent consumption |
+| **Source of truth for project state** | The Obsidian project note · the [[github|GitHub]] repo · the deployed instance |
 | **Last updated** | 8 May 2026 |
 
 ---
@@ -46,8 +46,8 @@ Building a platform is not the same as building a feature. A feature ships in da
 - A clear pain point that no third-party tool solves well enough (else the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md) applies instead)
 - Strategic approval from leadership before sunk cost grows
 - A deliberate stack choice that fits Janus's standard tech stacks
-- A knowledge graph that lets AI agents reason about the codebase as it grows
-- An agentic AI layer where useful (we're an AI-first company — most internal platforms get one)
+- A [[knowledge-graph|knowledge graph]] that lets AI agents reason about the codebase as it grows
+- An [[agentic-ai|agentic AI]] layer where useful (we're an AI-first company — most internal platforms get one)
 - A real handover to IT, not just a Docker container running on someone's laptop
 
 **The Assessify case (worked example):** HR was running hiring assessments on manual spreadsheets. Inconsistent scoring, no analytics, no audit trail, no automation, no fit with the rest of the AI-driven recruitment pipeline. Off-the-shelf assessment platforms either lacked the immersive UX we wanted or didn't support the data flow we needed (n8n webhooks, custom scoring, role-based RBAC, forms-as-code). So we built it. Status today: sandbox-tested, n8n workflows wired, awaiting IT handover for custom domain + HTTPS.
@@ -112,7 +112,7 @@ flowchart LR
 |---|---|
 | A pain point is captured — usually surfaced in standup (Path A — see [07](./07-MEETING-TO-TASK-WORKFLOW.md)), via Slack, or directly from a department head | One-paragraph problem statement |
 | Determine: is this a feature, an external tool, or a whole platform? | Decision: continue here only if "platform" |
-| **Build vs buy gate** — first run the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md). Only proceed if no third-party tool clears Gates 1-4 for the use case | Documented "no fit" outcome on Linear AIR if applicable |
+| **Build vs buy gate** — first run the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md). Only proceed if no third-party tool clears Gates 1-4 for the use case | Documented "no fit" outcome on [[linear|Linear]] AIR if applicable |
 
 **Assessify example:** Pain point — manual hiring assessments. Build-vs-buy review — checked off-the-shelf platforms (none integrated with n8n, none gave the immersive UX we wanted, none supported the data model). Decision: build.
 
@@ -135,7 +135,7 @@ flowchart LR
 |---|---|
 | Pick from Janus's defined tech stacks in Obsidian: `05 Tech Stacks/` (SaaS Default · AI App · Creative Dev) | Stack profile selected |
 | Justify any deviation in the project note | Decision recorded |
-| Confirm AI tooling — Claude API · OpenAI · AI Gateway · Codex · Antigravity | AI components listed |
+| Confirm AI tooling — Claude API · [[openai|OpenAI]] · AI Gateway · Codex · Antigravity | AI components listed |
 | Run any new vendor through the [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md) before committing | AIR entries created if needed |
 
 **Assessify example:** Selected SaaS Default Stack (Next.js 16 + Prisma v7 + SQLite + Tailwind v4 + shadcn/ui + Resend + Docker). Linked from `Assessify.md` to `[[05 Tech Stacks/SaaS Default Stack]]`.
@@ -168,7 +168,7 @@ flowchart LR
 
 **Assessify example (verbatim from project note):** Graph dump of 451 → 480 → 481 → 611 notes across iterations. Communities include API Routes, Assessment Editor, Scoring Engine, Analytics, Auth, Email, Webhook Dispatcher, File Validation, Easter Eggs.
 
-### Stage 6 — AI / agentic layer
+### Stage 6 — AI / [[agentic-layer|agentic layer]]
 
 If the platform benefits from agentic AI (most internal platforms do), this stage adds it.
 
@@ -176,18 +176,18 @@ If the platform benefits from agentic AI (most internal platforms do), this stag
 |---|---|
 | Identify the agentic surface: which workflows can an AI agent drive? | Agent boundary defined |
 | Build n8n workflows for orchestration where event-driven automation fits | n8n workflow set |
-| Build a Claude Code skill OR an MCP connector for direct platform control by Claude / Cursor / agents | Skill file · MCP server |
+| Build a [[claude-code|Claude Code]] skill OR an MCP connector for direct platform control by Claude / Cursor / agents | Skill file · MCP server |
 | Register the AI components in Linear AIR (auto-handled if mentioned in standup; otherwise manual via `/ai-registry`) | AIR-N entries |
 | Auto-chained Gate 1 evaluation runs (per [Tool Evaluation Procedure](./08-TOOL-EVALUATION-PROCEDURE.md)) | Gate 1 comments on AIR |
 
 **Assessify example:**
-- n8n workflows hosted at `https://n8n.srv1086109.hstgr.cloud` — webhook `POST` from Assessify form submissions, switch on `formType`, branches for Bank Details and Personal Data, Google Drive upload, HTML → Google Doc conversion, Slack notification, error handler workflow logging to Google Sheets + Slack
+- n8n workflows hosted at `https://n8n.srv1086109.hstgr.cloud` — webhook `POST` from Assessify form submissions, switch on `formType`, branches for Bank Details and Personal Data, [[google-drive|Google Drive]] upload, HTML → Google Doc conversion, Slack notification, error handler workflow logging to Google Sheets + Slack
 - MCP-driven peer skill: `[[assessify-hr]]` (path: `/Users/jehad/Documents/Obsidian Vault/AI Office Brain/Skills/assessify-hr.md`) — drives the full Assessify domain model (assessments, sections, questions, job roles, departments, competencies, candidate invites, sessions, candidates, lookup) directly from Claude
-- Naming convention: British English in all assessment text · job role names match Deel · competency names stable across roles
+- Naming convention: British English in all assessment text · job role names match [[deel|Deel]] · competency names stable across roles
 
 ### Stage 7 — Stress test + internal demo
 
-Apply the standard 5-area stress test from [04-FORMAL-RESPONSE.md](./04-FORMAL-RESPONSE.md):
+Apply the standard [[5-area-stress-test|5-area stress test]] from [04-FORMAL-RESPONSE.md](./04-FORMAL-RESPONSE.md):
 
 | Area | What's tested |
 |---|---|
@@ -278,7 +278,7 @@ The point of the worked example: every stage of this process produced an Obsidia
 | **Graphify** | Binary at `~/.local/bin/graphify` · skill at `~/.claude/skills/graphify/SKILL.md` · `/brain` skill at `~/.claude/commands/brain.md` for project lifecycle management |
 | **Standard tech stacks** | SaaS Default Stack (Next.js · Prisma · SQLite/Postgres · Tailwind · shadcn · Docker · n8n · Resend) · AI App Stack · Creative Dev Stack |
 | **AI tooling** | Claude AI · OpenAI · Claude Code · Codex · Antigravity · AI Gateway |
-| **Infrastructure** | Hostinger VPS (production · `n8n.janusd.io`) · Vercel (Next.js apps) · Neon Postgres · Docker · Cloudflare / GoDaddy DNS |
+| **Infrastructure** | [[hostinger|Hostinger]] VPS (production · `n8n.janusd.io`) · Vercel (Next.js apps) · Neon Postgres · Docker · Cloudflare / [[godaddy|GoDaddy]] DNS |
 | **Tracking** | Linear AIP team (project tasks) · Linear AIR team (AI tool / component registry) · Monday Automations board (`5095012818`) |
 | **Per-project auto-memory** | `~/.claude/projects/-Users-jehad-<project>/memory/` — survives across all conversations, separate from main vault |
 

@@ -19,7 +19,7 @@ sensitivity_reason: "Auto-generated Graphify analysis of the Assessify codebase 
 
 # GRAPH_REPORT
 
-_Extracted from `assessify/graphify-out/GRAPH_REPORT.md` on 2026-05-14._
+_Extracted from `[[assessify|assessify]]/graphify-out/GRAPH_REPORT.md` on 2026-05-14._
 
 # Graph Report - /Users/jehad/assessify  (2026-04-14)
 

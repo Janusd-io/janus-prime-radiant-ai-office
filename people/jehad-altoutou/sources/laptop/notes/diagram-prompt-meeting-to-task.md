@@ -29,9 +29,9 @@ _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/a
 
 ---PROMPT---
 
-Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"Meeting → Task → Build Workflow — AI Operations · Janus Digital"** with subtitle **"Process schematic per ISO 9001:2015 Figure 1 · 3-phase Analyse → Plan → Execute model · `/standup` skill v3.11"**.
+Generate a **high-resolution, ultra-wide professional business diagram** (aspect ratio 21:9 or wider, minimum 3840×1620 px) titled **"[[meeting-to-task-workflow|Meeting → Task → Build Workflow]] — AI Operations · Janus Digital"** with subtitle **"Process schematic per ISO 9001:2015 Figure 1 · 3-phase Analyse → Plan → Execute model · `/standup` skill v3.11"**.
 
-**Style:** Clean corporate / McKinsey-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. ISO palette: navy `#1A4480` on activity boxes, amber `#996600` on controls, deep red `#990000` on resources, green `#1B5E20` on KPIs, mid-grey on neutral boxes. Clean arrows with arrowheads.
+**Style:** Clean corporate / [[mckinsey|McKinsey]]-style. Flat design, soft drop shadows, rounded corners. White background. Sans-serif typography. ISO palette: navy `#1A4480` on activity boxes, amber `#996600` on controls, deep red `#990000` on resources, green `#1B5E20` on KPIs, mid-grey on neutral boxes. Clean arrows with arrowheads.
 
 **Layout:** Controls top · Sources → Inputs → Activities → Outputs → Receivers · Resources bottom · KPIs attached via dashed line.
 
@@ -41,17 +41,17 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 - Execution Control Mode — requires "Approve execution" (Phase 2)
 - Strict Write Safety Rules (Phase 3)
 - No-orphan invariant (Phase 3)
-- Conflict Safety on Linear AIP (Phase 3)
+- Conflict Safety on [[linear|Linear]] AIP (Phase 3)
 - Mandatory Context Updates on creates (v3.11)
 
 **LEFTMOST BOX — SOURCES OF INPUTS:**
 - Internal — meetings (departments / teams)
 - Internal — Slack channels
 - Cross-department requests
-- Leadership direction (Michael Bruck)
+- Leadership direction ([[michael-bruck|Michael Bruck]])
 
 **SECOND BOX — INPUTS:**
-- Fireflies meeting transcript (canonical)
+- [[fireflies|Fireflies]] meeting transcript (canonical)
 - Slack thread context
 - Existing Monday / Linear / Notion state
 
@@ -114,4 +114,4 @@ Generate a **high-resolution, ultra-wide professional business diagram** (aspect
 
 ---PROMPT---
 
-**Mermaid backup:** `sub-process-meeting-to-task.md` Section 1 renders natively on GitHub.
+**Mermaid backup:** `sub-process-meeting-to-task.md` Section 1 renders natively on [[github|GitHub]].

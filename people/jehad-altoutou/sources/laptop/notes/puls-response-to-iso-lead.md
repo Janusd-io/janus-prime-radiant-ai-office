@@ -21,7 +21,7 @@ sensitivity_reason: "Long-form Figure-1 schematic response from Jehad to Simon �
 
 _Extracted from `Desktop/puls-response-to-iso-lead.md` on 2026-05-14._
 
-# PULS First Voice — AI Operations Engineer
+# [[puls-first-voice|PULS First Voice]] — AI Operations Engineer
 
 **Submitted by:** Jehad — AI Operations Engineer, Janus Digital
 **IMS processes covered:** C1 AI System Design & Development · C2 Software Development & Release · S2 IT Infrastructure & Data Governance
@@ -100,7 +100,7 @@ flowchart LR
 |---|---|
 | **Predecessor processes (internal)** | M1 Strategic Leadership & IMS Planning · M2 Integrated Risk Management · C3 Partner Enablement & Certification · C4 Customer Onboarding & Activation · C7 Incident Management · S3 Legal Compliance & Contract Management |
 | **External — clients** | AirWallex platform end-users (Dubai HQ + branches) · client building-data feeds |
-| **External — partners / vendors** | Anthropic (Claude) · Vercel · Hostinger · Neon · Airwallex (financial APIs) · n8n |
+| **External — partners / vendors** | [[anthropic|Anthropic]] (Claude) · Vercel · [[hostinger|Hostinger]] · Neon · Airwallex (financial APIs) · n8n |
 | **External — regulators** | UAE (HQ jurisdiction) · Singapore (MAS / IMDA) · UK (ICO / FCA) · ISO/IEC standards bodies |
 | **Other interested parties** | Internal auditors · Certification body |
 
@@ -151,7 +151,7 @@ flowchart LR
 | **Pre-build (after A)** | Architecture review · AI Impact Assessment · security threat model · data classification |
 | **Pre-deploy (after C)** | Code review (human + AI) · automated test suite · SAST/dependency scan · environment parity check · prompt eval pass |
 | **Mid-flight (during E)** | Healthchecks on every container (Hostinger VPS) · uptime monitoring · error tracking · n8n execution logs · LLM drift monitor |
-| **Post-deploy (after D)** | Smoke tests · KPI dashboard read · weekly review with Michael Bruck · monthly retrospective |
+| **Post-deploy (after D)** | Smoke tests · KPI dashboard read · weekly review with [[michael-bruck|Michael Bruck]] · monthly retrospective |
 | **AI-specific (42001)** | Prompt-eval harness · output drift monitoring · human-in-the-loop approval gates for any AI action affecting financial data or external comms |
 
 ### ⑦ Resources
@@ -160,9 +160,9 @@ flowchart LR
 |---|---|
 | **Process Owner** | Jehad — AI Operations Engineer (accountable) |
 | **People** | AI Projects team (lead: Michael Bruck) · Process Owners across the 20 IMS processes |
-| **Infrastructure** | Hostinger VPS (Ubuntu 24.04, Docker) · Vercel · Neon Postgres · Cloudflare · GoDaddy |
-| **Tools** | Claude Code · Cursor / VS Code · Next.js 15 · n8n · Notion · Linear · Slack · GitHub · Drizzle · shadcn/ui · 22 custom Claude Code skills · Antigravity skill library |
-| **Knowledge** | Obsidian Brain (knowledge graph) · ISO standards · vendor documentation · Antigravity 1,328+ module library |
+| **Infrastructure** | Hostinger VPS (Ubuntu 24.04, Docker) · Vercel · Neon Postgres · Cloudflare · [[godaddy|GoDaddy]] |
+| **Tools** | [[claude-code|Claude Code]] · Cursor / VS Code · Next.js 15 · n8n · Notion · [[linear|Linear]] · Slack · [[github|GitHub]] · Drizzle · shadcn/ui · 22 custom Claude Code skills · Antigravity skill library |
+| **Knowledge** | [[obsidian|Obsidian]] Brain ([[knowledge-graph|knowledge graph]]) · ISO standards · vendor documentation · Antigravity 1,328+ module library |
 
 ### ⑧ Monitoring & Measurement (KPIs visible in PULS)
 

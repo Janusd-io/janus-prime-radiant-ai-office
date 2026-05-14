@@ -34,7 +34,7 @@ class="w-full h-full object-cover transition-transform duration-300 group-hover:
 loading="lazy" alt="{{ asset.filename }}" /> {% else %}
 
 <div class="w-full h-full flex items-center justify-center"
-style="background: linear-gradient(135deg, var(--surface-2, #F5F5F4) 0%, var(--surface-1, #FAFAF9) 100%);">
+style="background: [[linear|linear]]-gradient(135deg, var(--surface-2, #F5F5F4) 0%, var(--surface-1, #FAFAF9) 100%);">
 
 {% if asset.media_type == 'video' %} <img
 src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idy04IGgtOCIgc3R5bGU9ImNvbG9yOiB2YXIoLS10ZXh0LWdob3N0LCAjQThBMjlFKTsiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNC43NTIgMTEuMTY4bC0zLjE5Ny0yLjEzMkExIDEgMCAwMDEwIDkuODd2NC4yNjNhMSAxIDAgMDAxLjU1NS44MzJsMy4xOTctMi4xMzJhMSAxIDAgMDAwLTEuNjY0eiIgLz48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMjEgMTJhOSA5IDAgMTEtMTggMCA5IDkgMCAwMTE4IDB6IiAvPjwvc3ZnPg=="
