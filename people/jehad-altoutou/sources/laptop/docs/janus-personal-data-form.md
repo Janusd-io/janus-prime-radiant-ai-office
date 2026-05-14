@@ -18,6 +18,9 @@ sensitivity_reason: "Blank HR template form (no filled-in personal data); HR doc
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # Janus Personal Data Form
 

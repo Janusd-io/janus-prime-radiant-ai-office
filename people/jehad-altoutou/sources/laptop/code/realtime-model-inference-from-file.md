@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:33Z"
 project: vibevoice
 
 ---
+<!-- jb:project-callout -->
+> Part of [[vibevoice|VibeVoice]] — automatically linked by /janus-brain.
+
 
 # realtime_model_inference_from_file
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Jehad's First Voice questionnaire response to ISO lead — 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 06-FIRST-VOICE-FINAL
 

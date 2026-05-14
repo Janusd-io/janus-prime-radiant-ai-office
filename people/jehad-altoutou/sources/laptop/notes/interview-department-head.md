@@ -18,6 +18,9 @@ sensitivity_reason: "Parent-process interview prompt template for IMS enrolment 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # interview-department-head
 

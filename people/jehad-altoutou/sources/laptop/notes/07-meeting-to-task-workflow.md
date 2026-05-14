@@ -18,6 +18,9 @@ sensitivity_reason: "Operational process documentation for AI Ops Engineer role;
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 07-MEETING-TO-TASK-WORKFLOW
 

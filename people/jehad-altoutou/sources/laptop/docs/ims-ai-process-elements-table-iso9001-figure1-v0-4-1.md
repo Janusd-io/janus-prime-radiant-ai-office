@@ -18,6 +18,9 @@ sensitivity_reason: "ISO 9001 process elements table for AI Tools management —
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4 (1)
 

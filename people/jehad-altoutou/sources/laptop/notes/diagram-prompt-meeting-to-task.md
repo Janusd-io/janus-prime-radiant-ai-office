@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS process diagram prompt — work content for AI Offi
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # diagram-prompt-meeting-to-task
 

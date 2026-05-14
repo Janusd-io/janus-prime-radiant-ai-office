@@ -18,6 +18,9 @@ sensitivity_reason: "Public path-prefix exclusion list shipped in the skill repo
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # exclude-paths
 

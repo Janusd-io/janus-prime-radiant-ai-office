@@ -18,6 +18,9 @@ sensitivity_reason: "Per-activity interview prompt template for IMS enrolment â€
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] â€” automatically linked by /janus-brain.
+
 
 # interview-activity-owner
 

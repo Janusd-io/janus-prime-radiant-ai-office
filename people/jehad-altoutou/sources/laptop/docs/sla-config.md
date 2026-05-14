@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:37Z"
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] — automatically linked by /janus-brain.
+
 
 # sla_config
 

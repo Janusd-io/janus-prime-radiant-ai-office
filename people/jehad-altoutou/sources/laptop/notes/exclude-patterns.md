@@ -18,6 +18,9 @@ sensitivity_reason: "Public basename-glob exclusion list shipped in the skill re
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # exclude-patterns
 

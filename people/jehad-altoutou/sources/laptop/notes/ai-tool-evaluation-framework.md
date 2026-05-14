@@ -18,6 +18,9 @@ sensitivity_reason: "Formal Janus AI Tool Evaluation & Approval Framework (DRAFT
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # ai_tool_evaluation_framework
 

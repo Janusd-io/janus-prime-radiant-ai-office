@@ -18,6 +18,9 @@ sensitivity_reason: "Public robots.txt — by definition public"
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # robots
 

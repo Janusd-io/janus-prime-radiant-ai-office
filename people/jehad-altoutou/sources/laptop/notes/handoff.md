@@ -18,6 +18,9 @@ sensitivity_reason: "Session-handoff note for engineering — operational, no PI
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # HANDOFF
 

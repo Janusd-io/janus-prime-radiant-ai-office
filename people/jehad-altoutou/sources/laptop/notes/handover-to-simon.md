@@ -18,6 +18,9 @@ sensitivity_reason: "Template document for the IMS-enrolment skill — internal 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # handover-to-simon
 

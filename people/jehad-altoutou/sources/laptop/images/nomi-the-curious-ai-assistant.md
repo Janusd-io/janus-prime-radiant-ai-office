@@ -19,6 +19,9 @@ needs_vision_description: true
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # Nomi, the curious AI assistant
 

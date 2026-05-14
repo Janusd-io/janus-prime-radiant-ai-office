@@ -18,6 +18,9 @@ sensitivity_reason: "Repo README for janus-puls-onboarding — distributable int
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # README
 

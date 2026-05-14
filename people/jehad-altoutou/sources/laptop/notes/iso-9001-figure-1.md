@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS reference doc — Figure 1 schematic explainer; wor
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # iso-9001-figure-1
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Janus AI Charter & Policy — company-wide policy document,
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # Section 5_ AI Charter & Policy (AI Native Framework) 7 January 2026 v1
 

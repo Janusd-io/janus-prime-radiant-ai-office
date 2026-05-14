@@ -18,6 +18,9 @@ sensitivity_reason: "Clean copy of the Assessify ISO 27001 audit package — sam
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # [[assessify|Assessify]]-ISO-Audit-Package-CLEAN
 

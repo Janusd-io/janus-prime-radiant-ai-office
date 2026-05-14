@@ -18,6 +18,9 @@ sensitivity_reason: "Jehad's PULS process doc for platform development — dept-
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # PULS-Platform-Development-Process
 

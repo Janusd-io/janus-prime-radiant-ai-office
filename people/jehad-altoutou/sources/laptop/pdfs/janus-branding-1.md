@@ -18,6 +18,9 @@ sensitivity_reason: "Janus brand guidelines — externally distributed marketing
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # Janus branding (1)
 

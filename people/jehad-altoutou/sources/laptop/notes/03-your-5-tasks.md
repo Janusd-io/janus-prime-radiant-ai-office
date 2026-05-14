@@ -18,6 +18,9 @@ sensitivity_reason: "Onboarding task list for Jehad's PULS engagement; dept-rele
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 03-YOUR-5-TASKS
 

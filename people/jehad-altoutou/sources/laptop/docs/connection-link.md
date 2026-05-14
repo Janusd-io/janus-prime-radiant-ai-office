@@ -18,6 +18,9 @@ sensitivity_reason: "Email template HTML for Brightbean Studio onboarding flow â
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] â€” automatically linked by /janus-brain.
+
 
 # connection_link
 

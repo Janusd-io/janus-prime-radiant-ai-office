@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS reference doc — process document template; work c
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # seven-section-template
 

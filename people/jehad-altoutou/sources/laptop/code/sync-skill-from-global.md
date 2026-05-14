@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:46Z"
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # sync-skill-from-global
 

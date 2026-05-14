@@ -19,6 +19,9 @@ needs_vision_description: true
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # ChatGPT Image Apr 2, 2026, 03_58_32 PM (1)
 

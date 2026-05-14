@@ -18,6 +18,9 @@ sensitivity_reason: "Auto-generated Graphify analysis of the Assessify codebase 
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # GRAPH_REPORT
 

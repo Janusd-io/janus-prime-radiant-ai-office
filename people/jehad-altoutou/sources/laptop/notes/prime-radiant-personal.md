@@ -18,6 +18,9 @@ sensitivity_reason: "Design rationale for the janus-brain skill — internal dep
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # prime-radiant-personal
 

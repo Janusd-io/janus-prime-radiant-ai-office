@@ -18,6 +18,9 @@ sensitivity_reason: "Janus AI Charter & Policy v2.1 (ISO 42001 compliance) — f
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # Section_5_AI_Charter_Policy_v2.0
 

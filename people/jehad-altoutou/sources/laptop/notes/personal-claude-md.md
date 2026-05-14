@@ -18,6 +18,9 @@ sensitivity_reason: "Per-person CLAUDE.md template scaffolded by `/janus-brain`;
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # personal-claude-md
 

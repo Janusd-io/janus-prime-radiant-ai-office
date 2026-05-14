@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS reference doc — programme overview; work content"
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # plain-english-overview
 

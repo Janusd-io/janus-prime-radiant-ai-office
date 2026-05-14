@@ -18,6 +18,9 @@ sensitivity_reason: "Captured HTTP 401 response from Google Drive — no proprie
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # test_req
 

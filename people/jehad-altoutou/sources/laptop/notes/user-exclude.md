@@ -18,6 +18,9 @@ sensitivity_reason: "Empty template config file with usage instructions, no cont
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # user-exclude
 

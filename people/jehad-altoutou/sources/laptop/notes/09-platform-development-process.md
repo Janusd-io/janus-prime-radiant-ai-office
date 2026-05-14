@@ -18,6 +18,9 @@ sensitivity_reason: "Operational platform-development process owned by Jehad; re
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 09-PLATFORM-DEVELOPMENT-PROCESS
 

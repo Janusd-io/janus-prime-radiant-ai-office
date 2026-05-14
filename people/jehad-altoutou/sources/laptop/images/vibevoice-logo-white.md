@@ -19,6 +19,9 @@ needs_vision_description: true
 project: vibevoice
 
 ---
+<!-- jb:project-callout -->
+> Part of [[vibevoice|VibeVoice]] — automatically linked by /janus-brain.
+
 
 # VibeVoice_logo_white
 

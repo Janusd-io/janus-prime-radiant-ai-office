@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS reference doc — Simon's formal template summary; 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # simon-ims-prc-ai-001-v0.4
 

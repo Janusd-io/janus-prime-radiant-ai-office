@@ -19,6 +19,9 @@ needs_vision_description: false
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # Screenshot 2026-05-01 at 4.50.32 PM
 

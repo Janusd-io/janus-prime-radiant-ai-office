@@ -18,6 +18,9 @@ sensitivity_reason: "Gap analysis vs Simon's formal template — work content fo
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 10-GAP-ANALYSIS-vs-SIMON
 

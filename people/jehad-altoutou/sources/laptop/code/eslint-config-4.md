@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:46Z"
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # eslint.config
 

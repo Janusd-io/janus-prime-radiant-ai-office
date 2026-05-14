@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:46Z"
 project: nomi-data
 
 ---
+<!-- jb:project-callout -->
+> Part of [[nomi-data|Nomi Data]] — automatically linked by /janus-brain.
+
 
 # nomi_activity
 

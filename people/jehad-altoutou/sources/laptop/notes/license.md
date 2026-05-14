@@ -18,6 +18,9 @@ sensitivity_reason: "Internal-use proprietary licence text. Public-ish in the se
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # LICENSE
 

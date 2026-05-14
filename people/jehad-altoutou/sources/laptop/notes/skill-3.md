@@ -18,6 +18,9 @@ sensitivity_reason: "The canonical orchestration prompt for /janus-brain — int
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # SKILL
 

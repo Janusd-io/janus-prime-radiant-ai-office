@@ -18,6 +18,9 @@ sensitivity_reason: "Documentation of the three-layer privacy filter — by desi
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # privacy-filter
 

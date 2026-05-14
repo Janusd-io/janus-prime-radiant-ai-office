@@ -18,6 +18,9 @@ sensitivity_reason: "Public-facing llms.txt for Dubai Property Leads — intenti
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # llms
 

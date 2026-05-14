@@ -18,6 +18,9 @@ sensitivity_reason: "PULS onboarding repo doc — Tool Evaluation procedure; nea
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 08-TOOL-EVALUATION-PROCEDURE
 

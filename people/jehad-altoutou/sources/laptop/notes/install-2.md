@@ -18,6 +18,9 @@ sensitivity_reason: "Public install guide shipped in the bootstrap repo."
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # INSTALL
 

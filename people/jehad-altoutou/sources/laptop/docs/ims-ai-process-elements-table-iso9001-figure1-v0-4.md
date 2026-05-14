@@ -18,6 +18,9 @@ sensitivity_reason: "Same Simon IMS-PRC-AI-001 process elements table as v0-4-1 
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4
 

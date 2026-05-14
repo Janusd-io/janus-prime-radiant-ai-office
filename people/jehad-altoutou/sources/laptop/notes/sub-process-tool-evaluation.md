@@ -18,6 +18,9 @@ sensitivity_reason: "IMS sub-process doc — AI Tool Evaluation procedure; work 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # sub-process-tool-evaluation
 

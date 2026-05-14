@@ -18,6 +18,9 @@ extraction_truncated: true
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] — automatically linked by /janus-brain.
+
 
 # graph
 

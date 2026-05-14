@@ -18,6 +18,9 @@ sensitivity_reason: "IMS sub-process doc — Meeting->Task->Build workflow; work
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # sub-process-meeting-to-task
 

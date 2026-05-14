@@ -18,6 +18,9 @@ sensitivity_reason: "PULS First Voice formal response — work content for IMS s
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 04-FORMAL-RESPONSE
 

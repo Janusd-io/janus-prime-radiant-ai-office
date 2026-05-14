@@ -18,6 +18,9 @@ sensitivity_reason: "Long-form Figure-1 schematic response from Jehad to Simon â
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] â€” automatically linked by /janus-brain.
+
 
 # puls-response-to-iso-lead
 

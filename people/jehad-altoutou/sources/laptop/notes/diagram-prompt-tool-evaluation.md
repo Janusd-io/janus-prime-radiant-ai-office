@@ -18,6 +18,9 @@ sensitivity_reason: "ISO/IMS diagram prompt — Tool Evaluation procedure; work 
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # diagram-prompt-tool-evaluation
 

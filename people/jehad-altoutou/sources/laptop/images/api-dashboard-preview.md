@@ -19,6 +19,9 @@ needs_vision_description: true
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # api-dashboard-preview
 

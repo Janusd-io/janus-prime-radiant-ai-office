@@ -18,6 +18,9 @@ sensitivity_reason: "Empty IMS parent-process template — public-internal proce
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # parent-department-process
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Internal operations manual — no PII, operational only"
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # SOP
 

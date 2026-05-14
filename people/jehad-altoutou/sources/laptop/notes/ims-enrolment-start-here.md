@@ -18,6 +18,9 @@ sensitivity_reason: "Public welcome doc for /ims-enrolment skill — dept-sharea
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # [[ims-enrolment|IMS Enrolment]] - Start Here
 

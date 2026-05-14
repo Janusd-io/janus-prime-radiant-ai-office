@@ -18,6 +18,9 @@ sensitivity_reason: "Operational tactical note — single email to send Simon; w
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 02-DO-THIS-TODAY
 

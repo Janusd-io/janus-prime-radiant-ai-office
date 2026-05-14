@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:36Z"
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] — automatically linked by /janus-brain.
+
 
 # 7d8e6a7ca935ab3d5a0dd61ff56ed56ea99cdddd4fd6bf3d65d893ec8ba1c228
 

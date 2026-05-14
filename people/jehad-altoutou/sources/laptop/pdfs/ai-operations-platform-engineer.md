@@ -18,6 +18,9 @@ sensitivity_reason: "Internal job description marked CONFIDENTIAL but functional
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # AI_Operations Platform Engineer
 

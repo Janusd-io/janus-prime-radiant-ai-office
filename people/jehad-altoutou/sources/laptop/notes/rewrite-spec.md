@@ -18,6 +18,9 @@ sensitivity_reason: "Architecture spec for the janus-brain rewrite — internal 
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # REWRITE-SPEC
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Developer notes on /ims-enrolment skill maintenance; dept-s
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # DEVELOPING
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Public welcome doc for /janus-brain skill — dept-shareabl
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # Janus Brain - Start Here
 

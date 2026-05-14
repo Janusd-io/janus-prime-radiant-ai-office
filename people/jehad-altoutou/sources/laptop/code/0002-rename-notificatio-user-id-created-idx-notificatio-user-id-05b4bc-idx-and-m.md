@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:41Z"
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] — automatically linked by /janus-brain.
+
 
 # 0002_rename_notificatio_user_id_created_idx_notificatio_user_id_05b4bc_idx_and_more
 

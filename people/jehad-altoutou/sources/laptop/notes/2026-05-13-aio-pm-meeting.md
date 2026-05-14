@@ -18,6 +18,9 @@ sensitivity_reason: "AIO project-management meeting with Michael, Euclid, Rosa â
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] â€” automatically linked by /janus-brain.
+
 
 # 2026-05-13-aio-pm-meeting
 

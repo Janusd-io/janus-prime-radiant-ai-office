@@ -18,6 +18,9 @@ sensitivity_reason: "Internal subagent prompt for janus-brain — the very promp
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # enrichment-subagent
 

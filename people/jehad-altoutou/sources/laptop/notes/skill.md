@@ -18,6 +18,9 @@ sensitivity_reason: "Internal HR-facing skill instructions for Assessify MCP —
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # SKILL
 

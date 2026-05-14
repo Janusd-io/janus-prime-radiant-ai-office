@@ -18,6 +18,9 @@ sensitivity_reason: "Trivial pointer file (@AGENTS.md) — no content"
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # CLAUDE
 

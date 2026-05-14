@@ -18,6 +18,9 @@ sensitivity_reason: "Internal ISO 27001 audit package for Assessify — for auth
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # iso-audit-package
 

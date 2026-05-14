@@ -18,6 +18,9 @@ sensitivity_reason: "Internal project README — operational"
 project: assessify
 
 ---
+<!-- jb:project-callout -->
+> Part of [[assessify|Assessify]] — automatically linked by /janus-brain.
+
 
 # README
 

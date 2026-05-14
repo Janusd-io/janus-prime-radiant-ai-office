@@ -19,6 +19,9 @@ needs_vision_description: true
 project: brightbean-studio
 
 ---
+<!-- jb:project-callout -->
+> Part of [[brightbean-studio|Brightbean Studio]] — automatically linked by /janus-brain.
+
 
 # brightbean-logo
 

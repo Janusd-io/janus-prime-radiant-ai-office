@@ -18,6 +18,9 @@ sensitivity_reason: "Empty ChatGPT-image-generation prompt template — public-i
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # diagram-prompt
 

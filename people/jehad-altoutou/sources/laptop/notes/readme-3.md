@@ -18,6 +18,9 @@ sensitivity_reason: "Public open-source Microsoft README clone in user's workspa
 project: vibevoice
 
 ---
+<!-- jb:project-callout -->
+> Part of [[vibevoice|VibeVoice]] — automatically linked by /janus-brain.
+
 
 # README
 

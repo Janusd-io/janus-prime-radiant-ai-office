@@ -18,6 +18,9 @@ sensitivity_reason: "First Voice / parent process doc for AI Operations Engineer
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # parent-process
 

@@ -17,6 +17,9 @@ extracted_at: "2026-05-14T09:51:46Z"
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # lint-vault
 

@@ -18,6 +18,9 @@ sensitivity_reason: "Operational process documentation Jehad authored for PULS/I
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # PULS-Meeting-to-Task-Workflow
 

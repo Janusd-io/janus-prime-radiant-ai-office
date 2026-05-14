@@ -18,6 +18,9 @@ sensitivity_reason: "Strategic brief proposing the Personal Prime Radiant tier t
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # personal-prime-radiant-proposal
 

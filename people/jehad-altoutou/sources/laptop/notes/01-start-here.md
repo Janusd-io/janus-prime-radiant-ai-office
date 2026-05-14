@@ -18,6 +18,9 @@ sensitivity_reason: "Plain-English explanation of Janus PULS/IMS programme — n
 project: janus-puls-onboarding
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — automatically linked by /janus-brain.
+
 
 # 01-START-HERE
 

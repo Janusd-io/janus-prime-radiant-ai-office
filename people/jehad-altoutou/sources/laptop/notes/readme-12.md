@@ -18,6 +18,9 @@ sensitivity_reason: "Public skill README shipped in the public-ish bootstrap rep
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # README
 

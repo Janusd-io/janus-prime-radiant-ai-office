@@ -18,6 +18,9 @@ sensitivity_reason: "Gap-analysis comparing Jehad's process docs against Simon's
 project: desktop-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[desktop-captures|Desktop Captures]] — automatically linked by /janus-brain.
+
 
 # PULS-Gap-Analysis-vs-Simon
 

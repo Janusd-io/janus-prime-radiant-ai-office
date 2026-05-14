@@ -19,6 +19,9 @@ needs_vision_description: false
 project: downloads-captures
 
 ---
+<!-- jb:project-callout -->
+> Part of [[downloads-captures|Downloads Captures]] — automatically linked by /janus-brain.
+
 
 # Public Internet Candidate-2026-04-28-125606
 

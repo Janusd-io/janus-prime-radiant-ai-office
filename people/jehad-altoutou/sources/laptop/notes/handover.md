@@ -18,6 +18,9 @@ sensitivity_reason: "Comprehensive build-session handover. Contains email addres
 project: janus-brain-bootstrap
 
 ---
+<!-- jb:project-callout -->
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — automatically linked by /janus-brain.
+
 
 # HANDOVER
 
