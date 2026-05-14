@@ -1,30 +1,38 @@
 ---
 type: department
-title: IT and Operations
+title: IT, Project Management, and Operations
 slug: it-ops
 created: 2026-05-08
-updated: 2026-05-12
+updated: 2026-05-14
 departments: [it-ops]
 status: active
 owner: euclid-wong
-sources: [2026-05-11-aio-standup-with-jehad]
-related: [euclid-wong, andrey-timokhov, it-helpdesk-triage-bot, it-department-standup-pilot, ai-policy-gate-approval, peer-to-peer-mesh-federation-pattern, janus-prime-radiant-build, april-2026-aio-transcripts-recovery]
+sources: [2026-05-11-aio-standup-with-jehad, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander]
+related: [euclid-wong, andrey-timokhov, it-helpdesk-triage-bot, it-department-standup-pilot, ai-policy-gate-approval, peer-to-peer-mesh-federation-pattern, janus-prime-radiant-build, april-2026-aio-transcripts-recovery, project-management-digital-delivery-workflow, ingest-2026-05-14-lysander-liu-and-spike-zhao]
 ---
 
-# IT and Operations
+# IT, Project Management, and Operations
 
-Janus's IT and Operations department — infrastructure, internal tooling, helpdesk, and the operational counterpart to AIO's policy-and-evaluation function. ITO holds production systems; AIO sandboxes new tools and hands them off to ITO once they pass the policy gate.
+Janus's combined department covering **three teams** under [[euclid-wong|Euclid]]: **IT** (infrastructure, internal tooling, helpdesk), **Project Management** (project delivery), and **Operations** (operational backbone). The combined function is the operational counterpart to AIO's policy-and-evaluation function — ITO holds production systems and the project delivery discipline; AIO sandboxes new tools and hands them off through the policy gate.
+
+> **Naming note (2026-05-14):** The wiki slug stays `it-ops` for stability and inbound-reference continuity, but Euclid's actual remit is broader. The display title now reflects the three teams. The `entities/departments/` vocabulary will eventually need to consider whether Project Management warrants its own department entity once the Prime Radiant rollout proves out — for now, kept under IT-Ops since Euclid runs all three.
 
 ## People
 
-- **[[euclid-wong]]** — Head of IT and Operations.
-- **[[andrey-timokhov]]** — IT team member (mentioned as "Andre" in some earlier source files; canonical name andrey-timokhov).
+- **[[euclid-wong]]** — Head of all three teams (IT + Project Management + Operations).
+- **IT team:**
+  - **[[andrey-timokhov]]** — IT team member (mentioned as "Andre" in some earlier source files; canonical name andrey-timokhov).
+- **Project Management team** (full roles pending Deel rollout):
+  - **Lysander Liu** — senior Project Manager; authored the canonical [[project-management-digital-delivery-workflow|28-phase workflow]]. Entity page pending (see [[ingest-2026-05-14-lysander-liu-and-spike-zhao]]).
+  - **Rosa** — Project Management team. Entity page pending.
+  - **Spike Zhao** — Project Management team, exact role TBC until Deel is set up. Entity page pending.
+- **Operations team:** roles TBC; full team detail surfaces once Deel is in place.
 
 ## Prime Radiant instance
 
 Queued. ITO is one of the more obvious second-wave instance candidates — the IT department standup pilot ([[it-department-standup-pilot]]) and the helpdesk triage bot project ([[it-helpdesk-triage-bot]]) already generate the kind of operational signal a Prime Radiant instance would compound. Spin-up sequencing: after Marketing pilot proves the federation pattern.
 
-**First-pilot scope (clarified 2026-05-11):** [[euclid-wong|Euclid]]'s **project-management team**, not the IT sub-team itself. Per the 11 May AIO standup, the project-management team is the largest sub-team under Euclid, is technically savvy, and already operates with the kind of documentation discipline that an instance would compound (process docs for onboarding, vendor-management, infrastructure-ops). AIO to kick off at Wednesday meeting with Euclid. The IT sub-team (Andre + the new joiner) remains a separate, later target — IT is where production handover happens, so its instance follows the project-management one.
+**First-pilot scope (clarified 2026-05-11; refined 2026-05-14):** [[euclid-wong|Euclid]]'s **Project Management team** is pilot #2 across all Prime Radiant rollouts (after [[andrew-soane|Andrew]] / Marketing). Per the 11 May AIO standup, this team is the largest under Euclid, is technically savvy, and already operates with the kind of documentation discipline that an instance would compound. The 14 May walkthrough with Lysander captured the [[project-management-digital-delivery-workflow|full 28-phase workflow]] as the canonical content the instance initialises against. The IT and Operations teams (Andrey + others) remain a separate, later target — IT is where production handover happens, so its instance follows the Project Management one.
 
 The [[peer-to-peer-mesh-federation-pattern|mesh federation pattern]] applies here: an `entities/departments/it-ops/` shared subfolder in the AIO vault, mirrored from the IT-Ops Prime Radiant once it stands up. Weekly AIO↔IT-Ops meetings (already a recurring cadence) land in that shared folder; both vaults' ingest passes process the content.
 

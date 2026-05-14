@@ -5,7 +5,7 @@ slug: michael-bruck
 created: 2026-05-06
 updated: 2026-05-14
 departments: [ai-office]
-related: [janus-prime-radiant-build, llm-wiki, peer-to-peer-mesh-federation-pattern, jehad-altoutou, project-management-digital-delivery-workflow, 2026-05-14-project-management-document-management-gap]
+related: [janus-prime-radiant-build, llm-wiki, peer-to-peer-mesh-federation-pattern, jehad-altoutou, pm-digital-delivery-workflow, 2026-05-14-pm-document-management-gap]
 ---
 
 # Michael Bruck
@@ -22,5 +22,5 @@ Anchors the `owner:` field on most projects, decisions, and questions in this wi
 
 ## Frames in active use (2026-05-14)
 
-- **ECO-as-document-control analogy** — drew on his IBM origin story (Engineering Change Orders on mainframe boards) when probing PM document management in [[2026-05-14-pm-workflow-walkthrough-lysander|the 14 May PM walkthrough]]. Reframes Prime Radiant's `decisions/` discipline as the operational ECO log for Janus. Captured as the [[2026-05-14-project-management-document-management-gap|document-management gap lesson]].
+- **ECO-as-document-control analogy** — drew on his IBM origin story (Engineering Change Orders on mainframe boards) when probing PM document management in [[2026-05-14-pm-workflow-walkthrough-lysander|the 14 May PM walkthrough]]. Reframes Prime Radiant's `decisions/` discipline as the operational ECO log for Janus. Captured as the [[2026-05-14-pm-document-management-gap|document-management gap lesson]].
 - **Three-layer knowledge model** (knowledge → methodology → decisions) — surfaced live in the same meeting as the architectural frame for how Prime Radiant maps to PM's existing practice. Decision layer is the load-bearing piece.

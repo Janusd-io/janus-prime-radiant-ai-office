@@ -8,7 +8,7 @@ departments: [ai-office, it-ops]
 owner: michael-bruck
 status: active
 sources: [2026-05-14-pm-workflow-walkthrough-lysander, 2026-05-13-aio-pm-meeting]
-related: [project-management-digital-delivery-workflow, euclid-wong, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, janus-prime-radiant-build, 2026-05-06-andrew-as-standup-skill-rollout-pilot]
+related: [pm-digital-delivery-workflow, euclid-wong, 2026-05-14-ai-bounded-role-in-pm, 2026-05-14-pm-document-management-gap, janus-prime-radiant-build, 2026-05-06-andrew-as-standup-skill-rollout-pilot]
 ---
 
 # Ingest escalation — create entity pages for Lysander Liu and Spike Zhao?
@@ -20,7 +20,7 @@ Create two new internal entity pages from the 14 May PM workflow walkthrough, bo
 1. **`entities/internal/lysander-liu.md`**
 2. **`entities/internal/spike-zhao.md`**
 
-Both are substantively referenced from the [[project-management-digital-delivery-workflow|workflow process page]] and from the [[2026-05-14-ai-bounded-role-in-project-management|AI-bounded-role lesson]] and [[2026-05-14-project-management-document-management-gap|document-management lesson]] just filed. Promoting both gives those references resolvable wiki targets and gives Janus Prime Radiant a place to track their role.
+Both are substantively referenced from the [[pm-digital-delivery-workflow|workflow process page]] and from the [[2026-05-14-ai-bounded-role-in-pm|AI-bounded-role lesson]] and [[2026-05-14-pm-document-management-gap|document-management lesson]] just filed. Promoting both gives those references resolvable wiki targets and gives Janus Prime Radiant a place to track their role.
 
 ---
 
@@ -32,9 +32,9 @@ Both are substantively referenced from the [[project-management-digital-delivery
 - Role: senior PM (PM team — under [[euclid-wong|Euclid]] as PM Lead).
 - Substantive expertise: end-to-end digital delivery process — initiation, planning, parallel-track execution, business delivery, training, UAT, verification. Has deep mental model of where AI helps vs where PM must own.
 - Captured contributions on file:
-  - The [[project-management-digital-delivery-workflow|canonical workflow page]] — authored by him, transcribed by us.
-  - The [[2026-05-14-ai-bounded-role-in-project-management|30–60% bounded-role principle]].
-  - The acknowledgement that drove the [[2026-05-14-project-management-document-management-gap|document-management gap lesson]].
+  - The [[pm-digital-delivery-workflow|canonical workflow page]] — authored by him, transcribed by us.
+  - The [[2026-05-14-ai-bounded-role-in-pm|30–60% bounded-role principle]].
+  - The acknowledgement that drove the [[2026-05-14-pm-document-management-gap|document-management gap lesson]].
 - Working language: Chinese-primary (the 14 May session was conducted predominantly in Mandarin).
 - Federation status: PM instance is rollout pilot #2 (after [[andrew-soane|Andrew]] / Marketing). Lysander likely becomes the PM Prime Radiant curator alongside [[euclid-wong|Euclid]] when the instance stands up.
 
@@ -75,7 +75,7 @@ Once approved, both pages get created. If Spike's role detail surfaces in your r
 
 ## Related
 
-- [[project-management-digital-delivery-workflow]] — the process page that both names will resolve back to.
+- [[pm-digital-delivery-workflow]] — the process page that both names will resolve back to.
 - [[2026-05-14-pm-workflow-walkthrough-lysander]] — source transcript.
 - [[2026-05-13-aio-pm-meeting]] — prior PM intro session (Euclid + Rosa).
 - [[2026-05-06-andrew-as-standup-skill-rollout-pilot]] — the earlier wiki reference to "the Lysander/Rosa group" being the previously-floated PM pilot.

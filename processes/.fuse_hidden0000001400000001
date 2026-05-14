@@ -15,7 +15,7 @@ End-to-end project delivery workflow for the Janus Project Management function, 
 
 Authoritative source: [[2026-05-14-pm-workflow-walkthrough-lysander]] (transcript). For status / deltas / discussions, see also [[2026-05-13-aio-pm-meeting]] (intro session).
 
-> **Naming convention.** The abbreviation "PM" is *not* used as shorthand on this page because Janus will eventually have a Product Management function and we want to avoid the collision. Throughout: "Project Management" for the function; "Project Manager" for the role; "the project team" for the wider working group. Source filenames keep "pm-" as historical artefacts (immutable per source-immutability rule).
+> **Naming convention.** "PM" is *not* used as shorthand on this page because Janus will eventually have a Product Management function and we want to avoid the collision. Throughout: "Project Management" for the function; "Project Manager" for the role; "the project team" for the wider working group. Source filenames keep "pm-" as historical artefacts (immutable per source-immutability rule).
 >
 > **Note on scope.** This documents how Project Management actually operates today — process, artefacts, dependencies, where AI helps and where it does not. It is *not* a redesign. The Prime Radiant rolls *over* this workflow, not in place of it. Phase numbering below approximates Lysander's narration order; many phases run in parallel rather than sequentially.
 
@@ -23,8 +23,8 @@ Authoritative source: [[2026-05-14-pm-workflow-walkthrough-lysander]] (transcrip
 
 The workflow runs from contract signing through final customer verification. Five rough stages:
 
-1. **Initiation** (phases 1–4) — Presale → delivery handoff. Project Manager is assigned, project is chartered, supplementary information is gathered.
-2. **Planning** (phases 5–8) — Project Manager planning, parallel tracks for construction / hardware / platform, application analysis, plan review.
+1. **Initiation** (phases 1–4) — Presale → delivery handoff. PM is assigned, project is chartered, supplementary information is gathered.
+2. **Planning** (phases 5–8) — PM planning, parallel tracks for construction / hardware / platform, application analysis, plan review.
 3. **Execution** (phases 9–17) — Pre-entry checks, kickoff (internal then external), site execution, network + platform deployment, digital delivery, single-point testing.
 4. **Business delivery** (phases 18–22) — Digital delivery handover, business research + configuration, training, UAT.
 5. **Closure** (phases 23–24) — Trial run, final verification, payment.
@@ -39,18 +39,18 @@ The workflow runs from contract signing through final customer verification. Fiv
 - Contract files
 
 **Process:**
-- Inputs submitted to the shared project directory (currently the Google Drive project folder; will become the GitHub-backed Project Management vault structure under [[janus-prime-radiant-build|Prime Radiant]]).
+- Inputs submitted to the shared project directory (currently the Google Drive project folder; will become the GitHub-backed PM vault structure under [[janus-prime-radiant-build|Prime Radiant]]).
 - Internal decision on whether the signed/PoC project can start.
 - Sales coordinates with PMO to assign a Project Manager for delivery.
-- Formal project-initiation approval email + Project Manager confirmation — this is the trigger that moves the project from presale to delivery.
+- Formal project-initiation approval email + PM confirmation — this is the trigger that moves the project from presale to delivery.
 
-**Output:** Project officially moves from presale → delivery; Project Manager is assigned.
+**Output:** Project officially moves from presale → delivery; PM is assigned.
 
 **Governance:** Email notification goes to the decision body, the originating PMO, and the receiving PMO. Not a unilateral Global or Country decision — depends on the project shape and who owns delivery.
 
-## Phase 2 — Project initiation (Project-Manager-owned)
+## Phase 2 — Project initiation (PM-owned)
 
-**First thing the Project Manager does** once assigned: produce the **project charter**.
+**First thing the PM does** once assigned: produce the **project charter**.
 
 **Activities:**
 - Analyse the presale inputs to define project scope.
@@ -66,7 +66,7 @@ The workflow runs from contract signing through final customer verification. Fiv
 
 ## Phase 3 — Supplementary information-gathering loop
 
-Once the presale inputs are inventoried, gaps will be identified — contract-signing inputs are *never* complete. Project Manager enters a loop:
+Once the presale inputs are inventoried, gaps will be identified — contract-signing inputs are *never* complete. PM enters a loop:
 
 1. Organise existing materials.
 2. Identify gaps.
@@ -74,13 +74,13 @@ Once the presale inputs are inventoried, gaps will be identified — contract-si
 4. Re-integrate; identify remaining gaps.
 5. Repeat until coverage is sufficient.
 
-**Where AI helps here:** existing tools automate part of the gap-identification work (rough estimate per Lysander: 30–60% of preparation work is AI-automatable; see [[2026-05-14-ai-bounded-role-in-project-management]]).
+**Where AI helps here:** existing tools automate part of the gap-identification work (rough estimate per Lysander: 30–60% of preparation work is AI-automatable; see [[2026-05-14-ai-bounded-role-in-pm]]).
 
 **Core output of the loop:** clear scope, roles, role descriptions, stakeholder definitions — the foundation for the formal handoff meeting.
 
 ## Phase 4 — Formal handoff meeting (presale → delivery)
 
-After Project Manager and core delivery team have absorbed the inputs, a formal handoff meeting is convened.
+After PM and core delivery team have absorbed the inputs, a formal handoff meeting is convened.
 
 **Attendees:** Sales / presale (handing over), full delivery team (receiving).
 
@@ -89,7 +89,7 @@ After Project Manager and core delivery team have absorbed the inputs, a formal 
 - Delivery team asks questions, validates assumptions, surfaces gaps.
 - Consensus + residual items recorded in meeting minutes.
 
-**Critical principle (Lysander):** Don't open this meeting cold. Project Manager and core team must absorb materials *before* the meeting — the meeting is for confirming understanding and surfacing scope-level questions, not for first-time briefing.
+**Critical principle (Lysander):** Don't open this meeting cold. PM and core team must absorb materials *before* the meeting — the meeting is for confirming understanding and surfacing scope-level questions, not for first-time briefing.
 
 **Distinguish from Phase 3:** the handoff meeting decides *macro* scope (e.g. "do we cover chiller MPC, do we cover lighting"); supplementary gathering covers the *micro* points (which sensors, point lists) that feed the planning in Phase 5.
 
@@ -97,9 +97,9 @@ After Project Manager and core delivery team have absorbed the inputs, a formal 
 
 ## Phase 5 — Project management planning
 
-**The most important phase of the Project Manager's work** (Lysander, verbatim): *"If you cut corners here, all the risks will happen at the end of the project — that's catastrophic."*
+**The most important phase of the PM's work** (Lysander, verbatim): *"If you cut corners here, all the risks will happen at the end of the project — that's catastrophic."*
 
-**Plans the Project Manager must produce:**
+**Plans the PM must produce:**
 - Scope
 - WBS (work breakdown structure)
 - Plan (schedule)
@@ -110,7 +110,7 @@ After Project Manager and core delivery team have absorbed the inputs, a formal 
 - Cost management plan
 - Procurement management plan
 
-**Principle:** Project Manager independence + deep thinking required. This is the Project Manager's locus of understanding the project; AI cannot substitute.
+**Principle:** PM independence + deep thinking required. This is the PM's locus of understanding the project; AI cannot substitute.
 
 ## Phase 6 — Parallel tracks (concurrent with Phase 5)
 
@@ -150,9 +150,9 @@ Three sub-areas, all critical for setting the eventual verification standard:
 ## Phase 8 — Plan consolidation + plan review
 
 ### 8.1 Consolidation
-- Project Manager consolidates all the planning streams (Project Manager plan + construction plan + hardware plan + platform plan + digital delivery plan + business delivery plan).
-- Project Manager reviews other sections for reasonableness.
-- Project Manager integrates and confirms; if all checks pass, triggers the plan review.
+- PM consolidates all the planning streams (PM plan + construction plan + hardware plan + platform plan + digital delivery plan + business delivery plan).
+- PM reviews other sections for reasonableness.
+- PM integrates and confirms; if all checks pass, triggers the plan review.
 
 ### 8.2 Plan review meeting (internal kickoff)
 - Trigger: plan review email sent.
@@ -161,8 +161,8 @@ Three sub-areas, all critical for setting the eventual verification standard:
   - Senior management (line owner)
   - Sales (every project / PoC has business goals — sales must be in the room)
   - Marketing lead (each project has marketing implications)
-  - Project Manager
-  - Global (Project Management team representative — to evaluate the plan + identify unidentified risks)
+  - PM
+  - Global (PM team representative — to evaluate the plan + identify unidentified risks)
 - This *is* the internal kickoff — "internal kickoff meeting / TBT".
 
 **Output:** plan review meeting minutes + go/no-go signal.
@@ -171,11 +171,11 @@ Three sub-areas, all critical for setting the eventual verification standard:
 
 This is the gate between **planning** and **execution**. Before the on-site team can begin work:
 
-- **Customer-side preparation:** office space at site, badge access, warehouse arranged. Project Manager coordinates these well ahead of equipment arrival.
+- **Customer-side preparation:** office space at site, badge access, warehouse arranged. PM coordinates these well ahead of equipment arrival.
 - **Procurement signed off:** hardware procurement must be locked. *"If we haven't placed the order before going on-site, we can't receive the equipment when we arrive — execution is blocked."*
 - **Construction services signed off:** same principle — sub-contractor must be engaged before they can deploy people on-site.
 
-**Governance note:** Global procurement function does not currently exist as a discrete role at Janus — the Project Manager negotiates supplier deals directly. Construction team is built by Janus (e.g. the Ricsos partner sourced previously). This is an evolving area.
+**Governance note:** Global procurement function does not currently exist as a discrete role at Janus — the PM negotiates supplier deals directly. Construction team is built by Janus (e.g. the Ricsos partner sourced previously). This is an evolving area.
 
 ## Phase 10 — External kickoff with customer
 
@@ -202,7 +202,7 @@ Multiple parallel lines start once the kickoff is done.
 
 ### 12.1 Construction execution
 - Produce an on-site construction plan, walk through with customer's engineering lead, get sign-off on methodology + compliance.
-- Project Manager attends customer's morning meeting(s), tracks EAS announcements, daily reports.
+- PM attends customer's morning meeting(s), tracks EAS announcements, daily reports.
 - **Burn-down management:** every sensor / flowmeter / device has a count target. Daily plan vs actual triggers schedule risk if deviation exceeds threshold.
 
 ### 12.2 Hardware delivery
@@ -297,7 +297,7 @@ Started during the business consensus meeting at kickoff (Phase 11). Six sub-are
 
 ## Phase 21 — Key information sign-off
 
-Critical milestone before configuration begins. Project Manager facilitates a customer sign-off on the deliverable scope (more granular than the contract). This becomes the **basis for the final verification standard**.
+Critical milestone before configuration begins. PM facilitates a customer sign-off on the deliverable scope (more granular than the contract). This becomes the **basis for the final verification standard**.
 
 ## Phase 22 — Knowledge production (as-needed)
 
@@ -319,12 +319,12 @@ Configuring the platform per the signed-off scope:
 
 Customer-led testing:
 - Customer's primary business owners run UAT against agreed scenarios.
-- Project Manager facilitates; team supports.
+- PM facilitates; team supports.
 - Output: **UAT report**.
 
 ## Phase 25 — Training
 
-**Training matrix produced by the Project Manager:**
+**Training matrix produced by the PM:**
 - Per-role: different content for different stakeholder roles.
 - Per-scenario: scope can require multiple sessions (energy team gets the energy training; inspection team gets the inspection training).
 - **Customer-specific manuals** — generic base + customer-specific configuration content. *AI can produce drafts; customer cannot use Janus's generic manual — they'd push back.*
@@ -333,19 +333,19 @@ Customer-led testing:
 
 **Effort estimate:** ~2 weeks per project for materials production.
 
-**Execution:** Project Manager and business consultant co-deliver.
+**Execution:** PM and business consultant co-deliver.
 
 ## Phase 26 — Trial run
 
 - **Duration:** ~1 month.
 - **Pattern:** continuous use → issue capture → fix → re-use.
-- **Plan + scope:** Project Manager produces a trial run plan defining objectives, participating roles, success criteria.
+- **Plan + scope:** PM produces a trial run plan defining objectives, participating roles, success criteria.
 - **Customer participation:** real customer team uses the system in production-like mode.
 - **Issue management:** problem log captured; severity assessed; fixes tracked.
 
 ## Phase 27 — Trial run summary
 
-Project Manager produces a trial run summary report:
+PM produces a trial run summary report:
 - Issue list with resolutions.
 - Scenario-by-scenario validation report.
 - Final trial run conclusion (pass / re-loop / scoped exceptions).
@@ -354,7 +354,7 @@ Project Manager produces a trial run summary report:
 
 The formal closure step.
 
-- **Verification plan** — Project Manager produces, customer reviews.
+- **Verification plan** — PM produces, customer reviews.
 - **Verification deliverables list** — what materials are submitted at acceptance.
 - **Verification meeting** — typically more formal than the kickoff. Senior customer leadership attends.
 - **Verification sign-off** — once the verification report is signed, the project formally closes from the delivery side.
@@ -384,18 +384,18 @@ This task-encoded version is what makes the workflow programmable into the Prime
 
 ## Where AI helps in this workflow
 
-Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-project-management|the bounded-role lesson]]:
+Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-pm|the bounded-role lesson]]:
 
 - **First-draft generation** of project charters, scope documents, training manual bases, configuration drafts.
 - **Gap identification** in the supplementary information-gathering loop (Phase 3).
 - **Test scenario generation** for the business availability validation (Phase 16).
 - **Training material drafts** from system configuration changes (Phase 25).
 
-**Bounded by Lysander's principle:** ~30–60% of *preparation* work is AI-automatable. AI is *first-draft only* — never authoritative. Project Manager cannot delegate understanding; the project comprehension phase (especially Phase 2 + Phase 3) is where Project Manager cuts corners → all the risks happen at the end of the project. *"Catastrophic."*
+**Bounded by Lysander's principle:** ~30–60% of *preparation* work is AI-automatable. AI is *first-draft only* — never authoritative. PM cannot delegate understanding; the project comprehension phase (especially Phase 2 + Phase 3) is where PM cuts corners → all the risks happen at the end of the project. *"Catastrophic."*
 
 ## Why this document exists (Prime Radiant initialisation context)
 
-Per [[michael-bruck|Michael]] (14 May meeting): the Project Management Prime Radiant instance will be **initialised against this workflow**. The schema, the entity vocabulary, the typical inputs / outputs, the AI-bounded role — all of it gives the Project Management Prime Radiant a *running start* once the Project Management team enrols. It is the answer to the document-management gap Lysander acknowledged in the same meeting — see [[2026-05-14-project-management-document-management-gap]].
+Per [[michael-bruck|Michael]] (14 May meeting): the PM Prime Radiant instance will be **initialised against this workflow**. The schema, the entity vocabulary, the typical inputs / outputs, the AI-bounded role — all of it gives the PM Prime Radiant a *running start* once the PM team enrols. It is the answer to the document-management gap Lysander acknowledged in the same meeting — see [[2026-05-14-pm-document-management-gap]].
 
 The plan, per Michael in the meeting: build a layered knowledge structure that distinguishes knowledge (durable understanding), methodology (how to do things), and decisions (why we changed something). The decision layer — *"the change is easy to get because it is the decision knowledge: why we change this, why we change that — that's the key knowledge. This is not what AI will replace; this is the knowledge layer of mastery"* — is the load-bearing piece. Prime Radiant's `decisions/` + `lessons/` + `processes/` folder discipline maps cleanly onto this.
 
@@ -403,9 +403,9 @@ The plan, per Michael in the meeting: build a layered knowledge structure that d
 
 - [[2026-05-13-aio-pm-meeting]] — intro session that preceded this walkthrough.
 - [[2026-05-14-pm-workflow-walkthrough-lysander]] — source transcript.
-- [[2026-05-14-ai-bounded-role-in-project-management]] — bounded-role lesson.
-- [[2026-05-14-project-management-document-management-gap]] — document-management gap lesson.
-- [[euclid-wong]] — Project Management Lead (wears IT-Ops Head + Project Management Lead hats).
-- [[janus-prime-radiant-build]] — program-level hub. Project Management is rolling out as the third instance after AI Office (live) and Marketing (in flight).
-- [[peer-to-peer-mesh-federation-pattern]] — Project Management × AIO mesh subfolder pending once instance is live.
+- [[2026-05-14-ai-bounded-role-in-pm]] — bounded-role lesson.
+- [[2026-05-14-pm-document-management-gap]] — document-management gap lesson.
+- [[euclid-wong]] — PM Lead (wears IT-Ops Head + PM Lead hats).
+- [[janus-prime-radiant-build]] — program-level hub. PM is rolling out as the third instance after AI Office (live) and Marketing (in flight).
+- [[peer-to-peer-mesh-federation-pattern]] — PM × AIO mesh subfolder pending once instance is live.
 - [[ai-tool-evaluation]] — the AIO equivalent process discipline.

@@ -384,7 +384,7 @@ This task-encoded version is what makes the workflow programmable into the Prime
 
 ## Where AI helps in this workflow
 
-Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-project-management|the bounded-role lesson]]:
+Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-pm|the bounded-role lesson]]:
 
 - **First-draft generation** of project charters, scope documents, training manual bases, configuration drafts.
 - **Gap identification** in the supplementary information-gathering loop (Phase 3).
@@ -395,7 +395,7 @@ Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-project-management|the
 
 ## Why this document exists (Prime Radiant initialisation context)
 
-Per [[michael-bruck|Michael]] (14 May meeting): the Project Management Prime Radiant instance will be **initialised against this workflow**. The schema, the entity vocabulary, the typical inputs / outputs, the AI-bounded role — all of it gives the Project Management Prime Radiant a *running start* once the Project Management team enrols. It is the answer to the document-management gap Lysander acknowledged in the same meeting — see [[2026-05-14-project-management-document-management-gap]].
+Per [[michael-bruck|Michael]] (14 May meeting): the Project Management Prime Radiant instance will be **initialised against this workflow**. The schema, the entity vocabulary, the typical inputs / outputs, the AI-bounded role — all of it gives the Project Management Prime Radiant a *running start* once the Project Management team enrols. It is the answer to the document-management gap Lysander acknowledged in the same meeting — see [[2026-05-14-pm-document-management-gap]].
 
 The plan, per Michael in the meeting: build a layered knowledge structure that distinguishes knowledge (durable understanding), methodology (how to do things), and decisions (why we changed something). The decision layer — *"the change is easy to get because it is the decision knowledge: why we change this, why we change that — that's the key knowledge. This is not what AI will replace; this is the knowledge layer of mastery"* — is the load-bearing piece. Prime Radiant's `decisions/` + `lessons/` + `processes/` folder discipline maps cleanly onto this.
 
@@ -403,8 +403,8 @@ The plan, per Michael in the meeting: build a layered knowledge structure that d
 
 - [[2026-05-13-aio-pm-meeting]] — intro session that preceded this walkthrough.
 - [[2026-05-14-pm-workflow-walkthrough-lysander]] — source transcript.
-- [[2026-05-14-ai-bounded-role-in-project-management]] — bounded-role lesson.
-- [[2026-05-14-project-management-document-management-gap]] — document-management gap lesson.
+- [[2026-05-14-ai-bounded-role-in-pm]] — bounded-role lesson.
+- [[2026-05-14-pm-document-management-gap]] — document-management gap lesson.
 - [[euclid-wong]] — Project Management Lead (wears IT-Ops Head + Project Management Lead hats).
 - [[janus-prime-radiant-build]] — program-level hub. Project Management is rolling out as the third instance after AI Office (live) and Marketing (in flight).
 - [[peer-to-peer-mesh-federation-pattern]] — Project Management × AIO mesh subfolder pending once instance is live.

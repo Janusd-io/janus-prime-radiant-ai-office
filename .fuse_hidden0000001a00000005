@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-14 (Project Management workflow walkthrough ingest — Lysander Liu's 28-phase digital delivery workflow captured as canonical process page; AI-bounded-role + document-management-gap lessons; Lysander + Spike Zhao entity escalation filed. Project Management Prime Radiant initialisation now has its running-start content. Naming convention locked: "PM" not used as shorthand — Janus will have Product Management later. Earlier today: CLAUDE.md v0.11 Drive→Git substrate documentation; decisions/concepts/ → concepts/ migration; 18-file lint remediation pass.)_
+_Updated: 2026-05-14 (PM workflow walkthrough ingest — Lysander Liu's 28-phase PM digital delivery workflow captured as canonical process page; AI-bounded-role + document-management-gap lessons; Lysander + Spike Zhao entity escalation filed. PM Prime Radiant initialisation now has its running-start content. Earlier today: CLAUDE.md v0.11 Drive→Git substrate documentation; decisions/concepts/ → concepts/ migration; 18-file lint remediation pass.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 
@@ -50,7 +50,7 @@ _(none yet)_
 - [andrey-timokhov](entities/internal/andrey-timokhov.md) — IT/Operations team; reports to Euclid; co-designs the IT standup pilot and helpdesk triage bot.
 - [ann-greed](entities/internal/ann-greed.md) — Financial Controller; finance-touching tool decisions and procurement approval.
 - [bonaventure-wong](entities/internal/bonaventure-wong.md) — CEO; sponsor of ISO programme + Singapore news bot; strict-policy holder.
-- [euclid-wong](entities/internal/euclid-wong.md) — Head of three teams (IT, Project Management, Operations); IT approved-tools list owner; CRM lock-in stakeholder; sponsor on the Project Management Prime Radiant rollout.
+- [euclid-wong](entities/internal/euclid-wong.md) — Head of IT and Operations; IT approved-tools list owner; CRM lock-in stakeholder.
 - [jehad-altoutou](entities/internal/jehad-altoutou.md) — AI Office; owner of the `/standup` skill; engineering lead on most active projects.
 - [mariam-mahmood](entities/internal/mariam-mahmood.md) — HR; sample-data provider for the recruitment-automation pipeline.
 - [michael-bruck](entities/internal/michael-bruck.md) — AI Office; owner of this wiki.
@@ -64,7 +64,7 @@ _(none yet)_
 - [finance](entities/departments/finance.md) — Financial Controller seat (Ann Greed); Prime Radiant instance queued; CFO seat open question.
 - [hr](entities/departments/hr.md) — Theresa head, Mariam operator; recruitment-automation pipeline; instance queued.
 - [iso](entities/departments/iso.md) — Simon programme lead; ISO 9001/27001/42001 compliance function; cross-cutting across every department; instance queued (added to vocabulary 2026-05-11).
-- [it-ops](entities/departments/it-ops.md) — Euclid head (three teams: IT, Project Management, Operations); Andrey on IT; production handover from AIO. Project Management instance is pilot #2 after Marketing (Rosa, Lysander, Spike, Euclid).
+- [it-ops](entities/departments/it-ops.md) — Euclid head, Andrey team; production handover from AIO; instance queued — first pilot will be Euclid's project-management team (Wednesday meeting).
 - [marketing](entities/departments/marketing.md) — Andrew CMO; Prime Radiant instance kicking off 2026-05-08; Andrew confirmed active test case (2026-05-11); ICP/Personas pending.
 - [office-of-ceo](entities/departments/office-of-ceo.md) — Bonaventure; ISO programme; will be the digital-knowledge-twin federation endpoint.
 - [training](entities/departments/training.md) — stub; newly added vocabulary; instance queued.
@@ -91,7 +91,7 @@ _(none yet)_
 - [ai-policy-gate-approval](processes/ai-policy-gate-approval.md) — reusable governance process for moving an AI tool from active use to formal approval; 4-of-4 gate, 8-step flow, 4-system coordination.
 - [ai-registry](processes/ai-registry.md) — Linear AIR management conventions; reference page pointing at the canonical `/ai-registry` skill.
 - [ai-tool-evaluation](processes/ai-tool-evaluation.md) — Janus's gate-based AI tool evaluation framework; reference page pointing at the canonical `/ai-tool-evaluation` skill.
-- [project-management-digital-delivery-workflow](processes/project-management-digital-delivery-workflow.md) — Janus PM's end-to-end project delivery workflow (28 phases); the canonical reference the PM Prime Radiant initialises against.
+- [pm-digital-delivery-workflow](processes/pm-digital-delivery-workflow.md) — Janus PM's end-to-end project delivery workflow (28 phases); the canonical reference the PM Prime Radiant initialises against.
 - [prime-radiant-instance-setup](processes/prime-radiant-instance-setup.md) — curator-side runbook for standing up a new Prime Radiant instance end-to-end; embedded bash script automates repo + local-vault + initial-commit-and-push; GUI sequence for branch protection, Obsidian, Cowork.
 - [standup](processes/standup.md) — AIO daily standup workflow (Fireflies → Monday → Linear AIP → Notion); reference page pointing at the canonical `/standup` skill (v3.13).
 
@@ -202,8 +202,8 @@ _(none yet)_
 
 ## Lessons
 
-- [2026-05-14-ai-bounded-role-in-project-management](lessons/2026-05-14-ai-bounded-role-in-project-management.md) — Lysander: AI handles 30–60% of PM prep as first drafts only; PM stays in the loop. Maps onto AI-Native Pillar 3 (augment, not replace). [active]
-- [2026-05-14-project-management-document-management-gap](lessons/2026-05-14-project-management-document-management-gap.md) — PM document/version management is ad-hoc per PM today; ISO problem. Michael's IBM-ECO probe + three-layer knowledge model frames Prime Radiant as the operational answer. [active]
+- [2026-05-14-ai-bounded-role-in-pm](lessons/2026-05-14-ai-bounded-role-in-pm.md) — Lysander: AI handles 30–60% of PM prep as first drafts only; PM stays in the loop. Maps onto AI-Native Pillar 3 (augment, not replace). [active]
+- [2026-05-14-pm-document-management-gap](lessons/2026-05-14-pm-document-management-gap.md) — PM document/version management is ad-hoc per PM today; ISO problem. Michael's IBM-ECO probe + three-layer knowledge model frames Prime Radiant as the operational answer. [active]
 - [2026-05-12-anti-ai-washing-as-content-discipline](lessons/2026-05-12-anti-ai-washing-as-content-discipline.md) — "name three things that make it AI" — content-discipline pattern that filters cosmetic AI-washing; first Janus social post on the angle going out today. [active]
 - [2026-05-11-privacy-vs-personal-vault-content-taxonomy](lessons/2026-05-11-privacy-vs-personal-vault-content-taxonomy.md) — public / private / personal are three different things in Prime Radiant federation; personal is pre-promotion workflow staging (Janus contracts forbid non-work personal content). [active]
 - [2026-05-11-html-over-powerpoint-for-read-only-content](lessons/2026-05-11-html-over-powerpoint-for-read-only-content.md) — HTML, not PowerPoint, for read-only content; token cost + editability + downstream value all favour HTML. [active]

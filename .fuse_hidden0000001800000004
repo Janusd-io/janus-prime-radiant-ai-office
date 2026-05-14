@@ -1235,13 +1235,13 @@ Closed out the longest-pending v0.x item from yesterday's queue. The v0.10 bump 
 - filed source: sources/meetings/2026-05-14-pm-workflow-walkthrough-lysander.md (~48KB; raw Fireflies transcript preserved per source-immutability; predominantly Mandarin with English portions from Michael)
 
 ### Tier 1 — capture (new wiki pages)
-- created process: processes/project-management-digital-delivery-workflow.md — comprehensive end-to-end documentation of all 28 phases (initiation → planning → execution → business delivery → closure); per-phase inputs/outputs/governance; payment schedule; task-encoding + dependency rules; explicit Global vs Country governance markers; AI's bounded role threaded through. This is the canonical reference for PM Prime Radiant initialisation.
-- created lesson: lessons/2026-05-14-ai-bounded-role-in-project-management.md — Lysander's bounded view of AI in PM (30–60% of preparation work, first-draft only, PM stays in the loop). Connects to [[ai-native-janus-positioning]] Pillar 3 framing.
-- created lesson: lessons/2026-05-14-project-management-document-management-gap.md — Michael's IBM-ECO probe + Lysander's acknowledgement that PM document/version control is ad-hoc today. Includes Michael's three-layer knowledge model (knowledge/methodology/decisions) and the ISO connection (9001 doc control / 27001 audit trail / 42001 decision traceability). Frames Prime Radiant as the operational answer.
+- created process: processes/pm-digital-delivery-workflow.md — comprehensive end-to-end documentation of all 28 phases (initiation → planning → execution → business delivery → closure); per-phase inputs/outputs/governance; payment schedule; task-encoding + dependency rules; explicit Global vs Country governance markers; AI's bounded role threaded through. This is the canonical reference for PM Prime Radiant initialisation.
+- created lesson: lessons/2026-05-14-ai-bounded-role-in-pm.md — Lysander's bounded view of AI in PM (30–60% of preparation work, first-draft only, PM stays in the loop). Connects to [[ai-native-janus-positioning]] Pillar 3 framing.
+- created lesson: lessons/2026-05-14-pm-document-management-gap.md — Michael's IBM-ECO probe + Lysander's acknowledgement that PM document/version control is ad-hoc today. Includes Michael's three-layer knowledge model (knowledge/methodology/decisions) and the ISO connection (9001 doc control / 27001 audit trail / 42001 decision traceability). Frames Prime Radiant as the operational answer.
 - created question: questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — high-stakes escalation for two new internal entity pages. Lysander at confidence:high; Spike at confidence:medium pending role-clarification.
 
 ### Tier 2 — existing pages updated (3)
-- entities/internal/euclid-wong.md — major: added "PM Lead — dual hat" section (Euclid is both IT-Ops Head AND PM Lead, per 13 May intro session); cross-links to project-management-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, the entity escalation. `updated:` 2026-05-07 → 2026-05-14.
+- entities/internal/euclid-wong.md — major: added "PM Lead — dual hat" section (Euclid is both IT-Ops Head AND PM Lead, per 13 May intro session); cross-links to pm-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, the entity escalation. `updated:` 2026-05-07 → 2026-05-14.
 - entities/internal/michael-bruck.md — added "Frames in active use (2026-05-14)" section: ECO-as-document-control analogy from his IBM origin; three-layer knowledge model (knowledge → methodology → decisions). `updated:` 2026-05-11 → 2026-05-14.
 - projects/janus-prime-radiant-build.md — added PM Prime Radiant initialisation plan bullet at end of program-level sub-effort list; sources/related expanded with the new pages.
 
@@ -1267,54 +1267,3 @@ Closed out the longest-pending v0.x item from yesterday's queue. The v0.10 bump 
 
 ### Pattern observation
 - The 14 May meeting is the second strategic ingest in 4 days where a domain expert walks through their own operating model in detail (Bonaventure's 12 May three-pillar messaging; Lysander's 14 May PM workflow). Both produce process-or-brief-shaped wiki content that becomes initialisation material for a downstream Prime Radiant instance. Worth tracking whether this pattern continues — if so, "domain-expert workflow walkthrough + same-day full ingest" becomes a repeatable rollout step.
-
-## [2026-05-14 12:45] cleanup | "PM" naming convention + Euclid three-teams clarification
-- driver: Michael — "PM" is not used as shorthand because Janus will eventually have a Product Management function and we want to avoid the collision. Also: Euclid manages three teams (IT, Project Management, Operations), not just IT-Ops as previously framed. Spike's exact role stays TBC until Deel is set up.
-
-### File renames (3)
-- processes/pm-digital-delivery-workflow.md → processes/project-management-digital-delivery-workflow.md
-- lessons/2026-05-14-ai-bounded-role-in-pm.md → lessons/2026-05-14-ai-bounded-role-in-project-management.md
-- lessons/2026-05-14-pm-document-management-gap.md → lessons/2026-05-14-project-management-document-management-gap.md
-
-Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
-
-### PM → Project Management/Manager sweep
-- Bulk perl-based replacement across the three renamed pages:
-  - "PM team" → "Project Management team"
-  - "PM Lead" → "Project Management Lead"
-  - "PM Prime Radiant" → "Project Management Prime Radiant"
-  - "PM-owned" → "Project-Manager-owned" (hyphenated descriptor)
-  - "PM-side" → "Project-Manager-side"
-  - "PM-only" → "Project-Manager-only"
-  - bare `\bPM\b` → "Project Manager" (catch-all for the role)
-- Manual repair of two sweep artefacts:
-  - process page line 18: naming-convention note ("PM is not used as shorthand") had self-mangled to "Project Manager is not used as shorthand"; fixed to "The abbreviation 'PM' is *not* used as shorthand".
-  - document-management lesson title: had become "Project Manager document/version management" (role); corrected to "Project Management document/version management" (function).
-- PMO acronym preserved — Project Management Office is unambiguous and distinct from "PM" as Janus's collision concern; no rename needed.
-- Source files (sources/meetings/2026-05-14-pm-workflow-walkthrough-lysander.md and 2026-05-13-aio-pm-meeting.md) **NOT renamed** per source-immutability rule. Naming-convention note in the process page explicitly flags the historical-filename carve-out.
-
-### Cross-reference updates (7 files)
-- index.md — header tag updated; people-internal Euclid line updated; departments it-ops line updated; both renamed lessons + process slugs updated in their respective sections.
-- projects/janus-prime-radiant-build.md — slug references updated.
-- log.md — slug references in earlier log entry updated.
-- entities/internal/michael-bruck.md — slug references updated.
-- entities/internal/euclid-wong.md — slug references updated; role description expanded (see below).
-- questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — slug references updated.
-
-### Euclid role expansion
-- entities/internal/euclid-wong.md — opening paragraph rewritten to credit the **three teams** (IT, Project Management, Operations) under his leadership rather than just "IT and Operations". Renamed the existing "PM Lead — dual hat" section to "Three teams under his leadership"; expanded to break out each team with explicit naming, members where known, and the Deel-pending caveat for fuller role detail.
-- entities/departments/it-ops.md — display title updated to "IT, Project Management, and Operations". Slug stays `it-ops` for inbound-reference stability (low-stakes naming-display fix; high-stakes slug renames deferred). Added a flag noting the department might warrant its own entity vocabulary entry once the Project Management Prime Radiant proves out. People section now breaks out all three teams; Lysander, Rosa, Spike named on the Project Management side with the "TBC pending Deel" caveat.
-
-### Spike stays TBC
-- questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — Spike's confidence:medium + role-clarification flag remain in place. Note added that fuller role detail surfaces with the Deel rollout; no change to the escalation otherwise. Lysander's promotion can proceed independently.
-
-### Verification
-- Cross-reference sweep verified clean: `grep -rn pm-digital-delivery-workflow|2026-05-14-ai-bounded-role-in-pm|2026-05-14-pm-document-management-gap` in non-source / non-processed files returns no hits.
-- All renamed-page frontmatter passes the lint slug-must-match-filename check.
-- "PM" body-text occurrences in non-source content: 0 (sweep verified).
-
-### Judgment calls
-- **Source filenames retained.** 2026-05-13-aio-pm-meeting.md and 2026-05-14-pm-workflow-walkthrough-lysander.md keep the "pm" segment per source-immutability. The naming-convention note in the process page flags this explicitly so future readers know the asymmetry is intentional.
-- **`it-ops` slug retained**, display title only updated. Renaming the department slug to `it-projects-ops` or similar would propagate inbound-reference breakage across the vault; the cost of breaking refs vs the cost of "the slug is slightly off from the display name" — kept the slug, updated the display. May revisit when Project Management proves out as a Prime Radiant instance worth tracking as a peer department entity.
-- **Spike stays TBC.** Did not promote his entity escalation despite Lysander being ready — per Michael's instruction. Once Deel is set up, the role-clarification will be straightforward; we can promote both together or just Spike at that point.
-- **PMO acronym kept.** Distinct from "PM" — Project Management Office is unambiguous and Lysander used it explicitly. Not subject to Michael's directive.
