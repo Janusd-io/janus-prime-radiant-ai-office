@@ -1198,3 +1198,34 @@ Both remediation buckets in `pulse/2026-05-13-lint.md` past-tensed. Original con
 - 1 new concept merged into `## Concepts`
 - 1 new external person merged into `## People (external)`
 - Header note updated to reflect today's two passes (concepts migration + this remediation)
+
+## [2026-05-14 07:10] schema-update | CLAUDE.md v0.11 — Git substrate + workflow git-awareness | bundled with PR build-hub note
+
+Closed out the longest-pending v0.x item from yesterday's queue. The v0.10 bump deliberately deferred the Drive→Git substrate language rewrite to keep that pass tight; v0.11 lands it.
+
+### CLAUDE.md edits
+- **Status line**: v0.10 → **v0.11**, 2026-05-13 → 2026-05-14. v0.11 changelog added at top; v0.10 changelog kept for trail.
+- **§1 new subsection: "Substrate — GitHub-backed Git repos"** (between "Cross-instance federation" and "System-of-record map"). Formalises four things: (a) every instance lives in its own private GitHub repo under `Janusd-io`; (b) cloned to `~/janus/prime-radiant/<instance-slug>/` per contributor; (c) why the substrate matters for the rulebook (reads see real files; GitHub permissions decouple from Workspace identity; git semantics align with existing content discipline; sibling-clone layout enables federation); (d) Obsidian Git plugin handles sync, with §5 carrying the agent-side cadence rules. Cross-references to [[prime-radiant-storage-substrate]] (rationale) and [[prime-radiant-instance-setup]] (runbook).
+- **§5 new framing: "Git-awareness across every workflow"** (top of §5, before §5.1 Ingest). Single section covering `git pull` before any operation, `git add/commit/push` after writes, commit-message convention matching `log.md` entry headers, one-logical-change-per-commit guidance, and the "don't rewrite history" rule (per the "wiki captured a dead-end" lesson — superseded decisions stay on the record).
+- **Scope discipline**: did NOT thread git steps through every numbered list in §5.1/§5.2/§5.3. A single framing note avoided ~12 small-edit noise additions and keeps the workflows readable.
+
+### Prime Radiant build hub bundled update
+- `projects/janus-prime-radiant-build.md`:
+  - Status header date: "as of 2026-05-08" → **"as of 2026-05-14"**
+  - Top of AIO instance sub-effort list now leads with **"Migration executed (2026-05-13)"** — describes the move, references the substrate brief + setup process, notes Jehad's first round-trip as the validation test gating per-member runbook extraction.
+  - Schema-doc line updated from "v0.7 / v0.8 pending" history to "v0.11 (2026-05-14)" with brief version history.
+  - Frontmatter `updated:` bumped to 2026-05-14.
+
+### Sanity
+14/14 checks pass: version bumps landed, both changelogs retained, substrate subsection + per-machine-path + brief references present, git-awareness framing present with all four cadence rules, PR build hub status date + migration bullet + version line + frontmatter date all updated.
+
+### What v0.11 doesn't do (deliberate scope discipline)
+- Did NOT update the historical decision pages that mention "Google Shared Drive" in their evidence bodies (e.g., `2026-05-08-marketing-prime-radiant-as-separate-vault`). Those decisions are dated records of what was decided *at that time*; rewriting them would falsify the audit trail. The supersession arc — Drive decision (2026-05-08) → Git brief (2026-05-13) → schema bump (2026-05-14) — is already legible through cross-references.
+- Did NOT rewrite the `marketing-prime-radiant` project hub or the AIO×Marketing federation README to mention the new substrate. Those touch the same content but are operationally separate edits; queued as v0.11 follow-on if useful, but not blocking.
+- Did NOT extract a `prime-radiant-member-setup.md` process page. Still gated on Jehad's first round-trip per the original sequencing.
+
+### Follow-ups still queued
+- Marketing instance from-scratch on Git (post-Jehad-AIO validation).
+- `prime-radiant-member-setup.md` extraction.
+- Schema linter spec — still actionable; v0.11 vocabulary gives it concrete targets (four-axis edge checks + git-aware staleness criteria).
+- Arxiv figure mirroring (pending URL paste from Michael).
