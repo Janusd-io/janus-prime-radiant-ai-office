@@ -371,14 +371,14 @@
   <div class="slide-num">03 / 05</div>
   <div class="eyebrow">How the standup works</div>
   <h2>One brain for the team. Team-only for now.</h2>
-  <p class="lede">Five things happen — most of which you do not have to do. Same pattern Marketing is rolling out with, adapted to the workflow Lysander walked us through — and adapted to <strong>Windows</strong> (a first for the Prime Radiant rollout).</p>
+  <p class="lede">Four things happen — most of which you do not have to do. Same pattern Marketing is rolling out with, adapted to the workflow Lysander walked us through.</p>
 
   <ul class="clean" style="max-width: 980px; margin-top: 12px;">
     <li>
       <span class="num">1</span>
       <span>
         <span class="label">Project Management team vault stood up (GitHub-backed).</span>
-        <div class="body">We create a private GitHub repo under <code>Janusd-io</code>. Each of you gets a local clone on your Windows machine that stays in sync automatically. You never touch GitHub directly — the skill provisions accounts silently. This becomes the canonical Project Management knowledge store, replacing the ad-hoc "each Project Manager has their own files" pattern Lysander flagged.</div>
+        <div class="body">We create a private GitHub repo for the team under the <code>Janusd-com</code> organisation. Each of you gets a local clone on your machine that stays in sync automatically — you never touch GitHub directly, the tooling handles it. This becomes the canonical Project Management knowledge store, replacing the ad-hoc "each Project Manager has their own files" pattern Lysander flagged.</div>
       </span>
     </li>
     <li>
@@ -391,8 +391,17 @@
     <li>
       <span class="num">3</span>
       <span>
-        <span class="label">Tooling installed on your Windows machines (single session, ~60–90 minutes).</span>
-        <div class="body">Cowork (your conversation with the brain), Obsidian (your view into it), Web Clipper (one-click article capture), Fireflies connector (so meetings flow in). <strong>This is also our first Windows deployment</strong> — until now, Prime Radiant has only run on Mac (AI Office + Marketing). We figure it out together; any Windows-specific friction we hit becomes documented for the rest of Janus.</div>
+        <span class="label">Tooling installed on your machines (single session, ~60–90 minutes).</span>
+        <div class="body">Six things, most of them you already have or will use seamlessly:
+          <ul style="margin: 6px 0 0 0; padding-left: 18px; font-size: 14px; color: var(--ink-2);">
+            <li><strong>Cowork</strong> — your conversation with the brain.</li>
+            <li><strong>Obsidian + GitHub plugin</strong> — your view into the vault; the GitHub plugin handles the sync silently so you only see the file structure.</li>
+            <li><strong>Web Clipper</strong> — one-click article capture into the inbox.</li>
+            <li><strong>Fireflies connector</strong> — meetings flow into the brain automatically.</li>
+            <li><strong>Monday.com</strong> — system of record for tasks, projects, action tracking. Already in use across Janus; the brain reads from it.</li>
+            <li><strong>Google Drive</strong> (likely) — for document storage where appropriate. We'll confirm scope of Drive usage with you during the install.</li>
+          </ul>
+        </div>
       </span>
     </li>
     <li>
@@ -402,18 +411,11 @@
         <div class="body">We pick one of your current projects together and ingest its existing materials — meeting transcripts, the project charter if one exists, RAID, status updates, decisions made along the way. Watching the brain ingest a real Project Management workload is where it earns the trust to be used on the next one.</div>
       </span>
     </li>
-    <li>
-      <span class="num">5</span>
-      <span>
-        <span class="label">Mesh subfolder with the AI Office — federation begins.</span>
-        <div class="body">A shared subfolder between the AIO vault and your Project Management vault. Any joint work — tool evaluations that affect you, AIO decisions you need to know about, your asks of the AIO — lives there and is visible to both teams. Marketing already has one of these with the AI Office. Yours stands up at the same time as the vault.</div>
-      </span>
-    </li>
   </ul>
 
   <div class="callout callout-warn">
-    <div class="callout-label">Two things we are explicitly deferring</div>
-    <div class="callout-body"><strong>Personal vaults are not part of this rollout.</strong> Earlier framings (including the company-wide intro deck) showed personal vaults alongside team vaults. Jehad and I decided this morning to shelve them — the rules for what flows from a personal vault into the team vault are more complicated than we want to solve right now. We will come back to personal vaults once the team brains have proved out and the federation rules are settled. <strong>Federation architecture is also being redesigned</strong> on the back of our recent move to GitHub as the canonical substrate — that work is in flight; your rollout will be the first test of the redesigned mesh pattern between two department-level brains.</div>
+    <div class="callout-label">Two things we'll cover in a separate conversation</div>
+    <div class="callout-body"><strong>Personal vaults are not part of this rollout.</strong> Earlier framings (including the company-wide intro deck) showed personal vaults alongside team vaults. Jehad and I decided this morning to shelve them — the rules for what flows from a personal vault into the team vault are more complicated than we want to solve right now. We'll come back to personal vaults once the team brains have proved out. <strong>Federation between department brains (the AIO × Project Management shared workspace) also needs a separate conversation</strong> — our recent move to GitHub as the canonical substrate means the previous mesh-subfolder pattern (which assumed Google Shared Drive) has to be re-thought. Not a blocker for your standup; we figure it out together once the team brain is live.</div>
   </div>
 </section>
 
@@ -543,28 +545,28 @@
           <span class="check">1</span>
           <span>
             <span class="label">Week 1 — alignment + standup.</span>
-            <div class="body">This pre-read; alignment conversation; folder structure locked. <strong>Windows tooling-install session</strong> ~60–90 min (first time we do this end-to-end on Windows). Vault stood up in GitHub. AIO × Project Management mesh subfolder created. First backfill project chosen and ingested.</div>
+            <div class="body">This pre-read; alignment conversation; folder structure locked. Tooling-install session ~60–90 min. Vault stood up in GitHub (<code>Janusd-com</code>). First backfill project chosen and ingested.</div>
           </span>
         </li>
         <li>
           <span class="check">2</span>
           <span>
             <span class="label">Week 2 — daily use begins.</span>
-            <div class="body">Each of you uses the brain at least once a day on real work. Meetings flow in via Fireflies. Decisions captured as you make them, not after. Mid-week check-in with the AI Office on what's working and what's not — including any Windows-specific friction we should document for downstream rollouts.</div>
+            <div class="body">Each of you uses the brain at least once a day on real work. Meetings flow in via Fireflies. Decisions captured as you make them, not after. Mid-week check-in with the AI Office on what's working and what's not.</div>
           </span>
         </li>
         <li>
           <span class="check">3</span>
           <span>
-            <span class="label">Weeks 3–4 — first synthesis + federation stabilises.</span>
-            <div class="body">Brain has enough context to produce real syntheses — status rollups, cross-project pattern recognition, decision-history retrieval. The AIO × Project Management mesh becomes the natural place for any joint work. Federation-architecture redesign on the GitHub substrate is being shaped by what we learn from this pairing.</div>
+            <span class="label">Weeks 3–4 — first synthesis.</span>
+            <div class="body">Brain has enough context to produce real syntheses — status rollups, cross-project pattern recognition, decision-history retrieval. Separate conversation in this window on how the AIO × Project Management shared workspace should work on the new GitHub substrate.</div>
           </span>
         </li>
         <li>
           <span class="check">4</span>
           <span>
-            <span class="label">Month 2 onward — Rosa's dashboard track + personal vaults revisited.</span>
-            <div class="body">Once the data is solid, the visualisation work Rosa raised in the intro starts in earnest — portfolio rollups, RAID heatmaps, dependency views, whatever the team finds itself wanting. Personal vaults also come back onto the table at this point, once the federation architecture is settled and we know what flows from a personal vault into a team vault.</div>
+            <span class="label">Month 2 onward — Rosa Wu's dashboard track + personal vaults revisited.</span>
+            <div class="body">Once the data is solid, the visualisation work Rosa Wu raised in the intro starts in earnest — portfolio rollups, RAID heatmaps, dependency views, whatever the team finds itself wanting. Personal vaults also come back onto the table at this point, once the federation pattern is settled and we know what flows from a personal vault into a team vault.</div>
           </span>
         </li>
       </ul>
