@@ -3,7 +3,7 @@ type: project
 title: Janus Prime Radiant Build
 slug: janus-prime-radiant-build
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-14
 departments: [ai-office]
 status: active
 owner: michael-bruck
@@ -39,11 +39,12 @@ This project was authorised on 2026-05-05 ([[aio-2026-05-05]]). The originating 
 
 **Curation:** Primary Michael for the AIO instance; each domain instance has an owner. Cross-instance signal sharing (e.g., AI tools discovered in the AIO wiki that matter to Marketing) is handled via federation pages and shared-source ingest flagging (mechanism deferred to v0.8).
 
-## Status (as of 2026-05-08)
+## Status (as of 2026-05-14)
 
 **AIO instance sub-effort:**
+- **Migration executed (2026-05-13).** AIO instance moved from the Google Shared Drive substrate to a private GitHub repo (`janus-prime-radiant-ai-office` under `Janusd-io`), cloned to `~/janus/prime-radiant/ai-office/` on the curator's machine. Obsidian Git plugin handles auto-pull/commit/push; Cowork sees real files on real disk (no streaming-mount placeholder layer). The substrate decision rationale lives in [[prime-radiant-storage-substrate]]; the curator-side runbook (with bash script) is at [[prime-radiant-instance-setup]]. Jehad's first round-trip is the validation test that gates extracting the per-member runbook.
 - Folder scaffolding: done
-- Schema doc (`CLAUDE.md`): **v0.7** — §1 reframed to AIO-co-maintained institutional KB (v0.6, 2026-05-08); system named "Janus Prime Radiant" at title level (v0.7, 2026-05-08); domain generalisability + brief-shape rules baked in (v0.5, 2026-05-07); system-of-record map aligned with `/standup` v3.13 (v0.4, 2026-05-06). v0.8 pending — will formalise architecture layers, add entities/departments/ entity type, define federation cross-reference rules.
+- Schema doc (`CLAUDE.md`): **v0.11** (2026-05-14) — added Git-substrate documentation in §1 + git-awareness framing in §5. v0.10 (2026-05-13) formalised the multi-graph framing (entity/semantic/temporal/causal frontmatter edges per the agent-memory community vocabulary) + `decided_by` / `captured_by` fields. v0.8 added entities/departments/ entity type + federation rules. Prior versions (v0.4–v0.7) layered in the AIO-as-institutional-KB framing, the Janus Prime Radiant naming, the domain-generalisability rules, and the brief-shape discipline.
 - Seed entity + concept pages: done — 20 vendor pages, 9 concept pages, 2 briefs, 3 process pages
 - Inaugural source ingested: Karpathy gist
 - Mivory backfill: 23 articles ingested

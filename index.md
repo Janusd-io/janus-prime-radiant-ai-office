@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-14 (lint remediation pass executed — 9 missing-page stubs created (n8n, notebooklm, marketo, github, openai vendors + claude-code & anthropic-claude redirects + knowledge-compilation concept + vivian-balakrishnan person), 9 meeting-source stubs filed for the 5+ ref Jehad-vault meetings, no body refs rewritten. Recount: broken refs 149 → 82 (-67), broken unique slugs 66 → 49 (-17). Both lint-report remediation buckets crossed off; decisions/concepts → concepts/ migration also done earlier today.)_
+_Updated: 2026-05-14 (CLAUDE.md v0.11 lands the Drive→Git substrate documentation in §1 + git-awareness framing across §5 workflows. Prime Radiant build hub now leads with 'Migration executed (2026-05-13)' note and reflects the v0.11 schema version. Earlier today: decisions/concepts/ → concepts/ migration; 18-file lint remediation pass (9 entity/concept/person stubs + 9 meeting source stubs); broken-refs 149 → 82.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 

@@ -1,8 +1,10 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.10, 2026-05-13. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.11, 2026-05-14. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
 >
-> *v0.10 changes (2026-05-13):* explicit multi-graph framing added to §4 (the frontmatter encodes four orthogonal edge types — entity, semantic, temporal, causal — matching the agent-memory community vocabulary that converged in mid-May 2026); `captured_by` and `decided_by` fields formalised in the frontmatter schema. The Drive → Git substrate language rewrite previously slated for v0.10 has been deferred to v0.11 to keep this bump scoped.
+> *v0.11 changes (2026-05-14):* Substrate documentation — new "### Substrate — GitHub-backed Git repos" subsection added to §1 formalising the post-2026-05-13 reality that every Prime Radiant instance lives in its own GitHub repo cloned to `~/janus/prime-radiant/<instance>/` on the curator's machine. §5 gains a single Git-awareness framing note covering `git pull` before any operation and `git add/commit/push` after writes, so individual workflows in §5.1 / §5.2 / §5.3 don't have to thread git steps through every numbered list. References to the [[prime-radiant-storage-substrate|substrate brief]] and the [[prime-radiant-instance-setup|setup runbook]] added.
+>
+> *v0.10 changes (2026-05-13):* explicit multi-graph framing added to §4 (the frontmatter encodes four orthogonal edge types — entity, semantic, temporal, causal — matching the agent-memory community vocabulary that converged in mid-May 2026); `captured_by` and `decided_by` fields formalised in the frontmatter schema.
 
 ---
 
@@ -61,6 +63,19 @@ The Prime Radiant pattern decomposes any domain instance into three layers. The 
 **Build sequence for a new instance.** Identify the Signals (which sources?), curate the Infrastructure (which strategic anchors?), then let Outputs emerge. Outputs cannot be designed top-down without the Infrastructure layer — that's the lesson from the Marketing brainstorm. The first deliverable when standing up a new domain instance is the Infrastructure inventory; the second is the sensor array; the synthesis follows.
 
 **Cross-instance federation.** Each Prime Radiant instance is its own vault (separate folder, separate `CLAUDE.md` derived from this one). The `entities/departments/` pages are the lightweight federation layer — every instance has a stub for every department, describing that department from the instance's vantage point and pointing at the canonical Prime Radiant for that department where one exists. Heavier federation mechanisms (shared backend, programmatic cross-vault references) are deferred until the multi-instance pattern is proven.
+
+### Substrate — GitHub-backed Git repos
+
+Every Prime Radiant instance lives in **its own private GitHub repo** under the `Janusd-io` organization, cloned to **`~/janus/prime-radiant/<instance-slug>/`** on each contributor's machine. The AIO instance is `janus-prime-radiant-ai-office`; subsequent instances follow the same `janus-prime-radiant-<dept>` naming. Migration off Google Shared Drive executed 2026-05-13. The reasoning behind the substrate choice is captured in [[prime-radiant-storage-substrate]]; the curator-side setup runbook (with a working bash script for both migration and fresh-instance cases) is at [[prime-radiant-instance-setup]]. A companion per-member runbook will be extracted as `prime-radiant-member-setup.md` once Jehad's first round-trip validates the bootstrap sequence.
+
+Why the substrate matters for this rulebook:
+
+- **Reads see real files.** A git clone materialises every file on local disk — no streaming-mount placeholder layer between the agent and the bytes. Cowork (and any other agent) sees the same vault Obsidian sees, with no first-walk warmup quirks. This is the failure mode that triggered the 2026-05-13 migration; see the brief for the diagnosis.
+- **Permissions are GitHub-shaped, not Workspace-shaped.** Contributor access flows through GitHub Teams rather than Google Workspace identity. A contributor on `janusd.com` can pull a repo owned by `Janusd-io` without the cross-Workspace Drive failure modes.
+- **Git semantics align with our content discipline.** Atomic commits, append-only `log.md`, immutable `sources/`, dated decision slugs — much of the rulebook already encodes "this is git in spirit." Now it's git in fact, which means commit history is the real audit trail (the `log.md` narrative is complementary, not the only source of truth).
+- **Sibling-clone layout enables federation.** Every contributor's `~/janus/prime-radiant/` directory becomes a flat map of every instance they have access to. Cross-vault references in the [[peer-to-peer-mesh-federation-pattern]] resolve to cross-clone paths.
+
+Obsidian Git plugin handles sync (auto-pull on open, auto-commit-and-push on save, configured per-vault). For agent operations, see §5's framing on `git pull` / `git commit` / `git push` cadence.
 
 ### System-of-record map (as of 2026-05-06)
 
@@ -243,6 +258,17 @@ The four dimensions are **orthogonal** — a single page contributes to multiple
 ## 5. Workflows
 
 There are four operations: **Ingest**, **Query**, **Lint**, and **Index update**.
+
+### Git-awareness across every workflow
+
+Every workflow below runs against a git working tree (see §1 "Substrate — GitHub-backed Git repos"). The standing rule:
+
+- **Begin every operation with `git pull` (or its Obsidian Git plugin equivalent).** Ensures the working tree is current before any read or write. Stale local state is the most common cause of merge conflicts and stale-claim regressions.
+- **End every write-producing operation with `git add . && git commit -m "<concise message>" && git push`.** Ingest, lint, and "filed-back" queries all produce writes; query that only reads doesn't. The commit message convention: same shape as the `log.md` entry header — e.g. `ingest | 2026-05-13-aio-it-meeting | meeting`, `lint | 2026-05-13`, `schema-update | CLAUDE.md v0.11`. The git log becomes a per-operation index that complements `log.md`'s narrative.
+- **One logical change per commit.** Batch ingests are one commit; multi-file lint fixes that share a theme are one commit; unrelated edits that happen to be in the same session are separate commits.
+- **Don't `git reset` or rewrite history.** The git log is part of the audit trail — superseded decisions, dead-end migrations, and lint-fix passes all stay on the record alongside `log.md`'s narrative form. Per the "wiki captured a dead-end" lesson (see 2026-05-13 log entry batch-ingest), history is intentional.
+
+Cowork executes pull/commit/push automatically when invoked through standard workflows. If running operations by hand or via a different surface (raw shell, Claude Code), the rule is to do them explicitly.
 
 ### 5.1 Ingest
 
