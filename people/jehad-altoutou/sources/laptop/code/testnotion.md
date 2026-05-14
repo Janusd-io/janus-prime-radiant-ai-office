@@ -14,9 +14,13 @@ original_ext: .swift
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: desktop-captures
+
 ---
 
 # testNotion
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Claude Projects/Nomi-Internal-Intelligence/testNotion.swift` on 2026-05-14._
 

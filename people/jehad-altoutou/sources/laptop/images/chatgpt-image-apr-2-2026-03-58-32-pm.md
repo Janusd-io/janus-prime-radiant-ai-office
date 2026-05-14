@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:41Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: brightbean-studio
+
 ---
 
 # ChatGPT_Image_Apr_2_2026_03_58_32_PM
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/media/media_library/2026/04/ChatGPT_Image_Apr_2_2026_03_58_32_PM.png` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.92
 sensitivity_reason: "Public welcome doc for /janus-brain skill — dept-shareable onboarding pointer."
+project: desktop-captures
+
 ---
 
 # Janus Brain - Start Here
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Janus Brain - Start Here.md` on 2026-05-14._
 

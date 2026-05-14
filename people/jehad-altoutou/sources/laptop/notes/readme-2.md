@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:33Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Internal install guide for HR — operational"
+project: assessify
+
 ---
 
 # README

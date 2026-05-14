@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:32Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Auto-generated Graphify analysis of the Assessify codebase — engineering metadata, no PII"
+project: assessify
+
 ---
 
 # GRAPH_REPORT

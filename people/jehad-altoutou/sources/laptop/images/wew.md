@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:48Z"
 ocr_char_count: 66
 needs_vision_description: false
+project: downloads-captures
+
 ---
 
 # Wew
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/Wew.png` on 2026-05-14._
 

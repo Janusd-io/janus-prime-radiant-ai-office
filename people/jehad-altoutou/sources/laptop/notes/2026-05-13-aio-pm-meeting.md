@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:47Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "AIO project-management meeting with Michael, Euclid, Rosa — explicitly marked `privacy: public` in source frontmatter; covers GitHub-as-canonical-store decision and PM team Prime Radiant rollout"
+project: downloads-captures
+
 ---
 
 # 2026-05-13-aio-pm-meeting
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/2026-05-13-aio-pm-meeting.md` on 2026-05-14._
 

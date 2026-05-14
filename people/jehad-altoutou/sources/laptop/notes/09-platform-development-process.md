@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.92
 sensitivity_reason: "Operational platform-development process owned by Jehad; references shared infra and shared programmes."
+project: janus-puls-onboarding
+
 ---
 
 # 09-PLATFORM-DEVELOPMENT-PROCESS
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/09-PLATFORM-DEVELOPMENT-PROCESS.md` on 2026-05-14._
 

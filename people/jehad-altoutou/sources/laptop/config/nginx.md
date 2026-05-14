@@ -14,9 +14,13 @@ original_ext: .conf
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: desktop-captures
+
 ---
 
 # nginx
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Form Request/nginx.conf` on 2026-05-14._
 

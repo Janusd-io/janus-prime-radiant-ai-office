@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Jehad's PULS process doc for platform development — dept-shareable IMS work artefact, uses Assessify as worked example"
+project: desktop-captures
+
 ---
 
 # PULS-Platform-Development-Process
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-Platform-Development-Process.docx` on 2026-05-14._
 

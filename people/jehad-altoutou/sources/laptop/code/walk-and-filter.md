@@ -14,9 +14,13 @@ original_ext: .py
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: janus-brain-bootstrap
+
 ---
 
 # walk-and-filter
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/scripts/walk-and-filter.py` on 2026-05-14._
 

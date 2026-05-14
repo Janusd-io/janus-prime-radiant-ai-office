@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Operational tactical note — single email to send Simon; work content (no personal/HR/credentials)"
+project: janus-puls-onboarding
+
 ---
 
 # 02-DO-THIS-TODAY
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/02-DO-THIS-TODAY.md` on 2026-05-14._
 

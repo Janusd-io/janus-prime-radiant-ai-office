@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.92
 sensitivity_reason: "Operational process documentation for AI Ops Engineer role; covers C1/C2/S2 IMS processes; dept-shareable."
+project: janus-puls-onboarding
+
 ---
 
 # 07-MEETING-TO-TASK-WORKFLOW
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/07-MEETING-TO-TASK-WORKFLOW.md` on 2026-05-14._
 

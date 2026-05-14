@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Jehad's First Voice questionnaire response to ISO lead — descriptive of his role; dept-shareable IMS evidence."
+project: janus-puls-onboarding
+
 ---
 
 # 06-FIRST-VOICE-FINAL
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/06-FIRST-VOICE-FINAL.md` on 2026-05-14._
 

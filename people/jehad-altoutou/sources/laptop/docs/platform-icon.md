@@ -14,9 +14,13 @@ original_ext: .html
 category: docs
 extracted_with: pandoc
 extracted_at: "2026-05-14T09:51:38Z"
+project: brightbean-studio
+
 ---
 
 # _platform_icon
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/social_accounts/partials/_platform_icon.html` on 2026-05-14._
 

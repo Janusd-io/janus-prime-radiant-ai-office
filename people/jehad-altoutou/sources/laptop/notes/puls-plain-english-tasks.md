@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Plain-English orientation doc — duplicates 01-start-here + 03-your-5-tasks content but for Jehad's own desktop reference; dept-shareable."
+project: desktop-captures
+
 ---
 
 # PULS-plain-english-tasks
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-plain-english-tasks.md` on 2026-05-14._
 

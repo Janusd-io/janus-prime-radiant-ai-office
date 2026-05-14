@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:32Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Trivial pointer file (@AGENTS.md) — no content"
+project: assessify
+
 ---
 
 # CLAUDE

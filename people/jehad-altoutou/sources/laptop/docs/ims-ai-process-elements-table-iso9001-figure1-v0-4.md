@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Same Simon IMS-PRC-AI-001 process elements table as v0-4-1 (this is the Desktop copy) — dept-wide IMS work artefact"
+project: desktop-captures
+
 ---
 
 # IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4.docx` on 2026-05-14._
 

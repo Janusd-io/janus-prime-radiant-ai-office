@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "ISO/IMS process diagram prompt — AI Department parent process, work content"
+project: janus-puls-onboarding
+
 ---
 
 # diagram-prompt-parent-process
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/examples/ai-department/diagram-prompt-parent-process.md` on 2026-05-14._
 

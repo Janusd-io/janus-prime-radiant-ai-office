@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Internal template file from janus-brain-bootstrap skill — no secrets, public-org tooling artifact"
+project: janus-brain-bootstrap
+
 ---
 
 # meeting-source
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/templates/meeting-source.md` on 2026-05-14._
 

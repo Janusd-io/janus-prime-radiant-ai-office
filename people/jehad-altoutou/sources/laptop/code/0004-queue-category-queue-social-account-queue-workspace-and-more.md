@@ -14,9 +14,13 @@ original_ext: .py
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:41Z"
+project: brightbean-studio
+
 ---
 
 # 0004_queue_category_queue_social_account_queue_workspace_and_more
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/apps/calendar/migrations/0004_queue_category_queue_social_account_queue_workspace_and_more.py` on 2026-05-14._
 

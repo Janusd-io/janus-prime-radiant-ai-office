@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Internal-use proprietary licence text. Public-ish in the sense that it ships in the repo, but explicitly limits distribution to Janus employees. No personal/financial/credential content."
+project: janus-brain-bootstrap
+
 ---
 
 # LICENSE
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/LICENSE.md` on 2026-05-14._
 

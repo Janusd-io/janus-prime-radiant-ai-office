@@ -14,9 +14,13 @@ original_ext: .py
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:41Z"
+project: brightbean-studio
+
 ---
 
 # 0009_populate_tags_from_json
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/apps/composer/migrations/0009_populate_tags_from_json.py` on 2026-05-14._
 

@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:32Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Internal ISO 27001 audit package for Assessify — for authorised auditors, classified Internal not Confidential. Operational doc, not personal data."
+project: assessify
+
 ---
 
 # iso-audit-package

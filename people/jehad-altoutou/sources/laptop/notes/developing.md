@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.88
 sensitivity_reason: "Developer notes on /ims-enrolment skill maintenance; dept-shareable."
+project: janus-puls-onboarding
+
 ---
 
 # DEVELOPING
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/DEVELOPING.md` on 2026-05-14._
 

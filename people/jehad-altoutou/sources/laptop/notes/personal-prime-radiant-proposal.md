@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Strategic brief proposing the Personal Prime Radiant tier to Michael; AIO-internal content, no PII or credentials"
+project: janus-brain-bootstrap
+
 ---
 
 # personal-prime-radiant-proposal
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/briefs/personal-prime-radiant-proposal.md` on 2026-05-14._
 

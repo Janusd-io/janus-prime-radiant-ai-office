@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Per-person CLAUDE.md template scaffolded by `/janus-brain`; documents the single-vault model — no PII"
+project: janus-brain-bootstrap
+
 ---
 
 # personal-claude-md
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/templates/personal-claude-md.md` on 2026-05-14._
 

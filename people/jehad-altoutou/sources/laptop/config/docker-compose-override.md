@@ -14,9 +14,13 @@ original_ext: .yml
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:36Z"
+project: brightbean-studio
+
 ---
 
 # docker-compose.override
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/docker-compose.override.yml` on 2026-05-14._
 

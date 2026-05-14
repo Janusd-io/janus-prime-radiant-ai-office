@@ -14,9 +14,13 @@ original_ext: .tsx
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: desktop-captures
+
 ---
 
 # page
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Claude Projects/Dubai-Property-Leads/src/app/admin/login/page.tsx` on 2026-05-14._
 

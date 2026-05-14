@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Public basename-glob exclusion list shipped in the skill repo — describes privacy categories but contains no actual secrets."
+project: janus-brain-bootstrap
+
 ---
 
 # exclude-patterns
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/config/exclude-patterns.txt` on 2026-05-14._
 

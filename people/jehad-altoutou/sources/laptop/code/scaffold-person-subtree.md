@@ -14,9 +14,13 @@ original_ext: .sh
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: janus-brain-bootstrap
+
 ---
 
 # scaffold-person-subtree
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/scripts/scaffold-person-subtree.sh` on 2026-05-14._
 

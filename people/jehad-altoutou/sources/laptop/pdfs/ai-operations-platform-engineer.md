@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:48Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Internal job description marked CONFIDENTIAL but functionally a role spec used by HR — dept-shareable. Not personal/PII."
+project: downloads-captures
+
 ---
 
 # AI_Operations Platform Engineer
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/AI_Operations Platform Engineer.pdf` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Empty template config file with usage instructions, no content yet, ships in the public skill repo."
+project: janus-brain-bootstrap
+
 ---
 
 # user-exclude
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/config/user-exclude.txt` on 2026-05-14._
 

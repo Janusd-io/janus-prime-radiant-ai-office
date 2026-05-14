@@ -14,9 +14,13 @@ original_ext: .yaml
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: janus-brain-bootstrap
+
 ---
 
 # departments
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/config/departments.yaml` on 2026-05-14._
 

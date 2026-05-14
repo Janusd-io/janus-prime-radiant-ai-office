@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:49Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Janus brand guidelines — externally distributed marketing collateral; org-public"
+project: downloads-captures
+
 ---
 
 # Janus branding (1)
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/Janus branding (1).pdf` on 2026-05-14._
 

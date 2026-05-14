@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Internal template file from janus-brain-bootstrap skill — non-sensitive scaffolding"
+project: janus-brain-bootstrap
+
 ---
 
 # decision
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/templates/decision.md` on 2026-05-14._
 

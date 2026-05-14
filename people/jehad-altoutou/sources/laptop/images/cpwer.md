@@ -16,6 +16,8 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:33Z"
 ocr_char_count: 223
 needs_vision_description: false
+project: vibevoice
+
 ---
 
 # cpWER

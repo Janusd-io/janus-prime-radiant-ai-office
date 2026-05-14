@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:49Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: downloads-captures
+
 ---
 
 # ChatGPT Image Apr 2, 2026, 03_58_32 PM (1)
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/ChatGPT Image Apr 2, 2026, 03_58_32 PM (1).png` on 2026-05-14._
 

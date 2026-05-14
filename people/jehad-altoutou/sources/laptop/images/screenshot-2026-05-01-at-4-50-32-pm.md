@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:43Z"
 ocr_char_count: 193
 needs_vision_description: false
+project: desktop-captures
+
 ---
 
 # Screenshot 2026-05-01 at 4.50.32 PM
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Screenshot 2026-05-01 at 4.50.32 PM.png` on 2026-05-14._
 

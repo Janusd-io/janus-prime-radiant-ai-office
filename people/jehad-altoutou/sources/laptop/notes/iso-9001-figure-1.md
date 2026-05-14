@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "ISO/IMS reference doc — Figure 1 schematic explainer; work content"
+project: janus-puls-onboarding
+
 ---
 
 # iso-9001-figure-1
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references/iso-9001-figure-1.md` on 2026-05-14._
 

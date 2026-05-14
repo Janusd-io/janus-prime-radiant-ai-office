@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Janus AI Charter & Policy v2.1 (ISO 42001 compliance) — formal organisational policy, AI Office owned, intended for org-wide compliance reference"
+project: desktop-captures
+
 ---
 
 # Section_5_AI_Charter_Policy_v2.0
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Section_5_AI_Charter_Policy_v2.0.docx` on 2026-05-14._
 

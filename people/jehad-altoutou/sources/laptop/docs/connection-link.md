@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:41Z"
 sensitivity: dept
 sensitivity_confidence: 0.70
 sensitivity_reason: "Email template HTML for Brightbean Studio onboarding flow — boilerplate-ish work output, no PII; dept-shareable but low-signal"
+project: brightbean-studio
+
 ---
 
 # connection_link
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/onboarding/email/connection_link.html` on 2026-05-14._
 

@@ -14,9 +14,13 @@ original_ext: .py
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:41Z"
+project: brightbean-studio
+
 ---
 
 # 0006_populate_default_idea_groups
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/apps/composer/migrations/0006_populate_default_idea_groups.py` on 2026-05-14._
 

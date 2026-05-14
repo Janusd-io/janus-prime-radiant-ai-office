@@ -14,9 +14,13 @@ original_ext: .js
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: desktop-captures
+
 ---
 
 # tailwind.config
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Form Request/tailwind.config.js` on 2026-05-14._
 

@@ -14,9 +14,13 @@ original_ext: .html
 category: docs
 extracted_with: pandoc
 extracted_at: "2026-05-14T09:51:37Z"
+project: brightbean-studio
+
 ---
 
 # _no_channels_empty_state
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/calendar/partials/_no_channels_empty_state.html` on 2026-05-14._
 

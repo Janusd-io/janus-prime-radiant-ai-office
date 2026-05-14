@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Janus AI Charter & Policy — company-wide policy document, org-relevant; not personal/confidential"
+project: desktop-captures
+
 ---
 
 # Section 5_ AI Charter & Policy (AI Native Framework) 7 January 2026 v1
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Section 5_ AI Charter & Policy (AI Native Framework) 7 January 2026 v1.pdf` on 2026-05-14._
 

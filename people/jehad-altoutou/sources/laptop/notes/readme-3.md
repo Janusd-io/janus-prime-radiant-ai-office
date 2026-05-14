@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:33Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Public open-source Microsoft README clone in user's workspace — no PII or confidential content"
+project: vibevoice
+
 ---
 
 # README

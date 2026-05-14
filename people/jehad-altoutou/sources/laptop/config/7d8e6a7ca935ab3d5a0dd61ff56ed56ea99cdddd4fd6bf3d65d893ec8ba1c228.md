@@ -14,9 +14,13 @@ original_ext: .json
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:36Z"
+project: brightbean-studio
+
 ---
 
 # 7d8e6a7ca935ab3d5a0dd61ff56ed56ea99cdddd4fd6bf3d65d893ec8ba1c228
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/graphify-out/cache/7d8e6a7ca935ab3d5a0dd61ff56ed56ea99cdddd4fd6bf3d65d893ec8ba1c228.json` on 2026-05-14._
 

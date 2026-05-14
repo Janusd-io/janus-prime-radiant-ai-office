@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:49Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "ISO 9001 process elements table for AI Tools management — clearly dept-wide IMS/ISO work product"
+project: downloads-captures
+
 ---
 
 # IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4 (1)
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/IMS-AI-Process_Elements_Table_ISO9001_Figure1_v0.4 (1).docx` on 2026-05-14._
 

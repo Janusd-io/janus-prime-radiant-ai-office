@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Janus AI Charter & Policy (Section 5) — internal but dept-shareable policy framework; explicitly governs all employees, so AIO members must reference."
+project: desktop-captures
+
 ---
 
 # Section 5_ AI Charter & Policy (AI Native Framework) 30 March 2026 v2
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Section 5_ AI Charter & Policy (AI Native Framework) 30 March 2026 v2.md` on 2026-05-14._
 

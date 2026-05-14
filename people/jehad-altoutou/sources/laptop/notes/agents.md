@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:32Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Internal coding-agent rulebook — operational"
+project: assessify
+
 ---
 
 # AGENTS

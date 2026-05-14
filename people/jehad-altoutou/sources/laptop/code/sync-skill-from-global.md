@@ -14,9 +14,13 @@ original_ext: .sh
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: janus-puls-onboarding
+
 ---
 
 # sync-skill-from-global
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/scripts/sync-skill-from-global.sh` on 2026-05-14._
 

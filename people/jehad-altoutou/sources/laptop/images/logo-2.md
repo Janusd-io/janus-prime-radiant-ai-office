@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:46Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: desktop-captures
+
 ---
 
 # logo
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Form Request copy/public/logo.png` on 2026-05-14._
 

@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:32Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Internal operations manual — no PII, operational only"
+project: assessify
+
 ---
 
 # SOP

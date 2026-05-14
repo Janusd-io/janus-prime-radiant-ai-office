@@ -14,9 +14,13 @@ original_ext: .yaml
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:36Z"
+project: brightbean-studio
+
 ---
 
 # render
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/render.yaml` on 2026-05-14._
 

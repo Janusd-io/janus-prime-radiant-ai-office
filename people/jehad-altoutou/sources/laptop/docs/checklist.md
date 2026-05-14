@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:41Z"
 sensitivity: dept
 sensitivity_confidence: 0.70
 sensitivity_reason: "Brightbean Studio onboarding checklist HTML partial — boilerplate, no PII"
+project: brightbean-studio
+
 ---
 
 # _checklist
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/onboarding/partials/_checklist.html` on 2026-05-14._
 

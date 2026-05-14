@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Jehad's PULS process doc for tool evaluation/onboarding — dept-shareable IMS work artefact"
+project: desktop-captures
+
 ---
 
 # PULS-Tool-Evaluation-Procedure
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-Tool-Evaluation-Procedure.docx` on 2026-05-14._
 

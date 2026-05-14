@@ -14,9 +14,13 @@ original_ext: .html
 category: docs
 extracted_with: pandoc
 extracted_at: "2026-05-14T09:51:39Z"
+project: brightbean-studio
+
 ---
 
 # template_picker
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/composer/partials/template_picker.html` on 2026-05-14._
 

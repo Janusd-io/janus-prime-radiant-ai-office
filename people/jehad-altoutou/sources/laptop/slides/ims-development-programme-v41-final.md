@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:50Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Same content as PDF twin — internal IMS/ISO programme deck, org-shareable"
+project: downloads-captures
+
 ---
 
 # IMS_Development_Programme_v41 Final
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/IMS_Development_Programme_v41 Final.pptx` on 2026-05-14._
 

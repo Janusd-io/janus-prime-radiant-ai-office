@@ -14,9 +14,13 @@ original_ext: .js
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:36Z"
+project: brightbean-studio
+
 ---
 
 # tailwind.config
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/theme/static_src/tailwind.config.js` on 2026-05-14._
 

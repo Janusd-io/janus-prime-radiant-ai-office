@@ -14,6 +14,8 @@ original_ext: .json
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:32Z"
+project: assessify
+
 ---
 
 # manifest

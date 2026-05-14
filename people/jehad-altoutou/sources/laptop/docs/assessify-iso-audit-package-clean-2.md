@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Clean copy of the Assessify ISO 27001 audit package — same work artefact as assessify-iso-audit-package, dept-shareable"
+project: desktop-captures
+
 ---
 
 # [[assessify|Assessify]]-ISO-Audit-Package-CLEAN
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Assessify-ISO-Audit-Package-CLEAN.docx` on 2026-05-14._
 

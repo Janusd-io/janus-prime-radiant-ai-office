@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Architecture spec for the janus-brain rewrite — internal dept-shared design doc."
+project: janus-brain-bootstrap
+
 ---
 
 # REWRITE-SPEC
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/REWRITE-SPEC.md` on 2026-05-14._
 

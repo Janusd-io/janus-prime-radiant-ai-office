@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:36Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: brightbean-studio
+
 ---
 
 # web-app-manifest-512x512
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/static/favicon/web-app-manifest-512x512.png` on 2026-05-14._
 

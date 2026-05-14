@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Operational process documentation Jehad authored for PULS/IMS — explicitly intended for Simon (ISO Lead) review and dept-wide reference"
+project: desktop-captures
+
 ---
 
 # PULS-Meeting-to-Task-Workflow
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-Meeting-to-Task-Workflow.docx` on 2026-05-14._
 

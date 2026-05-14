@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "PULS First Voice formal response — work content for IMS submission"
+project: janus-puls-onboarding
+
 ---
 
 # 04-FORMAL-RESPONSE
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/04-FORMAL-RESPONSE.md` on 2026-05-14._
 

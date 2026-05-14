@@ -14,9 +14,13 @@ original_ext: .py
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:41Z"
+project: brightbean-studio
+
 ---
 
 # 0003_add_instagram_personal_platform
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/apps/social_accounts/migrations/0003_add_instagram_personal_platform.py` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Onboarding task list for Jehad's PULS engagement; dept-relevant orientation material, no sensitive content."
+project: janus-puls-onboarding
+
 ---
 
 # 03-YOUR-5-TASKS
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/03-YOUR-5-TASKS.md` on 2026-05-14._
 

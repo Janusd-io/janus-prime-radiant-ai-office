@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:41Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Jehad's IMS First Voice questionnaire response to Simon — formal IMS-programme document describing role/process; dept-shareable"
+project: desktop-captures
+
 ---
 
 # PULS-First-Voice-Jehad
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-First-Voice-Jehad.docx` on 2026-05-14._
 

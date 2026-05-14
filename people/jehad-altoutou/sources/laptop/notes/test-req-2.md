@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.75
 sensitivity_reason: "Captured HTTP 401 response from Google Drive — no proprietary data; harmless test artifact."
+project: desktop-captures
+
 ---
 
 # test_req
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Form Request copy/test_req.txt` on 2026-05-14._
 

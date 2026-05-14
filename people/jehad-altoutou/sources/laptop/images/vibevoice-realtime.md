@@ -16,6 +16,8 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:36Z"
 ocr_char_count: 531
 needs_vision_description: false
+project: vibevoice
+
 ---
 
 # VibeVoice_Realtime

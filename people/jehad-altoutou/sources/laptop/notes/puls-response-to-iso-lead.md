@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.88
 sensitivity_reason: "Long-form Figure-1 schematic response from Jehad to Simon — IMS evidence material, dept-shareable."
+project: desktop-captures
+
 ---
 
 # puls-response-to-iso-lead
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/puls-response-to-iso-lead.md` on 2026-05-14._
 

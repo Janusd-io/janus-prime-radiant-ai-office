@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:43Z"
 sensitivity: dept
 sensitivity_confidence: 0.92
 sensitivity_reason: "Formal Janus AI Tool Evaluation & Approval Framework (DRAFT v0.1, Office of the COO) — dept-shareable governance document."
+project: desktop-captures
+
 ---
 
 # ai_tool_evaluation_framework
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/ai_tool_evaluation_framework.md` on 2026-05-14._
 

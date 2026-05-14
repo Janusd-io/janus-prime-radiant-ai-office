@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "The canonical orchestration prompt for /janus-brain — internal-use dept documentation."
+project: janus-brain-bootstrap
+
 ---
 
 # SKILL
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/SKILL.md` on 2026-05-14._
 

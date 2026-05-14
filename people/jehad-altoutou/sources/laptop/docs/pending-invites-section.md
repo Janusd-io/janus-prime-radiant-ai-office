@@ -14,9 +14,13 @@ original_ext: .html
 category: docs
 extracted_with: pandoc
 extracted_at: "2026-05-14T09:51:38Z"
+project: brightbean-studio
+
 ---
 
 # pending_invites_section
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/client_portal/admin/partials/pending_invites_section.html` on 2026-05-14._
 

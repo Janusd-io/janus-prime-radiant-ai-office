@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "ISO/IMS reference doc — Simon's formal template summary; work content"
+project: janus-puls-onboarding
+
 ---
 
 # simon-ims-prc-ai-001-v0.4
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references/simon-ims-prc-ai-001-v0.4.md` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Template document for the IMS-enrolment skill — internal dept-shared process artefact."
+project: janus-puls-onboarding
+
 ---
 
 # handover-to-simon
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/handover-to-simon.md` on 2026-05-14._
 

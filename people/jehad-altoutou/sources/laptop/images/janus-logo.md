@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:47Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: downloads-captures
+
 ---
 
 # Janus Logo
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/Janus Logo.jpg` on 2026-05-14._
 

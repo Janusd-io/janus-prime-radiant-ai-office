@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.85
 sensitivity_reason: "Installer/runbook for the /ims-enrolment skill — distributable to other Janus depts; work content"
+project: janus-puls-onboarding
+
 ---
 
 # INSTALL
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/INSTALL.md` on 2026-05-14._
 

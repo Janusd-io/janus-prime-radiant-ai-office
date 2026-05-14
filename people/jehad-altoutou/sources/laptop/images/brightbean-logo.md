@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:36Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: brightbean-studio
+
 ---
 
 # brightbean-logo
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/static/img/brightbean-logo.webp` on 2026-05-14._
 

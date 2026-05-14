@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Empty IMS parent-process template — public-internal process artefact."
+project: janus-puls-onboarding
+
 ---
 
 # parent-department-process
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/templates/parent-department-process.md` on 2026-05-14._
 

@@ -16,9 +16,13 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:50Z"
 ocr_char_count: 308
 needs_vision_description: false
+project: downloads-captures
+
 ---
 
 # Public Internet Candidate-2026-04-28-125606
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/Public Internet Candidate-2026-04-28-125606.png` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "ISO/IMS reference doc — process document template; work content"
+project: janus-puls-onboarding
+
 ---
 
 # seven-section-template
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/references/seven-section-template.md` on 2026-05-14._
 

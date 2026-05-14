@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Design rationale for the janus-brain skill — internal dept documentation, no PII / secrets / personal content."
+project: janus-brain-bootstrap
+
 ---
 
 # prime-radiant-personal
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/references/prime-radiant-personal.md` on 2026-05-14._
 

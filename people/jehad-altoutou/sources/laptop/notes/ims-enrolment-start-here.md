@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Public welcome doc for /ims-enrolment skill — dept-shareable onboarding pointer."
+project: desktop-captures
+
 ---
 
 # [[ims-enrolment|IMS Enrolment]] - Start Here
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/IMS Enrolment - Start Here.md` on 2026-05-14._
 

@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Per-person interview prompt template for IMS enrolment — public-internal process artefact."
+project: janus-puls-onboarding
+
 ---
 
 # interview-first-voice
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/prompts/interview-first-voice.md` on 2026-05-14._
 

@@ -14,9 +14,13 @@ original_ext: .html
 category: docs
 extracted_with: pandoc
 extracted_at: "2026-05-14T09:51:40Z"
+project: brightbean-studio
+
 ---
 
 # _version_list
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/templates/media_library/_version_list.html` on 2026-05-14._
 

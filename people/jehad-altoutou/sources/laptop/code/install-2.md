@@ -14,9 +14,13 @@ original_ext: .sh
 category: code
 extracted_with: code-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: janus-brain-bootstrap
+
 ---
 
 # install
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/install.sh` on 2026-05-14._
 

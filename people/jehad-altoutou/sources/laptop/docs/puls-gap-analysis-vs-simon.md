@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:42Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Gap-analysis comparing Jehad's process docs against Simon's IMS-PRC-AI-001 — explicitly intended for Simon and dept-wide IMS alignment"
+project: desktop-captures
+
 ---
 
 # PULS-Gap-Analysis-vs-Simon
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/PULS-Gap-Analysis-vs-Simon.docx` on 2026-05-14._
 

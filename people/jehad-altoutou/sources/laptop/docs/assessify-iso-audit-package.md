@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:48Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Internal ISO 27001 audit package for Assessify platform — work artefact, shareable across dept"
+project: downloads-captures
+
 ---
 
 # [[assessify|Assessify]]-ISO-Audit-Package
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/Assessify-ISO-Audit-Package.docx` on 2026-05-14._
 

@@ -14,9 +14,13 @@ original_ext: .json
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:41Z"
+project: brightbean-studio
+
 ---
 
 # holidays
+
+> Part of [[brightbean-studio|Brightbean Studio]] — captured by /janus-brain.
 
 _Extracted from `brightbean-studio/apps/calendar/data/holidays.json` on 2026-05-14._
 

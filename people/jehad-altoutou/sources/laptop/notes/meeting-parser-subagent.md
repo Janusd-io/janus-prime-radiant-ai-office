@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.95
 sensitivity_reason: "Internal subagent prompt for janus-brain — no secrets"
+project: janus-brain-bootstrap
+
 ---
 
 # meeting-parser-subagent
+
+> Part of [[janus-brain-bootstrap|Janus Brain Bootstrap]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-brain-bootstrap/skills/janus-brain/prompts/meeting-parser-subagent.md` on 2026-05-14._
 

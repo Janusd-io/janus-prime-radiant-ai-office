@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.78
 sensitivity_reason: "Public-facing llms.txt for Dubai Property Leads — intentionally crawler-readable canonical content."
+project: desktop-captures
+
 ---
 
 # llms
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Claude Projects/Dubai-Property-Leads/public/llms.txt` on 2026-05-14._
 

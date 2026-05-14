@@ -15,6 +15,8 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Comprehensive build-session handover. Contains email addresses (already public on the user's CLAUDE.md), GitHub repo URLs, and architectural decisions — all dept-internal but no secrets, salaries, or "
+project: janus-brain-bootstrap
+
 ---
 
 # HANDOVER

@@ -14,9 +14,13 @@ original_ext: .yml
 category: config
 extracted_with: config-fenced
 extracted_at: "2026-05-14T09:51:46Z"
+project: desktop-captures
+
 ---
 
 # project
+
+> Part of [[desktop-captures|Desktop Captures]] — captured by /janus-brain.
 
 _Extracted from `Desktop/Claude Projects/Nomi-Internal-Intelligence/project.yml` on 2026-05-14._
 

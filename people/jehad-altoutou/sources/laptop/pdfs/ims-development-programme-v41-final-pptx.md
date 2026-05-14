@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:47Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Internal company-wide IMS / ISO programme deck — org-shareable"
+project: downloads-captures
+
 ---
 
 # IMS_Development_Programme_v41 Final.pptx
+
+> Part of [[downloads-captures|Downloads Captures]] — captured by /janus-brain.
 
 _Extracted from `Downloads/IMS_Development_Programme_v41 Final.pptx.pdf` on 2026-05-14._
 

@@ -16,6 +16,8 @@ extracted_with: tesseract
 extracted_at: "2026-05-14T09:51:33Z"
 ocr_char_count: 0
 needs_vision_description: true
+project: assessify
+
 ---
 
 # icon

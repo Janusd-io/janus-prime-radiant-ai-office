@@ -15,9 +15,13 @@ extracted_at: "2026-05-14T09:51:46Z"
 sensitivity: dept
 sensitivity_confidence: 0.90
 sensitivity_reason: "Skill source code for /ims-enrolment — distributable internal tooling; work content"
+project: janus-puls-onboarding
+
 ---
 
 # SKILL
+
+> Part of [[janus-puls-onboarding|Janus PULS Onboarding]] — captured by /janus-brain.
 
 _Extracted from `Documents/janus-puls-onboarding/skills/ims-enrolment/SKILL.md` on 2026-05-14._
 
