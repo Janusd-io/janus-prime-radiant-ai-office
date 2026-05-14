@@ -1318,3 +1318,38 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - **`it-ops` slug retained**, display title only updated. Renaming the department slug to `it-projects-ops` or similar would propagate inbound-reference breakage across the vault; the cost of breaking refs vs the cost of "the slug is slightly off from the display name" — kept the slug, updated the display. May revisit when Project Management proves out as a Prime Radiant instance worth tracking as a peer department entity.
 - **Spike stays TBC.** Did not promote his entity escalation despite Lysander being ready — per Michael's instruction. Once Deel is set up, the role-clarification will be straightforward; we can promote both together or just Spike at that point.
 - **PMO acronym kept.** Distinct from "PM" — Project Management Office is unambiguous and Lysander used it explicitly. Not subject to Michael's directive.
+
+## [2026-05-14 13:30] standup-proposal deck refresh + rollout-shape decisions
+- driver: Michael — three operational corrections on top of the Project Management Prime Radiant rollout planning:
+  - Rosa's full name is Rosa Wu.
+  - Personal vaults shelved (Jehad + Michael decided this morning). Federation-architecture redesign on the GitHub substrate is in flight; personal-vault federation rules are more complex than ready to solve now.
+  - Project Management team is all on Windows. AI Office (Michael + Jehad) and Marketing (Andrew) are the only Macs. This rollout doubles as Janus's first Windows deployment of the Prime Radiant pattern.
+
+### New pages created (2)
+- decisions/2026-05-14-personal-vaults-shelved-pending-federation-redesign.md — personal vaults deferred from the rollout; team brains only for Project Management + future departments; revisit when federation-architecture redesign is settled; existing intro-deck framing of "company-wide brain with three layers" now overstated relative to rollout reality, to be updated at next refresh.
+- decisions/2026-05-14-windows-as-first-non-mac-deployment.md — Project Management rollout is explicitly framed as Janus's first Windows deployment; tooling install session expected duration revised ~60 min → ~60-90 min to absorb Windows-specific debugging; Windows-install runbook to be authored post-deployment as a `processes/` page.
+
+### Existing pages updated
+- entities/internal/euclid-wong.md — "Rosa" → "Rosa Wu" in Project Management team listing (3 occurrences).
+- entities/departments/it-ops.md — "Rosa" → "Rosa Wu" in Project Management team people block.
+- questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — "Rosa" → "Rosa Wu" in 3 places (the existing "Lysander/Rosa group" historical references now read "Lysander/Rosa Wu group"; harmless but a future-tidy candidate if Michael wants strict surname-only on first reference).
+- index.md — header tag updated to reflect the two new decisions + Rosa Wu pickup; Decisions section gains the two new resolved decisions in date order.
+
+### Standup-proposal deck refreshed
+- 2026-05-14-project-management-prime-radiant-standup-proposal.html — three substantive changes:
+  - Slide 1 attendee row: "Rosa" → "Rosa Wu".
+  - Slide 3 (How the standup works): five-step list rewritten. Personal-vaults step removed entirely; replaced with a new explicit federation-with-AIO step (mesh subfolder stood up at the same time as the vault). Tooling-install step (now step 3) reframed around Windows-as-first-deployment with explicit framing that any platform friction becomes documented input for downstream rollouts. Trailing callout rewritten: from "yet-another-system" framing to "two things we are explicitly deferring" — personal vaults + the federation-architecture redesign — for transparency.
+  - Slide 5 timeline: Week 1 timeline calls out the Windows install explicitly; weeks 3-4 timeline notes federation-architecture redesign is being shaped by what we learn from this pairing; Month-2-onward bullet mentions personal vaults come back onto the table once federation is settled.
+
+### Judgment calls
+- **Two decisions filed rather than one combined.** Personal-vault deferral and Windows-test framing are conceptually separable (different motivations, different consequences, different revisit triggers) — separate `decisions/` pages preserve each as independently citable. Logged with cross-references to each other.
+- **Existing "Lysander/Rosa group" historical references in the entity escalation question now read "Lysander/Rosa Wu group"** — a small awkwardness from the global Rosa→Rosa Wu sweep over body text that touches historical mentions. Acceptable because the surname is now correct everywhere; the slight phrase-awkwardness is preferable to keeping the first-name-only historical reference once the surname is known. If Michael wants the historical phrasing left intact, easy to revert.
+- **Standup-proposal deck retains 5 slides post-edit** — kept the structure, only changed slide 3 and slide 5 content. Removing personal vaults left a slot which got filled by the explicit mesh-subfolder federation step (previously implicit). Net deck count unchanged.
+- **No update to the company-wide intro deck yet** — the decision page explicitly flags it as "to be updated at next material communication." The intro deck still shows personal vaults prominently; that's overstated relative to the current rollout reality but acceptable for now since it's the long-term goal. Future-tidy candidate when the next town hall iteration is built.
+- **`/janus-pulse` skill** (Michael's personal-vault onboarding skill) — work continues but is off the critical path; decision page captures this explicitly. No edits to Michael's entity page on this — the skill remains an active build, just sequenced later.
+
+### State after this pass
+- Project Management Prime Radiant standup-proposal deck: refreshed, ready to share with Euclid, Rosa Wu, Lysander, Spike.
+- New decisions filed: 2 (personal-vault deferral + Windows-test framing).
+- Updated pages: 4 (Euclid, IT-Ops dept, entity-escalation question, index).
+- Pending follow-ups (not actioned this pass): refresh of the company-wide intro deck to reflect personal-vault deferral; Spike's role pinned down once Deel is set up; one-liner role descriptions for Lysander / Rosa Wu / Spike to be obtained from Euclid.
