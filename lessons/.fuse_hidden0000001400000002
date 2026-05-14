@@ -14,7 +14,7 @@ related: [project-management-digital-delivery-workflow, michael-bruck, euclid-wo
 
 ## What we learned
 
-Lysander Liu, walking through the end-to-end Project Management digital delivery workflow on 14 May 2026, set a clear and defensible upper bound on where AI helps in Project Management work:
+Lysander Liu, walking through the end-to-end Project Manager digital delivery workflow on 14 May 2026, set a clear and defensible upper bound on where AI helps in Project Manager work:
 
 > "AI can help complete the pre-authorisation phase, the project basic information auto-filling. My personal judgment: between thirty percent and sixty percent. Not enough."
 
@@ -26,7 +26,7 @@ And the core principle:
 
 ## Why this matters
 
-Three operational consequences for how the [[janus-prime-radiant-build|Prime Radiant]] rollout treats Project Management (and by extension, every department where there is real project liability):
+Three operational consequences for how the [[janus-prime-radiant-build|Prime Radiant]] rollout treats Project Manager (and by extension, every department where there is real project liability):
 
 ### 1. The 30–60% ceiling is a Project Manager-set scope, not an AI capability ceiling
 
@@ -36,17 +36,17 @@ The number isn't about what models can do — it's about what the Project Manage
 - **Construction / equipment material lists** — even if AI can describe the scope, "what to actually use, how to actually do it — AI can't give that."
 - **The Project Manager's own comprehension of the project** — this is by design not delegated.
 
-For Project Management Prime Radiant initialisation, this means we don't aim for "AI does Project Management"; we aim for "AI gives the Project Manager the strongest first draft and the cleanest synthesis surface."
+For Project Management Prime Radiant initialisation, this means we don't aim for "AI does Project Manager"; we aim for "AI gives Project Manager the strongest first draft and the cleanest synthesis surface."
 
 ### 2. First-draft-only is the contract
 
 Lysander's explicit framing: AI generates draft documents, *people* do the work. Spike's follow-up pushed: *"It doesn't really need to do part of the check on the draft, does it? The whole thing has to be checked over?"* Lysander: *"Yes. You cannot completely trust what AI writes for you."*
 
-For Prime Radiant outputs that land in front of the Project Manager (charter drafts, scope documents, training manual bases, configuration drafts): assume the Project Manager will rewrite at least the substance, and frame AI output explicitly as "draft for your review" not "ready."
+For Prime Radiant outputs that land in front of Project Manager (charter drafts, scope documents, training manual bases, configuration drafts): assume Project Manager will rewrite at least the substance, and frame AI output explicitly as "draft for your review" not "ready."
 
 ### 3. The understanding phase is non-negotiable
 
-Lysander placed Phase 2 (project charter) and Phase 3 (supplementary information loop) of the [[project-management-digital-delivery-workflow|Project Management workflow]] as the most critical: *"the Project Manager must invest, and think independently."*
+Lysander placed Phase 2 (project charter) and Phase 3 (supplementary information loop) of the [[project-management-digital-delivery-workflow|Project Manager workflow]] as the most critical: *"Project Manager must invest, and think independently."*
 
 This is where the AI-Native pitch (per [[ai-native-janus-positioning|Janus's three-pillar messaging]]) actually lands: Pillar 3 — augmenting and upskilling the worker — *not* replacing the worker. Lysander's bounded view of AI maps cleanly onto Pillar 3's framing: the Project Manager remains the substantive author of the project; AI accelerates the preparation, never the comprehension.
 
@@ -54,16 +54,16 @@ This is where the AI-Native pitch (per [[ai-native-janus-positioning|Janus's thr
 
 Threads through several places:
 
-- **The Project Management instance is initialised against [[project-management-digital-delivery-workflow|the workflow]]** — but the *first-draft only* discipline is built into the operating norms of the instance from day one.
-- **AI's role is bounded by phase** — Phase 3 (gap identification), Phase 16 (test scenario generation), Phase 25 (training material drafts) are the sweet spots. Phase 2 (project comprehension) and Phase 5 (Project Management planning) are Project-Manager-only.
-- **Project Management corrections feed the brain** — Lysander's "the brain gets sharper in direct proportion to how often we correct it" is in [[ai-native-janus-positioning|the company intro deck]] and aligns with his stance.
+- **The Project Manager instance is initialised against [[project-management-digital-delivery-workflow|the workflow]]** — but the *first-draft only* discipline is built into the operating norms of the instance from day one.
+- **AI's role is bounded by phase** — Phase 3 (gap identification), Phase 16 (test scenario generation), Phase 25 (training material drafts) are the sweet spots. Phase 2 (project comprehension) and Phase 5 (Project Manager planning) are Project-Manager-only.
+- **Project Manager corrections feed the brain** — Lysander's "the brain gets sharper in direct proportion to how often we correct it" is in [[ai-native-janus-positioning|the company intro deck]] and aligns with his stance.
 - **Verification standards stay Project Manager-owned** — Phase 7 (specialised consulting) defines the verification standard. AI does not get a vote here.
 
 ## Why this is non-obvious
 
-The default framing in mid-2026 industry discourse is "AI replaces Project Management" or "AI runs the project." Lysander's view is the more durable one: AI accelerates the prep work that Project Management was always going to delegate to junior staff anyway; Project Management retains the high-leverage comprehension and decision work that the project's outcome depends on. The 30–60% number reflects this honest accounting.
+The default framing in mid-2026 industry discourse is "AI replaces Project Manager" or "AI runs the project." Lysander's view is the more durable one: AI accelerates the prep work that Project Manager was always going to delegate to junior staff anyway; Project Manager retains the high-leverage comprehension and decision work that the project's outcome depends on. The 30–60% number reflects this honest accounting.
 
-The trap to avoid: pitching the Prime Radiant to Project Management as "the AI will write your project charter for you." Pitch it as: "the AI will give you a clean first draft of the boring 30–60% so you can spend your time on the 40–70% that actually determines whether the project succeeds." That framing matches Lysander's read of his own work — and Project Management will recognise it as honest.
+The trap to avoid: pitching the Prime Radiant to Project Manager as "the AI will write your project charter for you." Pitch it as: "the AI will give you a clean first draft of the boring 30–60% so you can spend your time on the 40–70% that actually determines whether the project succeeds." That framing matches Lysander's read of his own work — and Project Manager will recognise it as honest.
 
 ## Related supporting signal
 
@@ -71,6 +71,6 @@ The trap to avoid: pitching the Prime Radiant to Project Management as "the AI w
 
 ## Watch for
 
-- Whether the 30–60% range holds or shifts as Project Management uses the Prime Radiant — is AI taking more (or less) of the preparation work than Lysander estimated?
+- Whether the 30–60% range holds or shifts as Project Manager uses the Prime Radiant — is AI taking more (or less) of the preparation work than Lysander estimated?
 - Whether other departments (Marketing, HR, ISO, Finance) end up with their own version of this bounded-role principle. The Marketing equivalent emerged in [[2026-05-12-andrew-onboarding-review|Andrew's session]]: AI does first drafts, Andrew owns the strategic positioning. Pattern likely generalises.
-- Whether new joiners to the Project Management team (or any team) recognise the principle quickly, or whether it needs explicit onboarding doctrine.
+- Whether new joiners to Project Manager (or any team) recognise the principle quickly, or whether it needs explicit onboarding doctrine.

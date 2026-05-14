@@ -393,6 +393,16 @@ Per Lysander, captured in [[2026-05-14-ai-bounded-role-in-project-management|the
 
 **Bounded by Lysander's principle:** ~30–60% of *preparation* work is AI-automatable. AI is *first-draft only* — never authoritative. Project Manager cannot delegate understanding; the project comprehension phase (especially Phase 2 + Phase 3) is where Project Manager cuts corners → all the risks happen at the end of the project. *"Catastrophic."*
 
+## Current tooling stack (what we work alongside, not replace)
+
+As of 2026-05-14, the Project Management function operates this workflow primarily through three surfaces. The Project Management Prime Radiant works *alongside* this stack rather than displacing it — the existing Excel + Google Docs structure stays as the working surface during the rollout; the Prime Radiant captures decisions, lessons, and durable knowledge.
+
+- **Excel master spreadsheet** — Lysander's working surface. Walks the entire 28-phase workflow visually with one row per phase; each cell hyperlinks out to the corresponding Google Doc template / working document. This is the high-resolution view of "where are we in this project right now" that he presented during the 14 May walkthrough.
+- **Google Docs network** — per-phase templates and working documents linked from the Excel master. Charter template, formal handoff minutes template, project management plan template, verification deliverables list, training matrix, etc. Templates versioned in-place (Google Docs versioning) but distributed across individual Project Manager working copies — see [[2026-05-14-project-management-document-management-gap|the document-management-gap lesson]] for the structural-versioning concerns this creates.
+- **Monday.com** — Janus-wide execution surface for tasks, projects, action tracking. The Project Management function uses Monday.com alongside its own Excel + Google Docs stack; the Prime Radiant reads from Monday but does not replace it.
+
+**Ingest of the Excel + Google Docs structure is explicitly deferred to the Project Management Prime Radiant instance** (per [[michael-bruck|Michael]], 2026-05-14). The AI Office Prime Radiant does not ingest Lysander's master spreadsheet or the per-project Google Docs network — that content is operational Project Management content and belongs in their vault once it stands up. Understanding the structure remains important for *initialising* the Project Management Prime Radiant (folder taxonomy, template structure, decision-trail discipline, migration path) — but the content itself stays in its current home until the Project Management instance is ready to receive it.
+
 ## Why this document exists (Prime Radiant initialisation context)
 
 Per [[michael-bruck|Michael]] (14 May meeting): the Project Management Prime Radiant instance will be **initialised against this workflow**. The schema, the entity vocabulary, the typical inputs / outputs, the AI-bounded role — all of it gives the Project Management Prime Radiant a *running start* once the Project Management team enrols. It is the answer to the document-management gap Lysander acknowledged in the same meeting — see [[2026-05-14-project-management-document-management-gap]].

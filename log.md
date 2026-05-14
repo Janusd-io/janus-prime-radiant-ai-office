@@ -1464,3 +1464,35 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Project Management entity escalation: closed.
 - Project Management department structure: fully documented across Euclid, Rosa, Lysander, Spike pages + the IT-Ops department page + the project-management-digital-delivery-workflow process page.
 - Pending follow-ups (not actioned this pass): Marketing vault possibly needs migration from Janusd-io to Janusd-com; company-wide intro deck still shows personal vaults prominently and needs a refresh; one-liner role descriptions from Euclid as Michael said he'd get them later.
+
+## [2026-05-14 15:00] context capture | Excel + Google Docs as Project Management current substrate
+- driver: Michael — observation that during the 14 May walkthrough Lysander was presenting from a complex Excel master spreadsheet with cross-links to Google Docs templates and working documents. That was the visual trigger for the document-management-gap line of probing. Project Management Prime Radiant must coexist with this Excel + Google Docs structure plus Monday.com. Crucially: ingest of that Excel/Google-Docs content is **deferred to the Project Management instance** itself, not the AIO instance.
+
+### What this changes operationally
+- The Project Management Prime Radiant rollout is now framed as **coexisting with** the existing Excel + Google Docs substrate, not displacing it. During the rollout: Excel + Google Docs remain the working surface; Prime Radiant captures decisions, lessons, durable knowledge. After the rollout proves out: team chooses what (if anything) to migrate.
+- AIO instance does **not** ingest Lysander's Excel master + Google Docs network. That content is operational Project Management content and belongs in the Project Management Prime Radiant once that vault stands up.
+- Understanding the Excel + Google Docs structure remains important for *initialising* the Project Management Prime Radiant — folder taxonomy, template structure, decision-trail design, migration path — even though the content itself stays in its current home.
+
+### Pages updated
+- **lessons/2026-05-14-project-management-document-management-gap.md** — major update:
+  - "What we learned" section: rewrote opening paragraph to capture what triggered the probe — Lysander's on-screen Excel master spreadsheet with Google-Docs cross-links. The visual was the gap-in-action.
+  - "Side 1 — Project Management has the discipline but not the substrate" section: rewrote the bullet list to lead with the Excel master + Google Docs network as the current operational substrate, before the version/canonical-system-of-record consequences. Adds Monday.com to the picture.
+  - "What changes in the Project Management rollout" section: added two new bullets — (5) Prime Radiant works alongside, not in place of, the current Excel + Google Docs structure; (6) ingest of that structure is explicitly deferred to the Project Management instance, not the AIO instance.
+  - Also did a function-vs-role wording cleanup across this lesson: where "Project Manager" had been over-aggressively swept in for "Project Management" (the function/discipline) by the earlier perl sweep, restored the correct function-level wording. ~10 instances cleaned.
+- **processes/project-management-digital-delivery-workflow.md** — added new "Current tooling stack (what we work alongside, not replace)" section before the "Why this document exists" wrap-up. Documents the three surfaces: Excel master spreadsheet (Lysander's working surface), per-phase Google Docs network, Monday.com. Explicit statement that ingest of these into the AIO instance is deferred per Michael 2026-05-14 — the content belongs in the Project Management Prime Radiant.
+- **lessons/2026-05-14-ai-bounded-role-in-project-management.md** — function-vs-role wording cleanup pass (same root cause as the document-management-gap lesson). ~15 instances of "Project Manager" → "Project Management" where the function was meant, with a handful of role-context corrections going the other way ("front of Project Manager" → "front of the Project Manager"). Substance unchanged; readability improved.
+
+### Deck refinement
+- 2026-05-14-project-management-prime-radiant-standup-proposal.html — Slide 4 (folder structure) gained a new "How this coexists with what you have today" callout at the bottom. Communicates to the audience that Lysander's Excel master + Google Docs stay as their working surface; Prime Radiant captures the durable-knowledge layer alongside; Monday.com stays as-is. Frames the rollout as additive, not displacement — directly responsive to Michael's observation.
+
+### Judgment calls
+- **No new decision page** for the defer-ingest-to-Project-Management-instance call. It's operational sequencing rather than architectural — folded into the document-management-gap lesson (#6 in "What changes") and the workflow process page ("Current tooling stack" section). Easier to find in those contexts than as a standalone decision.
+- **Word-form sweep on the two lessons** was overdue — the earlier "PM → Project Management/Manager" perl sweep had been too aggressive in places where the function (not role) was meant. Today's pass corrected ~25 instances across the two lessons. Substance unchanged.
+- **Slide 4 callout** is the right placement for the coexistence framing — the folder-structure slide is where the audience starts to wonder "but what about all my existing tools?" Surfacing the coexistence answer in the same visual frame addresses the question pre-emptively.
+- **Excel master spreadsheet not promoted to an entity** in the AIO wiki. It's not a Janus-wide vendor or system in the sense `entities/vendors/` captures; it's Lysander's working artefact. If it eventually becomes a wiki page in the Project Management Prime Radiant, that's their call.
+
+### State after this pass
+- Document-management-gap lesson: now grounds the abstract framing in the concrete Excel + Google Docs reality that triggered the probe.
+- Workflow process page: includes the current tooling stack so anyone reading the workflow page understands what the team uses today and what the Prime Radiant coexists with.
+- Standup-proposal deck: signals coexistence to the audience pre-emptively.
+- Pending follow-ups (not actioned this pass): Marketing vault possibly needs migration from Janusd-io to Janusd-com; company-wide intro deck still shows personal vaults prominently and needs a refresh.
