@@ -11,7 +11,7 @@ related: [agent-memory, agentic-ai, model-context-protocol, llm-harness]
 captured_by: jehad-altoutou
 ---
 
-> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `decisions/concepts/agent-harness.md` — this file is preserved as a source for divergent framing / additional context._
+> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `concepts/agent-harness.md` — this file is preserved as a source for divergent framing / additional context._
 
 # Agent Harness
 

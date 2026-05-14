@@ -11,7 +11,7 @@ related: [llm-wiki, prime-radiant-three-layer-architecture, janus-prime-radiant-
 captured_by: jehad-altoutou
 ---
 
-> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `decisions/concepts/gist-pattern-as-template-replacement.md` — this file is preserved as a source for divergent framing / additional context._
+> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `concepts/gist-pattern-as-template-replacement.md` — this file is preserved as a source for divergent framing / additional context._
 
 # Gist pattern — adaptable starting points instead of rigid templates
 

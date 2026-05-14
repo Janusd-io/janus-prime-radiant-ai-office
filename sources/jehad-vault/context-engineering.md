@@ -11,7 +11,7 @@ related: [retrieval-augmented-generation, agentic-ai, agent-memory, agent-harnes
 captured_by: jehad-altoutou
 ---
 
-> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `decisions/concepts/context-engineering.md` — this file is preserved as a source for divergent framing / additional context._
+> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `concepts/context-engineering.md` — this file is preserved as a source for divergent framing / additional context._
 
 # Context Engineering
 

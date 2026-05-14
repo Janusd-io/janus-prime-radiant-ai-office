@@ -1119,3 +1119,33 @@ Three remediation categories surfaced (not auto-fixed, await your call):
 ### Counters
 - Ingest counter reset (most recent lint = this entry).
 - Lint cadence: previous lint 2026-05-12; this lint resolves 125+ items of accumulated ingest pressure.
+
+## [2026-05-14 05:55] schema-migration | decisions/concepts/ → concepts/ | 13 files
+
+Crossed off the top remediation item from the 2026-05-13 lint report (`pulse/2026-05-13-lint.md`).
+
+### Executed
+- Moved 13 concept files from `decisions/concepts/` to top-level `concepts/`. Slugs unchanged, so existing `[[wikilink]]` references continue to resolve via filename match — no body-text rewrites needed for the bulk of references.
+- Rewrote 6 `sources/jehad-vault/*.md` provenance headers that hard-coded the old path (e.g., "the canonical wiki page is at `decisions/concepts/agent-memory.md`" → "the canonical wiki page is at `concepts/agent-memory.md`").
+- Updated `pulse/2026-05-13-lint.md` to past-tense the schema-drift remediation section.
+
+### Preflight check
+33 hardcoded `decisions/concepts/` references found across 8 files. Three buckets:
+- 15 in tonight's lint report → past-tensed (this run)
+- 6 in `sources/jehad-vault/` provenance headers → rewritten (this run)
+- 12 in historical log entries → **left as-is** (log is the audit trail; historical entries describe the world as it was)
+
+### Post-migration sanity
+- Broken-ref recount (excluding lint reports which mention every broken slug in their own bodies for triage purposes): **149 refs / 66 unique slugs** — down from 181 / 79 pre-migration. Net improvement, not a regression.
+- All 13 concept files present in `concepts/` ✓
+- `index.md` Concepts section already pointed at the new path (written ahead of the actual move) — no edit needed.
+
+### Quirk
+`decisions/concepts/` is now empty on disk but couldn't be `rmdir`'d — sandbox mount layer returned EPERM even on an empty directory. Harmless (no files, no breakage), but worth tracking if Obsidian shows it as an empty folder. Workaround if it bothers anyone: delete directly from the host filesystem outside the sandbox.
+
+### Cross-references
+- `pulse/2026-05-13-lint.md` schema-drift section: marked resolved.
+- `CLAUDE.md` §2 now matches reality on this point.
+
+### Follow-up
+Two remediation buckets remain from the lint report (deferred from yesterday): missing-page promotions (8 candidate stubs) and Jehad's unresolved meeting-source refs (~10 slugs). Lint will keep surfacing them until they're triaged.

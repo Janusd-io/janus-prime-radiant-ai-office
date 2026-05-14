@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-13 (3 Arxiv research papers ingested via Web Clipper — MAGMA (multi-graph agent memory), Recursive Language Models (MIT CSAIL, third paradigm for long context), Transformers-are-GNNs (Cambridge, foundational framing). 3 pulses, 2 concept updates (agent-memory promoted from 2-axis to 3-axis taxonomy; context-engineering promoted from 2-mode to 3-mode), agent-memory-2026-q2 brief refreshed with 4th observable pattern (multi-graph relational) and Mnemon confidence upgrade from medium → high based on MAGMA's independent validation, light update to post-rag-agent-data-stack brief. Earlier today: Jehad personal-vault import + 13 May AIO-IT standup — 122 items processed. See log.md.)_
+_Updated: 2026-05-14 (decisions/concepts/ → concepts/ migration executed; 13 concept files moved to top-level concepts/; 6 jehad-vault provenance headers updated; index Concepts section already pointed at the new path so no edit needed. Broken-refs recount net improved: 181 → 149. Resolves the top remediation item from yesterday's lint report.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 

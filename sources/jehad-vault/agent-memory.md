@@ -11,7 +11,7 @@ related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-ge
 captured_by: jehad-altoutou
 ---
 
-> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `decisions/concepts/agent-memory.md` — this file is preserved as a source for divergent framing / additional context._
+> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `concepts/agent-memory.md` — this file is preserved as a source for divergent framing / additional context._
 
 # Agent Memory
 

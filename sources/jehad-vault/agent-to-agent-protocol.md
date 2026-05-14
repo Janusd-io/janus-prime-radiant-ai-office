@@ -11,7 +11,7 @@ related: [model-context-protocol]
 captured_by: jehad-altoutou
 ---
 
-> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `decisions/concepts/agent-to-agent-protocol.md` — this file is preserved as a source for divergent framing / additional context._
+> _Jehad's personal-vault articulation of this topic, imported 2026-05-13. The canonical wiki page is at `concepts/agent-to-agent-protocol.md` — this file is preserved as a source for divergent framing / additional context._
 
 # Agent-to-Agent Protocol (A2A)
 
