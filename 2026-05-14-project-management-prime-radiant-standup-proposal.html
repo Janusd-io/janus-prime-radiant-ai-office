@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Management × Prime Radiant — standup proposal</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0f172a;
+    --ink-2: #334155;
+    --ink-3: #64748b;
+    --line: #e2e8f0;
+    --line-2: #cbd5e1;
+    --accent: #4f46e5;
+    --accent-soft: #eef2ff;
+    --accent-dark: #312e81;
+    --warn: #b45309;
+    --warn-soft: #fef3c7;
+    --ok: #047857;
+    --ok-soft: #d1fae5;
+    --future: #94a3b8;
+    --future-soft: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .slide-num {
+    position: absolute;
+    top: 24px; right: 32px;
+    font-size: 12px;
+    color: var(--ink-3);
+    letter-spacing: 0.08em;
+    font-variant-numeric: tabular-nums;
+  }
+  .slide-brand {
+    position: absolute;
+    top: 24px; left: 32px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-3);
+    letter-spacing: 0.16em;
+  }
+  .slide-brand span { color: var(--accent); }
+  h1, h2, h3 { margin: 0; font-weight: 700; }
+  h1 { font-size: 56px; line-height: 1.05; letter-spacing: -0.02em; }
+  h2 { font-size: 40px; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 12px; }
+  h3 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px 0; font-size: 18px; line-height: 1.55; color: var(--ink-2); }
+  .lede { font-size: 22px; color: var(--ink-2); margin-bottom: 24px; max-width: 940px; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* Hero (title) slide */
+  .hero-slide {
+    background: linear-gradient(135deg, #312e81 0%, #4f46e5 60%, #6366f1 100%);
+    color: #fff;
+  }
+  .hero-slide .eyebrow { color: #c7d2fe; }
+  .hero-slide h1 { color: #fff; max-width: 980px; }
+  .hero-slide .sub { font-size: 23px; color: #e0e7ff; margin-top: 20px; max-width: 880px; line-height: 1.45; }
+  .hero-slide .meta { margin-top: 40px; font-size: 13px; color: #c7d2fe; letter-spacing: 0.10em; text-transform: uppercase; }
+  .hero-slide .slide-brand { color: #c7d2fe; }
+  .hero-slide .slide-brand span { color: #fff; }
+  .hero-slide .slide-num { color: #c7d2fe; }
+
+  /* Layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-accent { border-color: var(--accent); background: var(--accent-soft); }
+  .card-warn { border-color: var(--warn); background: var(--warn-soft); }
+  .card-ok { border-color: var(--ok); background: var(--ok-soft); }
+  .card-future { border-color: var(--future); background: var(--future-soft); border-style: dashed; }
+  .card-future .card-title, .card-future .card-body { color: var(--ink-3); }
+  .card-tag {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .card-warn .card-tag { color: var(--warn); }
+  .card-ok .card-tag { color: var(--ok); }
+  .card-future .card-tag { color: var(--future); }
+  .card-title { font-size: 18px; font-weight: 700; color: var(--ink); margin: 0; }
+  .card-body { font-size: 14px; color: var(--ink-2); line-height: 1.55; }
+
+  /* Bullet lists */
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 18px;
+    color: var(--ink);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li .num {
+    flex: none;
+    width: 28px; height: 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .check {
+    flex: none;
+    width: 28px; height: 28px;
+    background: var(--ok);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .pending {
+    flex: none;
+    width: 28px; height: 28px;
+    background: #fff;
+    color: var(--ink-3);
+    border: 2px solid var(--line-2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    margin-top: 1px;
+  }
+  ul.clean li .label { font-weight: 600; }
+  ul.clean li .body { color: var(--ink-2); font-size: 15px; margin-top: 4px; line-height: 1.5; }
+
+  /* Callouts */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    padding: 18px 24px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 22px;
+    max-width: 960px;
+  }
+  .callout-warn { background: var(--warn-soft); border-left-color: var(--warn); }
+  .callout-ok { background: var(--ok-soft); border-left-color: var(--ok); }
+  .callout .callout-label {
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .callout-warn .callout-label { color: var(--warn); }
+  .callout-ok .callout-label { color: var(--ok); }
+  .callout .callout-body { font-size: 18px; color: var(--ink); line-height: 1.5; }
+
+  /* Phase pill row */
+  .phase-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0;
+  }
+  .phase {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-weight: 500;
+    border: 1px solid var(--accent);
+  }
+  .phase-stage {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+
+  /* Folder-tree visual */
+  .tree {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px 20px;
+    color: var(--ink);
+    white-space: pre;
+    overflow-x: auto;
+  }
+  .tree .folder { color: var(--accent); font-weight: 600; }
+  .tree .file { color: var(--ink-2); }
+  .tree .note { color: var(--ink-3); font-style: italic; }
+
+  /* Attendees row on hero */
+  .attendee-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  .attendee {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-width: 160px;
+  }
+  .attendee .name { color: #fff; font-weight: 600; font-size: 16px; }
+  .attendee .role { color: #c7d2fe; font-size: 13px; margin-top: 4px; }
+
+  /* Footer nav hint */
+  .nav-hint {
+    position: fixed;
+    bottom: 16px; right: 24px;
+    font-size: 11px;
+    color: var(--ink-3);
+    letter-spacing: 0.05em;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+
+  @media print {
+    body { scroll-snap-type: none; overflow: visible; height: auto; }
+    .slide { min-height: auto; page-break-after: always; padding: 40px; border-bottom: none; }
+    .nav-hint, .slide-num { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ Slide 1: Hero — what this is ============ -->
+<section class="slide hero-slide" id="s1">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">01 / 05</div>
+  <div class="eyebrow">Project Management × Prime Radiant — pre-read</div>
+  <h1>How we propose to stand up<br>Project Management's Prime Radiant.</h1>
+  <p class="sub">Pre-read ahead of our alignment conversation. Built from our intro session (13 May) and Lysander's workflow walkthrough (14 May). We now have a strong shared picture of how Project Management actually delivers — this proposes the operational way the Prime Radiant rolls over the top of that.</p>
+
+  <div class="attendee-row">
+    <div class="attendee">
+      <div class="name">Euclid Wong</div>
+      <div class="role">Head of IT, Project Management &amp; Operations · sponsor</div>
+    </div>
+    <div class="attendee">
+      <div class="name">Lysander Liu</div>
+      <div class="role">Senior Project Manager · workflow author</div>
+    </div>
+    <div class="attendee">
+      <div class="name">Rosa</div>
+      <div class="role">Project Management team</div>
+    </div>
+    <div class="attendee">
+      <div class="name">Spike Zhao</div>
+      <div class="role">Project Management team · role TBC pending Deel</div>
+    </div>
+  </div>
+
+  <div class="meta">2026-05-14 · for alignment before the standup kicks off</div>
+</section>
+
+<!-- ============ Slide 2: What we understood ============ -->
+<section class="slide" id="s2">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">02 / 05</div>
+  <div class="eyebrow">What we understood from your walkthrough</div>
+  <h2>Your 28-phase delivery workflow, captured in full.</h2>
+  <p class="lede">Lysander walked us through the entire workflow from contract-signing to final verification. We have written it down. The full structured document is in the AI Office Prime Radiant — and it is what the Project Management Prime Radiant will be initialised against.</p>
+
+  <div class="phase-stage">Stage 1 · Initiation (phases 1–4)</div>
+  <div class="phase-row">
+    <span class="phase">1 · Contract → handoff</span>
+    <span class="phase">2 · Project charter</span>
+    <span class="phase">3 · Info-gathering loop</span>
+    <span class="phase">4 · Formal handoff meeting</span>
+  </div>
+
+  <div class="phase-stage">Stage 2 · Planning (phases 5–8)</div>
+  <div class="phase-row">
+    <span class="phase">5 · Project management plan</span>
+    <span class="phase">6 · Parallel tracks</span>
+    <span class="phase">7 · Application analysis</span>
+    <span class="phase">8 · Plan review + internal kickoff</span>
+  </div>
+
+  <div class="phase-stage">Stage 3 · Execution (phases 9–17)</div>
+  <div class="phase-row">
+    <span class="phase">9 · Pre-entry checks</span>
+    <span class="phase">10 · External kickoff (BIP)</span>
+    <span class="phase">11 · Business consensus</span>
+    <span class="phase">12 · Site execution</span>
+    <span class="phase">13 · Network setup</span>
+    <span class="phase">14 · Platform deployment</span>
+    <span class="phase">15 · Project initialisation</span>
+    <span class="phase">16 · Business availability</span>
+    <span class="phase">17 · Digital delivery</span>
+  </div>
+
+  <div class="phase-stage">Stage 4 · Business delivery (phases 18–22)</div>
+  <div class="phase-row">
+    <span class="phase">18 · Single-point testing</span>
+    <span class="phase">19 · Digital handover</span>
+    <span class="phase">20 · Business delivery</span>
+    <span class="phase">21 · Key info sign-off</span>
+    <span class="phase">22 · Knowledge production</span>
+  </div>
+
+  <div class="phase-stage">Stage 5 · Closure (phases 23–28)</div>
+  <div class="phase-row">
+    <span class="phase">23 · Configuration</span>
+    <span class="phase">24 · UAT</span>
+    <span class="phase">25 · Training</span>
+    <span class="phase">26 · Trial run</span>
+    <span class="phase">27 · Trial summary</span>
+    <span class="phase">28 · Final verification</span>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">Two principles we heard, and want to lock in</div>
+    <div class="callout-body"><strong>AI is a 30–60% accelerator on preparation work, first-draft only</strong> — the Project Manager remains in the loop on every decision. <em>"You cannot completely trust what AI writes for you... If you cut corners on understanding, all the risks happen at the end of the project — catastrophic."</em> Both principles are operating norms of the instance from day one.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 3: How the standup works ============ -->
+<section class="slide" id="s3">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">03 / 05</div>
+  <div class="eyebrow">How the standup works</div>
+  <h2>One brain for the team. One brain each for you.</h2>
+  <p class="lede">Five things happen — most of which you do not have to do. Same pattern Marketing is rolling out with right now, adapted to the workflow Lysander walked us through.</p>
+
+  <ul class="clean" style="max-width: 980px; margin-top: 12px;">
+    <li>
+      <span class="num">1</span>
+      <span>
+        <span class="label">Project Management vault stood up (GitHub-backed).</span>
+        <div class="body">We create a private GitHub repo under <code>Janusd-io</code>. Each of you gets a local clone on your Mac that stays in sync automatically. You never touch GitHub directly — the skill provisions accounts silently. This becomes the canonical Project Management knowledge store, replacing the ad-hoc "each Project Manager has their own files" pattern Lysander flagged.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">2</span>
+      <span>
+        <span class="label">Vault is initialised against your 28-phase workflow.</span>
+        <div class="body">The folder structure mirrors how you actually work (see next slide). The first templates inside it come from the workflow itself: project charter, formal handoff minutes, project management plan, plan review minutes, BIP kickoff brief, verification plan, training matrix. Each phase has its expected inputs / outputs as starter docs. This is the "running start" content — you do not start from a blank page.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">3</span>
+      <span>
+        <span class="label">Personal vaults for each of you (alongside the team one).</span>
+        <div class="body">Each of you — Euclid, Lysander, Rosa, Spike — gets your own personal Prime Radiant on request. Your meetings, your reading, your notes. Yours alone until you choose to promote anything to the team vault. The team brain pulls from what each of you contributes upward, never sideways into your private space.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">4</span>
+      <span>
+        <span class="label">Tooling installed on your machines (single session, ~60 minutes).</span>
+        <div class="body">Cowork (your conversation with the brain), Obsidian (your view into it), Web Clipper (one-click article capture), Fireflies connector (so meetings flow in). All Mac-native; quick install. We do it together so any connector hiccups get caught in the session.</div>
+      </span>
+    </li>
+    <li>
+      <span class="num">5</span>
+      <span>
+        <span class="label">First content backfill — one live project.</span>
+        <div class="body">We pick one of your current projects together and ingest its existing materials — meeting transcripts, the project charter if one exists, RAID, status updates, decisions made along the way. Watching the brain ingest a real Project Management workload is where it earns the trust to be used on the next one.</div>
+      </span>
+    </li>
+  </ul>
+
+  <div class="callout callout-ok">
+    <div class="callout-label">Why this is different from yet-another-system</div>
+    <div class="callout-body">You already have process discipline. What you do not have today (Lysander acknowledged this) is a canonical place where the <em>decisions</em> — why we changed something, why we did it this way — live versioned and findable. The Prime Radiant exists exactly to be that place. The schema enforces it; the AI surfaces it. Template version chaos and per-Project-Manager file drift stop being structural problems.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 4: Folder structure proposal ============ -->
+<section class="slide" id="s4">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">04 / 05</div>
+  <div class="eyebrow">The folder structure — react and refine</div>
+  <h2>Built around your workflow, not imposed on top of it.</h2>
+  <p class="lede">Below is the proposed structure. The aim is that you push back, refine, or replace before we lock it. Once locked, the vault can be initialised in under an hour.</p>
+
+  <div class="grid-2" style="margin-top: 8px;">
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">Proposed structure</div>
+      <div class="tree"><span class="folder">project-management/</span>
+├── <span class="folder">products/</span>           <span class="note"># durable across projects</span>
+│   └── <span class="folder">&lt;product&gt;/</span>
+│       ├── <span class="file">overview.md</span>
+│       ├── <span class="file">roadmap.md</span>
+│       └── <span class="folder">decisions/</span>
+├── <span class="folder">projects/</span>           <span class="note"># episodic; phase-shaped</span>
+│   └── <span class="folder">&lt;project&gt;/</span>
+│       ├── <span class="file">charter.md</span>      <span class="note"># phase 2</span>
+│       ├── <span class="file">scope.md</span>        <span class="note"># phase 3 loop output</span>
+│       ├── <span class="folder">handoff/</span>      <span class="note"># phase 4 minutes</span>
+│       ├── <span class="folder">planning/</span>     <span class="note"># phases 5–8</span>
+│       ├── <span class="folder">parallel-tracks/</span><span class="note"># phase 6</span>
+│       │   ├── <span class="folder">construction/</span>
+│       │   ├── <span class="folder">hardware/</span>
+│       │   └── <span class="folder">platform/</span>
+│       ├── <span class="folder">execution/</span>    <span class="note"># phases 9–17</span>
+│       ├── <span class="folder">digital-delivery/</span><span class="note"># phase 17</span>
+│       ├── <span class="folder">business-delivery/</span><span class="note"># phase 20</span>
+│       ├── <span class="folder">uat/</span>          <span class="note"># phases 23–24</span>
+│       ├── <span class="folder">training/</span>     <span class="note"># phase 25</span>
+│       ├── <span class="folder">trial-run/</span>    <span class="note"># phases 26–27</span>
+│       ├── <span class="folder">verification/</span> <span class="note"># phase 28</span>
+│       ├── <span class="folder">decisions/</span>    <span class="note"># project-level</span>
+│       ├── <span class="folder">raid/</span>
+│       └── <span class="folder">meetings/</span>
+├── <span class="folder">stakeholders/</span>       <span class="note"># cross-project people</span>
+├── <span class="folder">processes/</span>          <span class="note"># your playbooks</span>
+├── <span class="folder">templates/</span>          <span class="note"># versioned</span>
+├── <span class="folder">retros/</span>             <span class="note"># lessons across projects</span>
+└── <span class="folder">decisions/</span>          <span class="note"># function-level</span></div>
+    </div>
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">Why this shape</div>
+      <ul class="clean">
+        <li>
+          <span class="num">1</span>
+          <span>
+            <span class="label">Products are durable. Projects are episodic.</span>
+            <div class="body">A product persists across many projects; a project finishes. Putting products at the top level keeps long-lived knowledge findable. Projects link <em>up</em> into products as they touch them.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span>
+            <span class="label">Project folders mirror your 28-phase workflow.</span>
+            <div class="body">Each project sub-folder maps directly to a phase Lysander walked us through. When a Project Manager opens a new project folder, the structure tells them what comes next; the templates inside it tell them how.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span>
+            <span class="label">Decisions live at three levels.</span>
+            <div class="body">Function-level (top-level <code>decisions/</code>: "we always do X across all projects"); product-level (durable to that product); project-level (specific to one project). Each decision is dated, has a why, and links to what it affects. The ECO discipline Michael mentioned — versioned, traceable.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span>
+            <span class="label">Templates versioned alongside the work.</span>
+            <div class="body">No more "version 1.0 in this PM's folder, version 2.0 in that one." Git versioning handles it; the brain knows which is current. Templates evolve as you discover better ways to do things — every change has a decision behind it.</div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-label">Open questions for the alignment conversation</div>
+    <div class="callout-body">Where do portfolios sit (above products)? Where do programmes live (between products and projects, or as a flat tag)? Where does vendor / third-party / supplier content live? Are there phases where the current naming doesn't match what your team actually says? — Lysander, you'll have the strongest read here.</div>
+  </div>
+</section>
+
+<!-- ============ Slide 5: What we ask + timeline ============ -->
+<section class="slide" id="s5">
+  <div class="slide-brand">JANUS · <span>PRIME RADIANT</span></div>
+  <div class="slide-num">05 / 05</div>
+  <div class="eyebrow">What we ask + timeline</div>
+  <h2>Three asks. Four-week ramp.</h2>
+  <p class="lede">Pre-alignment items we want a confirm-or-pushback on, and the timeline the AI Office proposes for getting the Project Management Prime Radiant from idea to live.</p>
+
+  <div class="grid-2" style="margin-top: 14px;">
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">What we ask</div>
+      <ul class="clean">
+        <li>
+          <span class="num">1</span>
+          <span>
+            <span class="label">Confirm scope &amp; sponsor.</span>
+            <div class="body">Euclid as sponsor across his three teams (IT, Project Management, Operations); Project Management is pilot #2 after Marketing. IT and Operations follow in sequence. Anyone need to flag a problem with that order?</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span>
+            <span class="label">Pick one current project to backfill.</span>
+            <div class="body">Lysander — your call. Something in flight that has enough material to be interesting but not so much that ingestion stalls. We use it as the first real test of the schema; lessons feed straight back into how the vault gets shaped.</div>
+          </span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span>
+            <span class="label">React to the folder structure.</span>
+            <div class="body">Slide 4. Tell us what's wrong or missing before we cut metal. Open questions: portfolios above products; programmes between products and projects; vendor / third-party content placement; phase naming where we got it wrong.</div>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size: 13px; font-weight: 700; color: var(--ok); letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 10px;">Timeline (AI Office proposal)</div>
+      <ul class="clean">
+        <li>
+          <span class="check">1</span>
+          <span>
+            <span class="label">Week 1 — alignment + standup.</span>
+            <div class="body">This pre-read; alignment conversation; folder structure locked. Tooling install session ~60 min on Mac. Vault stood up in GitHub. First backfill project chosen and ingested.</div>
+          </span>
+        </li>
+        <li>
+          <span class="check">2</span>
+          <span>
+            <span class="label">Week 2 — daily use begins.</span>
+            <div class="body">Each of you uses the brain at least once a day on real work. Meetings flow in via Fireflies. Decisions captured as you make them, not after. Mid-week check-in with the AI Office on what's working and what's not.</div>
+          </span>
+        </li>
+        <li>
+          <span class="check">3</span>
+          <span>
+            <span class="label">Weeks 3–4 — first synthesis + federation.</span>
+            <div class="body">Brain has enough context to produce real syntheses — status rollups, cross-project pattern recognition, decision-history retrieval. Shared AIO × Project Management mesh subfolder set up so joint work is visible to both teams.</div>
+          </span>
+        </li>
+        <li>
+          <span class="check">4</span>
+          <span>
+            <span class="label">Month 2 onward — Rosa's dashboard track.</span>
+            <div class="body">Once the data is solid, the visualisation work Rosa raised in the intro starts in earnest. Portfolio rollups, RAID heatmaps, dependency views — whatever the team finds itself wanting.</div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout callout-ok" style="margin-top: 22px;">
+    <div class="callout-label">The one commitment before we close the loop</div>
+    <div class="callout-body">Each of you commits to using the brain at least once a day for the first two weeks — even when it would have been faster to just ask a colleague. The brain compounds in direct proportion to that discipline. Five working days of forced use; from week two it starts repaying you. That's the only behavioural change we are asking for up front.</div>
+  </div>
+
+  <div style="margin-top: 28px; font-size: 13px; color: var(--ink-3); font-style: italic;">
+    Background reading (already in the AI Office vault, available to any of you): the 28-phase workflow as a structured document; the AI-bounded-role discipline as a stand-alone note; the document-management gap and how Prime Radiant addresses it. Happy to share any of these on request.
+  </div>
+</section>
+
+<div class="nav-hint">← → arrows · scroll · F for fullscreen</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  function currentSlideIndex() {
+    const y = window.scrollY + window.innerHeight / 2;
+    for (let i = 0; i < slides.length; i++) {
+      const r = slides[i].getBoundingClientRect();
+      const top = r.top + window.scrollY;
+      const bottom = top + r.height;
+      if (y >= top && y < bottom) return i;
+    }
+    return 0;
+  }
+  function goTo(i) {
+    if (i < 0) i = 0;
+    if (i >= slides.length) i = slides.length - 1;
+    slides[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+      e.preventDefault(); goTo(currentSlideIndex() + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+      e.preventDefault(); goTo(currentSlideIndex() - 1);
+    } else if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+    else if (e.key === 'End') { e.preventDefault(); goTo(slides.length - 1); }
+    else if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+  });
+</script>
+
+</body>
+</html>
