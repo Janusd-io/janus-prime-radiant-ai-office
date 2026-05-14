@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: README
+title: Janus Puls Onboarding — README
 slug: readme-10
 created: 2026-05-12
 captured_by: jehad-altoutou

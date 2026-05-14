@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: index
+title: Vibevoice — index
 slug: index
 created: 2026-03-31
 captured_by: jehad-altoutou

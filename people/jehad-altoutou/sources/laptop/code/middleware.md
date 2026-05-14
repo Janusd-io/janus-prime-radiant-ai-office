@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: middleware
+title: Brightbean Studio — middleware
 slug: middleware
 created: 2026-04-16
 captured_by: jehad-altoutou

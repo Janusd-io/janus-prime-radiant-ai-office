@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: departments
+title: Janus Brain Bootstrap — departments
 slug: departments
 created: 2026-05-14
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: eslint.config
+title: Assessify — eslint.config
 slug: eslint-config
 created: 2026-04-28
 captured_by: jehad-altoutou

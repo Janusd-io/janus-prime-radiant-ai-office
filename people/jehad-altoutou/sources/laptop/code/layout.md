@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: layout
+title: Assessify — layout
 slug: layout
 created: 2026-04-28
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: lint-vault
+title: Janus Brain Bootstrap — lint-vault
 slug: lint-vault
 created: 2026-05-14
 captured_by: jehad-altoutou

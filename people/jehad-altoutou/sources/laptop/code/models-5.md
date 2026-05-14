@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: models
+title: Brightbean Studio — models
 slug: models-5
 created: 2026-04-20
 captured_by: jehad-altoutou

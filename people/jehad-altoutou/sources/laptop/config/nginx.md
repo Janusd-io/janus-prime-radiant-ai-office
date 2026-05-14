@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: nginx
+title: Desktop Captures — nginx
 slug: nginx
 created: 2026-02-11
 captured_by: jehad-altoutou

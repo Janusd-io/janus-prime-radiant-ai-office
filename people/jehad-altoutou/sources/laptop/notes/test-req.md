@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: test_req
+title: Desktop Captures — test_req
 slug: test-req
 created: 2026-04-07
 captured_by: jehad-altoutou

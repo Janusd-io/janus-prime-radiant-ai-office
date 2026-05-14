@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: list
+title: Brightbean Studio — list
 slug: list-3
 created: 2026-04-16
 captured_by: jehad-altoutou

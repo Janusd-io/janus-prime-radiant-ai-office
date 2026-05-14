@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: PersonalDataFields
+title: Desktop Captures — PersonalDataFields
 slug: personaldatafields
 created: 2026-04-07
 captured_by: jehad-altoutou

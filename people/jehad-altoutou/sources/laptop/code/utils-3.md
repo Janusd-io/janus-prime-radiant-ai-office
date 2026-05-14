@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: utils
+title: Desktop Captures — utils
 slug: utils-3
 created: 2026-02-11
 captured_by: jehad-altoutou

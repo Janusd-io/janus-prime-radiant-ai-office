@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: app
+title: Brightbean Studio — app
 slug: app
 created: 2026-04-16
 captured_by: jehad-altoutou

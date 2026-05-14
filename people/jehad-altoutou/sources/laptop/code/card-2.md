@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: card
+title: Desktop Captures — card
 slug: card-2
 created: 2026-02-11
 captured_by: jehad-altoutou

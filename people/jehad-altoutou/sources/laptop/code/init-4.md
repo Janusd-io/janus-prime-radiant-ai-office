@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: __init__
+title: Vibevoice — __init__
 slug: init-4
 created: 2026-03-31
 captured_by: jehad-altoutou

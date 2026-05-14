@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: robots
+title: Desktop Captures — robots
 slug: robots
 created: 2026-04-23
 captured_by: jehad-altoutou

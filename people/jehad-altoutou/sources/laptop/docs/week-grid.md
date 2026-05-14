@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: week_grid
+title: Brightbean Studio — week_grid
 slug: week-grid
 created: 2026-04-16
 captured_by: jehad-altoutou

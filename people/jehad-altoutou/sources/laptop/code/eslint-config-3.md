@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: eslint.config
+title: Desktop Captures — eslint.config
 slug: eslint-config-3
 created: 2026-02-11
 captured_by: jehad-altoutou

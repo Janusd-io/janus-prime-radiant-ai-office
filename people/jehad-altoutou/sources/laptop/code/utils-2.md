@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: utils
+title: Brightbean Studio — utils
 slug: utils-2
 created: 2026-04-20
 captured_by: jehad-altoutou

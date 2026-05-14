@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: graph
+title: Assessify — graph
 slug: graph
 created: 2026-04-14
 captured_by: jehad-altoutou

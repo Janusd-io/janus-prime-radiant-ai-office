@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: _platform_icon
+title: Brightbean Studio — _platform_icon
 slug: platform-icon
 created: 2026-04-16
 captured_by: jehad-altoutou

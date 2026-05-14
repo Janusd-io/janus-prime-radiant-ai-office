@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: INSTALL
+title: Janus Brain Bootstrap — INSTALL
 slug: install-2
 created: 2026-05-14
 captured_by: jehad-altoutou

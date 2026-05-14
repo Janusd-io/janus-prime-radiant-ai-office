@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: alert
+title: Brightbean Studio — alert
 slug: alert
 created: 2026-04-16
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: tsconfig
+title: Assessify — tsconfig
 slug: tsconfig-2
 created: 2026-04-09
 captured_by: jehad-altoutou

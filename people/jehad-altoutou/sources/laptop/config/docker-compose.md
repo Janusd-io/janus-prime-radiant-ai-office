@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: docker-compose
+title: Assessify — docker-compose
 slug: docker-compose
 created: 2026-04-27
 captured_by: jehad-altoutou

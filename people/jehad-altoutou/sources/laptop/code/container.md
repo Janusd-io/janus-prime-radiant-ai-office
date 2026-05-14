@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: Container
+title: Desktop Captures — Container
 slug: container
 created: 2026-02-11
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: card
+title: Assessify — card
 slug: card
 created: 2026-04-28
 captured_by: jehad-altoutou

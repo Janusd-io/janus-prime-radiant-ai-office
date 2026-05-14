@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: multi-select
+title: Desktop Captures — multi-select
 slug: multi-select
 created: 2026-02-11
 captured_by: jehad-altoutou

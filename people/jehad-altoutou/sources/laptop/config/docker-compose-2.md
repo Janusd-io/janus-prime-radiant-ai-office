@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: docker-compose
+title: Brightbean Studio — docker-compose
 slug: docker-compose-2
 created: 2026-04-20
 captured_by: jehad-altoutou

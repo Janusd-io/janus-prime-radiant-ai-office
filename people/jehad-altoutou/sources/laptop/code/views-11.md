@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: views
+title: Brightbean Studio — views
 slug: views-11
 created: 2026-04-16
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: SKILL
+title: Janus Puls Onboarding — SKILL
 slug: skill-2
 created: 2026-05-11
 captured_by: jehad-altoutou

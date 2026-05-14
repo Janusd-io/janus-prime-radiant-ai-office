@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: docker-compose
+title: Desktop Captures — docker-compose
 slug: docker-compose-3
 created: 2026-04-23
 captured_by: jehad-altoutou

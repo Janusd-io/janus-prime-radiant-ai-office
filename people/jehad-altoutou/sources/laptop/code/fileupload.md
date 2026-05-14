@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: FileUpload
+title: Desktop Captures — FileUpload
 slug: fileupload
 created: 2026-04-07
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: app
+title: Vibevoice — app
 slug: app
 created: 2026-03-31
 captured_by: jehad-altoutou

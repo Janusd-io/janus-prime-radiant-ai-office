@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: next.config
+title: Assessify — next.config
 slug: next-config
 created: 2026-04-09
 captured_by: jehad-altoutou

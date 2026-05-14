@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: api
+title: Desktop Captures — api
 slug: api
 created: 2026-04-07
 captured_by: jehad-altoutou

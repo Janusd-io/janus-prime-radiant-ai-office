@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: pyproject
+title: Vibevoice — pyproject
 slug: pyproject
 created: 2026-03-31
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: _empty_state
+title: Brightbean Studio — _empty_state
 slug: empty-state-2
 created: 2026-04-16
 captured_by: jehad-altoutou

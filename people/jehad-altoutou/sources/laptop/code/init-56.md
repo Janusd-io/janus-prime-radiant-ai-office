@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: __init__
+title: Brightbean Studio — __init__
 slug: init-56
 created: 2026-04-16
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: SKILL
+title: Assessify — SKILL
 slug: skill
 created: 2026-04-27
 captured_by: jehad-altoutou

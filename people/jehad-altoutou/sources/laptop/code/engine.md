@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: engine
+title: Brightbean Studio — engine
 slug: engine
 created: 2026-04-20
 captured_by: jehad-altoutou

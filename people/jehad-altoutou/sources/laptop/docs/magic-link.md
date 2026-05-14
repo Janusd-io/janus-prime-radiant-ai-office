@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: magic_link
+title: Brightbean Studio — magic_link
 slug: magic-link
 created: 2026-04-16
 captured_by: jehad-altoutou

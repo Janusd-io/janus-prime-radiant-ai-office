@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: auth
+title: Assessify — auth
 slug: auth-2
 created: 2026-05-01
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: postcss.config
+title: Desktop Captures — postcss.config
 slug: postcss-config-2
 created: 2026-04-23
 captured_by: jehad-altoutou

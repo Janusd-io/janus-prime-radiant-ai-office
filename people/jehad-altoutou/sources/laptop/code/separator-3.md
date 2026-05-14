@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: separator
+title: Desktop Captures — separator
 slug: separator-3
 created: 2026-02-11
 captured_by: jehad-altoutou

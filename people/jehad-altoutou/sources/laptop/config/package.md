@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: package
+title: Assessify — package
 slug: package
 created: 2026-05-06
 captured_by: jehad-altoutou

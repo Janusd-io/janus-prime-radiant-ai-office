@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: searchable-select
+title: Desktop Captures — searchable-select
 slug: searchable-select
 created: 2026-02-11
 captured_by: jehad-altoutou

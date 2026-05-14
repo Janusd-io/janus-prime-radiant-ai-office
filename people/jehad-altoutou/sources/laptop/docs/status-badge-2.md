@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: _status_badge
+title: Brightbean Studio — _status_badge
 slug: status-badge-2
 created: 2026-04-16
 captured_by: jehad-altoutou

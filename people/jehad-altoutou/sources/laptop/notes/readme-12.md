@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: README
+title: Janus Brain Bootstrap — README
 slug: readme-12
 created: 2026-05-14
 captured_by: jehad-altoutou

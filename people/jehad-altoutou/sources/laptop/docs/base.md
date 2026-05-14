@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: base
+title: Brightbean Studio — base
 slug: base
 created: 2026-04-20
 captured_by: jehad-altoutou

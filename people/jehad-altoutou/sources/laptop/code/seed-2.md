@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: seed
+title: Desktop Captures — seed
 slug: seed-2
 created: 2026-04-23
 captured_by: jehad-altoutou

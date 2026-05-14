@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: pyproject
+title: Brightbean Studio — pyproject
 slug: pyproject-2
 created: 2026-04-16
 captured_by: jehad-altoutou

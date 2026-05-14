@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: tsconfig
+title: Desktop Captures — tsconfig
 slug: tsconfig-3
 created: 2026-04-23
 captured_by: jehad-altoutou

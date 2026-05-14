@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: input
+title: Assessify — input
 slug: input
 created: 2026-04-28
 captured_by: jehad-altoutou

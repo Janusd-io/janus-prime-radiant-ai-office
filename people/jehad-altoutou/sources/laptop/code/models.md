@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: models
+title: Assessify — models
 slug: models
 created: 2026-05-12
 captured_by: jehad-altoutou

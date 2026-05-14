@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: seed
+title: Assessify — seed
 slug: seed
 created: 2026-04-10
 captured_by: jehad-altoutou

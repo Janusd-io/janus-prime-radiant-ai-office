@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: validators
+title: Brightbean Studio — validators
 slug: validators
 created: 2026-04-16
 captured_by: jehad-altoutou

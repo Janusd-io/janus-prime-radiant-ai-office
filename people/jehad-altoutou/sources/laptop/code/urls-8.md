@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: urls
+title: Brightbean Studio — urls
 slug: urls-8
 created: 2026-04-16
 captured_by: jehad-altoutou

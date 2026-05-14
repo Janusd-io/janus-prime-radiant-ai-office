@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: icon
+title: Desktop Captures — icon
 slug: icon-2
 created: 2026-04-23
 captured_by: jehad-altoutou

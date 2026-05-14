@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: README
+title: Vibevoice — README
 slug: readme-3
 created: 2026-03-31
 captured_by: jehad-altoutou

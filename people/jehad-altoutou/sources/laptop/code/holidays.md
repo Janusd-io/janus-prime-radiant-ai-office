@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: holidays
+title: Brightbean Studio — holidays
 slug: holidays
 created: 2026-04-16
 captured_by: jehad-altoutou

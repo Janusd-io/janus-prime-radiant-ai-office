@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: tasks
+title: Brightbean Studio — tasks
 slug: tasks-3
 created: 2026-04-20
 captured_by: jehad-altoutou

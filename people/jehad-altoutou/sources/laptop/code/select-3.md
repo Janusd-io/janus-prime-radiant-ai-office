@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: select
+title: Desktop Captures — select
 slug: select-3
 created: 2026-02-11
 captured_by: jehad-altoutou

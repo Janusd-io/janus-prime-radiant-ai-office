@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: graph
+title: Brightbean Studio — graph
 slug: graph-2
 created: 2026-04-17
 captured_by: jehad-altoutou

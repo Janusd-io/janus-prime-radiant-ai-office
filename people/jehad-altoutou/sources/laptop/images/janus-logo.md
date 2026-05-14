@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: Janus Logo
+title: Downloads Captures — Janus Logo
 slug: janus-logo
 created: 2026-04-08
 captured_by: jehad-altoutou

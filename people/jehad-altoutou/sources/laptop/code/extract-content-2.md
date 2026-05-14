@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: extract-content
+title: Janus Brain Bootstrap — extract-content
 slug: extract-content-2
 created: 2026-05-14
 captured_by: jehad-altoutou

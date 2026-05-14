@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: vite.config
+title: Desktop Captures — vite.config
 slug: vite-config
 created: 2026-04-07
 captured_by: jehad-altoutou

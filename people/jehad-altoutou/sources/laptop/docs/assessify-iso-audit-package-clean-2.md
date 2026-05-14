@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: Assessify-ISO-Audit-Package-CLEAN
+title: Desktop Captures — Assessify-ISO-Audit-Package-CLEAN
 slug: assessify-iso-audit-package-clean-2
 created: 2026-04-28
 captured_by: jehad-altoutou

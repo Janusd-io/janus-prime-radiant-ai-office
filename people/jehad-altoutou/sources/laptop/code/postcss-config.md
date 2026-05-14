@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: postcss.config
+title: Assessify — postcss.config
 slug: postcss-config
 created: 2026-04-08
 captured_by: jehad-altoutou

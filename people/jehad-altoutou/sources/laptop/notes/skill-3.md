@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: SKILL
+title: Janus Brain Bootstrap — SKILL
 slug: skill-3
 created: 2026-05-14
 captured_by: jehad-altoutou

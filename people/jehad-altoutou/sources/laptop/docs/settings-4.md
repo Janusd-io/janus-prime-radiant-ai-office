@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: settings
+title: Brightbean Studio — settings
 slug: settings-4
 created: 2026-04-20
 captured_by: jehad-altoutou

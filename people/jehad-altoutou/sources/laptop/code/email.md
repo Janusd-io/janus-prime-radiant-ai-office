@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: email
+title: Assessify — email
 slug: email
 created: 2026-05-12
 captured_by: jehad-altoutou

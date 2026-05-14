@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: services
+title: Brightbean Studio — services
 slug: services-3
 created: 2026-04-16
 captured_by: jehad-altoutou

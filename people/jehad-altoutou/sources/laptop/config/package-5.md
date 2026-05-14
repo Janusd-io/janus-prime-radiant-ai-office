@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: package
+title: Desktop Captures — package
 slug: package-5
 created: 2026-02-11
 captured_by: jehad-altoutou

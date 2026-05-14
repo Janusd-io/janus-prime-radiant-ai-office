@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: route
+title: Desktop Captures — route
 slug: route-81
 created: 2026-04-23
 captured_by: jehad-altoutou

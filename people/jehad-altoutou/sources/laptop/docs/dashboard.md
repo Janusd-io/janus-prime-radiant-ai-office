@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: dashboard
+title: Brightbean Studio — dashboard
 slug: dashboard
 created: 2026-04-16
 captured_by: jehad-altoutou

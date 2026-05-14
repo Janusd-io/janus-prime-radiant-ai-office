@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: admin
+title: Brightbean Studio — admin
 slug: admin-2
 created: 2026-04-16
 captured_by: jehad-altoutou

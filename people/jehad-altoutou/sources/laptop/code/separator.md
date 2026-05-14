@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: separator
+title: Assessify — separator
 slug: separator
 created: 2026-04-28
 captured_by: jehad-altoutou

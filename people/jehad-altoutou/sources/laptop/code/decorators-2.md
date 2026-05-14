@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: decorators
+title: Brightbean Studio — decorators
 slug: decorators-2
 created: 2026-04-16
 captured_by: jehad-altoutou

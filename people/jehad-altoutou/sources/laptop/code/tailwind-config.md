@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: tailwind.config
+title: Brightbean Studio — tailwind.config
 slug: tailwind-config
 created: 2026-04-16
 captured_by: jehad-altoutou

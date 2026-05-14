@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: day_grid
+title: Brightbean Studio — day_grid
 slug: day-grid
 created: 2026-04-16
 captured_by: jehad-altoutou

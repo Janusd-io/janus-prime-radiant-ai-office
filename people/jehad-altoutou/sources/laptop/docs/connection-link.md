@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: connection_link
+title: Brightbean Studio — connection_link
 slug: connection-link
 created: 2026-04-16
 captured_by: jehad-altoutou

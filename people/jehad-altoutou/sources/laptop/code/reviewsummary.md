@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: ReviewSummary
+title: Desktop Captures — ReviewSummary
 slug: reviewsummary
 created: 2026-04-08
 captured_by: jehad-altoutou

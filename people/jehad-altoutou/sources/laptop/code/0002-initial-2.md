@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: 0002_initial
+title: Brightbean Studio — 0002_initial
 slug: 0002-initial-2
 created: 2026-04-16
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: Janus Personal Data Form
+title: Desktop Captures — Janus Personal Data Form
 slug: janus-personal-data-form
 created: 2026-04-07
 captured_by: jehad-altoutou

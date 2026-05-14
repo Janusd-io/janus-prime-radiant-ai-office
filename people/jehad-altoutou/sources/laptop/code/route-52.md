@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: route
+title: Assessify — route
 slug: route-52
 created: 2026-04-28
 captured_by: jehad-altoutou

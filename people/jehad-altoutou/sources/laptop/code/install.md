@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: install
+title: Janus Puls Onboarding — install
 slug: install
 created: 2026-05-11
 captured_by: jehad-altoutou

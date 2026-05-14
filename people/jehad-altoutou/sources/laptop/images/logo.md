@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: logo
+title: Desktop Captures — logo
 slug: logo
 created: 2026-04-23
 captured_by: jehad-altoutou

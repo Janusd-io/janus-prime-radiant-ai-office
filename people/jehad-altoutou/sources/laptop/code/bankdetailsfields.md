@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: BankDetailsFields
+title: Desktop Captures — BankDetailsFields
 slug: bankdetailsfields
 created: 2026-04-07
 captured_by: jehad-altoutou

@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: analytics
+title: Assessify — analytics
 slug: analytics-2
 created: 2026-04-28
 captured_by: jehad-altoutou

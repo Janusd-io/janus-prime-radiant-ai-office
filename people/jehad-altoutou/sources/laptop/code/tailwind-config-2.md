@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: tailwind.config
+title: Desktop Captures — tailwind.config
 slug: tailwind-config-2
 created: 2026-04-07
 captured_by: jehad-altoutou

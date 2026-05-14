@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: laptop
-title: favicon
+title: Assessify — favicon
 slug: favicon
 created: 2026-04-22
 captured_by: jehad-altoutou
