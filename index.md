@@ -52,9 +52,12 @@ _(none yet)_
 - [bonaventure-wong](entities/internal/bonaventure-wong.md) — CEO; sponsor of ISO programme + Singapore news bot; strict-policy holder.
 - [euclid-wong](entities/internal/euclid-wong.md) — Head of three teams (IT, Project Management, Operations); IT approved-tools list owner; CRM lock-in stakeholder; sponsor on the Project Management Prime Radiant rollout.
 - [jehad-altoutou](entities/internal/jehad-altoutou.md) — AI Office; owner of the `/standup` skill; engineering lead on most active projects.
+- [lysander-liu](entities/internal/lysander-liu.md) — Head of Project Management (operational lead); authored the 28-phase digital delivery workflow; curator candidate for the Project Management Prime Radiant.
 - [mariam-mahmood](entities/internal/mariam-mahmood.md) — HR; sample-data provider for the recruitment-automation pipeline.
 - [michael-bruck](entities/internal/michael-bruck.md) — AI Office; owner of this wiki.
+- [rosa-wu](entities/internal/rosa-wu.md) — Co-head of Project Management (with Euclid); dashboard track owner on the Project Management Prime Radiant.
 - [simon-tarskih](entities/internal/simon-tarskih.md) — ISO programme facilitator; working partner on the [[iso-compliance-programme]].
+- [spike-zhao](entities/internal/spike-zhao.md) — Digital modeling engineer; Project Management delivery side; works in Phases 16–18 of the workflow.
 - [theresa-wong](entities/internal/theresa-wong.md) — Head of HR; sponsor of the recruitment-automation pipeline.
 
 ## Departments
@@ -218,7 +221,6 @@ _(none yet)_
 
 ## Questions (open)
 
-- [ingest-2026-05-14-lysander-liu-and-spike-zhao](questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md) — propose creating Lysander Liu (PM team, workflow walkthrough author) + Spike Zhao (PM-adjacent, role TBC) in entities/internal/; both have ≥2 inbound references from today's ingest. [active]
 - [2026-05-12-website-architecture-one-site-vs-country-sites](questions/2026-05-12-website-architecture-one-site-vs-country-sites.md) — one `janusd.com` site with country sub-paths (Andrew + Michael) vs standalone country sites (anticipated Bonaventure). Sequenced ahead of the Singapore landing-page work. [active]
 - [ingest-2026-05-12-1730-vivian-balakrishnan-and-factset](questions/ingest-2026-05-12-1730-vivian-balakrishnan-and-factset.md) — propose creating Vivian Balakrishnan (Singapore Foreign Minister, LLM-wiki advocate) in entities/people/ + FactSet (financial data, AI-integrated) in entities/vendors/; both have ≥2 inbound references from today's ingest. [active]
 - [ingest-2026-05-12-1545-openai](questions/ingest-2026-05-12-1545-openai.md) — lint-driven escalation to create `entities/vendors/openai.md`; 4-source threshold decisively met; recommendation = promote (confidence:medium). [active]
@@ -228,6 +230,8 @@ _(none yet)_
 - [2026-05-11-bonaventure-friday-meeting-audio-recovery](questions/2026-05-11-bonaventure-friday-meeting-audio-recovery.md) — Fireflies failed to pick up Bonaventure's voice on a Friday post-ISO meeting; needs MP3 download + Whisper rerun. [active]
 
 ## Questions (resolved)
+
+- [ingest-2026-05-14-lysander-liu-and-spike-zhao](questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md) — escalation closed 2026-05-14; all three Project Management entity pages created ([[lysander-liu]], [[rosa-wu]], [[spike-zhao]]); Rosa upgraded from "referenced-only" to first-class entity per Michael's clarification that she co-heads Project Management with Euclid. [resolved]
 
 - [ingest-2026-05-06-2300-new-project-hubs-from-monday](questions/ingest-2026-05-06-2300-new-project-hubs-from-monday.md) — all 5 Monday project-hub candidates approved and created. [resolved]
 - [ingest-2026-05-06-2301-cowork-approval-governance-process](questions/ingest-2026-05-06-2301-cowork-approval-governance-process.md) — Cowork approval becomes a reusable [[ai-policy-gate-approval]] process page. [resolved]

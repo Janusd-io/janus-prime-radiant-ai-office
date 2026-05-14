@@ -6,7 +6,7 @@ created: 2026-05-14
 updated: 2026-05-14
 departments: [ai-office, it-ops]
 owner: michael-bruck
-status: active
+status: resolved
 sources: [2026-05-14-pm-workflow-walkthrough-lysander, 2026-05-13-aio-pm-meeting]
 related: [project-management-digital-delivery-workflow, euclid-wong, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, janus-prime-radiant-build, 2026-05-06-andrew-as-standup-skill-rollout-pilot]
 ---
@@ -70,7 +70,13 @@ Both are substantively referenced from the [[project-management-digital-delivery
 
 ## Status update (2026-05-14)
 
-Original blocker on Spike's role-TBC has been resolved. Michael confirmed: Lysander = Head of Project Management; Rosa Wu = Co-head of Project Management; Spike Zhao = Digital modeling engineer. Both entity pages now ready to create on approval — neither needs to wait for the Deel rollout.
+**Resolved.** Michael approved entity-page creation for all three Project Management team members on 14 May 2026 afternoon, and clarified that Rosa Wu is co-head with [[euclid-wong|Euclid]] specifically (not with Lysander). All three entity pages created:
+
+- [[lysander-liu]] — Head of Project Management (operational lead).
+- [[rosa-wu]] — Co-head of Project Management (with Euclid).
+- [[spike-zhao]] — Digital modeling engineer.
+
+Rosa Wu was originally referenced in this question only via the "Lysander/Rosa Wu group" framing; Michael's resolution upgraded her to first-class entity creation alongside Lysander and Spike since her role is co-head with Euclid, not a team member. Question closed.
 
 ## Related
 

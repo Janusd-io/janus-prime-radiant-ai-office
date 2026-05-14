@@ -5,12 +5,12 @@ slug: euclid-wong
 created: 2026-05-07
 updated: 2026-05-14
 departments: [it-ops]
-related: [andrey-timokhov, michael-bruck, jehad-altoutou, ai-policy-gate-approval, crm-evaluation-and-selection, project-management-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, janus-prime-radiant-build, ingest-2026-05-14-lysander-liu-and-spike-zhao]
+related: [andrey-timokhov, michael-bruck, jehad-altoutou, ai-policy-gate-approval, crm-evaluation-and-selection, project-management-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, janus-prime-radiant-build, lysander-liu, rosa-wu, spike-zhao]
 ---
 
 # Euclid Wong
 
-Head of **three teams** at Janus — **IT**, **Project Management**, and **Operations**. Working closely with the AI Office on tool governance, sandbox-to-production handoffs, IT approved-tools list management, and the Project Management Prime Radiant rollout. Manages [[andrey-timokhov]] on the IT side; Lysander Liu (Head of Project Management), Rosa Wu (Co-head of Project Management), and Spike Zhao (Digital modeling engineer) on the Project Management side.
+Head of **three teams** at Janus — **IT**, **Project Management**, and **Operations**. **Co-heads Project Management with [[rosa-wu|Rosa Wu]]** at the senior level; the day-to-day operational lead of Project Management is [[lysander-liu|Lysander Liu]]. [[spike-zhao|Spike Zhao]] is the Digital modeling engineer on the delivery side. Manages [[andrey-timokhov|Andrey Timokhov]] on the IT side. Working closely with the AI Office on tool governance, sandbox-to-production handoffs, IT approved-tools list management, and the Project Management Prime Radiant rollout.
 
 ## Areas of involvement
 
@@ -29,7 +29,7 @@ Co-attendee on the AI ↔ IT meetings (2026-05-06 was the most recent; surfaced 
 Euclid runs **three distinct teams** at Janus:
 
 - **IT** — production systems, tool governance, infrastructure. [[andrey-timokhov|Andrey]] on this team.
-- **Project Management** — project delivery function. **Lysander Liu** (Head of Project Management) and **Rosa Wu** (Co-head of Project Management) co-lead the team; **Spike Zhao** (Digital modeling engineer) on the delivery side. Roles confirmed 2026-05-14.
+- **Project Management** — project delivery function. **Euclid co-heads with [[rosa-wu|Rosa Wu]]** at the senior level. **[[lysander-liu|Lysander Liu]]** (Head of Project Management) is the operational lead under the Euclid + Rosa co-head structure. **[[spike-zhao|Spike Zhao]]** (Digital modeling engineer) on the delivery side. Roles confirmed 2026-05-14.
 - **Operations** — operational backbone.
 
 Structurally important for the Prime Radiant rollout: Euclid wearing all three hats simplifies federation between IT-Ops and Project Management rollouts (shared architecture decisions; no inter-leadership coordination cost).

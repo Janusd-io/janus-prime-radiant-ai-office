@@ -1428,3 +1428,39 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - The team is on Windows; Cowork on Windows may have install friction we haven't yet validated. Claude Code is more battle-tested across platforms.
   - Code is the more developer-friendly surface; some of the team (Spike especially, given his engineering role) may prefer it over Cowork's desktop UI.
 - **No new decision page filed** for the template-starting-point or the Claude-via-Cowork-or-Code framing. Both are operational tooling choices, not strategic decisions. They live in the standup-proposal deck and (via this log) in the program-level project hub when Michael next touches it.
+
+## [2026-05-14 14:45] entity creation | Lysander Liu, Rosa Wu, Spike Zhao
+- driver: Michael — "Rosa is co-head with Euclid. Create all three entity pages now." This both clarified the structure (Rosa is Euclid's co-head specifically on Project Management, not Lysander's) and approved the escalation.
+
+### Org structure clarified
+- **Euclid Wong** — Head of IT + Project Management + Operations (three teams overall). Co-head of Project Management specifically with Rosa Wu.
+- **Rosa Wu** — Co-head of Project Management with Euclid at the senior/strategic level.
+- **Lysander Liu** — Head of Project Management at the operational/management level; reports up through the Euclid + Rosa co-head structure. Authored the 28-phase workflow.
+- **Spike Zhao** — Digital modeling engineer on the delivery side.
+
+### New entity pages created (3)
+- entities/internal/lysander-liu.md — Head of Project Management; canonical workflow author; 30–60% bounded-AI articulation; document-management-gap acknowledgement; Mandarin-primary; Project Management Prime Radiant curator candidate. Confidence: high. Cross-linked to euclid-wong, rosa-wu, spike-zhao, the workflow page, both lessons, the program-level hub.
+- entities/internal/rosa-wu.md — Co-head of Project Management with Euclid; attended 13 May intro session (Rosa was the team-side rep there); dashboard track owner for the Project Management Prime Radiant; curator candidate alongside Lysander and Euclid; Mandarin-primary; reasoning-altitude at the strategic / architecture level vs Lysander's operational level. Confidence: medium-high (less single-source depth than Lysander; substantively present at the intro + named explicitly by Michael as co-head).
+- entities/internal/spike-zhao.md — Digital modeling engineer (Phases 16–18 of the workflow — 3D modelling, IoT protocols, point binding, single-point testing); principal interlocutor during the 14 May walkthrough — his probing of phase boundaries, AI scope, and verification-committee composition produced load-bearing content for the workflow page and the bounded-AI lesson; Mandarin-primary; likely Prime Radiant power-user on the delivery / technical side. Confidence: high (role confirmed; substantive contributions documented).
+
+### Existing pages updated
+- entities/internal/euclid-wong.md — opening paragraph rewritten to credit Rosa Wu as **co-head of Project Management with him**, not as a team member. Three-Teams section's Project Management line updated accordingly. Related: field gains lysander-liu, rosa-wu, spike-zhao (replacing the now-resolved ingest-question reference).
+- entities/departments/it-ops.md — Project Management team listing restructured to lead with Rosa (co-head with Euclid), then Lysander (operational lead), then Spike. All three names now wikilinked. Related: field updated.
+- questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — status: active → resolved. Status-update section at bottom rewritten to credit Michael's approval and to call out the Rosa-upgrade (originally referenced-only, now first-class entity per the co-head clarification). Question is now historical record.
+- index.md — three new internal-people entries added (alphabetised: lysander-liu, rosa-wu, spike-zhao). The resolved entity-escalation question moved from "Questions (open)" to "Questions (resolved)" with a one-line summary.
+
+### Deck refinement
+- 2026-05-14-project-management-prime-radiant-standup-proposal.html — Slide 1 attendee row: Rosa Wu's role label updated from "Co-head of Project Management" to "Co-head of Project Management (with Euclid)" to make the structure unambiguous for external readers who might not know Euclid wears the broader three-team hat.
+
+### Judgment calls
+- **Rosa Wu's "Co-head of Project Management" is structurally peer-to-Euclid, not peer-to-Lysander.** Both her entity page and Euclid's page now make this hierarchy explicit. Lysander's "Head of Project Management" is the operational lead title, *under* the Euclid + Rosa co-head structure. This is unusual structurally (multiple "Head of"-flavoured titles in the same function) but reflects what Michael described.
+- **Three entity pages created in one pass** despite the Spike-was-medium-confidence flag earlier today. By the time of this pass, Spike's role was confirmed (Digital modeling engineer) and the substantive transcript content from the 14 May walkthrough was rich enough to ground a confidence:high page without speculation.
+- **The historical question page is preserved** rather than deleted — append-only convention per the wiki schema. Question now reads as a complete arc: opened with role-TBC blocker → Spike resolved → all three pages created. Useful institutional record of how the entity-escalation pathway works in practice.
+- **No personal vault sections** on any of the three new pages, per [[2026-05-14-personal-vaults-shelved-pending-federation-redesign|the deferral decision]]. Each page flags personal-vault revisit as an open follow-up at the bottom.
+- **No surname-only carve-out** — Lysander Liu, Rosa Wu, Spike Zhao all consistently rendered with full names throughout the new pages. The wiki's two-character-Asian-name convention is the format Michael has been using; followed it.
+
+### State after this pass
+- Internal people: was 9, now 12 (Lysander, Rosa, Spike added).
+- Project Management entity escalation: closed.
+- Project Management department structure: fully documented across Euclid, Rosa, Lysander, Spike pages + the IT-Ops department page + the project-management-digital-delivery-workflow process page.
+- Pending follow-ups (not actioned this pass): Marketing vault possibly needs migration from Janusd-io to Janusd-com; company-wide intro deck still shows personal vaults prominently and needs a refresh; one-liner role descriptions from Euclid as Michael said he'd get them later.

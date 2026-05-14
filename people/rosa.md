@@ -12,7 +12,7 @@ status: stub
 confidence: low
 person_status: unknown
 ---
-
+ 
 # Rosa
 
 Stub created from meeting [[2026-05-13-aio-project-management-meeting]] on 2026-05-13.
