@@ -1353,3 +1353,43 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - New decisions filed: 2 (personal-vault deferral + Windows-test framing).
 - Updated pages: 4 (Euclid, IT-Ops dept, entity-escalation question, index).
 - Pending follow-ups (not actioned this pass): refresh of the company-wide intro deck to reflect personal-vault deferral; Spike's role pinned down once Deel is set up; one-liner role descriptions for Lysander / Rosa Wu / Spike to be obtained from Euclid.
+
+## [2026-05-14 14:00] standup-proposal deck refresh round 2 + wiki touch-ups
+- driver: Michael — six adjustments to the standup-proposal deck after reading round 1:
+  1. No Windows mention (implementation detail audience won't care about).
+  2. Mesh subfolder needs separate discussion (Google Shared Drive substrate retired; federation pattern needs redesign).
+  3. GitHub repo for non-AIO lives on `Janusd-com` (not `Janusd-io`).
+  4. Obsidian + GitHub plugin called out explicitly.
+  5. (Wiki-only) personal-vault deferral has a technical reason: two vaults can't sync against GitHub cleanly yet.
+  6. Tooling list expanded: Monday.com (system of record); Google Drive (possibly, for document management).
+
+### Deck changes (2026-05-14-project-management-prime-radiant-standup-proposal.html)
+- **Slide 3 (How the standup works)** — major rewrite:
+  - Step count: 5 → 4. Removed the "mesh subfolder with the AI Office — federation begins" step (now a separate-conversation item per #2).
+  - Step 1 GitHub org corrected: `Janusd-io` → `Janusd-com` for the Project Management team vault.
+  - Step 3 (tooling install) rewritten as a nested bulleted list of six items: Cowork; Obsidian + GitHub plugin; Web Clipper; Fireflies connector; Monday.com (system of record, already-in-use); Google Drive (likely, for document storage). Windows-as-first-deployment framing removed entirely (still captured as wiki decision page for internal reference).
+  - Closing callout updated: "Two things we'll cover in a separate conversation" — personal vaults (with a softer "we'll come back to it" framing) and federation between department brains (with the explicit acknowledgement that the previous mesh-subfolder pattern assumed Google Shared Drive and needs re-thinking on GitHub).
+- **Slide 5 (timeline)** — minor cleanup:
+  - Week 1: Windows-tooling-install reference replaced with a neutral "Tooling-install session ~60-90 min"; vault stood up in `Janusd-com`.
+  - Week 2: Windows-friction reference removed.
+  - Weeks 3-4: mesh-as-implementation reference replaced with a "separate conversation in this window on how the AIO × Project Management shared workspace should work on the new GitHub substrate."
+  - Month-2+: Rosa Wu surname propagated.
+
+### Wiki updates
+- decisions/2026-05-14-personal-vaults-shelved-pending-federation-redesign.md — added the technical-sync-blocker as a fourth reason (was 3 → 4): "two vaults can't sync against GitHub cleanly yet from the same machine"; the Obsidian Git plugin + repo-clone topology that works for a single vault breaks down with two. Added to the "what we need to revisit" list as the first item. Soft promise: solvable but separate engineering effort from this week's rollout.
+- projects/janus-prime-radiant-build.md — added the two-orgs-distinct-purposes bullet: `Janusd-io` for AIO + template; `Janusd-com` for all other department instances. Marketing migration to `Janusd-com` flagged as a possible follow-up.
+- 2026-05-14-windows-as-first-non-mac-deployment.md (existing decision page) — **left intact** as internal AIO record; it captures the Windows-friction-to-be-documented context that won't surface to the Project Management audience but is still load-bearing for IT-side rollout planning. Flag added in the log here that this decision is intentionally not surfaced externally.
+
+### Judgment calls
+- **Step count 5 → 4 on slide 3.** Removing the mesh subfolder step (per Michael's #2) was the right move — surfacing it as a current rollout step would be inaccurate. The two-things-deferred callout absorbs the federation conversation cleanly without needing a placeholder step.
+- **Google Drive scope hedged with "likely".** Michael said "possibly Google Drive (for the document management)" — I made it "likely, we'll confirm scope during the install" in the deck. Reads as honest sequencing rather than uncertainty about whether Drive is in use.
+- **Monday.com framed as already-in-use.** It is — every Janus department touches Monday — but worth saying so that the team doesn't read it as a new tool they need to learn.
+- **`Janusd-com` corrected globally in the deck only (not in the wiki yet).** The wiki decision page on the Project Management rollout was created with no GitHub org reference, so no correction needed there. The project hub now carries the two-orgs explanation. Going forward, slug for the new vault should be `janus-prime-radiant-project-management` on `Janusd-com`.
+- **Windows-as-first-non-mac-deployment decision page kept** even though deck no longer mentions Windows. The internal AIO planning still needs that context for the install runbook + downstream rollouts. The decision page is internal/AIO-only; not shared externally.
+- **No new follow-up question filed** about the two-orgs split. It's not an open question — it's a clarification Michael surfaced; the project hub captures it. If someone needs to migrate the Marketing vault or set up `Janusd-com` access for new team members, that's an operational task, not a wiki decision.
+
+### State after this pass
+- Standup-proposal deck: round-2 refresh complete, ready to share with Euclid, Rosa Wu, Lysander, Spike.
+- Personal-vaults-shelved decision page: now reflects the technical-sync-blocker reason.
+- Project hub: two-orgs split documented.
+- Pending follow-ups (not actioned this pass): refresh the company-wide intro deck to reflect personal-vault deferral (still on the queue from earlier today); Spike's role pinned down once Deel is set up; Marketing vault possibly needs to be migrated from `Janusd-io` to `Janusd-com` (TBC — depends on where it currently lives).

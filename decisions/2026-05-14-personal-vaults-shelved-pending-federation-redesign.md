@@ -24,11 +24,12 @@ Effective immediately: the Project Management Prime Radiant rollout proceeds tea
 
 ## Why this decision now
 
-Three threads converged this week to make personal vaults the wrong piece to push through right now:
+Four threads converged this week to make personal vaults the wrong piece to push through right now:
 
 1. **Implementation complexity is higher than it looked.** A personal vault is technically straightforward; the rules for *what gets promoted from a personal vault into the department vault* are not. Privacy, ownership, schema coherence, decision-history continuity, who-can-see-what — every one of these needed an answer before the first personal vault could be safely federated upward. We do not have those answers yet.
 2. **Federation architecture is in active redesign on the GitHub substrate.** Per [[janus-prime-radiant-build|the program-level hub]] and the 2026-05-13 IT meeting, the move from Google Shared Drive to GitHub as the canonical store changes how federation works between vaults. The original mesh-federation pattern ([[peer-to-peer-mesh-federation-pattern]]) was designed against the Drive model; it needs to be re-thought for Git semantics (clones, branches, sync direction, conflict resolution). Adding personal vaults *during* that redesign multiplies the surface area being worked on.
-3. **Team brains are the load-bearing piece for the [[ai-native-janus-positioning|AI Native pitch]].** Bonaventure's framing of Prime Radiant as a commercial-asset proof point depends on department-level institutional memory, not on individual personal vaults. Sequencing team brains first delivers the strategic outcome faster, and personal vaults can land later without breaking the architecture.
+3. **Technical blocker: two-vault GitHub sync is not yet working.** Concretely: we could not get two vaults (a personal one and a department one) to sync against GitHub from the same machine — the Obsidian Git plugin + repo-clone topology that works for a single vault breaks down when a user has two vaults sharing GitHub state. This is a solvable problem but a *separate* engineering effort from the rollout we want to ship this week. The personal-vaults concept depends on this working cleanly, so we wait until the sync mechanics are sorted.
+4. **Team brains are the load-bearing piece for the [[ai-native-janus-positioning|AI Native pitch]].** Bonaventure's framing of Prime Radiant as a commercial-asset proof point depends on department-level institutional memory, not on individual personal vaults. Sequencing team brains first delivers the strategic outcome faster, and personal vaults can land later without breaking the architecture.
 
 ## What changes operationally
 
@@ -46,6 +47,7 @@ Three threads converged this week to make personal vaults the wrong piece to pus
 
 ## What we need to revisit when personal vaults come back on the table
 
+- **Two-vault GitHub sync mechanic** — root cause of the current technical blocker. Needs to work cleanly before personal-vault rollout is feasible. Likely candidates: separate clone roots, per-vault Obsidian-Git config isolation, separate GitHub Desktop / CLI flows, or a wrapper skill that mediates the multi-vault state.
 - **Federation rules** between personal vault and department vault: what flows up automatically, what requires explicit promotion, what stays personal forever.
 - **Privacy taxonomy** beyond the existing public/private/personal split (see [[2026-05-11-privacy-vs-personal-vault-content-taxonomy]]).
 - **GitHub repo topology** — is each personal vault its own repo? A branch within the department repo? A separate org? — needs to be designed against the redesigned federation pattern.
