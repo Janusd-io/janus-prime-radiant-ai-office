@@ -1,6 +1,7 @@
 .DS_Store
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/graph.json
 .obsidian/cache
 # Added by scaffold-person-subtree.sh
 people/*/private/

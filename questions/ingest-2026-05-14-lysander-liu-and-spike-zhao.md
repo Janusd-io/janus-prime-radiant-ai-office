@@ -1,0 +1,83 @@
+---
+type: question
+title: "Ingest escalation — create entity pages for Lysander Liu and Spike Zhao?"
+slug: ingest-2026-05-14-lysander-liu-and-spike-zhao
+created: 2026-05-14
+updated: 2026-05-14
+departments: [ai-office, it-ops]
+owner: michael-bruck
+status: active
+sources: [2026-05-14-pm-workflow-walkthrough-lysander, 2026-05-13-aio-pm-meeting]
+related: [pm-digital-delivery-workflow, euclid-wong, 2026-05-14-ai-bounded-role-in-pm, 2026-05-14-pm-document-management-gap, janus-prime-radiant-build, 2026-05-06-andrew-as-standup-skill-rollout-pilot]
+---
+
+# Ingest escalation — create entity pages for Lysander Liu and Spike Zhao?
+
+## Proposed action
+
+Create two new internal entity pages from the 14 May PM workflow walkthrough, both high-stakes per `CLAUDE.md` §5.1 (new internal entity creation):
+
+1. **`entities/internal/lysander-liu.md`**
+2. **`entities/internal/spike-zhao.md`**
+
+Both are substantively referenced from the [[pm-digital-delivery-workflow|workflow process page]] and from the [[2026-05-14-ai-bounded-role-in-pm|AI-bounded-role lesson]] and [[2026-05-14-pm-document-management-gap|document-management lesson]] just filed. Promoting both gives those references resolvable wiki targets and gives Janus Prime Radiant a place to track their role.
+
+---
+
+## 1 · Lysander Liu (internal)
+
+**Sources backing the page:** [[2026-05-14-pm-workflow-walkthrough-lysander]] — Lysander walked through the entire 28-phase PM digital delivery workflow over ~60 minutes; this is the canonical-process content the PM Prime Radiant initialises against. [[2026-05-06-andrew-as-standup-skill-rollout-pilot]] previously names "the Lysander/Rosa group" as the PM team. Multiple inbound references will now exist in this wiki after this ingest.
+
+**Proposed page outline:**
+- Role: senior PM (PM team — under [[euclid-wong|Euclid]] as PM Lead).
+- Substantive expertise: end-to-end digital delivery process — initiation, planning, parallel-track execution, business delivery, training, UAT, verification. Has deep mental model of where AI helps vs where PM must own.
+- Captured contributions on file:
+  - The [[pm-digital-delivery-workflow|canonical workflow page]] — authored by him, transcribed by us.
+  - The [[2026-05-14-ai-bounded-role-in-pm|30–60% bounded-role principle]].
+  - The acknowledgement that drove the [[2026-05-14-pm-document-management-gap|document-management gap lesson]].
+- Working language: Chinese-primary (the 14 May session was conducted predominantly in Mandarin).
+- Federation status: PM instance is rollout pilot #2 (after [[andrew-soane|Andrew]] / Marketing). Lysander likely becomes the PM Prime Radiant curator alongside [[euclid-wong|Euclid]] when the instance stands up.
+
+**Confidence:** high (single deep source, but the source is substantive enough to ground a high-confidence entity).
+
+## 2 · Spike Zhao (internal)
+
+**Sources backing the page:** [[2026-05-14-pm-workflow-walkthrough-lysander]] — Spike was the principal interlocutor with Lysander throughout the meeting, asking clarifying questions about scope (Phase 4 handoff vs Phase 3 supplementary gathering), AI involvement, the BIP kickoff committee composition, the trial-run scope question, and the per-scenario training cadence.
+
+**Proposed page outline:**
+- Role: PM team or PM-adjacent business role — exact title TBC. Asking style suggests senior business stakeholder, possibly sales / PM interface or PM business analyst.
+- Substantive contributions in the meeting:
+  - Pushed on whether AI's draft contributions need full review (yes — confirmed by Lysander).
+  - Pushed on what the verification meeting committee composition is (project management committee + sales + marketing lead).
+  - Pushed on per-scenario training cadence vs full single-shot (per-scenario; formal training is non-negotiable even when execution-time learning has happened).
+- Working language: Chinese-primary on this call.
+- Federation status: pending — needs Michael's read on whether Spike is on the PM team proper or in an adjacent function.
+
+**Confidence:** medium (single source, role not yet pinned down precisely).
+
+**Open question on Spike's exact role:** the transcript doesn't give a definitive title. He could be (a) senior PM peer to Lysander, (b) PM-side business analyst, (c) sales-PMO bridge, (d) something else. Worth confirming his function before the page goes live so it doesn't anchor an incorrect framing.
+
+---
+
+## Alternative interpretations / options
+
+1. **Create both pages now.** Recommended. Both have ≥2 inbound references after this ingest (the workflow page + the two lessons). The PM rollout (pilot #2 after Marketing) is in flight; the entities will be load-bearing for federation cross-references.
+2. **Lysander now, Spike defer.** Possible — Lysander's role is well-defined; Spike's needs your confirmation. Trade-off: leaves an inbound broken wikilink to `[[spike-zhao]]` on the workflow page.
+3. **Defer both pending the PM mesh subfolder being stood up.** Risk: the workflow page already references both; defers wiki internal coherence for a process gain that's separable.
+
+## Recommendation
+
+**Option 1 — create both** — Lysander at confidence:high, Spike at confidence:medium with the role-clarification flag. This matches the OpenAI / Vivian Balakrishnan precedent where escalated entity creation tracked with their inbound-reference density.
+
+For Spike specifically, a short clarification before publishing would help — what's his actual function on the PM team?
+
+Once approved, both pages get created. If Spike's role detail surfaces in your reply, I'll bake it in directly.
+
+## Related
+
+- [[pm-digital-delivery-workflow]] — the process page that both names will resolve back to.
+- [[2026-05-14-pm-workflow-walkthrough-lysander]] — source transcript.
+- [[2026-05-13-aio-pm-meeting]] — prior PM intro session (Euclid + Rosa).
+- [[2026-05-06-andrew-as-standup-skill-rollout-pilot]] — the earlier wiki reference to "the Lysander/Rosa group" being the previously-floated PM pilot.
+- [[euclid-wong]] — PM Lead.
+- [[janus-prime-radiant-build]] — program-level hub.

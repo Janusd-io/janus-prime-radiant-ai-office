@@ -1229,3 +1229,41 @@ Closed out the longest-pending v0.x item from yesterday's queue. The v0.10 bump 
 - `prime-radiant-member-setup.md` extraction.
 - Schema linter spec — still actionable; v0.11 vocabulary gives it concrete targets (four-axis edge checks + git-aware staleness criteria).
 - Arxiv figure mirroring (pending URL paste from Michael).
+
+## [2026-05-14 12:00] ingest | 2026-05-14-pm-workflow-walkthrough-lysander | meeting (force-ingest)
+- driver: Michael — Lysander Liu walked through the entire 28-phase Janus PM digital delivery workflow over ~60 minutes (in Mandarin) with Michael, Euclid, and Spike Zhao. Strategic ingest — the workflow becomes the canonical content the PM Prime Radiant instance initialises against once PM enrols. Full ingest requested.
+- filed source: sources/meetings/2026-05-14-pm-workflow-walkthrough-lysander.md (~48KB; raw Fireflies transcript preserved per source-immutability; predominantly Mandarin with English portions from Michael)
+
+### Tier 1 — capture (new wiki pages)
+- created process: processes/pm-digital-delivery-workflow.md — comprehensive end-to-end documentation of all 28 phases (initiation → planning → execution → business delivery → closure); per-phase inputs/outputs/governance; payment schedule; task-encoding + dependency rules; explicit Global vs Country governance markers; AI's bounded role threaded through. This is the canonical reference for PM Prime Radiant initialisation.
+- created lesson: lessons/2026-05-14-ai-bounded-role-in-pm.md — Lysander's bounded view of AI in PM (30–60% of preparation work, first-draft only, PM stays in the loop). Connects to [[ai-native-janus-positioning]] Pillar 3 framing.
+- created lesson: lessons/2026-05-14-pm-document-management-gap.md — Michael's IBM-ECO probe + Lysander's acknowledgement that PM document/version control is ad-hoc today. Includes Michael's three-layer knowledge model (knowledge/methodology/decisions) and the ISO connection (9001 doc control / 27001 audit trail / 42001 decision traceability). Frames Prime Radiant as the operational answer.
+- created question: questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md — high-stakes escalation for two new internal entity pages. Lysander at confidence:high; Spike at confidence:medium pending role-clarification.
+
+### Tier 2 — existing pages updated (3)
+- entities/internal/euclid-wong.md — major: added "PM Lead — dual hat" section (Euclid is both IT-Ops Head AND PM Lead, per 13 May intro session); cross-links to pm-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, the entity escalation. `updated:` 2026-05-07 → 2026-05-14.
+- entities/internal/michael-bruck.md — added "Frames in active use (2026-05-14)" section: ECO-as-document-control analogy from his IBM origin; three-layer knowledge model (knowledge → methodology → decisions). `updated:` 2026-05-11 → 2026-05-14.
+- projects/janus-prime-radiant-build.md — added PM Prime Radiant initialisation plan bullet at end of program-level sub-effort list; sources/related expanded with the new pages.
+
+### Escalations
+- 1 active question filed (lysander-liu + spike-zhao entity pages). Will lint as broken until resolved — both wikilinked from the new process page and lessons.
+
+### Volume + counters
+- 4 new pages created (1 process + 2 lessons + 1 question)
+- 3 existing pages updated
+- 1 source filed (~48KB; predominantly Mandarin)
+- Ingest counter since last lint: TBD — needs check (multiple ingests in flight this week)
+
+### Judgment calls
+- **Source-immutability respected for the Mandarin transcript.** The transcript is preserved verbatim (heading + raw speaker turns). All English structuring lives in the derived process page; the source is the authoritative record of what was said in Lysander's words.
+- **Process page placed in `processes/`** rather than a new PM subfolder. The CLAUDE.md schema treats `processes/` as "runbooks, how-tos, internal procedures" — the PM workflow fits. When the PM Prime Radiant instance stands up, the workflow can be re-mirrored there if needed, but the AIO instance keeps the original as the canonical capture point. Matches the existing precedent of `processes/standup.md` and `processes/ai-tool-evaluation.md` (reference pages for canonical Janus operating procedures).
+- **Two lessons rather than one** — AI-bounded-role (30–60%) and document-management-gap are conceptually separable: one is about *how AI fits into PM*, the other is about *what PM's document discipline currently lacks and how Prime Radiant fills it*. Combining would conflate; separating makes each independently citable.
+- **Entity escalation for both Lysander + Spike** (not just Lysander) — both have ≥2 inbound references from this ingest. Filed together as a single question per the Vivian-Balakrishnan-and-FactSet precedent.
+- **No new decision page** despite multiple decision-like moments in the meeting (e.g., Global-controls-project-IDs, two-modes-only-for-platform-deployment). Folded into the process page as governance markers rather than separate decision records — these are reaffirmations of how PM already operates, not new Janus-wide decisions made on this call.
+- **No new brief written.** The meeting was operational/process-capture, not strategic synthesis. The strategic frame (Prime Radiant initialises against the workflow → PM gets a "running start") is captured inside the process page's "Why this document exists" section and threaded through the lessons.
+- **Michael's IBM-ECO analogy filed in two places** — the document-management lesson (where it landed substantively) and his entity page (as one of his active framing devices). Acceptable double-mention because each location serves different read-pathways.
+- **Spike Zhao's role flagged as TBC** in the escalation question — transcript doesn't pin his exact title down. Asked Michael to confirm before publishing.
+- **"Product Management" vs "Project Management" naming** — Michael's "Product Management Prime Radiant" framing in his instruction reads as a slip for "Project Management" given the meeting content. Used "Project Management" / "PM" throughout the new pages to match the existing wiki convention (e.g. 2026-05-13-aio-pm-meeting was titled "Project Management Meeting"). If Product Management is in fact a separate Janus function, this will surface when Michael reads the new pages.
+
+### Pattern observation
+- The 14 May meeting is the second strategic ingest in 4 days where a domain expert walks through their own operating model in detail (Bonaventure's 12 May three-pillar messaging; Lysander's 14 May PM workflow). Both produce process-or-brief-shaped wiki content that becomes initialisation material for a downstream Prime Radiant instance. Worth tracking whether this pattern continues — if so, "domain-expert workflow walkthrough + same-day full ingest" becomes a repeatable rollout step.

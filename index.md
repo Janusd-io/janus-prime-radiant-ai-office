@@ -1,6 +1,6 @@
 # Wiki Index
 
-_Updated: 2026-05-14 (CLAUDE.md v0.11 lands the Drive→Git substrate documentation in §1 + git-awareness framing across §5 workflows. Prime Radiant build hub now leads with 'Migration executed (2026-05-13)' note and reflects the v0.11 schema version. Earlier today: decisions/concepts/ → concepts/ migration; 18-file lint remediation pass (9 entity/concept/person stubs + 9 meeting source stubs); broken-refs 149 → 82.)_
+_Updated: 2026-05-14 (PM workflow walkthrough ingest — Lysander Liu's 28-phase PM digital delivery workflow captured as canonical process page; AI-bounded-role + document-management-gap lessons; Lysander + Spike Zhao entity escalation filed. PM Prime Radiant initialisation now has its running-start content. Earlier today: CLAUDE.md v0.11 Drive→Git substrate documentation; decisions/concepts/ → concepts/ migration; 18-file lint remediation pass.)_
 
 > Content catalog for **Janus Prime Radiant · AI Office**. One line per page, grouped by category. See `CLAUDE.md` for the schema and update rules.
 
@@ -91,6 +91,7 @@ _(none yet)_
 - [ai-policy-gate-approval](processes/ai-policy-gate-approval.md) — reusable governance process for moving an AI tool from active use to formal approval; 4-of-4 gate, 8-step flow, 4-system coordination.
 - [ai-registry](processes/ai-registry.md) — Linear AIR management conventions; reference page pointing at the canonical `/ai-registry` skill.
 - [ai-tool-evaluation](processes/ai-tool-evaluation.md) — Janus's gate-based AI tool evaluation framework; reference page pointing at the canonical `/ai-tool-evaluation` skill.
+- [pm-digital-delivery-workflow](processes/pm-digital-delivery-workflow.md) — Janus PM's end-to-end project delivery workflow (28 phases); the canonical reference the PM Prime Radiant initialises against.
 - [prime-radiant-instance-setup](processes/prime-radiant-instance-setup.md) — curator-side runbook for standing up a new Prime Radiant instance end-to-end; embedded bash script automates repo + local-vault + initial-commit-and-push; GUI sequence for branch protection, Obsidian, Cowork.
 - [standup](processes/standup.md) — AIO daily standup workflow (Fireflies → Monday → Linear AIP → Notion); reference page pointing at the canonical `/standup` skill (v3.13).
 
@@ -201,6 +202,8 @@ _(none yet)_
 
 ## Lessons
 
+- [2026-05-14-ai-bounded-role-in-pm](lessons/2026-05-14-ai-bounded-role-in-pm.md) — Lysander: AI handles 30–60% of PM prep as first drafts only; PM stays in the loop. Maps onto AI-Native Pillar 3 (augment, not replace). [active]
+- [2026-05-14-pm-document-management-gap](lessons/2026-05-14-pm-document-management-gap.md) — PM document/version management is ad-hoc per PM today; ISO problem. Michael's IBM-ECO probe + three-layer knowledge model frames Prime Radiant as the operational answer. [active]
 - [2026-05-12-anti-ai-washing-as-content-discipline](lessons/2026-05-12-anti-ai-washing-as-content-discipline.md) — "name three things that make it AI" — content-discipline pattern that filters cosmetic AI-washing; first Janus social post on the angle going out today. [active]
 - [2026-05-11-privacy-vs-personal-vault-content-taxonomy](lessons/2026-05-11-privacy-vs-personal-vault-content-taxonomy.md) — public / private / personal are three different things in Prime Radiant federation; personal is pre-promotion workflow staging (Janus contracts forbid non-work personal content). [active]
 - [2026-05-11-html-over-powerpoint-for-read-only-content](lessons/2026-05-11-html-over-powerpoint-for-read-only-content.md) — HTML, not PowerPoint, for read-only content; token cost + editability + downstream value all favour HTML. [active]
@@ -213,6 +216,7 @@ _(none yet)_
 
 ## Questions (open)
 
+- [ingest-2026-05-14-lysander-liu-and-spike-zhao](questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md) — propose creating Lysander Liu (PM team, workflow walkthrough author) + Spike Zhao (PM-adjacent, role TBC) in entities/internal/; both have ≥2 inbound references from today's ingest. [active]
 - [2026-05-12-website-architecture-one-site-vs-country-sites](questions/2026-05-12-website-architecture-one-site-vs-country-sites.md) — one `janusd.com` site with country sub-paths (Andrew + Michael) vs standalone country sites (anticipated Bonaventure). Sequenced ahead of the Singapore landing-page work. [active]
 - [ingest-2026-05-12-1730-vivian-balakrishnan-and-factset](questions/ingest-2026-05-12-1730-vivian-balakrishnan-and-factset.md) — propose creating Vivian Balakrishnan (Singapore Foreign Minister, LLM-wiki advocate) in entities/people/ + FactSet (financial data, AI-integrated) in entities/vendors/; both have ≥2 inbound references from today's ingest. [active]
 - [ingest-2026-05-12-1545-openai](questions/ingest-2026-05-12-1545-openai.md) — lint-driven escalation to create `entities/vendors/openai.md`; 4-source threshold decisively met; recommendation = promote (confidence:medium). [active]
