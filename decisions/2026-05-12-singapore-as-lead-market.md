@@ -3,15 +3,15 @@ type: decision
 title: Singapore confirmed as Janus's lead commercial market; UAE deprioritised for streaming-economy products
 slug: 2026-05-12-singapore-as-lead-market
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-15
 status: resolved
 owner: bonaventure-wong
 decided_by: bonaventure-wong
 departments: [office-of-ceo, marketing, ai-office]
 countries: [sg, ae, gb]
 confidence: high
-sources: [2026-05-12-bonaventure-ai-native-call]
-related: [bonaventure-wong, singapore-news-monitoring, marketing-prime-radiant, ai-native-janus-positioning, crm-evaluation-and-selection, janus-prime-radiant-build]
+sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-15-singapore-marketing-launch-plan-v1]
+related: [bonaventure-wong, singapore-news-monitoring, marketing-prime-radiant, ai-native-janus-positioning, crm-evaluation-and-selection, janus-prime-radiant-build, ingest-2026-05-15-joyce-woo]
 ---
 
 ## Decision
@@ -57,8 +57,20 @@ Singapore is Janus's primary lead commercial market for AI-Native products and t
 | [[janus-prime-radiant-build]] | Externalisability of the pattern as a sales asset (Singapore demos / pitches) — see [[ai-native-janus-positioning]] |
 | [[iso-compliance-programme]] | ISO compliance evidence is part of the trust layer under the Singapore pitch |
 
+## Operational evidence (2026-05-15)
+
+[[2026-05-15-singapore-marketing-launch-plan-v1|Andrew's v1 Singapore campaign plan]] (delivered 2026-05-15, 3 days after this decision) operationalises the lead-market call directly:
+
+- 100-account target list mapped across institutional investors, real estate funds, sustainability-focused funds, private equity, and family offices — all Singapore-first.
+- 8/9 July luncheon as the campaign anchor event, built on the back of the PM's AI-in-REITs white paper referenced in this decision.
+- [[ingest-2026-05-15-joyce-woo|Joyce Woo]] formalised as "the recognised face of Janus Digital in Singapore" — paired with [[bonaventure-wong]] on direct outreach (BW/JW model).
+- Budget (~S$23,995 / AED 69,210) skewed deliberately toward SG: REITAS membership (S$5,000/yr) is the largest single line item — the Singapore real-estate-funds trade association.
+
+This is the first delivery of the Marketing PR Outputs layer scoped against this decision. Pace from decision → operational artefact: 3 days.
+
 ## Related references
 
 - [[ai-native-janus-positioning]] — the brief that frames the three-pillar messaging spine the Singapore market is being engaged through.
 - [[2026-05-12-vivian-balakrishnan-llm-wiki-government]] — pulse on the Singapore Foreign Minister.
 - [[2026-05-12-html-as-presentation-format-adopted]] — same-call decision on output format.
+- [[2026-05-15-singapore-marketing-launch-plan-v1]] — Andrew's v1 campaign-plan delivery operationalising this decision.
