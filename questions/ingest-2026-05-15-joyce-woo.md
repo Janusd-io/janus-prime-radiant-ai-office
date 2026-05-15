@@ -8,7 +8,7 @@ departments: [ai-office, marketing, office-of-ceo]
 countries: [sg]
 owner: michael-bruck
 status: active
-sources: [2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-12-bonaventure-ai-native-call]
+sources: [2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-12-bonaventure-ai-native-call, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 related: [bonaventure-wong, andrew-soane, marketing-prime-radiant, singapore-news-monitoring, 2026-05-12-singapore-as-lead-market, ai-native-janus-positioning, vivian-balakrishnan]
 ---
 
@@ -43,9 +43,28 @@ Create a new internal entity page `entities/internal/joyce-woo.md` for Joyce Woo
 
 **Medium-high.** Single deep source (the campaign plan), plus the standalone Bonaventure-call reference to her as the Vivian-Balakrishnan introducer. Substantive enough to ground a high-confidence framing of her role within Janus's SG positioning; lower confidence on biographical detail (formal title, history with the company, depth of network) until those surface.
 
-## Open question on her formal title / role
+## Open question on her formal title / role — RESOLVED 2026-05-15
 
-The wiki doesn't yet have her formal job title. "The recognised face of Janus Digital in Singapore" is the operational position, not a job title. Likely candidates: Head of Janus Digital Singapore, Country Lead — Singapore, or similar. To be confirmed once Deel is set up or via direct ask to Bonaventure.
+**Title confirmed: CEO, Singapore** (Chief Executive Officer of **Janus Digital Singapore Pte. Ltd.**), leading the company's engagement across the Asia-Pacific region. Source: [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]] (co-authored with [[bonaventure-wong|Bonaventure]], published May 2026).
+
+Strongest framing line from the paper: *"Janus Digital Singapore Pte. Ltd. is the company's anchor in the Asia-Pacific region, serving Singapore's institutional capital, asset management, and operating community across REITs, sovereign and pension capital, asset managers, real estate developers, and hospitality operators."*
+
+## Biographical detail now in hand
+
+Per the white paper's "About the authors" section:
+
+- **40+ years of corporate and private banking experience** across Singapore and Southeast Asia. Senior roles spanning credit, operations, compliance, risk management, investment management, marketing, and sales.
+- **1982:** Credit and Marketing Officer at DBS Finance (start of banking career).
+- **12 years at Merrill Lynch International Bank** — regional management positions in banking operations, compliance, and marketing/sales.
+- **2001:** Joined OCBC Private Bank to establish its investment advisory team; served on the investment committee for OCBC Trustee Limited.
+- Senior client relationship roles at **Citigroup, UBS, Morgan Stanley, Bank of Singapore**.
+- **2014:** Founded **Jachin Capital** (Singapore MAS-licensed fund manager).
+- **2023:** Jachin Capital acquired by **Leo Capital Corporation**; rebranded as **Leo Wealth Singapore**.
+- **Until 2026:** Chief Executive of Leo Wealth Singapore.
+- **2026:** CEO Janus Digital Singapore.
+- Education: **Bachelor of Business Administration, National University of Singapore**.
+
+Bio depth is now wiki-grade. Confidence on the proposed page upgrades from medium → **high** for biographical claims; confidence remains medium on operational network detail (introducer-to-Vivian-Balakrishnan, Singapore institutional relationships) until those are confirmed in transcripts or directly.
 
 ## Alternative interpretations / options
 
@@ -55,7 +74,16 @@ The wiki doesn't yet have her formal job title. "The recognised face of Janus Di
 
 ## Recommendation
 
-**Option 1 — create the page**, confidence:medium, with the formal-title open question flagged at the top of the page. Matches the Vivian Balakrishnan precedent where an entity page was justified by ≥2 inbound references plus substantive role context.
+**Option 1 — create the page now**, confidence:high (biography) / medium (operational network). The title open question is **resolved**; bio is now wiki-grade; three inbound source references (campaign plan + Bonaventure-call + Janus white paper). Co-author position on the SG white paper alongside Bonaventure is itself wiki-grade authority. Proposed page should:
+
+- `entities/internal/joyce-woo.md`, slug `joyce-woo`, type `person`.
+- `departments: [office-of-ceo]` (CEO Singapore is OoC by structure; can revisit if Janus splits SG into its own department).
+- `countries: [sg]`.
+- `confidence: high` (the entire bio came from a Janus-published document).
+- `related:` should include `bonaventure-wong`, `andrew-soane`, `marketing-prime-radiant`, `singapore-news-monitoring`, `vivian-balakrishnan`, `2026-05-12-singapore-as-lead-market`, `ai-native-janus-positioning`, `2026-05-14-janus-singapore-white-paper-storms-ahead`.
+- `sources:` should include `2026-05-14-janus-singapore-white-paper-storms-ahead`, `2026-05-15-singapore-marketing-launch-plan-v1`, `2026-05-12-bonaventure-ai-native-call`.
+
+Awaiting Michael's go.
 
 ## Related
 

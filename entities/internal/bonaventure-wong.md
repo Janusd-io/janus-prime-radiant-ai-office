@@ -6,7 +6,7 @@ created: 2026-05-06
 updated: 2026-05-15
 departments: [office-of-ceo]
 countries: [sg, ae, gb]
-related: [michael-bruck, jehad-altoutou, andrew-soane, euclid-wong, iso-compliance-programme, singapore-news-monitoring, crm-evaluation-and-selection, 2026-05-11-bonaventure-friday-meeting-audio-recovery, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, marketing-prime-radiant, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, vivian-balakrishnan]
+related: [michael-bruck, jehad-altoutou, andrew-soane, euclid-wong, iso-compliance-programme, singapore-news-monitoring, crm-evaluation-and-selection, 2026-05-11-bonaventure-friday-meeting-audio-recovery, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, marketing-prime-radiant, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, vivian-balakrishnan, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 ---
 
 # Bonaventure Wong
