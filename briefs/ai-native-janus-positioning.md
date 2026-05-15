@@ -3,12 +3,12 @@ type: brief
 title: AI Native — why the three-pillar messaging spine makes Prime Radiant a sales asset, not just internal tooling
 slug: ai-native-janus-positioning
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-15
 departments: [ai-office, marketing, office-of-ceo]
 countries: [sg, gb]
 confidence: high
-sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review]
-related: [bonaventure-wong, andrew-soane, michael-bruck, janus-prime-radiant-build, marketing-prime-radiant, singapore-news-monitoring, iso-compliance-programme, crm-evaluation-and-selection, agent-memory-2026-q2, post-rag-agent-data-stack, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-anti-ai-washing-as-content-discipline]
+sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [bonaventure-wong, andrew-soane, michael-bruck, janus-prime-radiant-build, marketing-prime-radiant, singapore-news-monitoring, iso-compliance-programme, crm-evaluation-and-selection, agent-memory-2026-q2, post-rag-agent-data-stack, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-14-janus-singapore-white-paper-storms-ahead, ingest-2026-05-15-joyce-woo, 2026-05-12-singapore-as-lead-market]
 ---
 
 # AI Native — Janus's strategic positioning

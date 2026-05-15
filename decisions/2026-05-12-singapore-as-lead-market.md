@@ -10,8 +10,8 @@ decided_by: bonaventure-wong
 departments: [office-of-ceo, marketing, ai-office]
 countries: [sg, ae, gb]
 confidence: high
-sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-15-singapore-marketing-launch-plan-v1]
-related: [bonaventure-wong, singapore-news-monitoring, marketing-prime-radiant, ai-native-janus-positioning, crm-evaluation-and-selection, janus-prime-radiant-build, ingest-2026-05-15-joyce-woo]
+sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [bonaventure-wong, singapore-news-monitoring, marketing-prime-radiant, ai-native-janus-positioning, crm-evaluation-and-selection, janus-prime-radiant-build, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 ---
 
 ## Decision
@@ -59,14 +59,20 @@ Singapore is Janus's primary lead commercial market for AI-Native products and t
 
 ## Operational evidence (2026-05-15)
 
-[[2026-05-15-singapore-marketing-launch-plan-v1|Andrew's v1 Singapore campaign plan]] (delivered 2026-05-15, 3 days after this decision) operationalises the lead-market call directly:
+Two artefacts landed in the days following this decision, both operationalising the lead-market call directly:
+
+**(1) [[2026-05-15-singapore-marketing-launch-plan-v1|Andrew's v1 Singapore campaign plan]] (delivered 2026-05-15, 3 days after this decision):**
 
 - 100-account target list mapped across institutional investors, real estate funds, sustainability-focused funds, private equity, and family offices — all Singapore-first.
-- 8/9 July luncheon as the campaign anchor event, built on the back of the PM's AI-in-REITs white paper referenced in this decision.
+- 8/9 July luncheon as the campaign anchor event.
 - [[ingest-2026-05-15-joyce-woo|Joyce Woo]] formalised as "the recognised face of Janus Digital in Singapore" — paired with [[bonaventure-wong]] on direct outreach (BW/JW model).
 - Budget (~S$23,995 / AED 69,210) skewed deliberately toward SG: REITAS membership (S$5,000/yr) is the largest single line item — the Singapore real-estate-funds trade association.
 
-This is the first delivery of the Marketing PR Outputs layer scoped against this decision. Pace from decision → operational artefact: 3 days.
+**(2) [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper "How agentic AI can answer the storms ahead"]] (PDF metadata 2026-05-14, 2 days after this decision):** 20-page co-authored position paper by [[bonaventure-wong|Bonaventure]] + [[ingest-2026-05-15-joyce-woo|Joyce Woo]], responding to PM Lawrence Wong's May Day Rally 2026 speech. First long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]] reframed as Singapore tripartism (Government / Labour / Employers commitments). Confirms `engage@janusd.sg` + `janusd.sg` as the SG operational identity. Centrepiece content asset for the launch campaign.
+
+This is the first delivery of the Marketing PR Outputs layer scoped against this decision. Pace from decision → operational artefacts: 2–3 days.
+
+**Note on "the PM's white paper" framing.** Earlier capture on this decision said "Singapore PM has formally endorsed AI in REITs — white paper to be shared." That refers to a **separate** PMO-authored document (not yet received as of 2026-05-15) covering the PM's AI-in-REITs framing. Bonaventure had said he'd share that paper when received. The white paper that landed on 14 May is *Janus's* response paper — different artefact, same Singapore-policy gravitational pull. Keep both straight: the PMO paper is upstream policy substrate; the Janus paper is downstream Janus output.
 
 ## Related references
 

@@ -11,9 +11,15 @@ related: [michael-bruck, jehad-altoutou, andrew-soane, euclid-wong, iso-complian
 
 # Bonaventure Wong
 
-CEO at Janus. Confirmed surname Wong; previously filed as `bonaventure` while surname pending.
+**Co-Founder & Global CEO** of Janus Digital. Confirmed surname Wong; previously filed as `bonaventure` while surname pending. Formal title from the [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]].
 
 Has a dedicated [[notion]] sub-page in the Operations Notebook ("Bonaventure — Discussion & Task Tracker") and a separate Reframe Analysis meeting (20 Apr 2026).
+
+## Background (from the Janus Singapore white paper, May 2026)
+
+20-year career in global capital markets. Senior roles at **J.P. Morgan** and **Morgan Stanley** across structured finance, principal investing, and emerging markets coverage. Capital markets work spanned cross-border financings, alternative credit structures, and direct investment across Asia, the Middle East, and Europe — experience that "now informs Janus Digital's outcome-based commercial model and its institutional engagement strategy."
+
+Also co-founded and successfully exited **two telecommunications ventures** (operating businesses built from inception to acquisition). Educated at **Harvard College**. Writes regularly on the intersection of AI, real estate capital structures, and the economics of running real assets better.
 
 ## Policy positions on file (from May standups + 12 May AI Native call)
 
@@ -33,6 +39,7 @@ Has a dedicated [[notion]] sub-page in the Operations Notebook ("Bonaventure —
 - **Sponsor:** [[singapore-news-monitoring]] — first commercial-footprint signal capture for Janus's Singapore office.
 - **Approval / strategic veto:** [[crm-evaluation-and-selection]] — must buy in before lock-in.
 - **Singapore campaign direct-outreach lead** (per [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]]) — BW/JW pairing with [[ingest-2026-05-15-joyce-woo|Joyce Woo]] owns direct email outreach to the 100-account target list; co-host duties at the 8/9 July luncheon; target-account list review due end-of-day Wed 20 May. See [[marketing-prime-radiant]] for the project hub.
+- **Co-author of the Janus Singapore white paper** — [[2026-05-14-janus-singapore-white-paper-storms-ahead|"How agentic AI can answer the storms ahead"]], dated May 2026, co-signed with [[ingest-2026-05-15-joyce-woo|Joyce Woo]]. Paper is Janus Digital's response to PM Lawrence Wong's May Day Rally 2026 speech and the centrepiece content asset for the SG launch campaign. First long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]] (capital → companies → workers) reframed as Singapore-tripartism (Government → Labour Movement → Employers).
 
 ## Current context
 
