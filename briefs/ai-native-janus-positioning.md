@@ -8,7 +8,7 @@ departments: [ai-office, marketing, office-of-ceo]
 countries: [sg, gb]
 confidence: high
 sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-01-pm-lawrence-wong-may-day-rally-2026]
-related: [bonaventure-wong, andrew-soane, michael-bruck, janus-prime-radiant-build, marketing-prime-radiant, singapore-news-monitoring, iso-compliance-programme, crm-evaluation-and-selection, agent-memory-2026-q2, post-rag-agent-data-stack, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-14-janus-singapore-white-paper-storms-ahead, ingest-2026-05-15-joyce-woo, 2026-05-12-singapore-as-lead-market]
+related: [bonaventure-wong, andrew-soane, michael-bruck, janus-prime-radiant-build, marketing-prime-radiant, singapore-news-monitoring, iso-compliance-programme, crm-evaluation-and-selection, agent-memory-2026-q2, post-rag-agent-data-stack, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-14-janus-singapore-white-paper-storms-ahead, joyce-woo, ingest-2026-05-15-joyce-woo, 2026-05-12-singapore-as-lead-market]
 ---
 
 # AI Native — Janus's strategic positioning
@@ -78,7 +78,7 @@ The implication: AI adoption isn't just a cost question or a productivity questi
 
 ## Update — 2026-05-15 — the messaging spine has its first public surface
 
-The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper "How agentic AI can answer the storms ahead"]] (20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[ingest-2026-05-15-joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **first long-form external surface for the three-pillar messaging spine**. The mapping is direct:
+The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper "How agentic AI can answer the storms ahead"]] (20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **first long-form external surface for the three-pillar messaging spine**. The mapping is direct:
 
 | Three-pillar spine (this brief) | White-paper realisation |
 |---|---|
@@ -92,7 +92,7 @@ The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white 
 
 **Resolves "where does the story go external" question.** This brief previously noted: *"At what point (and through what artefact) does the story go external?"* The white paper is that artefact. Distribution timing per the [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]] — promoted through the 8/9 July luncheon and the paid + organic + PR channels in the 9-week timeline.
 
-**Co-author authority.** [[ingest-2026-05-15-joyce-woo|Joyce Woo]] is now confirmed as CEO Singapore (per the paper's About-the-authors section). The paper's authority is co-signed by Global CEO + Singapore CEO — strongest possible signature for the SG launch.
+**Co-author authority.** [[joyce-woo|Joyce Woo]] is now confirmed as CEO Singapore (per the paper's About-the-authors section). The paper's authority is co-signed by Global CEO + Singapore CEO — strongest possible signature for the SG launch.
 
 ## Open questions
 

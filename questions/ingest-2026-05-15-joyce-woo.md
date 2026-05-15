@@ -74,16 +74,11 @@ Bio depth is now wiki-grade. Confidence on the proposed page upgrades from mediu
 
 ## Recommendation
 
-**Option 1 — create the page now**, confidence:high (biography) / medium (operational network). The title open question is **resolved**; bio is now wiki-grade; three inbound source references (campaign plan + Bonaventure-call + Janus white paper). Co-author position on the SG white paper alongside Bonaventure is itself wiki-grade authority. Proposed page should:
+**Option 1 — create the page now**, confidence:high (biography) / medium (operational network). The title open question is **resolved**; bio is now wiki-grade; three inbound source references (campaign plan + Bonaventure-call + Janus white paper). Co-author position on the SG white paper alongside Bonaventure is itself wiki-grade authority.
 
-- `entities/internal/joyce-woo.md`, slug `joyce-woo`, type `person`.
-- `departments: [office-of-ceo]` (CEO Singapore is OoC by structure; can revisit if Janus splits SG into its own department).
-- `countries: [sg]`.
-- `confidence: high` (the entire bio came from a Janus-published document).
-- `related:` should include `bonaventure-wong`, `andrew-soane`, `marketing-prime-radiant`, `singapore-news-monitoring`, `vivian-balakrishnan`, `2026-05-12-singapore-as-lead-market`, `ai-native-janus-positioning`, `2026-05-14-janus-singapore-white-paper-storms-ahead`.
-- `sources:` should include `2026-05-14-janus-singapore-white-paper-storms-ahead`, `2026-05-15-singapore-marketing-launch-plan-v1`, `2026-05-12-bonaventure-ai-native-call`.
+## Resolved 2026-05-15
 
-Awaiting Michael's go.
+Michael flagged the absence of the entity page; created at [[joyce-woo|entities/internal/joyce-woo.md]] with the proposed frontmatter and bio. This escalation is now resolved.
 
 ## Related
 
