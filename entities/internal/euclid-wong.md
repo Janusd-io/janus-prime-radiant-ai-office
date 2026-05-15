@@ -3,9 +3,9 @@ type: person
 title: Euclid Wong
 slug: euclid-wong
 created: 2026-05-07
-updated: 2026-05-14
+updated: 2026-05-15
 departments: [it-ops]
-related: [andrey-timokhov, michael-bruck, jehad-altoutou, ai-policy-gate-approval, crm-evaluation-and-selection, project-management-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, janus-prime-radiant-build, lysander-liu, rosa-wu, spike-zhao]
+related: [andrey-timokhov, dhyey-mehta, michael-bruck, jehad-altoutou, ai-policy-gate-approval, crm-evaluation-and-selection, project-management-digital-delivery-workflow, 2026-05-13-aio-pm-meeting, janus-prime-radiant-build, lysander-liu, rosa-wu, spike-zhao, 2026-05-15-singapore-strategy-alignment]
 ---
 
 # Euclid Wong
@@ -28,7 +28,7 @@ Co-attendee on the AI ↔ IT meetings (2026-05-06 was the most recent; surfaced 
 
 Euclid runs **three distinct teams** at Janus:
 
-- **IT** — production systems, tool governance, infrastructure. [[andrey-timokhov|Andrey]] on this team.
+- **IT** — production systems, tool governance, infrastructure. [[andrey-timokhov|Andrey]] and [[dhyey-mehta|Dhyey Mehta]] (recent joiner) on this team.
 - **Project Management** — project delivery function. **Euclid co-heads with [[rosa-wu|Rosa Wu]]** at the senior level. **[[lysander-liu|Lysander Liu]]** (Head of Project Management) is the operational lead under the Euclid + Rosa co-head structure. **[[spike-zhao|Spike Zhao]]** (Digital modeling engineer) on the delivery side. Roles confirmed 2026-05-14.
 - **Operations** — operational backbone.
 
