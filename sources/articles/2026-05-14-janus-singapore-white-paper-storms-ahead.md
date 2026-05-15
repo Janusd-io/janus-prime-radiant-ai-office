@@ -23,7 +23,7 @@ Janus Digital Singapore Pte. Ltd. position paper (20 pages, ~3.8 MB PDF) written
 
 The paper is structured as Janus Digital's commitment to Singapore in response to the PM's "two storms" framing — (1) energy supply shock from the Strait of Hormuz closure, (2) AI-driven economic transformation. It frames Janus's platform as the answer to both, converging on the commercial built environment (33%+ of SG electricity consumption, 20%+ of national carbon emissions).
 
-This is *Janus's* response paper. The "PM's white paper" Bonaventure has been referring to in earlier conversations is a separate document (the PM's May Day Rally speech / forthcoming PMO white paper on AI in REITs); this paper *responds* to that framing.
+This is **the white paper Bonaventure referenced on the 12 May AI Native CEO call** — written by Janus on the back of PM Wong's May Day Rally speech (not a separate forthcoming PMO document; confirmed by Michael 2026-05-15). The upstream substrate is the PM's speech itself (1 May 2026).
 
 ## Section structure
 
@@ -109,7 +109,7 @@ Education: **Bachelor of Business Administration, National University of Singapo
 
 The paper extensively quotes and engages with PM Wong's 1 May 2026 May Day Rally speech, particularly his "two storms" framing, the "enhanced search" critique of how AI is currently used, his "we may not be able to protect every job — but we will protect every worker" line, and the DBS example of worker elevation. Janus's three-commitments structure (to Government, Labour, Employers) mirrors the PM's tripartism framing.
 
-The PM's own AI-in-REITs white paper (referenced in [[2026-05-12-bonaventure-ai-native-call]] as forthcoming from the PMO) is a *separate* document from this one; Bonaventure indicated on 12 May that the PM's paper would be shared when received. This paper is Janus's *response* to the PM's speech, not the PM's paper itself.
+The PM's speech itself (1 May 2026, published by PMO Singapore) is the upstream substrate this paper is built on. Referenced URL in the paper's references list: `pmo.gov.sg/newsroom/pm-lawrence-wong-at-may-day-rally-2026/`. Worth a standalone source-file capture since it's quoted heavily here and will likely be cited across other SG-positioning artefacts.
 
 ## Filing notes
 
