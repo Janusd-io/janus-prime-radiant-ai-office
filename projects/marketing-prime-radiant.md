@@ -8,7 +8,7 @@ departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
 sources: [2026-05-08-andrew-marketing-prime-radiant, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, jehad-vault-marketing-prime-radiant, 2026-05-14-janus-singapore-white-paper-storms-ahead]
-related: [andrew-soane, marketing, janus-prime-radiant-build, llm-wiki, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, 2026-05-08-marketing-prime-radiant-as-separate-vault, crm-evaluation-and-selection, singapore-news-monitoring, peer-to-peer-mesh-federation-pattern, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, ingest-2026-05-15-joyce-woo, bonaventure-wong]
+related: [andrew-soane, marketing, janus-prime-radiant-build, llm-wiki, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, 2026-05-08-marketing-prime-radiant-as-separate-vault, crm-evaluation-and-selection, singapore-news-monitoring, peer-to-peer-mesh-federation-pattern, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, joyce-woo, ingest-2026-05-15-joyce-woo, bonaventure-wong]
 ---
 
 # Janus Prime Radiant · Marketing
@@ -249,7 +249,7 @@ Venue selection pending — likely informed by date availability + private-room 
 
 ## Update — 2026-05-15 Janus Singapore white paper landed (Outputs-layer artefact #2)
 
-The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]] ("How agentic AI can answer the storms ahead", 20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[ingest-2026-05-15-joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **centrepiece content asset** for the v1 Singapore campaign and the **first long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]]**.
+The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]] ("How agentic AI can answer the storms ahead", 20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **centrepiece content asset** for the v1 Singapore campaign and the **first long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]]**.
 
 This is Outputs-layer artefact #2 for the Marketing PR, on top of the [[2026-05-15-singapore-marketing-launch-plan-v1|campaign plan]] (Outputs-layer artefact #1). The campaign plan promotes this paper through paid + organic + PR + email channels across the 9-week timeline.
 
@@ -270,4 +270,4 @@ This is Outputs-layer artefact #2 for the Marketing PR, on top of the [[2026-05-
 
 ## Related
 
-[[marketing]] · [[andrew-soane]] · [[bonaventure-wong]] · [[ingest-2026-05-15-joyce-woo]] · [[2026-05-14-janus-singapore-white-paper-storms-ahead]] · [[2026-05-15-singapore-marketing-launch-plan-v1]] · [[janus-prime-radiant-build]] · [[llm-wiki]] (methodology) · [[2026-05-07-llm-wiki-extends-to-marketing-domain]] · [[crm-evaluation-and-selection]] · [[singapore-news-monitoring]] · [[2026-05-11-andrew-onboarding-plan]] · [[2026-05-12-website-architecture-one-site-vs-country-sites]] · [[ai-native-janus-positioning]]
+[[marketing]] · [[andrew-soane]] · [[bonaventure-wong]] · [[joyce-woo]] · [[2026-05-14-janus-singapore-white-paper-storms-ahead]] · [[2026-05-15-singapore-marketing-launch-plan-v1]] · [[janus-prime-radiant-build]] · [[llm-wiki]] (methodology) · [[2026-05-07-llm-wiki-extends-to-marketing-domain]] · [[crm-evaluation-and-selection]] · [[singapore-news-monitoring]] · [[2026-05-11-andrew-onboarding-plan]] · [[2026-05-12-website-architecture-one-site-vs-country-sites]] · [[ai-native-janus-positioning]]

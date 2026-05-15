@@ -15,7 +15,7 @@ binary: 2026-05-14-janus-singapore-white-paper-storms-ahead.pdf
 
 # Janus Digital Singapore — White paper: How agentic AI can answer the storms ahead
 
-Janus Digital Singapore Pte. Ltd. position paper (20 pages, ~3.8 MB PDF) written in response to Prime Minister Lawrence Wong's May Day Rally 2026 speech. Co-authored by [[bonaventure-wong|Bonaventure Wong]] (Co-Founder & Global CEO) and [[ingest-2026-05-15-joyce-woo|Joyce Woo]] (CEO, Singapore). Dated May 2026; PDF metadata creation timestamp 2026-05-14 06:15 UTC.
+Janus Digital Singapore Pte. Ltd. position paper (20 pages, ~3.8 MB PDF) written in response to Prime Minister Lawrence Wong's May Day Rally 2026 speech. Co-authored by [[bonaventure-wong|Bonaventure Wong]] (Co-Founder & Global CEO) and [[joyce-woo|Joyce Woo]] (CEO, Singapore). Dated May 2026; PDF metadata creation timestamp 2026-05-14 06:15 UTC.
 
 > Markdown twin of `sources/articles/2026-05-14-janus-singapore-white-paper-storms-ahead.pdf`. Original PDF retained for figures, photography, and source-of-truth fidelity.
 
@@ -99,7 +99,7 @@ Education: **Bachelor of Business Administration, National University of Singapo
 ## Why this source matters
 
 - **Operational evidence** for [[2026-05-12-singapore-as-lead-market]] — Janus is operationalising Singapore-first within 2 weeks of the strategic decision.
-- **Title resolution** for [[ingest-2026-05-15-joyce-woo]] — Joyce Woo's formal title confirmed: CEO, Singapore. Substantial bio detail also lands.
+- **Entity page** for [[joyce-woo|Joyce Woo]] — formal title confirmed (CEO, Singapore) and full 4-decade-banking bio captured. (Originating escalation now resolved: [[ingest-2026-05-15-joyce-woo]].)
 - **Public surface** for [[ai-native-janus-positioning]] — the three-pillar messaging spine has its first long-form externalisation here.
 - **Source material** for [[singapore-news-monitoring]] theme prompts — the regulatory landscape and Singapore policy framing captured in this paper is the "vocabulary" the news monitor should be scoring against.
 - **Third URL in play** for [[2026-05-12-website-architecture-one-site-vs-country-sites]] — `janusd.sg` is now in use alongside `janusd.com` and `janusdg.com` (campaign plan v1).

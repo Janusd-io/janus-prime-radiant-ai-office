@@ -9,7 +9,7 @@ countries: [sg, gb]
 owner: andrew-soane
 status: active
 sources: [2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-14-janus-singapore-white-paper-storms-ahead]
-related: [andrew-soane, bonaventure-wong, michael-bruck, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-14-janus-singapore-white-paper-storms-ahead, ingest-2026-05-15-joyce-woo]
+related: [andrew-soane, bonaventure-wong, michael-bruck, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-14-janus-singapore-white-paper-storms-ahead, joyce-woo, ingest-2026-05-15-joyce-woo]
 ---
 
 # Website architecture — one Janus site with country sub-paths, or standalone country websites?

@@ -9,7 +9,7 @@ countries: [sg]
 status: active
 owner: michael-bruck
 sources: [aio-2026-05-06, automations-2894742266, automations-2896179151, 2026-05-12-bonaventure-ai-native-call, 2026-05-15-singapore-marketing-launch-plan-v1, jehad-vault-singapore-news-monitoring, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-01-pm-lawrence-wong-may-day-rally-2026]
-related: [bonaventure-wong, andrew-soane, jehad-altoutou, slack, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-vivian-balakrishnan-llm-wiki-government, ingest-2026-05-12-1730-vivian-balakrishnan-and-factset, marketing-prime-radiant, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [bonaventure-wong, andrew-soane, jehad-altoutou, slack, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-vivian-balakrishnan-llm-wiki-government, ingest-2026-05-12-1730-vivian-balakrishnan-and-factset, marketing-prime-radiant, joyce-woo, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-01-pm-lawrence-wong-may-day-rally-2026]
 ---
 
 # Singapore News Monitoring Agent

@@ -5,7 +5,7 @@ slug: andrew-soane
 created: 2026-05-06
 updated: 2026-05-15
 departments: [marketing]
-related: [michael-bruck, jehad-altoutou, bonaventure-wong, it-department-standup-pilot, singapore-news-monitoring, crm-evaluation-and-selection, marketing-prime-radiant, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [michael-bruck, jehad-altoutou, bonaventure-wong, it-department-standup-pilot, singapore-news-monitoring, crm-evaluation-and-selection, marketing-prime-radiant, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-15-singapore-marketing-launch-plan-v1, joyce-woo, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 ---
 
 # Andrew Soane
@@ -61,7 +61,7 @@ Per [[2026-05-12-andrew-onboarding-review]]:
 
 Andrew authored and delivered the v1 Singapore campaign plan PPTX on 2026-05-15 — see [[2026-05-15-singapore-marketing-launch-plan-v1]] for the source and [[marketing-prime-radiant]] for the project-hub write-up. Key delivered artefacts:
 
-- 7 numbered campaign objectives covering thought-leadership, Joyce Woo positioning ([[ingest-2026-05-15-joyce-woo]]), market intelligence, partnership/B-D, talent magnetism, and brand consistency.
+- 7 numbered campaign objectives covering thought-leadership, [[joyce-woo|Joyce Woo]] positioning, market intelligence, partnership/B-D, talent magnetism, and brand consistency.
 - 9-week timeline starting w/c 11.05.2026 (this week is week 1) building to the 8th/9th July luncheon as the campaign anchor event.
 - 100-account target list mapped across 5 categories (institutional investors, real estate funds, sustainability-focused, private equity, family offices) — review due end-of-day Wed 20 May (BW + JW).
 - Budget breakdown (~S$23,995 / AED 69,210 total) — REITAS membership S$5,000/yr is the largest single line; Mailchimp, LinkedIn Sales Navigator, Canva for tooling.
