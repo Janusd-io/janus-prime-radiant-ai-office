@@ -1597,3 +1597,31 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - **Montserrat from Google Fonts CDN.** First HTML deck in this vault to load a web font. Falls back cleanly to `-apple-system / Helvetica / Arial` if the CDN isn't reachable, but the brand identity weakens without Montserrat. Worth confirming with IT whether any Janus device can't reach `fonts.googleapis.com`.
   - **Kept the deck content unchanged.** Retrofit is visual only — same 9 slides, same body text. The brand is the wrapper; the substance is what's already been signed off.
 - watch: When Andrew or a brand designer formalises a brand book, bump this guideline to v0.2/v1.0 and capture the deltas. Until then, this is the source-of-truth for visual decisions on HTML decks.
+
+## [2026-05-15 15:00] brand-correction | official brand book v1.0 ingested + guideline + SG deck updated
+- driver: Michael — supplied the official Janus brand guidelines PDF + the white-variant logo SVG. Important clarification: **the taglines and verbal brand in the brand book are stale**; Andrew has an agency lined up to refresh that work. Brand book is to be used **only for logos, fonts, and colour palette** going forward.
+- corrections triggered by the official book:
+  - **Brand orange is `#FCB745`** (RGB 252/183/69), not `#F5A623` as derived from Andrew's PPTX. Close but distinct.
+  - Brand palette also includes **`#013A7D`** (navy — "Technology, digital space") and **`#028CDC`** (light blue) as sub-colors with their own brand meaning.
+  - Montserrat (Regular / Italic / SemiBold / SemiBold Italic) confirmed as the official brand typeface; Arial as body fallback.
+  - The Janus logo is a horizontal "door icon + JANUS wordmark" lockup — the door is the symbolic anchor (Janus = Roman god of doors / transitions / duality). Four official treatments: horizontal (primary), pure-pattern icon (secondary), vertical (not recommended), grayscale (for hard materials).
+- created:
+  - **sources/articles/2025-janus-brand-guidelines-v1.0.{pdf,md}** — brand book PDF (32 pages) + markdown twin. Markdown twin captures the official colour palette, accent palette (10 named colours with light variants), typography spec, logo treatments. **Taglines / brand voice strings explicitly flagged as stale and not for reuse** per Michael's instruction.
+  - **assets/branding/janus-logo-white.svg** — official horizontal logo, white-variant. JANUS wordmark + door outline default to white via `var(--fill-0, white)`; orange door panel + navy/blue accents are hardcoded so they don't flip with the fill variable.
+  - **assets/branding/janus-logo-black.svg** — same logo, default fill swapped to `#000` for use on light backgrounds. (Generated via `sed` substitution.)
+  - **assets/** as a new top-level folder convention — first time the wiki has a dedicated home for binary brand artefacts. CLAUDE.md doesn't currently document `assets/`; consider folding into §2 in a future schema bump if more asset types accumulate.
+- updated:
+  - **processes/janus-html-deck-brand-guideline.md** — bumped v0.1 → v1.0. Replaced the entire content with brand-book-derived spec: colour palette (5 core + 10 accent), typography (Montserrat with Google Fonts load snippet), logo embedding (sprite + `<use>` pattern, or `<img>` reference), drop-in CSS variables block, quick-reference card at the bottom. v0.1 explicitly superseded; the layout patterns and tagline references from v0.1 should not be reused. Scope narrowed per Michael — logos / fonts / colours only.
+  - **2026-05-15-singapore-strategy-alignment.html** — surgical retrofit:
+    - Replaced `#F5A623` → `#FCB745` globally (11 instances).
+    - Added official brand navy `#013A7D` (now used for the dark-slide variant) and brand blue `#028CDC` to the CSS-variable palette.
+    - Replaced 9 instances of the inline-SVG placeholder logo (the 5-rect "door" sketch) with a sprite-driven `<svg><use href="#janus-logo"/></svg>` pattern. Sprite is embedded once at top of `<body>` using the official white-variant SVG; CSS variable `--fill-0` controls white-vs-black per slide context (black on light slides, white on dark slides).
+    - Removed the duplicated text-based `JANUS` wordmark span — the official horizontal logo already contains the wordmark.
+    - `.logo-block` CSS updated to the new logo aspect ratio (116×40px lockup vs the previous 22×22px icon + text span).
+  - **index.md** — Processes entry for the brand-guideline updated to v1.0; header text rewritten to reflect the brand-book ingest + deck retrofit; tagline scope-narrowing flagged.
+- design judgment calls:
+  - **Sprite-driven logo embedding over duplicated inline SVG or external `<img>`.** Embedding the 8.5KB SVG once (as a hidden `<symbol>`) and referencing via `<use href="#janus-logo"/>` 9 times adds ~500 bytes (50 bytes per reference). Cleaner than 9× inline duplication (~75KB), and self-contained vs. an `<img src="assets/...">` reference (which would break if the deck is shared without the assets folder).
+  - **CSS variable for white/black flip** (`--fill-0: #000` on light slides, `--fill-0: #FFFFFF` on dark slides via `.slide.dark`). The official SVG uses `var(--fill-0, white)` on the wordmark + door outline, so this is the intended override mechanism — no SVG manipulation needed.
+  - **Did not retrofit the title slide's photo-substitute SVG silhouette** to use the brand's auxiliary-graphic watermark pattern (door-pattern background from brand book page 23). That's a deeper restructure and the existing stylised silhouette + dark gradient is brand-coherent enough for v0.
+  - **Stripped tagline references** from the brand-book markdown twin and from the v1.0 guideline. Per Michael — agency-led refresh in flight, don't propagate stale verbal brand.
+- watch: Andrew's agency-led brand refresh will eventually replace this v1.0 guideline. When that work lands, bump to v2.0 and capture deltas. For now: any future HTML deck should anchor to v1.0's palette + Montserrat + sprite-embeddable logo. **assets/branding/** convention worth adding to CLAUDE.md §2 in a future schema bump.
