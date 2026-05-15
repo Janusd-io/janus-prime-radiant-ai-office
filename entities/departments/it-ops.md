@@ -3,12 +3,12 @@ type: department
 title: IT, Project Management, and Operations
 slug: it-ops
 created: 2026-05-08
-updated: 2026-05-14
+updated: 2026-05-15
 departments: [it-ops]
 status: active
 owner: euclid-wong
 sources: [2026-05-11-aio-standup-with-jehad, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander]
-related: [euclid-wong, andrey-timokhov, it-helpdesk-triage-bot, it-department-standup-pilot, ai-policy-gate-approval, peer-to-peer-mesh-federation-pattern, janus-prime-radiant-build, april-2026-aio-transcripts-recovery, project-management-digital-delivery-workflow, lysander-liu, rosa-wu, spike-zhao]
+related: [euclid-wong, andrey-timokhov, dhyey-mehta, it-helpdesk-triage-bot, it-department-standup-pilot, ai-policy-gate-approval, peer-to-peer-mesh-federation-pattern, janus-prime-radiant-build, april-2026-aio-transcripts-recovery, project-management-digital-delivery-workflow, lysander-liu, rosa-wu, spike-zhao]
 ---
 
 # IT, Project Management, and Operations
@@ -22,6 +22,7 @@ Janus's combined department covering **three teams** under [[euclid-wong|Euclid]
 - **[[euclid-wong]]** — Head of all three teams (IT + Project Management + Operations).
 - **IT team:**
   - **[[andrey-timokhov]]** — IT team member (mentioned as "Andre" in some earlier source files; canonical name andrey-timokhov).
+  - **[[dhyey-mehta|Dhyey Mehta]]** — recent IT-team joiner; first wiki touchpoint = 2026-05-15 Singapore strategy alignment session. Role detail TBD pending enrichment.
 - **Project Management team** (titles confirmed 2026-05-14):
   - **[[rosa-wu|Rosa Wu]]** — **Co-head of Project Management** (with [[euclid-wong|Euclid]] at the senior level).
   - **[[lysander-liu|Lysander Liu]]** — **Head of Project Management** (operational lead under the Euclid + Rosa co-head structure); authored the canonical [[project-management-digital-delivery-workflow|28-phase workflow]].
