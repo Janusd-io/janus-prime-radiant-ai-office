@@ -102,6 +102,8 @@ The white paper enumerates the SG-relevant building-tech vendor ecosystem (Sieme
 
 The white paper's prose style + commitment framing (Government / Labour Movement / Employers) is the closest existing voice for any Janus public response. Phase 2 draft generation should reference this paper as the style anchor.
 
-### Re: the PM's AI-in-REITs white paper
+### "The white paper" referenced on 12 May — clarification
 
-The Janus paper is NOT the PMO white paper Bonaventure said he'd share — those are separate documents. The PMO paper is still pending as of 15 May 2026. When it lands, ingest it as a second primary theme-prompt source (it will be a different artefact with different framing).
+The Janus Singapore white paper IS the document Bonaventure was referring to on the 12 May call when he said "the white paper will share with you guys literally from the PM has spoken out." The transcribed quote is fragmented; the actual artefact is the Janus paper written on the back of PM Wong's May Day Rally speech. Confirmed by Michael 2026-05-15. No separate pending PMO document.
+
+The PM's May Day Rally 2026 speech itself (delivered 1 May 2026) is heavily quoted in the Janus paper and is the upstream substrate — worth ingesting as its own source for theme-prompt training.
