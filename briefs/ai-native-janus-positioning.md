@@ -7,7 +7,7 @@ updated: 2026-05-15
 departments: [ai-office, marketing, office-of-ceo]
 countries: [sg, gb]
 confidence: high
-sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+sources: [2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-01-pm-lawrence-wong-may-day-rally-2026]
 related: [bonaventure-wong, andrew-soane, michael-bruck, janus-prime-radiant-build, marketing-prime-radiant, singapore-news-monitoring, iso-compliance-programme, crm-evaluation-and-selection, agent-memory-2026-q2, post-rag-agent-data-stack, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-14-janus-singapore-white-paper-storms-ahead, ingest-2026-05-15-joyce-woo, 2026-05-12-singapore-as-lead-market]
 ---
 
@@ -87,6 +87,8 @@ The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white 
 | Pillar 3 — Workers (upskilling, certification, union framing) | Section 6 ("Workers as architects, not bystanders") + "To the Labour Movement" commitment in Section 7. SkillsFuture + Tripartite Jobs Council framework. Quotes PM Wong's "we may not be able to protect every job. But we will protect every worker." |
 
 **Reframing for the SG audience.** The white paper recasts the three pillars as the **Singapore tripartism** structure (Government / Labour Movement / Employers) — three explicit commitments in Section 7. This isn't a different messaging spine; it's the same spine refracted through the Singapore policy frame. The three-commitments structure is reusable for any country where there's a clean Government/Labour/Capital triad to engage; for less tripartite markets, the original capital→companies→workers ordering or Andrew's society→business→individual ordering is more natural.
+
+**The upstream substrate is now in the wiki.** [[2026-05-01-pm-lawrence-wong-may-day-rally-2026|PM Wong's May Day Rally 2026 speech]] (1 May 2026, PMO Singapore) is filed as a source — fetched directly from `pmo.gov.sg` on 2026-05-15. The PM's speech itself is where the "we may not be able to protect every job. But we will protect every worker" line, the "enhanced search vs unlocking more" framing of AI, the Yann LeCun / Advanced Machine Intelligence physical-AI reference (directly resonant with Janus's positioning), the DBS worker-elevation example, the SMRT Queen Bee case, and the tripartism "special sauce" frame all originate. Worth reading directly for any further SG-positioning content work — it's the canonical anchor.
 
 **Resolves "where does the story go external" question.** This brief previously noted: *"At what point (and through what artefact) does the story go external?"* The white paper is that artefact. Distribution timing per the [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]] — promoted through the 8/9 July luncheon and the paid + organic + PR channels in the 9-week timeline.
 
