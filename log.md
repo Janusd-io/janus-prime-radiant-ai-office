@@ -1496,3 +1496,20 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Workflow process page: includes the current tooling stack so anyone reading the workflow page understands what the team uses today and what the Prime Radiant coexists with.
 - Standup-proposal deck: signals coexistence to the audience pre-emptively.
 - Pending follow-ups (not actioned this pass): Marketing vault possibly needs migration from Janusd-io to Janusd-com; company-wide intro deck still shows personal vaults prominently and needs a refresh.
+
+## [2026-05-15 08:30] ingest | 2026-05-15-singapore-marketing-launch-plan-v1 | pptx (marketing-deliverable)
+- driver: Michael — PPTX dropped into inbox; Andrew's first delivered Outputs-layer artefact for the marketing-prime-radiant instance, operationalising [[2026-05-12-singapore-as-lead-market]].
+- parsing: used the pptx-skill recommended `python -m markitdown` approach — extracted text, tables, image alt-text cleanly across 13 slides. No PDF needed; the PPTX route worked.
+- filed source: sources/misc/2026-05-15-singapore-marketing-launch-plan-v1.{pptx,md} — binary alongside extracted markdown twin per the §5.1 PDF pattern (PPTX-as-binary, markdown twin as indexable layer)
+- updated:
+  - projects/marketing-prime-radiant.md — added major "Update — 2026-05-15 Singapore campaign plan v1 landed" section: 7 numbered campaign objectives, 100-account target list (5 categories), 9-week timeline (w/c 11.05 → 8/9 July luncheon), budget table (~S$23,995 / AED 69,210), 5-venue shortlist, notable cross-references to existing wiki content
+  - projects/singapore-news-monitoring.md — frontmatter: added source + Joyce escalation + marketing-prime-radiant in related; updated 2026-05-13 → 2026-05-15
+  - questions/2026-05-12-website-architecture-one-site-vs-country-sites.md — added "Status update (2026-05-15) — campaign plan v1 assumes both URLs in use" section noting v1 deck operationally uses both `janusd.com` and `janusdg.com` (3 possible readings: pre-decision hedge / implicit Position A resolution / partial-resolution)
+  - decisions/2026-05-12-singapore-as-lead-market.md — added "Operational evidence (2026-05-15)" section + new source ref + Joyce in related; this v1 plan is the first operational artefact downstream of that decision (3-day gap, fast pace)
+  - entities/internal/bonaventure-wong.md — added BW/JW Singapore-campaign direct-outreach lead engagement; related + sources updated; updated date bumped
+  - entities/internal/andrew-soane.md — added "Singapore campaign plan v1 delivered (2026-05-15)" section summarising the deliverable + Andrew-as-author authority; related + updated date bumped
+  - index.md — bumped header date, added Joyce escalation under Questions (open), augmented website-architecture entry with status-update note
+- created:
+  - questions/ingest-2026-05-15-joyce-woo.md — entity-creation escalation for Joyce Woo (high-stakes per §5.1; new internal entity); justified by ≥2 inbound references (campaign plan + 12 May Bonaventure call) + substantive role context ("the recognised face of Janus Digital in Singapore"); recommendation = create at confidence:medium with formal title TBC
+- escalated: 1 (ingest-2026-05-15-joyce-woo)
+- notes: First delivered Outputs-layer artefact for the Marketing Prime Radiant instance. Strategy-to-operational pace: 3 days from [[2026-05-12-singapore-as-lead-market]] decision (12 May) → operational campaign plan (15 May). Pending: confirm intended reading of dual-URL list with Andrew (week-1 build is in flight); resolve [[2026-05-12-website-architecture-one-site-vs-country-sites|website-architecture question]] before the campaign goes live. Ingest counter: increment to next lint at 10.
