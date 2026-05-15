@@ -32,7 +32,7 @@ Singapore is Janus's primary lead commercial market for AI-Native products and t
 
 ## Why this decision
 
-- **Singapore PM has formally endorsed AI in REITs** — white paper to be shared; "PM has spoken out saying that AI is not a chatgpt but more delivering the next iteration of really now forcing REITs to use it... integrated."
+- **Singapore PM has formally endorsed AI in REITs** in his May Day Rally 2026 speech (1 May 2026); Janus's own white paper [[2026-05-14-janus-singapore-white-paper-storms-ahead|"How agentic AI can answer the storms ahead"]] is built on the back of that speech. Bonaventure paraphrasing on the 12 May call: "PM has spoken out saying that AI is not a chatgpt but more delivering the next iteration of really now forcing REITs to use it... integrated."
 - **Singapore is the Asia-Pac hub for financial products** — particularly REITs and real estate funds; "a lot of funds are set up there that don't even have investment in Singapore. They're in the region."
 - **Government and union infrastructure aligned with Janus's three-pillar messaging** — Singapore union framing ("can't protect jobs but will protect the workers") maps cleanly to [[ai-native-janus-positioning|Pillar 3]].
 - **High-profile advocate inside the government** — Foreign Minister [[vivian-balakrishnan]] (Bonaventure knows him personally, was Ambassador to UAE) is keynoting the AI Engineering Conference 16–17 May with a personally-built LLM wiki on a Raspberry Pi. Strong positive signal and potential introduction route.

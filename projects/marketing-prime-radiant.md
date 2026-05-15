@@ -265,7 +265,7 @@ This is Outputs-layer artefact #2 for the Marketing PR, on top of the [[2026-05-
 ### Operational ties
 
 - Campaign objective #1 ("anchored to the white paper") is now satisfied — the white paper exists, is co-authored, and is the centrepiece content asset.
-- The PMO white paper that Bonaventure said he'd share is a *separate* document (still pending as of 2026-05-15). Both papers will eventually be in the campaign-asset mix.
+- **This is the white paper Bonaventure was referring to on the 12 May call** (confirmed by Michael 2026-05-15); no separate pending PMO document. The PM's own May Day Rally speech (1 May 2026) is the upstream substrate the Janus paper is built on.
 - The Singapore PM May Day Rally 2026 speech is heavily quoted in the Janus paper. Useful as an upstream source for campaign content; consider standalone wiki capture if it becomes a recurring reference.
 
 ## Related
