@@ -3,11 +3,11 @@ type: project
 title: Janus Prime Radiant · Marketing
 slug: marketing-prime-radiant
 created: 2026-05-08
-updated: 2026-05-13
+updated: 2026-05-15
 departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
-sources: [2026-05-08-andrew-marketing-prime-radiant, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, jehad-vault-marketing-prime-radiant]
+sources: [2026-05-08-andrew-marketing-prime-radiant, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, jehad-vault-marketing-prime-radiant]
 related: [andrew-soane, marketing, janus-prime-radiant-build, llm-wiki, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, 2026-05-08-marketing-prime-radiant-as-separate-vault, crm-evaluation-and-selection, singapore-news-monitoring, peer-to-peer-mesh-federation-pattern, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline]
 ---
 
@@ -190,6 +190,62 @@ Source: [[2026-05-12-andrew-onboarding-review]] (~50-min session walking Andrew 
 - **Notion is not the source of truth for Marketing PR.** Andrew started exploring Notion this week because "Claude told me to use it" for the Singapore launch page. Michael clarified: Claude defaults to Notion for some artefacts because of training data, not because Notion is the right tool. Will reassess what Andrew actually needs.
 - **Bonaventure on holiday Wed onward.** Window of relative quiet for Andrew + Michael to do the tooling install + first-content sprint Thursday-Friday.
 - **Mac vs Windows tooling** — both Andrew and Michael on Mac; rollout to Windows users (Euclid's team, others) will need separate tooling support pass. Flagged for IT-Ops instance prep.
+
+## Update — 2026-05-15 Singapore campaign plan v1 landed
+
+Andrew delivered the first version of the Singapore marketing launch plan as a 13-slide PPTX ([[2026-05-15-singapore-marketing-launch-plan-v1|source]]). This is the first concrete deliverable from Andrew's side of the Marketing PR work and operationalises the [[ai-native-janus-positioning|three-pillar messaging spine]] for the 8/9 July luncheon target via [[2026-05-12-singapore-as-lead-market|Singapore-as-lead-market]].
+
+### Campaign objectives (Andrew, v1)
+1. Establish Janus Digital Singapore as a credible institutional voice in SG real estate + AI, anchored to the white paper.
+2. **Position Joyce Woo as the recognised face of Janus Digital in Singapore** — coordinated leadership announcements + founder-led outreach + direct engagement with senior institutional contacts. Joyce now formal SG-face role. (See [[ingest-2026-05-15-joyce-woo|entity escalation]].)
+3. Generate **60–120 qualified, consent-confirmed leads** across REITs, family offices, asset/fund managers, institutional real estate operators in Singapore.
+4. **8–12 C-suite institutional executives** at the 8/9 July luncheon.
+5. Earned media coverage in Business Times / The Edge / equivalent SG institutional publication.
+6. Warm pipeline base for H2 2026 commercial conversion.
+7. Operational foundations for sustained SG marketing programme (lead capture, audience intel, CRM-ready data, channel effectiveness).
+
+### Target accounts (100 mapped, breakdown)
+- Global / APAC PE / Real Estate firms SGP-based: **33**
+- Mid-market & regional APAC growth funds: **28**
+- Local Singapore heavyweight private funds: **13**
+- Specialised niche & alternative fund managers: **14**
+- Multi-family offices & private funds: **12**
+
+**Andrew's ask of [[bonaventure-wong|Bonaventure]] + Joyce by end-of-day Wed 20 May:** review the target list — missing companies, wrong inclusions, existing-relationship flags.
+
+### Campaign timeline (9 weeks)
+Week 1 (w/c 11.05) → Week 9 (w/c 06.07). Anchor events: REITAS Energy Resilience event, REITS Symposium, the luncheon itself. Major workstreams: white paper finalisation, target list lockdown, campaign landing page builds (`janusd.com` + `janusdg.com` — see note below), 4× paid ads + 4× LinkedIn carousel ads, LinkedIn registration form, 14 organic posts (2/week), Bonaventure/Joyce direct email outreach, paid BT press release, LinkedIn InMail + paid campaigns, roundtable invitations + reminders.
+
+### Channel mix
+Op-eds (BT, The Edge); paid press release BT (fallback if op-ed rejected); REITAS networking events; LinkedIn organic + paid (carousel + standard); LinkedIn InMails via Sales Navigator; Bonaventure/Joyce direct email outreach including white paper; Google search ads; LinkedIn lead-gen form; campaign landing page; nurture sequence; luncheon as the climax event.
+
+### Budget structure (v1 proposal)
+| Bucket | Total (AED) | Total (S$) | Includes |
+|---|---|---|---|
+| Software (campaign duration) | 5,288 | 1,815 | LinkedIn Sales Nav, Canva, Mailchimp |
+| REITAS membership (annual) | 14,400 | 5,000 | REITAS access + member contact lists |
+| Fixed campaign costs | 48,054 | 16,670 | Advertising fees, paid PR, venue/catering, print collateral |
+| Software (12-month) | 1,468 | 510 | Continued LinkedIn Sales Nav, Canva, Mailchimp |
+| **Total** | **~69,210** | **~23,995** | |
+
+Notable line-items: **REITAS membership** is a new annual commitment (S$5,000/yr for non-REIT personnel); **Mailchimp** is the chosen email marketing platform (matches the interim system-of-record direction from the 12 May Andrew session); **Sospiri** at S$88pp is the lowest-cost venue option; **Vue at OUE Bay Front** is highest single-event quote (S$2,400 minimum); **Shoukouwa** requires full-restaurant buyout (S$11,500 minimum — likely vetoed on cost grounds).
+
+### Venue shortlist (5 options for 8/9 July)
+| Venue | Wed 8 Jul | Thu 9 Jul | Private | Capacity | Min cost (S$) |
+|---|---|---|---|---|---|
+| Vue (OUE Bay Front) | TBC | No | Yes | 18 | 2,400 |
+| Shoukouwa (One Fullerton) | Yes | Yes | Buyout | 14 | 11,500 |
+| Saint Pierre (One Fullerton) | Yes | Yes | Buyout | up to 20 | 3,168–6,368 |
+| Artemis Grill (CapitaGreen rooftop) | No | Yes | Yes | 18–20 | 2,000 |
+| Sospiri (IOI Central) | Yes | Yes | Yes | up to 12 | 800 + S$88pp |
+
+Venue selection pending — likely informed by date availability + private-room requirement + cost ceiling.
+
+### Notable connections to existing wiki content
+- **Website architecture open question affected.** The campaign plan references both `janusd.com` and `janusdg.com` as campaign landing-page targets. Earlier [[2026-05-12-website-architecture-one-site-vs-country-sites|open question]] framed it as one-Janus-site (Andrew + Michael position) vs standalone country sites (anticipated Bonaventure). The v1 deck appears to assume **both** are in use simultaneously — `janusd.com` as canonical + `janusdg.com` as vanity / SG-specific. May be settled or may be placeholder; worth confirming with Andrew.
+- **CRM downgrade reinforced.** The deck uses Mailchimp + LinkedIn lead-gen form + Google Sheets as the interim lead-capture stack — consistent with the [[crm-evaluation-and-selection|CRM-not-in-critical-path]] direction. HubSpot decision target remains end-May / first-week-June.
+- **Joyce Woo formal role.** Multiple prior references in the wiki to "JW" / Joyce — now formal SG-face positioning makes her an entity-page candidate. See [[ingest-2026-05-15-joyce-woo|escalation]].
+- **AI Native three-pillar messaging operationalised.** The campaign objectives map cleanly onto the [[ai-native-janus-positioning|three-pillar spine]] — pillar 2 (business / capital) via REIT + asset-manager targeting; pillar 1 (society / sustainability + ESG) via white-paper positioning; pillar 3 (individual / worker upskilling) carried implicitly through the AI-Native framing.
 
 ## Related
 
