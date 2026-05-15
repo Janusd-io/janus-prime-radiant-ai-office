@@ -13,6 +13,7 @@ captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
+sources: [2026-04-22-it-team-meeting]
 ---
 <!-- jb:air-vendor-callout -->
 > Part of [[ai-registry|AI Registry]]

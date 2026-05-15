@@ -104,7 +104,7 @@ The IT team reviewed in-flight infrastructure and tool evaluation work. Jehad de
 - [[openai-codex]] — evaluating as a Claude Code fallback; reportedly faster and better integrations
 - [[claude-code]] — current primary coding agent; hit usage cap, requiring console top-up
 - [[anthropic-enterprise]] — considered for SSO, RBAC, feature-level toggles; needs minimum seat count
-- [[victor]] — rejected AI Slack tool — leaks data across channel participants
+- [[viktor]] — rejected AI Slack tool — leaks data across channel participants
 - [[linear]] — AI Tools Registry source of truth; production vs sandbox lists reviewed
 - [[monday-com]] — execution surface; replacing Asana for AI Office work; multi-agent contributor to be onboarded here
 - [[asana]] — being phased out for Janus AI Office in favour of Monday
@@ -150,7 +150,7 @@ The IT team reviewed in-flight infrastructure and tool evaluation work. Jehad de
 - Vendor: [[anthropic]] — current primary AI vendor; Enterprise plan under reconsideration
 - Vendor: [[godaddy]] — current janus.io registrar — domain transfer discussion
 - Vendor: [[monday-com]] — destination for multi-agent contributor's task tracking
-- Vendor: [[victor]] — AI Slack tool rejected on RBAC grounds
+- Vendor: [[viktor]] — AI Slack tool rejected on RBAC grounds
 - Person: [[bonaventure-wong]] — referenced as manager of the multi-agent contributor and earlier RBAC concern about Cowork access
 - Person: [[euclid-wong]] — had to manually top up Claude Code console; signature mailto bug mentioned
 - Person: [[simon-tarskih]] — AI Projects automation work paused waiting on Simon's workflow definitions
