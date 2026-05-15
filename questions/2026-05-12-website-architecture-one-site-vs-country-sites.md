@@ -3,12 +3,12 @@ type: question
 title: One Janus website with country sub-paths, or standalone country websites?
 slug: 2026-05-12-website-architecture-one-site-vs-country-sites
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-15
 departments: [marketing, ai-office, office-of-ceo]
 countries: [sg, gb]
 owner: andrew-soane
 status: active
-sources: [2026-05-12-andrew-onboarding-review]
+sources: [2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1]
 related: [andrew-soane, bonaventure-wong, michael-bruck, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market]
 ---
 
