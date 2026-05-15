@@ -13,6 +13,9 @@ captured_by: jehad-altoutou
 departments: []
 air_id: AIR-76
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Attio
 
@@ -27,7 +30,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## AI Registry — AIR-76
 
-> Linear: [AIR-76](https://linear.app/janusd/issue/AIR-76/attio) · status **Evaluating** · updated 2026-05-05.
+> [[linear|Linear]]: [AIR-76](https://linear.app/janusd/issue/AIR-76/attio) · status **Evaluating** · updated 2026-05-05.
 
 **Category:** CRM / AI-Powered Customer Relationship Management
 **Cost:** Free; Plus $29/$36; Pro $69/$86; Enterprise custom
@@ -36,7 +39,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## Overview
 
-Next-generation AI-native CRM for GTM teams. Flexible adaptive data model, built-in AI ("Ask Attio"), workflow automation, email sequences, reporting. Modern alternative to Salesforce/HubSpot. Targets scale-ups and SaaS. Customers: Bravado, Flatfile, Snackpass, YC-backed startups.
+Next-generation AI-native CRM for GTM teams. Flexible adaptive data model, built-in AI ("Ask Attio"), workflow automation, email sequences, reporting. Modern alternative to [[salesforce|Salesforce]]/HubSpot. Targets scale-ups and SaaS. Customers: Bravado, Flatfile, Snackpass, YC-backed startups.
 
 ## Key Capabilities
 

@@ -13,6 +13,9 @@ captured_by: jehad-altoutou
 departments: []
 air_id: AIR-14
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Google Sites
 
@@ -27,10 +30,10 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## AI Registry — AIR-14
 
-> Linear: [AIR-14](https://linear.app/janusd/issue/AIR-14/google-sites) · status **Production** · updated 2026-04-06.
+> [[linear|Linear]]: [AIR-14](https://linear.app/janusd/issue/AIR-14/google-sites) · status **Production** · updated 2026-04-06.
 
 **Category:** Website Builder / Internal Portal Platform
-**Cost per User/Month:** Free (Google Workspace)
+**Cost per User/Month:** Free ([[google-workspace|Google Workspace]])
 **Departments:** AI Policy
 
 ## Overview

@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[marketing]]
 
-# Claude Design
+
+# [[claude|Claude]] Design
 
 > AI Registry entry [AIR-80](https://linear.app/janusd/issue/AIR-80/claude-design) — status **Backlog** as of 2026-04-20. Departments: marketing.
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Research-preview product from Anthropic Labs. Create designs, interactive prototypes, slide decks, presentations through chat-and-canvas interface. Inherits org's design system. Exports to PDF/PPTX/Canva/HTML and direct handoff to Claude Code. Available via Janus Sandbox Claude Team workspace.
+Research-preview product from Anthropic Labs. Create designs, interactive prototypes, slide decks, presentations through chat-and-canvas interface. Inherits org's design system. Exports to PDF/PPTX/Canva/HTML and direct handoff to [[claude-code|Claude Code]]. Available via Janus Sandbox Claude Team workspace.
 
 ## Key Capabilities
 
@@ -59,7 +63,7 @@ No incremental licence cost (Janus already on Claude Team). For digital consulta
 * Research preview — feature stability not GA parity
 * Design system prerequisite — quality hinges on configured design system; Janus doesn't yet have one loaded
 * Usage counts against Claude subscription allowance
-* Overlap with Canva, Figma, Gamma — clear POV needed
+* Overlap with Canva, [[figma|Figma]], [[gamma|Gamma]] — clear POV needed
 * Known limitations: inline comments, save errors, large repos
 
 *Backlog. Functional tier. Marketing sandbox candidate.*

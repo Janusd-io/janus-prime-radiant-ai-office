@@ -14,23 +14,26 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # OpenAI Codex
 
 > AI Registry entry [AIR-84](https://linear.app/janusd/issue/AIR-84/openai-codex) — status **Sandbox** as of 2026-04-22. Departments: —.
 
 **Category:** SW Development / Agentic Coding Assistant
-**Cost per User/Month:** Bundled with ChatGPT plans — Free, Plus $20, Pro from $100, Business pay-as-you-go, Enterprise. API key option also available.
+**Cost per User/Month:** Bundled with [[chatgpt|ChatGPT]] plans — Free, Plus $20, Pro from $100, Business pay-as-you-go, Enterprise. API key option also available.
 **Departments:** Technology
 
 ## Overview
 
-OpenAI's agentic coding platform — desktop app (macOS, Windows), IDE extension, CLI, cloud/web surface. Direct competitor to Claude Code and GitHub Copilot agentic modes. Bundled into ChatGPT paid plans. Powered by GPT-5.4, GPT-5.3-Codex, GPT-5.3-Codex-Spark.
+OpenAI's agentic coding platform — desktop app (macOS, Windows), IDE extension, CLI, cloud/web surface. Direct competitor to [[claude-code|Claude Code]] and GitHub Copilot agentic modes. Bundled into ChatGPT paid plans. Powered by GPT-5.4, GPT-5.3-Codex, GPT-5.3-Codex-Spark.
 
 ## Key Products & Capabilities
 
 * Codex Desktop App — multi-project command centre, parallel agent threads, built-in review pane
-* IDE Extension — native VS Code-family integration
+* IDE Extension — native [[vs-code|VS Code]]-family integration
 * Codex CLI — terminal-native agent for headless/scripted workflows
 * Codex Web / Cloud — long-running cloud environments
 * Automations — scheduled recurring tasks
@@ -43,7 +46,7 @@ OpenAI's agentic coding platform — desktop app (macOS, Windows), IDE extension
 
 * GitHub — first-class integration
 * Slack — cloud thread/task notifications
-* Linear — issue-driven coding workflows
+* [[linear|Linear]] — issue-driven coding workflows
 * MCP support
 * IDE Extension for VS Code
 * Codex SDK / App Server / MCP Server
@@ -57,7 +60,7 @@ OpenAI's agentic coding platform — desktop app (macOS, Windows), IDE extension
 
 ## Relevance
 
-Most credible direct alternative to Claude Code. Monitoring gives AI Office comparative benchmark for agentic coding capability, pricing, enterprise controls. Hedges against over-reliance on single foundation model vendor. Linear/Slack/GitHub integrations overlap directly with existing AI Office stack — controlled pilot low-friction.
+Most credible direct alternative to [[claude|Claude]] Code. Monitoring gives AI Office comparative benchmark for agentic coding capability, pricing, enterprise controls. Hedges against over-reliance on single foundation model vendor. Linear/Slack/GitHub integrations overlap directly with existing AI Office stack — controlled pilot low-friction.
 
 ## Considerations
 
@@ -67,4 +70,4 @@ Most credible direct alternative to Claude Code. Monitoring gives AI Office comp
 * Free/Plus may train on inputs — only Business/Enterprise gives no-training guarantee
 * Some features still research preview (GPT-5.3-Codex-Spark)
 
-*Sandbox. Functional tier. Direct comparator to Claude Code (AIR-13).*
+*Sandbox. Functional tier. Direct comparator to Claude Code ([[claude-code|AIR-13]]).*

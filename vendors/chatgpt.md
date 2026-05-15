@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # ChatGPT
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-OpenAI's flagship AI assistant — most widely known consumer AI globally. Offers conversational AI, document analysis, code generation, image generation (DALL-E), web browsing, plugin ecosystem. At Janus, in Sandbox for evaluation with non-sensitive data. NOT a primary tool — Claude (AIR-10) and Gemini (AIR-5) serve as core foundation models.
+OpenAI's flagship AI assistant — most widely known consumer AI globally. Offers conversational AI, document analysis, code generation, image generation (DALL-E), web browsing, plugin ecosystem. At Janus, in Sandbox for evaluation with non-sensitive data. NOT a primary tool — [[claude|Claude]] ([[claude|AIR-10]]) and [[gemini|Gemini]] ([[google-gemini|AIR-5]]) serve as core foundation models.
 
 ## Capabilities
 

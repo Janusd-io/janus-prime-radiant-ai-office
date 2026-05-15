@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
 
-# Claude Console
+
+# [[claude|Claude]] Console
 
 > AI Registry entry [AIR-11](https://linear.app/janusd/issue/AIR-11/claude-console) — status **Production** as of 2026-04-20. Departments: ai-office.
 
@@ -27,7 +31,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-The Anthropic Console (console.anthropic.com) is Anthropic's developer platform for managing Claude API access, API keys, usage monitoring, and model configuration. Distinct from the consumer Claude.ai product (AIR-10). Used by the AI Office to manage API keys that power Claude Code (AIR-13), MCP integrations, and custom AI automations.
+The Anthropic Console (console.anthropic.com) is Anthropic's developer platform for managing Claude API access, API keys, usage monitoring, and model configuration. Distinct from the consumer Claude.ai product ([[claude|AIR-10]]). Used by the AI Office to manage API keys that power [[claude-code|Claude Code]] ([[claude-code|AIR-13]]), MCP integrations, and custom AI automations.
 
 ## Capabilities
 

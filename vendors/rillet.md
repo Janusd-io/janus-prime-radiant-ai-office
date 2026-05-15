@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]]
+
 
 # Rillet
 
@@ -38,6 +42,6 @@ AI-native accounting and GL platform purpose-built for SaaS/subscription busines
 
 ## Why Evaluating
 
-Direct comparator to Campfire (AIR-23). Where Campfire is broader ERP, Rillet is narrowly focused on accounting/GL — strong for SaaS revenue recognition. Awaiting Ann's head-to-head assessment.
+Direct comparator to [[campfire|Campfire]] ([[campfire|AIR-23]]). Where Campfire is broader ERP, Rillet is narrowly focused on accounting/GL — strong for SaaS revenue recognition. Awaiting Ann's head-to-head assessment.
 
 *Evaluating.*

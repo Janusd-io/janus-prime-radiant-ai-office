@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]]
+
 
 # Campfire
 
@@ -37,6 +41,6 @@ AI-native ERP for modernising financial operations. Built ground-up with AI core
 
 ## Why Evaluating
 
-With Ann Greed as new Financial Controller, opportunity to assess AI-native ERP vs legacy financial tooling. Direct comparator: Rillet (AIR-24) and Artifact AI (AIR-25). Awaiting Ann's assessment.
+With Ann Greed as new Financial Controller, opportunity to assess AI-native ERP vs legacy financial tooling. Direct comparator: [[rillet|Rillet]] ([[rillet|AIR-24]]) and [[artifact-ai|Artifact AI]] ([[artifact-ai|AIR-25]]). Awaiting Ann's assessment.
 
 *Evaluating.*

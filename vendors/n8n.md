@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # N8N
 
@@ -22,12 +25,12 @@ sensitivity_confidence: 0.9
 **Category:** Workflow Automation / Integration Platform
 **Cost per User/Month:** $25.20 (Cloud starter)
 **Number of Licences:** 1 (self-hosted)
-**Total Monthly Cost:** ~$7-8 (Hostinger VPS share, AIR-79)
+**Total Monthly Cost:** ~$7-8 ([[hostinger|Hostinger]] VPS share, [[hostinger|AIR-79]])
 **Departments:** AI Policy, Technology
 
 ## Overview
 
-Open-source workflow automation platform. Workflow backbone of Janus AI Office infrastructure — connects Fireflies, Linear, Notion, Slack, Google Workspace, AI model APIs. Selected over Make (AIR-20, Rejected) for flexibility, self-hosting, superior data manipulation.
+Open-source workflow automation platform. Workflow backbone of Janus AI Office infrastructure — connects Fireflies, [[linear|Linear]], Notion, Slack, [[google-workspace|Google Workspace]], AI model APIs. Selected over [[make|Make]] ([[make|AIR-20]], Rejected) for flexibility, self-hosting, superior data manipulation.
 
 ## Capabilities
 

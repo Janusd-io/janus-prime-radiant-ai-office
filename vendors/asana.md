@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Asana
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Widely used work management platform. At Janus, Asana is used specifically for the Company-in-a-Box project — playbook and checklist system for setting up new offices across jurisdictions. NOT used company-wide; Linear serves the AI Office, and ClickUp (AIR-44) under evaluation for broader use.
+Widely used work management platform. At Janus, Asana is used specifically for the Company-in-a-Box project — playbook and checklist system for setting up new offices across jurisdictions. NOT used company-wide; [[linear|Linear]] serves the AI Office, and [[clickup|ClickUp]] ([[clickup|AIR-44]]) under evaluation for broader use.
 
 ## Capabilities
 

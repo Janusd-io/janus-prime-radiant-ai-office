@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Prisma
 
@@ -39,6 +42,6 @@ Next-gen open-source ORM for Node.js and TypeScript. Type-safe database client, 
 * Open-source core — no licensing concerns for self-hosted
 * Prisma Accelerate (cloud connection pooling) raises data residency questions
 * Should be installed on company infrastructure (not external hosting)
-* Compare against Supabase, raw SQL, Firebase Firestore for stack consistency
+* Compare against Supabase, raw SQL, [[firebase|Firebase]] Firestore for stack consistency
 
 *Backlog. Functional tier. Currently in use by Jehad's assessment platform.*

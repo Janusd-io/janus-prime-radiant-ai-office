@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Obsidian
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Local-first, Markdown-based KM and note-taking application. Originally evaluated as context backup for Claude CoWork outputs; has become foundational layer of AI Office knowledge stack, heavy active use.
+Local-first, Markdown-based KM and note-taking application. Originally evaluated as context backup for [[claude|Claude]] CoWork outputs; has become foundational layer of AI Office knowledge stack, heavy active use.
 
 ## Current Use at Janus Digital (AIO 8 May 2026 standup)
 

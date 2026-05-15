@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]], [[office-of-ceo]]
+
 
 # Microsoft Copilot in Excel
 
@@ -25,7 +29,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-AI assistant built into Excel as part of M365 Copilot suite. Powered by OpenAI GPT. Natural language interaction — data analysis, formula generation, visualisation, scenario modelling. Unlike Shortcut AI (AIR-28) and Claude for Excel (AIR-30), Copilot is bundled (not standalone) covering Word, PowerPoint, Teams, Outlook + Excel.
+AI assistant built into Excel as part of M365 Copilot suite. Powered by OpenAI GPT. Natural language interaction — data analysis, formula generation, visualisation, scenario modelling. Unlike [[shortcut-ai|Shortcut AI]] ([[shortcut-ai|AIR-28]]) and [[claude|Claude]] for Excel ([[claude-by-anthropic-in-excel|AIR-30]]), Copilot is bundled (not standalone) covering Word, PowerPoint, Teams, Outlook + Excel.
 
 ## Capabilities
 

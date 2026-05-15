@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[marketing]]
 
-# Claude for PowerPoint
+
+# [[claude|Claude]] for PowerPoint
 
 > AI Registry entry [AIR-63](https://linear.app/janusd/issue/AIR-63/claude-for-powerpoint) — status **Evaluating** as of 2026-04-20. Departments: marketing.
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Anthropic's AI-powered presentation generation. Create PowerPoint decks through natural language conversation. Leverages Claude's writing/reasoning capabilities for structured, well-designed presentations. Comparator: Gamma (AIR-26).
+Anthropic's AI-powered presentation generation. Create PowerPoint decks through natural language conversation. Leverages Claude's writing/reasoning capabilities for structured, well-designed presentations. Comparator: [[gamma|Gamma]] ([[gamma|AIR-26]]).
 
 ## Capabilities
 
@@ -42,7 +46,7 @@ Anthropic's AI-powered presentation generation. Create PowerPoint decks through 
 
 * Claude.ai (web, desktop)
 * Microsoft PowerPoint (.pptx output)
-* Part of Claude ecosystem (AIR-10, AIR-11, AIR-13, AIR-30, AIR-81)
+* Part of Claude ecosystem ([[claude|AIR-10]], [[claude-console|AIR-11]], [[claude-code|AIR-13]], [[claude-by-anthropic-in-excel|AIR-30]], [[claude-for-word|AIR-81]])
 
 ## Strategic Advantage
 

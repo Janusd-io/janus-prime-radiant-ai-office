@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
 
-# Gemini Ultra
+
+# [[gemini|Gemini]] Ultra
 
 > AI Registry entry [AIR-6](https://linear.app/janusd/issue/AIR-6/gemini-ultra) — status **Production** as of 2026-04-06. Departments: office-of-ceo.
 
@@ -42,7 +46,7 @@ Google's most capable AI model tier — extended context, enhanced reasoning, pr
 
 * $430/month for 2 licences — one of higher per-tool costs
 * Capability gap vs Business should be regularly reassessed
-* Some Ultra tasks may be equally served by Claude (AIR-10) at lower cost
+* Some Ultra tasks may be equally served by [[claude|Claude]] ([[claude|AIR-10]]) at lower cost
 * Google's tier naming/pricing changes frequently
 
 *Restricted to Office of CEO and AI Policy. Functional tier.*

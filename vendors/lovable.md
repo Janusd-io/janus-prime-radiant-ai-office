@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Lovable
 
@@ -57,10 +60,10 @@ Highest-profile entrant in chat-to-app cohort. Claims millions of projects, tens
 
 **Strongest compliance position in cohort** — SOC 2 Type II + ISO 27001 + GDPR today. Pro plan shared across unlimited users (cost-efficient). Explicit no-CI/CD-access posture (IT-friendly).
 
-**Vs Hercules (AIR-87):** Lovable wins on compliance + community/templates; Hercules wins on integrated stack (commerce, mobile).
-**Vs Replit (AIR-32):** Lovable targets non-developers; Replit targets developers.
-**Vs Bolt (AIR-89):** Lovable materially stronger compliance; Bolt has WebContainer runtime.
-**Vs v0 (AIR-90):** Both mature; v0 Vercel/Next.js-coupled, Lovable end-to-end.
+**Vs [[hercules|Hercules]] ([[hercules|AIR-87]]):** Lovable wins on compliance + community/templates; Hercules wins on integrated stack (commerce, mobile).
+**Vs [[replit|Replit]] ([[replit|AIR-32]]):** Lovable targets non-developers; Replit targets developers.
+**Vs [[bolt|Bolt]] ([[bolt|AIR-89]]):** Lovable materially stronger compliance; Bolt has WebContainer runtime.
+**Vs v0 ([[v0|AIR-90]]):** Both mature; v0 Vercel/Next.js-coupled, Lovable end-to-end.
 
 ## Considerations
 

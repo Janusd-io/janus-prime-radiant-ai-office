@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
 
-# Claude for Word
+
+# [[claude|Claude]] for Word
 
 > AI Registry entry [AIR-81](https://linear.app/janusd/issue/AIR-81/claude-for-word) — status **Evaluating** as of 2026-04-20. Departments: office-of-ceo.
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Anthropic's native Microsoft Word add-in. Brings Claude's reasoning/writing into Word. Purpose-built for professionals working extensively with documents — accelerates review, redlining, drafting workflows. Companion to Claude for Excel (AIR-30) and PowerPoint (AIR-63).
+Anthropic's native Microsoft Word add-in. Brings Claude's reasoning/writing into Word. Purpose-built for professionals working extensively with documents — accelerates review, redlining, drafting workflows. Companion to Claude for Excel ([[claude-by-anthropic-in-excel|AIR-30]]) and PowerPoint ([[claude-for-powerpoint|AIR-63]]).
 
 ## Capabilities
 
@@ -49,7 +53,7 @@ Anthropic's native Microsoft Word add-in. Brings Claude's reasoning/writing into
 * Inherits Anthropic enterprise (SOC 2 Type II, GDPR, HIPAA-eligible)
 * No training on enterprise data
 * Works within existing compliance framework — Claude already Core Infrastructure
-* LLM gateway via Vertex AI for data residency in Janus Google Cloud tenant
+* LLM gateway via Vertex AI for data residency in Janus [[google-cloud|Google Cloud]] tenant
 
 ## Considerations
 

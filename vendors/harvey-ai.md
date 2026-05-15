@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
+
 
 # Harvey AI
 
@@ -52,7 +56,7 @@ AI platform purpose-built for legal and professional services. Used by 100,000+ 
 
 ## Janus Context
 
-Bonaventure currently uses Wilson AI (AIR-40) for legal work in acting-legal capacity (Janus has no dedicated legal department). Harvey in same space but significantly higher tier — market leader with enterprise-grade security and deep domain expertise.
+Bonaventure currently uses [[wilson-ai|Wilson AI]] ([[wilson-ai|AIR-40]]) for legal work in acting-legal capacity (Janus has no dedicated legal department). Harvey in same space but significantly higher tier — market leader with enterprise-grade security and deep domain expertise.
 
 **Considerations:**
 * Enterprise-priced — targets large law firms/corporate legal departments; likely expensive for current startup scale

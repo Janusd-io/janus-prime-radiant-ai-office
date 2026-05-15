@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Pipedream
 
@@ -40,7 +44,7 @@ Developer-focused workflow automation and API integration platform. Connects 3,0
 
 ## Integrations
 
-* 3,000+ apps including Drive, Sheets, Slack, Linear, Notion, Airtable, AWS, HubSpot, Salesforce, Stripe, OpenAI, Anthropic
+* 3,000+ apps including Drive, Sheets, Slack, [[linear|Linear]], Notion, Airtable, AWS, HubSpot, [[salesforce|Salesforce]], Stripe, OpenAI, Anthropic
 * REST API, CLI
 * Webhooks
 * Zapier alternative with code-level control
@@ -62,6 +66,6 @@ MCP server (3,000+ APIs, 10,000+ tools) could serve as central integration backb
 * Workday acquisition may affect future pricing/terms/direction
 * AI Agent builder (String) relatively new — maturity TBD
 * Credit-based pricing requires usage forecasting
-* Overlap with Zapier/Make/n8n in registry
+* Overlap with Zapier/[[make|Make]]/n8n in registry
 
 *Evaluating. AI Office Infrastructure tier.*

@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]], [[marketing]], [[office-of-ceo]], [[training]]
+
 
 # Fireflies.ai
 
@@ -44,8 +48,8 @@ AI-powered meeting assistant — auto-joins, records, transcribes, summarises vi
 ## Integrations
 
 * Meet, Zoom, Teams, Webex
-* Salesforce, HubSpot CRM
-* Asana, Trello, Monday, Notion, Linear
+* [[salesforce|Salesforce]], HubSpot CRM
+* [[asana|Asana]], Trello, Monday, Notion, [[linear|Linear]]
 * Slack auto-share
 * GraphQL API and webhooks
 

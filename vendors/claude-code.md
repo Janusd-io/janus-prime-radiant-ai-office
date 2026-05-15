@@ -14,13 +14,16 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# Claude Code
+
+# [[claude|Claude]] Code
 
 > AI Registry entry [AIR-13](https://linear.app/janusd/issue/AIR-13/claude-code) — status **Production** as of 2026-04-20. Departments: —.
 
 **Category:** AI-Powered Software Development / Agentic Coding
-**Cost per User/Month:** Included in Claude Teams (API usage via AIR-11)
+**Cost per User/Month:** Included in Claude Teams (API usage via [[claude-console|AIR-11]])
 **Departments:** Technology, AI Policy
 
 ## Overview
@@ -35,7 +38,7 @@ Anthropic's command-line tool for agentic AI-assisted software development. Runs
 * Terminal access — shell commands, builds, tests, deploys
 * Git workflows — branches, commits, PRs
 * Multi-step reasoning with error handling
-* MCP support for external tools (Linear, GitHub, Slack, Notion)
+* MCP support for external tools ([[linear|Linear]], GitHub, Slack, Notion)
 * CLAUDE.md project conventions
 * Headless mode for CI/CD
 * Skills and plugins ecosystem

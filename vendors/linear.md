@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Linear
 
@@ -35,7 +38,7 @@ Modern PM/issue tracking platform for software teams. Emphasises speed, keyboard
 * Views and filters
 * Keyboard-first design
 * GraphQL API + webhooks
-* MCP integration for Claude
+* MCP integration for [[claude|Claude]]
 * Built-in documents
 
 ## Security & Compliance

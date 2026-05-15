@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Open Interpreter
 
@@ -25,14 +28,14 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Open-source project enabling LLMs to run code (Python, JavaScript, Shell) locally on user's computer. ChatGPT-like terminal interface that can execute code, manipulate files, browse web, interact with local OS.
+Open-source project enabling LLMs to run code (Python, JavaScript, Shell) locally on user's computer. [[chatgpt|ChatGPT]]-like terminal interface that can execute code, manipulate files, browse web, interact with local OS.
 
 ## Rejection Rationale
 
-* **Superseded by Claude Code (AIR-13)** — agentic capabilities with better safety controls, permission models, Claude ecosystem integration
+* **Superseded by [[claude-code|Claude Code]] ([[claude-code|AIR-13]])** — agentic capabilities with better safety controls, permission models, [[claude|Claude]] ecosystem integration
 * **Security risk** — executes arbitrary code without robust sandboxing
 * **No enterprise features** — no SSO, admin controls, audit logging, certifications
 * **Open-source project** — community-maintained, no enterprise support/SLA
-* **Redundant** — Gemini CLI (AIR-12) and Claude Code (AIR-13) cover same use cases with better governance
+* **Redundant** — [[gemini-cli|Gemini CLI]] ([[gemini-cli|AIR-12]]) and Claude Code (AIR-13) cover same use cases with better governance
 
-*Rejected. Superseded by Claude Code (AIR-13) and Gemini CLI (AIR-12).*
+*Rejected. Superseded by Claude Code (AIR-13) and [[gemini|Gemini]] CLI (AIR-12).*

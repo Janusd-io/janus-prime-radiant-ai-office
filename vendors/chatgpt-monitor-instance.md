@@ -14,8 +14,11 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# ChatGPT (Monitor instance)
+
+# [[chatgpt|ChatGPT]] (Monitor instance)
 
 > AI Registry entry [AIR-85](https://linear.app/janusd/issue/AIR-85/chatgpt) — status **Monitor** as of 2026-04-21. Departments: —.
 
@@ -31,7 +34,7 @@ Market-leading AI chatbot — broad enterprise adoption across consulting/legal/
 ## Key Products
 
 * GPT-5.3 Instant + GPT-5.4 Thinking/Pro (context 54K-400K)
-* Apps & Connectors — 60+ including Slack, Drive, SharePoint, GitHub, Asana
+* Apps & Connectors — 60+ including Slack, Drive, SharePoint, GitHub, [[asana|Asana]]
 * Deep Research & Agent Mode — autonomous multi-step
 * Codex — integrated coding (Business/Enterprise expanded usage)
 * Projects, Tasks, Custom GPTs
@@ -57,15 +60,15 @@ Almost certainly already in informal use across Janus (free/personal accounts ou
 2. Measure actual organisational dependency
 3. Decide whether to formalise Business/Enterprise tenancy aligned with §5.2.3
 
-Given Google Gemini is approved Core Infrastructure foundation model, question is whether ChatGPT is genuinely required alongside (dual-stack), should be consolidated into Gemini, or specific teams have justified retention case.
+Given [[google-gemini|Google Gemini]] is approved Core Infrastructure foundation model, question is whether ChatGPT is genuinely required alongside (dual-stack), should be consolidated into [[gemini|Gemini]], or specific teams have justified retention case.
 
 ## Considerations
 
 * **Shadow IT exposure** — free/personal tier use violates §5.2.3 if internal/client data entered
 * **Overlap with Google Gemini** — clear rationale needed
-* **Overlap with Claude Code (Codex) and Fireflies (Record Mode)** — duplicates already-approved tools
+* **Overlap with [[claude-code|Claude Code]] (Codex) and Fireflies (Record Mode)** — duplicates already-approved tools
 * **Multi-region pricing variance** — published AED pricing (UAE) diverges from USD list
 * Only Enterprise tier offers UAE data residency — material for Country operations
 * Individual paid tiers (Plus, Pro, Go) train on user data unless explicitly opted out
 
-*Monitor. Core Infrastructure tier (under review). Distinct from AIR-41 (also ChatGPT, Sandbox).*
+*Monitor. Core Infrastructure tier (under review). Distinct from [[chatgpt|AIR-41]] (also ChatGPT, Sandbox).*

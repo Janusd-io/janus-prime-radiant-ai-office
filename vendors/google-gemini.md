@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]], [[marketing]], [[office-of-ceo]], [[training]]
 
-# Google Gemini
+
+# Google [[gemini|Gemini]]
 
 > AI Registry entry [AIR-5](https://linear.app/janusd/issue/AIR-5/google-gemini) — status **Production** as of 2026-05-05. Departments: finance, marketing, office-of-ceo, training.
 
@@ -27,7 +31,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Google's flagship multimodal AI assistant, available as consumer product and integrated across Google Workspace. Janus's primary foundation model for general-purpose AI tasks across all departments. Multimodal: text, image, audio, video.
+Google's flagship multimodal AI assistant, available as consumer product and integrated across [[google-workspace|Google Workspace]]. Janus's primary foundation model for general-purpose AI tasks across all departments. Multimodal: text, image, audio, video.
 
 ## Capabilities
 
@@ -48,7 +52,7 @@ Google's flagship multimodal AI assistant, available as consumer product and int
 1. **Default for daily and deep research** — Gemini Deep Research explicitly endorsed as the strongest option.
 2. **Default for image and video generation** — for PowerPoint slide decks. "image+video generation is best on Gemini."
 3. **Canvas workflows** — preferred surface for collaborative document drafting in Workspace.
-4. **Split with Claude** — Claude (AIR-10) is default for reasoning, code, harness work, Cowork. Gemini default for research, multimodal generation, Workspace-native tasks.
+4. **Split with [[claude|Claude]]** — Claude ([[claude|AIR-10]]) is default for reasoning, code, harness work, [[cowork|Cowork]]. Gemini default for research, multimodal generation, Workspace-native tasks.
 
 ## Security & Compliance
 

@@ -14,8 +14,11 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# Attio (duplicate AIR-76)
+
+# [[attio|Attio]] (duplicate [[attio|AIR-76]])
 
 > AI Registry entry [AIR-94](https://linear.app/janusd/issue/AIR-94/attio) — status **Backlog** as of 2026-05-05. Departments: —.
 
@@ -40,7 +43,7 @@ Modern AI-native CRM for fast-moving teams wanting bespoke data models rather th
 
 ## Bakeoff Context
 
-In Andrew Weekly 5 May 2026 CRM matrix alongside HubSpot (AIR-77), Monday (AIR-83), Salesforce (AIR-93). Differentiator: AI-native from ground up rather than legacy with AI bolted on.
+In Andrew Weekly 5 May 2026 CRM matrix alongside HubSpot ([[hubspot|AIR-77]]), Monday ([[monday-com|AIR-83]]), [[salesforce|Salesforce]] ([[salesforce|AIR-93]]). Differentiator: AI-native from ground up rather than legacy with AI bolted on.
 
 ## Possible Duplicate Note (Andrew Weekly 2026-05-05)
 

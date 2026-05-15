@@ -13,6 +13,9 @@ captured_by: jehad-altoutou
 departments: []
 air_id: AIR-87
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Hercules
 
@@ -27,7 +30,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## AI Registry — AIR-87
 
-> Linear: [AIR-87](https://linear.app/janusd/issue/AIR-87/hercules) · status **Backlog** · updated 2026-05-11.
+> [[linear|Linear]]: [AIR-87](https://linear.app/janusd/issue/AIR-87/hercules) · status **Backlog** · updated 2026-05-11.
 
 **Category:** AI App / Website Builder (chat-to-app, "vibe coding")
 **Status:** Backlog
@@ -37,7 +40,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## Overview
 
-AI app/website builder. Chat with AI agent to build full-stack web and mobile applications. Claims 100k+ users. Competes with Lovable, Replit, Bolt, v0. **Differentiator: batteries-included stack** — auth, database, backend, payments, email, push, file storage, AI gateway, analytics, hosting all built-in + provisioned automatically. Plus first-class mobile (App Store / Play Store) and commerce.
+AI app/website builder. Chat with AI agent to build full-stack web and mobile applications. Claims 100k+ users. Competes with [[lovable|Lovable]], [[replit|Replit]], [[bolt|Bolt]], v0. **Differentiator: batteries-included stack** — auth, database, backend, payments, email, push, file storage, AI gateway, analytics, hosting all built-in + provisioned automatically. Plus first-class mobile (App Store / Play Store) and commerce.
 
 ## Capabilities
 
@@ -63,7 +66,7 @@ AI app/website builder. Chat with AI agent to build full-stack web and mobile ap
 
 ## Bakeoff Cohort
 
-In same cohort as Lovable (AIR-88), Replit (AIR-32), Bolt (AIR-89), v0 (AIR-90). Janus should pick ONE primary vibe-coding tool, not approve all five.
+In same cohort as Lovable ([[lovable|AIR-88]]), Replit ([[replit|AIR-32]]), Bolt ([[bolt|AIR-89]]), v0 ([[v0|AIR-90]]). Janus should pick ONE primary vibe-coding tool, not approve all five.
 
 ## Considerations
 

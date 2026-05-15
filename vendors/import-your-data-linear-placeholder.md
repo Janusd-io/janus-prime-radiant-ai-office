@@ -14,8 +14,11 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# Import your data (Linear placeholder)
+
+# Import your data ([[linear|Linear]] placeholder)
 
 > AI Registry entry [AIR-4](https://linear.app/janusd/issue/AIR-4/import-your-data) — status **Rejected** as of 2026-02-25. Departments: —.
 

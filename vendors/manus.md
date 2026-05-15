@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Manus
 
@@ -45,6 +48,6 @@ Autonomous AI agent platform. Gained attention early 2025 as one of first genera
 * **No SSO** — fails Microsoft Entra requirement (Action #21)
 * **Agent autonomy risk** — autonomous web agent on user's behalf raises governance questions
 * **Credential handling concerns**
-* **Claude Code + Claude MCP** provides many agentic capabilities with better security
+* **[[claude-code|Claude Code]] + [[claude|Claude]] MCP** provides many agentic capabilities with better security
 
 *Rejected.*

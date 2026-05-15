@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Google Cloud
 
@@ -27,12 +31,12 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Google Cloud Platform (GCP) — Google's enterprise cloud computing service. Underlying infrastructure for AI Office's development and deployment work — hosting n8n workflows (until April 2026 migration to Hostinger), Vertex AI API access, custom AI automation. Classified as AI Office Infrastructure rather than company-wide.
+Google Cloud Platform (GCP) — Google's enterprise cloud computing service. Underlying infrastructure for AI Office's development and deployment work — hosting n8n workflows (until April 2026 migration to [[hostinger|Hostinger]]), Vertex AI API access, custom AI automation. Classified as AI Office Infrastructure rather than company-wide.
 
 ## Capabilities
 
 * Compute and hosting (VMs, Cloud Run, Cloud Functions, App Engine)
-* Vertex AI — managed ML platform with Gemini, Claude (via Model Garden)
+* Vertex AI — managed ML platform with [[gemini|Gemini]], [[claude|Claude]] (via Model Garden)
 * AI APIs: Vision, Speech-to-Text, NLP, Translation, Document AI
 * Data: BigQuery, Cloud SQL, Firestore, Cloud Storage
 * Networking: VPC, Load Balancing, CDN, DNS

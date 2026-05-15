@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # draw.io
 
@@ -46,10 +49,10 @@ Free, open-source diagramming application. Flowcharts, BPMN, UML, network diagra
 * Confluence, Jira (Atlassian Marketplace)
 * Drive, OneDrive, SharePoint, Dropbox, GitHub, GitLab, Nextcloud
 * Notion (image/embed), Slack (shared file/preview)
-* **VS Code extension** (Hediet draw.io Integration)
+* **[[vs-code|VS Code]] extension** (Hediet draw.io Integration)
 * Self-hosted Docker
 * CLI export tools, headless rendering for CI
-* **AI/automation: any LLM (Claude, ChatGPT) can read, write, generate, modify diagrams** via open XML
+* **AI/automation: any LLM ([[claude|Claude]], [[chatgpt|ChatGPT]]) can read, write, generate, modify diagrams** via open XML
 
 ## Security & Compliance
 
@@ -69,7 +72,7 @@ Michael: Janus needs to move away from token-heavy proprietary formats (PPT, Wor
 
 **Selected after explicit comparison:**
 * **Excalidraw rejected** — hand-drawn freeform unsuitable for formal ISO process documentation
-* **Figma (AIR-55, Sandbox)** — positioned as UI/UX/web tool, not process-flow diagramming
+* **[[figma|Figma]] ([[figma|AIR-55]], Sandbox)** — positioned as UI/UX/web tool, not process-flow diagramming
 
 draw.io fills the structured-diagramming gap.
 

@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # VS Code
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Microsoft's free, open-source code editor — most widely used IDE in the world. Standard development environment for Janus Technology and AI Policy teams. Used for code, config files, and integrating with AI coding tools (Claude Code AIR-13, Gemini CLI AIR-12).
+Microsoft's free, open-source code editor — most widely used IDE in the world. Standard development environment for Janus Technology and AI Policy teams. Used for code, config files, and integrating with AI coding tools ([[claude-code|Claude Code]] [[claude-code|AIR-13]], [[gemini-cli|Gemini CLI]] [[gemini-cli|AIR-12]]).
 
 ## Capabilities
 
@@ -36,7 +39,7 @@ Microsoft's free, open-source code editor — most widely used IDE in the world.
 * Remote development (SSH, WSL, Dev Containers)
 * Live Share — real-time collaborative editing
 * Built-in debugger
-* AI extensions (Copilot, Claude Code, etc.)
+* AI extensions (Copilot, [[claude|Claude]] Code, etc.)
 
 ## Security & Compliance
 
@@ -47,6 +50,6 @@ Microsoft's free, open-source code editor — most widely used IDE in the world.
 
 ## Relevance to Janus Digital
 
-Foundational development tool. Serves as the IDE within which Claude Code, Gemini CLI, and other AI coding tools operate. Zero licensing cost, fully extensible.
+Foundational development tool. Serves as the IDE within which Claude Code, [[gemini|Gemini]] CLI, and other AI coding tools operate. Zero licensing cost, fully extensible.
 
 *Standard development tool for Technology and AI Policy. Functional tier.*

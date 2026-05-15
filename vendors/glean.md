@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Glean
 
@@ -38,7 +41,7 @@ Enterprise AI-powered search and knowledge management. Unified search layer acro
 * Real-time indexing
 * AI agents for specific workflows (e.g. Zendesk agent for support)
 * Enterprise security — federated search respects source permissions
-* Integrations: Workspace, M365, Salesforce, Jira, Confluence, Slack, Zendesk
+* Integrations: Workspace, M365, [[salesforce|Salesforce]], Jira, Confluence, Slack, Zendesk
 
 ## Why Evaluating
 

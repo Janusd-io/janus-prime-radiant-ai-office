@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # OpenAI Platform
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-OpenAI's developer console and API billing surface — programmatic access to GPT-5.x family, reasoning models, realtime, image, embeddings, audio, Codex. Plus prompt engineering, fine-tuning, evaluations, agent building, fine-grained cost/usage governance at Project level. OpenAI's equivalent of Google AI Studio (AIR-8) — operator-facing counterpart to consumer ChatGPT (AIR-41).
+OpenAI's developer console and API billing surface — programmatic access to GPT-5.x family, reasoning models, realtime, image, embeddings, audio, Codex. Plus prompt engineering, fine-tuning, evaluations, agent building, fine-grained cost/usage governance at Project level. OpenAI's equivalent of [[google-ai-studio|Google AI Studio]] ([[google-ai-studio|AIR-8]]) — operator-facing counterpart to consumer [[chatgpt|ChatGPT]] ([[chatgpt|AIR-41]]).
 
 ## Capabilities
 
@@ -42,7 +46,7 @@ OpenAI's developer console and API billing surface — programmatic access to GP
 ## Integrations
 
 * Official SDKs: Python, Node.js, .NET, Java, Go
-* Direct integration with N8N (AIR-19), Dify (AIR-22), Pipedream (AIR-78)
+* Direct integration with N8N ([[n8n|AIR-19]]), [[dify|Dify]] ([[dify|AIR-22]]), [[pipedream|Pipedream]] ([[pipedream|AIR-78]])
 * SSO/SAML for org login (Enterprise)
 * MCP support in Responses API
 * Usage/billing export via API
@@ -59,13 +63,13 @@ OpenAI's developer console and API billing surface — programmatic access to GP
 
 ## Relevance
 
-Org-level account for building/piloting/operating OpenAI-powered automations. Mirrors Google AI Studio (AIR-8) relationship with Gemini. Prerequisite for downstream OpenAI-dependent tools (Codex AIR-84, N8N/Dify/Pipedream workflows). Without governed platform account, developers would use personal keys — policy breach under §5.2.3.
+Org-level account for building/piloting/operating OpenAI-powered automations. Mirrors Google AI Studio (AIR-8) relationship with [[gemini|Gemini]]. Prerequisite for downstream OpenAI-dependent tools (Codex [[openai-codex|AIR-84]], N8N/Dify/Pipedream workflows). Without governed platform account, developers would use personal keys — policy breach under §5.2.3.
 
 ## Considerations
 
 * Usage-based billing — set conservative monthly budget BEFORE opening keys
 * DPA / data residency decision needed before non-public data
-* Overlap with Gemini (AIR-5, AIR-8) — justify incremental spend
+* Overlap with Gemini ([[google-gemini|AIR-5]], AIR-8) — justify incremental spend
 * Key hygiene — all access via OpenAI Projects with named owners and spend caps
 * Sandbox scope — no confidential/client data until promoted to Production
 

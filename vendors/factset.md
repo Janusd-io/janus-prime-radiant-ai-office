@@ -13,6 +13,9 @@ captured_by: jehad-altoutou
 departments: []
 air_id: AIR-96
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Factset
 
@@ -27,7 +30,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## AI Registry — AIR-96
 
-> Linear: [AIR-96](https://linear.app/janusd/issue/AIR-96/factset) · status **Backlog** · updated 2026-05-11.
+> [[linear|Linear]]: [AIR-96](https://linear.app/janusd/issue/AIR-96/factset) · status **Backlog** · updated 2026-05-11.
 
 **Category:** Financial Data Platform + AI Solutions for Finance
 **Status:** Backlog

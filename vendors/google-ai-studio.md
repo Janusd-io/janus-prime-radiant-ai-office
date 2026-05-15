@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Google AI Studio
 
@@ -27,7 +31,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Google's web-based development environment for prototyping with Google's generative AI models (Gemini). Low-code interface for prompt engineering, model testing, API key generation. Bridge between consumer Gemini and production Vertex AI.
+Google's web-based development environment for prototyping with Google's generative AI models ([[gemini|Gemini]]). Low-code interface for prompt engineering, model testing, API key generation. Bridge between consumer Gemini and production Vertex AI.
 
 ## Capabilities
 
@@ -39,7 +43,7 @@ Google's web-based development environment for prototyping with Google's generat
 * Context caching
 * Code export (Python, JS, cURL)
 * Search grounding for factual accuracy
-* Generous free tier + paid usage via Google Cloud billing
+* Generous free tier + paid usage via [[google-cloud|Google Cloud]] billing
 
 ## Security & Compliance
 

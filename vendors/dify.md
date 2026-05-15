@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Dify
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Open-source LLM application development platform. Combines visual workflow builder, RAG pipeline, agent framework, LLMOps tooling. Flexible deployment: managed cloud, self-hosted (Docker Compose), enterprise. Direct alternative to Lindy (AIO-21) with self-hosting for full data control under §5.2.3.
+Open-source LLM application development platform. Combines visual workflow builder, RAG pipeline, agent framework, LLMOps tooling. Flexible deployment: managed cloud, self-hosted (Docker Compose), enterprise. Direct alternative to [[lindy|Lindy]] (AIO-21) with self-hosting for full data control under §5.2.3.
 
 ## Capabilities
 

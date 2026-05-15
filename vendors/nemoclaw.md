@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # NemoClaw
 
@@ -24,7 +28,7 @@ sensitivity_confidence: 0.9
 **Number of Licences:** Per GPU/Node (Ent)
 **Departments:** Security, Compliance, AI Office, IT Operations
 
-## OpenClaw vs NemoClaw: Strategic Comparison & Compliance Audit
+## [[openclaw|OpenClaw]] vs NemoClaw: Strategic Comparison & Compliance Audit
 
 **Compliance Standard:** ISO/IEC 42001:2023 (Artificial Intelligence Management System)
 

@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Repo Prompt
 
@@ -25,11 +28,11 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-macOS app + open-source CLI for aggregating and formatting repository context for AI coding assistants. Select files/folders → generates structured, token-optimised context document for AI chatbots (Claude, ChatGPT, Gemini).
+macOS app + open-source CLI for aggregating and formatting repository context for AI coding assistants. Select files/folders → generates structured, token-optimised context document for AI chatbots ([[claude|Claude]], [[chatgpt|ChatGPT]], [[gemini|Gemini]]).
 
 ## Rejection Rationale
 
-* **Superseded by Claude Code (AIR-13)** — Claude Code automatically handles codebase navigation and context. No manual file selection needed.
+* **Superseded by [[claude-code|Claude Code]] ([[claude-code|AIR-13]])** — Claude Code automatically handles codebase navigation and context. No manual file selection needed.
 * **Manual workflow** — time-consuming, error-prone
 * **Not agentic** — only formats context, cannot execute tasks or modify code
 * **Limited to macOS** — native app macOS-only (CLI cross-platform but less user-friendly)

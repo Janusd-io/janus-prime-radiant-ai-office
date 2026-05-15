@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Hostinger
 
@@ -29,7 +33,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-IaaS provider — VPS, cloud hosting, managed WordPress, domain registration, growing one-click Docker app library. Chosen as Janus's primary infrastructure host after 20 Apr 2026 GCP pilot surfaced unpredictable metered billing, single-CPU specs at equivalent cost, DNS complexity. Hostinger VPS delivers dedicated root-access servers at flat predictable fee, Docker-ready Ubuntu, one-click deploys for N8N, NemoClaw.
+IaaS provider — VPS, cloud hosting, managed WordPress, domain registration, growing one-click Docker app library. Chosen as Janus's primary infrastructure host after 20 Apr 2026 GCP pilot surfaced unpredictable metered billing, single-CPU specs at equivalent cost, DNS complexity. Hostinger VPS delivers dedicated root-access servers at flat predictable fee, Docker-ready Ubuntu, one-click deploys for N8N, [[nemoclaw|NemoClaw]].
 
 ## Key Decision: GCP → Hostinger Migration (20 April 2026)
 
@@ -39,7 +43,7 @@ April GCP pilot exposed opaque, non-forecastable unit costs (egress, per-request
 
 * VPS (KVM-based) — dedicated CPU/RAM/NVMe with root SSH. Baseline: 2 CPU / 8GB / 100GB
 * Ubuntu (default), Debian, CentOS, Rocky, AlmaLinux
-* One-click catalogue: N8N, NemoClaw, OpenClaw, LLAMA/Ollama, WordPress, GitLab, Nextcloud
+* One-click catalogue: N8N, NemoClaw, [[openclaw|OpenClaw]], LLAMA/Ollama, WordPress, GitLab, Nextcloud
 * Docker-native, Docker Compose pre-configured
 * Weekly automated backups + one free manual rollback
 * 13 DC partners: NA, UK, France, Germany, NL, Finland, Lithuania, India, Indonesia, Malaysia, Singapore, Brazil
@@ -52,7 +56,7 @@ April GCP pilot exposed opaque, non-forecastable unit costs (egress, per-request
 * **Official MCP server** — github.com/hostinger/api-mcp-server
 * Official SDKs: PHP, Python, TypeScript
 * Postman collection
-* Google Workspace email routing support
+* [[google-workspace|Google Workspace]] email routing support
 * No native Slack notifications (workloads can use webhooks)
 * Control-panel auth: email + password + 2FA; no SAML/OIDC SSO at panel level
 
@@ -74,6 +78,6 @@ April GCP pilot exposed opaque, non-forecastable unit costs (egress, per-request
 
 ## Relevance
 
-Pragmatic compromise between full hyperscaler sprawl (GCP/AWS) and back-of-napkin side project. For 30-person AI Office needing to host N8N, NemoClaw, LLAMA, future SaaS pilots — but no DevOps team — Hostinger flat pricing and one-click deploys remove "become DevOps engineer first" tax that hit Jehad on GCP. Official API + MCP server means Claude can drive VPS lifecycle programmatically.
+Pragmatic compromise between full hyperscaler sprawl (GCP/AWS) and back-of-napkin side project. For 30-person AI Office needing to host N8N, NemoClaw, LLAMA, future SaaS pilots — but no DevOps team — Hostinger flat pricing and one-click deploys remove "become DevOps engineer first" tax that hit Jehad on GCP. Official API + MCP server means [[claude|Claude]] can drive VPS lifecycle programmatically.
 
 *Moved to Evaluating 20 Apr 2026 following reversal of 17 Apr GCP hosting decision. Promoted to Sandbox 22 Apr.*

@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]], [[finance]], [[marketing]], [[office-of-ceo]], [[training]]
+
 
 # Runbear
 
@@ -29,6 +33,6 @@ sensitivity_confidence: 0.9
 
 * **Gate 1 (Baseline):** PASS (G1.1-G1.5). SOC 2 Type II, zero-leak architecture.
 * **Gate 2 (Technical):** PASS (Score: 24/25).
-* **Gate 3 (Sandbox):** Initiated. Deployment as universal Slack conduit for Dify/Coze agents.
+* **Gate 3 (Sandbox):** Initiated. Deployment as universal Slack conduit for [[dify|Dify]]/Coze agents.
 
 *Sandbox.*

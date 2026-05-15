@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Make
 
@@ -29,6 +32,6 @@ sensitivity_confidence: 0.9
 * **Restricted data manipulation** capabilities
 * **General limitations** when benchmarked against N8N's flexibility and self-hosted model
 
-**N8N (AIR-19) was selected as the preferred workflow automation platform over Make.**
+**N8N ([[n8n|AIR-19]]) was selected as the preferred workflow automation platform over Make.**
 
 *Rejected.*

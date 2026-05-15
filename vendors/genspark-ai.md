@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Genspark AI
 
@@ -37,7 +40,7 @@ sensitivity_confidence: 0.9
 | **G1.4 Data Training Exclusion** | **FAIL** |
 | G1.5 Documented API | INCONCLUSIVE |
 
-**Blocking issue:** No publicly available DPA or contractual guarantee that user data is excluded from model training. ToS language ("improving the Service and developing new ones") ambiguous. Google Workspace API data carved out, but general user content NOT.
+**Blocking issue:** No publicly available DPA or contractual guarantee that user data is excluded from model training. ToS language ("improving the Service and developing new ones") ambiguous. [[google-workspace|Google Workspace]] API data carved out, but general user content NOT.
 
 **API:** Exists at Team tier but no publicly published reference documentation found.
 

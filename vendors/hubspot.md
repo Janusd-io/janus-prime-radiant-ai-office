@@ -13,6 +13,9 @@ captured_by: jehad-altoutou
 departments: []
 air_id: AIR-77
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Hubspot
 
@@ -27,7 +30,7 @@ _To populate: replace this stub with real content and remove this notice._
 
 ## AI Registry — AIR-77
 
-> Linear: [AIR-77](https://linear.app/janusd/issue/AIR-77/hubspot) · status **Evaluating** · updated 2026-05-05.
+> [[linear|Linear]]: [AIR-77](https://linear.app/janusd/issue/AIR-77/hubspot) · status **Evaluating** · updated 2026-05-05.
 
 **Category:** CRM / Marketing & Sales Automation
 **Cost:** Free tools; Starter ~$20; Professional ~$100; Enterprise ~$150
@@ -51,7 +54,7 @@ Leading cloud-based CRM and marketing/sales/service automation platform. Mid-mar
 
 ## Integrations & Gate 1 Status
 
-* **G1.1 Google Workspace** ✅ PASS — native Gmail, Calendar, Drive
+* **G1.1 [[google-workspace|Google Workspace]]** ✅ PASS — native Gmail, Calendar, Drive
 * **G1.2 Slack** ✅ PASS — native app with notifications, workflow triggers
 * **G1.3 Data Portability** ✅ PASS — CSV export, full API, GDPR portability
 * **G1.4 Data Training Exclusion** ⚠️ TBC — must confirm Breeze AI handling
@@ -67,7 +70,7 @@ Leading cloud-based CRM and marketing/sales/service automation platform. Mid-mar
 
 ## CRM Matrix (Andrew Weekly 5 May 2026)
 
-Under evaluation alongside Attio (AIR-76), monday CRM (AIR-83), Salesforce (AIR-93). Gate 1 PRELIMINARY: PASS pending G1.4 confirmation.
+Under evaluation alongside [[attio|Attio]] ([[attio|AIR-76]]), monday CRM ([[monday-com|AIR-83]]), [[salesforce|Salesforce]] ([[salesforce|AIR-93]]). Gate 1 PRELIMINARY: PASS pending G1.4 confirmation.
 
 ## Considerations
 

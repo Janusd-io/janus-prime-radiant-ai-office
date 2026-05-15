@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
+
 
 # ChatJimmy
 
@@ -40,12 +44,12 @@ Experimental AI chatbot by Taalas (hardware AI inference startup). Technology de
 ## What It's NOT
 
 * Not production-ready (experimental/demo)
-* Not competitor to Claude/Gemini/ChatGPT on reasoning quality
+* Not competitor to [[claude|Claude]]/[[gemini|Gemini]]/[[chatgpt|ChatGPT]] on reasoning quality
 * No enterprise features, certifications, compliance posture
 * Less accurate than mainstream models
 
 ## Relevance
 
-Hardware/infrastructure play. Speed becoming competitive differentiator. Could be relevant if Janus moves toward self-hosted model inference. Aligns with broader OpenClaw/NemoClaw evaluation. Worth monitoring but not adopting.
+Hardware/infrastructure play. Speed becoming competitive differentiator. Could be relevant if Janus moves toward self-hosted model inference. Aligns with broader [[openclaw|OpenClaw]]/[[nemoclaw|NemoClaw]] evaluation. Worth monitoring but not adopting.
 
 *Backlog. Hardware/infrastructure monitor item.*

@@ -14,8 +14,12 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]], [[office-of-ceo]]
 
-# Claude by Anthropic in Excel
+
+# [[claude|Claude]] by Anthropic in Excel
 
 > AI Registry entry [AIR-30](https://linear.app/janusd/issue/AIR-30/claude-by-anthropic-in-excel) — status **Sandbox** as of 2026-04-20. Departments: finance, office-of-ceo.
 
@@ -58,6 +62,6 @@ Anthropic's native Excel add-in — brings Claude's reasoning into Microsoft Exc
 
 * No new vendor relationship or security review needed (Claude already approved)
 * Cross-app story (Excel → PowerPoint) is a differentiator
-* LLM gateway via Vertex AI keeps data in Janus Google Cloud tenant
+* LLM gateway via Vertex AI keeps data in Janus [[google-cloud|Google Cloud]] tenant
 
-*Sandbox — active evaluation (Urgent priority). Evaluator: Ann Greed. Comparing against Shortcut AI (AIR-28).*
+*Sandbox — active evaluation (Urgent priority). Evaluator: Ann Greed. Comparing against [[shortcut-ai|Shortcut AI]] ([[shortcut-ai|AIR-28]]).*

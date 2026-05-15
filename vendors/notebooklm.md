@@ -14,13 +14,16 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # NotebookLM
 
 > AI Registry entry [AIR-61](https://linear.app/janusd/issue/AIR-61/notebooklm) — status **Production** as of 2026-04-06. Departments: —.
 
 **Category:** AI Research & Knowledge Management
-**Cost per User/Month:** Free (with Google Workspace)
+**Cost per User/Month:** Free (with [[google-workspace|Google Workspace]])
 **Departments:** All
 
 ## Overview

@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Viktor
 
@@ -34,7 +37,7 @@ sensitivity_confidence: 0.9
 
 Sandbox evaluation in #viktor-evaluation Slack channel (2026-04-03, with Michael Bruck, Jehad Altoutou, Andrey Timokhov) surfaced **structural data-control issue:**
 
-* **Integrations connected per-user but used workspace-wide.** Michael connects Drive/Notion/Linear; once connected, EVERY authorised channel member can invoke those integrations
+* **Integrations connected per-user but used workspace-wide.** Michael connects Drive/Notion/[[linear|Linear]]; once connected, EVERY authorised channel member can invoke those integrations
 * **Integration runs under connecting user's permissions, not requesting user's.** Viktor explicitly does NOT enforce source-platform access boundaries. If User C is in channel but has no Notion account, they can still pull Notion data via Viktor.
 * **First-line defence is workspace allow-list, not per-tool ACLs.** Per-call approval doesn't scale and doesn't enforce source platform's access model.
 

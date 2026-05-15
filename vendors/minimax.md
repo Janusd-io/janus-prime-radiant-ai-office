@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # MiniMax
 
@@ -46,7 +49,7 @@ Multimodal foundation models — text, video, voice, AI agents. Latest model M2.
 
 ## Why Flagged
 
-Lysander (Technology, Andre's team) using MiniMax for project work without AI Office awareness (flagged 2026-04-06). Michael steering toward Gemini as alternative.
+Lysander (Technology, Andre's team) using MiniMax for project work without AI Office awareness (flagged 2026-04-06). Michael steering toward [[gemini|Gemini]] as alternative.
 
 ## Considerations
 

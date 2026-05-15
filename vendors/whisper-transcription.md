@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Whisper Transcription
 
@@ -49,7 +52,7 @@ Native macOS app for on-device speech-to-text using OpenAI's Whisper model. All 
 
 ## Relevance
 
-Complement to Fireflies (AIR-9) for on-device, fully private transcription. Fills gap for offline transcription of sensitive recordings — confidential audio that cannot be processed via cloud.
+Complement to Fireflies ([[fireflies-ai|AIR-9]]) for on-device, fully private transcription. Fills gap for offline transcription of sensitive recordings — confidential audio that cannot be processed via cloud.
 
 ## Considerations
 

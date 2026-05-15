@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[marketing]]
+
 
 # Figma
 
@@ -52,6 +56,6 @@ Industry-standard collaborative design platform for UI/UX, prototyping, design s
 * Single licence — may need expansion
 * Pro ($20) vs Organisation ($45) — evaluate SSO need
 * Figma AI features relatively new
-* AI-powered alternatives (Gamma, Claude for diagrams) may reduce need
+* AI-powered alternatives ([[gamma|Gamma]], [[claude|Claude]] for diagrams) may reduce need
 
 *Sandbox. Functional tier. Single licence for Marketing and AI Policy.*

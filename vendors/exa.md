@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Exa
 
@@ -27,7 +31,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-AI-native web search API built for powering AI agents and applications with real-time web data. Purpose-built for programmatic use — structured, token-efficient results optimised for LLM consumption. Used by Notion, Vercel, Cursor, Databricks, AWS, HubSpot, Monday.com, Groq.
+AI-native web search API built for powering AI agents and applications with real-time web data. Purpose-built for programmatic use — structured, token-efficient results optimised for LLM consumption. Used by Notion, Vercel, [[cursor|Cursor]], [[databricks|Databricks]], AWS, HubSpot, Monday.com, Groq.
 
 ## Key Products
 
@@ -48,17 +52,17 @@ AI-native web search API built for powering AI agents and applications with real
 
 ## Benchmarks
 
-Leads FRAMES, Tip-of-Tongue, Seal0 — outperforms Perplexity and Brave.
+Leads FRAMES, Tip-of-Tongue, Seal0 — outperforms [[perplexity|Perplexity]] and Brave.
 
 ## Janus Fit
 
-Foundational search infrastructure for AI initiatives. MCP integration makes it relevant for Claude agent frameworks. Structured outputs particularly relevant for consulting practice (research agents extracting specific data from web). Free tier (1k req/mo) enables PoC testing.
+Foundational search infrastructure for AI initiatives. MCP integration makes it relevant for [[claude|Claude]] agent frameworks. Structured outputs particularly relevant for consulting practice (research agents extracting specific data from web). Free tier (1k req/mo) enables PoC testing.
 
 ## Considerations
 
 * Usage-based pricing — needs volume estimation
 * API-only — requires engineering integration effort
-* Overlap with Claude/Gemini built-in search
+* Overlap with Claude/[[gemini|Gemini]] built-in search
 * Free tier + Startup grants ($1k free credits)
 
 *Backlog. AI Office Infrastructure tier.*

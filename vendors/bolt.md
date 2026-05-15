@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Bolt
 
@@ -31,7 +34,7 @@ StackBlitz's chat-to-app product, built on WebContainer browser-runtime. Pitches
 
 ## Capabilities
 
-* Chat-to-build with Figma + GitHub import
+* Chat-to-build with [[figma|Figma]] + GitHub import
 * Multi-agent across frontier labs (routes coding agents inside single UI)
 * **WebContainer runtime** — full Node toolchain in browser
 * Bolt Cloud — hosting, unlimited DBs, auth, custom domains
@@ -55,9 +58,9 @@ StackBlitz's chat-to-app product, built on WebContainer browser-runtime. Pitches
 
 ## Bakeoff Position
 
-* **Vs Lovable**: Bolt's compliance posture is opaque outside Enterprise
-* **Vs Hercules**: Hercules has SOC 2 Type I + GDPR-in-progress + privacy page
-* **Vs Replit**: Replit has SOC 2 Type II + more mature platform
+* **Vs [[lovable|Lovable]]**: Bolt's compliance posture is opaque outside Enterprise
+* **Vs [[hercules|Hercules]]**: Hercules has SOC 2 Type I + GDPR-in-progress + privacy page
+* **Vs [[replit|Replit]]**: Replit has SOC 2 Type II + more mature platform
 * **Vs v0**: v0 has SOC 2 Type 2 (Vercel) + clearer enterprise security docs
 
 ## Considerations

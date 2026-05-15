@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
+
 
 # ClickUp
 
@@ -27,7 +31,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-All-in-one AI-powered work management platform consolidating PM, task tracking, doc collaboration, chat, dashboards, time tracking. Positions as replacement for Asana, Trello, Monday, Jira, Notion, Slack. 3M+ teams.
+All-in-one AI-powered work management platform consolidating PM, task tracking, doc collaboration, chat, dashboards, time tracking. Positions as replacement for [[asana|Asana]], Trello, Monday, Jira, Notion, Slack. 3M+ teams.
 
 ## Core Capabilities
 
@@ -44,7 +48,7 @@ All-in-one AI-powered work management platform consolidating PM, task tracking, 
 
 ## Integrations
 
-1,000+ integrations: Slack, Calendar, Sheets, GitHub, GitLab, Zoom, Teams, Figma, Jira, Asana, Salesforce, HubSpot, Tableau, Zendesk, Intercom, N8N, Make, Confluence, Miro.
+1,000+ integrations: Slack, Calendar, Sheets, GitHub, GitLab, Zoom, Teams, [[figma|Figma]], Jira, Asana, [[salesforce|Salesforce]], HubSpot, Tableau, Zendesk, Intercom, N8N, [[make|Make]], Confluence, Miro.
 
 ## Security
 
@@ -53,6 +57,6 @@ All-in-one AI-powered work management platform consolidating PM, task tracking, 
 
 ## Why Rejected
 
-Monday.com (AIR-83) selected as the work management platform after CRM matrix evaluation. Carrying ClickUp + Monday forward as parallel evaluations was deemed wasted cycles. ClickUp rejected to consolidate on Monday.
+Monday.com ([[monday-com|AIR-83]]) selected as the work management platform after CRM matrix evaluation. Carrying ClickUp + Monday forward as parallel evaluations was deemed wasted cycles. ClickUp rejected to consolidate on Monday.
 
 *Rejected.*

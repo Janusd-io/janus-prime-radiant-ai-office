@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # OpenClaw
 
@@ -23,9 +26,9 @@ sensitivity_confidence: 0.9
 **Cost:** $0 Dev; ~$375 Enterprise Support
 **Departments:** Engineering, AI R&D, Platform Teams
 
-## OpenClaw vs NemoClaw Comparison
+## OpenClaw vs [[nemoclaw|NemoClaw]] Comparison
 
-Flexible infrastructure framework vs NemoClaw's (AIR-60) production-ready enterprise stack with strict data sovereignty.
+Flexible infrastructure framework vs NemoClaw's ([[nemoclaw|AIR-60]]) production-ready enterprise stack with strict data sovereignty.
 
 | Feature | OpenClaw | NemoClaw |
 |---|---|---|

@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Google Antigravity
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Google's cloud-based IDE — browser-based coding with AI-powered assistance via Gemini. Similar to VS Code but cloud-only. Combines familiar editor interface with integrated Google Cloud and Firebase deployment. Branding history: Project IDX → Firebase Studio → Antigravity.
+Google's cloud-based IDE — browser-based coding with AI-powered assistance via [[gemini|Gemini]]. Similar to [[vs-code|VS Code]] but cloud-only. Combines familiar editor interface with integrated [[google-cloud|Google Cloud]] and [[firebase|Firebase]] deployment. Branding history: Project IDX → [[firebase-studio|Firebase Studio]] → Antigravity.
 
 ## Capabilities
 
@@ -41,18 +44,18 @@ Google's cloud-based IDE — browser-based coding with AI-powered assistance via
 
 ## Integrations
 
-* Google Cloud (AIR-7) — native deployment
-* Firebase (AIR-31) — backend integration
+* Google Cloud ([[google-cloud|AIR-7]]) — native deployment
+* Firebase ([[firebase-studio|AIR-31]]) — backend integration
 * GitHub — repo import
-* Google Gemini built-in
+* [[google-gemini|Google Gemini]] built-in
 * Cloud Run for serverless
 * Chrome DevTools
 
 ## Considerations
 
 * Cloud-only — requires constant internet
-* AI is Gemini-only — cannot use Claude Code (AIR-13)
-* Overlaps with VS Code (AIR-15) + local setup
+* AI is Gemini-only — cannot use [[claude-code|Claude Code]] ([[claude-code|AIR-13]])
+* Overlaps with VS Code ([[vs-code|AIR-15]]) + local setup
 * Branding has shifted — assess product stability
 * Limited offline capability
 

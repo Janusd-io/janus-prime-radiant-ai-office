@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
+
 
 # Kimi
 
@@ -50,7 +54,7 @@ Consumer-facing AI assistant from Moonshot AI, Beijing-based foundation-model la
 ## Considerations
 
 * **Data residency and jurisdiction** — PRC HQ; until terms documented, treat as public/free-tier under §5.2.3 — **NO internal, confidential, or client data**
-* Feature overlap with Gamma, Claude Code, Cursor, Windsurf, Gemini Deep Research
+* Feature overlap with [[gamma|Gamma]], [[claude-code|Claude Code]], [[cursor|Cursor]], Windsurf, [[gemini|Gemini]] Deep Research
 * No public team/enterprise SKU with centralised billing/SSO/admin
 * Compliance documentation gap is meaningful gate before pilot
 * Two distinct surfaces: consumer Kimi app vs Moonshot Open Platform API — different evaluation surfaces

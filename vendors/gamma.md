@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[marketing]]
+
 
 # Gamma
 
@@ -26,7 +30,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-AI-powered presentation, document, website, social media content creation. Generates polished slide decks, one-pagers, landing pages, social graphics from text prompts or imported content. Uses multiple AI models (Claude, GPT, Gemini, DALL-E, Imagen, Flux). 50M+ users globally. SOC 2 Type II.
+AI-powered presentation, document, website, social media content creation. Generates polished slide decks, one-pagers, landing pages, social graphics from text prompts or imported content. Uses multiple AI models ([[claude|Claude]], GPT, [[gemini|Gemini]], DALL-E, Imagen, Flux). 50M+ users globally. SOC 2 Type II.
 
 ## Key Capabilities
 
@@ -34,7 +38,7 @@ AI-powered presentation, document, website, social media content creation. Gener
 * Website builder with custom domain publishing
 * Document/social media creation
 * REST API (Pro+)
-* MCP server (native Claude/ChatGPT integration)
+* MCP server (native Claude/[[chatgpt|ChatGPT]] integration)
 * Real-time collaboration
 * Custom branding, 100+ themes
 
@@ -42,10 +46,10 @@ AI-powered presentation, document, website, social media content creation. Gener
 
 * AI: Claude MCP, ChatGPT MCP
 * Productivity: Atlassian Rovo, Superhuman Go
-* Search: Profound, Glean
-* Automation: Zapier, Make, n8n
+* Search: Profound, [[glean|Glean]]
+* Automation: Zapier, [[make|Make]], n8n
 * Export: PPTX, PDF, PNG, Google Slides
-* NO native Google Workspace Marketplace listing
+* NO native [[google-workspace|Google Workspace]] Marketplace listing
 * NO native Slack App Directory listing
 
 ## Security & Compliance

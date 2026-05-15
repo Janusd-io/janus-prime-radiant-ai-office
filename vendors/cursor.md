@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Cursor
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-AI-native code editor built as VS Code fork. Deep AI integration for code generation, editing, understanding. Uses multiple LLMs (Claude, GPT-4) for intelligent completion, multi-file editing, codebase-aware chat. Leading AI-first IDE 2024-2025. Competes with GitHub Copilot and Claude Code + VS Code combination.
+AI-native code editor built as [[vs-code|VS Code]] fork. Deep AI integration for code generation, editing, understanding. Uses multiple LLMs ([[claude|Claude]], GPT-4) for intelligent completion, multi-file editing, codebase-aware chat. Leading AI-first IDE 2024-2025. Competes with GitHub Copilot and [[claude-code|Claude Code]] + VS Code combination.
 
 ## Capabilities
 

@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[office-of-ceo]]
+
 
 # Claude
 
@@ -22,14 +26,14 @@ sensitivity_confidence: 0.9
 **Category:** Foundation Model / AI Assistant
 **Cost per User/Month:** Included in Claude Teams subscription
 **Number of Licences:** 2
-**Total Monthly Cost:** $0 (covered under Claude Teams — see AIR-11)
+**Total Monthly Cost:** $0 (covered under Claude Teams — see [[claude-console|AIR-11]])
 **Departments:** Office of CEO, AI Policy
 
 ---
 
 ## Overview
 
-Claude is Anthropic's flagship AI assistant, available via [claude.ai](http://claude.ai) as a web and desktop application. It excels at complex reasoning, nuanced writing, long-document analysis, and careful instruction-following. At Janus Digital, Claude is used alongside Google Gemini (AIR-5) as a primary foundation model, with particular strength in tasks requiring precision, safety awareness, and extended context processing.
+Claude is Anthropic's flagship AI assistant, available via [claude.ai](http://claude.ai) as a web and desktop application. It excels at complex reasoning, nuanced writing, long-document analysis, and careful instruction-following. At Janus Digital, Claude is used alongside [[google-gemini|Google Gemini]] ([[google-gemini|AIR-5]]) as a primary foundation model, with particular strength in tasks requiring precision, safety awareness, and extended context processing.
 
 ## Capabilities
 
@@ -52,6 +56,6 @@ Claude is Anthropic's flagship AI assistant, available via [claude.ai](http://cl
 
 ## Relevance to Janus Digital
 
-Claude is one of Janus Digital's two primary foundation models (alongside Gemini). Preferred for tasks requiring nuanced reasoning, careful writing, and complex document analysis. The Claude ecosystem (Claude Code, Claude for Excel, Claude for PowerPoint) makes it a growing platform rather than just a chatbot.
+Claude is one of Janus Digital's two primary foundation models (alongside [[gemini|Gemini]]). Preferred for tasks requiring nuanced reasoning, careful writing, and complex document analysis. The Claude ecosystem ([[claude-code|Claude Code]], Claude for Excel, [[claude-for-powerpoint|Claude for PowerPoint]]) makes it a growing platform rather than just a chatbot.
 
 *Deployed to Office of CEO and AI Policy. Functional tier.*

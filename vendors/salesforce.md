@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[marketing]]
+
 
 # Salesforce
 
@@ -26,14 +30,14 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Global market-leading CRM platform. De facto enterprise gold standard against which all other CRMs (HubSpot, Attio, Monday CRM, Microsoft Dynamics) are measured. Spans Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Data Cloud, Tableau, MuleSoft, Slack, Einstein/Agentforce AI layer.
+Global market-leading CRM platform. De facto enterprise gold standard against which all other CRMs (HubSpot, [[attio|Attio]], Monday CRM, Microsoft Dynamics) are measured. Spans Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Data Cloud, Tableau, MuleSoft, Slack, Einstein/Agentforce AI layer.
 
 ## Key Products
 
 * **Sales Cloud** — lead, contact, opportunity, pipeline, forecast, territory; CPQ
 * **Service Cloud** — omni-channel cases, KB, field service, AI agent productivity
 * **Marketing Cloud** — journey orchestration, segmentation, personalisation
-* **Data Cloud** — real-time CDP with zero-copy to Snowflake, Databricks, BigQuery
+* **Data Cloud** — real-time CDP with zero-copy to Snowflake, [[databricks|Databricks]], BigQuery
 * **Einstein AI / Agentforce** — Copilot, GPT, autonomous service/sales agents on Einstein Trust Layer
 * **Tableau & Pulse** — embedded analytics with AI insights
 * **MuleSoft** — enterprise integration/API management

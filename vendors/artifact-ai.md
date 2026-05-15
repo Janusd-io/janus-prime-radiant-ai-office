@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]]
+
 
 # Artifact AI
 
@@ -68,6 +72,6 @@ Bonaventure exploring Xero. Artifact sits on top of Xero (confirmed) to automate
 3. Pricing model (private)?
 4. UK/EU data residency?
 5. Data training policy?
-6. Compare against Campfire (AIR-23) and Rillet (AIR-24)?
+6. Compare against [[campfire|Campfire]] ([[campfire|AIR-23]]) and [[rillet|Rillet]] ([[rillet|AIR-24]])?
 
 *Evaluating. Pending Ann's assessment.*

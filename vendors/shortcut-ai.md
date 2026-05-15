@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[finance]], [[office-of-ceo]]
+
 
 # Shortcut AI
 
@@ -37,7 +41,7 @@ AI-powered spreadsheet agent by Fundamental Research Labs. Positioned as most ac
 * Auditability — shows every changed cell
 * Excel plug-in (100% feature parity); web 95%
 * Platform API on Pro+
-* SpreadsheetBench: 59.25% (vs Copilot 57.2%, Claude Files Opus 4.1 42.9%, ChatGPT Agent 35.3%)
+* SpreadsheetBench: 59.25% (vs Copilot 57.2%, [[claude|Claude]] Files Opus 4.1 42.9%, [[chatgpt|ChatGPT]] Agent 35.3%)
 
 ## Security & Compliance
 
@@ -51,7 +55,7 @@ AI-powered spreadsheet agent by Fundamental Research Labs. Positioned as most ac
 ## Considerations
 
 * Credit-based pricing — Pro 500 credits/month, each message 2-15 credits
-* Direct comparison with Claude for Excel (AIR-30) — Ann evaluating both
+* Direct comparison with Claude for Excel ([[claude-by-anthropic-in-excel|AIR-30]]) — Ann evaluating both
 * Excel plug-in route preferable for Finance (already in Excel)
 * Zero-retention satisfies Section 5.2.3 for confidential financial data
 * SSO available on Teams plan — check Microsoft Entra compatibility

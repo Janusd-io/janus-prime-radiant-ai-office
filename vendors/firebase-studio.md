@@ -14,8 +14,11 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# Firebase Studio
+
+# [[firebase|Firebase]] Studio
 
 > AI Registry entry [AIR-31](https://linear.app/janusd/issue/AIR-31/firebase-studio) — status **Production** as of 2026-05-04. Departments: —.
 
@@ -25,7 +28,7 @@ sensitivity_confidence: 0.9
 
 ## Overview
 
-Google's comprehensive app development platform — backend-as-a-service for building, deploying, and scaling apps. Suite of managed backend services: databases, auth, hosting, serverless functions, analytics. Tightly integrated with Google Cloud Platform (AIR-7).
+Google's comprehensive app development platform — backend-as-a-service for building, deploying, and scaling apps. Suite of managed backend services: databases, auth, hosting, serverless functions, analytics. Tightly integrated with [[google-cloud|Google Cloud]] Platform ([[google-cloud|AIR-7]]).
 
 ## Capabilities
 

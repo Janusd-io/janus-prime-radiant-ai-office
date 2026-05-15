@@ -14,13 +14,16 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Jules
 
 > AI Registry entry [AIR-33](https://linear.app/janusd/issue/AIR-33/jules) — status **Evaluating** as of 2026-04-06. Departments: —.
 
 **Category:** AI-Powered Software Development / Autonomous Coding Agent
-**Cost:** Free (included with Gemini Code Assist / Google Cloud)
+**Cost:** Free (included with [[gemini|Gemini]] Code Assist / [[google-cloud|Google Cloud]])
 **Departments:** Technology
 
 ## Overview
@@ -43,10 +46,10 @@ Google's AI-powered coding agent. Asynchronously handles coding tasks through Gi
 
 ## Considerations
 
-* Overlaps with Claude Code (AIR-13) — agentic coding already covered
+* Overlaps with [[claude-code|Claude Code]] ([[claude-code|AIR-13]]) — agentic coding already covered
 * Relatively new product — maturity TBD
 * GitHub-centric workflow — may not suit all patterns
-* Google AI coding landscape fragmented (Gemini CLI, Jules, Firebase Studio, Code Assist)
-* Asynchronous model = less real-time control than Claude Code
+* Google AI coding landscape fragmented ([[gemini-cli|Gemini CLI]], Jules, [[firebase-studio|Firebase Studio]], Code Assist)
+* Asynchronous model = less real-time control than [[claude|Claude]] Code
 
 *Evaluating. Functional tier.*

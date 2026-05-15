@@ -14,18 +14,21 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
 
-# Gemini CLI
+
+# [[gemini|Gemini]] CLI
 
 > AI Registry entry [AIR-12](https://linear.app/janusd/issue/AIR-12/gemini-cli) — status **Production** as of 2026-05-04. Departments: —.
 
 **Category:** AI-Powered Software Development / CLI Coding Agent
-**Cost per User/Month:** Free (Google account; API via Google AI Studio/Vertex AI)
+**Cost per User/Month:** Free (Google account; API via [[google-ai-studio|Google AI Studio]]/Vertex AI)
 **Departments:** Technology
 
 ## Overview
 
-Google's open-source command-line AI coding agent, powered by Gemini. Similar to Claude Code (AIR-13) but with free tier via Google AI Studio (60 req/min, 1000 req/day). Apache 2.0 licence, community-extensible.
+Google's open-source command-line AI coding agent, powered by Gemini. Similar to [[claude-code|Claude Code]] ([[claude-code|AIR-13]]) but with free tier via Google AI Studio (60 req/min, 1000 req/day). Apache 2.0 licence, community-extensible.
 
 ## Capabilities
 
@@ -44,6 +47,6 @@ Google's open-source command-line AI coding agent, powered by Gemini. Similar to
 
 ## Relevance to Janus Digital
 
-Complementary AI coding capability alongside Claude Code. Generous free tier makes it cost-effective for routine tasks; Claude Code reserved for complex agentic work. Technology department uses without additional licence cost.
+Complementary AI coding capability alongside [[claude|Claude]] Code. Generous free tier makes it cost-effective for routine tasks; Claude Code reserved for complex agentic work. Technology department uses without additional licence cost.
 
 *Deployed to Technology. Functional tier.*

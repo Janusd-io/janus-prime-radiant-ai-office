@@ -14,6 +14,10 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+> Departments: [[ai-office]]
+
 
 # Lindy
 
@@ -39,7 +43,7 @@ sensitivity_confidence: 0.9
 
 ## Strategic Context
 
-N8N standardised for deterministic workflow automation (flexibility + self-hosting). Lindy reserved for rapid no-code prototyping of non-sensitive agentic assistants. Dify (AIR-22) piloted for RAG-intensive agent workflows.
+N8N standardised for deterministic workflow automation (flexibility + self-hosting). Lindy reserved for rapid no-code prototyping of non-sensitive agentic assistants. [[dify|Dify]] ([[dify|AIR-22]]) piloted for RAG-intensive agent workflows.
 
 ## Overview
 

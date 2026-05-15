@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Perplexity
 
@@ -47,7 +50,7 @@ AI-powered search engine combining LLM reasoning with real-time web search to de
 
 ## Considerations
 
-* Overlaps with Gemini search grounding and Claude web research
+* Overlaps with [[gemini|Gemini]] search grounding and [[claude|Claude]] web research
 * Enterprise plan needed for SOC 2 and SSO
 * $40/seat adds up quickly for broad deployment
 * Evaluate incremental value over existing Gemini + Claude stack

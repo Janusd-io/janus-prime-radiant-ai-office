@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Replit
 
@@ -47,10 +50,10 @@ Cloud-based development platform combining online IDE, AI coding assistant (Repl
 
 ## Considerations
 
-* Multiple cloud IDEs in evaluation (Firebase Studio AIR-31, Antigravity AIR-34) — tool sprawl risk
+* Multiple cloud IDEs in evaluation ([[firebase-studio|Firebase Studio]] [[firebase-studio|AIR-31]], Antigravity [[google-antigravity|AIR-34]]) — tool sprawl risk
 * Code hosted on Replit infrastructure — data residency implications
 * AI Agent builds impressive demos but production quality TBD
-* VS Code + Claude Code is established workflow — switching costs real
+* [[vs-code|VS Code]] + [[claude-code|Claude Code]] is established workflow — switching costs real
 * $25-40/seat vs free alternatives
 
 *Evaluating. Functional tier.*

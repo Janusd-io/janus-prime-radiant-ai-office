@@ -14,6 +14,9 @@ audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 ---
+<!-- jb:air-vendor-callout -->
+> Part of [[ai-registry|AI Registry]]
+
 
 # Google Stitch
 
@@ -21,12 +24,12 @@ sensitivity_confidence: 0.9
 
 **Category:** AI UI Design Canvas (design-to-code, "vibe design") — adjacent to chat-to-app cohort
 **Status:** Backlog
-**Cost:** Free while in Google Labs. ~400 daily design credits, 15 redesign credits/day. Paid plans expected Q4 2026. Speculation: 30-50% below Figma.
+**Cost:** Free while in Google Labs. ~400 daily design credits, 15 redesign credits/day. Paid plans expected Q4 2026. Speculation: 30-50% below [[figma|Figma]].
 **Departments:** Technology (primary), Marketing, Commercial
 
 ## Overview
 
-Google Labs product. "AI-native software design canvas" — coined term "vibe design" (distinct from "vibe coding"). Released 2025, substantially relaunched 2026-03-18 with infinite-canvas UI, design agent, agent manager, voice interaction, **DESIGN.md** design-system format. Powered by Gemini. Upstream of chat-to-app cohort: produces high-fidelity interactive UI prototypes, bridges to dev tools (AI Studio, Antigravity, MCP IDEs) for code.
+Google Labs product. "AI-native software design canvas" — coined term "vibe design" (distinct from "vibe coding"). Released 2025, substantially relaunched 2026-03-18 with infinite-canvas UI, design agent, agent manager, voice interaction, **DESIGN.md** design-system format. Powered by [[gemini|Gemini]]. Upstream of chat-to-app cohort: produces high-fidelity interactive UI prototypes, bridges to dev tools (AI Studio, Antigravity, MCP IDEs) for code.
 
 ## Capabilities
 
@@ -42,8 +45,8 @@ Google Labs product. "AI-native software design canvas" — coined term "vibe de
 
 * Google account auth
 * Gemini models
-* AI Studio (AIR-8), Antigravity (AIR-34)
-* MCP server for any MCP-compatible client (Cursor, Claude Code, Cline, VS Code)
+* AI Studio ([[google-ai-studio|AIR-8]]), Antigravity ([[google-antigravity|AIR-34]])
+* MCP server for any MCP-compatible client ([[cursor|Cursor]], [[claude-code|Claude Code]], Cline, [[vs-code|VS Code]])
 * GitHub OSS
 * DESIGN.md portability
 
@@ -58,10 +61,10 @@ Google Labs product. "AI-native software design canvas" — coined term "vibe de
 
 ## Different Category, Same Cohort
 
-Stitch is design-stage, not app-stage. Other five (Hercules/Lovable/Bolt/v0/Replit) output deployable hosted apps. Stitch outputs prototype + code that needs downstream dev tool. **Complementary, not direct replacement.**
+Stitch is design-stage, not app-stage. Other five ([[hercules|Hercules]]/[[lovable|Lovable]]/[[bolt|Bolt]]/v0/[[replit|Replit]]) output deployable hosted apps. Stitch outputs prototype + code that needs downstream dev tool. **Complementary, not direct replacement.**
 
 ## Janus Strategic Position
 
-Janus deep Google footprint (Workspace, Gemini, GCP, AI Studio, Gemini CLI, Antigravity, Firebase). Stitch slots as design-front end of Google-native build pipeline: Stitch → Antigravity/AI Studio → Firebase/GCP. For Marketing/Commercial inside Google identity perimeter — lowest-friction entry point in cohort. Zero incremental cost while in Labs.
+Janus deep Google footprint (Workspace, Gemini, GCP, AI Studio, [[gemini-cli|Gemini CLI]], Antigravity, [[firebase|Firebase]]). Stitch slots as design-front end of Google-native build pipeline: Stitch → Antigravity/AI Studio → Firebase/GCP. For Marketing/Commercial inside Google identity perimeter — lowest-friction entry point in cohort. Zero incremental cost while in Labs.
 
 *Backlog. Functional tier. Labs-stage adjacent product.*
