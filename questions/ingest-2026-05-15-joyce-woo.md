@@ -7,7 +7,7 @@ updated: 2026-05-15
 departments: [ai-office, marketing, office-of-ceo]
 countries: [sg]
 owner: michael-bruck
-status: active
+status: resolved
 sources: [2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-12-bonaventure-ai-native-call, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 related: [bonaventure-wong, andrew-soane, marketing-prime-radiant, singapore-news-monitoring, 2026-05-12-singapore-as-lead-market, ai-native-janus-positioning, vivian-balakrishnan]
 ---
