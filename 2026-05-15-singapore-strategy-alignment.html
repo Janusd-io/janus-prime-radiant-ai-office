@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singapore launch — strategy alignment, 15 May 2026</title>
+<style>
+  :root {
+    --navy: #1E2761;
+    --navy-deep: #131A47;
+    --ice: #CADCFC;
+    --ice-soft: #EAF1FF;
+    --coral: #F96167;
+    --coral-soft: #FDE3E5;
+    --cream: #FAF9F6;
+    --ink: #1B1F3A;
+    --ink-soft: #4A5072;
+    --hair: #D6DCEF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: #2A2F4E; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); }
+  body { display: flex; flex-direction: column; align-items: center; padding: 28px 12px; gap: 28px; }
+  .deck-meta { color: #B8BFE0; font-size: 13px; text-align: center; max-width: 1080px; }
+  .deck-meta strong { color: #fff; }
+  .slide {
+    width: min(1080px, 100%);
+    aspect-ratio: 16 / 9;
+    background: var(--cream);
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+  }
+  .slide.dark { background: var(--navy-deep); color: var(--cream); }
+  .slide.dark .ink, .slide.dark h1, .slide.dark h2, .slide.dark h3, .slide.dark p { color: var(--cream); }
+  .slide-num {
+    position: absolute; bottom: 18px; right: 24px;
+    font-size: 11px; color: var(--ink-soft); letter-spacing: 0.18em; text-transform: uppercase;
+    font-weight: 600;
+  }
+  .slide.dark .slide-num { color: var(--ice); }
+  .slide-tag {
+    position: absolute; top: 28px; left: 36px;
+    font-size: 11px; color: var(--coral); letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700;
+  }
+  .slide.dark .slide-tag { color: var(--coral); }
+  .padded { padding: 64px 56px 48px 56px; height: 100%; display: flex; flex-direction: column; }
+
+  h1 { font-family: Georgia, serif; font-size: 42px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+  h1.lg { font-size: 56px; }
+  h2 { font-family: Georgia, serif; font-size: 28px; line-height: 1.15; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.005em; }
+  h3 { font-size: 16px; line-height: 1.25; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--navy); margin-bottom: 8px; }
+  .slide.dark h3 { color: var(--ice); }
+  p { font-size: 15px; line-height: 1.55; color: var(--ink); }
+  .slide.dark p { color: #DDE2F3; }
+  p.lede { font-size: 19px; line-height: 1.5; color: var(--ink); }
+  .slide.dark p.lede { color: #E8EDFB; }
+  ul { list-style: none; padding-left: 0; }
+  ul li { font-size: 14px; line-height: 1.55; padding-left: 14px; position: relative; margin-bottom: 4px; }
+  ul li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; background: var(--coral); border-radius: 50%; }
+  .slide.dark ul li::before { background: var(--coral); }
+  ol { list-style: decimal; padding-left: 22px; }
+  ol li { font-size: 14px; line-height: 1.55; margin-bottom: 3px; }
+
+  .pill {
+    display: inline-block; padding: 4px 10px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--ice); color: var(--navy);
+  }
+  .pill.coral { background: var(--coral-soft); color: #B83239; }
+  .pill.dark { background: var(--navy); color: var(--ice); }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; flex: 1; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; flex: 1; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; flex: 1; }
+
+  .card {
+    background: #fff; border-radius: 12px; padding: 20px 22px; border: 1px solid var(--hair);
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .card.accent { border-left: 4px solid var(--coral); }
+  .card.navy { background: var(--navy); color: var(--cream); border-color: var(--navy); }
+  .card.navy h3 { color: var(--ice); }
+  .card.navy p { color: #DDE2F3; }
+  .card.ice { background: var(--ice-soft); border-color: var(--ice); }
+  .card-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 4px;
+  }
+  .card.navy .card-label { color: var(--ice); }
+  .card-title { font-size: 16px; font-weight: 700; line-height: 1.2; margin-bottom: 6px; color: var(--navy); }
+  .card.navy .card-title { color: var(--cream); }
+  .card-body { font-size: 13px; line-height: 1.5; color: var(--ink-soft); }
+  .card.navy .card-body { color: #C8CFE9; }
+
+  /* Title slide */
+  .title-bar {
+    position: absolute; left: 56px; top: 56px; right: 56px; height: 4px;
+    background: linear-gradient(90deg, var(--coral) 0%, var(--ice) 100%);
+  }
+  .title-stack { margin-top: auto; }
+  .title-meta { display: flex; flex-direction: row; gap: 36px; margin-top: 32px; flex-wrap: wrap; }
+  .title-meta div { font-size: 12px; color: var(--ice); letter-spacing: 0.08em; }
+  .title-meta div strong { color: var(--cream); text-transform: uppercase; letter-spacing: 0.18em; font-size: 10px; display: block; margin-bottom: 4px; }
+
+  /* Two-column hero */
+  .hero { display: grid; grid-template-columns: 5fr 4fr; gap: 36px; flex: 1; }
+  .hero .left { display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+  .hero .right { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+  .stat { display: flex; flex-direction: column; }
+  .stat-num { font-family: Georgia, serif; font-size: 56px; line-height: 1; color: var(--coral); font-weight: 700; }
+  .stat-label { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; }
+
+  /* Three-framings table */
+  .framings { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 0; border: 1px solid var(--hair); border-radius: 10px; overflow: hidden; }
+  .framings > div { padding: 14px 16px; font-size: 13px; line-height: 1.45; border-bottom: 1px solid var(--hair); border-right: 1px solid var(--hair); }
+  .framings > div:nth-child(4n) { border-right: none; }
+  .framings .head { background: var(--navy); color: var(--ice); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
+  .framings .row-label { background: var(--ice-soft); font-weight: 700; color: var(--navy); }
+  .framings .row-bottom { border-bottom: none; }
+
+  /* Timeline */
+  .timeline { display: flex; flex-direction: column; gap: 8px; flex: 1; justify-content: center; }
+  .tl-row { display: grid; grid-template-columns: 80px 1fr; gap: 14px; align-items: start; }
+  .tl-week { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--coral); text-transform: uppercase; padding-top: 4px; }
+  .tl-content { font-size: 13px; line-height: 1.5; padding-bottom: 8px; border-bottom: 1px dashed var(--hair); padding-top: 2px; }
+  .tl-content strong { color: var(--navy); }
+  .tl-row:last-child .tl-content { border-bottom: none; }
+
+  /* Coordination grid */
+  .coord { display: grid; grid-template-columns: 1.2fr 2.4fr 2fr; gap: 0; flex: 1; border: 1px solid var(--hair); border-radius: 10px; overflow: hidden; align-self: stretch; }
+  .coord > div { padding: 10px 14px; font-size: 12.5px; line-height: 1.5; border-bottom: 1px solid var(--hair); border-right: 1px solid var(--hair); display: flex; align-items: center; }
+  .coord > div:nth-child(3n) { border-right: none; }
+  .coord .head { background: var(--navy); color: var(--ice); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
+  .coord .who { background: var(--ice-soft); font-weight: 700; color: var(--navy); }
+
+  /* Decisions list */
+  .dec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: 1; align-content: start; }
+  .dec-card {
+    background: #fff; border-radius: 10px; padding: 16px 18px; border: 1px solid var(--hair);
+    display: flex; flex-direction: column; gap: 6px;
+    border-left: 4px solid var(--coral);
+  }
+  .dec-card.calm { border-left-color: var(--ice); }
+  .dec-card.calm .urgency { background: var(--ice-soft); color: var(--navy); }
+  .dec-title { font-size: 14px; font-weight: 700; color: var(--navy); line-height: 1.25; }
+  .dec-body { font-size: 12.5px; line-height: 1.45; color: var(--ink-soft); }
+  .urgency {
+    display: inline-block; align-self: flex-start; padding: 3px 9px; border-radius: 999px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    background: var(--coral-soft); color: #B83239;
+  }
+
+  /* Actions sheet */
+  .actions { display: grid; grid-template-columns: 140px 1fr; column-gap: 18px; row-gap: 12px; flex: 1; align-content: start; }
+  .actor {
+    background: var(--navy); color: var(--ice); padding: 8px 12px; border-radius: 8px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.04em; align-self: start;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .actor span { font-size: 10px; color: #B8BFE0; font-weight: 500; letter-spacing: 0; text-transform: none; }
+  .actor-tasks { font-size: 13px; line-height: 1.5; color: var(--ink); align-self: start; padding-top: 4px; }
+  .actor-tasks strong { color: var(--navy); }
+
+  /* Final slide */
+  .anchors { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; flex: 1; align-content: start; padding-top: 8px; }
+  .anchor-row { font-size: 13px; line-height: 1.5; padding: 8px 0; border-bottom: 1px solid rgba(202,220,252,0.15); }
+  .anchor-row strong { color: var(--ice); display: block; font-size: 12px; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .anchor-row span { color: #C8CFE9; }
+
+  @media (max-width: 720px) {
+    .slide { aspect-ratio: auto; }
+    .padded { padding: 32px 24px; }
+    h1 { font-size: 32px; } h1.lg { font-size: 38px; }
+    .grid-2, .grid-3, .grid-4, .hero, .dec-grid, .anchors { grid-template-columns: 1fr; }
+    .actions { grid-template-columns: 1fr; }
+    .framings { grid-template-columns: 1fr 1fr; }
+    .coord { grid-template-columns: 1fr; }
+    .coord > div { border-right: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck-meta">
+  <strong>Singapore launch — strategy alignment</strong> · 15 May 2026 · use ↓ / scroll
+</div>
+
+<!-- ============ SLIDE 1 — TITLE ============ -->
+<section class="slide dark">
+  <div class="padded" style="justify-content: space-between;">
+    <div class="title-bar"></div>
+    <div></div>
+    <div class="title-stack">
+      <div class="pill coral" style="background: transparent; color: var(--coral); border: 1px solid var(--coral); margin-bottom: 18px;">Strategy alignment · 15 May 2026</div>
+      <h1 class="lg" style="color: var(--cream);">Singapore<br><span style="color: var(--coral);">launch</span> &mdash; one team, one plan.</h1>
+      <p style="font-size: 17px; margin-top: 18px; max-width: 720px; color: var(--ice);">A consolidated view of where we are, what's just landed, and who's doing what — so the AIO, IT, and Marketing tracks stay aligned through the 8/9 July luncheon.</p>
+      <div class="title-meta">
+        <div><strong>In the room today</strong>Michael · Andrew · Jehad · Euclid · Andrey · Dhyey</div>
+        <div><strong>Driving from afar</strong>Bonaventure (CEO) · Joyce Woo (CEO, Singapore)</div>
+        <div><strong>Anchor date</strong>8/9 July 2026 — Singapore asset-manager luncheon</div>
+      </div>
+    </div>
+    <div class="slide-num">01 · context</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 2 — WHY SINGAPORE ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">The strategic frame</div>
+    <h1>Why Singapore is the lead market.</h1>
+    <p class="lede" style="margin-top: 18px; max-width: 820px;">Bonaventure committed on 12 May: Singapore is Janus's primary commercial market for AI Native. The frame matters because every team's priorities — content, infrastructure, monitoring, outreach — now route through this decision.</p>
+
+    <div class="hero" style="margin-top: 28px;">
+      <div class="left">
+        <h3>Three reasons it's Singapore, not UAE</h3>
+        <ul>
+          <li><strong>The PM's May Day Rally speech (1 May 2026)</strong> framed two storms — Strait of Hormuz energy crisis + AI transformation — converging on the commercial built environment. Janus's pitch lands directly on that convergence.</li>
+          <li><strong>UAE deprioritised for streaming-economy products</strong> — banking infrastructure isn't ready (batch-to-streaming gap, family-controlled banks).</li>
+          <li><strong>Singapore is the Asia-Pac hub for REITs / SWFs / pension capital</strong> — and the regulatory anchor points (ISSB, MEI regime, carbon tax S$45/tonne, Tripartite Jobs Council) make AI-in-buildings a Government-aligned story.</li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="card accent">
+          <div class="card-label">Outcomes target</div>
+          <div class="card-title">60–120 qualified leads + 8–12 C-suite execs at the 8/9 July luncheon</div>
+          <div class="card-body">Real-estate funds, sovereign wealth, pension capital, asset managers, family offices.</div>
+        </div>
+        <div class="card ice">
+          <div class="card-label">Window</div>
+          <div class="card-title">9-week campaign — we are in Week 1</div>
+          <div class="card-body">Foundation work this week. Anchor event on 8/9 July. The bar is institutional credibility from Day 1.</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">02 · why now</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 3 — MESSAGING SPINE ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">Messaging spine</div>
+    <h1>One spine. Three ways to lead it.</h1>
+    <p class="lede" style="margin-top: 14px; max-width: 880px;">Bonaventure, Andrew, and the PM each lead the same three-pillar story differently. We use whichever ordering fits the audience — but the spine is one. This is now externalised in the Janus Singapore white paper (Bonaventure + Joyce, 14 May).</p>
+
+    <div class="framings" style="margin-top: 22px;">
+      <div class="head">Frame</div>
+      <div class="head">Pillar 1</div>
+      <div class="head">Pillar 2</div>
+      <div class="head">Pillar 3</div>
+
+      <div class="row-label">Bonaventure (commercial flow)</div>
+      <div>Capital — investors, asset managers, central banks. <em>"10× top line you couldn't have gotten without technology."</em></div>
+      <div>Companies — REITs, real-estate funds, operators. <em>M&amp;A consolidation thesis.</em></div>
+      <div>Workers — upskilling + certification.</div>
+
+      <div class="row-label">Andrew (audience-of-impact)</div>
+      <div>Society — sustainability + ESG.</div>
+      <div>Business — AI as a growth engine.</div>
+      <div>Individual — augment, upskill, Uber for engineers.</div>
+
+      <div class="row-label row-bottom">Singapore tripartism (PM's frame)</div>
+      <div class="row-bottom">Government — National AI Council, BCA 80-80-80, MEI regime.</div>
+      <div class="row-bottom">Labour Movement — NTUC, Tripartite Jobs Council, SkillsFuture.</div>
+      <div class="row-bottom">Employers — "Queen Bee" companies + SME ecosystem.</div>
+    </div>
+
+    <p style="margin-top: 18px; font-size: 13px; color: var(--ink-soft);">Use Bonaventure's ordering for investor-and-asset-manager comms. Use Andrew's for broad-market and website nav. Use the PM's tripartism frame for any Government, Union, or formal-stakeholder engagement.</p>
+    <div class="slide-num">03 · spine</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 4 — WHAT JUST LANDED ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">What just landed</div>
+    <h1>Four anchor artefacts. Two weeks.</h1>
+    <p class="lede" style="margin-top: 14px;">Strategy → operational artefacts in 3 days. These are now in the wiki and form the backbone of every conversation.</p>
+
+    <div class="grid-4" style="margin-top: 24px;">
+      <div class="card navy">
+        <div class="card-label">1 May 2026</div>
+        <div class="card-title">PM Wong May Day Rally</div>
+        <div class="card-body">"Two storms" framing + "every worker matters" promise. Upstream substrate for everything below.</div>
+      </div>
+      <div class="card accent">
+        <div class="card-label">12 May 2026</div>
+        <div class="card-title">Singapore-as-lead-market</div>
+        <div class="card-body">Bonaventure's strategic call on the AI Native CEO call. Three-pillar messaging spine articulated.</div>
+      </div>
+      <div class="card accent">
+        <div class="card-label">14 May 2026</div>
+        <div class="card-title">Janus SG white paper</div>
+        <div class="card-body">20-page paper co-authored by <strong>Bonaventure + Joyce Woo</strong>. Centrepiece content asset. Confirms <strong>janusd.sg</strong> as the SG-entity identity.</div>
+      </div>
+      <div class="card accent">
+        <div class="card-label">15 May 2026 — today</div>
+        <div class="card-title">v1 Campaign plan</div>
+        <div class="card-body">Andrew's 13-slide plan. 100 target accounts mapped. 9-week timeline. ~S$23,995 budget. 5-venue shortlist.</div>
+      </div>
+    </div>
+
+    <div class="grid-3" style="margin-top: 18px; flex: 0 0 auto;">
+      <div class="card ice">
+        <div class="card-label">Authority unlocked</div>
+        <div class="card-title" style="font-size: 14px;">Joyce Woo confirmed as CEO Singapore</div>
+        <div class="card-body" style="font-size: 12px;">Co-signed the white paper. 40+ years SG banking (DBS → Merrill Lynch → OCBC → Citi/UBS/MS/BoS → Jachin Capital → Leo Wealth).</div>
+      </div>
+      <div class="card ice">
+        <div class="card-label">Outreach pairing</div>
+        <div class="card-title" style="font-size: 14px;">BW/JW — direct email + luncheon co-host</div>
+        <div class="card-body" style="font-size: 12px;">Andrew's plan formalises Bonaventure + Joyce as the direct-outreach lead pair on the 100-account list.</div>
+      </div>
+      <div class="card ice">
+        <div class="card-label">Possible advocate</div>
+        <div class="card-title" style="font-size: 14px;">Vivian Balakrishnan route via Joyce</div>
+        <div class="card-body" style="font-size: 12px;">SG Foreign Minister keynoted AI Engineering Conference 16–17 May; runs LLM wiki on Raspberry Pi. Joyce-to-introduce flagged.</div>
+      </div>
+    </div>
+    <div class="slide-num">04 · artefacts</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 5 — TIMELINE ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">The 9-week run</div>
+    <h1>From foundation to luncheon — milestone view.</h1>
+    <p style="margin-top: 12px; max-width: 800px; font-size: 14px; color: var(--ink-soft);">Each week's milestone has owners on the next slide. The dates here are anchors — the 8/9 July luncheon is the immovable one.</p>
+
+    <div class="timeline" style="margin-top: 22px;">
+      <div class="tl-row"><div class="tl-week">W1 · 11–17 May</div><div class="tl-content"><strong>Foundation week — we are here.</strong> Landing page draft (`janusd.com` + `janusd.sg`), white paper distribution prep, REITAS membership filing, MailChimp + LinkedIn Sales Nav procurement, target-account list lock-in by EOD Wed 20 May (BW + JW).</div></div>
+      <div class="tl-row"><div class="tl-week">W2 · 18–24 May</div><div class="tl-content"><strong>Direct outreach begins.</strong> BW/JW emails to top-tier of the 100-account list. White paper distribution via email + LinkedIn. First social posts in market. News-monitoring agent Phase 1 going live (Jehad).</div></div>
+      <div class="tl-row"><div class="tl-week">W3–4 · 25 May–7 Jun</div><div class="tl-content"><strong>Content cadence + lead capture stack live.</strong> Mailchimp pipeline + Google Sheets interim. Second wave outreach. Paid social campaigns ramp.</div></div>
+      <div class="tl-row"><div class="tl-week">W5–6 · 8–21 Jun</div><div class="tl-content"><strong>PR + earned media push.</strong> Business Times / The Edge engagement. Confirmed luncheon attendee list firming. Vivian Balakrishnan intro (if achievable via Joyce). CRM lock-in decision target.</div></div>
+      <div class="tl-row"><div class="tl-week">W7–8 · 22 Jun–5 Jul</div><div class="tl-content"><strong>Pre-event sprint.</strong> Final RSVP push. Venue lock-in. Speaking notes, deck prep, demo run-throughs. CRM live or fallback Google Sheets clean for handover.</div></div>
+      <div class="tl-row"><div class="tl-week">W9 · 6–12 Jul</div><div class="tl-content"><strong>🎯 8/9 JULY LUNCHEON.</strong> 8–12 C-suite execs targeted. White paper handed out. Demo. BW + JW co-host. Post-event qualification + follow-up sequence kicks off.</div></div>
+    </div>
+    <div class="slide-num">05 · timeline</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 6 — COORDINATION GRID ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">Who owns what</div>
+    <h1>The coordination grid.</h1>
+    <p style="margin-top: 10px; max-width: 800px; font-size: 14px; color: var(--ink-soft);">Each row = a workstream. The "owns" column is one name. The "depends on" column is where coordination friction usually happens — keep an eye on these.</p>
+
+    <div class="coord" style="margin-top: 18px;">
+      <div class="head">Workstream</div>
+      <div class="head">Owns &amp; drives</div>
+      <div class="head">Depends on / hands off to</div>
+
+      <div class="who">Campaign delivery</div>
+      <div><strong>Andrew Soane</strong> — v1 plan, content cadence, lead capture, PR, social, paid.</div>
+      <div>BW/JW (direct outreach + luncheon hosts) · IT (landing page infra) · Michael (strategy synthesis).</div>
+
+      <div class="who">White paper distribution</div>
+      <div><strong>Andrew</strong> — channels + cadence. Co-authors <strong>BW + JW</strong> sign-off on derivative content.</div>
+      <div>IT (where it lives, hosting) · Michael (cross-team consistency check).</div>
+
+      <div class="who">News-monitoring agent</div>
+      <div><strong>Jehad Altoutou</strong> — build (per-source scrapers, semantic ranking, Slack delivery).</div>
+      <div>Andrew (theme prompts, content review) · Michael (strategy / scope) · BW (sponsor, signal-quality bar).</div>
+
+      <div class="who">Website &amp; CMS</div>
+      <div><strong>Euclid</strong> (lead) — infrastructure, CMS scoping, hosting. <strong>Andrey + Dhyey</strong> — build / support.</div>
+      <div>Andrew (content + structure) · Michael (URL architecture decision).</div>
+
+      <div class="who">Strategic synthesis</div>
+      <div><strong>Michael</strong> — AIO coordination, Prime Radiant capture, brief production, cross-team alignment.</div>
+      <div>Everyone — Michael is the seam between BW's strategic frame and the team's execution.</div>
+
+      <div class="who">Direct outreach &amp; luncheon</div>
+      <div><strong>Bonaventure + Joyce (BW/JW)</strong> — 100-account list review (due EOD Wed 20 May), email outreach, luncheon co-hosting.</div>
+      <div>Andrew (campaign-mode wrap) · Joyce's SG institutional network (the primary asset).</div>
+    </div>
+    <div class="slide-num">06 · coordination</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 7 — OPEN DECISIONS ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">Open decisions</div>
+    <h1>What's blocking, what's deciding.</h1>
+    <p style="margin-top: 10px; max-width: 800px; font-size: 14px; color: var(--ink-soft);">Six decisions that need to land in the next 2 weeks. The coral ones are this-week-or-bust.</p>
+
+    <div class="dec-grid" style="margin-top: 20px;">
+      <div class="dec-card">
+        <span class="urgency">This week</span>
+        <div class="dec-title">Website architecture — three URLs in play</div>
+        <div class="dec-body"><code>janusd.com</code> (Andrew + Michael's canonical) · <code>janusdg.com</code> (campaign-plan SG vanity) · <code>janusd.sg</code> (white-paper SG entity). Likely resolution: canonical <code>janusd.com</code> + <code>janusd.sg</code> SG vanity, retire <code>janusdg.com</code>. <strong>Owner:</strong> Michael with BW + Andrew. <strong>Why now:</strong> W1 landing page ships against whichever decision lands.</div>
+      </div>
+      <div class="dec-card">
+        <span class="urgency">EOD Wed 20 May</span>
+        <div class="dec-title">Target-account list review</div>
+        <div class="dec-body">100 mapped accounts across 5 categories. Need BW + JW review before outreach begins in W2. <strong>Owner:</strong> Andrew tees up; BW + JW sign off.</div>
+      </div>
+      <div class="dec-card">
+        <span class="urgency">This week</span>
+        <div class="dec-title">CMS choice</div>
+        <div class="dec-body">Wix / Firebase / custom — multilingual capability is hard requirement. Affects website velocity for the full campaign. <strong>Owner:</strong> Euclid + IT scope; Andrew + Michael endorse.</div>
+      </div>
+      <div class="dec-card calm">
+        <span class="urgency">End-May / early-Jun</span>
+        <div class="dec-title">CRM lock-in</div>
+        <div class="dec-body">HubSpot the likely default. BW skeptical of "glorified contact list" framing. Interim stack = Mailchimp + Google Sheets. <strong>Owner:</strong> Michael drives; BW approval.</div>
+      </div>
+      <div class="dec-card calm">
+        <span class="urgency">Opportunistic</span>
+        <div class="dec-title">Vivian Balakrishnan intro</div>
+        <div class="dec-body">Joyce-to-navigate. Strong potential SG-government advocate (LLM wiki on Raspberry Pi). Connect window: post-AI Engineering Conference (16–17 May). <strong>Owner:</strong> Joyce + Bonaventure.</div>
+      </div>
+      <div class="dec-card calm">
+        <span class="urgency">Ongoing</span>
+        <div class="dec-title">News-monitoring source list + theme prompts</div>
+        <div class="dec-body">Anchor sources locked, theme prompts to be built off the white paper + PM speech vocabulary. <strong>Owner:</strong> Jehad builds; Andrew supplies theme prompts; Michael endorses scope.</div>
+      </div>
+    </div>
+    <div class="slide-num">07 · decisions</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 8 — THIS WEEK / NEXT 2 ============ -->
+<section class="slide">
+  <div class="padded">
+    <div class="slide-tag">What's on each plate</div>
+    <h1>This week + next. Concrete.</h1>
+    <p style="margin-top: 10px; max-width: 820px; font-size: 14px; color: var(--ink-soft);">If a row here surprises you, that's the moment to flag it. Goal: no one walks out of this room unclear on what they're shipping.</p>
+
+    <div class="actions" style="margin-top: 18px;">
+      <div class="actor">Andrew<span>Marketing</span></div>
+      <div class="actor-tasks">Lock landing-page content (W1 ship). Settle URL question with Michael. File REITAS membership. Procure MailChimp + LinkedIn Sales Nav. Build the email-segmentation cuts for the 100-account list. <strong>Cue Jehad on theme prompts for news monitoring.</strong></div>
+
+      <div class="actor">Jehad<span>AI Office</span></div>
+      <div class="actor-tasks">Lock the source list with Andrew (Joyce's outlets are the anchor). Build first per-outlet scraper. Wire semantic ranker against the white paper's vocabulary as v0 theme-prompt set. Target first Slack post (proof-of-life) by end of W2.</div>
+
+      <div class="actor">Euclid<span>IT-Ops lead</span></div>
+      <div class="actor-tasks">Scope CMS options (Wix / Firebase / custom) with multilingual as the gate. Stand up hosting for the landing page. Pair Andrey + Dhyey to the Marketing track explicitly so the IT team knows whose Slack to be on.</div>
+
+      <div class="actor">Andrey<span>IT</span></div>
+      <div class="actor-tasks">Landing-page infrastructure execution. Continue IT standup pilot. <strong>Coach Dhyey on the wiki / Prime Radiant + standup skill</strong> — his fastest onboarding to how AIO works is being in the daily flow.</div>
+
+      <div class="actor">Dhyey<span>IT — new</span></div>
+      <div class="actor-tasks">Shadow Andrey on landing-page infra + standup pilot. Get Obsidian + GitHub plugin installed (Windows). First read: the SG white paper + the campaign plan v1 + this deck. <strong>Welcome aboard.</strong></div>
+
+      <div class="actor">Michael<span>AI Office</span></div>
+      <div class="actor-tasks">Hold the URL decision (BW + Andrew). Re-sync with BW + JW post-luncheon-list review (~21 May). Keep the Prime Radiant capture current — every conversation downstream of this deck is wiki-worth.</div>
+    </div>
+    <div class="slide-num">08 · actions</div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 9 — REFERENCES ============ -->
+<section class="slide dark">
+  <div class="padded">
+    <div class="slide-tag">Reference deck</div>
+    <h1 style="color: var(--cream);">Everything is in the wiki.</h1>
+    <p class="lede" style="margin-top: 12px; max-width: 760px;">Single sources of truth for each anchor below. If a conversation diverges from these, surface it — that's where alignment slips.</p>
+
+    <div class="anchors">
+      <div class="anchor-row"><strong>Strategic brief</strong><span>AI Native — three-pillar messaging spine (briefs/ai-native-janus-positioning)</span></div>
+      <div class="anchor-row"><strong>Lead-market decision</strong><span>decisions/2026-05-12-singapore-as-lead-market</span></div>
+      <div class="anchor-row"><strong>Janus SG white paper (PDF)</strong><span>sources/articles/2026-05-14-janus-singapore-white-paper-storms-ahead</span></div>
+      <div class="anchor-row"><strong>PM May Day Rally transcript</strong><span>sources/articles/2026-05-01-pm-lawrence-wong-may-day-rally-2026</span></div>
+      <div class="anchor-row"><strong>v1 campaign plan</strong><span>sources/misc/2026-05-15-singapore-marketing-launch-plan-v1</span></div>
+      <div class="anchor-row"><strong>Marketing project hub</strong><span>projects/marketing-prime-radiant</span></div>
+      <div class="anchor-row"><strong>News-monitoring project hub</strong><span>projects/singapore-news-monitoring</span></div>
+      <div class="anchor-row"><strong>Website-architecture open question</strong><span>questions/2026-05-12-website-architecture-one-site-vs-country-sites</span></div>
+      <div class="anchor-row"><strong>Joyce Woo entity page</strong><span>entities/internal/joyce-woo</span></div>
+      <div class="anchor-row"><strong>Bonaventure entity page</strong><span>entities/internal/bonaventure-wong</span></div>
+    </div>
+
+    <p style="margin-top: 28px; font-size: 13px; color: var(--ice); letter-spacing: 0.02em;">Next sync: post-luncheon-list-review (~21 May). Standing question: which decision is the team waiting on, and from whom?</p>
+    <div class="slide-num">09 · references</div>
+  </div>
+</section>
+
+</body>
+</html>
