@@ -13,8 +13,8 @@ departments: [ai-office]
 dept_scope: [ai-office]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Working session mapping the AI Tool Registry pipeline onto Bonaventure's ISO-style process schematic (source / input / activity / output, with gates between stages)"
 topics: [ai-registry-pipeline, process-modelling, iso-schematic, standup-skill-v3-9, tool-categorisation, hercules-evaluation, confidence-bands, digital-twin-vision]
 decisions: [2026-05-04-air-intake-form-fields, 2026-05-04-keep-enrichment-and-evaluation-as-two-skills, 2026-05-04-evaluation-gate-is-binary-four-of-four, 2026-05-04-standup-skill-confidence-bands, 2026-05-04-standup-skill-treats-fireflies-summary-as-unreliable, 2026-05-04-each-pipeline-stage-pings-slack]
@@ -141,4 +141,5 @@ Working session mapping the AI Tool Registry pipeline onto Bonaventure's ISO-sty
 
 ## Transcript
 
-See [[2026-05-04-bonaventure-michael-jehad-and-andrew-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KQSAG8Q4JYBB63VZ5XXM750Y)

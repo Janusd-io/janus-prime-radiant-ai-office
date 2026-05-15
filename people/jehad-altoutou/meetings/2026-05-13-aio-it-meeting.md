@@ -13,8 +13,8 @@ departments: [ai-office, it-ops]
 dept_scope: [ai-office, it-ops]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Michael Bruck walked the IT-Ops attendees through the Janus Prime Radiant concept — a federated Obsidian-based personal/department/company knowledge brain inspired by Andrej Karpathy's LLM Wiki gist — showing Jehad's vault as the worked example"
 topics: [janus-prime-radiant, obsidian-vault, google-drive-blocker, github-substrate-migration, andrew-onboarding, iso-automation, claude-cowork-licensing, federation]
 decisions: [2026-05-13-migrate-prime-radiant-substrate-from-google-drive-to-github, 2026-05-13-onboard-andrew-soane-as-first-cross-dept-prime-radiant-pilot, 2026-05-13-defer-github-paid-tier-pending-bonaventure-approval, 2026-05-13-presentations-default-to-html-not-pptx]
@@ -137,4 +137,5 @@ Michael Bruck walked the IT-Ops attendees through the Janus Prime Radiant concep
 
 ## Transcript
 
-See [[2026-05-13-aio-it-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KRGGC9NR73YCVW11HC68XDHM)

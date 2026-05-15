@@ -13,8 +13,8 @@ departments: [ai-office, it-ops]
 dept_scope: [ai-office, it-ops]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Michael convened Jehad and Euclid (with Andre / Speaker 1 present) to figure out where Janus should store its growing body of cross-departmental knowledge — staff manuals, HR policies, ISO docs, insurance, business licenses, brand guidelines — given that Google Drive is treated as 'a warehouse' and "
 topics: [knowledge-management, google-shared-drives, google-groups, department-permissions, internal-portal, naming-conventions, ai-office-systems-of-record, wiki]
 decisions: [2026-05-07-google-shared-drives-as-janus-doc-store-baseline, 2026-05-07-google-groups-drive-permissions, 2026-05-07-per-department-public-restricted-split, 2026-05-07-ai-office-and-it-as-shared-drive-pilot, 2026-05-07-contributor-default-not-manager]
@@ -144,4 +144,5 @@ Michael convened Jehad and Euclid (with Andre / Speaker 1 present) to figure out
 
 ## Transcript
 
-See [[2026-05-07-michael-jehad-euclid-andre-it-operations.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KR0J82186X2H5MHF1WH48NY6)

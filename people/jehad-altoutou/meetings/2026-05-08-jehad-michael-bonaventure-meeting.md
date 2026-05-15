@@ -13,8 +13,8 @@ departments: [ai-office]
 dept_scope: [ai-office]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Jehad demoed an Obsidian-based knowledge graph ('Prime Radiant') he built in a day with Claude Cowork that ingests Fireflies transcripts, Monday tasks, Linear registry, Notion, and web-clipped articles, abstracting them into vendors, people, decisions, lessons, projects, trends, and briefs"
 topics: [prime-radiant, obsidian-knowledge-graph, department-rollout, recruitment-pipeline, scoring-rubric, assessify-mcp, upskilling, digital-twin]
 decisions: [2026-05-08-prime-radiant-per-department-rollout, 2026-05-08-share-prime-radiant-via-shared-google-drive, 2026-05-08-recruiter-owns-scoring-rubric-fine-tuning]
@@ -146,4 +146,5 @@ Jehad demoed an Obsidian-based knowledge graph ('Prime Radiant') he built in a d
 
 ## Transcript
 
-See [[2026-05-08-jehad-michael-bonaventure-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KR3MEP5PSM0TS6F92J9PZKJ5)

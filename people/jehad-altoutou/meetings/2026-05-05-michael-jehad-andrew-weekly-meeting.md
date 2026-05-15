@@ -13,8 +13,8 @@ departments: [ai-office, marketing]
 dept_scope: [ai-office, marketing]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Michael walked Andrew (new marketing leader, function-of-one) through LLM fundamentals — context windows, artifacts vs Gemini canvases, projects, Markdown-as-lowest-common-denominator, the Claude PowerPoint/Word/Excel plugins, and why Claude leads on coding/harnesses while Gemini leads on deep resea"
 topics: [marketing-capabilities, brand-guidelines, crm-decision, llm-fundamentals, competitive-analysis, social-outreach, website-cms, thought-leadership]
 decisions: [2026-05-05-commission-london-agency-brand-guidelines, 2026-05-05-five-marketing-capabilities-framework, 2026-05-05-janus-needs-a-crm, 2026-05-05-stand-up-shared-marketing-surfaces]
@@ -157,4 +157,5 @@ Michael walked Andrew (new marketing leader, function-of-one) through LLM fundam
 
 ## Transcript
 
-See [[2026-05-05-michael-jehad-andrew-weekly-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KQVT19PCMHGNB9X38M9XSFSB)

@@ -13,8 +13,8 @@ departments: [ai-office]
 dept_scope: [ai-office]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: Jehad and Michael worked through the next phase of the Janus Prime Radiant / Obsidian rollout
 topics: [janus-prime-radiant, obsidian-git, vault-architecture, federation, meeting-ingest, lint-queue, github-org-setup, department-rollout]
 decisions: [2026-05-14-collapse-personal-vault-into-department-vault, 2026-05-14-adopt-obsidian-git-plugin-drop-github-desktop-and-cli, 2026-05-14-substrate-is-github-not-google-shared-drive, 2026-05-14-one-repo-per-department-not-subfolders, 2026-05-14-andrew-marketing-instance-is-next-rollout-target, 2026-05-14-defer-personal-vault-question-until-bonaventure-returns, 2026-05-14-drop-notion-as-standup-target]
@@ -144,4 +144,5 @@ Jehad and Michael worked through the next phase of the Janus Prime Radiant / Obs
 
 ## Transcript
 
-See [[2026-05-14-data-management-system-overhaul-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KRJHC7PHQWWJH66T3DBB13K4)

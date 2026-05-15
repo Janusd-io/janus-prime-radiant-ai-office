@@ -13,8 +13,8 @@ departments: [ai-office, it-ops]
 dept_scope: [ai-office, it-ops]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: The IT team reviewed in-flight infrastructure and tool evaluation work
 topics: [hr-leave-platform, hostinger-vps, domain-transfer, openai-codex-eval, ai-rollout-strategy, rbac-zero-trust, disaster-recovery, n8n-self-host]
 decisions: [2026-04-22-self-host-n8n-on-hostinger-over-gcp, 2026-04-22-reject-victor-ai-tool, 2026-04-22-evaluate-openai-codex-as-claude-fallback, 2026-04-22-defer-disaster-recovery-until-devops-hire, 2026-04-22-add-hr-platform-as-third-docker-container]
@@ -165,4 +165,5 @@ The IT team reviewed in-flight infrastructure and tool evaluation work. Jehad de
 
 ## Transcript
 
-See [[2026-04-22-it-team-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KPTE203THBDKJPZZF7HBMW9R)

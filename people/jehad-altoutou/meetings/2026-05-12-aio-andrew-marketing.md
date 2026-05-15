@@ -13,8 +13,8 @@ departments: [ai-office, marketing]
 dept_scope: [ai-office, marketing]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Michael walked Andrew through the Janus Prime Radiant / 'AI brain' system using an HTML deck Claude generated from prior context, and laid out a staged onboarding plan: get Andrew operational on Claude Cowork + Obsidian + Web Clipper pointing at a Marketing vault, then ingest existing Fireflies tran"
 topics: [prime-radiant, marketing-onboarding, singapore-launch, crm-selection, website-architecture, messaging-pillars, claude-cowork, icp-personas]
 decisions: [2026-05-12-start-marketing-prime-radiant-before-crm, 2026-05-12-reorder-marketing-outputs-plans-first, 2026-05-12-drop-factset-as-named-source, 2026-05-12-three-messaging-pillars-society-business-individual, 2026-05-12-treat-onboarding-deck-as-plan-of-record]
@@ -158,4 +158,5 @@ Michael walked Andrew through the Janus Prime Radiant / 'AI brain' system using 
 
 ## Transcript
 
-See [[2026-05-12-aio-andrew-marketing.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KRDXJX4SSA15S37XCCG7AWGA)

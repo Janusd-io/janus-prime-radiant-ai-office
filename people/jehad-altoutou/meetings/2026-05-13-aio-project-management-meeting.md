@@ -13,8 +13,8 @@ departments: [ai-office, it-ops]
 dept_scope: [ai-office, it-ops]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: Michael and Jehad walked Euclid and Rosa (IT/Ops project-management side) through the Janus Prime Radiant — the Obsidian + Claude Code + GitHub knowledge brain the AI Office has been running for six weeks — to seed the third departmental instance after AI Office and Marketing
 topics: [janus-prime-radiant, it-ops-onboarding, github-substrate, speaker-tagging, claude-code, obsidian, privacy-classification, notion-deprecation]
 decisions: [2026-05-13-it-ops-prime-radiant-starts-with-project-management, 2026-05-13-github-replaces-google-share-drive-as-prime-radiant-substrate, 2026-05-13-let-claude-propose-vault-structure-not-architect-top-down, 2026-05-13-tomorrow-2pm-it-ops-scoping-meeting-in-chinese, 2026-05-13-deprecate-notion-from-aio-stack]
@@ -149,4 +149,5 @@ Michael and Jehad walked Euclid and Rosa (IT/Ops project-management side) throug
 
 ## Transcript
 
-See [[2026-05-13-aio-project-management-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KRGKF94R785XZNVKGKTB840J)

@@ -13,8 +13,8 @@ departments: [ai-office, hr]
 dept_scope: [ai-office, hr]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Jehad walked Theresa through a prototype HR / recruitment dashboard (referred to as the SSFI dashboard) covering departments, roles, assessments with scoring thresholds (strong-hire 85%, hire 70%, consider 55%, weak 40%), a question bank, candidate invites, and a leave-request workflow routed throug"
 topics: [recruitment-dashboard, leave-management, assessments, ats, fireflies-webhook, deel-integration, slack-hub, hr-templates]
 decisions: [2026-05-01-park-easter-egg-critical-thinking-assessment, 2026-05-01-recruitment-tracker-is-priority-build, 2026-05-01-slack-primary-leave-request-surface-deel-backend, 2026-05-01-remove-emergency-and-paid-leave-types, 2026-05-01-leave-balance-defaults-22-annual-14-sick]
@@ -137,4 +137,5 @@ Jehad walked Theresa through a prototype HR / recruitment dashboard (referred to
 
 ## Transcript
 
-See [[2026-05-01-recruitment-and-leave-management-dashboard-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KQH403N18AFABK6Y5R5CCMV6)

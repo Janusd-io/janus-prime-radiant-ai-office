@@ -13,8 +13,8 @@ departments: [ai-office, it-ops]
 dept_scope: [ai-office, it-ops]
 sensitivity: dept
 task_tracker: monday
-parsed_at: "2026-05-14T09:51:32Z"
-parser_version: 2
+parsed_at: 2026-05-15T09:25:59Z
+parser_version: 3
 summary: "Cross-department working session between AI Office (Michael, Jehad) and IT/Ops (Euclid, Andrey)"
 topics: [claude-cowork, approved-tools-list, iso-bottleneck, sandbox-to-production, monday-rollout, standup-pipeline, it-support-bot, hiring]
 decisions: [2026-05-06-add-claude-cowork-to-approved-tools-v3, 2026-05-06-pilot-aio-standup-pipeline-on-it-ops, 2026-05-06-andrey-owns-software-purchase-budget]
@@ -144,4 +144,5 @@ Cross-department working session between AI Office (Michael, Jehad) and IT/Ops (
 
 ## Transcript
 
-See [[2026-05-06-ai-and-it-department-meeting.transcript|full transcript]]
+Raw transcript stays in Fireflies — fetch via MCP when needed.
+Fireflies: [original meeting](https://app.fireflies.ai/view/01KQYFN8G0DWZW8X8TKKXHQ5VB)
