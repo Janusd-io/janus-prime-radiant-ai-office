@@ -66,26 +66,26 @@ Wide-ranging session covering five domains: (1) marketing website infrastructure
 
 ## Monday Items Touched
 
-| Item                       | ID         | Action                        | Description Update |
-| -------------------------- | ---------- | ----------------------------- | ------------------ |
-| Prime Radiant hub          | 2900825519 | Source bump                   | ✅ 576030295        |
-| CRM evaluation             | 2882205554 | Source bump                   | ✅ 576030314        |
-| Standup skill parent       | 2889202957 | Source bump                   | ✅ 576030332        |
-| Andrew rollout             | 2891609467 | Source bump                   | ✅ 576030352        |
-| Monday consultant          | 2882215260 | Source bump                   | ✅ 576030370        |
-| Website CMS                | 2892863693 | Source bump + superseded note | ✅ 576030397        |
-| Front-end UI (sub)         | 2917842877 | Created                       | ✅ 576030653        |
-| Dept blueprint (sub)       | 2917860003 | Created                       | ✅ 576030686        |
-| Federation design (sub)    | 2917843184 | Created                       | ✅ 576030717        |
-| Cowork mode test (sub)     | 2917839454 | Created                       | ✅ 576030744        |
-| AI eval → skill            | 2917843553 | Created                       | ✅ 576031046        |
-| Staging env + landing page | 2917841885 | Created                       | ✅ 576031079        |
-| Singapore/.com hosting     | 2917860817 | Created                       | ✅ 576031097        |
-| Brand guidelines           | 2917860539 | Created                       | ✅ 576031122        |
-| CRM skill demo             | 2917838428 | Created                       | ✅ 576031137        |
-| Joyce onboarding           | 2917860605 | Created                       | ✅ 576031171        |
-| Finance group              | 2917860541 | Created                       | ✅ 576031221        |
-| Better Monday contact      | 2917843425 | Created                       | ✅ 576031271        |
+| Item | ID | Action | Description Update |
+|---|---|---|---|
+| Prime Radiant hub | 2900825519 | Source bump | ✅ 576030295 |
+| CRM evaluation | 2882205554 | Source bump | ✅ 576030314 |
+| Standup skill parent | 2889202957 | Source bump | ✅ 576030332 |
+| Andrew rollout | 2891609467 | Source bump | ✅ 576030352 |
+| Monday consultant | 2882215260 | Source bump | ✅ 576030370 |
+| Website CMS | 2892863693 | Source bump + superseded note | ✅ 576030397 |
+| Front-end UI (sub) | 2917842877 | Created | ✅ 576030653 |
+| Dept blueprint (sub) | 2917860003 | Created | ✅ 576030686 |
+| Federation design (sub) | 2917843184 | Created | ✅ 576030717 |
+| Cowork mode test (sub) | 2917839454 | Created | ✅ 576030744 |
+| AI eval → skill | 2917843553 | Created | ✅ 576031046 |
+| Staging env + landing page | 2917841885 | Created | ✅ 576031079 |
+| Singapore/.com hosting | 2917860817 | Created | ✅ 576031097 |
+| Brand guidelines | 2917860539 | Created | ✅ 576031122 |
+| CRM skill demo | 2917838428 | Created | ✅ 576031137 |
+| Joyce onboarding | 2917860605 | Created | ✅ 576031171 |
+| Finance group | 2917860541 | Created | ✅ 576031221 |
+| Better Monday contact | 2917843425 | Created | ✅ 576031271 |
 
 **Context coverage: 18/18 ✅**
 

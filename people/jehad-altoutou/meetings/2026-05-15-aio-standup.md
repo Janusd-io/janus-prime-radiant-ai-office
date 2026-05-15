@@ -11,7 +11,8 @@ attendees: [michael-bruck, jehad-altoutou]
 duration_min: 74
 audience: department
 departments: [ai-office]
-standup_skill_version: v3.16
+standup_skill_version: v3.17
+parser_version: 3
 privacy: public
 related: [prime-radiant, 2900825519, crm-evaluation, 2882205554, standup-skill, 2889202957]
 ---
@@ -110,5 +111,5 @@ None. Gemini and V0 mentioned casually — both gated out (no eval trigger). Vic
 - **AIP-21 conflict** (11th run): requires manual Linear action
 - **Notion Operations Notebook write**: consistent timeout on 63KB page — entry not written; end-of-May deprecation target makes this lower priority
 - **AIO 14 May standup**: not yet processed — separate run needed
-- **Git push**: local commits pending on personal and ai-office vaults — requires host terminal or stored PAT for HTTPS auth
+- **Git push**: local commits pending — requires host terminal
 - **Victor duplicate (Linear)**: "Victor" vs "Viktor" — manual verification before dispatch to /ai-registry for merge
