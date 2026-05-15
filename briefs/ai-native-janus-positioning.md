@@ -76,11 +76,27 @@ The implication: AI adoption isn't just a cost question or a productivity questi
 - The Singapore news monitoring scope should weight signal sources by *messaging-pillar utility*, not just topic relevance.
 - The ISO programme externalisability is now a real consideration — the compliance evidence trail is a sales asset, not just a regulatory hedge.
 
+## Update — 2026-05-15 — the messaging spine has its first public surface
+
+The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper "How agentic AI can answer the storms ahead"]] (20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[ingest-2026-05-15-joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **first long-form external surface for the three-pillar messaging spine**. The mapping is direct:
+
+| Three-pillar spine (this brief) | White-paper realisation |
+|---|---|
+| Pillar 1 — Capital (top-line growth, acquisition optionality) | "To Employers" commitment + Sections 3 (the energy storm) and 5 (technical anchor). Frames the platform as NOI-direct, zero-CapEx, 30/70 revenue share — institutional capital structure. |
+| Pillar 2 — Companies / corporates / asset classes (REITs, M&A) | Section 5 + the "Queen Bee" framing in Section 7 — when a major institution adopts, the SME ecosystem onboards alongside. M&A thesis reframed as "Singapore as the operating template." |
+| Pillar 3 — Workers (upskilling, certification, union framing) | Section 6 ("Workers as architects, not bystanders") + "To the Labour Movement" commitment in Section 7. SkillsFuture + Tripartite Jobs Council framework. Quotes PM Wong's "we may not be able to protect every job. But we will protect every worker." |
+
+**Reframing for the SG audience.** The white paper recasts the three pillars as the **Singapore tripartism** structure (Government / Labour Movement / Employers) — three explicit commitments in Section 7. This isn't a different messaging spine; it's the same spine refracted through the Singapore policy frame. The three-commitments structure is reusable for any country where there's a clean Government/Labour/Capital triad to engage; for less tripartite markets, the original capital→companies→workers ordering or Andrew's society→business→individual ordering is more natural.
+
+**Resolves "where does the story go external" question.** This brief previously noted: *"At what point (and through what artefact) does the story go external?"* The white paper is that artefact. Distribution timing per the [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]] — promoted through the 8/9 July luncheon and the paid + organic + PR channels in the 9-week timeline.
+
+**Co-author authority.** [[ingest-2026-05-15-joyce-woo|Joyce Woo]] is now confirmed as CEO Singapore (per the paper's About-the-authors section). The paper's authority is co-signed by Global CEO + Singapore CEO — strongest possible signature for the SG launch.
+
 ## Open questions
 
-- What is *Bonaventure's* version of the ideal-customer profile? He flagged on the call that he'd want to compare against [[andrew-soane|Andrew]]'s — "Let's see if he matches mine." Worth surfacing his ICP framing as a Marketing PR Infrastructure-layer input.
+- What is *Bonaventure's* version of the ideal-customer profile? He flagged on the call that he'd want to compare against [[andrew-soane|Andrew]]'s — "Let's see if he matches mine." Worth surfacing his ICP framing as a Marketing PR Infrastructure-layer input. *(White paper provides a strong implicit ICP: REITs + SWFs + pension funds + asset managers + real estate developers + global hospitality operators — and the SME M&E/BMS ecosystem behind them via the "Queen Bee" framing. May be enough to close this question.)*
 - How does the Foreign Minister contact actually get made? Bonaventure said "I'll try to connect to him" — needs a follow-up.
-- Where does Janus's own internal AI-Native story sit publicly? Today the work is institutionally invisible outside AIO. At what point (and through what artefact) does the story go external?
+- ~~Where does Janus's own internal AI-Native story sit publicly? Today the work is institutionally invisible outside AIO. At what point (and through what artefact) does the story go external?~~ **Resolved 2026-05-15 — the Janus Singapore white paper is the artefact; the v1 campaign plan is the distribution channel.**
 - Does Steve (Bonaventure's lunch contact, going to Singapore re central bank + real-time data) become a formal advisor or a one-off referrer? Not enough context yet to file an entity page.
 
 ## Sibling briefs

@@ -7,8 +7,8 @@ updated: 2026-05-15
 departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
-sources: [2026-05-08-andrew-marketing-prime-radiant, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, jehad-vault-marketing-prime-radiant]
-related: [andrew-soane, marketing, janus-prime-radiant-build, llm-wiki, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, 2026-05-08-marketing-prime-radiant-as-separate-vault, crm-evaluation-and-selection, singapore-news-monitoring, peer-to-peer-mesh-federation-pattern, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline]
+sources: [2026-05-08-andrew-marketing-prime-radiant, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, jehad-vault-marketing-prime-radiant, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [andrew-soane, marketing, janus-prime-radiant-build, llm-wiki, 2026-05-07-llm-wiki-extends-to-marketing-domain, 2026-05-08-marketing-prime-radiant-greenlit-with-andrew, 2026-05-08-marketing-prime-radiant-as-separate-vault, crm-evaluation-and-selection, singapore-news-monitoring, peer-to-peer-mesh-federation-pattern, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, ingest-2026-05-15-joyce-woo, bonaventure-wong]
 ---
 
 # Janus Prime Radiant · Marketing
