@@ -6,7 +6,7 @@ created: 2026-05-06
 updated: 2026-05-15
 departments: [office-of-ceo]
 countries: [sg, ae, gb]
-related: [michael-bruck, jehad-altoutou, andrew-soane, euclid-wong, iso-compliance-programme, singapore-news-monitoring, crm-evaluation-and-selection, 2026-05-11-bonaventure-friday-meeting-audio-recovery, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, marketing-prime-radiant, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, vivian-balakrishnan, 2026-05-14-janus-singapore-white-paper-storms-ahead]
+related: [michael-bruck, jehad-altoutou, andrew-soane, euclid-wong, iso-compliance-programme, singapore-news-monitoring, crm-evaluation-and-selection, 2026-05-11-bonaventure-friday-meeting-audio-recovery, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-html-as-presentation-format-adopted, marketing-prime-radiant, 2026-05-15-singapore-marketing-launch-plan-v1, joyce-woo, ingest-2026-05-15-joyce-woo, vivian-balakrishnan, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 ---
 
 # Bonaventure Wong
@@ -38,8 +38,8 @@ Also co-founded and successfully exited **two telecommunications ventures** (ope
 - **Sponsor:** [[iso-compliance-programme]] — top priority.
 - **Sponsor:** [[singapore-news-monitoring]] — first commercial-footprint signal capture for Janus's Singapore office.
 - **Approval / strategic veto:** [[crm-evaluation-and-selection]] — must buy in before lock-in.
-- **Singapore campaign direct-outreach lead** (per [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]]) — BW/JW pairing with [[ingest-2026-05-15-joyce-woo|Joyce Woo]] owns direct email outreach to the 100-account target list; co-host duties at the 8/9 July luncheon; target-account list review due end-of-day Wed 20 May. See [[marketing-prime-radiant]] for the project hub.
-- **Co-author of the Janus Singapore white paper** — [[2026-05-14-janus-singapore-white-paper-storms-ahead|"How agentic AI can answer the storms ahead"]], dated May 2026, co-signed with [[ingest-2026-05-15-joyce-woo|Joyce Woo]]. Paper is Janus Digital's response to PM Lawrence Wong's May Day Rally 2026 speech and the centrepiece content asset for the SG launch campaign. First long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]] (capital → companies → workers) reframed as Singapore-tripartism (Government → Labour Movement → Employers).
+- **Singapore campaign direct-outreach lead** (per [[2026-05-15-singapore-marketing-launch-plan-v1|v1 campaign plan]]) — BW/JW pairing with [[joyce-woo|Joyce Woo]] owns direct email outreach to the 100-account target list; co-host duties at the 8/9 July luncheon; target-account list review due end-of-day Wed 20 May. See [[marketing-prime-radiant]] for the project hub.
+- **Co-author of the Janus Singapore white paper** — [[2026-05-14-janus-singapore-white-paper-storms-ahead|"How agentic AI can answer the storms ahead"]], dated May 2026, co-signed with [[joyce-woo|Joyce Woo]]. Paper is Janus Digital's response to PM Lawrence Wong's May Day Rally 2026 speech and the centrepiece content asset for the SG launch campaign. First long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]] (capital → companies → workers) reframed as Singapore-tripartism (Government → Labour Movement → Employers).
 
 ## Current context
 
