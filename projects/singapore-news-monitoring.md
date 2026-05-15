@@ -72,3 +72,36 @@ Several material updates from the 12 May call with Bonaventure ([[2026-05-12-bon
 - **REIT-level data drill-through is the holy grail.** Bonaventure: "Imagine Janus affecting every single price, stock price, because of us, NOI are real time, then quarterly and such." Theme prompts should weight signal sources by REIT-level data utility.
 - **Singapore PM white paper** to be shared by Bonaventure when he receives it. Worth ingesting as a primary source for the theme prompts when it lands.
 - **External-network momentum** — Bonaventure had lunch on 12 May with Steve (going to Singapore to discuss real-time data with central banks); Bonaventure pitched Janus's REIT angle to him as a concrete entry point.
+
+## Update — 2026-05-15 — theme-prompt vocabulary from the Janus Singapore white paper
+
+The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper "How agentic AI can answer the storms ahead"]] (co-authored Bonaventure + Joyce Woo, PDF metadata 14 May 2026) supplies a substantial Singapore-policy vocabulary the news-monitoring theme prompts should be designed against. Treat this paper as the **canonical theme-prompt source** for Phase 1.
+
+### Singapore regulatory anchor points to weight in the theme prompts
+
+Score signal sources by their bearing on these specific policy / regulatory artefacts:
+
+- **ISSB-aligned mandatory climate disclosure** (ACRA) — STI constituents FY2025, Scope 3 for STI constituents FY2026.
+- **Mandatory Energy Improvement (MEI) regime** (BCA) — live since 30 September 2025; in active operational rollout.
+- **Carbon tax** — S$45/tonne since 1 January 2026 (9× increase from 2023's S$5).
+- **Tripartite Jobs Council** — announced 30 April 2026 by MOM/NTUC/SNEF. Structural worker-augmentation test for any AI deployment in SG.
+- **BCA 80-80-80 Green Mark mandate** (NCCS).
+- **Singapore-Asia Taxonomy** for sustainable finance.
+- **National AI Council.**
+- **PM Lawrence Wong's May Day Rally 2026 speech** (1 May 2026) — "two storms," "enhanced search," "we may not be able to protect every job," DBS worker-elevation example. Foundational rhetorical anchor.
+
+### REIT / institutional capital actors mentioned
+
+REITs, sovereign wealth funds, pension funds, asset management firms, real estate developers, global hospitality operators ("Queen Bee" companies). When SG news names any of these in policy / capital / AI contexts, that's high-signal.
+
+### Vendor ecosystem context for built-environment signals
+
+The white paper enumerates the SG-relevant building-tech vendor ecosystem (Siemens, Honeywell, Schneider, Johnson Controls, Bosch, Daikin, Trane, Carrier, York, Lutron, Acuity, Helvar, Genetec, Otis, KONE, Schindler, Mitsubishi, ABB). News mentioning these vendors in SG-policy contexts (MEI rollouts, energy-efficiency mandates, BMS retrofits, ISSB disclosure rollouts) is wiki-worth.
+
+### Phase-2 commentary draft inputs
+
+The white paper's prose style + commitment framing (Government / Labour Movement / Employers) is the closest existing voice for any Janus public response. Phase 2 draft generation should reference this paper as the style anchor.
+
+### Re: the PM's AI-in-REITs white paper
+
+The Janus paper is NOT the PMO white paper Bonaventure said he'd share — those are separate documents. The PMO paper is still pending as of 15 May 2026. When it lands, ingest it as a second primary theme-prompt source (it will be a different artefact with different framing).

@@ -5,7 +5,7 @@ slug: andrew-soane
 created: 2026-05-06
 updated: 2026-05-15
 departments: [marketing]
-related: [michael-bruck, jehad-altoutou, bonaventure-wong, it-department-standup-pilot, singapore-news-monitoring, crm-evaluation-and-selection, marketing-prime-radiant, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo]
+related: [michael-bruck, jehad-altoutou, bonaventure-wong, it-department-standup-pilot, singapore-news-monitoring, crm-evaluation-and-selection, marketing-prime-radiant, 2026-05-11-andrew-onboarding-plan, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-marketing-pr-outputs-reordered, 2026-05-12-website-architecture-one-site-vs-country-sites, 2026-05-12-anti-ai-washing-as-content-discipline, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 ---
 
 # Andrew Soane
