@@ -1,43 +1,43 @@
 ---
 type: process
-title: Janus HTML deck brand guideline (preliminary v0.1)
+title: Janus HTML deck brand guideline (v1.0)
 slug: janus-html-deck-brand-guideline
 created: 2026-05-15
 updated: 2026-05-15
 departments: [marketing, ai-office]
 status: active
 owner: michael-bruck
-sources: [2026-05-15-singapore-marketing-launch-plan-v1]
-related: [marketing-prime-radiant, andrew-soane, 2026-05-12-html-as-presentation-format-adopted, 2026-05-15-singapore-marketing-launch-plan-v1]
+sources: [2025-janus-brand-guidelines-v1.0, 2026-05-15-singapore-marketing-launch-plan-v1]
+related: [marketing-prime-radiant, andrew-soane, 2026-05-12-html-as-presentation-format-adopted, 2026-05-15-singapore-marketing-launch-plan-v1, 2025-janus-brand-guidelines-v1.0]
 ---
 
-# Janus HTML deck brand guideline — preliminary v0.1
+# Janus HTML deck brand guideline (v1.0)
 
-> **Status:** preliminary v0.1, derived 2026-05-15 from [[2026-05-15-singapore-marketing-launch-plan-v1|Andrew's Singapore campaign plan v1 PPTX]] (the closest thing to an internal style reference Janus has as of mid-May 2026). Treat this as a starting point — Andrew or a brand designer will likely refine it. Until then, all HTML decks should anchor to the palette + type system below for visual continuity.
+> **Status:** v1.0, 2026-05-15. Derived from the official [[2025-janus-brand-guidelines-v1.0|Janus brand guidelines PDF]] supplied by Michael 2026-05-15. **Scoped narrowly to logos, fonts, and colour palette** per Michael's instruction (verbal brand / taglines / voice are being refreshed by an agency Andrew has lined up; do not propagate any taglines from the brand book — they're stale).
+>
+> *Supersedes v0.1 (the preliminary guideline derived from Andrew's SG campaign-plan PPTX). The v0.1 orange `#F5A623` was close but wrong — official is `#FCB745`. v0.1 layout patterns and "Janus voice" lines should not be reused.*
 
-The Janus brand visible in Andrew's deck is: **a warm amber/orange primary on cool-gray neutrals, with full-bleed photographic title openers**, a geometric sans-serif (Montserrat) for everything, and a consistent JANUS-logo top-right anchor across content slides. This guideline encodes that into CSS variables and component patterns reusable across decks.
+This page tells any deck builder (human or AI) the minimum they need to make a Janus-brand-correct HTML deck. Everything else (layout, slide structure, content patterns) is open to judgment.
 
-## Colour palette
+## 1. Colour palette
 
-| Role | Hex | Where it's used |
+Anchor every Janus surface to these five values. They're the brand book's *Logo color composition*, page 11.
+
+| Role | Hex | Brand-book meaning |
 |---|---|---|
-| **Brand orange** | `#F5A623` | Header bands, accent rules, section dividers, primary call-to-action highlights, the brand logo's accent block |
-| **Orange — deep** | `#D9881A` | Watermark shading on solid-orange section breaks |
-| **Orange — mid** | `#E5971D` | Mid-tone variant for orange-on-orange effects |
-| **Ink — primary text** | `#1B1F3A` (or `#000`) | Body text on light backgrounds, deck title text in headers |
-| **Cool gray — secondary** | `#8A95A8` | Footer line ("CONFIDENTIAL \| JANUS DIGITAL \| 2026"), slide numbers, deprioritised metadata |
-| **Card background — cool tinted** | `#F6F7FA` | Default content-card fill on light slides |
-| **Card background — ice tinted** | `#E8ECF4` | Secondary card fill / table row banding |
-| **Divider gray** | `#EBEBEB` | Subtle horizontal rules and card borders |
-| **Page background** | `#FFFFFF` | Default light slide background |
+| **Main / primary** | `#FCB745` | "Energy, reality" — the load-bearing brand cue. If only one colour can be brand-correct, it's this. |
+| **Sub-01 / structure** | `#000000` | "Structure, transition" — door outline, primary text. |
+| **Sub-02 / depth** | `#013A7D` | "Technology, digital space" — deep-navy companion. |
+| **Sub-03 / accent** | `#028CDC` | Bright accent blue — paired with sub-02 in the icon's right rail. |
+| **Background** | `#FFFFFF` | Default light surface. |
 
-Treat the orange as the **load-bearing brand cue**. If only one colour can be brand-correct, it's `#F5A623`. The cool grays handle hierarchy below it.
+For greyscale work + body copy, use `#5D676F` (Dark Grey) for de-emphasised text and `#DBE4EA` (Light Gray) for surface tints. Both are from the brand book's accent palette (page 12).
 
-## Typography
+The brand book also defines a 10-colour accent palette (greens / blues / oranges / reds / purples with light variants) for data-viz and status colours. Use sparingly — the core identity is the five values above. Full accent table in [[2025-janus-brand-guidelines-v1.0|the brand book source]].
 
-**Primary typeface: Montserrat** (extracted from the source PPTX as the dominant non-Calibri font, used for titles and emphasis).
+## 2. Typography
 
-For HTML decks, load Montserrat from Google Fonts at the top of the `<head>`:
+**Brand typeface: Montserrat.** Load from Google Fonts at the top of any HTML deck:
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,119 +45,110 @@ For HTML decks, load Montserrat from Google Fonts at the top of the `<head>`:
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 ```
 
-| Element | Family | Weight | Approx. size |
-|---|---|---|---|
-| Title-slide headline | Montserrat | 300 (Light) | 56–72px |
-| Section-header band (content slide) | Montserrat | 300 (Light) | 36–44px |
-| Slide title (Header 1) | Montserrat | 600 (Semibold) | 28–32px |
-| Subsection / card title | Montserrat | 700 (Bold) | 14–16px (often UPPERCASE, letterspaced) |
-| Body | Montserrat | 400 (Regular) | 14–16px |
-| Emphasised body | Montserrat | 600 (Semibold) | inherit |
-| Footer / metadata | Montserrat | 500 (Medium) | 10–11px, UPPERCASE, letterspaced 0.18em, in cool-gray `#8A95A8` |
+The brand book specifies four cuts: **Montserrat Regular**, **Montserrat Italic**, **Montserrat SemiBold**, **Montserrat SemiBold Italic**. Cover the same ground in HTML with weights `400` / `400 italic` / `600` / `600 italic`. Add `300` (Light) and `700` (Bold) for title-slide / display use.
 
-**Fallback stack:** `'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif`.
+**Body text:** the brand book names **Arial** as the body-text fallback. For HTML, the natural pairing is `Montserrat` for everything (titles + body) with Arial as the fallback in the font stack — keeps you single-family while honouring the spec.
 
-Don't pair Montserrat with a serif unless the slide is explicitly opinion / editorial. The Janus deck stays single-family.
+**Recommended font stack:**
 
-## Logo
+```css
+font-family: 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+```
 
-- The Janus logo lives top-right on every content slide.
-- It's a door-frame glyph (open doorway profile) in orange + light blue/gray, paired with the **JANUS** wordmark in dark ink.
-- For HTML decks until a vector file lands in the wiki: leave the top-right reserved for the logo as a placeholder block and replace with the SVG/PNG when available. Don't substitute alternative marks.
-- On full-bleed dark slides (e.g., title), the logo flips to a white-on-transparent variant.
+## 3. Logo
 
-## Slide patterns
+Two artwork variants are filed in the wiki:
 
-The source deck uses six recurring layouts. Reach for them in this order before inventing a new shape.
+- **`assets/branding/janus-logo-white.svg`** — horizontal logo, JANUS wordmark + door outline render white, orange door panel + navy/blue accents preserved. Use on dark backgrounds.
+- **`assets/branding/janus-logo-black.svg`** — same logo, JANUS wordmark + door outline render black. Use on light backgrounds.
 
-### 1. Title slide — photographic full-bleed
+The brand book documents four official treatments (page 6):
 
-- Dark photographic background (the source uses a Singapore skyline with lightning). For non-Singapore decks, pick a photograph that thematically anchors the content (a building, a city, an instrument, an industrial scene) — never a stock pattern or gradient.
-- White text overlay, left-aligned, lower-third of the slide.
-- Title in Montserrat Light 56–72px, with the **brand orange used sparingly** as a one-word highlight or version-number accent.
-- Version / date line below the title: `v1.0 | 15.05.26` in a smaller, lighter weight.
-- Bottom cream footer band: `CONFIDENTIAL | JANUS DIGITAL | 2026` left, slide number right, both in cool-gray.
-- Logo top-right, white variant.
+1. **Horizontal logo** (icon + JANUS wordmark) — **main identification**. Use this by default.
+2. **Pure pattern logo** (icon only) — secondary identification. Use for app icons, favicons, badges, anywhere the wordmark would be too small.
+3. **Vertical logo** (stacked) — *not recommended* per the brand book. Don't use.
+4. **Grayscale logo** — for metal plates / hard materials. Not relevant for HTML.
 
-### 2. Content slide — orange header band
+### Embedding the logo in an HTML deck
 
-- Orange header band spanning the full slide width, ~80–100px tall.
-- Slide title in the band: Montserrat Light, dark ink (not white), large size.
-- White panel top-right for the logo cleanly separated from the orange.
-- White body below the header with content blocks.
-- Cool-gray footer line at the bottom: `CONFIDENTIAL | JANUS DIGITAL | 2026`.
+Two approaches, pick by deck context:
 
-### 3. Content card / row
+**Option A — `<img>` reference (clean, requires the SVG file to ship alongside the HTML):**
 
-- Light cool-gray fill (`#F6F7FA`).
-- Orange icon (~28–32px) in a circle or filled shape, left-aligned.
-- Bold body text right of the icon with body-text continuation in regular weight.
-- Cards stacked vertically with generous spacing.
+```html
+<img src="assets/branding/janus-logo-black.svg" alt="Janus" width="120">
+```
 
-### 4. Data table
+**Option B — inline SVG (self-contained, works even when the HTML moves):**
 
-- Orange header row (`#F5A623`) with white text, Montserrat Semibold UPPERCASE small.
-- Alternating row banding using `#F6F7FA` and white.
-- Borders ultra-light or absent — use spacing instead.
-- Numerals can be tabular for column alignment.
+Paste the SVG contents directly. The wiki's SVGs use `var(--fill-0, white)` (or `#000` in the black variant) for the wordmark + door outline, so you can override via CSS by setting `--fill-0` on the `<svg>` element — handy when you want a single SVG to flip white/black contextually.
 
-### 5. Timeline / Gantt
+```html
+<svg style="--fill-0: #FFFFFF;" viewBox="0 0 130 45">...</svg>
+```
 
-- Cool-gray gridlines or row separators.
-- Bars in `#F5A623` for primary, with secondary roles in mid-blue / green / red kept muted (don't peacock with colour). Status colours from the source deck: muted navy bars + cyan for paid ads, green for "go-live" milestones, red for critical-path. Use sparingly.
-- Week-column headers in the orange band.
+### Logo sizing + placement
 
-### 6. Section break / Q&A slide
+- The brand book's safe-area construction (page 7) reserves space equal to the "J" glyph's height on all sides. For HTML decks, that's roughly `padding: 14px;` around the logo.
+- For content slides (typical 1080 × 620 frame), aim for a logo width of `100–130px` with `padding: 14px 22px;` around it.
+- Top-right is the conventional Janus content-slide placement (per the source PPTX which followed this convention). The brand book itself shows the logo top-left on some pages — both work; pick one and be consistent across the deck.
 
-- Solid orange background.
-- Large translucent watermark letters (e.g., "Q&A" at low opacity over the orange) — gives texture without competing.
-- Foreground text in white Montserrat Light.
+## 4. Drop-in CSS reference
 
-## CSS reference (drop-in block)
-
-Use these CSS variables at the top of any new HTML deck:
+Paste this block at the top of any new HTML deck. It encodes the brand correctly:
 
 ```css
 :root {
-  /* Brand */
-  --brand-orange: #F5A623;
-  --brand-orange-deep: #D9881A;
-  --brand-orange-mid: #E5971D;
+  /* Janus brand — official palette */
+  --brand-orange: #FCB745;
+  --brand-navy: #013A7D;
+  --brand-blue: #028CDC;
+  --brand-ink: #000000;
+  --brand-bg: #FFFFFF;
 
-  /* Ink */
-  --ink: #1B1F3A;
-  --ink-soft: #4A5072;
-  --ink-mute: #8A95A8;
-
-  /* Surfaces */
-  --bg: #FFFFFF;
-  --surface: #F6F7FA;
-  --surface-cool: #E8ECF4;
-  --hair: #EBEBEB;
-
-  /* Footer / metadata */
-  --footer-text: #8A95A8;
+  /* Accent neutrals (brand-book accent palette, page 12) */
+  --ink-soft: #5D676F;          /* Dark Grey */
+  --hair: #DBE4EA;              /* Light Gray */
 }
 
-body { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; color: var(--ink); }
-h1, h2, .deck-title { font-weight: 300; letter-spacing: -0.01em; }
+body {
+  font-family: 'Montserrat', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
+  color: var(--brand-ink);
+  background: var(--brand-bg);
+}
+
+h1, h2, .deck-title { font-weight: 600; letter-spacing: -0.01em; }   /* Montserrat SemiBold for titles */
 h3, .section-label { font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; }
-.footer-meta { color: var(--footer-text); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; }
+em { font-style: italic; font-weight: 400; }                          /* Montserrat Italic — kept for emphasis */
 ```
 
-## What to avoid
+## 5. What's explicitly NOT in scope
 
-- **Don't substitute the orange.** Don't shift to red, gold, or amber-but-different. `#F5A623` is the identity.
-- **Don't pair Montserrat with a second display face.** Single-family discipline is part of the look.
-- **Don't fill body slides with brand-orange.** Orange is a punctuation, not a background. Section breaks and the header band are the only full-orange surfaces.
-- **Don't put text directly on busy photos.** Title slide photos need a darker tonal range (skylines at night, stormy skies) so white text reads cleanly. If the photo is too bright, dim it with a translucent dark overlay rather than fighting it.
-- **Don't drop the JANUS logo or the footer line** on content slides — they're the brand signature.
+Per Michael 2026-05-15, the brand is being formally refreshed by an agency Andrew has engaged. Until that work lands:
 
-## Provenance + version notes
+- **Don't use any taglines from the brand book.** ("Where Data Meets Destiny" is stale and will be replaced.)
+- **Don't use the "Janus is God of all beginnings…" footer line.** Same — stale.
+- **Don't reuse the brand book's example slide-layouts as templates.** The book shows letterheads, billboards, T-shirts, business cards as examples. The agency will likely re-do these.
+- **Layout / visual-motif choices remain open.** Pick whatever serves the deck content as long as the palette + typography + logo are correct.
 
-- **v0.1 — 2026-05-15:** Derived from Andrew's [[2026-05-15-singapore-marketing-launch-plan-v1|Singapore campaign plan v1 PPTX]] by extracting theme colours from `ppt/slides/slide*.xml`, typography from the font table, and layout patterns from rendered slide images. Brand orange `#F5A623` and Montserrat are direct readings from the source deck.
-- **Open:** no vector Janus logo currently in the wiki. Add when available; until then, top-right block placeholder.
-- **Open:** is `#F5A623` truly the brand orange, or has Andrew chosen it locally for this deck? The Janus website + any future official brand artefacts should reconcile.
-- **Open:** what's the company-default typeface (Montserrat across the source PPTX, but Calibri appears in some text frames as a fallback). Future versions of this guideline should commit to one.
+This guideline will be re-versioned (v1.1 or v2.0) once the agency work lands. Until then: logos, fonts, colours — that's the brand surface.
 
-Future revisions of this page should bump the version (`v0.2`, `v1.0`, …) and capture the reason for the change. When Andrew or a designer formalises a brand book, this page becomes the bridge between that book and HTML implementation specifically.
+## 6. Provenance + version notes
+
+- **v1.0 (2026-05-15):** Derived from the official [[2025-janus-brand-guidelines-v1.0|Janus brand book]] (PDF, 32 pages, version 1.0 dated 2025). Logos saved as SVGs at `assets/branding/`. Palette, fonts, logo treatments all extracted directly from the brand book. Scope narrowed to logos / fonts / colours per Michael's instruction.
+- **v0.1 (superseded):** The preliminary guideline derived from Andrew's SG campaign PPTX. Used `#F5A623` (close but wrong) and called out six layout patterns from the PPTX. Layout patterns and tagline references should not be reused.
+
+## Quick reference card
+
+```
+Orange     #FCB745
+Navy       #013A7D
+Blue       #028CDC
+Ink        #000000
+BG         #FFFFFF
+Mute       #5D676F
+Hair       #DBE4EA
+
+Font       Montserrat (300/400/500/600/700 + italics)
+Logo       assets/branding/janus-logo-{white,black}.svg
+```
