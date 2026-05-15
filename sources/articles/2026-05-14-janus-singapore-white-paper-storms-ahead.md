@@ -109,7 +109,7 @@ Education: **Bachelor of Business Administration, National University of Singapo
 
 The paper extensively quotes and engages with PM Wong's 1 May 2026 May Day Rally speech, particularly his "two storms" framing, the "enhanced search" critique of how AI is currently used, his "we may not be able to protect every job — but we will protect every worker" line, and the DBS example of worker elevation. Janus's three-commitments structure (to Government, Labour, Employers) mirrors the PM's tripartism framing.
 
-The PM's speech itself (1 May 2026, published by PMO Singapore) is the upstream substrate this paper is built on. Referenced URL in the paper's references list: `pmo.gov.sg/newsroom/pm-lawrence-wong-at-may-day-rally-2026/`. Worth a standalone source-file capture since it's quoted heavily here and will likely be cited across other SG-positioning artefacts.
+The PM's speech is filed as a standalone source: [[2026-05-01-pm-lawrence-wong-may-day-rally-2026]] (fetched from `pmo.gov.sg`, 1 May 2026). Treat the speech as the upstream substrate and this Janus paper as the downstream Janus output building on it.
 
 ## Filing notes
 
