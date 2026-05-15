@@ -1569,3 +1569,31 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - entities/departments/it-ops.md — added Dhyey under IT-team people list + related.
   - index.md — Dhyey added to People (internal) alphabetically; header updated with the deck delivery + Dhyey stub creation.
 - notes: Deck is forward-looking (per "more than just a meeting summary" instruction). Coordination focus explicit — slide 6 (the grid) and slide 8 (per-person actions) are the load-bearing slides. Slide 7 surfaces the 6 open decisions with urgency colour-coding so the team knows what's blocking. Slide 9 closes the loop into the wiki so meeting participants have a single-document path to deeper context. Designed to be openable in any browser (no dependencies). The same colour palette + visual motif as prior decks for visual continuity. Pending: surface Dhyey's formal role + scope from Euclid; depend on first Notion / Linear / Monday touchpoint to fill out the entity stub.
+
+## [2026-05-15 14:00] brand-derivation | janus-html-deck-brand-guideline v0.1 + SG-deck retrofit
+- driver: Michael — asked to use Andrew's SG campaign-plan PPTX as a preliminary brand reference for all future HTML decks, and to retrofit the SG strategy alignment deck to the new brand. Format choice: process page (not concepts) so it reads as a how-to-apply reference for any future deck builder (human or AI).
+- extraction method:
+  - Rendered PPTX → PDF via `soffice` then → 110-DPI JPEG slides via `pdftoppm`. Viewed slides 1, 2, 4, 5, 13.
+  - Unpacked PPTX via the pptx skill's `unpack.py`. Greped `srgbClr` and `typeface` patterns across `ppt/slides/*.xml`.
+  - Brand orange `#F5A623` confirmed (most-used non-neutral colour across slides; appears in header bands, Q&A slide background, and table headers). Variant tones `#D9881A` + `#E5971D` used in the Q&A watermarking.
+  - Cool-gray palette: `#8A95A8` (footer text, slide numbers), `#F6F7FA` (card background), `#E8ECF4` (secondary card / row banding), `#EBEBEB` (divider gray).
+  - Typography: Montserrat is the dominant non-Calibri typeface (48 occurrences across sampled slides). Title slide uses Montserrat Light (300); content titles use Montserrat Light/Regular; emphasis uses Semibold/Bold.
+  - Six layout patterns identified: (1) photographic full-bleed title, (2) orange-header-band content slide, (3) content card/row with orange-icon left, (4) data table with orange header row, (5) timeline/Gantt, (6) solid-orange section break with translucent watermark text.
+- created:
+  - **processes/janus-html-deck-brand-guideline.md** — v0.1 brand guideline. Frontmatter flags `status: active, owner: michael-bruck`. Contains: colour-palette table, Montserrat type-scale, logo notes, six slide patterns, drop-in CSS-variables block (paste at top of any new deck), provenance + open-questions list (vector logo, is #F5A623 the *real* brand orange or Andrew's local choice, Montserrat vs Calibri).
+- updated:
+  - **2026-05-15-singapore-strategy-alignment.html** — full retrofit to the brand:
+    - Replaced the Midnight Executive palette (navy/ice/coral/cream) with the brand palette (orange/cool-gray).
+    - Replaced the Georgia + system-sans pairing with Montserrat-only across all weights (300/400/500/600/700) loaded from Google Fonts.
+    - Replaced the "slide-tag + slide-num" border-style chrome with the orange-header-band + JANUS-logo-block-top-right + cool-gray footer-line treatment from Pattern 2.
+    - Title slide (slide 1): switched to Pattern 1 — photographic full-bleed framing using an inline SVG stylised city silhouette (with orange "window lights") + dark gradient background. No external image dependency. Cream `CONFIDENTIAL | JANUS DIGITAL | 2026` band at the bottom matches the source deck.
+    - Reference slide (slide 9): kept dark variant, but with the same orange header band and JANUS logo block on top — feels like a Pattern 6 section break adapted to content.
+    - Inline SVG door-frame logo glyph used as a placeholder on every slide top-right (until a real vector lands in the wiki).
+    - Decisions slide urgency pills now use the brand orange directly (vs the coral previously).
+  - **index.md** — Processes section gains the brand-guideline entry; header date update reflects the brand-derivation + retrofit pass.
+- design judgment calls in the retrofit:
+  - **Inline SVG city silhouette vs. external photo** on slide 1. The source deck uses a real Singapore-skyline photograph. Without a hosted image URL or a CDN-shipped photo, I opted for an inline stylised silhouette + dark gradient so the file stays self-contained. Brand-guideline note added that photographic backgrounds are the Pattern 1 norm and should be added when an asset is available.
+  - **Door-frame logo as inline SVG**. The source PPTX's logo isn't extractable as a clean vector from the slide XML without more work. The inline SVG I used (orange + cool-gray door panels) is a *placeholder* that matches the source visually but isn't pixel-true to the brand. Flagged in the guideline as a swap target.
+  - **Montserrat from Google Fonts CDN.** First HTML deck in this vault to load a web font. Falls back cleanly to `-apple-system / Helvetica / Arial` if the CDN isn't reachable, but the brand identity weakens without Montserrat. Worth confirming with IT whether any Janus device can't reach `fonts.googleapis.com`.
+  - **Kept the deck content unchanged.** Retrofit is visual only — same 9 slides, same body text. The brand is the wrapper; the substance is what's already been signed off.
+- watch: When Andrew or a brand designer formalises a brand book, bump this guideline to v0.2/v1.0 and capture the deltas. Until then, this is the source-of-truth for visual decisions on HTML decks.
