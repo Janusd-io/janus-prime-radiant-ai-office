@@ -62,3 +62,13 @@ Once resolved, the CMS-selection question (Wix / Firebase / build) can be scoped
 **Position A** — one Janus site with country sub-paths, multilingual-ready CMS, vanity URLs as redirects. Janus presenting as Singaporean is achievable via the vanity-URL + email-signature route without fragmenting the asset library and brand guidelines.
 
 Awaiting Bonaventure alignment. Andrew owns the conversation.
+
+## Status update (2026-05-15) — campaign plan v1 assumes both URLs in use
+
+The [[2026-05-15-singapore-marketing-launch-plan-v1|Singapore campaign plan v1]] (Andrew, 15 May 2026) lists *both* `janusd.com` and `janusdg.com` as campaign landing-page targets in week-1 of the timeline. Reads as if Andrew is operationally proceeding on a hybrid: `janusd.com` as the canonical site + `janusdg.com` as the SG vanity / redirect-friendly variant. This may be:
+
+1. A pre-decision position — Andrew building for both URLs because the architecture question is still unresolved, hedging until the alignment conversation lands.
+2. An implicit resolution — both URLs in use simultaneously, with `janusdg.com` redirecting / proxying to a `janusd.com/sg` country sub-path. This is roughly Position A with a vanity-URL on top.
+3. A partial-resolution — Andrew has gone ahead with Position A's spirit (one canonical site + vanity URL) without explicitly resolving with Bonaventure.
+
+Worth confirming with Andrew which reading is correct, and either closing this question with the v1-as-resolution or surfacing the gap to Bonaventure before the campaign goes live (week-1 build is in flight).
