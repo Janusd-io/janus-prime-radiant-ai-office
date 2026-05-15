@@ -242,11 +242,32 @@ Notable line-items: **REITAS membership** is a new annual commitment (S$5,000/yr
 Venue selection pending — likely informed by date availability + private-room requirement + cost ceiling.
 
 ### Notable connections to existing wiki content
-- **Website architecture open question affected.** The campaign plan references both `janusd.com` and `janusdg.com` as campaign landing-page targets. Earlier [[2026-05-12-website-architecture-one-site-vs-country-sites|open question]] framed it as one-Janus-site (Andrew + Michael position) vs standalone country sites (anticipated Bonaventure). The v1 deck appears to assume **both** are in use simultaneously — `janusd.com` as canonical + `janusdg.com` as vanity / SG-specific. May be settled or may be placeholder; worth confirming with Andrew.
+- **Website architecture open question affected — and a third URL surfaces.** The campaign plan references both `janusd.com` and `janusdg.com` as campaign landing-page targets. Earlier [[2026-05-12-website-architecture-one-site-vs-country-sites|open question]] framed it as one-Janus-site (Andrew + Michael position) vs standalone country sites (anticipated Bonaventure). The v1 deck appears to assume **both** are in use simultaneously — `janusd.com` as canonical + `janusdg.com` as vanity / SG-specific. **The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]] introduces a third URL: `janusd.sg` is the contact-and-website surface used in the paper (`engage@janusd.sg`).** Three URLs in flight; needs resolution.
 - **CRM downgrade reinforced.** The deck uses Mailchimp + LinkedIn lead-gen form + Google Sheets as the interim lead-capture stack — consistent with the [[crm-evaluation-and-selection|CRM-not-in-critical-path]] direction. HubSpot decision target remains end-May / first-week-June.
 - **Joyce Woo formal role.** Multiple prior references in the wiki to "JW" / Joyce — now formal SG-face positioning makes her an entity-page candidate. See [[ingest-2026-05-15-joyce-woo|escalation]].
 - **AI Native three-pillar messaging operationalised.** The campaign objectives map cleanly onto the [[ai-native-janus-positioning|three-pillar spine]] — pillar 2 (business / capital) via REIT + asset-manager targeting; pillar 1 (society / sustainability + ESG) via white-paper positioning; pillar 3 (individual / worker upskilling) carried implicitly through the AI-Native framing.
 
+## Update — 2026-05-15 Janus Singapore white paper landed (Outputs-layer artefact #2)
+
+The [[2026-05-14-janus-singapore-white-paper-storms-ahead|Janus Singapore white paper]] ("How agentic AI can answer the storms ahead", 20 pages, co-authored by [[bonaventure-wong|Bonaventure]] + [[ingest-2026-05-15-joyce-woo|Joyce Woo]], PDF metadata 2026-05-14) is the **centrepiece content asset** for the v1 Singapore campaign and the **first long-form externalisation of the [[ai-native-janus-positioning|three-pillar messaging spine]]**.
+
+This is Outputs-layer artefact #2 for the Marketing PR, on top of the [[2026-05-15-singapore-marketing-launch-plan-v1|campaign plan]] (Outputs-layer artefact #1). The campaign plan promotes this paper through paid + organic + PR + email channels across the 9-week timeline.
+
+### Key facts the paper establishes for the Marketing PR
+
+- **Janus Digital Singapore Pte. Ltd.** is the formal SG corporate entity. Parent is Janus Digital Global FZE (UAE).
+- **Joyce Woo's formal title is "CEO, Singapore"** — co-signed author of the paper alongside Global CEO Bonaventure Wong. Resolves the title open question in [[ingest-2026-05-15-joyce-woo]].
+- **Singapore-tripartism reframing** of the three pillars: Government / Labour Movement / Employers commitments in Section 7. Same spine, refracted through Singapore policy frame.
+- **Operational identity:** `engage@janusd.sg` + `janusd.sg`. Third URL alongside `janusd.com` and `janusdg.com` — see website-architecture note above.
+- **Authoritative platform claims** for downstream campaign copy: 76 patents, 10,000+ buildings, 253 cities, 800M+ data streams, 29% energy savings, zero-CapEx 30/70 revenue model.
+- **Regulatory anchor points** the campaign can cite without re-research: ISSB FY2025 disclosure, MEI regime live since Sept 2025, carbon tax 9× since 2023, Tripartite Jobs Council announced 30 April 2026, BCA 80-80-80, Singapore-Asia Taxonomy.
+
+### Operational ties
+
+- Campaign objective #1 ("anchored to the white paper") is now satisfied — the white paper exists, is co-authored, and is the centrepiece content asset.
+- The PMO white paper that Bonaventure said he'd share is a *separate* document (still pending as of 2026-05-15). Both papers will eventually be in the campaign-asset mix.
+- The Singapore PM May Day Rally 2026 speech is heavily quoted in the Janus paper. Useful as an upstream source for campaign content; consider standalone wiki capture if it becomes a recurring reference.
+
 ## Related
 
-[[marketing]] · [[andrew-soane]] · [[janus-prime-radiant-build]] · [[llm-wiki]] (methodology) · [[2026-05-07-llm-wiki-extends-to-marketing-domain]] · [[crm-evaluation-and-selection]] · [[singapore-news-monitoring]] · [[2026-05-11-andrew-onboarding-plan]]
+[[marketing]] · [[andrew-soane]] · [[bonaventure-wong]] · [[ingest-2026-05-15-joyce-woo]] · [[2026-05-14-janus-singapore-white-paper-storms-ahead]] · [[2026-05-15-singapore-marketing-launch-plan-v1]] · [[janus-prime-radiant-build]] · [[llm-wiki]] (methodology) · [[2026-05-07-llm-wiki-extends-to-marketing-domain]] · [[crm-evaluation-and-selection]] · [[singapore-news-monitoring]] · [[2026-05-11-andrew-onboarding-plan]] · [[2026-05-12-website-architecture-one-site-vs-country-sites]] · [[ai-native-janus-positioning]]
