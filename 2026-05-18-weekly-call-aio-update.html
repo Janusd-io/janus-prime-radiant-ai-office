@@ -36,7 +36,7 @@ body {
 .slide {
   width: 1080px;
   max-width: 100%;
-  min-height: 620px;
+  min-height: 640px;
   background: var(--brand-bg);
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   position: relative;
@@ -68,29 +68,26 @@ body {
   text-transform: uppercase;
 }
 .slide.dark .slide-eyebrow { color: var(--brand-orange); }
-.logo-block {
-  width: 116px;
-  height: 40px;
-}
+.logo-block { width: 116px; height: 40px; }
 .logo-block svg { width: 100%; height: 100%; display: block; }
 .slide-body {
-  padding: 22px 52px 52px 52px;
+  padding: 18px 52px 44px 52px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 h1.slide-title {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: -0.015em;
-  line-height: 1.15;
-  margin-top: 6px;
+  line-height: 1.18;
+  margin-top: 4px;
   color: var(--brand-navy);
 }
 .slide.dark h1.slide-title { color: var(--brand-bg); }
 h1.deck-title {
   font-weight: 300;
-  font-size: 56px;
+  font-size: 54px;
   letter-spacing: -0.02em;
   line-height: 1.05;
   margin-top: 6px;
@@ -99,16 +96,16 @@ h1.deck-title {
 .slide.dark h1.deck-title { color: var(--brand-bg); }
 .slide-subtitle {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--ink-soft);
-  margin-top: 14px;
+  margin-top: 10px;
   line-height: 1.5;
-  max-width: 800px;
+  max-width: 820px;
 }
 .slide.dark .slide-subtitle { color: rgba(255,255,255,0.85); }
 .footer-line {
   border-top: 1px solid var(--hair);
-  padding: 14px 52px;
+  padding: 12px 52px;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
@@ -171,100 +168,124 @@ h1.deck-title {
   line-height: 1.5;
 }
 
-/* THREE IMPLICATIONS - LAST WEEK */
-.implication-row {
+/* FOUR IMPLICATIONS - 2x2 GRID */
+.implications-grid {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 28px;
-  align-items: flex-start;
-  padding: 26px 0;
-  border-bottom: 1px solid var(--hair);
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+  margin-top: 16px;
 }
-.implication-row:last-child { border-bottom: none; }
-.implication-num {
-  font-weight: 300;
-  font-size: 52px;
-  line-height: 1;
+.imp-card {
+  background: var(--surface);
+  border-left: 3px solid var(--brand-orange);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.imp-card.navy { border-left-color: var(--brand-navy); }
+.imp-card.blue { border-left-color: var(--brand-blue); }
+.imp-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.imp-num {
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
   color: var(--brand-orange);
-  letter-spacing: -0.04em;
 }
-.implication-content { padding-top: 6px; }
-.implication-headline {
+.imp-track {
+  font-weight: 700;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.imp-card.navy .imp-num,
+.imp-card.navy .imp-track { color: var(--brand-navy); }
+.imp-card.blue .imp-num,
+.imp-card.blue .imp-track { color: var(--brand-blue); }
+.imp-headline {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 16px;
   color: var(--brand-navy);
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-}
-.implication-body {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--brand-ink);
+  letter-spacing: -0.005em;
+  line-height: 1.3;
   margin-top: 8px;
-  line-height: 1.6;
-  max-width: 760px;
 }
-.implication-meaning {
-  font-weight: 600;
-  font-size: 13px;
+.imp-body {
+  font-weight: 400;
+  font-size: 12.5px;
+  color: var(--brand-ink);
+  margin-top: 7px;
+  line-height: 1.55;
+}
+.imp-meaning {
+  font-weight: 500;
+  font-size: 11.5px;
   color: var(--brand-navy);
   margin-top: 10px;
-  letter-spacing: 0.005em;
-  padding-left: 14px;
-  border-left: 3px solid var(--brand-orange);
+  padding-top: 8px;
+  border-top: 1px solid var(--hair);
+  line-height: 1.5;
 }
-.implication-meaning .meaning-label {
+.imp-meaning::before {
+  content: "What this means · ";
   font-weight: 700;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--brand-orange);
-  display: block;
-  margin-bottom: 4px;
 }
+.imp-card.navy .imp-meaning::before { color: var(--brand-navy); }
+.imp-card.blue .imp-meaning::before { color: var(--brand-blue); }
 
 .signal-strip {
-  margin-top: 24px;
-  padding: 18px 22px;
-  background: var(--surface);
-  border-left: 3px solid var(--brand-blue);
-  font-size: 14px;
-  line-height: 1.55;
+  margin-top: 14px;
+  padding: 12px 18px;
+  background: var(--brand-navy);
+  color: var(--brand-bg);
+  font-size: 12.5px;
+  line-height: 1.5;
+  border-left: 3px solid var(--brand-orange);
 }
 .signal-strip .signal-label {
   font-weight: 700;
-  font-size: 10px;
+  font-size: 9.5px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--brand-blue);
-  display: block;
-  margin-bottom: 6px;
+  color: var(--brand-orange);
+  margin-right: 8px;
 }
 
 /* THIS WEEK */
 .outcomes-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
-  margin-top: 26px;
+  gap: 18px;
+  margin-top: 22px;
 }
 .outcome {
-  padding: 22px 24px;
+  padding: 18px 20px;
   background: var(--surface);
   border-left: 3px solid var(--brand-navy);
 }
 .outcome.primary { border-left-color: var(--brand-orange); background: #FFF7E5; }
+.outcome.iso { border-left-color: var(--brand-blue); }
+.outcome.marketing { border-left-color: var(--brand-navy); }
 .outcome-eyebrow {
   font-weight: 700;
-  font-size: 10px;
+  font-size: 9.5px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--brand-navy);
 }
 .outcome.primary .outcome-eyebrow { color: var(--brand-orange); }
+.outcome.iso .outcome-eyebrow { color: var(--brand-blue); }
 .outcome-headline {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--brand-navy);
   margin-top: 7px;
   letter-spacing: -0.005em;
@@ -272,9 +293,9 @@ h1.deck-title {
 }
 .outcome-body {
   font-weight: 400;
-  font-size: 13.5px;
+  font-size: 12.5px;
   color: var(--brand-ink);
-  margin-top: 9px;
+  margin-top: 8px;
   line-height: 1.55;
 }
 
@@ -283,11 +304,11 @@ table.decisions {
   width: 100%;
   margin-top: 22px;
   border-collapse: collapse;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 table.decisions th, table.decisions td {
   text-align: left;
-  padding: 14px 16px;
+  padding: 13px 16px;
   border-bottom: 1px solid var(--hair);
   vertical-align: top;
 }
@@ -304,37 +325,37 @@ table.decisions td.decision-topic {
   font-weight: 600;
   color: var(--brand-navy);
   width: 28%;
-  font-size: 14.5px;
+  font-size: 13.5px;
   line-height: 1.3;
 }
 table.decisions td.decision-context { width: 50%; line-height: 1.55; }
-table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px; color: var(--ink-soft); }
+table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 12.5px; color: var(--ink-soft); }
 
 /* CLOSING */
 .closing-quote {
   font-weight: 300;
-  font-size: 26px;
-  line-height: 1.35;
+  font-size: 24px;
+  line-height: 1.4;
   color: var(--brand-bg);
   letter-spacing: -0.015em;
-  margin-top: 50px;
-  max-width: 780px;
+  margin-top: 44px;
+  max-width: 820px;
 }
 .closing-quote-attrib {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--brand-orange);
-  margin-top: 18px;
+  margin-top: 16px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 .programme-state {
-  margin-top: 48px;
+  margin-top: 38px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
   border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 28px;
+  padding-top: 26px;
 }
 .state-block { }
 .state-label {
@@ -346,7 +367,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
 }
 .state-value {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 28px;
   color: var(--brand-bg);
   letter-spacing: -0.02em;
   margin-top: 8px;
@@ -354,7 +375,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
 }
 .state-detail {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11.5px;
   color: rgba(255,255,255,0.7);
   margin-top: 6px;
   line-height: 1.4;
@@ -368,7 +389,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
 </head>
 <body>
 
-<!-- Embedded JANUS logo sprite — used across all slides via <use> -->
+<!-- Embedded JANUS logo sprite -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="janus-logo" viewBox="0 0 130 45">
@@ -404,7 +425,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
   </div>
   <div class="slide-body">
     <h1 class="deck-title">The internal AI fabric<br/>is starting to spread.</h1>
-    <p class="slide-subtitle">Status update for the 18 May weekly call. Three things landed last week that change what we can do next.</p>
+    <p class="slide-subtitle">Status update for the 18 May weekly call. Last week the AI Office advanced four priority tracks at once: the platform foundation, the Marketing platform supporting Andrew's commercial work, the first cross-department instance, and the ISO programme.</p>
 
     <div class="title-meta">
       <div class="title-meta-row">
@@ -425,12 +446,12 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
       <div class="agenda-block">
         <div class="agenda-block-num">01</div>
         <div class="agenda-block-title">Last week</div>
-        <div class="agenda-block-desc">Three implications worth sitting with.</div>
+        <div class="agenda-block-desc">Four implications across the priority tracks.</div>
       </div>
       <div class="agenda-block">
         <div class="agenda-block-num">02</div>
         <div class="agenda-block-title">This week</div>
-        <div class="agenda-block-desc">First non-AIO department goes live.</div>
+        <div class="agenda-block-desc">PM goes live · Marketing support · ISO continues.</div>
       </div>
       <div class="agenda-block">
         <div class="agenda-block-num">03</div>
@@ -445,60 +466,64 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
   </div>
 </section>
 
-<!-- =============== SLIDE 2 — LAST WEEK =============== -->
+<!-- =============== SLIDE 2 — LAST WEEK (FOUR IMPLICATIONS) =============== -->
 <section class="slide">
   <div class="header-band"></div>
   <div class="slide-top">
-    <div class="slide-eyebrow">01 · Last week — what changed and why it matters</div>
+    <div class="slide-eyebrow">01 · Last week — four implications</div>
     <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title">Three implications, in plain terms.</h1>
-    <p class="slide-subtitle">A week of mechanical work that adds up to a different posture for the programme as a whole.</p>
+    <h1 class="slide-title">Four priority tracks advanced in parallel.</h1>
+    <p class="slide-subtitle">The AI Office's work this week directly supported each of the priorities BW has flagged — internal platform, Marketing, cross-department rollout, and ISO.</p>
 
-    <div style="margin-top: 22px;">
+    <div class="implications-grid">
 
-      <div class="implication-row">
-        <div class="implication-num">01</div>
-        <div class="implication-content">
-          <div class="implication-headline">The foundation our internal AI work sits on is now solid enough for any department to plug in.</div>
-          <div class="implication-body">We moved the company's institutional-knowledge platform off Google Drive onto a more reliable, security-aware foundation. The earlier friction — the kind that slowed Andrew's onboarding — is resolved at the structural level. Every future department joins on the same clean, repeatable setup.</div>
-          <div class="implication-meaning">
-            <span class="meaning-label">What this means</span>
-            Rollout speed across Janus is no longer constrained by the tooling. It's constrained only by which department is ready next, and by how much time we spend with them.
-          </div>
+      <div class="imp-card">
+        <div class="imp-tag">
+          <span class="imp-num">01</span>
+          <span class="imp-track">Platform foundation</span>
         </div>
+        <div class="imp-headline">The internal-knowledge platform is now solid enough for any department to plug in.</div>
+        <div class="imp-body">We moved off Google Drive onto a more reliable, security-aware foundation. The friction that slowed Andrew's onboarding is resolved structurally. Every future department joins on the same clean, repeatable setup. The AI Office's daily standup also now deposits its outcomes into the platform automatically — last manual handoff before the Notion sunset, closed.</div>
+        <div class="imp-meaning">Rollout speed is no longer constrained by the tooling. It's constrained only by which department is ready next.</div>
       </div>
 
-      <div class="implication-row">
-        <div class="implication-num">02</div>
-        <div class="implication-content">
-          <div class="implication-headline">Janus has its first cross-department instance ready to launch.</div>
-          <div class="implication-body">Spent an hour with Lysander capturing exactly how Project Management's delivery discipline runs end-to-end. That captured workflow is what the Project Management instance gets initialised against this week — meaning the system arrives pre-loaded with their language, their decisions, their gates. It's the first real test that the pattern travels beyond the AI Office.</div>
-          <div class="implication-meaning">
-            <span class="meaning-label">What this means</span>
-            The AI Office is no longer the only department on the system. By end of May we expect three live instances. Other departments are queued.
-          </div>
+      <div class="imp-card navy">
+        <div class="imp-tag">
+          <span class="imp-num">02</span>
+          <span class="imp-track">Marketing</span>
         </div>
+        <div class="imp-headline">The Marketing platform is live and underpinning Andrew's commercial work.</div>
+        <div class="imp-body">The Marketing instance is the AI Office's second live Prime Radiant. Andrew's Singapore campaign now runs on top of it — meaning the commercial work can move fast because the platform is in place. We also stood up the first working example of two departments sharing signal cleanly between their instances (the AI Office × Marketing pairing).</div>
+        <div class="imp-meaning">The AI Office is providing the operating substrate for Andrew's commercial track — he doesn't have to build his own.</div>
       </div>
 
-      <div class="implication-row">
-        <div class="implication-num">03</div>
-        <div class="implication-content">
-          <div class="implication-headline">Our daily knowledge now compounds without manual handoffs.</div>
-          <div class="implication-body">The AI Office's daily standup now deposits its outcomes straight into the institutional record, automatically. This closes the last big manual step before the Notion sunset at the end of this month. From here, AIO's institutional memory grows whether anyone curates it or not.</div>
-          <div class="implication-meaning">
-            <span class="meaning-label">What this means</span>
-            The system gets smarter every day with zero curator effort. The same mechanism is what every department instance inherits when it comes online.
-          </div>
+      <div class="imp-card">
+        <div class="imp-tag">
+          <span class="imp-num">03</span>
+          <span class="imp-track">Cross-department expansion</span>
         </div>
+        <div class="imp-headline">The first cross-department instance — Project Management — is ready to launch.</div>
+        <div class="imp-body">Spent an hour with Lysander capturing how Project Management's delivery discipline runs end-to-end. That captured workflow is what the Project Management instance gets initialised against this week — system arrives pre-loaded with their language, their decisions, their gates. First real test that the pattern travels beyond the AI Office.</div>
+        <div class="imp-meaning">By end of May we expect three live instances. Other departments are queued.</div>
+      </div>
+
+      <div class="imp-card blue">
+        <div class="imp-tag">
+          <span class="imp-num">04</span>
+          <span class="imp-track">ISO programme</span>
+        </div>
+        <div class="imp-headline">The ISO programme is gaining a structural advantage from the AI Office platform.</div>
+        <div class="imp-body">Jehad's enrolment skill — which walks any department through ISO 9001 documentation — was walked through with you on 12 May and approved-to-continue. The bigger development: the integrated 9001 / 27001 / 42001 audit trail is being built into the platform as a first-class capability. Compliance evidence now accumulates as a side effect of how the system works.</div>
+        <div class="imp-meaning">Janus is on track to evidence much of the AI-governance standard (42001) by reusing what we've already built. The programme moves faster because we're not running it in parallel.</div>
       </div>
 
     </div>
 
     <div class="signal-strip">
-      <span class="signal-label">Stakeholder signal worth noting</span>
-      Bonaventure flagged on the 11 May standup that the Prime Radiant rollout is <em>"happening quicker than I thought."</em> Validates pacing and is a leading indicator that executive backing is forming as the rollout reaches non-AIO departments.
+      <span class="signal-label">CEO Signal</span>
+      Bonaventure on the 11 May standup: <em>"happening quicker than I thought."</em> Validates pacing as the rollout reaches non-AIO departments.
     </div>
   </div>
   <div class="footer-line">
@@ -515,39 +540,39 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
     <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title">Get Project Management live, then strengthen what comes next.</h1>
-    <p class="slide-subtitle">One headline outcome and three supporting tracks. Most of the heavy structural work happened last week — this week is execution and follow-through.</p>
+    <h1 class="slide-title">Project Management goes live, Marketing gets seeded, ISO continues.</h1>
+    <p class="slide-subtitle">One headline outcome and four supporting tracks — each maps directly to one of the priority workstreams.</p>
 
     <div class="outcomes-grid">
 
       <div class="outcome primary" style="grid-column: span 2;">
-        <div class="outcome-eyebrow">Headline outcome</div>
+        <div class="outcome-eyebrow">Headline outcome — cross-department expansion</div>
         <div class="outcome-headline">Project Management Prime Radiant kicks off — first non-AI-Office department live.</div>
         <div class="outcome-body">Working session with Euclid, Rosa Wu, Lysander, and Spike to walk them through the system and stand up their team's instance. This is also Janus's first Windows deployment of the pattern — friction we encounter becomes documented input for every department that follows.</div>
       </div>
 
-      <div class="outcome">
-        <div class="outcome-eyebrow">Track 1</div>
-        <div class="outcome-headline">Make new-department onboarding repeatable.</div>
-        <div class="outcome-body">First end-to-end validation by Jehad of the setup runbook we built last week. Once validated, future department onboardings drop from days to under an hour of setup time.</div>
+      <div class="outcome marketing">
+        <div class="outcome-eyebrow">Marketing platform support</div>
+        <div class="outcome-headline">Get Andrew's instance fully seeded and operational.</div>
+        <div class="outcome-body">Complete Andrew's tooling install on his Mac. Bulk-load his prior meeting content so the Marketing instance has working context from day one. Make sure the platform is keeping pace with the Singapore campaign tempo.</div>
+      </div>
+
+      <div class="outcome iso">
+        <div class="outcome-eyebrow">ISO programme</div>
+        <div class="outcome-headline">Continue enrolment-skill build and process-owner mapping with Simon.</div>
+        <div class="outcome-body">Jehad continues the enrolment-skill work — the worked example uses the AI Department itself. Process-owner mapping with Simon to lock down ownership for the core 10 IMS processes. Compliance evidence-chain integration into the platform continues.</div>
       </div>
 
       <div class="outcome">
-        <div class="outcome-eyebrow">Track 2</div>
-        <div class="outcome-headline">Continue AI tool evaluations in support of upcoming work.</div>
-        <div class="outcome-body">Eleven new tools were added to the AI Registry pipeline last week, most of them downstream of marketing/campaign needs. Working through evaluations so approvals don't become a bottleneck.</div>
+        <div class="outcome-eyebrow">Make rollout repeatable</div>
+        <div class="outcome-headline">Validate the new-department setup end-to-end.</div>
+        <div class="outcome-body">Jehad runs the full setup on his own machine to validate the runbook we wrote last week. Once validated, future department onboardings drop from days to under an hour of setup time.</div>
       </div>
 
       <div class="outcome">
-        <div class="outcome-eyebrow">Track 3</div>
-        <div class="outcome-headline">Coordinate the Notion sunset with department heads.</div>
-        <div class="outcome-body">End-of-May target is locked. The AI Office can run the technical migration; departments still using Notion as a system of record need a signal from leadership to actually move.</div>
-      </div>
-
-      <div class="outcome">
-        <div class="outcome-eyebrow">Track 4</div>
-        <div class="outcome-headline">Continue ISO programme integration.</div>
-        <div class="outcome-body">Jehad continues the ISO enrolment skill build with Simon — process-owner mapping and compliance-trail work. Approved-to-continue from Bonaventure's 12 May check-in.</div>
+        <div class="outcome-eyebrow">AI tool governance + Notion sunset</div>
+        <div class="outcome-headline">Continue evaluations and coordinate the cutover.</div>
+        <div class="outcome-body">Eleven new tools were added to the AI Registry last week, mostly downstream of marketing/campaign needs. Continue working through evaluations. In parallel, coordinate the end-May Notion sunset with affected department heads.</div>
       </div>
 
     </div>
@@ -567,7 +592,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
   </div>
   <div class="slide-body">
     <h1 class="slide-title">Four decisions I'd like us to land on the call.</h1>
-    <p class="slide-subtitle">Each of these is small in isolation but unlocks a meaningful next step.</p>
+    <p class="slide-subtitle">Each is small in isolation but unlocks a meaningful next step on one of the priority tracks.</p>
 
     <table class="decisions">
       <thead>
@@ -580,22 +605,22 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
       <tbody>
         <tr>
           <td class="decision-topic">What do we call this system, in plain language?</td>
-          <td class="decision-context">Inside the AI Office we call it <em>Janus Prime Radiant</em>. For non-technical audiences across the firm, that name needs softening — Bonaventure's read was "very geeky." The system name stays; the user-facing label is open. Andrew should be in this conversation too.</td>
+          <td class="decision-context">Inside the AI Office we call it <em>Janus Prime Radiant</em>. For non-technical audiences across the firm — including new departments coming online and the people whose names go on outputs from the system — that name needs softening. Bonaventure's read was "very geeky." The system name stays; the user-facing label is open. Andrew should be in this conversation.</td>
           <td class="decision-ask">A twenty-minute decision on the call.</td>
         </tr>
         <tr>
           <td class="decision-topic">Are we on the right pace, or should we accelerate?</td>
-          <td class="decision-context">Three departments live by end of May if Project Management lands cleanly. HR, Finance, ISO, and the Office of the CEO are next in the queue. Bonaventure's 11 May read was that the work is happening faster than he expected — we want to calibrate whether to compress the queue further or hold pace.</td>
+          <td class="decision-context">Three departments live by end of May if Project Management lands cleanly. HR, Finance, ISO, and the Office of the CEO are next. Bonaventure's 11 May read was that the work is happening faster than he expected — calibration question: compress the queue further, or hold pace?</td>
           <td class="decision-ask">A read on cadence from the CEO.</td>
         </tr>
         <tr>
           <td class="decision-topic">How forcefully do we land the Notion sunset?</td>
-          <td class="decision-context">End-of-May target is locked from the AI Office side. Departments still using Notion as a system of record after that date need to move. This is a coordination ask — the AI Office can run the migration, but the move-or-lose signal needs to come from leadership.</td>
-          <td class="decision-ask">Confirmation of the cutover, and who relays it to department heads.</td>
+          <td class="decision-context">End-of-May target is locked from the AI Office side. Departments still using Notion as a system of record after that date need to move. The AI Office can run the migration, but the move-or-lose signal needs to come from leadership.</td>
+          <td class="decision-ask">Confirmation, and who relays it to department heads.</td>
         </tr>
         <tr>
           <td class="decision-topic">When does the "personal vault" feature come back?</td>
-          <td class="decision-context">The original vision included a personal vault for every employee that feeds into their department's vault. We've parked that for now — it works for one vault, breaks down at two — and team-level vaults are progressing in the meantime. We want a timing call: revisit next month, next quarter, or treat as a longer-term roadmap item?</td>
+          <td class="decision-context">The original vision included a personal vault for every employee that feeds into their department's vault. We've parked that — it works for one vault, breaks down at two — and team-level vaults are progressing in the meantime. We want a timing call: revisit next month, next quarter, or treat as a longer-term roadmap item?</td>
           <td class="decision-ask">A timing call.</td>
         </tr>
       </tbody>
@@ -621,7 +646,7 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
     <h1 class="slide-title" style="color: #FFFFFF;">Where the programme stands.</h1>
 
     <p class="closing-quote">
-      "What we built in the AI Office last week was the substrate the rest of Janus plugs into. From here, every department joins on solid ground, and the system gets smarter every day with no curator in the loop."
+      "What we built in the AI Office last week was the substrate the rest of Janus plugs into. Marketing is live on it, Project Management goes live this week, and ISO compliance is increasingly carried as a side effect of how the system works. From here, the programme compounds."
     </p>
     <p class="closing-quote-attrib">Programme view · 18 May 2026</p>
 
@@ -640,6 +665,11 @@ table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px;
         <div class="state-label">In the queue</div>
         <div class="state-value">6</div>
         <div class="state-detail">HR · Finance · ISO · Office of CEO · Engineering · Training</div>
+      </div>
+      <div class="state-block">
+        <div class="state-label">ISO programme</div>
+        <div class="state-value">On track</div>
+        <div class="state-detail">Enrolment skill approved · Audit trail integrating</div>
       </div>
     </div>
   </div>
