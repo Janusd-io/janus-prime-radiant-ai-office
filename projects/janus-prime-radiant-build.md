@@ -3,12 +3,12 @@ type: project
 title: Janus Prime Radiant Build
 slug: janus-prime-radiant-build
 created: 2026-05-05
-updated: 2026-05-14
+updated: 2026-05-18
 departments: [ai-office]
 status: active
 owner: michael-bruck
-sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build]
-related: [llm-wiki, michael-bruck, jehad-altoutou, obsidian, linear, notion, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag, 2026-05-05-notion-degrades-as-ai-searchable-kb, peer-to-peer-mesh-federation-pattern, 2026-05-11-bonaventure-prime-radiant-shoutout, 2026-05-11-notion-restricted-to-aio-no-broad-rollout, 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain, ai-native-janus-positioning, 2026-05-12-html-as-presentation-format-adopted, project-management-digital-delivery-workflow, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, euclid-wong]
+sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build, 2026-05-18-ai-native-ceo]
+related: [llm-wiki, michael-bruck, jehad-altoutou, obsidian, linear, notion, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag, 2026-05-05-notion-degrades-as-ai-searchable-kb, peer-to-peer-mesh-federation-pattern, 2026-05-11-bonaventure-prime-radiant-shoutout, 2026-05-11-notion-restricted-to-aio-no-broad-rollout, 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain, ai-native-janus-positioning, 2026-05-12-html-as-presentation-format-adopted, project-management-digital-delivery-workflow, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, euclid-wong, joyce-woo, bonaventure-wong, 2026-05-18-ceo-global-kb-unified-market-ui]
 ---
 
 # Janus Prime Radiant Build
@@ -74,6 +74,23 @@ This project was authorised on 2026-05-05 ([[aio-2026-05-05]]). The originating 
 - **Standup skill v3.15 in production (2026-05-13).** Step 5G now writes to the Drive vault inbox via MCP connector (not filesystem path). Today's standup file is the first v3.15 Step 5G output — feedback loop closed (skill output lands as wiki ingest input).
 - **Notion deprecation target confirmed: end of May 2026 (2026-05-13).** Dual-write to vault inbox via Step 5G is the transition path. Hard date; subsequent decisions should plan around Notion being offline as a Janus surface from June.
 - **PM Prime Radiant initialisation plan locked (2026-05-14).** [[project-management-digital-delivery-workflow|The full 28-phase PM digital delivery workflow]] is now captured as a process page, derived from Lysander Liu's ~60-minute walkthrough on 14 May. This is the **canonical content the PM instance is initialised against** — once PM enrolls (post-tooling-install), the workflow gives the instance a running start: schema, entity vocabulary, AI-bounded role, decision-trail discipline. The session also surfaced two structural insights captured as lessons: [[2026-05-14-ai-bounded-role-in-project-management|AI's bounded role (~30–60%, first-draft only)]] and [[2026-05-14-project-management-document-management-gap|document-management as an acknowledged ISO gap]]. Lysander and Spike Zhao pending entity-page creation via [[ingest-2026-05-14-lysander-liu-and-spike-zhao]]. [[euclid-wong|Euclid]] confirmed as PM Lead in addition to IT-Ops Head — wears both hats, simplifies federation.
+
+## Status (as of 2026-05-18)
+
+**CEO-level validation received.** On 18 May 2026, Jehad demo'd the Prime Radiant system to Bonaventure Wong and Joyce Woo ([[2026-05-18-ai-native-ceo]]). The demo included: entity nodes auto-sourced from Joyce's white paper, Obsidian graph view, and an HTML deck generated from the system with interim Janus brand CSS. Both received it positively. GitHub sync confirmed as the canonical vault backend at CEO level — Google Shared Drive ruled out definitively (streaming service incompatible with Claude Code's local-file requirement).
+
+This demo prompted Bonaventure to articulate the long-arc architectural intent, now captured as a formal decision ([[2026-05-18-ceo-global-kb-unified-market-ui]]):
+
+- **One unified global knowledge base** — market-specific UI layer on top; open access across departments.
+- **Singapore two-layer model** — SG team has read access to the full global KB; local Singapore vault feeds back upward into the global KB.
+- **Known constraint (deferred)** — Obsidian's single-repo limitation blocks full cross-department connectivity at scale. Federation redesign needed before this is fully operationalisable (see [[peer-to-peer-mesh-federation-pattern]]).
+
+**Implications for program scope:**
+- The [[janus-prime-radiant-build]] program is now explicitly scoped toward a company-wide unified KB, not just per-department instances. The CEO direction elevates the program's end-state from "department instances" to "company-level digital knowledge twin."
+- The Singapore market rollout ([[joyce-woo|Joyce Woo]]) is the first practical test of the two-layer model. A separate Prime Radiant demo session for Joyce is queued (Monday 2917860605).
+- Cross-department connectivity design and the UI layer become first-class engineering requirements alongside the federation redesign work.
+- Andrew Prime Radiant initialisation (bulk Fireflies + Markdown doc import as primary seed) is near-term.
+- **CLAUDE.md:** v0.11 (2026-05-14). Standup skill: v3.17.
 
 ## Nomenclature anchors (immutable by schema)
 

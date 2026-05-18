@@ -3,12 +3,12 @@ type: person
 title: Joyce Woo
 slug: joyce-woo
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-18
 departments: [office-of-ceo]
 countries: [sg]
 confidence: high
-sources: [2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-12-bonaventure-ai-native-call]
-related: [bonaventure-wong, andrew-soane, michael-bruck, marketing-prime-radiant, singapore-news-monitoring, vivian-balakrishnan, 2026-05-12-singapore-as-lead-market, ai-native-janus-positioning, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo]
+sources: [2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-12-bonaventure-ai-native-call, 2026-05-18-ai-native-ceo]
+related: [bonaventure-wong, andrew-soane, michael-bruck, marketing-prime-radiant, singapore-news-monitoring, vivian-balakrishnan, 2026-05-12-singapore-as-lead-market, ai-native-janus-positioning, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-05-15-singapore-marketing-launch-plan-v1, ingest-2026-05-15-joyce-woo, janus-prime-radiant-build, 2026-05-18-ceo-global-kb-unified-market-ui]
 ---
 
 # Joyce Woo
@@ -40,6 +40,10 @@ Career timeline:
 - **2026** — **CEO, Janus Digital Singapore Pte. Ltd.**
 
 Education: **Bachelor of Business Administration, National University of Singapore**.
+
+## Prime Radiant rollout (update — 2026-05-18)
+
+The 18 May 2026 AI Native CEO meeting ([[2026-05-18-ai-native-ceo]]) included a live Prime Radiant demo to both Bonaventure and Joyce. Entity nodes auto-sourced from Joyce's white paper were shown in the Obsidian graph view alongside an HTML deck generated from the system. **Both received it positively.** Joyce is now queued for Prime Radiant rollout — a separate dedicated demo session is to be scheduled. She is the first practical test of the Singapore two-layer model: read-access to the global KB + Singapore-specific local vault feeding back upward (per [[2026-05-18-ceo-global-kb-unified-market-ui]]). Monday sub-item 2917860605 tracks the scheduling of that demo.
 
 ## Active engagements
 
