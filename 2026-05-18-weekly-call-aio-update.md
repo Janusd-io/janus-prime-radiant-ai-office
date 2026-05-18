@@ -38,7 +38,7 @@ This was a heavy week. The headline framing: Janus's AI Native commercial pitch 
 **AIO Marketing & operations**
 
 - AIO × Marketing mesh-federation pairing stood up 11 May as the first practical test of the peer-to-peer mesh-federation concept.
-- Standup skill v3.15 in production (13 May) — Step 5G writes directly to the vault inbox via Drive MCP connector.
+- Standup skill v3.15 in production (13 May) — Step 5G writes standup logs directly to the Prime Radiant inbox, closing the dual-write loop ahead of the Notion deprecation. (Substrate-migration follow-up: v3.15 was built against the Drive MCP connector; the new Git substrate path needs a v3.16 update.)
 - **Notion deprecation target confirmed: end of May 2026.** Dual-write to vault inbox is the transition path; subsequent decisions plan around Notion being offline as a Janus surface from June.
 - **NotebookLM retired** for org chart / presentation outputs in favour of HTML — CEO-endorsed convention now.
 - Brand guideline derived from Andrew's PPTX (v0.1, 15 May) → upgraded to v1.0 the same day on the official brand book (orange `#FCB745`, navy `#013A7D`, light blue `#028CDC`, Montserrat). SG strategy alignment deck retrofitted.
@@ -71,6 +71,7 @@ This was a heavy week. The headline framing: Janus's AI Native commercial pitch 
 **AIO infrastructure & ops**
 
 - Jehad's first Git substrate round-trip — validates the runbook before we extract `processes/prime-radiant-member-setup.md` as the per-contributor reference.
+- **Standup skill v3.16** — port v3.15's Step 5G write path off the Drive MCP connector onto the Git substrate so the standup pipeline keeps closing the loop after the AIO vault migration.
 - Drive webhooks API investigation (Monday 2912592197) — right-sized replacement for cron-based ingest after Kafka rejected as overkill (<100 events/day).
 - Schema linter scoping — schema drift surfaced as a real risk against Euclid's 5,000-document personal-vault validation; needed as a first-class requirement (Monday 2912631119).
 - ISO 27001 evidence-chain cross-linking spec under the `entities/departments/iso/` federation pattern (Monday 2912592188).

@@ -12,7 +12,7 @@
 
 **PM Prime Radiant fully scoped.** Lysander walkthrough → 28-phase workflow captured as process page. Two structural lessons filed (AI bounded role, document-mgmt gap). Four entity pages (Lysander, Rosa Wu, Spike, Dhyey). Standup-proposal deck through 3 rounds — ready to share with Euclid / Rosa Wu / Lysander / Spike. **Windows-first deployment** for the first time.
 
-**AIO ops:** mesh federation pairing AIO×Marketing stood up (first practical test). Standup skill v3.15 in production (writes direct to vault inbox). **Notion deprecation end-May confirmed.** NotebookLM retired in favour of HTML decks. Brand guideline v1.0 from the official brand book. **11 tools moved through AIR**, mostly Marketing tooling for the SG campaign.
+**AIO ops:** mesh federation pairing AIO×Marketing stood up (first practical test). Standup skill v3.15 in production — writes direct to the Prime Radiant inbox (v3.16 needs to port off the Drive MCP connector now that we're on Git). **Notion deprecation end-May confirmed.** NotebookLM retired in favour of HTML decks. Brand guideline v1.0 from the official brand book. **11 tools moved through AIR**, mostly Marketing tooling for the SG campaign.
 
 **Stakeholder signal:** BW's 11 May Prime Radiant shout-out ("happening quicker than I thought").
 
