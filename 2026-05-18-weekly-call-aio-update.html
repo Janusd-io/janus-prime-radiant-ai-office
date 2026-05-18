@@ -48,18 +48,16 @@ body {
   background: var(--brand-navy);
   color: var(--brand-bg);
 }
-.slide.dark .footer-line { color: rgba(255,255,255,0.6); }
 .header-band {
   height: 8px;
   background: var(--brand-orange);
   flex-shrink: 0;
 }
-.slide.dark .header-band { background: var(--brand-orange); }
 .slide-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 28px 44px 0 44px;
+  padding: 32px 52px 0 52px;
   flex-shrink: 0;
 }
 .slide-eyebrow {
@@ -76,14 +74,14 @@ body {
 }
 .logo-block svg { width: 100%; height: 100%; display: block; }
 .slide-body {
-  padding: 18px 44px 44px 44px;
+  padding: 22px 52px 52px 52px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 h1.slide-title {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 36px;
   letter-spacing: -0.015em;
   line-height: 1.15;
   margin-top: 6px;
@@ -100,16 +98,17 @@ h1.deck-title {
 }
 .slide.dark h1.deck-title { color: var(--brand-bg); }
 .slide-subtitle {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 17px;
   color: var(--ink-soft);
-  margin-top: 10px;
-  line-height: 1.4;
+  margin-top: 14px;
+  line-height: 1.5;
+  max-width: 800px;
 }
 .slide.dark .slide-subtitle { color: rgba(255,255,255,0.85); }
 .footer-line {
   border-top: 1px solid var(--hair);
-  padding: 14px 44px;
+  padding: 14px 52px;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
@@ -117,18 +116,21 @@ h1.deck-title {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.slide.dark .footer-line { border-color: rgba(255,255,255,0.18); }
+.slide.dark .footer-line {
+  border-color: rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.55);
+}
 
 /* TITLE SLIDE */
 .title-meta {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px 40px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 36px;
+  margin-top: 56px;
   padding-top: 30px;
   border-top: 1px solid rgba(255,255,255,0.2);
 }
-.title-meta-row { display: flex; flex-direction: column; gap: 4px; }
+.title-meta-row { display: flex; flex-direction: column; gap: 5px; }
 .title-meta-label {
   font-weight: 700;
   font-size: 10px;
@@ -141,221 +143,221 @@ h1.deck-title {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 36px;
+  margin-top: 40px;
 }
 .agenda-block {
   background: rgba(255,255,255,0.06);
   border-left: 3px solid var(--brand-orange);
-  padding: 18px 20px;
+  padding: 20px 22px;
 }
 .agenda-block-num {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 28px;
   color: var(--brand-orange);
   line-height: 1;
 }
 .agenda-block-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--brand-bg);
-  margin-top: 8px;
+  margin-top: 10px;
   letter-spacing: -0.005em;
 }
 .agenda-block-desc {
   font-weight: 400;
   font-size: 13px;
   color: rgba(255,255,255,0.7);
-  margin-top: 6px;
-  line-height: 1.45;
-}
-
-/* CONTENT BLOCKS */
-.content-grid {
-  display: grid;
-  gap: 16px;
-  margin-top: 22px;
-}
-.cols-2 { grid-template-columns: 1fr 1fr; }
-.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-.card {
-  background: var(--surface);
-  border-left: 3px solid var(--brand-orange);
-  padding: 16px 18px;
-}
-.card.navy { border-left-color: var(--brand-navy); }
-.card.blue { border-left-color: var(--brand-blue); }
-.card-eyebrow {
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--brand-navy);
-}
-.card.blue .card-eyebrow { color: var(--brand-blue); }
-.card-title {
-  font-weight: 600;
-  font-size: 15px;
-  color: var(--brand-ink);
-  margin-top: 6px;
-  line-height: 1.3;
-}
-.card-body {
-  font-weight: 400;
-  font-size: 12.5px;
-  color: var(--brand-ink);
-  margin-top: 8px;
-  line-height: 1.55;
-}
-.card-body ul { margin: 0; padding-left: 18px; }
-.card-body li { margin-bottom: 4px; }
-.card-body strong { font-weight: 600; }
-.card-body em { font-style: italic; color: var(--ink-soft); }
-
-.lede {
-  font-weight: 500;
-  font-size: 15px;
-  color: var(--brand-ink);
-  line-height: 1.55;
-  margin-top: 18px;
-  padding: 16px 20px;
-  background: var(--surface);
-  border-left: 3px solid var(--brand-orange);
-}
-
-table.discussion {
-  width: 100%;
-  margin-top: 18px;
-  border-collapse: collapse;
-  font-size: 12px;
-}
-table.discussion th, table.discussion td {
-  text-align: left;
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--hair);
-  vertical-align: top;
-}
-table.discussion th {
-  font-weight: 700;
-  font-size: 9.5px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--brand-navy);
-  background: var(--surface);
-  border-bottom: 2px solid var(--brand-orange);
-}
-table.discussion td.topic { font-weight: 600; color: var(--brand-navy); width: 22%; }
-table.discussion td.context { width: 56%; line-height: 1.5; }
-table.discussion td.ask { width: 22%; }
-.pill {
-  display: inline-block;
-  padding: 3px 8px;
-  border-radius: 11px;
-  font-weight: 700;
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.pill.urgent { background: var(--brand-orange); color: var(--brand-ink); }
-.pill.this-week { background: var(--brand-navy); color: var(--brand-bg); }
-.pill.flag { background: var(--brand-blue); color: var(--brand-bg); }
-
-.section-label {
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--brand-orange);
-  margin-bottom: 6px;
-}
-
-.todo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 22px;
-}
-.todo-col-head {
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--brand-navy);
-  border-bottom: 2px solid var(--brand-orange);
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-}
-.todo-list { list-style: none; padding: 0; }
-.todo-list li {
-  padding: 8px 0;
-  font-size: 12.5px;
-  line-height: 1.55;
-  border-bottom: 1px solid var(--hair);
-}
-.todo-list li:last-child { border-bottom: none; }
-.todo-list strong { font-weight: 600; color: var(--brand-navy); }
-.todo-list em { font-style: italic; color: var(--ink-soft); font-size: 11.5px; }
-
-.signals {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 14px;
-  margin-top: 14px;
-}
-.signal {
-  border: 1px solid var(--hair);
-  padding: 12px 14px;
-  background: var(--brand-bg);
-}
-.signal-title {
-  font-weight: 600;
-  font-size: 13px;
-  color: var(--brand-navy);
-  letter-spacing: -0.005em;
-}
-.signal-body {
-  font-weight: 400;
-  font-size: 11px;
-  color: var(--brand-ink);
-  margin-top: 6px;
+  margin-top: 7px;
   line-height: 1.5;
 }
 
-.reference-grid {
+/* THREE IMPLICATIONS - LAST WEEK */
+.implication-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px 28px;
-  margin-top: 22px;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--hair);
 }
-.reference-col h3 {
+.implication-row:last-child { border-bottom: none; }
+.implication-num {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1;
+  color: var(--brand-orange);
+  letter-spacing: -0.04em;
+}
+.implication-content { padding-top: 6px; }
+.implication-headline {
+  font-weight: 600;
+  font-size: 21px;
+  color: var(--brand-navy);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+.implication-body {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--brand-ink);
+  margin-top: 8px;
+  line-height: 1.6;
+  max-width: 760px;
+}
+.implication-meaning {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--brand-navy);
+  margin-top: 10px;
+  letter-spacing: 0.005em;
+  padding-left: 14px;
+  border-left: 3px solid var(--brand-orange);
+}
+.implication-meaning .meaning-label {
   font-weight: 700;
   font-size: 10px;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--brand-orange);
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 4px;
 }
-.reference-col ul { list-style: none; padding: 0; }
-.reference-col li {
-  font-size: 11.5px;
-  padding: 5px 0;
-  color: rgba(255,255,255,0.85);
+
+.signal-strip {
+  margin-top: 24px;
+  padding: 18px 22px;
+  background: var(--surface);
+  border-left: 3px solid var(--brand-blue);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.signal-strip .signal-label {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* THIS WEEK */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 26px;
+}
+.outcome {
+  padding: 22px 24px;
+  background: var(--surface);
+  border-left: 3px solid var(--brand-navy);
+}
+.outcome.primary { border-left-color: var(--brand-orange); background: #FFF7E5; }
+.outcome-eyebrow {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-navy);
+}
+.outcome.primary .outcome-eyebrow { color: var(--brand-orange); }
+.outcome-headline {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--brand-navy);
+  margin-top: 7px;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+}
+.outcome-body {
   font-weight: 400;
+  font-size: 13.5px;
+  color: var(--brand-ink);
+  margin-top: 9px;
+  line-height: 1.55;
 }
-.reference-col code {
-  font-family: 'SF Mono', Menlo, Consolas, monospace;
-  font-size: 10.5px;
-  background: rgba(255,255,255,0.08);
-  padding: 1px 5px;
-  border-radius: 3px;
+
+/* DECISIONS */
+table.decisions {
+  width: 100%;
+  margin-top: 22px;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+table.decisions th, table.decisions td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+}
+table.decisions th {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-navy);
+  background: var(--surface);
+  border-bottom: 2px solid var(--brand-orange);
+}
+table.decisions td.decision-topic {
+  font-weight: 600;
+  color: var(--brand-navy);
+  width: 28%;
+  font-size: 14.5px;
+  line-height: 1.3;
+}
+table.decisions td.decision-context { width: 50%; line-height: 1.55; }
+table.decisions td.decision-ask { width: 22%; line-height: 1.5; font-size: 13px; color: var(--ink-soft); }
+
+/* CLOSING */
+.closing-quote {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.35;
+  color: var(--brand-bg);
+  letter-spacing: -0.015em;
+  margin-top: 50px;
+  max-width: 780px;
+}
+.closing-quote-attrib {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--brand-orange);
+  margin-top: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.programme-state {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 28px;
+}
+.state-block { }
+.state-label {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--brand-orange);
 }
-.closing-note {
-  margin-top: 30px;
-  font-size: 11px;
-  color: rgba(255,255,255,0.55);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
+.state-value {
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--brand-bg);
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+  line-height: 1.1;
+}
+.state-detail {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 6px;
+  line-height: 1.4;
 }
 
 @media print {
@@ -401,8 +403,8 @@ table.discussion td.ask { width: 22%; }
     </div>
   </div>
   <div class="slide-body">
-    <h1 class="deck-title">What the AI Office<br/>shipped this week.</h1>
-    <p class="slide-subtitle">Status update for the 18 May weekly call.<br/>Per Bonaventure's three-block format. Focus is Michael + Jehad scope only.</p>
+    <h1 class="deck-title">The internal AI fabric<br/>is starting to spread.</h1>
+    <p class="slide-subtitle">Status update for the 18 May weekly call. Three things landed last week that change what we can do next.</p>
 
     <div class="title-meta">
       <div class="title-meta-row">
@@ -410,34 +412,30 @@ table.discussion td.ask { width: 22%; }
         <div class="title-meta-value">Monday, 18 May 2026</div>
       </div>
       <div class="title-meta-row">
-        <div class="title-meta-label">Reporting</div>
-        <div class="title-meta-value">Michael Bruck · Jehad Altoutou</div>
+        <div class="title-meta-label">From</div>
+        <div class="title-meta-value">AI Office (Michael, Jehad)</div>
       </div>
       <div class="title-meta-row">
-        <div class="title-meta-label">Window covered</div>
+        <div class="title-meta-label">Window</div>
         <div class="title-meta-value">11 May → 17 May 2026</div>
-      </div>
-      <div class="title-meta-row">
-        <div class="title-meta-label">Format</div>
-        <div class="title-meta-value">Done · To-do · Open discussion</div>
       </div>
     </div>
 
     <div class="agenda-strip">
       <div class="agenda-block">
         <div class="agenda-block-num">01</div>
-        <div class="agenda-block-title">Last week — completed</div>
-        <div class="agenda-block-desc">Substrate migration. PM rollout scoped. Skill v3.15 in production.</div>
+        <div class="agenda-block-title">Last week</div>
+        <div class="agenda-block-desc">Three implications worth sitting with.</div>
       </div>
       <div class="agenda-block">
         <div class="agenda-block-num">02</div>
-        <div class="agenda-block-title">This week — to-do</div>
-        <div class="agenda-block-desc">PM kickoff. Runbook validation. v3.16 port. Drive-webhooks design.</div>
+        <div class="agenda-block-title">This week</div>
+        <div class="agenda-block-desc">First non-AIO department goes live.</div>
       </div>
       <div class="agenda-block">
         <div class="agenda-block-num">03</div>
-        <div class="agenda-block-title">Open discussion</div>
-        <div class="agenda-block-desc">Internal branding · Personal vaults · Schema governance · Pacing.</div>
+        <div class="agenda-block-title">Discussion</div>
+        <div class="agenda-block-desc">Four decisions I'd like to land on the call.</div>
       </div>
     </div>
   </div>
@@ -447,241 +445,120 @@ table.discussion td.ask { width: 22%; }
   </div>
 </section>
 
-<!-- =============== SLIDE 2 — LAST WEEK OVERVIEW =============== -->
+<!-- =============== SLIDE 2 — LAST WEEK =============== -->
 <section class="slide">
   <div class="header-band"></div>
   <div class="slide-top">
-    <div class="slide-eyebrow">01 · Last week — completed</div>
+    <div class="slide-eyebrow">01 · Last week — what changed and why it matters</div>
     <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title">Three load-bearing things landed.</h1>
-    <p class="slide-subtitle">Heavy week. The headline: Prime Radiant moved off Google Drive onto GitHub in the same window we scoped the first cross-department instance and tied off the standup pipeline ahead of Notion's end-of-May deprecation.</p>
+    <h1 class="slide-title">Three implications, in plain terms.</h1>
+    <p class="slide-subtitle">A week of mechanical work that adds up to a different posture for the programme as a whole.</p>
 
-    <div class="content-grid cols-3">
-      <div class="card navy">
-        <div class="card-eyebrow">Track A</div>
-        <div class="card-title">Drive → GitHub substrate migration executed end-to-end</div>
-        <div class="card-body">AIO instance now on <strong>Janusd-io/janus-prime-radiant-ai-office</strong>, cloned to <code>~/janus/prime-radiant/ai-office/</code>. Cowork sees real files on real disk — no streaming-mount placeholder layer. Substrate brief + setup runbook (bash script included) shipped.</div>
+    <div style="margin-top: 22px;">
+
+      <div class="implication-row">
+        <div class="implication-num">01</div>
+        <div class="implication-content">
+          <div class="implication-headline">The foundation our internal AI work sits on is now solid enough for any department to plug in.</div>
+          <div class="implication-body">We moved the company's institutional-knowledge platform off Google Drive onto a more reliable, security-aware foundation. The earlier friction — the kind that slowed Andrew's onboarding — is resolved at the structural level. Every future department joins on the same clean, repeatable setup.</div>
+          <div class="implication-meaning">
+            <span class="meaning-label">What this means</span>
+            Rollout speed across Janus is no longer constrained by the tooling. It's constrained only by which department is ready next, and by how much time we spend with them.
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-eyebrow">Track B</div>
-        <div class="card-title">Project Management Prime Radiant fully scoped &amp; ready</div>
-        <div class="card-body">Lysander's full 28-phase delivery workflow captured. Two structural lessons filed. Four entity pages created. Kickoff deck went through three rounds; ready to share with Euclid / Rosa Wu / Lysander / Spike. <strong>First non-Mac deployment.</strong></div>
+
+      <div class="implication-row">
+        <div class="implication-num">02</div>
+        <div class="implication-content">
+          <div class="implication-headline">Janus has its first cross-department instance ready to launch.</div>
+          <div class="implication-body">Spent an hour with Lysander capturing exactly how Project Management's delivery discipline runs end-to-end. That captured workflow is what the Project Management instance gets initialised against this week — meaning the system arrives pre-loaded with their language, their decisions, their gates. It's the first real test that the pattern travels beyond the AI Office.</div>
+          <div class="implication-meaning">
+            <span class="meaning-label">What this means</span>
+            The AI Office is no longer the only department on the system. By end of May we expect three live instances. Other departments are queued.
+          </div>
+        </div>
       </div>
-      <div class="card blue">
-        <div class="card-eyebrow">Track C</div>
-        <div class="card-title">AIO infrastructure — skill, schema, federation, AIR</div>
-        <div class="card-body">Standup skill <strong>v3.15 in production</strong> (writes direct to Prime Radiant inbox). CLAUDE.md bumped <strong>v0.10 → v0.11</strong>. Mesh-federation first practical test stood up (AIO × Marketing). NotebookLM retired. <strong>11 tools moved through AIR.</strong></div>
+
+      <div class="implication-row">
+        <div class="implication-num">03</div>
+        <div class="implication-content">
+          <div class="implication-headline">Our daily knowledge now compounds without manual handoffs.</div>
+          <div class="implication-body">The AI Office's daily standup now deposits its outcomes straight into the institutional record, automatically. This closes the last big manual step before the Notion sunset at the end of this month. From here, AIO's institutional memory grows whether anyone curates it or not.</div>
+          <div class="implication-meaning">
+            <span class="meaning-label">What this means</span>
+            The system gets smarter every day with zero curator effort. The same mechanism is what every department instance inherits when it comes online.
+          </div>
+        </div>
       </div>
+
     </div>
 
-    <div class="lede">
-      <strong>Stakeholder signal worth noting up-front.</strong> Bonaventure's 11 May Prime Radiant shout-out — <em>"happening quicker than I thought"</em> — validates pacing and pre-empts political resistance as the rollout reaches non-AIO instances. Pulse entry filed for the record.
+    <div class="signal-strip">
+      <span class="signal-label">Stakeholder signal worth noting</span>
+      Bonaventure flagged on the 11 May standup that the Prime Radiant rollout is <em>"happening quicker than I thought."</em> Validates pacing and is a leading indicator that executive backing is forming as the rollout reaches non-AIO departments.
     </div>
   </div>
   <div class="footer-line">
-    <span>Slide 2 / 7 · AI Office weekly update</span>
+    <span>Slide 2 / 5 · AI Office weekly update</span>
     <span>11 May → 17 May 2026</span>
   </div>
 </section>
 
-<!-- =============== SLIDE 3 — TRACK A SUBSTRATE =============== -->
+<!-- =============== SLIDE 3 — THIS WEEK =============== -->
 <section class="slide">
   <div class="header-band"></div>
   <div class="slide-top">
-    <div class="slide-eyebrow">01 · Track A — substrate migration</div>
+    <div class="slide-eyebrow">02 · This week — focus</div>
     <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title">Prime Radiant lives on Git now.</h1>
-    <p class="slide-subtitle">Drive's streaming-mount placeholder layer was breaking Cowork's recursive mount walk and blocking new-contributor onboarding. We diagnosed it, decided, migrated, and shipped the runbook in a single week — Mon 11 May to Wed 13 May.</p>
+    <h1 class="slide-title">Get Project Management live, then strengthen what comes next.</h1>
+    <p class="slide-subtitle">One headline outcome and three supporting tracks. Most of the heavy structural work happened last week — this week is execution and follow-through.</p>
 
-    <div class="content-grid cols-2">
-      <div class="card navy">
-        <div class="card-eyebrow">Migration sequence (13 May)</div>
-        <div class="card-body">
-          <ul>
-            <li>Repo <code>Janusd-io/janus-prime-radiant-ai-office</code> created (private). AI-Office team + Michael + Jehad as collaborators.</li>
-            <li>Vault materialised from Drive, moved via Finder to <code>~/janus/prime-radiant/ai-office/</code>.</li>
-            <li><code>.gitignore</code> + <code>git init --initial-branch=main</code> + initial commit + push.</li>
-            <li>Obsidian Git plugin configured: auto-pull on startup, 5-min auto-commit-and-sync, pull-before-push.</li>
-            <li>Cowork project repointed at the new local path; mount verified clean.</li>
-          </ul>
-        </div>
+    <div class="outcomes-grid">
+
+      <div class="outcome primary" style="grid-column: span 2;">
+        <div class="outcome-eyebrow">Headline outcome</div>
+        <div class="outcome-headline">Project Management Prime Radiant kicks off — first non-AI-Office department live.</div>
+        <div class="outcome-body">Working session with Euclid, Rosa Wu, Lysander, and Spike to walk them through the system and stand up their team's instance. This is also Janus's first Windows deployment of the pattern — friction we encounter becomes documented input for every department that follows.</div>
       </div>
-      <div class="card">
-        <div class="card-eyebrow">What this buys us</div>
-        <div class="card-body">
-          <ul>
-            <li><strong>Reads see real files.</strong> No first-walk warmup quirk; what Obsidian sees is what Claude sees.</li>
-            <li><strong>Identity decoupled.</strong> GitHub Teams replaces cross-Workspace Drive identity — fixes Andrew's onboarding failure mode at the substrate layer.</li>
-            <li><strong>Federation aligns with the substrate.</strong> Sibling clones in <code>~/janus/prime-radiant/</code> map one-to-one to the mesh-federation design intent.</li>
-            <li><strong>Git history is the audit trail.</strong> Complements the append-only <code>log.md</code>.</li>
-          </ul>
-        </div>
+
+      <div class="outcome">
+        <div class="outcome-eyebrow">Track 1</div>
+        <div class="outcome-headline">Make new-department onboarding repeatable.</div>
+        <div class="outcome-body">First end-to-end validation by Jehad of the setup runbook we built last week. Once validated, future department onboardings drop from days to under an hour of setup time.</div>
       </div>
-      <div class="card blue">
-        <div class="card-eyebrow">Two GitHub orgs locked in</div>
-        <div class="card-body"><code>Janusd-io</code> for AIO + the template repo. <code>Janusd-com</code> for every other department instance (PM, IT, Marketing, ISO, HR, Finance, Office-of-CEO, Engineering, Training). Keeps AIO experimentation isolated from company-operational vaults while reusing the same Prime Radiant template + tooling.</div>
+
+      <div class="outcome">
+        <div class="outcome-eyebrow">Track 2</div>
+        <div class="outcome-headline">Continue AI tool evaluations in support of upcoming work.</div>
+        <div class="outcome-body">Eleven new tools were added to the AI Registry pipeline last week, most of them downstream of marketing/campaign needs. Working through evaluations so approvals don't become a bottleneck.</div>
       </div>
-      <div class="card blue">
-        <div class="card-eyebrow">Curator runbook extracted</div>
-        <div class="card-body">New <code>processes/prime-radiant-instance-setup.md</code> with embedded bash script automates steps 1, 3, 4, 5, 6 of the migration sequence. GUI-only steps (collaborators, branch protection, Obsidian, Cowork) walked through in prose. Expected scaffold time: ~2h unscripted → <strong>≤10 min scripted.</strong></div>
+
+      <div class="outcome">
+        <div class="outcome-eyebrow">Track 3</div>
+        <div class="outcome-headline">Coordinate the Notion sunset with department heads.</div>
+        <div class="outcome-body">End-of-May target is locked. The AI Office can run the technical migration; departments still using Notion as a system of record need a signal from leadership to actually move.</div>
       </div>
+
+      <div class="outcome">
+        <div class="outcome-eyebrow">Track 4</div>
+        <div class="outcome-headline">Continue ISO programme integration.</div>
+        <div class="outcome-body">Jehad continues the ISO enrolment skill build with Simon — process-owner mapping and compliance-trail work. Approved-to-continue from Bonaventure's 12 May check-in.</div>
+      </div>
+
     </div>
   </div>
   <div class="footer-line">
-    <span>Slide 3 / 7 · AI Office weekly update</span>
-    <span>Substrate brief: briefs/prime-radiant-storage-substrate.md</span>
-  </div>
-</section>
-
-<!-- =============== SLIDE 4 — TRACK B PM ROLLOUT =============== -->
-<section class="slide">
-  <div class="header-band"></div>
-  <div class="slide-top">
-    <div class="slide-eyebrow">01 · Track B — first cross-department instance</div>
-    <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
-  </div>
-  <div class="slide-body">
-    <h1 class="slide-title">Project Management Prime Radiant is ready to launch.</h1>
-    <p class="slide-subtitle">Lysander walked Michael through the full PM delivery workflow on 14 May. By end-of-day Friday we had a canonical process page, two structural lessons, four entity pages, and a 3-round-refined kickoff deck — ready to share.</p>
-
-    <div class="content-grid cols-2">
-      <div class="card navy">
-        <div class="card-eyebrow">Captured</div>
-        <div class="card-title">28-phase digital-delivery workflow as a canonical process page</div>
-        <div class="card-body">Lysander's ~60-min walkthrough captured verbatim into <code>processes/project-management-digital-delivery-workflow.md</code>. This is the content the PM instance gets initialised against — schema, entity vocabulary, decision-trail discipline all anchored to a real, established workflow rather than a generic template.</div>
-      </div>
-      <div class="card">
-        <div class="card-eyebrow">Two structural lessons surfaced</div>
-        <div class="card-body">
-          <ul>
-            <li><strong>AI bounded role in PM</strong> — ~30–60% scope, first-draft only, human verification gates remain non-negotiable. Sets expectations for what Prime Radiant displaces vs augments.</li>
-            <li><strong>Document-management gap</strong> — current PM substrate is Lysander's Excel master + a Google Docs network + Monday. Prime Radiant <em>coexists</em>; it does not displace.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-eyebrow">Four entity pages created</div>
-        <div class="card-body"><strong>Lysander Liu</strong> (Head of PM, workflow author) · <strong>Rosa Wu</strong> (Co-head of PM with Euclid at the strategic altitude) · <strong>Spike Zhao</strong> (Digital modeling engineer, Phases 16–18) · <strong>Dhyey Mehta</strong> (recent IT joiner, stub pending Euclid confirmation).</div>
-      </div>
-      <div class="card blue">
-        <div class="card-eyebrow">Kickoff deck — three rounds, ready to share</div>
-        <div class="card-body">5 → 4-slide standup-proposal deck refined across three iterations on 14 May. Personal-vault step removed (deferred). Template named explicitly. Claude-via-Cowork-<em>or</em>-Code framing (Windows reality). Coexistence callout to address "but what about my existing tools" pre-emptively. Ready to send to Euclid / Rosa Wu / Lysander / Spike.</div>
-      </div>
-    </div>
-
-    <div class="lede">
-      <strong>Two structural calls locked in this week.</strong>
-      <em>Personal vaults shelved</em> pending federation-architecture redesign on Git (two vaults can't sync against GitHub cleanly from the same machine yet — solvable, but separate engineering effort from this rollout).
-      <em>Windows-first deployment</em> framing — PM rollout doubles as Janus's first non-Mac Prime Radiant. Tooling-install budget revised ~60 → ~60–90 min. Friction becomes documented input for downstream rollouts.
-    </div>
-  </div>
-  <div class="footer-line">
-    <span>Slide 4 / 7 · AI Office weekly update</span>
-    <span>Deck: 2026-05-14-project-management-prime-radiant-standup-proposal.html</span>
-  </div>
-</section>
-
-<!-- =============== SLIDE 5 — TRACK C INFRASTRUCTURE =============== -->
-<section class="slide">
-  <div class="header-band"></div>
-  <div class="slide-top">
-    <div class="slide-eyebrow">01 · Track C — AIO infrastructure</div>
-    <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
-  </div>
-  <div class="slide-body">
-    <h1 class="slide-title">Skill, schema, federation, registry — all moved forward.</h1>
-    <p class="slide-subtitle">Beneath the headline tracks, the AIO instance kept honing. Several pieces matter to other functions even though they're AIO-internal in scope.</p>
-
-    <div class="content-grid cols-2">
-      <div class="card">
-        <div class="card-eyebrow">Standup skill — Jehad</div>
-        <div class="card-title">v3.15 in production · Notion deprecation runway closing</div>
-        <div class="card-body">Step 5G now writes standup logs directly to the Prime Radiant inbox, closing the dual-write loop ahead of the <strong>confirmed end-of-May 2026 Notion deprecation</strong>. Today's standup file was the first v3.15 production output. <em>Substrate-migration follow-up:</em> v3.15 was built against the Drive MCP connector; v3.16 needs to port the write path onto the Git substrate now that AIO has migrated.</div>
-      </div>
-      <div class="card">
-        <div class="card-eyebrow">Wiki schema — Michael</div>
-        <div class="card-title">CLAUDE.md v0.10 + v0.11 — multi-graph + Git-substrate</div>
-        <div class="card-body"><strong>v0.10 (13 May):</strong> formalises the wiki's frontmatter as a four-graph encoding (entity / semantic / temporal / causal edges) — matches the agent-memory community vocabulary that converged in mid-May 2026 (Mnemon four-graph store; MAGMA multi-graph validation). Added <code>decided_by</code> + <code>captured_by</code> fields. <strong>v0.11 (14 May):</strong> Git-substrate documentation + git-awareness framing across all workflows.</div>
-      </div>
-      <div class="card navy">
-        <div class="card-eyebrow">Mesh federation — Michael</div>
-        <div class="card-title">First practical test executed 11 May</div>
-        <div class="card-body">Mesh-federation concept page was anticipated in the 11 May standup. Same afternoon, the AIO × Marketing pairing was stood up as the first practical test — shared <code>entities/departments/&lt;other&gt;/</code> subfolders in both vaults, with README + rolling pairing-notes brief. Federation pattern is no longer theoretical.</div>
-      </div>
-      <div class="card blue">
-        <div class="card-eyebrow">AI Registry — Jehad</div>
-        <div class="card-title">11 tools moved through AIR · Hostinger advanced in Sandbox</div>
-        <div class="card-body">Microsoft Clarity · Resend · Mailchimp · LinkedIn Marketing Solutions · Canva · FactSet · Solace · Whisper Flow · Google Stitch · Hercules — added to Backlog. <strong>Hostinger</strong> advanced in Sandbox. Marketing-tooling tilt is downstream of the campaign-plan needs; AIP had zero activity in the window (status surface reconciled from Monday — no recon needed).</div>
-      </div>
-      <div class="card">
-        <div class="card-eyebrow">Schema governance · ISO 27001 — open requirements</div>
-        <div class="card-body">Euclid's 5,000-document personal vault (mentioned in the 13 May AIO-IT meeting) validates Prime Radiant at scale but surfaces schema drift as a real risk. <strong>Schema linter</strong> and <strong>ISO 27001 evidence-chain cross-linking</strong> now sit as first-class requirements for both repos. Folds into the <code>entities/departments/iso/</code> federation pattern.</div>
-      </div>
-      <div class="card">
-        <div class="card-eyebrow">Vault-event ingest direction set</div>
-        <div class="card-body"><strong>Kafka rejected</strong> as the event-broker for vault-event ingest (&lt;100 events/day; overkill). <strong>Drive webhooks API</strong> to be investigated as the right-sized replacement for the cron-based ingest. Adjacent research stream — <em>"Claude OS"</em> (Hostinger-hosted vault files exposed via purpose-built APIs/MCPs) — approved for exploration.</div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-line">
-    <span>Slide 5 / 7 · AI Office weekly update</span>
-    <span>All atomic decisions in <code>decisions/</code>; all lessons in <code>lessons/</code></span>
-  </div>
-</section>
-
-<!-- =============== SLIDE 6 — THIS WEEK TO-DO =============== -->
-<section class="slide">
-  <div class="header-band"></div>
-  <div class="slide-top">
-    <div class="slide-eyebrow">02 · This week — to-do (18–24 May)</div>
-    <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
-  </div>
-  <div class="slide-body">
-    <h1 class="slide-title">Ship the PM kickoff. Validate the runbook. Close the loops.</h1>
-    <p class="slide-subtitle">Two threads dominate this week: getting the first cross-department instance over the kickoff line, and resolving the substrate-migration aftershocks that the v3.15 → v3.16 port and the per-member runbook extraction depend on.</p>
-
-    <div class="todo-grid">
-      <div>
-        <div class="todo-col-head">Michael — primary load</div>
-        <ul class="todo-list">
-          <li><strong>Ship the PM kickoff deck</strong> to Euclid / Rosa Wu / Lysander / Spike; schedule the session.</li>
-          <li><strong>Scaffold <code>janus-prime-radiant-project-management</code></strong> on <code>Janusd-com</code> using the new setup runbook — first scripted execution of the scaffold script.</li>
-          <li><strong>PM tooling-install session</strong> (Windows-first; ~60–90 min). Document the friction.</li>
-          <li><strong>Drive-webhooks API investigation</strong> — replaces Kafka path for vault-event ingest.</li>
-          <li><strong>Schema linter scoping</strong> + ISO 27001 evidence-chain cross-linking spec. <em>First-class requirements per the 13 May AIO-IT meeting.</em></li>
-          <li><strong>Continue AIR triage</strong> on the 11 backlog tools added last week.</li>
-          <li><strong>Notion deprecation runway</strong> — every active surface needs dual-write or migration confirmed before end-May.</li>
-          <li><strong>Bonaventure audio-recovery item</strong> — open since 11 May (Fireflies quiet-voice channel gap).</li>
-        </ul>
-      </div>
-      <div>
-        <div class="todo-col-head">Jehad — primary load</div>
-        <ul class="todo-list">
-          <li><strong>First Git-substrate round-trip on the new clone.</strong> Validates the curator runbook end-to-end. Gates the per-member runbook extraction.</li>
-          <li><strong>Standup skill v3.16</strong> — port Step 5G off the Drive MCP connector onto the Git substrate so the standup pipeline keeps closing the loop after the AIO vault migration.</li>
-          <li><strong>Extract <code>processes/prime-radiant-member-setup.md</code></strong> once the Git round-trip validates Appendix A of the substrate brief.</li>
-          <li><strong>Continue AIR pipeline management</strong> — eight of the 11 newly-backlogged tools are Marketing-tooling and feed the upcoming Singapore evaluation work.</li>
-          <li><strong>Hostinger Sandbox</strong> — advance through evaluation.</li>
-          <li><strong>ISO programme — <code>/ims-enrolment</code> skill</strong> — continue post-12 May CEO check-in (approved-to-continue). Process-owner mapping with Simon.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="lede">
-      <strong>Cross-cutting:</strong> the v3.16 port + per-member runbook extraction + first PM scaffold are sequential — each unblocks the next. Realistic landing target for all three is end of next week (29 May); aggressive target is end of this week (24 May) if the PM kickoff sequence lands cleanly.
-    </div>
-  </div>
-  <div class="footer-line">
-    <span>Slide 6 / 7 · AI Office weekly update</span>
+    <span>Slide 3 / 5 · AI Office weekly update</span>
     <span>This week: 18 May → 24 May 2026</span>
   </div>
 </section>
 
-<!-- =============== SLIDE 7 — OPEN DISCUSSION =============== -->
+<!-- =============== SLIDE 4 — OPEN DISCUSSION =============== -->
 <section class="slide">
   <div class="header-band"></div>
   <div class="slide-top">
@@ -689,114 +566,82 @@ table.discussion td.ask { width: 22%; }
     <div class="logo-block"><svg style="--fill-0: #000000;"><use href="#janus-logo"/></svg></div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title">Five decisions I'd like to land on the call.</h1>
-    <p class="slide-subtitle">Items where Michael or Jehad would benefit from Bonaventure's input or a coordinated decision before the work proceeds. Listed by urgency.</p>
+    <h1 class="slide-title">Four decisions I'd like us to land on the call.</h1>
+    <p class="slide-subtitle">Each of these is small in isolation but unlocks a meaningful next step.</p>
 
-    <table class="discussion">
+    <table class="decisions">
       <thead>
         <tr>
-          <th>Topic</th>
-          <th>Context</th>
-          <th>What I'd like</th>
+          <th style="width: 28%;">Topic</th>
+          <th style="width: 50%;">Context</th>
+          <th style="width: 22%;">What I'd like</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="topic">Internal branding for the wiki <span class="pill flag">FLAG</span></td>
-          <td class="context">Multiple sub-names in circulation: Prime Radiant, Nomi, brain, wiki, Pulse, PULS. The system name stays <em>Janus Prime Radiant</em>; what we call the user-facing surface for non-technical audiences is open. Andrew should be in this conversation. BW's 11 May read: <em>"Prime Radiant is very geeky."</em></td>
-          <td class="ask">A 20-min decision on the call — pick the user-facing name and propagate.</td>
+          <td class="decision-topic">What do we call this system, in plain language?</td>
+          <td class="decision-context">Inside the AI Office we call it <em>Janus Prime Radiant</em>. For non-technical audiences across the firm, that name needs softening — Bonaventure's read was "very geeky." The system name stays; the user-facing label is open. Andrew should be in this conversation too.</td>
+          <td class="decision-ask">A twenty-minute decision on the call.</td>
         </tr>
         <tr>
-          <td class="topic">Personal vaults — when do they come back? <span class="pill this-week">THIS WEEK</span></td>
-          <td class="context">Shelved last week pending federation redesign on Git substrate (two vaults can't sync against GitHub cleanly from the same machine yet — solvable, but separate engineering). Affects <code>/janus-pulse</code> scope and the company-wide intro deck (currently overstated relative to rollout reality).</td>
-          <td class="ask">A timing call — defer to Month 2+, accelerate, or treat as off the critical path indefinitely?</td>
+          <td class="decision-topic">Are we on the right pace, or should we accelerate?</td>
+          <td class="decision-context">Three departments live by end of May if Project Management lands cleanly. HR, Finance, ISO, and the Office of the CEO are next in the queue. Bonaventure's 11 May read was that the work is happening faster than he expected — we want to calibrate whether to compress the queue further or hold pace.</td>
+          <td class="decision-ask">A read on cadence from the CEO.</td>
         </tr>
         <tr>
-          <td class="topic">Schema governance — linter + ISO 27001 evidence-chain</td>
-          <td class="context">Euclid's 5,000-doc vault surfaced schema drift as a real scale risk. Schema linter + ISO 27001 evidence-chain cross-linking are now requested as first-class requirements (Monday 2912631119, 2912592188). This is real engineering, not maintenance — needs scoping confirmation.</td>
-          <td class="ask">Confirm priority level relative to the v3.16 port + Drive-webhooks work.</td>
+          <td class="decision-topic">How forcefully do we land the Notion sunset?</td>
+          <td class="decision-context">End-of-May target is locked from the AI Office side. Departments still using Notion as a system of record after that date need to move. This is a coordination ask — the AI Office can run the migration, but the move-or-lose signal needs to come from leadership.</td>
+          <td class="decision-ask">Confirmation of the cutover, and who relays it to department heads.</td>
         </tr>
         <tr>
-          <td class="topic">Pacing check</td>
-          <td class="context">BW on 11 May: <em>"happening quicker than I thought."</em> Want a calibration: is the current cadence right, too aggressive, or should AIO accelerate further given the broader Janus timeline? Three Prime Radiant instances live by end-May if PM kicks off cleanly (AIO, Marketing, PM).</td>
-          <td class="ask">A read on whether to compress the HR / Finance / ISO / Office-of-CEO queue.</td>
-        </tr>
-        <tr>
-          <td class="topic">Notion-after-May story</td>
-          <td class="context">End-of-May 2026 deprecation is confirmed (13 May AIO-IT meeting). Standup skill v3.15 dual-writes; Operations Notebook content migrating. Any team still using Notion as a SoR after 31 May needs to move — that's an organisational coordination item, not an AIO-only one.</td>
-          <td class="ask">A signal on how forcefully to land the end-May cutover with department heads.</td>
+          <td class="decision-topic">When does the "personal vault" feature come back?</td>
+          <td class="decision-context">The original vision included a personal vault for every employee that feeds into their department's vault. We've parked that for now — it works for one vault, breaks down at two — and team-level vaults are progressing in the meantime. We want a timing call: revisit next month, next quarter, or treat as a longer-term roadmap item?</td>
+          <td class="decision-ask">A timing call.</td>
         </tr>
       </tbody>
     </table>
 
-    <div class="section-label" style="margin-top: 18px;">External signals worth a beat (not decisions)</div>
-    <div class="signals">
-      <div class="signal">
-        <div class="signal-title">Mnemon</div>
-        <div class="signal-body">LLM-supervised persistent memory for AI agents. <strong>Closest external system to Prime Radiant</strong> discipline applied at agent runtime. Surfaced via Web Clipper 12 May; single-source; tracking.</div>
-      </div>
-      <div class="signal">
-        <div class="signal-title">Multi-graph memory convergence</div>
-        <div class="signal-body">Independently surfaced by Mnemon's four-graph store (12 May) and validated experimentally by MAGMA (13 May). Same four-axis vocabulary we adopted in CLAUDE.md v0.10. Cross-layer recognition of the pattern.</div>
-      </div>
-      <div class="signal">
-        <div class="signal-title">"Claude OS" research direction</div>
-        <div class="signal-body">Hostinger-hosted vault files exposed via purpose-built APIs/MCPs. Approved for exploration last week under <em>Engage data architecture</em>. Depends on Drive-webhooks investigation outcome.</div>
-      </div>
-    </div>
   </div>
   <div class="footer-line">
-    <span>Slide 7 / 7 · AI Office weekly update</span>
-    <span>Five items requested · Three signals flagged</span>
+    <span>Slide 4 / 5 · AI Office weekly update</span>
+    <span>Four items requested</span>
   </div>
 </section>
 
-<!-- =============== SLIDE 8 — REFERENCE INDEX =============== -->
+<!-- =============== SLIDE 5 — CLOSING =============== -->
 <section class="slide dark">
   <div class="header-band"></div>
   <div class="slide-top">
-    <div class="slide-eyebrow">Reference</div>
+    <div class="slide-eyebrow">Closing</div>
     <div class="logo-block">
       <svg style="--fill-0: #FFFFFF;"><use href="#janus-logo"/></svg>
     </div>
   </div>
   <div class="slide-body">
-    <h1 class="slide-title" style="color: #FFFFFF;">Where to look for more.</h1>
-    <p class="slide-subtitle">Everything on the prior slides is anchored to a page in the Janus Prime Radiant · AI Office wiki. The wiki itself is the synthesis layer; the source systems (Linear AIR, Monday, Fireflies, GitHub) remain authoritative for their respective domains.</p>
+    <h1 class="slide-title" style="color: #FFFFFF;">Where the programme stands.</h1>
 
-    <div class="reference-grid">
-      <div class="reference-col">
-        <h3>Briefs</h3>
-        <ul>
-          <li><code>briefs/prime-radiant-storage-substrate.md</code></li>
-          <li><code>briefs/agent-memory-2026-q2.md</code></li>
-          <li><code>briefs/post-rag-agent-data-stack.md</code></li>
-        </ul>
-        <h3 style="margin-top: 20px;">Processes</h3>
-        <ul>
-          <li><code>processes/prime-radiant-instance-setup.md</code></li>
-          <li><code>processes/project-management-digital-delivery-workflow.md</code></li>
-          <li><code>processes/standup.md</code> (v3.15)</li>
-        </ul>
+    <p class="closing-quote">
+      "What we built in the AI Office last week was the substrate the rest of Janus plugs into. From here, every department joins on solid ground, and the system gets smarter every day with no curator in the loop."
+    </p>
+    <p class="closing-quote-attrib">Programme view · 18 May 2026</p>
+
+    <div class="programme-state">
+      <div class="state-block">
+        <div class="state-label">Live instances</div>
+        <div class="state-value">2</div>
+        <div class="state-detail">AI Office · Marketing</div>
       </div>
-      <div class="reference-col">
-        <h3>Project hubs</h3>
-        <ul>
-          <li><code>projects/janus-prime-radiant-build.md</code></li>
-          <li><code>projects/marketing-prime-radiant.md</code></li>
-          <li><code>projects/iso-compliance-programme.md</code></li>
-        </ul>
-        <h3 style="margin-top: 20px;">Systems of record (unchanged)</h3>
-        <ul>
-          <li>Linear AIR · AI Registry team</li>
-          <li>Monday Automations board <code>5095012818</code></li>
-          <li>Fireflies (raw transcripts canonical)</li>
-          <li>GitHub <code>Janusd-io</code> · <code>Janusd-com</code></li>
-        </ul>
+      <div class="state-block">
+        <div class="state-label">Going live this week</div>
+        <div class="state-value">+1</div>
+        <div class="state-detail">Project Management</div>
+      </div>
+      <div class="state-block">
+        <div class="state-label">In the queue</div>
+        <div class="state-value">6</div>
+        <div class="state-detail">HR · Finance · ISO · Office of CEO · Engineering · Training</div>
       </div>
     </div>
-
-    <div class="closing-note">Audit trail · <code>log.md</code> entries since 2026-05-11 · Git commit history on the AIO repo</div>
   </div>
   <div class="footer-line">
     <span>End of update · AI Office · Janus Digital</span>
