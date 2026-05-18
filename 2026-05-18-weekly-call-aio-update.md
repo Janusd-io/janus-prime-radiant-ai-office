@@ -1,124 +1,105 @@
 # AI Office — Weekly Update for Bonaventure's Call
 
 **Date:** 2026-05-18 (Monday)
-**Owner:** Michael Bruck (AIO)
+**Reporting:** Michael Bruck · Jehad Altoutou
+**Window:** 11 May → 17 May 2026
 **Format:** Per Bonaventure's three-block structure — (1) last week completed, (2) this week's to-do list, (3) open discussion.
+
+*Scope note: this update covers AI Office work only — what Michael and Jehad were driving. The Singapore commercial layer (white paper, campaign plan, three-pillar messaging) is Andrew's track and is reported separately.*
 
 ---
 
 ## 1. Last week's completed agenda (11–17 May)
 
-This was a heavy week. The headline framing: Janus's AI Native commercial pitch crossed from internal-tooling into a publicly-anchored, three-pillar messaging spine with two Outputs artefacts in the field — and the underlying Prime Radiant substrate migrated off Drive onto GitHub in the same week.
+Heavy week with three load-bearing things landing in parallel: Prime Radiant moved off Google Drive onto GitHub; the first cross-department instance got fully scoped and made ready to kick off; the standup pipeline tied off ahead of Notion's end-of-May deprecation.
 
-**Singapore commercial layer — strategy operationalised in 3 days**
+**Track A — Drive → GitHub substrate migration executed end-to-end**
 
-- **Janus Singapore white paper ("How agentic AI can answer the storms ahead")** landed 14 May; 20 pages, co-authored by Bonaventure and Joyce Woo (CEO, Singapore). First long-form externalisation of the three-pillar messaging spine. Anchored to PM Lawrence Wong's May Day Rally 2026 speech (also ingested into the wiki this week as upstream substrate).
-- **Singapore campaign plan v1** delivered by Andrew on 15 May: 100 target accounts mapped (33 global/APAC PE-RE, 28 mid-market funds, 13 SG heavyweights, 14 specialised niche, 12 multi-family offices), 9-week timeline to the 8/9 July luncheon, ~S$23,995 / AED 69,210 budget, 5-venue shortlist (Vue / Saint Pierre / Artemis Grill / Sospiri / Shoukouwa).
-- **Three-pillar messaging spine** ratified across CEO (Bonaventure: capital → companies → workers) and CMO (Andrew: society → business → individual) — same spine, different lead. Now the Outputs frame for all Marketing PR.
-- **Joyce Woo** confirmed as CEO, Singapore; entity page filed; she is the named SG-face for direct outreach to the target list.
-- **PM May Day Rally speech** ingested as the upstream Singapore policy vocabulary for the news-monitoring agent and any Janus public-facing response.
+- AIO instance migrated 13 May to a private GitHub repo (`Janusd-io/janus-prime-radiant-ai-office`), cloned to `~/janus/prime-radiant/ai-office/` on the curator's machine. Obsidian Git plugin handles auto-pull/commit/push; Cowork now sees real files on real disk (no streaming-mount placeholder layer that was breaking new-contributor onboarding).
+- Substrate decision brief filed (`briefs/prime-radiant-storage-substrate.md`) — diagnosis of the Drive failure mode, alternatives considered, migration sequence.
+- Curator-side setup runbook with embedded bash script extracted (`processes/prime-radiant-instance-setup.md`) — reduces a future instance scaffold from ~2h unscripted to ≤10 min scripted.
+- **Two GitHub orgs locked in**: `Janusd-io` for AIO + the template repo; `Janusd-com` for every other department instance (PM, IT, Marketing, ISO, HR, Finance, Office-of-CEO, Engineering, Training). Keeps AIO experimentation isolated from company-operational vaults while reusing the same template + tooling.
 
-**Prime Radiant substrate — Drive → GitHub migration executed end-to-end**
-
-- AIO instance migrated 13 May to a private GitHub repo (`Janusd-io/janus-prime-radiant-ai-office`), cloned to `~/janus/prime-radiant/ai-office/` on the curator's machine. Obsidian Git plugin handles auto-pull/commit/push; Cowork now sees real files on real disk (no streaming-mount placeholder layer).
-- Substrate decision brief filed (`briefs/prime-radiant-storage-substrate.md`) with diagnosis of the Drive failure mode that blocked Andrew's onboarding, alternatives considered, migration sequence.
-- Curator-side setup runbook with a working bash script extracted (`processes/prime-radiant-instance-setup.md`) — reduces a future instance scaffold from ~2h unscripted to ≤10 min scripted.
-- **Two GitHub orgs locked in**: `Janusd-io` for AIO + template repo; `Janusd-com` for every other department instance (Project Management, IT, Marketing, ISO, HR, Finance, Office-of-CEO, Engineering, Training).
-- CLAUDE.md schema bumped twice (v0.10 multi-graph framing for the wiki's frontmatter; v0.11 Git-substrate documentation + git-awareness in workflows).
-
-**Project Management Prime Radiant — first non-Mac/non-AIO instance scoped**
+**Track B — Project Management Prime Radiant scoped and ready to launch**
 
 - Lysander Liu (Head of PM) walked Michael through the full 28-phase digital-delivery workflow on 14 May (~60 min). Captured as a canonical process page — the PM instance gets initialised against it.
-- Structural insights filed as two lessons: (i) **AI's bounded role in PM** (~30–60%, first-draft only, human verification gates remain non-negotiable); (ii) **document-management gap** (current substrate is an Excel master + Google Docs network + Monday — Prime Radiant coexists, not displaces).
-- Four entity pages created: Lysander Liu, Rosa Wu (co-head of PM with Euclid), Spike Zhao (digital modeling engineer), Dhyey Mehta (recent IT joiner, stub).
-- **Standup-proposal deck** for the kickoff went through three rounds of refinement on 14 May; ready to share with Euclid / Rosa Wu / Lysander / Spike.
-- **Personal vaults shelved** pending federation-architecture redesign on Git substrate (two vaults can't sync against GitHub cleanly from the same machine yet). Team brains only for now.
+- Two structural lessons filed: (i) **AI's bounded role in PM** (~30–60%, first-draft only, human verification gates remain non-negotiable); (ii) **document-management gap** (current substrate is Excel master + Google Docs network + Monday — Prime Radiant coexists, not displaces).
+- Four entity pages created: Lysander Liu, Rosa Wu (co-head of PM with Euclid), Spike Zhao (digital modeling engineer), Dhyey Mehta (recent IT joiner, stub pending Euclid confirmation).
+- **Standup-proposal deck** went through three rounds of refinement on 14 May; ready to share with Euclid / Rosa Wu / Lysander / Spike.
+- **Personal vaults shelved** pending federation-architecture redesign on Git (two vaults can't sync against GitHub cleanly from the same machine yet). Team brains only for now.
 - **Windows-first deployment** framing locked: PM rollout doubles as Janus's first non-Mac Prime Radiant; tooling-install session re-budgeted ~60 → ~60–90 min.
 
-**AIO Marketing & operations**
+**Track C — AIO infrastructure: skill, schema, federation, registry**
 
-- AIO × Marketing mesh-federation pairing stood up 11 May as the first practical test of the peer-to-peer mesh-federation concept.
-- Standup skill v3.15 in production (13 May) — Step 5G writes standup logs directly to the Prime Radiant inbox, closing the dual-write loop ahead of the Notion deprecation. (Substrate-migration follow-up: v3.15 was built against the Drive MCP connector; the new Git substrate path needs a v3.16 update.)
-- **Notion deprecation target confirmed: end of May 2026.** Dual-write to vault inbox is the transition path; subsequent decisions plan around Notion being offline as a Janus surface from June.
-- **NotebookLM retired** for org chart / presentation outputs in favour of HTML — CEO-endorsed convention now.
-- Brand guideline derived from Andrew's PPTX (v0.1, 15 May) → upgraded to v1.0 the same day on the official brand book (orange `#FCB745`, navy `#013A7D`, light blue `#028CDC`, Montserrat). SG strategy alignment deck retrofitted.
-- **AI Registry pipeline**: 11 tools moved through AIR this week (Microsoft Clarity, Resend, Mailchimp, LinkedIn Marketing Solutions, Canva, FactSet, Solace, Whisper Flow, Google Stitch, Hercules added to Backlog; Hostinger advanced in Sandbox). Heavy Marketing-tooling tilt — directly downstream of Andrew's campaign-plan needs.
+- **Standup skill v3.15 in production** (13 May) — Step 5G writes standup logs directly to the Prime Radiant inbox, closing the dual-write loop ahead of the confirmed **end-of-May 2026 Notion deprecation**. (Substrate-migration follow-up: v3.15 was built against the Drive MCP connector; v3.16 needs to port the write path onto Git now that AIO has migrated.)
+- **CLAUDE.md schema bumped twice.** v0.10 (13 May) formalises the wiki's frontmatter as a four-graph encoding (entity/semantic/temporal/causal edges) — matches the agent-memory community vocabulary that converged in mid-May 2026. Added `decided_by` + `captured_by` fields. v0.11 (14 May) documents the Git substrate and adds git-awareness framing across all workflows.
+- **Mesh federation first practical test executed 11 May** — AIO × Marketing pairing stood up the same afternoon the concept page was authored, with shared `entities/departments/<other>/` subfolders in both vaults.
+- **AI Registry — 11 tools moved through AIR**: Microsoft Clarity, Resend, Mailchimp, LinkedIn Marketing Solutions, Canva, FactSet, Solace, Whisper Flow, Google Stitch, Hercules added to Backlog; Hostinger advanced in Sandbox. AIP had zero activity in the window (status surface reconciled from Monday — no recon needed).
+- **NotebookLM retired** for org chart / presentation outputs in favour of HTML — Bonaventure endorsed the convention on the 12 May AI Native call.
+- **Schema linter + ISO 27001 evidence-chain cross-linking** surfaced as first-class requirements (Monday 2912631119, 2912592188) after Euclid's 5,000-document personal vault validated Prime Radiant at scale but exposed schema drift as a real risk.
+- **Vault-event ingest direction set.** Kafka rejected as overkill (<100 events/day); Drive webhooks API to be investigated as the right-sized replacement. Adjacent "Claude OS" research stream (Hostinger-hosted vault files exposed via purpose-built APIs/MCPs) approved for exploration.
 
 **Stakeholder signal**
 
-- Bonaventure's positive shout-out on Prime Radiant at the 11 May standup ("happening quicker than I thought") — validates pacing and pre-empts political resistance as the rollout reaches non-AIO instances.
+Bonaventure's positive shout-out on Prime Radiant at the 11 May standup — *"happening quicker than I thought"* — validates pacing and pre-empts political resistance as the rollout reaches non-AIO instances.
 
 ---
 
 ## 2. This week's agenda / to-do list (18–24 May)
 
-**Project Management Prime Radiant — kick off the first cross-department instance**
+**Michael — primary load**
 
-- Share the standup-proposal deck with Euclid, Rosa Wu, Lysander, Spike; schedule the kickoff session.
-- Stand up `janus-prime-radiant-project-management` on `Janusd-com` via the new runbook; first scripted execution of the scaffold script.
-- Tooling-install session with the PM team (Windows-first; expect ~60–90 min).
-- Decision needed: who curates the PM instance day-one (Lysander has the workflow authority; Rosa Wu has the strategic altitude; Euclid wears the broader hat).
+- Ship the **PM kickoff deck** to Euclid / Rosa Wu / Lysander / Spike; schedule the session.
+- Scaffold `janus-prime-radiant-project-management` on `Janusd-com` using the new setup runbook — first scripted execution of the scaffold script.
+- **PM tooling-install session** (Windows-first; ~60–90 min). Document the friction.
+- **Drive-webhooks API investigation** — replaces Kafka path for vault-event ingest.
+- **Schema linter scoping** + ISO 27001 evidence-chain cross-linking spec.
+- **Notion deprecation runway** — every active surface needs dual-write or migration confirmed before end-May.
+- **Bonaventure audio-recovery item** — open since 11 May (Fireflies quiet-voice channel gap).
 
-**Marketing Prime Radiant — Singapore campaign in build**
+**Jehad — primary load**
 
-- Andrew's 1-week deliverables (committed 12 May → due ~19–20 May): ICP cross-tally with Bonaventure's separate ICP, Target Personas, Topic Taxonomy.
-- Target-list review by Bonaventure + Joyce due end-of-day Wed 20 May (missing companies, wrong inclusions, existing-relationship flags).
-- Singapore landing page build in days, pending website-architecture resolution (see open discussion).
-- Possible migration of Andrew's vault from `Janusd-io` to `Janusd-com` (TBC depending on where it currently sits).
-- Web Clipper config for marketing-themed channel; bulk Fireflies ingest of Andrew's prior meetings as the seed corpus.
-- Venue selection for the 8/9 July luncheon (date availability + private-room + cost ceiling).
+- **First Git-substrate round-trip** on the new clone. Validates the curator runbook end-to-end. Gates the per-member runbook extraction.
+- **Standup skill v3.16** — port Step 5G off the Drive MCP connector onto the Git substrate so the standup pipeline keeps closing the loop after the AIO vault migration.
+- **Extract `processes/prime-radiant-member-setup.md`** once the Git round-trip validates the substrate brief's Appendix A.
+- **Continue AIR pipeline management** — the 11 newly-backlogged tools mostly tied to upcoming evaluation work.
+- **Hostinger Sandbox** — advance through evaluation.
+- **ISO programme `/ims-enrolment` skill** — continue post-12 May CEO check-in (approved-to-continue). Process-owner mapping with Simon.
 
-**AIO infrastructure & ops**
-
-- Jehad's first Git substrate round-trip — validates the runbook before we extract `processes/prime-radiant-member-setup.md` as the per-contributor reference.
-- **Standup skill v3.16** — port v3.15's Step 5G write path off the Drive MCP connector onto the Git substrate so the standup pipeline keeps closing the loop after the AIO vault migration.
-- Drive webhooks API investigation (Monday 2912592197) — right-sized replacement for cron-based ingest after Kafka rejected as overkill (<100 events/day).
-- Schema linter scoping — schema drift surfaced as a real risk against Euclid's 5,000-document personal-vault validation; needed as a first-class requirement (Monday 2912631119).
-- ISO 27001 evidence-chain cross-linking spec under the `entities/departments/iso/` federation pattern (Monday 2912592188).
-- Continue triaging the 11 backlog AIR tools added this week — most are Marketing/campaign-tooling and gate the Singapore launch (Mailchimp, Canva, LinkedIn Marketing Solutions, Microsoft Clarity, Resend).
-- Notion deprecation runway — every active surface needs its dual-write or migration confirmed before end-May.
-
-**Strategic content**
-
-- Brief on the three-pillar messaging spine now has a public surface (the white paper) — consider whether a brief / pulse entry tracking external reactions is warranted.
-- Bonaventure's audio-recovery item from the prior Friday meeting (Fireflies quiet-voice failure mode) — still open.
+*Sequencing note: the v3.16 port + per-member runbook extraction + first PM scaffold are sequential — each unblocks the next. Realistic landing target for all three is end of next week (29 May); aggressive target is end of this week (24 May) if the PM kickoff sequence lands cleanly.*
 
 ---
 
 ## 3. Open discussion items
 
-Items where I want Bonaventure's input or a coordinated decision:
+Items where I'd like Bonaventure's input or a coordinated decision before the work proceeds.
 
-**Singapore launch — website architecture (urgent)**
+**Internal branding for the wiki**
 
-Three URLs are simultaneously in flight: `janusd.com` (canonical), `janusdg.com` (vanity, appears in the v1 campaign plan), `janusd.sg` (formal SG-entity domain, appears in the white paper as `engage@janusd.sg`). The landing page build is blocked on this. Andrew anticipates this is a "mighty battle." Recommendation: `janusd.com` canonical + `janusd.sg` SG vanity, retire `janusdg.com`. Need a call this week.
+Multiple sub-names are in circulation: Prime Radiant, Nomi, brain, wiki, Pulse, PULS. The system name stays *Janus Prime Radiant*; what we call the user-facing surface for non-technical audiences is open. Andrew should be in this conversation. Bonaventure's 11 May read: *"Prime Radiant is very geeky."* Recommend a 20-minute decision on the call.
 
-**CRM scope and timing**
+**Personal vaults — when do they come back?**
 
-Bonaventure's "glorified contact list" framing from 12 May reshaped this. Target: ~2–3 weeks to a recommendation Bonaventure agrees with, ~3 weeks for implementation. Google Sheets is the interim; lands by mid-June for the SG launch. Need explicit confirmation that the marketing-CRM (campaign management) vs sales-CRM (pipeline) distinction is acceptable as a scoping move.
+Shelved last week pending federation-architecture redesign on Git substrate (two vaults can't sync against GitHub cleanly from the same machine yet — solvable but separate engineering effort). Affects `/janus-pulse` onboarding skill scope and the company-wide intro deck (which is currently overstated relative to rollout reality). Need a timing call.
 
-**Internal branding consolidation**
+**Schema governance — linter + ISO 27001 evidence-chain**
 
-Multiple sub-names are circulating: Prime Radiant, Nomi, brain, wiki, Pulse, PULS. The system name stays Prime Radiant; the user-facing surface for non-technical audiences is open. Andrew should be in this conversation. Worth a 20-minute decision on the call.
-
-**External-agency scope (Andrew)**
-
-Bonaventure flagged on 12 May that some of Andrew's external-agency scope (logo, website, design work) might be brought in-house through Janus's own AI-Native capabilities. Open question — Andrew has commitments out; need to know which ones to honour vs reshape.
-
-**Strategic signals worth a beat**
-
-- **Vivian Balakrishnan** (SG Foreign Minister) keynoted the AI Engineering Conference 16–17 May and runs his own LLM wiki on a Raspberry Pi. Bonaventure knows him personally. Potential government-side advocate for the Prime Radiant pattern.
-- **Yann LeCun's Advanced Machine Intelligence has a Singapore office** (one of four globally, Asia base for physical AI) — surfaced in the PM speech ingest. Direct adjacency to Janus's physics-first positioning.
-- **Mnemon** (LLM-supervised persistent memory for AI agents) — closest external system in the market to the Prime Radiant discipline applied at agent runtime. Single-source so far; tracking.
-
-**Federation architecture — when do personal vaults come back?**
-
-Shelved this week pending the Git-substrate redesign. Affects `/janus-pulse` onboarding skill scope and the long-term "every employee has a vault" pitch in the company-wide intro deck (which is currently overstated relative to rollout reality). Timing question.
+Euclid's 5,000-document vault surfaced schema drift as a real scale risk. Schema linter + ISO 27001 evidence-chain cross-linking are now requested as first-class requirements. This is real engineering, not maintenance — would like priority confirmation relative to the v3.16 port and Drive-webhooks work.
 
 **Pacing check**
 
-Bonaventure said on 11 May that Prime Radiant is "happening quicker than I thought." Want a calibration: is the current cadence right, too aggressive, or should AIO accelerate further given the SG commercial timeline?
+Bonaventure said on 11 May that Prime Radiant is *"happening quicker than I thought."* Want a calibration: is the current cadence right, too aggressive, or should AIO accelerate further? Three instances live by end-May if PM kicks off cleanly (AIO, Marketing, PM); want a read on whether to compress the HR / Finance / ISO / Office-of-CEO queue.
+
+**Notion-after-May story**
+
+End-of-May 2026 deprecation is confirmed. Standup skill v3.15 dual-writes; Operations Notebook content migrating. Any team still using Notion as a SoR after 31 May needs to move — that's an organisational coordination item, not an AIO-only one. Want a signal on how forcefully to land the end-May cutover with department heads.
+
+**External signals worth a beat (not decisions)**
+
+- **Mnemon** — LLM-supervised persistent memory for AI agents. Closest external system in the market to the Prime Radiant discipline applied at agent runtime. Single-source; tracking.
+- **Multi-graph memory convergence** — independently surfaced by Mnemon's four-graph store (12 May) and validated experimentally by MAGMA (13 May). Same four-axis vocabulary we adopted in CLAUDE.md v0.10. Cross-layer recognition.
+- **"Claude OS" research direction** — Hostinger-hosted vault files exposed via purpose-built APIs/MCPs. Approved for exploration last week.
 
 ---
 
-*Sources: [AIO wiki log](file:///Users/michaelbruck/janus/prime-radiant/ai-office/log.md) (entries since 2026-05-11) · [Janus Prime Radiant build hub](file:///Users/michaelbruck/janus/prime-radiant/ai-office/projects/janus-prime-radiant-build.md) · [Marketing Prime Radiant hub](file:///Users/michaelbruck/janus/prime-radiant/ai-office/projects/marketing-prime-radiant.md) · [Linear AI Registry team](https://linear.app/janusd/team/AIR)*
+*Sources: AIO wiki `log.md` (entries since 2026-05-11), project hubs `janus-prime-radiant-build` and `iso-compliance-programme`, brief `prime-radiant-storage-substrate`, process pages `prime-radiant-instance-setup` and `standup` (v3.15), Linear AI Registry team.*
