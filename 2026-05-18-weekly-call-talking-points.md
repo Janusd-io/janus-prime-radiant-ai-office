@@ -1,66 +1,75 @@
 # Weekly call — talking points
 
-**For:** Michael · **Call date:** 2026-05-18 · Bonaventure's three-block format.
-**Scope:** AIO work only (Michael + Jehad). Andrew's Singapore commercial layer reported separately.
+**For:** Michael · **Call:** 18 May 2026 · BW's weekly · Joyce Woo present
+**Altitude:** Strategic / implications. Keep the bits-and-bytes out of the room.
 
 ---
 
-## (1) Last week — what landed
+## (1) Last week — three implications
 
-**Track A — substrate migration.** AIO instance moved off Drive onto GitHub end-to-end (`Janusd-io/janus-prime-radiant-ai-office`). Substrate brief + setup runbook (with bash script) shipped. Two orgs locked: `Janusd-io` for AIO+template, `Janusd-com` for every other department. Cowork sees real files on real disk — fixes the failure mode that blocked new-contributor onboarding.
+**The foundation is now solid enough for any department to plug in.** We moved the institutional-knowledge platform off Google Drive onto a more reliable, security-aware setup. Andrew's onboarding friction class — resolved. *Rollout speed is now constrained by people, not by tools.*
 
-**Track B — Project Management Prime Radiant fully scoped.** Lysander walkthrough → 28-phase workflow captured as process page. Two structural lessons filed (AI bounded role; document-mgmt gap). Four entity pages (Lysander, Rosa Wu, Spike, Dhyey). Kickoff deck through 3 rounds — ready to share. **Personal vaults shelved** pending federation redesign on Git. **Windows-first deployment** for the first time.
+**Janus has its first cross-department instance ready to launch.** Spent an hour with Lysander capturing how Project Management actually runs. That captured workflow is what their Prime Radiant instance gets initialised against this week — system arrives pre-loaded with their language, their gates. First test that the pattern travels beyond AIO.
 
-**Track C — AIO infrastructure.** Standup skill **v3.15 in production** (writes direct to Prime Radiant inbox — v3.16 needs to port off the Drive MCP connector now we're on Git). CLAUDE.md **v0.10 + v0.11** (multi-graph framing + Git substrate documentation). Mesh-federation **first practical test** stood up (AIO × Marketing pairing). **NotebookLM retired** in favour of HTML. **Notion deprecation end-May confirmed.** **11 tools moved through AIR** (Jehad assignment). Schema linter + ISO 27001 evidence-chain now first-class requirements.
+**Daily knowledge compounds automatically now.** AIO's standup now deposits outcomes straight into the institutional record. Last big manual handoff before the Notion sunset, closed. From here, the system gets smarter every day with no curator effort.
 
-**Stakeholder signal:** BW's 11 May Prime Radiant shout-out ("happening quicker than I thought").
-
----
-
-## (2) This week — to-do
-
-**Michael:**
-
-- Ship PM kickoff deck → Euclid/Rosa Wu/Lysander/Spike; schedule session.
-- Scaffold `janus-prime-radiant-project-management` on `Janusd-com` (first scripted run of the new setup script).
-- PM tooling install (Windows-first; ~60–90 min). Document friction.
-- Drive-webhooks API investigation (replaces Kafka, which was overkill).
-- Schema linter scoping + ISO 27001 evidence-chain cross-linking spec.
-- Notion deprecation runway — every active surface needs dual-write or migration confirmed before end-May.
-- BW audio-recovery item from 11 May.
-
-**Jehad:**
-
-- **First Git round-trip on the new clone** → validates the runbook → unblocks per-member runbook extraction.
-- **Standup skill v3.16** — port Step 5G write path off Drive MCP onto Git substrate.
-- Continue AIR pipeline (11 backlogged tools).
-- Hostinger Sandbox advance.
-- ISO programme `/ims-enrolment` — continue post-CEO-checkin; process-owner mapping with Simon.
-
-*Sequencing: v3.16 → member-runbook extraction → first PM scaffold are dependent in that order. Stretch: all three by 24 May. Realistic: by 29 May.*
+**Plus:** BW's 11 May shout-out — *"happening quicker than I thought."* Validates pacing.
 
 ---
 
-## (3) Open discussion — decisions I want from BW
+## (2) This week — focus
 
-1. **Internal branding for the wiki.** Prime Radiant / Nomi / brain / wiki / Pulse / PULS all in use. System name stays *Janus Prime Radiant*; user-facing name open. Andrew should be in the conversation. 20-min decision.
-2. **Personal vaults — when do they come back?** Shelved last week pending federation redesign on Git. Affects `/janus-pulse` scope and the company-wide intro deck (currently overstated). Timing call.
-3. **Schema governance.** Linter + ISO 27001 evidence-chain are real engineering, not maintenance. Want priority confirmation relative to v3.16 + Drive-webhooks work.
-4. **Pacing check.** BW said "quicker than I thought." Three instances live by end-May if PM lands cleanly. Should AIO compress the HR / Finance / ISO / Office-of-CEO queue further?
-5. **Notion-after-May story.** End-May deprecation confirmed. Want a signal on how forcefully to land the cutover with department heads — coordination item, not AIO-only.
+**Headline outcome:** Project Management goes live. Kickoff with Euclid / Rosa Wu / Lysander / Spike. First Windows deployment of the pattern.
 
-**Signals worth flagging (not decisions):**
+Three supporting tracks:
 
-- **Mnemon** — LLM-supervised persistent memory for AI agents. Closest external system to Prime Radiant discipline at runtime. Tracking.
-- **Multi-graph memory convergence** — Mnemon's four-graph store + MAGMA experimental validation = same four-axis vocabulary we adopted in CLAUDE.md v0.10.
-- **"Claude OS"** — Hostinger-hosted vault files via purpose-built APIs/MCPs. Approved for exploration last week.
+- Jehad validates the setup end-to-end so future onboardings drop to under an hour.
+- Continue AI tool evaluations — 11 new tools queued last week, mostly Marketing/campaign-driven.
+- Coordinate the end-May Notion sunset with department heads — needs a leadership signal.
+- Continue ISO enrolment skill build with Simon.
+
+---
+
+## (3) Decisions I want from the call
+
+1. **What we call the system in plain language.** Inside AIO it's *Janus Prime Radiant*. Non-AIO audiences need a softer name. BW said "very geeky." Andrew should be in this conversation. **20-min decision.**
+
+2. **Pacing.** Three instances live by end-May if PM lands. HR / Finance / ISO / Office of CEO next. BW: *"quicker than I thought."* Compress the queue, or hold pace? **Read on cadence.**
+
+3. **Notion sunset coordination.** End-May locked from our side. Department heads need a move-or-lose signal from leadership. **Confirmation + who relays it.**
+
+4. **Personal vault feature — when does it come back?** Originally part of the vision; parked for now (works for one vault, breaks at two). Team vaults progressing in the meantime. **Timing call:** next month, next quarter, or longer-term?
+
+---
+
+## State of the programme — one-liner if asked
+
+> Two instances live (AI Office, Marketing). Project Management goes live this week. Six departments in the queue. Programme is on track and ahead of where BW expected.
 
 ---
 
 ## If BW asks me
 
-- *"What's the single biggest risk this week?"* → The v3.16 → member-runbook → PM scaffold sequence is dependent in that order. If Jehad's Git round-trip surfaces friction we didn't anticipate, the PM kickoff slips. Mitigation is upfront — get the round-trip done early in the week.
-- *"What did the substrate migration actually buy us?"* → Cowork sees real files on real disk (no Drive streaming-mount placeholder layer that broke onboarding); GitHub auth decoupled from Workspace identity; substrate aligns with our content discipline; federation via sibling clones matches the mesh pattern.
-- *"How many Prime Radiant instances will be live by end of month?"* → AIO live; Marketing in build; PM kicking off this week → 3 by 31 May if PM kickoff happens this week. ISO / HR / Finance / IT-proper / Office-of-CEO / Engineering / Training still queued.
-- *"What's the Notion-after-May story?"* → Standup skill v3.15 already writes to the vault inbox. Operations Notebook content gets dual-written / migrated by end-May. Anything else still in Notion as SoR after 31 May needs to move — and that's an org-coordination ask, not AIO-only.
-- *"Why are personal vaults shelved?"* → Two vaults can't sync against GitHub cleanly from the same machine yet — the Obsidian Git plugin + repo-clone topology works for one vault, breaks down at two. Solvable, but separate engineering work from this week's rollout. Doesn't affect team-vault rollouts.
+- *"What's the single biggest risk this week?"* → The Project Management kickoff. First non-Mac deployment, first cross-department instance. If it goes cleanly we accelerate; if it stalls we learn a lot about what the next departments will need.
+
+- *"What does this mean for Joyce / Singapore?"* → When the SG team starts hiring, they'll have a clean way to plug in their team's knowledge from day one — same foundation Project Management is using this week. Andrew's Singapore commercial work is a separate track that already runs on the Marketing instance.
+
+- *"Why are personal vaults parked?"* → Engineering decision, not a strategic one. We chose to ship working team-vaults this month rather than wait for the personal-vault complication. Pure sequencing.
+
+- *"How real is end-of-May for Notion?"* → Real on our side — the AIO daily flow already runs without Notion. The question for the call is how to coordinate the rest of the company off it.
+
+- *"What's the ceiling on rollout speed?"* → People, not technology. Each department needs roughly an hour of capture work (like Lysander's walkthrough) plus a tooling session. We can run two department onboardings in parallel comfortably; three is a stretch.
+
+---
+
+## What to NOT bring up (unless asked directly)
+
+- GitHub / Drive / repos / branch protection
+- Standup skill versions (v3.15, v3.16)
+- CLAUDE.md schema versions
+- Kafka / webhooks / "Claude OS"
+- Mnemon / MAGMA / multi-graph framing
+- Schema linter mechanics
+- AI Registry tool names by name
+
+These are real and important — but they're AIO-internal craftsmanship, not call-level material with Joyce in the room.
