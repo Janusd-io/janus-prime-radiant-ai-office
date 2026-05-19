@@ -3,10 +3,10 @@ type: process
 title: Project Management Digital Delivery Workflow (end-to-end, per Lysander Liu 14 May 2026)
 slug: project-management-digital-delivery-workflow
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-19
 departments: [ai-office, it-ops]
-related: [michael-bruck, jehad-altoutou, euclid-wong, janus-prime-radiant-build, peer-to-peer-mesh-federation-pattern, ai-tool-evaluation, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap]
-sources: [2026-05-14-pm-workflow-walkthrough-lysander, 2026-05-13-aio-pm-meeting]
+related: [michael-bruck, jehad-altoutou, euclid-wong, lysander-liu, janus-prime-radiant-build, peer-to-peer-mesh-federation-pattern, ai-tool-evaluation, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, 2026-05-18-pm-team-feedback-knowledge-architecture]
+sources: [2026-05-14-pm-workflow-walkthrough-lysander, 2026-05-13-aio-pm-meeting, 2026-05-18-pm-team-feedback-knowledge-architecture]
 ---
 
 # Project Management Digital Delivery Workflow
@@ -21,13 +21,27 @@ Authoritative source: [[2026-05-14-pm-workflow-walkthrough-lysander]] (transcrip
 
 ## Workflow at a glance
 
-The workflow runs from contract signing through final customer verification. Five rough stages:
+> **Correction landed 2026-05-18 via [[2026-05-18-pm-team-feedback-knowledge-architecture|PM team feedback]] from [[lysander-liu|Lysander]].** Janusd's delivery system uses a strict **four-gate (G1–G4)** structure — there is no Stage 5. The "Stage 1–5" framing earlier in this page mapped a generic PM framework onto Janusd's actual gate structure. The corrected mapping below is now authoritative; the old Stage 5 = Closure label is *factually wrong* and has been replaced with the G4-prerequisites framing.
 
-1. **Initiation** (phases 1–4) — Presale → delivery handoff. Project Manager is assigned, project is chartered, supplementary information is gathered.
-2. **Planning** (phases 5–8) — Project Manager planning, parallel tracks for construction / hardware / platform, application analysis, plan review.
-3. **Execution** (phases 9–17) — Pre-entry checks, kickoff (internal then external), site execution, network + platform deployment, digital delivery, single-point testing.
-4. **Business delivery** (phases 18–22) — Digital delivery handover, business research + configuration, training, UAT.
-5. **Closure** (phases 23–24) — Trial run, final verification, payment.
+The workflow runs from contract signing through final customer verification, structured as four gates plus a post-G4 closeout. Phases run inside gates; gate-pass events are the formal transitions.
+
+| Gate | Name | Phases | What it means |
+|---|---|---|---|
+| **G1** | Pre-Sales Review | Phases 1–4 → G1 pass | Presale → delivery handoff. Project Manager assigned, project chartered, supplementary information gathered. |
+| **G2** | Planning Readiness | Phases 5–8 → G2 pass | Project Manager planning; parallel tracks for construction / hardware / platform; application analysis; plan review. |
+| **G3** | Execution Readiness | Phases 9–22 | G3 triggers parallel execution flows (DC / DD / DS / DY / DB). Covers pre-entry checks, kickoff (internal then external), site execution, network + platform deployment, digital delivery, single-point testing, business research + configuration, training, UAT. The Stage 3 (9–17) vs Stage 4 (18–22) split previously used on this page does not correspond to any gate boundary — it's editorial. The PM team recommends treating 9–22 as one execution span unless an annotation specifically calls out the sub-divide. |
+| **G4** | Acceptance & Handover | Phases 23–28 = **G4 *prerequisites*** | NOT post-G4 closure. UAT (phase 24) = G4 criterion DT002. Training (phase 25) = G4 criterion DU001. Trial run completion = G4 trigger condition. These phases gate the move from execution into formal customer acceptance. |
+| **Post-G4** | Closeout | (missing from the 28 phases — needs a placeholder) | True project closeout = lessons-learned capture, project archival, PMO retrospective. Not currently in the 28-phase enumeration. The Prime Radiant vault structure reserves a `closeout/` placeholder so this work has a home once formalised. |
+
+### Why this matters
+
+The phases-23–28 reclassification is *structural*, not cosmetic — it changes:
+
+- **Where these phases live** in the vault folder structure (`G4-commissioning-handover/`, not `closure/`).
+- **Which gate criteria they satisfy** (DT002, DU001, trial-run trigger — explicit G4 prerequisites).
+- **What "project closeout" means in Janusd terms** — a *post-G4* activity that's currently undocumented and needs a stub.
+
+Anyone reading this page for the first time after 2026-05-18 should anchor to the G1-G4 gate framing and ignore any residual "Stage 1–5" references in the phase-by-phase sections below (left for historical readability; the gate framing supersedes).
 
 ## Phase 1 — Contract signing → presale-to-delivery handoff
 
@@ -350,16 +364,26 @@ Project Manager produces a trial run summary report:
 - Scenario-by-scenario validation report.
 - Final trial run conclusion (pass / re-loop / scoped exceptions).
 
-## Phase 28 — Final verification (customer acceptance)
+## Phase 28 — Final verification (customer acceptance) → G4 pass
 
-The formal closure step.
+The G4 trigger event. Final phase before the gate closes.
 
 - **Verification plan** — Project Manager produces, customer reviews.
 - **Verification deliverables list** — what materials are submitted at acceptance.
 - **Verification meeting** — typically more formal than the kickoff. Senior customer leadership attends.
-- **Verification sign-off** — once the verification report is signed, the project formally closes from the delivery side.
+- **Verification sign-off** — once the verification report is signed, **G4 passes** and the project formally moves into post-G4 closeout (see below).
 
 **Some customers have heavy verification deliverables** — the consolidation of materials can take a week.
+
+## Post-G4 closeout (currently gap — placeholder)
+
+After G4 passes, Janusd needs to execute:
+
+- **Lessons-learned capture** — what worked, what didn't, what should change next time.
+- **Project archival** — durable handoff of project artefacts into the PMO knowledge layer.
+- **PMO retrospective** — formal review with the PMO for cross-project learning.
+
+None of this is currently in the 28-phase enumeration. The PM team flagged this gap on 2026-05-18; the Prime Radiant vault structure will reserve a `closeout/` folder at the project level + an `A-5/lessons-learned/` PMO-level surface (mandatory pre-G4 submission per the [[2026-05-18-pm-team-feedback-knowledge-architecture|recommended architecture]]) so the work has a home once formalised.
 
 ## Payment schedule (typical)
 

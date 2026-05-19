@@ -1646,3 +1646,26 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - ai-registry: AIR-103 NanoClaw created + Gate 1 assessed (PASS all 5). Linear comment ID: ed1658cc-4571-4a21-b5e2-f27d479f2005. Phase 3 Monday updates (8 items, 10 sub-items), Notion entry, and Linear AIP reconciliation (AIP-21 12th consecutive unresolved conflict — manual closure required by human) all executed prior to this vault ingest.
 - linear-aip: AIP-21 conflict persists (12th run). Linear: Done (closed 2026-04-24). Monday: In Testing (Assessify HR). No transcript authority to resolve. Manual action required: close AIP-21 in Linear, note AIP-23 as live successor.
 - notes: This is the first CEO-attended demo of the Prime Radiant system. The demo triggered the CEO-level global KB direction statement — a significant scope elevation for the [[janus-prime-radiant-build]] program. Cross-department connectivity design and the market-specific UI layer are now first-class engineering requirements. Ingest counter: increment toward next lint.
+
+## [2026-05-19 10:30] ingest | 2026-05-18-pm-team-feedback-knowledge-architecture | html (PM team feedback)
+- driver: Michael — uploaded Lysander Liu's bilingual feedback HTML in response to the 14 May PM Prime Radiant standup-proposal deck. Document refs: KSR-PM-2026-0514-001 / COR-PM-2026-0514-001.
+- parsing: read HTML directly. Single self-contained file with Chinese (default) + English (toggleable). 5 slides: hero / Q&A / G4 correction / recommended architecture / next steps. Structured + signed + referenced — high-signal document.
+- filed source: sources/misc/2026-05-18-pm-team-feedback-knowledge-architecture.{html,md} — binary alongside markdown twin (per CLAUDE.md §5.1 PDF-pattern adapted for HTML). Markdown twin captures the 8 Q&A entries, the G1-G4 gate correction in full, the A/B/C three-pillar architecture proposal with subfolders + data-source ownership table, the 6 confirmation items requested of Michael.
+- key signals captured:
+  - **PM team endorses the 28-phase content** at 9/10 accuracy — the workflow walkthrough capture is validated by the people who own the discipline.
+  - **Critical structural correction**: phases 23–28 are NOT "Stage 5 Closure" — they are G4 *prerequisites* (Commissioning & Handover). UAT (phase 24) = G4 criterion DT002. Training (phase 25) = G4 criterion DU001. Trial run = G4 trigger.
+  - **Post-G4 closeout gap**: true closeout (lessons-learned + archival + retrospective) is absent from the 28 phases. Needs a `closeout/` placeholder.
+  - **A/B/C three-pillar architecture** proposed: A-PMO (governance) / B-projects (active work) / C-products (software catalogue). ⭐ A-4 PMO Dashboard is net new (auto-fed from B-projects + Monday.com).
+  - **Naming proposal**: my `products/` (cross-project reusable delivery solutions) → rename to `delivery-solutions/` and move into A-2, to avoid confusion with C-products (Janusd software catalogue).
+  - **Day 1 README claim**: Monday.com = Task SSOT; Prime Radiant = Knowledge SSOT.
+  - **6 confirmation items** to Michael: A/B/C overall structure, Q1/Q2 tags, Q3 vendors location, **(MANDATORY) phases 23–28 reclassification**, Q7 personal-vault defer (record-only), Q8 federation defer (record-only).
+- updated:
+  - **processes/project-management-digital-delivery-workflow.md** — workflow page updated to reflect the G1-G4 gate framing. "Workflow at a glance" rewritten as a 4-gate table with explicit phase boundaries + a Post-G4 row flagging the closeout gap. Phase 28 reframed as the G4 trigger event. New "Post-G4 closeout (currently gap — placeholder)" section added at the end of the phase enumeration. Sources + related expanded; updated date bumped 2026-05-14 → 2026-05-19. Old Stage 5 = Closure framing explicitly marked as factually wrong per Lysander's correction.
+- not updated (deliberately):
+  - The 14 May standup-proposal HTML deck (`2026-05-14-project-management-prime-radiant-standup-proposal.html`) — that artefact has already been delivered to the audience; it's now a historical document. Future decks built off this workflow page will get the corrected framing.
+  - No new decisions/ page filed. The 6 confirmation items are pending Michael's response; once Michael's confirmations come back, those should be captured as a decision record at that point.
+- judgment calls:
+  - **Filed as a source, not as a brief or decision page.** It's a substantive deliverable from another team — source/misc/ is the right home, with the markdown twin doing the indexing work.
+  - **Workflow page correction in place rather than via a separate "supersedes" page.** The G4 correction is a factual fix, not a competing methodology. In-place correction with a flagged note pointing at Lysander's feedback is cleaner than a separate decision page just for renaming a stage.
+  - **Closeout gap captured as a structural finding** at the bottom of the workflow page. When/if Janus formalises the post-G4 closeout, that section turns into the canonical reference.
+- watch: Michael's responses to the 6 confirmation items — when they land, file as a decision record (decisions/2026-MM-DD-pm-prime-radiant-architecture-confirmed.md). Vault initialisation (per Lysander's note) can complete within a day once Michael confirms.

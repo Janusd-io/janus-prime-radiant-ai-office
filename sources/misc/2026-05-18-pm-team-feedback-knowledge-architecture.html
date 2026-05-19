@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Radiant Knowledge Architecture · Alignment Feedback</title>
+<style>
+  :root {
+    --accent:      #0f766e;
+    --accent-soft: #f0fdf4;
+    --accent-dark: #134e4a;
+    --accent-mid:  #14b8a6;
+    --bg:          #f8fafc;
+    --card:        #ffffff;
+    --line:        #e2e8f0;
+    --text:        #1e293b;
+    --text-muted:  #64748b;
+    --must:        #dc2626;
+    --must-soft:   #fef2f2;
+    --should:      #d97706;
+    --should-soft: #fffbeb;
+    --nice:        #16a34a;
+    --nice-soft:   #f0fdf4;
+    --pending:     #7c3aed;
+    --pending-soft:#f5f3ff;
+    --radius:      12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── Language Toggle ─────────────────────────────── */
+  .lang-toggle {
+    position: fixed;
+    top: 16px;
+    right: 80px;
+    display: flex;
+    gap: 6px;
+    z-index: 200;
+  }
+  .lang-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1.5px solid var(--line);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    background: #fff;
+    color: var(--text-muted);
+    transition: all 0.15s;
+  }
+  .lang-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .lang-btn:hover:not(.active) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* ── Brand ───────────────────────────────────────── */
+  .brand {
+    position: fixed;
+    top: 16px;
+    left: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    z-index: 200;
+  }
+
+  /* ── Slide Shell ─────────────────────────────────── */
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 48px 60px;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* ── Slide 1 — Hero ──────────────────────────────── */
+  .slide-hero {
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 60%, var(--accent-mid) 100%);
+    color: #fff;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 80px 80px;
+  }
+  .slide-hero .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 20px;
+  }
+  .slide-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    max-width: 720px;
+  }
+  .slide-hero .subtitle {
+    font-size: 15px;
+    opacity: 0.85;
+    max-width: 620px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0.8;
+    font-size: 13px;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* ── Section Heading ─────────────────────────────── */
+  .slide-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .slide h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 800;
+    color: var(--accent-dark);
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+  .slide .deck-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  /* ── Q&A Items ───────────────────────────────────── */
+  .qa-list { display: flex; flex-direction: column; gap: 14px; }
+  .qa-item {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    border-left: 4px solid var(--accent-mid);
+  }
+  .qa-item.pending { border-left-color: var(--pending); }
+  .qa-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .qa-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .qa-item.pending .qa-num { background: var(--pending); }
+  .qa-title { font-size: 13.5px; font-weight: 700; color: var(--accent-dark); line-height: 1.4; flex: 1; }
+  .qa-question {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    font-style: italic;
+    border-left: 2px solid var(--line);
+    padding-left: 10px;
+    margin: 0 0 10px 40px;
+    line-height: 1.5;
+  }
+  .qa-answer {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+    margin-left: 40px;
+  }
+  .qa-answer code {
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-family: 'Cascadia Code', 'Consolas', monospace;
+    font-size: 12px;
+  }
+  .pending-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--pending-soft);
+    color: var(--pending);
+    border: 1.5px solid #c4b5fd;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-top: 8px;
+    margin-left: 40px;
+  }
+
+  /* ── Gate Flow ───────────────────────────────────── */
+  .gate-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 28px 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .gate-block {
+    flex: 1;
+    min-width: 140px;
+    background: var(--accent-soft);
+    border: 1.5px solid var(--accent-mid);
+    padding: 14px 16px;
+    position: relative;
+    border-right: none;
+  }
+  .gate-block:last-child { border-right: 1.5px solid var(--accent-mid); border-radius: 0 var(--radius) var(--radius) 0; }
+  .gate-block:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+  .gate-block::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid var(--accent-mid);
+    z-index: 2;
+  }
+  .gate-block:last-child::after { display: none; }
+  .gate-block.corrected { background: #fef9c3; border-color: #facc15; }
+  .gate-block.corrected::after { border-left-color: #facc15; }
+  .gate-num {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .gate-block.corrected .gate-num { color: #92400e; }
+  .gate-name { font-size: 12px; font-weight: 700; color: var(--accent-dark); line-height: 1.3; margin-bottom: 6px; }
+  .gate-block.corrected .gate-name { color: #78350f; }
+  .gate-phases { font-size: 11px; color: var(--text-muted); }
+
+  /* ── Stage Correction ────────────────────────────── */
+  .stage-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  .stage-col {
+    flex: 1;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+  .stage-col.wrong { border-top: 3px solid var(--must); }
+  .stage-col.right { border-top: 3px solid var(--nice); }
+  .stage-col .stage-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .stage-col.wrong .stage-label { color: var(--must); }
+  .stage-col.right .stage-label { color: var(--nice); }
+  .stage-col ul { list-style: none; padding: 0; }
+  .stage-col ul li {
+    padding: 4px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+  .stage-col ul li:last-child { border-bottom: none; }
+  .stage-col ul li.strike { text-decoration: line-through; color: var(--text-muted); }
+  .stage-col ul li strong { color: var(--nice); }
+
+  /* ── Structure Tree ──────────────────────────────── */
+  .tree {
+    font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    font-size: 12.5px;
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    line-height: 1.65;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  .tree .t-accent { color: #5eead4; font-weight: 700; }
+  .tree .t-dim    { color: #64748b; }
+  .tree .t-warn   { color: #fbbf24; }
+  .tree .t-ok     { color: #86efac; }
+  .tree .t-new    { color: #fbbf24; font-weight: 700; }
+
+  /* ── Data Sources Table ──────────────────────────── */
+  .src-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-top: 20px;
+  }
+  .src-table th {
+    background: var(--accent-dark);
+    color: #fff;
+    padding: 9px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .src-table th:first-child { border-radius: 8px 0 0 0; }
+  .src-table th:last-child  { border-radius: 0 8px 0 0; }
+  .src-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    line-height: 1.45;
+    color: var(--text);
+  }
+  .src-table tr:nth-child(even) td { background: var(--bg); }
+  .src-table .new-row td { background: #fef9c3; }
+  .data-src {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    border: 1px solid #99f6e4;
+    padding: 1px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* ── Action Items / Next Steps ───────────────────── */
+  .action-section { margin-bottom: 24px; }
+  .action-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .badge-michael  { background: var(--accent-soft);  color: var(--accent-dark); border: 1.5px solid #99f6e4; }
+  .badge-president{ background: var(--pending-soft); color: var(--pending);     border: 1.5px solid #c4b5fd; }
+  .badge-must     { background: var(--must-soft);    color: var(--must);        border: 1.5px solid #fca5a5; }
+
+  .action-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .action-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid transparent;
+  }
+  .action-item.michael   { background: var(--accent-soft);  border-color: var(--accent); }
+  .action-item.president { background: var(--pending-soft); border-color: var(--pending); }
+  .action-num {
+    font-size: 12px;
+    font-weight: 800;
+    min-width: 26px;
+    padding-top: 1px;
+  }
+  .action-item.michael   .action-num { color: var(--accent); }
+  .action-item.president .action-num { color: var(--pending); }
+  .action-body { flex: 1; }
+  .action-body strong { font-size: 13.5px; display: block; margin-bottom: 2px; }
+  .action-body p { font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ── Note / Info boxes ───────────────────────────── */
+  .note {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-left: 4px solid var(--should);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #92400e;
+    margin-top: 16px;
+    line-height: 1.55;
+  }
+  .info {
+    background: var(--accent-soft);
+    border: 1px solid #99f6e4;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--accent-dark);
+    margin-top: 16px;
+    line-height: 1.55;
+  }
+  .closing-note {
+    background: var(--nice-soft);
+    border: 1px solid #86efac;
+    border-left: 4px solid var(--nice);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #14532d;
+    margin-top: 24px;
+    line-height: 1.65;
+  }
+
+  /* ── Divider ─────────────────────────────────────── */
+  .divider {
+    height: 1px;
+    background: var(--line);
+    margin: 28px 0;
+  }
+
+  /* ── Pill Tag ────────────────────────────────────── */
+  .pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    border: 1px solid #99f6e4;
+  }
+
+  /* ── Two Columns ─────────────────────────────────── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 8px;
+  }
+  @media (max-width: 640px) {
+    .two-col { grid-template-columns: 1fr; }
+    .gate-flow { flex-direction: column; }
+    .gate-block { border-right: 1.5px solid var(--accent-mid); border-bottom: none; border-radius: 0; }
+    .gate-block:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    .gate-block:last-child  { border-radius: 0 0 var(--radius) var(--radius); border-bottom: 1.5px solid var(--accent-mid); }
+    .gate-block::after { display: none; }
+    .stage-row { flex-direction: column; }
+    .slide-hero { padding: 80px 24px; }
+    .slide { padding: 80px 24px 60px; }
+  }
+
+  /* ── Scroll Indicator ────────────────────────────── */
+  .scroll-hint {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* ── Language helpers ────────────────────────────── */
+  .cn { display: inline; }
+  .en { display: none; }
+  span.cn, span.en { display: inline; }
+  div.cn, div.en   { display: block; }
+  .blk-cn { display: block; }
+  .blk-en { display: none;  }
+
+  /* ── Footer ──────────────────────────────────────── */
+  .slide-footer {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 11.5px;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Brand -->
+<div class="brand">JANUSD · PM FEEDBACK</div>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" id="lang-cn">中文</button>
+  <button class="lang-btn" id="lang-en">EN</button>
+</div>
+
+<!-- Scroll Hint -->
+<div class="scroll-hint">↓ scroll</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SLIDE 1 — HERO                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="slide slide-hero">
+  <div class="eyebrow">
+    <span class="cn">Janusd · PM 团队 → AI Office · 对齐反馈文件</span>
+    <span class="en">Janusd · PM Team → AI Office · Alignment Feedback</span>
+  </div>
+
+  <h1>
+    <span class="cn">Prime Radiant 知识体系<br>对齐反馈</span>
+    <span class="en">Prime Radiant Knowledge Architecture<br>Alignment Feedback</span>
+  </h1>
+
+  <p class="subtitle">
+    <span class="cn">感谢 Michael 对方案的扎实准备。这份文件是 PM 团队基于 Janusd 交付体系权威的系统性回应，涵盖您提出的问题的逐项解答，以及我们建议的最终知识架构。请阅读后回复您的意见和确认，以便推进 vault 初始化。</span>
+    <span class="en">Thank you for the thorough proposal. This document is the PM team's systematic response based on Janusd's delivery authority. It answers each of your open questions and presents our recommended knowledge architecture. Please review and come back with your confirmation so we can move forward with vault initialization.</span>
+  </p>
+
+  <div class="hero-meta">
+    <span>📅 2026-05-18</span>
+    <span>✍️
+      <span class="cn">Lysander Liu / PM 团队</span>
+      <span class="en">Lysander Liu / PM Team</span>
+    </span>
+    <span>📬
+      <span class="cn">致 Michael B / AI Office</span>
+      <span class="en">To Michael B / AI Office</span>
+    </span>
+    <span>🔖 Ref: KSR-PM-2026-0514-001</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SLIDE 2 — PART A: QUESTIONS ANSWERED                           -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <div class="slide-label">
+    <span class="cn">Part A · 问题逐项回应</span>
+    <span class="en">Part A · Questions Answered</span>
+  </div>
+  <h2>
+    <span class="cn">Michael 在方案中提出了 8 个问题</span>
+    <span class="en">Eight Questions from Michael's Proposal</span>
+  </h2>
+  <p class="deck-sub">
+    <span class="cn">以下基于 Janusd PM 团队和交付体系对您的问题逐一回应。</span>
+    <span class="en">The following addresses each of your questions from the PM team's perspective.</span>
+  </p>
+
+  <div class="qa-list">
+
+    <!-- Q1 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">1</div>
+        <div class="qa-title">
+          <span class="cn">Portfolio 放在哪里？</span>
+          <span class="en">Where do portfolios sit?</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：Portfolio 应该放在 products 上层吗？</span>
+        <span class="en">Michael: "Where do portfolios sit (above products)?"</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">建议本阶段采用 Obsidian 标签（<code>#portfolio/xxx</code>）而非物理目录。理由：初期项目数量有限，物理层级增加维护成本、收益有限；标签方案可与 Obsidian Dataview 联动生成跨项目视图，无需目录结构变化。建议 Month 3 重新评估是否需要物理目录。</span>
+        <span class="en">Recommend Obsidian tags (<code>#portfolio/xxx</code>) rather than a physical directory at this stage. With few projects early on, a physical layer adds maintenance overhead with limited value. Tag approach works natively with Obsidian Dataview for cross-project views without directory restructuring. Re-evaluate physical directory at Month 3.</span>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">2</div>
+        <div class="qa-title">
+          <span class="cn">Programme 放在哪里？</span>
+          <span class="en">Where do programmes live?</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：Programme 是放在 products 和 projects 之间，还是用平铺标签？</span>
+        <span class="en">Michael: "Where do programmes live (between products and projects, or as a flat tag)?"</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">同 Portfolio——标签方式（<code>#programme/xxx</code>）。Month 3 与 Portfolio 一同评估物理目录需求。不建议在现阶段在 products 和 projects 之间增加物理 programme 层，这会在项目数量不足时造成结构过度设计。</span>
+        <span class="en">Same as Portfolio — Obsidian tags (<code>#programme/xxx</code>). Co-evaluate with Portfolio at Month 3. Adding a physical programme layer between products and projects is premature at this stage and would over-engineer the structure for a small project count.</span>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">3</div>
+        <div class="qa-title">
+          <span class="cn">供应商 / 第三方内容放在哪里？</span>
+          <span class="en">Where does vendor / third-party / supplier content live?</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：供应商、第三方和承包商资料应该放在哪里？</span>
+        <span class="en">Michael: "Where does vendor / third-party / supplier content live?"</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">放在 <strong>A-PMO / 3-Resources</strong> 层下，细分为 <code>hardware-vendors/</code>、<code>construction-vendors/</code>、<code>delivery-partners/</code> 三类。跨项目通用的供应商资质、合规资料和历史合作记录在 PMO 层集中维护，供所有项目复用；项目专属的供应商联系人 / 合同明细保留在 B-projects 各项目的 <code>planning/</code> 或 <code>raid/</code> 中。</span>
+        <span class="en">Goes into <strong>A-PMO / 3-Resources</strong>, split as <code>hardware-vendors/</code>, <code>construction-vendors/</code>, and <code>delivery-partners/</code>. Cross-project vendor credentials, compliance docs, and historical performance belong at the PMO layer for reuse across all projects. Project-specific vendor contacts and contract details stay inside each project's <code>planning/</code> or <code>raid/</code> in B-projects.</span>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">4</div>
+        <div class="qa-title">
+          <span class="cn">工序命名准确吗？</span>
+          <span class="en">Are there phases where naming doesn't match?</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：有哪些阶段的命名与你们团队实际使用的不符？Lysander，你对此最了解。</span>
+        <span class="en">Michael: "Are there phases where the current naming doesn't match what your team actually says? — Lysander, you'll have the strongest read here."</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">28 工序的<strong>内容</strong>捕获准确度很高（PM 团队评分 9/10，正式背书）。但<strong>阶段分组命名</strong>存在一个关键错误：Stage 5 "Closure" 的名称和边界位置与 Janusd G1-G4 阶段门体系不符（详见 Slide 3）。⚠️ 说明：本次方案的工序梳理来自录音会话，与 Janusd 权威工序表（G1-G4 阶段门体系文档）可能存在细微差异。Part B 推荐的知识架构以权威工序表为准，而非基于录音重建的工序版本。</span>
+        <span class="en">The 28-phase <strong>content</strong> accuracy is high (PM team: 9/10, endorsed). However, there is one critical <strong>stage grouping</strong> error: Stage 5 "Closure" is factually incorrect against Janusd's G1-G4 gate system (see Slide 3 for details). ⚠️ Note: since this proposal was built from a recording session, minor gaps may exist between the captured workflow and the authoritative Janusd workflow table. The recommended structure in Part B is based on the authoritative workflow table, not the audio-reconstructed version.</span>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">5</div>
+        <div class="qa-title">
+          <span class="cn">范围与发起人确认</span>
+          <span class="en">Confirm scope &amp; sponsor</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：Euclid 作为三个团队（IT、PM、运营）的发起人；PM 是第二个试点（营销之后）；IT 和运营按顺序跟进。</span>
+        <span class="en">Michael: "Confirm scope &amp; sponsor. Euclid as sponsor across his three teams (IT, Project Management, Operations); Project Management is pilot #2 after Marketing. IT and Operations follow in sequence."</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">✅ PM 团队无异议。Euclid Wong 作为三团队发起人，PM 作为第二个试点，方向确认。✅ 已确认。</span>
+        <span class="en">✅ No objection from the PM team. Euclid Wong as sponsor across IT/PM/Operations; PM as pilot #2 after Marketing — direction confirmed. ✅ Confirmed.</span>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">6</div>
+        <div class="qa-title">
+          <span class="cn">选择回填项目</span>
+          <span class="en">Pick one project to backfill</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：Lysander，由你决定。选一个进行中、有足够素材、又不会让摄入工作停滞的项目。</span>
+        <span class="en">Michael: "Lysander — your call. Something in flight that has enough material to be interesting but not so much that ingestion stalls."</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">PM 团队建议以 <strong>KSC 项目</strong>作为第一个回填项目（理由：历史材料最丰富、覆盖全 G1-G4 阶段、团队熟悉度最高，能快速验证知识库结构的端到端有效性）。✅ 确认以 KSC 项目作为首个回填项目。</span>
+        <span class="en">PM team recommends the <strong>KSC project</strong> as the first backfill (richest materials, full G1-G4 coverage, highest team familiarity — best test of vault structure end-to-end). ✅ Confirmed: KSC project will be the first backfill.</span>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">7</div>
+        <div class="qa-title">
+          <span class="cn">个人 vault（暂缓）</span>
+          <span class="en">Personal vaults (deferred)</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：个人 vault 不在本次发布范围内……等团队脑库跑通后再回来处理个人 vault。</span>
+        <span class="en">Michael: "Personal vaults are not part of this rollout... We'll come back to personal vaults once the team brains have proved out."</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">✅ 完全同意暂缓。团队脑库先跑通是正确优先级。个人 vault → 团队 vault 流转规则需独立设计，不阻塞 PM 试点。</span>
+        <span class="en">✅ Fully agreed — defer personal vaults. Getting the team brain working is the right first priority. Personal vault → team vault flow rules require a separate design conversation; not a blocker for PM standup.</span>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-item">
+      <div class="qa-header">
+        <div class="qa-num">8</div>
+        <div class="qa-title">
+          <span class="cn">跨部门脑库 federation（AIO × PM）</span>
+          <span class="en">AIO × PM federation</span>
+        </div>
+      </div>
+      <div class="qa-question">
+        <span class="cn">Michael：部门脑库之间的 federation（AIO × PM 共享工作区）也需要单独讨论——我们最近迁移到 GitHub 作为标准底层基础，意味着之前的 mesh 子文件夹模式需要重新设计。</span>
+        <span class="en">Michael: "Federation between department brains (the AIO × Project Management shared workspace) also needs a separate conversation — our recent move to GitHub as the canonical substrate means the previous mesh-subfolder pattern has to be re-thought."</span>
+      </div>
+      <div class="qa-answer">
+        <span class="cn">✅ 同意作为独立议题处理。GitHub 基础架构下的跨部门脑库 federation 模式需要另行设计。建议在 Week 3-4 综合期启动此议题，不阻塞 PM 试点。</span>
+        <span class="en">✅ Agreed — separate conversation. Cross-department vault federation on the GitHub substrate requires a separate design. Suggest starting this conversation during the Week 3-4 synthesis window; not a blocker for PM standup.</span>
+      </div>
+    </div>
+
+  </div><!-- /.qa-list -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SLIDE 3 — STAGE 5 CORRECTION                                   -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <div class="slide-label">
+    <span class="cn">关键技术纠正</span>
+    <span class="en">Critical Technical Correction</span>
+  </div>
+  <h2>
+    <span class="cn">阶段命名纠正 — 应采用 G1-G4 门禁命名，而非五阶段标签</span>
+    <span class="en">Stage Naming Correction — Use G1-G4 Gate Names, Not Generic Stage Labels</span>
+  </h2>
+  <p class="deck-sub">
+    <span class="cn">Janusd 的交付体系采用严格的四阶段门（G1-G4）制度，没有第五阶段。Michael 方案中的五阶段标签（Stage 1–5）是通用 PM 框架的映射，与 Janusd 实际门禁结构不对齐。最关键的错误是：工序 23–28 被标为"Stage 5 · Closure（收尾）"——而这些工序实际是 G4 验收移交门的前置条件，不是 G4 通过后的收尾活动。</span>
+    <span class="en">Janusd's delivery system uses a strict four-gate structure (G1-G4) — there is no Stage 5. Michael's five-stage labels (Stage 1–5) map generic PM framework stages onto Janusd's workflow. The most critical error: phases 23–28 are labelled "Stage 5 · Closure" but they are G4 prerequisites, not post-G4 closeout activities.</span>
+  </p>
+
+  <!-- G1-G4 Gate Flow -->
+  <div class="gate-flow">
+    <div class="gate-block">
+      <div class="gate-num">G1</div>
+      <div class="gate-name">
+        <span class="cn">Pre-Sales 评审</span>
+        <span class="en">Pre-Sales Review</span>
+      </div>
+      <div class="gate-phases">
+        <span class="cn">工序 1–4 → G1 通过</span>
+        <span class="en">Phases 1–4 → G1 pass</span>
+      </div>
+    </div>
+    <div class="gate-block">
+      <div class="gate-num">G2</div>
+      <div class="gate-name">
+        <span class="cn">计划就绪</span>
+        <span class="en">Planning Readiness</span>
+      </div>
+      <div class="gate-phases">
+        <span class="cn">工序 5–8 → G2 通过</span>
+        <span class="en">Phases 5–8 → G2 pass</span>
+      </div>
+    </div>
+    <div class="gate-block">
+      <div class="gate-num">G3</div>
+      <div class="gate-name">
+        <span class="cn">执行就绪</span>
+        <span class="en">Execution Readiness</span>
+      </div>
+      <div class="gate-phases">
+        <span class="cn">工序 9–22 · G3 触发并行流 DC/DD/DS/DY/DB</span>
+        <span class="en">Phases 9–22 · G3 triggers parallel flows DC/DD/DS/DY/DB</span>
+      </div>
+    </div>
+    <div class="gate-block corrected">
+      <div class="gate-num">G4 ← 纠正 / Correction</div>
+      <div class="gate-name">
+        <span class="cn">验收与移交</span>
+        <span class="en">Acceptance &amp; Handover</span>
+      </div>
+      <div class="gate-phases">
+        <span class="cn">工序 23–28 = G4 前置条件（非 Closure 之后）</span>
+        <span class="en">Phases 23–28 = G4 prerequisites (not post-closure)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wrong vs Right -->
+  <div class="stage-row">
+    <div class="stage-col wrong">
+      <div class="stage-label">
+        <span class="cn">❌ 当前错误</span>
+        <span class="en">❌ Current (Wrong)</span>
+      </div>
+      <p style="font-weight:700; margin-bottom:8px; color: var(--must);">Stage 5 · Closure</p>
+      <ul>
+        <li class="strike"><span class="cn">工序 23–28 标注为 "Closure"</span><span class="en">Phases 23–28 labelled "Closure"</span></li>
+        <li><span class="cn">暗示配置、UAT、培训、试运行、最终验收发生在 G4 之后</span><span class="en">Implies configuration, UAT, training, trial run, and final verification happen after G4</span></li>
+        <li style="color:var(--must); font-weight:600;"><span class="cn">这在事实上是错误的</span><span class="en">This is factually wrong</span></li>
+      </ul>
+    </div>
+    <div class="stage-col right">
+      <div class="stage-label">
+        <span class="cn">✅ 应改为</span>
+        <span class="en">✅ Should Be</span>
+      </div>
+      <p style="font-weight:700; margin-bottom:8px; color: var(--nice);">G4 Prerequisites · Commissioning &amp; Handover（工序 23–28）</p>
+      <ul>
+        <li><span class="cn">工序 23–28 是 G4 验收与移交门禁的<strong>前置条件</strong></span><span class="en">Phases 23–28 are G4 Acceptance &amp; Handover gate <strong>prerequisites</strong></span></li>
+        <li><strong>UAT（工序 24）= G4 准则 DT002</strong></li>
+        <li><strong><span class="cn">培训（工序 25）= G4 准则 DU001</span><span class="en">Training (phase 25) = G4 criterion DU001</span></strong></li>
+        <li><strong><span class="cn">试运行完成 = G4 触发条件</span><span class="en">Trial run completion = G4 trigger condition</span></strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong><span class="cn">关于 Stage 3/4 分割（次要，低优先级）：</span><span class="en">On the Stage 3/4 split (minor, low priority):</span></strong><br>
+    <span class="cn">关于工序 9–17（Michael 的 Stage 3）与 18–22（Stage 4）的分割：两者的分界线不对应任何 Janusd 门禁节点，是编辑性分组。建议合并为 "G3 Execution" 覆盖工序 9–22，或加注说明此分组无门禁意义。</span>
+    <span class="en">The split between phases 9–17 (Michael's Stage 3) and 18–22 (Stage 4) has no corresponding Janusd gate boundary. It is an editorial grouping. Recommend merging both into "G3 Execution" covering phases 9–22, or annotating that this split has no gate significance.</span>
+  </div>
+
+  <div class="info">
+    <strong><span class="cn">真正的"项目收尾"在 28 工序中缺失：</span><span class="en">True "Project Closeout" is absent from the 28 phases:</span></strong><br>
+    <span class="cn">G4 通过之后，Janusd 需执行经验教训提炼、项目档案归档、PMO 复盘，这些在 28 工序中未定义。推荐知识架构中预留了 <code>closeout/</code> 占位符（G4 之后）。</span>
+    <span class="en">After G4, Janusd must execute lessons-learned capture, project archival, and PMO retrospective — none are in the 28 phases. The recommended architecture reserves a <code>closeout/</code> placeholder (post-G4).</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SLIDE 4 — PART B: RECOMMENDED ARCHITECTURE                     -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <div class="slide-label">
+    <span class="cn">Part B · 推荐知识架构</span>
+    <span class="en">Part B · Recommended Knowledge Architecture</span>
+  </div>
+  <h2>
+    <span class="cn">A/B/C 三支柱 · 基于权威工序表 · 含数据来源</span>
+    <span class="en">A/B/C Three Pillars · Based on Authoritative Workflow Table · With Data Sources</span>
+  </h2>
+
+  <div class="info" style="margin-bottom:20px; margin-top:0;">
+    <span class="cn">以下结构基于 Janusd G1-G4 权威工序表（非录音重建版本）。每个知识域标注数据来源与更新责任方。⭐ PMO Dashboard（A-4）为新增内容，Michael 的方案中未包含。</span>
+    <span class="en">Structure is based on the authoritative Janusd G1-G4 workflow table (not the audio-reconstructed version). Each domain includes data source and update ownership. ⭐ PMO Dashboard (A-4) is new and was absent from Michael's proposal.</span>
+  </div>
+
+  <div class="tree">
+<span class="t-accent">janusd-platform-delivery/</span>
+├── <span class="t-accent">A-PMO/</span>                              <span class="t-dim">← 治理与知识层 / Governance &amp; Knowledge Layer</span>
+│   ├── <span class="t-accent">1-committee-decisions/</span>          <span class="t-ok">[来源: 委员会会议 + Fireflies 摘要]</span>
+│   │   ├── pre-sales-approvals/
+│   │   ├── planning-reviews/
+│   │   ├── change-decisions/
+│   │   └── acceptance-closeout/
+│   ├── <span class="t-accent">2-pm-knowledge/</span>                 <span class="t-ok">[来源: PMO 管理员维护]</span>
+│   │   ├── delivery-process/           <span class="t-dim"># G1-G4 SOP, 28工序文档</span>
+│   │   ├── training-materials/         <span class="t-dim"># ADDIE + Kirkpatrick 模板</span>
+│   │   ├── pm-methodology/             <span class="t-dim"># PMP, PGMP, 软技能</span>
+│   │   └── delivery-solutions/         <span class="t-dim"># ← Michael 的 products/ 迁移至此</span>
+│   ├── <span class="t-accent">3-resources/</span>                    <span class="t-ok">[来源: PMO + 各项目PM + 供应商]</span>
+│   │   ├── team-allocation/
+│   │   ├── hardware-vendors/
+│   │   ├── construction-vendors/
+│   │   └── delivery-partners/
+│   ├── <span class="t-warn">4-pmo-dashboard/  ★ NEW</span>         <span class="t-warn">[来源: 自动从 B-Projects + Monday.com 读取]</span>
+│   │   ├── health-metrics/             <span class="t-dim"># 所有活跃项目健康度指标</span>
+│   │   ├── alerts/                     <span class="t-dim"># 自动预警 (超期/RAID升级/门禁临近)</span>
+│   │   └── portfolio-view/             <span class="t-dim"># 跨项目组合视图</span>
+│   └── <span class="t-accent">5-lessons-learned/</span>             <span class="t-ok">[来源: 各项目PM G4前强制提交]</span>
+│
+├── <span class="t-accent">B-projects/</span>                         <span class="t-dim">← 活跃项目工作区 / Active Project Workspace</span>
+│   └── &lt;project&gt;/                     <span class="t-ok">[来源: 各项目PM维护，访问受控]</span>
+│       ├── charter.md
+│       ├── scope.md
+│       ├── G1-initiation/             <span class="t-dim"># 工序 1–4 (售前→G1)</span>
+│       ├── G2-planning/               <span class="t-dim"># 工序 5–8 (G1→G2)</span>
+│       ├── G3-execution/              <span class="t-dim"># 工序 9–22 (G2→G3→执行)</span>
+│       │   ├── entry-readiness/       <span class="t-dim"># 工序 9–11 (进场准备)</span>
+│       │   ├── parallel-tracks/       <span class="t-dim"># 工序 12–17 (DC/DD/DS/DY/DB)</span>
+│       │   └── system-delivery/       <span class="t-dim"># 工序 18–22 (系统交付)</span>
+│       ├── <span class="t-warn">G4-commissioning-handover/</span> <span class="t-dim"># 工序 23–28 (G4前置条件) ← was "closure"</span>
+│       ├── closeout/                  <span class="t-dim"># G4通过后 → 链接 A-5经验教训</span>
+│       ├── raid/
+│       ├── meetings/
+│       └── decisions/
+│
+└── <span class="t-accent">C-products/</span>                         <span class="t-dim">← Janusd软件产品目录 / Janusd Software Product Catalogue</span>
+    │                                  <span class="t-ok">[来源: 解决方案团队维护]</span>
+    ├── WEB-APC/
+    ├── WEB-AMC/
+    ├── WEB-DTX/
+    ├── APP-APC/
+    ├── APP-DTX/
+    ├── industry-solutions/
+    └── industry-cases/
+  </div>
+
+  <div class="info" style="margin-top:16px;">
+    <strong><span class="cn">关于 Michael 的 products/ 位置：</span><span class="en">On Michael's products/ placement:</span></strong><br>
+    <span class="cn">Michael 方案中的 <code>products/</code>（跨项目的可复用交付方案）建议重命名为 <code>delivery-solutions/</code> 并移入 A-2，以避免与 C-products（Janusd 软件产品目录——完全不同的概念）产生混淆。</span>
+    <span class="en">Michael's <code>products/</code> (durable cross-project delivery solutions) is recommended to be renamed <code>delivery-solutions/</code> and moved to A-2, to avoid confusion with C-products (Janusd's software product catalogue — a completely separate concept).</span>
+  </div>
+
+  <!-- Data Sources Table -->
+  <table class="src-table">
+    <thead>
+      <tr>
+        <th><span class="cn">知识域</span><span class="en">Domain</span></th>
+        <th><span class="cn">数据来源</span><span class="en">Data Source</span></th>
+        <th><span class="cn">更新责任</span><span class="en">Owner</span></th>
+        <th><span class="cn">更新方式</span><span class="en">Method</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>A-1</strong> <span class="cn">委员会决策</span><span class="en">Committee Decisions</span></td>
+        <td><span class="cn">委员会会议记录</span><span class="en">Committee meeting records</span></td>
+        <td><span class="cn">会议记录人</span><span class="en">Meeting scribe</span></td>
+        <td><span class="cn">Fireflies 自动 + 人工校对，24h 内归档</span><span class="en">Fireflies auto + manual review, archive within 24h</span></td>
+      </tr>
+      <tr>
+        <td><strong>A-2</strong> <span class="cn">PM 知识</span><span class="en">PM Knowledge</span></td>
+        <td><span class="cn">PMO 知识库</span><span class="en">PMO knowledge base</span></td>
+        <td><span class="cn">PMO 管理员</span><span class="en">PMO admin</span></td>
+        <td><span class="cn">流程更新时手动维护</span><span class="en">Manual update on process change</span></td>
+      </tr>
+      <tr>
+        <td><strong>A-3</strong> <span class="cn">资源</span><span class="en">Resources</span></td>
+        <td><span class="cn">PMO + 各项目PM + 供应商</span><span class="en">PMO, project PMs, vendors</span></td>
+        <td><span class="cn">PMO 管理员</span><span class="en">PMO admin</span></td>
+        <td><span class="cn">项目启动 / 资源变更时更新</span><span class="en">Update on project start or resource change</span></td>
+      </tr>
+      <tr class="new-row">
+        <td><strong>A-4 ★</strong> <span class="cn">PMO Dashboard</span><span class="en">PMO Dashboard</span></td>
+        <td><span class="cn">B-Projects + Monday.com</span><span class="en">B-Projects + Monday.com</span></td>
+        <td><span class="cn">自动生成</span><span class="en">Auto-generated</span></td>
+        <td><span class="cn">定期自动刷新 + 事件触发预警</span><span class="en">Scheduled refresh + event-triggered alerts</span></td>
+      </tr>
+      <tr>
+        <td><strong>A-5</strong> <span class="cn">经验教训</span><span class="en">Lessons Learned</span></td>
+        <td><span class="cn">各项目PM提交</span><span class="en">Project PM submissions</span></td>
+        <td><span class="cn">项目 PM</span><span class="en">Project PM</span></td>
+        <td><span class="cn">G4 门禁通过前强制提交</span><span class="en">Mandatory pre-G4 gate submission</span></td>
+      </tr>
+      <tr>
+        <td><strong>B-Projects</strong></td>
+        <td><span class="cn">项目现场数据</span><span class="en">Project site data</span></td>
+        <td><span class="cn">各项目 PM</span><span class="en">Project PM</span></td>
+        <td><span class="cn">项目进展持续更新，访问受控</span><span class="en">Continuous update, access-controlled</span></td>
+      </tr>
+      <tr>
+        <td><strong>C-Products</strong></td>
+        <td><span class="cn">产品资料</span><span class="en">Product documentation</span></td>
+        <td><span class="cn">解决方案团队</span><span class="en">Solutions team</span></td>
+        <td><span class="cn">产品版本更新时维护</span><span class="en">Maintain on product version update</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note" style="margin-top:16px;">
+    <strong><span class="cn">Day 1 必写入 vault README：</span><span class="en">Must be written into vault README on Day 1:</span></strong><br>
+    <span class="cn">Monday.com = 任务 SSOT；Prime Radiant = 知识 SSOT。两者互补，不互相取代。</span>
+    <span class="en">Monday.com = Task SSOT; Prime Radiant = Knowledge SSOT. Complementary, not substitutes for each other.</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SLIDE 5 — CLOSING & NEXT STEPS                                 -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="slide">
+  <div class="slide-label">
+    <span class="cn">后续确认</span>
+    <span class="en">Next Steps &amp; Confirmation</span>
+  </div>
+  <h2>
+    <span class="cn">请 Michael 审阅并回复确认</span>
+    <span class="en">Please Review and Confirm</span>
+  </h2>
+  <p class="deck-sub">
+    <span class="cn">以下是请 Michael 确认的事项，结构确认后可立即推进 vault 初始化。</span>
+    <span class="en">The following items are for Michael to confirm. Once the structure is locked, vault initialization can begin immediately.</span>
+  </p>
+
+  <!-- Michael confirms -->
+  <div class="action-section">
+    <div class="action-header">
+      <span class="badge badge-michael">
+        <span class="cn">请 Michael 确认</span>
+        <span class="en">For Michael to Confirm</span>
+      </span>
+    </div>
+    <ul class="action-list">
+      <li class="action-item michael">
+        <span class="action-num">1</span>
+        <div class="action-body">
+          <strong><span class="cn">A/B/C 三支柱整体结构</span><span class="en">A/B/C Three-Pillar structure overall</span></strong>
+          <p><span class="cn">是否认可 A-PMO / B-Projects / C-Products 三支柱划分？</span><span class="en">Do you endorse the A-PMO / B-Projects / C-Products three-pillar split?</span></p>
+        </div>
+      </li>
+      <li class="action-item michael">
+        <span class="action-num">2</span>
+        <div class="action-body">
+          <strong><span class="cn">Q1/Q2：Portfolio + Programme 采用标签方案</span><span class="en">Q1/Q2: Portfolio + Programme via tags</span></strong>
+          <p><span class="cn">本阶段用 Obsidian 标签，Month 3 评估物理目录——是否认可？</span><span class="en">Tags now, evaluate physical directories at Month 3 — agreed?</span></p>
+        </div>
+      </li>
+      <li class="action-item michael">
+        <span class="action-num">3</span>
+        <div class="action-body">
+          <strong><span class="cn">Q3：供应商内容放入 A-3 Resources</span><span class="en">Q3: Vendor content into A-3 Resources</span></strong>
+          <p><span class="cn">而非项目文件夹顶层——是否认可？</span><span class="en">Not at project folder top-level — agreed?</span></p>
+        </div>
+      </li>
+      <li class="action-item michael">
+        <span class="action-num">4</span>
+        <div class="action-body">
+          <strong style="color: var(--must);"><span class="cn">工序 23–28 重新归入 G4 门禁前置区——移除 "Stage 5 · Closure" 标签（必须执行）</span><span class="en">Re-classify phases 23–28 as G4 prerequisites — remove the "Stage 5 · Closure" label (mandatory)</span></strong>
+          <p><span class="cn">Janusd 使用 G1-G4 四阶段门，没有第五阶段。工序 23–28 属于 G4 门禁前置条件（UAT = DT002，培训 = DU001），在 vault 结构中应命名为 G4-commissioning-handover/，而非 closure/。这是结构性事实错误，必须在初始化前纠正。</span><span class="en">Janusd uses four gates G1-G4 — there is no Stage 5. Phases 23–28 are G4 gate prerequisites (UAT = DT002, training = DU001). In the vault, this folder should be named G4-commissioning-handover/, not closure/. Structural factual error — must be corrected before initialization.</span></p>
+        </div>
+      </li>
+      <li class="action-item michael">
+        <span class="action-num">5</span>
+        <div class="action-body">
+          <strong><span class="cn">Q7：个人 vault 暂缓</span><span class="en">Q7: Personal vaults deferred</span></strong>
+          <p><span class="cn">已同意，此处仅请确认记录。</span><span class="en">Already agreed — confirming on record.</span></p>
+        </div>
+      </li>
+      <li class="action-item michael">
+        <span class="action-num">6</span>
+        <div class="action-body">
+          <strong><span class="cn">Q8：AIO × PM federation 另行设计</span><span class="en">Q8: AIO × PM federation as separate conversation</span></strong>
+          <p><span class="cn">已同意，此处仅请确认不阻塞 PM 试点。</span><span class="en">Already agreed — confirming it does not block PM standup.</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Closing callout -->
+  <div class="closing-note">
+    <span class="cn">感谢 Michael 对方案的认真准备。以上是 PM 团队基于 Janusd 交付体系的系统性回应。请回复您的意见和确认，若有疑问欢迎进一步讨论。结构一经确认，vault 初始化可在一天内完成。期待您的回复。</span>
+    <span class="en">Thank you for the thorough preparation, Michael. This is the PM team's systematic review based on Janusd's delivery authority. Please come back with your thoughts and any corrections — happy to discuss further. Once the structure is confirmed, vault initialization can be completed within a day. Looking forward to your response.</span>
+  </div>
+
+  <div class="slide-footer">
+    <span><span class="cn">PM 团队 · Lysander Liu</span><span class="en">PM Team · Lysander Liu</span></span>
+    <span>2026-05-18</span>
+    <span>Ref: KSR-PM-2026-0514-001</span>
+    <span>COR-PM-2026-0514-001</span>
+  </div>
+</section>
+
+
+<script>
+  const cn = document.getElementById('lang-cn');
+  const en = document.getElementById('lang-en');
+
+  function setLang(lang) {
+    document.querySelectorAll('.cn').forEach(el => el.style.display = lang === 'cn' ? '' : 'none');
+    document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+    document.querySelectorAll('.blk-cn').forEach(el => el.style.display = lang === 'cn' ? 'block' : 'none');
+    document.querySelectorAll('.blk-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    cn.classList.toggle('active', lang === 'cn');
+    en.classList.toggle('active', lang === 'en');
+    // fix span inline display for EN mode
+    if (lang === 'en') {
+      document.querySelectorAll('span.en').forEach(el => el.style.display = 'inline');
+      document.querySelectorAll('span.cn').forEach(el => el.style.display = 'none');
+    } else {
+      document.querySelectorAll('span.cn').forEach(el => el.style.display = 'inline');
+      document.querySelectorAll('span.en').forEach(el => el.style.display = 'none');
+    }
+  }
+
+  cn.addEventListener('click', () => setLang('cn'));
+  en.addEventListener('click', () => setLang('en'));
+
+  // Default: Chinese
+  setLang('cn');
+</script>
+</body>
+</html>
