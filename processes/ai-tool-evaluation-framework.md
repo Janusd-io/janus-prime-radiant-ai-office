@@ -3,14 +3,14 @@ type: process
 title: AI Tool Evaluation & Approval Framework
 slug: ai-tool-evaluation-framework
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-19
 departments: [ai-office, it-ops]
 status: active
 owner: michael-bruck
 captured_by: jehad-altoutou
 audience: [department]
-sources: [ai-tool-evaluation-framework]
-related: [ai-tool-evaluation, ai-registry, ai-native-mandate, ai-policy]
+sources: [ai-tool-evaluation-framework, marketing-stack-technical-writeup]
+related: [ai-tool-evaluation, ai-registry, ai-native-mandate, ai-policy, stack-composition-framework, agentic-lean-marketing-stack]
 ---
 
 The formal Janus Digital AI Tool Evaluation & Approval Framework (DRAFT v0.1, last updated 25 February 2026, owned by Office of the COO — AI & Technology). Supersedes Section 5.2.4 (Justification Protocol) and operationalises the [[ai-native-mandate]]'s procurement rule. The [[ai-tool-evaluation]] skill executes this framework in practice; the [[ai-registry]] is its output of record.
@@ -32,3 +32,13 @@ The formal Janus Digital AI Tool Evaluation & Approval Framework (DRAFT v0.1, la
 - Obsolescence by a superior approved alternative → de-listing review.
 
 The document includes a flowchart node/edge reference (N01-N34) ready for translation into BPMN.
+
+## Proposed pre-G1 filter — [[stack-composition-framework|Stack Composition Framework]]
+
+A pre-G1 layer was proposed on 2026-05-19 in the [[marketing-stack-technical-writeup|marketing stack technical writeup]] (Michael → Jehad) and validated by the [[agentic-lean-marketing-stack|agentic-lean marketing stack]] selections. The framework adds three lenses — **composability**, **agent operability**, **reversibility** — scored 0–3 before G1.
+
+- **3/3** → preferred default, proceeds to G1 normally.
+- **2/3** → proceeds with a documented trade-off attached to the evaluation.
+- **1/3** or **0/3** → rejected before G1 runs, saving evaluator hours.
+
+The three lenses overlap partially with existing gate criteria (agent operability ↔ G2.1 MCP compatibility; reversibility ↔ G1.3 data portability). The pre-filter framing avoids double-evaluation by making these lenses an entry condition rather than a scored criterion downstream. Status: **proposed**, not yet ratified — Michael to formalise as a framework amendment when the holistic MarTech vendor assessment for [[bonaventure-wong]] lands.

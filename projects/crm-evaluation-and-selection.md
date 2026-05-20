@@ -3,12 +3,12 @@ type: project
 title: CRM Evaluation & Selection
 slug: crm-evaluation-and-selection
 created: 2026-05-07
-updated: 2026-05-13
+updated: 2026-05-19
 departments: [marketing, ai-office, office-of-ceo]
 status: active
 owner: michael-bruck
-sources: [aio-2026-05-06, andrew-marketing-discussion-tracker, automations-2882205554, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, jehad-vault-crm-evaluation-and-selection]
-related: [andrew-soane, bonaventure-wong, michael-bruck, euclid-wong, ai-tool-evaluation, 2026-05-06-monday-com-to-production-this-week, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market]
+sources: [aio-2026-05-06, andrew-marketing-discussion-tracker, automations-2882205554, 2026-05-12-bonaventure-ai-native-call, 2026-05-12-andrew-onboarding-review, jehad-vault-crm-evaluation-and-selection, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting]
+related: [andrew-soane, bonaventure-wong, michael-bruck, euclid-wong, ai-tool-evaluation, 2026-05-06-monday-com-to-production-this-week, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, janus-crm-selection, agentic-lean-marketing-stack, stack-composition-framework]
 ---
 
 # CRM Evaluation & Selection
@@ -72,3 +72,18 @@ Per [[2026-05-12-andrew-onboarding-review]] (3pm Andrew session), CRM timing is 
 **Interim system-of-record for Singapore launch:** Google Sheets, populated via a registration form on the new Singapore landing page. Form → Sheets → manual review → invitation list for the 8th–9th July luncheon. Once the CRM lands, the Sheets data backfills into the CRM and the funnel becomes automatic.
 
 **Marketing-CRM vs sales-CRM:** confirmed Marketing needs the marketing-campaign-management capabilities (email sequences, lead nurture, campaign analytics), not just sales pipeline tracking. This affects which HubSpot edition / which alternative makes sense — Andrew to weigh in on feature priority before the final recommendation.
+
+## Update — 2026-05-19 stack analysis flips recommendation to Attio
+
+Per the [[marketing-stack-technical-writeup]] (Michael → Jehad, 2026-05-19) and the [[2026-05-19-aio-mktg-meeting]] (Michael × Andrew), the CRM recommendation has flipped from **HubSpot-leaning** to **Attio**. The flip is grounded in the new [[stack-composition-framework]] (three lenses: composability, agent operability, reversibility), proposed as a pre-G1 filter to [[ai-tool-evaluation-framework]]:
+
+| Candidate | Score | Verdict |
+|---|---|---|
+| **Attio** | 3/3 | **Recommended.** Agent-native by design; relationship-graph data model; MongoDB-style queries; published pricing; plain-JSON / CSV export. AIR-76. |
+| Salesforce | 2/3 | Viable *only* with zero-Apex constraint — loses on reversibility once any meaningful customization accumulates. |
+| HubSpot | 2/3 | Bundling play only — strong if going all-in on HubSpot CRM + Marketing Hub + CMS Hub. Standalone weaker than Attio at Janus's stage. Official MCP server is read-heavy. |
+| [[monday]] | n/a | Board-centric data model is not relationship-centric. **Explicitly not** being promoted to CRM. |
+
+**Current status (2026-05-19):** Andrew confirmed direction on Attio. Requirements list due 2026-05-26. Attio expected to pass formal evaluation once requirements are mapped. Michael preparing a holistic MarTech vendor assessment for [[bonaventure-wong]] (no hard due date) — this is the document that will formally re-pitch the CRM call to leadership.
+
+The dedicated [[janus-crm-selection]] project hub captures the operational detail of the Attio implementation; this hub remains the evaluation-history record for how Janus got from HubSpot-leaning → Attio.
