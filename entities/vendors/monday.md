@@ -41,6 +41,10 @@ Monday is an ingest source for `sources/monday/` per `CLAUDE.md` §5.1. Filter: 
 - Production promotion this week — first real test of the IT hand-off template.
 - Whether the deprecated AI Tools Registry board ever gets fully archived or stays as a read-only reference.
 
+## Explicitly NOT the Janus CRM
+
+Per the [[marketing-stack-technical-writeup|2026-05-19 marketing stack analysis]]: Monday has an official MCP server (390+ GitHub stars), but its **board-centric data model is not relationship-centric** in the way a CRM is. It works fine for the AI Registry, project tracking, and standup execution it already supports — but it is **not** being promoted to system-of-record for customer relationships. That role is going to [[agentic-lean-marketing-stack|Attio]] per AIR-76. Decision rationale: keep Monday for what it already does well; don't stretch it into a category where a purpose-built tool (Attio, with 3/3 on the [[stack-composition-framework]]) is the cleaner fit.
+
 ## Schema reference (Automations board `5095012818`)
 
 From Jehad's federated view ([[aio-skills-sor-architecture-jehad]], 2026-05-11) — operationally load-bearing schema for any `/standup` or wiki-driven Monday API work.
