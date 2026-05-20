@@ -1761,3 +1761,14 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - notes:
   - Cowork file-deletion permission was requested and granted for `concepts/ai-registry.md` mid-session (the workspace defaults to delete-disabled).
   - The 3 promoted stubs were classified as project, not concept, on inspection. The lint report's "3 concept candidates" terminology was retained in the followup section with a small-correction note.
+
+## [2026-05-20 14:00] lint-followup-2 | Michael directive — capture carry-forward backlog for next lint workstream
+- driver: Michael's instruction: "For next time you run a lint workstream: Perform a retroactive attribution sweep across existing wiki pages and also the recommendations from the last lint run."
+- intent: ensure the next lint session starts from this backlog rather than a fresh structural scan — the carry-forward items are higher-signal than re-discovering known issues.
+- updated:
+  - **pulse/2026-05-20-lint.md** — added a "Carry-forward backlog for the next lint workstream" section with three parts: (A) the retroactive attribution sweep as mandatory first item, with methodology (enumerate pages with meeting `sources:`, scan for confident attribution patterns, check corroboration, soften-don't-strip, produce a followup-attribution-sweep pulse entry); (B) the six remaining recommendations from §"Recommended remediation order" in priority order; (C) three process-improvement candidates (concept-vs-project promotion heuristic, sanctioned-duplicate-slug pattern, permanent attribution-confidence lint check).
+- cross-session persistence:
+  - **MEMORY.md** — new entry `project-lint-workstream-backlog.md` pointing future Claude sessions at the carry-forward queue in the lint report. Memory body specifies: read pulse/2026-05-20-lint.md first when invoked with lint-style requests; execute carry-forward before fresh scan; fresh scan then runs as a check for new findings on top of an already-cleaned wiki.
+- notes:
+  - The attribution sweep is the high-stakes item — known high-risk surfaces called out: 2026-05-12 Bonaventure AI-native call, 2026-05-12 Andrew onboarding review, 2026-05-18 CEO meeting, 2026-05-11 standup-with-Jehad. Each had attribution that the v0.12 rule would now scrutinise.
+  - Pattern observed: a lint workstream that starts from a non-empty backlog produces durable improvement to the wiki between scans, rather than just-in-time discoveries. The memory captures this as a process directive for future Claude sessions.
