@@ -1708,3 +1708,21 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - **Brief title leads with the strategic angle**, not the industry topic — "why MCP-native tooling collapses SaaS sprawl risk for Janus" rather than "the marketing stack we picked." Per the §6 brief-shape guidance.
 - ingest counter since last lint (2026-05-13): 7 → reset by the lint that follows in this same session.
 - inbox state: empty. Both originals moved to inbox/.processed/2026-05/.
+
+## [2026-05-20 12:15] lint | post marketing-stack batch ingest | 393 pages + 143 sources scanned
+- driver: scheduled lint after 7 ingests had accumulated since 2026-05-13 (past the §5.3 10-ingest trigger but within tolerance); the marketing-stack batch ingest in the same session was a natural moment to run.
+- findings:
+  - 0 contradictions (CRM HubSpot→Attio is decision evolution, encoded consistently).
+  - 0 high-severity stale claims.
+  - 0 orphans among newly-introduced or recently-touched pages (new pages have 3–10 inbound links each).
+  - 8 high-value missing-page targets: 4 meeting sources (`2026-05-06-ai-and-it-department-meeting` 16 refs, `2026-05-14-data-management-system-overhaul-meeting` 12 refs, `2026-05-13-aio-project-management-meeting` 9 refs, `2026-05-08-jehad-michael-roza-simon-euclid-bonaventure-meeting` 5 refs); 3 concept candidates (`notion-operations-notebook-restructure` 5 refs, `build-categorisation-taxonomy-for-ai-tools` 5 refs, `apply-standup-methodology-to-andrew-work-stream` 2 refs); 1 process candidate (`iso-officer-process-documentation` 2 refs).
+  - 14 low-value broken refs (tech-stack name-drops + self-referential `[[wikilink]]`-on-`wikilinks` meta-vocabulary). Recommended cleanup at next lint-followup, no action this round.
+  - 24 project pages with empty `departments: []` (stub-vintage 2026-05-05 batch).
+  - 56 remaining "To populate: replace this stub" markers across projects/, concepts/, entities/ (3 filled this ingest).
+  - 1 likely duplicate-slug supersession: `ai-registry` exists as both process and concept. Defer to a follow-up — recommendation: keep processes/ai-registry.md (canonical skill-reference), fold or supersede concepts/ai-registry.md.
+  - 7 questions in the 8–9 day age band approaching the 14-day escalation threshold. None over.
+  - 1 question ready for promotion to brief: `ingest-2026-05-12-1545-openai` (4-source threshold decisively met; the page itself recommends promote). Awaiting Michael.
+- report: pulse/2026-05-20-lint.md
+- recommended remediation order: (1) strip [[unknown-speaker-N]] wikilinks (~14 instances) and patch standup skill, (2) backfill 4 missing meeting sources, (3) resolve `ai-registry` duplicate-slug, (4) promote 3 concept candidates, (5) triage 7 aging questions, (6) promote openai question to vendor page, (7) backfill `departments:` on 24 stub-vintage project pages.
+- not done in this lint: full orphan sweep across 500+ pages (deferred); single-pass cleanup of low-value broken refs (deferred); concept-stub fill-ins beyond the 3 done in the ingest pass.
+- ingest counter: reset to 0.
