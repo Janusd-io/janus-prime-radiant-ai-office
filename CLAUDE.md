@@ -1,6 +1,8 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.11, 2026-05-14. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.12, 2026-05-20. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+>
+> *v0.12 changes (2026-05-20):* **Attribution discipline added to §5.1 Meetings ingest rules.** Fireflies speaker labels are explicitly flagged as unreliable due to two systematic failure modes — shared-mic / shared-account artefact (multi-person side of a Google Meets call attributes everything to the logged-in user) and untagged-speaker artefact (in-person recordings require post-meeting tagging that's inconsistently done). New confidence-threshold rule: do not attribute a claim, quote, decision, or opinion to a named person unless one of four corroborating sources is present. When attribution can't be confirmed, attribute to a group / meeting and leave `decided_by:` blank or set to the meeting slug. The rule preserves attribution discipline (entity edges remain important) but raises the bar for confidence.
 >
 > *v0.11 changes (2026-05-14):* Substrate documentation — new "### Substrate — GitHub-backed Git repos" subsection added to §1 formalising the post-2026-05-13 reality that every Prime Radiant instance lives in its own GitHub repo cloned to `~/janus/prime-radiant/<instance>/` on the curator's machine. §5 gains a single Git-awareness framing note covering `git pull` before any operation and `git add/commit/push` after writes, so individual workflows in §5.1 / §5.2 / §5.3 don't have to thread git steps through every numbered list. References to the [[prime-radiant-storage-substrate|substrate brief]] and the [[prime-radiant-instance-setup|setup runbook]] added.
 >
@@ -340,6 +342,20 @@ The escalation page is named `questions/ingest-YYYY-MM-DD-HHMM-<slug>.md` with t
 - **Manual override:** if Michael flags a transcript as `force-ingest` (e.g., a 1:1 where a strategic decision happened), process it normally. The override mechanism is a `force: true` line in a sidecar file `inbox/<transcript-id>.flags.md` or just an instruction in chat.
 - Likely outputs: 1-3 decisions, 0-2 lessons, vendor entity updates if vendors discussed, project hub updates.
 - Extract action items as candidates for Linear/Monday tickets — flag them in the log entry, do not create tickets from the wiki ingest.
+- **Attribution discipline — Fireflies speaker labels are NOT a reliable source of who-said-what.** Two systematic failure modes that mean a Fireflies transcript's `**Person Name**` prefix should be treated as a hint, not a fact:
+  - **Shared-mic / shared-account artefact.** When multiple people are physically on one side of a Google Meets call (typical: Michael + Jehad sharing a microphone in the AIO room; SG team in one conference room), Fireflies attributes every utterance to whichever named user is logged into the calling account. Several days of standup transcripts had every Jehad utterance attributed to Michael (or vice versa); the standup skill now re-attributes after the fact, but the raw transcript is still wrong.
+  - **Untagged-speaker artefact.** Live (in-person) recordings rely on participants being tagged in the transcript post-meeting via Fireflies' UI. Many attendees never do this — the result is "Speaker 1 / Speaker 2 / Unknown Speaker" labels in the raw transcript with no reliable mapping back to a real person.
+- **Rule for ingest:** when filing a meeting source and creating downstream decision / lesson / project / brief pages from it, **do not attribute a claim, quote, decision, or opinion to a named person unless attribution is confirmed by at least one of**:
+  - The user (Michael or another curator) explicitly stating who said something during the ingest conversation.
+  - A non-Fireflies corroborating source (Slack thread, Notion log, calendar entry, email).
+  - A `decided_by:` / `captured_by:` frontmatter field already populated in a pre-existing source.
+  - Internal consistency: the substance of the claim could only have come from a specific named role (e.g., a CEO veto only the CEO could issue) — and even then, hedge.
+- **When attribution can't be confirmed:**
+  - In the decision / lesson / brief body, attribute to a group ("AIO leadership", "the SG team", "the participants") or to a meeting ("the 2026-05-18 CEO call") rather than to a named person.
+  - In frontmatter, leave `decided_by:` blank or set to the meeting slug (`decided_by: 2026-05-18-ai-native-ceo`) rather than guess at an individual.
+  - Inline, prefer "as raised in the meeting" / "the group concluded" / "[unattributed in transcript]" over a confident `**Name**` echo.
+- **What this does NOT mean:** the wiki shouldn't strip attribution wholesale. When the user confirms ("yes, Bonaventure said that") or a Slack / Notion log records the same point with named provenance, attribution is captured normally — including the entity edge in frontmatter (`decided_by`, `captured_by`). The rule is about *confidence threshold*, not about avoiding attribution.
+- **Logging:** when an ingest deliberately suppresses an attribution because the transcript is the only source, note it in the `log.md` entry — `notes: attribution to <name> in transcript not confirmed; recorded as group decision`.
 
 **Linear (`sources/linear/`)** — primarily Linear AIR (AI Tools Registry); selectively Linear AIP (AI Projects).
 - *Linear AIR scope:* closed/resolved AI tool evaluation issues with substantive resolution comments. The `/ai-registry` and `/ai-tool-evaluation` skills are the canonical interface; the wiki ingests exported snapshots when an evaluation produced narrative worth synthesising.
