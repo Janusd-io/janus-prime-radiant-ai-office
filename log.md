@@ -1726,3 +1726,38 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - recommended remediation order: (1) strip [[unknown-speaker-N]] wikilinks (~14 instances) and patch standup skill, (2) backfill 4 missing meeting sources, (3) resolve `ai-registry` duplicate-slug, (4) promote 3 concept candidates, (5) triage 7 aging questions, (6) promote openai question to vendor page, (7) backfill `departments:` on 24 stub-vintage project pages.
 - not done in this lint: full orphan sweep across 500+ pages (deferred); single-pass cleanup of low-value broken refs (deferred); concept-stub fill-ins beyond the 3 done in the ingest pass.
 - ingest counter: reset to 0.
+
+## [2026-05-20 13:30] lint-followup | Michael-driven remediation of 2026-05-20 lint | 3 directives executed
+- driver: Michael, immediately after the 2026-05-20 lint report dropped. Three remediation directives executed in one session.
+- directive 1: **Merge `ai-registry` duplicate slug.** Folded `concepts/ai-registry.md` (created 2026-05-15 captured_by jehad-altoutou; pipeline-detail + gate framework + dated lessons list) into `processes/ai-registry.md`. Unique content moved over:
+  - Added "What's expected" column to the pipeline-stages table.
+  - Added a "Gate framework summary" section linking to [[ai-tool-evaluation-framework]] for full definitions.
+  - Added a "Lessons captured (running list)" section with the 2026-04-20 / 2026-04-22 / 2026-05-04 / 2026-05-05 / 2026-05-08 (×2) entries, plus a new 2026-05-19 entry capturing the Stack Composition Framework's first application.
+  - Added a "Merge history" footer documenting the fold-in.
+  - Deleted `concepts/ai-registry.md` (cowork file-delete permission requested + granted).
+  - `processes/ai-registry.md` frontmatter: `updated:` bumped 2026-05-12 → 2026-05-20; `related:` expanded with ai-tool-evaluation-framework, viktor, hostinger, n8n, obsidian.
+- directive 2: **Codify attribution discipline.** CLAUDE.md bumped v0.11 → v0.12. New rule added inside §5.1's "Meetings" sub-section:
+  - **Why the rule:** two systematic Fireflies failure modes — shared-mic / shared-account artefact (multi-person side of a Google Meets call attributes everything to the logged-in user — Michael ↔ Jehad attribution swap has happened repeatedly) + untagged-speaker artefact (live in-person recordings need post-meeting tagging that's inconsistently done).
+  - **Confidence-threshold rule:** don't attribute a claim, quote, decision, or opinion to a named person unless attribution is confirmed by (a) curator (Michael) explicit confirmation, (b) non-Fireflies corroborating source (Slack / Notion / email / calendar), (c) pre-existing `decided_by:` / `captured_by:` field in a source, or (d) role-locked content (e.g., CEO-only veto).
+  - **When attribution can't be confirmed:** attribute to a group ("AIO leadership", "the SG team") or to the meeting (`decided_by: <meeting-slug>`). Hedge inline. Log the suppression in `log.md`.
+  - **Preserves the multi-graph entity edges** — the rule is about raising the confidence bar for `decided_by:` / `captured_by:` population, not about removing those fields. When attribution IS confirmed, the entity edge gets captured normally.
+  - Also written to user-memory as `feedback-attribution-from-fireflies.md` for cross-session persistence; index updated.
+  - **Open question for future lint:** retroactive sweep over existing wiki to identify over-attributed claims sourced solely from Fireflies. Not done in this session — Michael's directive was preventative-going-forward.
+- directive 3: **Promote 3 recurring-lint missing-page slugs.** Created as substantive stubs (not empty placeholders) under `projects/` after determining they're project-shaped (Monday execution items) rather than concept-shaped, contra the lint report's initial classification:
+  - **projects/notion-operations-notebook-restructure.md** — execution work behind the [[2026-05-06-notion-role-shift-journal-not-knowledge-base]] decision. Scope: journal & meeting log surface, department landing pages, onboarding surface. End-of-May 2026 hard deadline for the registry-related cleanup per the 2026-05-18 CEO meeting Notion deprecation timeline.
+  - **projects/build-categorisation-taxonomy-for-ai-tools.md** — parent execution work behind the [[2026-05-06-ai-tool-taxonomy-scope-policy]] decision. Two layered classifications: in-scope/out-of-scope (resolved 2026-05-06 — Monday/Notion/Deel/Xero/Airwallex are NOT AI tools) + Tool/Infrastructure/Workload trichotomy (backfill in progress). Connection to [[stack-composition-framework]] noted as upstream pre-G1 filter.
+  - **projects/apply-standup-methodology-to-andrew-work-stream.md** — extend the AIO /standup methodology (Fireflies → Monday → Linear AIP → Notion → Prime Radiant) to Andrew's marketing work stream as part of the [[marketing-prime-radiant]] rollout. Provisional scope captured; awaiting Andrew alignment.
+  - Each carries `_Stub promoted from a recurring lint finding on 2026-05-20. To enrich as work progresses._` footer for transparency.
+- updated:
+  - **CLAUDE.md** — v0.11 → v0.12 (header changelog + new §5.1 Meetings attribution rule).
+  - **processes/ai-registry.md** — merged concept content folded in; running lessons list now includes a 2026-05-19 stack-composition-framework first-application entry.
+  - **pulse/2026-05-20-lint.md** — added "Lint-followup remediation — same day (Michael-driven)" section documenting the three directives + their resolutions. Missing-page count updated 8 → 5.
+  - **index.md** — header bumped; ai-registry process entry updated to reflect the merge; processes/ai-registry entry no longer carries the duplicate-slug warning implicitly.
+  - **MEMORY.md** (user-memory) — added `feedback-attribution-from-fireflies.md` pointer.
+- not done:
+  - Retroactive attribution sweep across existing wiki pages — Michael's directive was preventative. Worth scoping as a separate lint workstream.
+  - The remaining 4 missing meeting-source backfills (referenced 5–16× each). Still open.
+  - Index.md Projects section unchanged — the 3 new project stubs are minor execution items per the curated convention in that section.
+- notes:
+  - Cowork file-deletion permission was requested and granted for `concepts/ai-registry.md` mid-session (the workspace defaults to delete-disabled).
+  - The 3 promoted stubs were classified as project, not concept, on inspection. The lint report's "3 concept candidates" terminology was retained in the followup section with a small-correction note.
