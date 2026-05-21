@@ -3,6 +3,7 @@
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 .obsidian/cache
+.obsidian/plugins/obsidian-git/data.json
 # Added by scaffold-person-subtree.sh
 people/*/private/
 people/*/.review-queue.md
