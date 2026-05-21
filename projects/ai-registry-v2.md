@@ -3,14 +3,14 @@ type: project
 title: Ai Registry V2
 slug: ai-registry-v2
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-07-michael-jehad-euclid-andre-it-operations]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, it-ops]
 ---
 
 # Ai Registry V2

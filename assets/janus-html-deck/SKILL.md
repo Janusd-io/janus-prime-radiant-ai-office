@@ -5,9 +5,9 @@ description: Build a Janus-branded HTML presentation as a single self-contained 
 
 # Skill: Janus HTML deck
 
-**Version:** 1.0
+**Version:** 1.1
 **Owner:** Michael Bruck, AI Office
-**Last Updated:** 2026-05-19
+**Last Updated:** 2026-05-21
 **Scope:** Self-contained single-file HTML decks. No external assets required (fonts via Google Fonts CDN; logo embedded as inline SVG). Works across Claude Chat (web / desktop / mobile), Claude Code, and Cowork — no environment-specific tooling needed to produce a brand-correct output.
 
 ---
@@ -31,9 +31,9 @@ Do **not** use this skill for: client-facing decks that must follow a different 
 
 ---
 
-## Brand surface (v1.0)
+## Brand surface (v1.1)
 
-Source: Janus brand guideline v1.0 (2026-05-15). A refreshed brand kit from the marketing agency is expected; this skill will be re-versioned when it lands. Until then: **logos, fonts, colours — that's the brand surface.** Layout and motif choices are open.
+Source: Janus HTML deck brand guideline **v1.1** (2026-05-21). The skill and the guideline are the same content in two forms — the guideline is the narrative reference, the skill is the executable workflow. They version in lockstep. A refreshed brand kit from the marketing agency is expected; both will be re-versioned (likely v2.0) when it lands. Until then: **logos, fonts, colours, and required structural elements — that's the brand surface.** Layout and motif choices beyond the structural elements are open.
 
 ### Colour palette
 
@@ -168,8 +168,9 @@ The deck itself runs on any browser — laptop, projector, mobile preview. Print
 
 ## Provenance + version notes
 
+- **v1.1 (2026-05-21):** moved in lockstep with `janus-html-deck-brand-guideline` v1.1. No functional change to `template.html` or `example-deck.html` — both ship the same content as v1.0. The version bump reflects the alignment with the guideline page, which absorbed the skill's structural rules and pattern catalog into the canonical narrative reference. The skill is now formally framed in §10 of the guideline as the executable form of the same content.
 - **v1.0 (2026-05-19):** initial release. Encodes the brand surface established in `janus-html-deck-brand-guideline` v1.0 and the slide patterns refined across the first Janus HTML decks (May 2026). Inline SVG symbol pulled from the weekly AIO call deck.
-- **Future:** will be re-versioned when the marketing agency's brand refresh lands. At minimum the colour palette in `template.html` updates and the logo SVG swaps to new artwork. Slide patterns and structural rules likely carry forward — they're not brand-specific in a way that breaks when the visual identity changes.
+- **Future:** re-version when the marketing agency's brand refresh lands. At minimum the colour palette in `template.html` updates and the logo SVG swaps to new artwork. Slide patterns and structural rules likely carry forward — they're not brand-specific in a way that breaks when the visual identity changes.
 
 ---
 

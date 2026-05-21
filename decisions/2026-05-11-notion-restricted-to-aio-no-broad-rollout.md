@@ -20,6 +20,8 @@ related: [bonaventure-wong, michael-bruck, jehad-altoutou, euclid-wong, notion, 
 
 Restated in the 11 May 2026 AIO standup, with the reasoning attributed to Bonaventure. Verbatim from the meeting (speaker unattributed): *"I'm not adding anybody after Bonaventure said nobody gets — we don't have a Notion at janusdigital.io. In fact, I just had to pay our Notion bill."*
 
+**Attribution confidence (added 2026-05-21 retroactive attribution sweep).** The Fireflies transcript records this line as `unknown-speaker`, so the direct quote above is paraphrasing or referencing a prior Bonaventure ruling rather than Bonaventure speaking on the call. `decided_by: bonaventure-wong` stays — the substance is role-locked (Notion-seat policy is a CEO-level decision; nobody else at Janus can issue this ruling). Treat the corroboration as *role-lock + organisational-policy consistency*, not *direct-quote attribution*.
+
 ## Why
 
 - **Tool sprawl restraint.** Janus is in active tool consolidation mode (per [[2026-04-23-monday-hostinger-notion-stack-adopted|the Monday + Hostinger + Notion stack decision]]); Notion's role has been narrowed to the AIO journal surface ([[2026-05-06-notion-role-shift-journal-not-knowledge-base]]). Spreading Notion to additional departments cuts against that consolidation.

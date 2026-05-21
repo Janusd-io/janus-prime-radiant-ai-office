@@ -3,11 +3,11 @@ type: decision
 title: Document the evaluation flow first; convert to a Claude skill later
 slug: 2026-05-05-flow-first-skill-later
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-21
 departments: [ai-office]
 status: resolved
-owner: unknown-speaker-1
-decided_by: unknown-speaker-1
+owner: 2026-05-05-may-05-11-03-am
+decided_by: 2026-05-05-may-05-11-03-am
 sources: [2026-05-05-may-05-11-03-am, jehad-vault-import-2026-05-13]
 related: []
 captured_by: jehad-altoutou
@@ -30,7 +30,7 @@ The flow is still evolving, so writing the skill prematurely would lock in an un
 
 ## When
 
-2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by [[unknown-speaker-1]]
+2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by the meeting (speaker untagged in Fireflies transcript)
 
 ## Implications
 

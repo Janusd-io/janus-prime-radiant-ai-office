@@ -3,14 +3,14 @@ type: project
 title: Iso Ims Puls
 slug: iso-ims-puls
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-13-aio-it-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [iso, ai-office]
 ---
 
 # Iso Ims Puls

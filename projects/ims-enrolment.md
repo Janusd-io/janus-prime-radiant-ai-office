@@ -3,14 +3,14 @@ type: project
 title: Ims Enrolment
 slug: ims-enrolment
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-05-may-05-11-03-am]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, iso]
 ---
 
 # Ims Enrolment

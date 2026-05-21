@@ -1,6 +1,8 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.12, 2026-05-20. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.13, 2026-05-21. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+>
+> *v0.13 changes (2026-05-21):* **`assets/` top-level folder formally documented in §2.** The convention existed in practice (`assets/branding/` for brand artefacts since 2026-05-15; `assets/janus-html-deck/` for the skill bundle snapshots since 2026-05-21) but wasn't in the schema. Now documented: one subfolder per content class, wiki pages link via relative paths, snapshots of externally-installed artefacts (skills, brand books) live here for direct reference while the external installation remains authoritative.
 >
 > *v0.12 changes (2026-05-20):* **Attribution discipline added to §5.1 Meetings ingest rules.** Fireflies speaker labels are explicitly flagged as unreliable due to two systematic failure modes — shared-mic / shared-account artefact (multi-person side of a Google Meets call attributes everything to the logged-in user) and untagged-speaker artefact (in-person recordings require post-meeting tagging that's inconsistently done). New confidence-threshold rule: do not attribute a claim, quote, decision, or opinion to a named person unless one of four corroborating sources is present. When attribution can't be confirmed, attribute to a group / meeting and leave `decided_by:` blank or set to the meeting slug. The rule preserves attribution discipline (entity edges remain important) but raises the bar for confidence.
 >
@@ -139,6 +141,18 @@ questions/         → open threads, things being investigated without answers y
                      ambiguity (see §5.1).
 pulse/             → dated running log of industry / Janus-relevant developments
 briefs/            → synthesis output: state-of-X, comparisons, quarterly recaps
+
+assets/            → binary / near-binary artefacts that wiki pages reference directly.
+                     One subfolder per content class — keep subfolders distinct so
+                     the convention scales. Wiki pages link with relative paths
+                     (e.g., `assets/branding/janus-logo-black.svg`).
+  branding/        → official brand artefacts: logo SVGs (white + black variants),
+                     brand-book extracts. Source of truth for [[janus-html-deck-brand-guideline]].
+  janus-html-deck/ → snapshots of the `janus-html-deck` skill bundle
+                     (SKILL.md + template.html + example-deck.html). Viewable copy
+                     of an externally-installed Claude skill — the installed skill
+                     remains authoritative; snapshots let the wiki reference the
+                     skill content directly. Update snapshots when the skill bumps.
 ```
 
 ### Filing rules

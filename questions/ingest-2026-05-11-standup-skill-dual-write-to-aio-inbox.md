@@ -3,9 +3,9 @@ type: question
 title: Standup skill dual-write — add markdown-to-AIO-inbox alongside Notion
 slug: ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-21
 departments: [ai-office]
-status: active
+status: resolved
 owner: jehad-altoutou
 sources: [2026-05-11-aio-standup-with-jehad]
 related: [standup, notion, janus-prime-radiant-build, michael-bruck, jehad-altoutou]
@@ -65,3 +65,7 @@ A short note from Michael on (1) routing, (2) what-gets-written, and any objecti
 ## Source
 
 AIO 11 May 2026 standup transcript (Fireflies). Full transcript available via Fireflies ID `01KRAZJ9RN9TSNASHPCPD8NS9S`. The transcript itself is **not** being ingested per §5.1 default (standups are skipped); this escalation captures only the standup-skill-modification decision.
+
+## Resolution (2026-05-21 lint triage)
+
+**Resolved by implementation.** The `/standup` skill landed Step 5G (wiki-inbox dual-write) at **v3.14** (spec) and **v3.15** (production via Google Drive MCP connector) on 2026-05-13. First production run produced [[2026-05-13-aio-it-meeting]]. See the [[standup]] process page v3.15 changelog entry for the implementation history. The routing-via-filesystem-path approach proposed here was tried, found unreliable, and replaced with the MCP-connector switch in v3.15. Closes the dual-write loop end-to-end.

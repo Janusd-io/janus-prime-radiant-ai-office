@@ -3,11 +3,11 @@ type: decision
 title: Slack is the canonical source for AI tool-evaluation requests
 slug: 2026-05-05-slack-is-canonical-source-of-tool-requests
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-21
 departments: [ai-office]
 status: resolved
-owner: unknown-speaker-2
-decided_by: unknown-speaker-2
+owner: 2026-05-05-may-05-11-03-am
+decided_by: 2026-05-05-may-05-11-03-am
 sources: [2026-05-05-may-05-11-03-am, jehad-vault-import-2026-05-13]
 related: []
 captured_by: jehad-altoutou
@@ -30,7 +30,7 @@ Slack is already the company's primary communication channel, every message carr
 
 ## When
 
-2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by [[unknown-speaker-2]]
+2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by the meeting (speaker untagged in Fireflies transcript)
 
 ## Implications
 

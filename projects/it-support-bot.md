@@ -3,14 +3,14 @@ type: project
 title: It Support Bot
 slug: it-support-bot
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-06-ai-and-it-department-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [it-ops, ai-office]
 ---
 
 # It Support Bot

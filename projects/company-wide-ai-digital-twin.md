@@ -10,7 +10,7 @@ sources: [2026-04-22-it-team-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, office-of-ceo]
 ---
 
 # Company Wide Ai Digital Twin

@@ -3,14 +3,14 @@ type: project
 title: It Ops Prime Radiant
 slug: it-ops-prime-radiant
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-13-aio-project-management-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [it-ops, ai-office]
 ---
 
 # It Ops Prime Radiant

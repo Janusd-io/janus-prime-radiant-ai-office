@@ -3,14 +3,14 @@ type: project
 title: Janus Thought Leadership
 slug: janus-thought-leadership
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-05-michael-jehad-andrew-weekly-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [marketing, ai-office]
 ---
 
 # Janus Thought Leadership
