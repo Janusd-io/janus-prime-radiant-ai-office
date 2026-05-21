@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>io.janusd.git-lock-cleanup</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>find ~/janus/prime-radiant/.git -name "*.lock" -mmin +1 -delete 2>/dev/null; exit 0</string>
+    </array>
+
+    <!-- Run every 2 minutes -->
+    <key>StartInterval</key>
+    <integer>120</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/io.janusd.git-lock-cleanup.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/io.janusd.git-lock-cleanup.err</string>
+</dict>
+</plist>
