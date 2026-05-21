@@ -242,6 +242,11 @@ _(none yet)_
 
 ## Questions (resolved)
 
+- [2026-05-12-website-architecture-one-site-vs-country-sites](questions/2026-05-12-website-architecture-one-site-vs-country-sites.md) — resolved by [[2026-05-12-single-domain-gems-com-with-country-paths]] decision; CEO direction 2026-05-18 ratified single-domain shape. [resolved 2026-05-21]
+- [ingest-2026-05-12-1545-openai](questions/ingest-2026-05-12-1545-openai.md) — openai vendor page created; 4-source threshold decisively met. [resolved 2026-05-21]
+- [ingest-2026-05-12-1530-mnemon](questions/ingest-2026-05-12-1530-mnemon.md) — deferred by design (single-source rule); no second source emerged. Mnemon coverage continues via pulse + agent-memory briefs. [resolved 2026-05-21]
+- [ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox](questions/ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox.md) — implemented at /standup v3.15 (2026-05-13) via Google Drive MCP. [resolved 2026-05-21]
+- [2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain](questions/2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain.md) — converged on "Janus Prime Radiant" across CLAUDE.md, index.md, decisions. [resolved 2026-05-21]
 - [ingest-2026-05-15-joyce-woo](questions/ingest-2026-05-15-joyce-woo.md) — entity page promoted to [[joyce-woo|entities/internal/joyce-woo.md]] 2026-05-15 after the Janus Singapore white paper confirmed her title (CEO, Singapore) and supplied wiki-grade 4-decade-banking bio. [resolved]
 - [ingest-2026-05-14-lysander-liu-and-spike-zhao](questions/ingest-2026-05-14-lysander-liu-and-spike-zhao.md) — escalation closed 2026-05-14; all three Project Management entity pages created ([[lysander-liu]], [[rosa-wu]], [[spike-zhao]]); Rosa upgraded from "referenced-only" to first-class entity per Michael's clarification that she co-heads Project Management with Euclid. [resolved]
 
