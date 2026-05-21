@@ -3,14 +3,14 @@ type: project
 title: Monday Rollout
 slug: monday-rollout
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-06-ai-and-it-department-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, it-ops]
 ---
 
 # Monday Rollout

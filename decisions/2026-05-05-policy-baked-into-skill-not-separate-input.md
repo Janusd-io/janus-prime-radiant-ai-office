@@ -3,11 +3,11 @@ type: decision
 title: "AI policy is baked into the skill, not passed as a separate input"
 slug: 2026-05-05-policy-baked-into-skill-not-separate-input
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-21
 departments: [ai-office]
 status: resolved
-owner: unknown-speaker-1
-decided_by: unknown-speaker-2
+owner: 2026-05-05-may-05-11-03-am
+decided_by: 2026-05-05-may-05-11-03-am
 sources: [2026-05-05-may-05-11-03-am, jehad-vault-import-2026-05-13]
 related: []
 captured_by: jehad-altoutou
@@ -30,7 +30,7 @@ Treating policy as an input forces every request to attach it, which is redundan
 
 ## When
 
-2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by [[unknown-speaker-2]] · owned by [[unknown-speaker-1]]
+2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by the meeting (speaker untagged in Fireflies transcript) · owner unattributed (speaker untagged in Fireflies transcript)
 
 ## Implications
 

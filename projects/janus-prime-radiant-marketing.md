@@ -3,14 +3,14 @@ type: project
 title: Janus Prime Radiant Marketing
 slug: janus-prime-radiant-marketing
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-12-aio-andrew-marketing]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [marketing, ai-office]
 ---
 
 # Janus Prime Radiant Marketing

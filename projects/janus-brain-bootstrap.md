@@ -3,14 +3,14 @@ type: project
 title: Janus Brain Bootstrap
 slug: janus-brain-bootstrap
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-14-data-management-system-overhaul-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, office-of-ceo]
 ---
 
 # Janus Brain Bootstrap

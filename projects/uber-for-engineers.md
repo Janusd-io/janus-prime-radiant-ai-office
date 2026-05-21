@@ -3,14 +3,14 @@ type: project
 title: Uber For Engineers
 slug: uber-for-engineers
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-21
 status: active
 owner: jehad-altoutou
 sources: [2026-05-08-jehad-michael-bonaventure-meeting]
 related: []
 audience: department
 captured_by: jehad-altoutou
-departments: []
+departments: [ai-office, office-of-ceo]
 ---
 
 # Uber For Engineers

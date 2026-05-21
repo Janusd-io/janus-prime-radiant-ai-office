@@ -3,11 +3,11 @@ type: decision
 title: Move the evaluation framework table from Word to a shared Google Doc
 slug: 2026-05-05-move-eval-table-to-shared-google-doc
 created: 2026-05-05
-updated: 2026-05-13
+updated: 2026-05-21
 departments: [ai-office]
 status: resolved
-owner: unknown-speaker-3
-decided_by: unknown-speaker-2
+owner: 2026-05-05-may-05-11-03-am
+decided_by: 2026-05-05-may-05-11-03-am
 sources: [2026-05-05-may-05-11-03-am, jehad-vault-import-2026-05-13]
 related: []
 captured_by: jehad-altoutou
@@ -30,7 +30,7 @@ Emailing Word documents around loses version control and forces sequential edits
 
 ## When
 
-2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by [[unknown-speaker-2]] · owned by [[unknown-speaker-3]]
+2026-05-05 · meeting [[2026-05-05-may-05-11-03-am]] · decided by the meeting (speaker untagged in Fireflies transcript) · owner unattributed (speaker untagged in Fireflies transcript)
 
 ## Implications
 

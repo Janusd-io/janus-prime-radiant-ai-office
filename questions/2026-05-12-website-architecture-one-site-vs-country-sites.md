@@ -3,11 +3,11 @@ type: question
 title: One Janus website with country sub-paths, or standalone country websites?
 slug: 2026-05-12-website-architecture-one-site-vs-country-sites
 created: 2026-05-12
-updated: 2026-05-15
+updated: 2026-05-21
 departments: [marketing, ai-office, office-of-ceo]
 countries: [sg, gb]
 owner: andrew-soane
-status: active
+status: resolved
 sources: [2026-05-12-andrew-onboarding-review, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-14-janus-singapore-white-paper-storms-ahead]
 related: [andrew-soane, bonaventure-wong, michael-bruck, marketing-prime-radiant, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-14-janus-singapore-white-paper-storms-ahead, joyce-woo, ingest-2026-05-15-joyce-woo]
 ---
@@ -100,3 +100,7 @@ Either way: the white paper is the **most authoritative existing public surface*
 - `janusdg.com` retired or quietly redirected.
 
 Worth confirming with Andrew + Bonaventure as a same-conversation decision rather than waiting for the architectural alignment to resolve in isolation. The campaign goes live in week 1 (this week); URL choices ship with the first landing page.
+
+## Resolution (2026-05-21 lint triage)
+
+**Resolved by decision.** The 2026-05-12 marketing session ratified the Andrew + Michael position — see [[2026-05-12-single-domain-gems-com-with-country-paths]]. Single `gems.com` (and subsequently `janusd.com`) domain with country sub-paths and country-domain redirects, not standalone country sites. The "mighty battle with Bonaventure" anticipated in the question didn't materialise — Bonaventure's CEO direction on 2026-05-18 ratified a *unified global knowledge base* shape that aligns with the single-domain pattern at the website layer. The multi-region implementation pattern (Cloudflare + Vercel + Cosmic multi-bucket) is captured in [[agentic-lean-marketing-stack]].

@@ -66,3 +66,12 @@ Both are referenced multiple times in the call transcript and from the resulting
 **Option 1 — create both.** Both have sufficient inbound references and strategic relevance. Vivian Balakrishnan at confidence:medium (role detail verification pending); FactSet at confidence:medium (operational fit needs the AIR Gate 1 to refresh).
 
 Michael — over to you. Once approved I'll create both pages and link them back from the relevant project / decision / brief pages.
+
+## Triage update (2026-05-21 lint)
+
+**Partially resolved — Vivian done, FactSet still pending.**
+
+- ✅ `entities/people/vivian-balakrishnan.md` was created. Resolved.
+- ⏳ FactSet vendor page still not created. The escalation reasoning (≥2 inbound references; vendor with AI/MCP/API integration; relevant to Singapore news monitoring) still holds. Re-scoping the question to FactSet only.
+
+Question stays `status: active` for the FactSet half. Re-name on next iteration if useful.

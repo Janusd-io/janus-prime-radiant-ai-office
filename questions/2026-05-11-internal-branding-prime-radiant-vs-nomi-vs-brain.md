@@ -3,9 +3,9 @@ type: question
 title: Internal branding — Prime Radiant vs Nomi vs brain vs wiki, sub-names consolidation
 slug: 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-21
 departments: [ai-office, marketing]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [2026-05-11-aio-standup-with-jehad]
 related: [andrew-soane, bonaventure-wong, jehad-altoutou, michael-bruck, janus-prime-radiant-build, 2026-05-08-wiki-vs-brain-metaphor-by-audience]
@@ -52,3 +52,7 @@ This is a non-urgent but accumulating ambiguity; the longer multiple names circu
 ## Related
 
 [[2026-05-08-wiki-vs-brain-metaphor-by-audience]] · [[janus-prime-radiant-build]] · [[andrew-soane]]
+
+## Resolution (2026-05-21 lint triage)
+
+**Resolved by convergence.** As of 2026-05-21, the naming has converged organisationally on **Janus Prime Radiant** — CLAUDE.md §1 documents the name and reasoning; index.md headers, decision pages, and the [[janus-prime-radiant-build]] hub all use "Janus Prime Radiant" consistently. The "Nomi" / "brain" / "Pulse" sub-names from the May 11 discussion have not re-surfaced. No formal decision page was filed for the naming choice; it became the standing convention by repetition. If Andrew or another stakeholder pushes back during the marketing instance rollout, re-open this question.

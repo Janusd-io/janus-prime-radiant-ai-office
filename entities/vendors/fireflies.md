@@ -3,17 +3,19 @@ type: vendor
 title: Fireflies
 slug: fireflies
 created: 2026-05-06
-updated: 2026-05-12
+updated: 2026-05-21
 departments: [ai-office, hr]
 status: active
 confidence: high
-sources: [aio-2026-05-04, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad]
-related: [michael-bruck, jehad-altoutou, claude, 2026-05-04-centralised-fireflies-webhook-for-interviews, aio-skills-sor-architecture-jehad, 2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical, april-2026-aio-transcripts-recovery]
+sources: [aio-2026-05-04, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-04-coordination-leverage-model-v0.3]
+related: [michael-bruck, jehad-altoutou, claude, 2026-05-04-centralised-fireflies-webhook-for-interviews, aio-skills-sor-architecture-jehad, 2026-04-20-fireflies-summaries-insufficient-raw-transcript-canonical, april-2026-aio-transcripts-recovery, coordination-leverage-model, organisational-digital-twin, feedback-attribution-from-fireflies]
 ---
 
 # Fireflies
 
 Meeting transcription and recording platform. Janus's authoritative system of record for "what was said" in meetings — first-class in the `CLAUDE.md` system-of-record map.
+
+**Classification — Core Infrastructure (per [[coordination-leverage-model]] v0.3, §4.2).** Not a productivity tool. Fireflies is the *foundational capture layer* of the [[organisational-digital-twin|organisational digital twin's]] sensor network — it converts tacit-knowledge meeting context (reasoning, alternatives considered, constraints acknowledged, commitments made) into structured queryable data that no transactional system of record can reach. **Every meeting that is not recorded is a sensor that was never installed** — knowledge generated in that room is invisible to the twin and lost to the compounding mechanism. This classification has procurement / SSO / data-residency implications distinct from a Tier-1 SaaS productivity tool.
 
 ## Use at Janus
 
