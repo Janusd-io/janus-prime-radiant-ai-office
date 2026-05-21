@@ -117,7 +117,7 @@ The [[janus-prime-radiant-build|Janus Prime Radiant rollout]] is the operational
 
 ## Watch for
 
-- **HGTFT cross-reference.** The framework's claim that Janus is uniquely positioned because the engineering discipline already exists in HGTFT is the most distinctive positioning argument. HGTFT itself doesn't yet have a wiki entity page — flagged as a gap for Janus-wide entity coverage.
+- **HGTFT cross-reference.** The framework's claim that Janus is uniquely positioned because the engineering discipline already exists in HGTFT is the most distinctive positioning argument. **(Resolved 2026-05-21: [[hgtft]] project hub created and backed by the [[hgtft-neurips-2025|NeurIPS 2025 paper]]. The cross-reference now resolves.)**
 - **Premature-abstraction risk.** The Layer-3 twin is only as good as the Layer-2 substrate. Building a "company dashboard" or "organisational query interface" before the sensors are wired is the anti-pattern the framework names explicitly.
 - **The IAM hardening workstream.** Principle 9 (Identity Is the Perimeter) is currently policy-driven. Architectural enforcement (RBAC + data-classification + agent-scoped credentials) is the gating capability for Layer-3 activation. Worth a focused [[it-ops-prime-radiant|IT/Ops]] workstream.
 - **Wiki-as-twin-substrate.** Janus Prime Radiant *is* one corner of the organisational twin — the synthesis layer + ontology. The relationship between the per-domain Prime Radiants and the company-wide twin is worth a future framing brief.

@@ -5,7 +5,7 @@ slug: ingest-2026-05-21-1015-create-hgtft-entity-page
 created: 2026-05-21
 updated: 2026-05-21
 departments: [ai-office, engineering, office-of-ceo]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1]
 related: [coordination-leverage-model, organisational-digital-twin, digital-twin, ai-native-janus-positioning, ai-native-enterprise-restructuring]
@@ -47,3 +47,18 @@ Leave HGTFT references as plain text (not wikilinks) in the AIO wiki until Engin
 ## Status
 
 Awaiting Michael's confirmation. No action taken yet.
+
+## Resolution (2026-05-21 same-day)
+
+**Resolved — `projects/hgtft.md` created.** Michael ingested the [[hgtft-neurips-2025|HGTFT NeurIPS 2025 paper]] later the same day, which provided substantive content for the entity. The page was created per the recommended approach in this escalation:
+
+- **Namespace:** `projects/hgtft.md` (Janus product, AIO-side framing). Sidesteps the `entities/products/` namespace question entirely.
+- **Scope:** treats HGTFT as the AIO sees it (engineering precedent, sales-asset substrate, positioning evidence). The canonical product description will eventually live in the Engineering Prime Radiant instance per the federation pattern.
+- **Source backing:** the NeurIPS submission (anonymized for blind review) supplied architecture, performance, and the multiphysics building dataset details.
+
+Cross-links updated:
+- [[coordination-leverage-model]] brief — HGTFT-wiki-gap watch-for item closed.
+- [[organisational-digital-twin]] concept — HGTFT cross-reference now resolves.
+- [[hgtft-neurips-2025]] source markdown twin + PDF filed at `sources/articles/`.
+
+Engineering Prime Radiant instance stand-up remains open work; this AIO page becomes a thin pointer when that lands.
