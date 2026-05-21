@@ -1,3 +1,18 @@
+---
+type: source
+source_type: article
+title: The Coordination Leverage Model — A Management Framework for Agentic AI Transformation (v0.1)
+slug: 2026-04-coordination-leverage-model-v0.1
+created: 2026-04-13
+captured_by: michael-bruck
+author: michael-bruck
+audience: janus-leadership
+departments: [ai-office, office-of-ceo]
+status: superseded
+confidence: high
+related: [2026-04-coordination-leverage-model-v0.3, coordination-leverage-model]
+---
+
 # The Coordination Leverage Model
 
 ## A Management Framework for Agentic AI Transformation
