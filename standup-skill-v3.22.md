@@ -340,7 +340,7 @@ Compact internal checkpoints during long runs:
 6. Subagents complete (registry + chained evaluations)
 7. AIP reconciliation complete
 8. **Step 3I Context Coverage Check passed**
-9. Obsidian entry written + pushed
+9. Obsidian entry written (Obsidian Git plugin handles commit + push on its own cycle)
 10. Final Report emitted
 
 ---
@@ -902,7 +902,7 @@ Default `{{PRIME_RADIANT_VAULT}}`: `~/janus/prime-radiant/` (single-repo root).
    - `duration_min`: rounded meeting duration in minutes
    - `audience`: `department`
    - `departments`: `[ai-office]`
-   - `standup_skill_version`: `v3.22` (lets `/janus-brain` identify standup-written files)
+   - `standup_skill_version`: `v3.23` (lets `/janus-brain` identify standup-written files)
    - `parser_version`: `3` (matches `/janus-brain` 2026-05-14 applier; prevents re-processing)
    - `related`: YAML list of every Monday item id touched in Phase 3 (from the Step 3I touched-items set) plus any `AIR-N` / `AIP-N` references touched by subagents
 6. **Compose body.** The body is the full forward-looking standup entry — the same content that previously went to Notion. Sections:
@@ -944,7 +944,6 @@ If the vault root cannot be found or the file write fails, fall back to writing 
 |---|---|---|
 | Vault root not found / no `.git/` | `obsidian_write: skipped (vault not found at <path>)` | Yes — fallback to outputs/ |
 | Target file already exists | `obsidian_write: skipped (file already present at <path>)` | Yes |
-| Pre-write `git pull` failed | `obsidian_write: warning — pull failed: <reason>; proceeding with local write` | Yes |
 | `sources/meetings/` directory could not be created | `obsidian_write: failed — cannot create <path>: <reason>` | Yes — fallback to outputs/ |
 | Permission denied | `obsidian_write: failed — permission denied at <path>` | Yes — fallback to outputs/ |
 | Write threw (disk full, IO error, etc.) | `obsidian_write: failed — <error string>` | Yes — fallback to outputs/ |
@@ -976,7 +975,7 @@ The file lands in `sources/meetings/` within the single `~/janus/prime-radiant/`
 - Subagent dispatches: X total
 - Subagent failures: X
 - AIP conflicts unresolved: X
-- Obsidian entry (Step 5): ✅ written + pushed | ✅ written + push warning | ⏭️ skipped (already present | vault not found) | ❌ failed + fallback to outputs/standup-AIO-<DD-Mon-YYYY>.md
+- Obsidian entry (Step 5): ✅ written (Obsidian Git will commit on next cycle) | ⏭️ skipped (already present | vault not found) | ❌ failed + fallback to outputs/standup-AIO-<DD-Mon-YYYY>.md
 - Linear AIP changes: X applied, Y unmatched, Z conflicts unresolved
 - Execution Control Mode: <auto / controlled — user approved>
 
@@ -1118,7 +1117,7 @@ People-column value format:
 
 ---
 
-## Reference: Prime Radiant Write (Step 5 — v3.21)
+## Reference: Prime Radiant Write (Step 5 — v3.23)
 
 **Purpose.** Canonical destination for daily standup content in the single Prime Radiant vault. The file lands as first-class meeting source content — searchable in Obsidian, immediately visible in the curator's personal meeting log, and consumable by `/janus-brain`'s meeting-digest applier. The `parser_version: 3` field prevents re-processing by the applier.
 
@@ -1163,7 +1162,7 @@ attendees: [Name1, Name2, ...]      # YAML list of real names from the Digest
 duration_min: <int>                 # rounded meeting duration
 audience: department
 departments: [ai-office]
-standup_skill_version: v3.22           # skill version that wrote this file
+standup_skill_version: v3.23           # skill version that wrote this file
 parser_version: 3                      # /janus-brain applier version (prevents re-processing)
 related: [<Monday item ids>, <AIR-N>, <AIP-N>]   # YAML list; cross-refs touched in Phase 3
 ---
@@ -1247,7 +1246,7 @@ The Labels column captures cross-cutting concerns. <70% routing confidence → a
 - **Idempotency** — file existence check in Phase 1; per-standup Monday Update stub guarded by date-string check; chained Gate 1 skipped if AIR-N already has same-day Gate 1 comment; Description Update skipped if header already present; group-move rationale skipped if same-date stub already present
 - **Step 3I Context Coverage Check** runs before Obsidian write / Final Report — coverage tally appears in both surfaces
 - **Final Execution Report is emitted on every run that reaches Phase 3** — including coverage results, backfills, move-rationales, dedup results, failures
-- **Obsidian write (Step 5 v3.21)** — forward-looking entry written as `YYYY-MM-DD-<slug>.md` with meeting-parser-compatible front-matter (incl. `parser_version: 3`, `standup_skill_version: v3.22`) to `{{PRIME_RADIANT_VAULT}}/sources/meetings/` (default `~/janus/prime-radiant/sources/meetings/` — CLAUDE.md §3 canonical path), then `git add && commit && push` (Step 5.1, non-blocking). Path-based idempotency (skip if file exists); non-blocking on failure with local fallback to `outputs/`. See `Reference: Prime Radiant Write`.
+- **Obsidian write (Step 5 v3.23)** — forward-looking entry written as `YYYY-MM-DD-<slug>.md` with meeting-parser-compatible front-matter (incl. `parser_version: 3`, `standup_skill_version: v3.23`) to `{{PRIME_RADIANT_VAULT}}/sources/meetings/` (default `~/janus/prime-radiant/sources/meetings/` — CLAUDE.md §3 canonical path). **No git operations are run from the sandbox** (v3.23 hardening — see Step 5.1); Obsidian Git plugin handles commit + push on its own auto-cycle, eliminating the lock-file race condition that affected v3.21 / v3.22. Path-based idempotency (skip if file exists); non-blocking on failure with local fallback to `outputs/`. See `Reference: Prime Radiant Write`.
 
 ### Defensive Execution Principle
 
@@ -1312,8 +1311,8 @@ Instead:
 - [ ] **(4) Linear AIP** map built and reconciliation pass completed with Conflict Safety
 - [ ] Linear AIR was not modified by this skill
 - [ ] **(5) Step 3I Context Coverage Check passed** — every touched item verified covered; failures backfilled or surfaced; tally captured for Obsidian entry + Final Report
-- [ ] **(6) Obsidian / Prime Radiant entry written** (Step 5) — `{{PRIME_RADIANT_VAULT}}/sources/meetings/YYYY-MM-DD-<slug>.md` with meeting-parser-compatible front-matter (incl. `parser_version: 3`, `standup_skill_version: v3.22`); outcome surfaced in Summary + Issues
-- [ ] **(5.1) Git commit + push completed** (or non-blocking warning logged if pull/commit/push failed); file is on disk regardless and Obsidian Git plugin's auto-backup is the safety net
+- [ ] **(6) Obsidian / Prime Radiant entry written** (Step 5) — `{{PRIME_RADIANT_VAULT}}/sources/meetings/YYYY-MM-DD-<slug>.md` with meeting-parser-compatible front-matter (incl. `parser_version: 3`, `standup_skill_version: v3.23`); outcome surfaced in Summary + Issues
+- [ ] **(5.1) No git operations run from sandbox** (v3.23) — file written to disk only; Obsidian Git plugin handles commit + push on its own auto-cycle (or manual backup if auto-sync is disabled on this machine)
 - [ ] **Local fallback honoured** if vault write failed — `outputs/standup-AIO-<DD-Mon-YYYY>.md` written and linked in Final Report
 - [ ] Every next-step bullet in the Obsidian entry includes a Monday hyperlink
 - [ ] **(7) Final Execution Report** emitted, including Subagent Failures, Subagent Blockers, AIP Conflicts Unresolved, Missing/Unclear Owners, gated-out subagent mentions, chained-evaluation outcomes, **Context Coverage results (covered / backfilled / move-rationales / failures)**, **Deduplication results (Step 2B.1 blocked/flagged + Step 3.0 execution-time blocks)**, **set_item_description_content seed-and-fill results**
