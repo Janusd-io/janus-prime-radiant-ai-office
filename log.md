@@ -1792,3 +1792,44 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - **v1.1 rather than v2.0.** The change is additive (more structural detail) rather than disruptive (no palette / font / logo change). v2.0 reserved for when the marketing agency refresh lands.
   - **Cross-referenced both ways.** The brand-guideline page §10 explicitly frames the guideline-skill relationship so future readers don't get confused about which is authoritative for which question.
 - ingest counter since 2026-05-20 lint: 1.
+
+## [2026-05-21 09:00] schema-update | CLAUDE.md v0.13 + janus-html-deck SKILL bump v1.0 → v1.1
+- driver: Michael's directive — "Should also update the installed skill version number to v1.1 too" and "Update CLAUDE.md and run lint."
+- **CLAUDE.md** v0.12 → **v0.13.** Added `assets/` top-level folder formally to §2 structure documentation. Documents the convention (one subfolder per content class, wiki pages link via relative paths, snapshots of externally-installed artefacts live here while the external installation remains authoritative). Existing examples documented: `assets/branding/` (logo SVGs, since 2026-05-15) + `assets/janus-html-deck/` (skill bundle snapshot, since 2026-05-21). Header changelog updated.
+- **assets/janus-html-deck/SKILL.md** v1.0 → **v1.1.** Version + Last Updated bumped. Brand-surface section now references guideline v1.1. Provenance section adds v1.1 entry noting the lockstep move with the guideline page (no functional change to template / example — same content as v1.0; version reflects guideline alignment).
+
+## [2026-05-21 09:30] lint | carry-forward execution from 2026-05-20 lint | 445 wiki + 144 sources + 1 asset bundle
+- driver: Michael's directive "Run lint" with the 2026-05-20 carry-forward queue as the operational starting point (per the established memory convention in [[project-lint-workstream-backlog]]). Lint workstream executed *from* the carry-forward, not from a fresh structural scan.
+- **A. Retroactive attribution sweep (carry-forward §A)** — complete. Full methodology + findings in [[2026-05-21-lint-followup-attribution-sweep]]. Highlights:
+  - 30 high-attribution pages examined directly out of 197 in-scope; pattern-matched `**Name** said`, `Per Name`, `Name's read`, `Quoted reasoning`, `Name flagged`, `Name pushed back`, `Name articulated`, `^Name: "..."`.
+  - Special focus on the carry-forward's flagged high-risk surfaces: 2026-05-12 Bonaventure call, 2026-05-12 Andrew session, 2026-05-18 CEO meeting, 2026-05-11 standup-with-Jehad batch (shared-mic confirmed).
+  - 0 RED cases (pure uncorroborated attributions requiring softening) found in scope.
+  - 1 AMBER case softened inline: `decisions/2026-05-11-notion-restricted-to-aio-no-broad-rollout.md` gets an "Attribution confidence" note acknowledging that `decided_by: bonaventure-wong` is corroborated by role-lock (CEO-only Notion-seat policy) rather than direct-quote attribution. The transcript line was tagged `unknown-speaker`.
+  - 8 GREEN cases verified — corroborated by multi-source citation, named-meeting context, role-lock, or curator-confirmation patterns already in the body.
+  - 10 sole-source-2026-05-11-standup pages checked for shared-mic risk — 0 direct-attribution patterns detected; the standup skill's post-hoc re-attribution work + ingest framing ("the standup discussion", "captured in the standup") prevented over-attribution from reaching the wiki.
+  - **Methodological finding:** the wiki's existing discipline absorbed most over-attribution risk pre-emptively. Future attribution-confidence work should target *new ingests* (a permanent §5.3 lint check) rather than recurring retroactive sweeps.
+- **B.1. Strip `[[unknown-speaker-N]]` wikilinks** — complete. 8 decisions patched: `decisions/2026-05-05-flow-first-skill-later.md`, `start-with-source-and-input-only.md`, `policy-baked-into-skill-not-separate-input.md`, `github-as-skill-library.md`, `slack-is-canonical-source-of-tool-requests.md`, `move-eval-table-to-shared-google-doc.md`, `defer-finance-and-legal-from-tool-eval-pipeline.md`, `skills-follow-input-activity-output-structure.md`. All from Jehad's personal-vault import of the 2026-05-05-may-05-11-03-am meeting (Fireflies didn't tag speakers). Replaced `owner: unknown-speaker-N` / `decided_by: unknown-speaker-N` with the meeting slug; replaced `decided by [[unknown-speaker-N]]` / `owned by [[unknown-speaker-N]]` body lines with "the meeting (speaker untagged in Fireflies transcript)". Remaining `[[unknown-speaker-N]]` mentions live only in pulse lint reports (2026-05-13-lint, 2026-05-20-lint) as documentary finding-listings — those stay as historical record.
+- **B.2. Backfill 4 missing meeting sources** — deferred. Requires Fireflies access (`2026-05-06-ai-and-it-department-meeting` 16 refs, `2026-05-14-data-management-system-overhaul-meeting` 12, `2026-05-13-aio-project-management-meeting` 9, `2026-05-08-jehad-michael-roza-simon-euclid-bonaventure-meeting` 5). Re-flagged for next lint.
+- **B.3. Promote `ingest-2026-05-12-1545-openai`** — discovered during triage that `entities/vendors/openai.md` already exists (Michael executed before this lint). Question marked resolved.
+- **B.4. Triage 7 aging questions** — 5 of 7 closed with inline resolution notes:
+  - `2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain` → resolved by convergence on "Janus Prime Radiant" (no formal decision; standing convention by repetition).
+  - `ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox` → resolved by implementation (standup v3.15 shipped 2026-05-13 via Google Drive MCP; first production run [[2026-05-13-aio-it-meeting]]).
+  - `2026-05-12-website-architecture-one-site-vs-country-sites` → resolved by [[2026-05-12-single-domain-gems-com-with-country-paths]] decision; CEO direction 2026-05-18 aligned.
+  - `ingest-2026-05-12-1530-mnemon` → resolved as deferred-by-design (the escalation itself recommended defer; no second source emerged).
+  - `ingest-2026-05-12-1545-openai` → resolved (vendor page exists).
+  - 2 remain partially: `vivian-balakrishnan-and-factset` re-scoped to FactSet only (Vivian entity page exists); `bonaventure-friday-meeting-audio-recovery` still pending Whisper rerun.
+  - Post-triage: 3 active questions total, all <14 days old.
+- **B.5. Backfill `departments:` on 24 stub-vintage project pages** — complete. Each mapped from title + source-meeting context (e.g., `hr-recruitment-pipeline` → `[hr, ai-office]`, `iso-ims-puls` → `[iso, ai-office]`, `uber-for-engineers` → `[ai-office, office-of-ceo]`). All 24 `updated:` bumped to 2026-05-21. 0 empty-departments project pages remain.
+- **B.6. Low-value broken-ref cleanup** — deferred again per the prior lint's own guidance ("defer if higher-priority work").
+- **C. Fresh scan** — net-new findings minimal:
+  - Total broken refs 43 → 34 (↓9). Mostly from concept-promotions + stack-composition-framework / agentic-lean-marketing-stack creation removing dangling refs.
+  - 4 missing meeting sources still the dominant target (42 cumulative inbound refs).
+  - 0 net-new orphans introduced.
+  - 0 net-new duplicate slugs.
+  - 0 net-new frontmatter compliance gaps.
+  - 0 new contradictions; 0 new stale claims surfaced.
+- **Findings table** (entering → exiting): broken-refs 43→34, missing-meeting-sources 8→4, empty-dept-projects 24→0, aging-questions 7→3, dup-slugs 1→0, `[[unknown-speaker]]`-in-non-pulse 8→0.
+- report: pulse/2026-05-21-lint.md + pulse/2026-05-21-lint-followup-attribution-sweep.md.
+- cross-session persistence: MEMORY.md entry [[project-lint-workstream-backlog]] updated — canonical-location pointer now points at 2026-05-21 lint report's "Carry-forward" section (replacing 2026-05-20). Top-of-queue items: 4 missing meeting sources, FactSet vendor page, 5 marketing-stack vendor pages.
+- next-lint carry-forward documented as a "Carry-forward for the next lint workstream" section in pulse/2026-05-21-lint.md. Proposed for codification in CLAUDE.md §5.3 at next schema bump — the "always end with a carry-forward section" convention proved valuable enough to be a permanent rule.
+- ingest counter since 2026-05-21 09:00 schema update: reset.
