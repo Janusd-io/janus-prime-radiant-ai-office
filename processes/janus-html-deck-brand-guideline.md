@@ -1,14 +1,24 @@
 ---
 type: process
-title: Janus HTML deck brand guideline (v1.1)
+title: Janus HTML deck brand guideline (v1.0)
 slug: janus-html-deck-brand-guideline
 created: 2026-05-15
 updated: 2026-05-21
-departments: [marketing, ai-office]
+departments:
+  - marketing
+  - ai-office
 status: active
 owner: michael-bruck
-sources: [2025-janus-brand-guidelines-v1.0, 2026-05-15-singapore-marketing-launch-plan-v1, janus-html-deck-skill-v1.0]
-related: [marketing-prime-radiant, andrew-soane, 2026-05-12-html-as-presentation-format-adopted, 2026-05-15-singapore-marketing-launch-plan-v1, 2025-janus-brand-guidelines-v1.0]
+sources:
+  - 2025-janus-brand-guidelines-v1.0
+  - 2026-05-15-singapore-marketing-launch-plan-v1
+  - janus-html-deck-skill-v1.0
+related:
+  - marketing-prime-radiant
+  - andrew-soane
+  - 2026-05-12-html-as-presentation-format-adopted
+  - 2026-05-15-singapore-marketing-launch-plan-v1
+  - 2025-janus-brand-guidelines-v1.0
 ---
 
 # Janus HTML deck brand guideline (v1.1)
