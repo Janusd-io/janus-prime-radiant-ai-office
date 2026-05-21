@@ -1891,3 +1891,27 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - **Fireflies reclassification.** The framework's §4.2 explicitly elevates Fireflies from "productivity tool" to **Core Infrastructure** because of its role as the tacit-knowledge sensor. Updated the vendor page with a leading classification statement; this has knock-on implications for procurement, SSO requirements, and data-residency analysis (a Core Infrastructure tool gets different treatment from a Tier-1 SaaS tool in the AI Tool Evaluation Framework).
 - ingest counter since 2026-05-21 lint: 2 (4-article batch + this one). Still under the 10-ingest lint trigger.
 - inbox state: empty. Both source files filed (kept in `sources/articles/`, not moved to `.processed/` — articles pipeline pattern per CLAUDE.md §5.1).
+
+## [2026-05-21 11:00] ingest | hgtft-neurips-2025 | article (PDF, NeurIPS 2025 submission)
+- driver: Michael's directive — "I've added an HGTFT research paper to the inbox which should round out this theme nicely." Inbox contained `HGTFT_NeurIPS2025.pdf` (41 pages, 1.5 MB). The paper provides the substantive content needed to resolve the same-day open escalation about creating an HGTFT entity page.
+- filed sources:
+  - **sources/articles/hgtft-neurips-2025.pdf** — original PDF retained per CLAUDE.md §5.1 PDF-pattern.
+  - **sources/articles/hgtft-neurips-2025.md** — markdown twin. Captures abstract, three contributions, three-layer architecture (Fusion + Temporal + Graph), problem formulation (heterogeneous graph forecasting in multiphysics systems), multi-stage training pipeline + four-term loss function (MSE + RCS Reasonableness Checks + CRS Correlation-Based + FDS Frequency Domain Similarity), two-stage fine-tuning (task + project-specific), and selected performance numbers from Tables 1-3.
+- created:
+  - **projects/hgtft.md** — Janus product project hub for HGTFT (Heterogeneous Graph Temporal Fusion Transformer-based building digital-twin platform). AIO-side framing per the recommendation in the [[ingest-2026-05-21-1015-create-hgtft-entity-page]] escalation; canonical product page defers to a future Engineering Prime Radiant. Includes: what HGTFT does (with mapping table to the organisational twin), technical architecture summary, performance results (best-or-second-best on most standard benchmarks; outperforms every baseline on every MBS-dataset metric — MSE 0.0023 few-shot vs 0.0044 best baseline; RCS physics-consistency 0.0012 vs 0.0133 best baseline = 11× better), how it informs AIO work, scope notes, watch-for list.
+- resolved (same-day):
+  - **questions/ingest-2026-05-21-1015-create-hgtft-entity-page.md** — flipped `status: active → resolved` and appended a resolution note. The earlier-this-session escalation flagged the HGTFT-wiki-gap; the NeurIPS paper provided the content needed to resolve it cleanly. Namespace landed on `projects/hgtft.md` per the recommendation.
+- updated:
+  - **briefs/coordination-leverage-model.md** — HGTFT-wiki-gap watch-for item closed inline with a same-day update note pointing at the new [[hgtft]] project hub and the [[hgtft-neurips-2025]] source.
+  - **concepts/organisational-digital-twin.md** — HGTFT cross-reference watch-for item closed inline similarly.
+  - **concepts/digital-twin.md** — "Physical twin" bullet now wikilinks to [[hgtft]] and references the NeurIPS paper as the architecture documentation.
+  - **index.md** — header bumped with the ingest summary; HGTFT question removed from open-questions list and added to resolved list.
+- attribution note (per CLAUDE.md v0.12 rule):
+  - The paper is **anonymized for NeurIPS blind review**. Author / Title / Subject / Keywords are blank in the PDF metadata. The acronym match (HGTFT in the paper = HGTFT in the [[coordination-leverage-model]] product description) + the application domain (multiphysics building systems) + the source (Michael uploaded it as backing for Janus's HGTFT product story) make Janus / Janus-affiliated authorship the *strongly-implied* default, but it is **not transcript-confirmed**. The wiki records this as "inferred from product-name match; not transcript-level attribution." Treat as AMBER per the attribution discipline. When the NeurIPS blind-review window closes, this can be upgraded to direct attribution.
+- judgment calls:
+  - **Filed as `projects/hgtft.md` not `entities/products/hgtft.md`.** The escalation recommended `projects/` to sidestep the new-namespace question. Followed the recommendation; if a Janus-products vocabulary lands later, this page can move.
+  - **Source = PDF + markdown twin, not just PDF.** Per §5.1 the markdown twin is the indexable layer; PDF is the source-of-truth for figures, tables, equations. Both filed.
+  - **No new vendor entity for "Anthropic-anonymous-authors."** The paper's authorship is anonymized; treating it as a vendor would be premature.
+  - **HGTFT-applied-to-self storyline left as a watch-for in the framework brief**, not yet promoted to a positioning-page rewrite. That's a separate, focused edit for when Bonaventure-facing content next gets iterated.
+- ingest counter since 2026-05-21 lint: 3.
+- inbox state: empty. PDF + markdown twin reside permanently at `sources/articles/`.

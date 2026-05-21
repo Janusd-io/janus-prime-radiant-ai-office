@@ -17,7 +17,7 @@ A structured, continuously-updated model of a system (physical or organisational
 
 ## Two surfaces at Janus
 
-- **Physical twin (HGTFT)** — Janus's customer-facing product. Maintains digital twins of buildings: geometry, mechanical systems, relationships, physics. Sensors are IoT (temperature, occupancy, vibration). Janus's core engineering competency.
+- **Physical twin** — [[hgtft|HGTFT]], Janus's customer-facing product. Maintains digital twins of buildings: geometry, mechanical systems, relationships, physics. Sensors are IoT (temperature, occupancy, vibration, energy). Model architecture: the Heterogeneous Graph Temporal Fusion Transformer, documented in the [[hgtft-neurips-2025|NeurIPS 2025 paper]]. Janus's core engineering competency.
 - **Organisational twin** — covered at [[organisational-digital-twin]]. The same engineering discipline applied to the company itself: departments, roles, workflows, decisions, tools. Sensors are systems of record + AI-assisted capture ([[fireflies]]). The central compounding mechanism of the [[coordination-leverage-model|Coordination Leverage Model]].
 
 ## Why one engineering discipline serves both
