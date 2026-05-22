@@ -9,11 +9,11 @@ status: active
 owner: michael-bruck
 captured_by: jehad-altoutou
 audience: [department]
-sources: [ai-tool-evaluation-framework, marketing-stack-technical-writeup]
-related: [ai-tool-evaluation, ai-registry, ai-native-mandate, ai-policy, stack-composition-framework, agentic-lean-marketing-stack]
+sources: [ai-tool-evaluation-framework, marketing-stack-technical-writeup, section-5-ai-charter-policy-v2.1]
+related: [ai-tool-evaluation, ai-registry, ai-native-mandate, ai-policy, shadow-ai-prohibition, tool-tiers, sandbox-environment, pilot-in-command, stack-composition-framework, agentic-lean-marketing-stack, coordination-leverage-model]
 ---
 
-The formal Janus Digital AI Tool Evaluation & Approval Framework (DRAFT v0.1, last updated 25 February 2026, owned by Office of the COO — AI & Technology). Supersedes Section 5.2.4 (Justification Protocol) and operationalises the [[ai-native-mandate]]'s procurement rule. The [[ai-tool-evaluation]] skill executes this framework in practice; the [[ai-registry]] is its output of record.
+The formal Janus Digital AI Tool Evaluation & Approval Framework (DRAFT v0.1, last updated 25 February 2026, owned by Office of the COO — AI & Technology). Operationalises **§5.4 of the [[ai-policy|AI Policy]] v2.1** ([[section-5-ai-charter-policy-v2.1|canonical source]]) — the policy gives the governance-level four-stage overview; this framework document gives the detailed gate criteria. The [[ai-tool-evaluation]] skill executes this framework in practice; the [[ai-registry]] is its output of record. Closely paired with [[shadow-ai-prohibition]] (no tools outside the registry) and [[tool-tiers]] (Core Infrastructure / Functional Tools / AI Office Infrastructure classification).
 
 **Default posture.** No AI tool may be used by any employee unless formally approved and listed in the AI Registry. Burden of proof lies with the evaluation process.
 

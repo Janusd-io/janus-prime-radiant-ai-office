@@ -3,9 +3,10 @@ type: process
 title: AI Policy Gate Approval
 slug: ai-policy-gate-approval
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-22
 departments: [ai-office, it-ops, office-of-ceo]
-related: [ai-tool-evaluation, linear, claude, euclid-wong, michael-bruck]
+sources: [section-5-ai-charter-policy-v2.1]
+related: [ai-tool-evaluation, ai-tool-evaluation-framework, ai-policy, ai-registry, shadow-ai-prohibition, sandbox-environment, linear, claude, euclid-wong, michael-bruck]
 ---
 
 # AI Policy Gate Approval

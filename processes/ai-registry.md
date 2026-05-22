@@ -3,14 +3,17 @@ type: process
 title: AI Registry (Linear AIR) management
 slug: ai-registry
 created: 2026-05-12
-updated: 2026-05-20
+updated: 2026-05-22
 departments: [ai-office]
-related: [linear, ai-tool-evaluation, ai-tool-evaluation-framework, standup, claude, anthropic, janus-prime-radiant-build, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, viktor, hostinger, n8n, obsidian]
+sources: [section-5-ai-charter-policy-v2.1]
+related: [linear, ai-tool-evaluation, ai-tool-evaluation-framework, ai-policy, shadow-ai-prohibition, tool-tiers, standup, claude, anthropic, janus-prime-radiant-build, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, viktor, hostinger, n8n, obsidian]
 ---
 
 # AI Registry (Linear AIR) management
 
 Janus's reference convention for managing the AI Tools Registry in [[linear]] AIR. Owned by the AI Office. The canonical implementation is the **`/ai-registry` skill** — this wiki page is a short reference for cross-linking and high-level orientation, not a duplicate of the skill. Parallel in shape to [[ai-tool-evaluation]] (which references the `/ai-tool-evaluation` skill).
+
+**Policy basis:** the AI Registry is codified in **§5.3 of the [[ai-policy|AI Policy]] v2.1** ([[section-5-ai-charter-policy-v2.1|canonical source]]) as "The Register of Approved AI Providers." The policy establishes (a) the registry exists, (b) [[shadow-ai-prohibition|Shadow AI is prohibited]] (no tools outside the registry), (c) tools are classified into [[tool-tiers|three tiers]] (Core Infrastructure / Functional Tools / AI Office Infrastructure), and (d) Data Sovereignty requirements (portability + documented API) are non-negotiable for any registry listing.
 
 > **For execution, use the skill.** Do not paraphrase AIR conventions from this page when adding or updating registry entries; the skill is authoritative and may have moved ahead.
 
