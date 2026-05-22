@@ -1950,3 +1950,37 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - **Slug normalisation.** The earlier placeholder `section-5-ai-charter-policy-ai-native-framework-30-march-2026-v2` is recorded in the new source's `supersedes:` field. Future ingest passes that find the old slug in `sources:` should normalise to the canonical.
 - ingest counter since 2026-05-21 lint: 4.
 - inbox state: empty. Source filed permanently in `sources/articles/`.
+
+## [2026-05-22 08:45] deliverable | 2026-05-22-ai-office-introduction.html | Janus-branded HTML deck (v1)
+- driver: Michael's directive — "Create an introduction to the AI Office intended for anyone who isn't familiar with what we do, such as a new employee, partner or even someone in the company who doesn't have the full picture. Make the initial version more detailed to start with and we can do a shorter version later. Use visuals wherever possible so that it's easy to understand. Create it in the Janus branded html presentation format style."
+- format: Janus HTML deck v1.1 — followed [[janus-html-deck-brand-guideline]] v1.1, used the patterns documented in `assets/janus-html-deck/example-deck.html`, brand surface (palette + Montserrat + inline-SVG logo + 6px orange header band + top-right logo block on every slide) intact across all 14 slides.
+- audience: new employees, partners, anyone in the company without the full picture. Detailed initial version per Michael's instruction; shorter version deferred for a future iteration.
+- structure (14 slides, all 10 slide patterns from the example deck exercised at least once):
+  1. **Title (dark hero)** — "The AI Office · An introduction to how Janus Digital is becoming AI Native."
+  2. **What we do** (three-card grid) — Govern / Operate / Build trichotomy.
+  3. **Why we exist** (big-stat callout) — `n(n−1)/2` communication paths; the [[coordination-tax]] is the binding constraint; agentic AI automates coordination itself.
+  4. **What AI Native means** (three-card grid) — the three strategic pillars from §5.2 of the [[ai-policy]] (Operational Optimisation / Strategic Innovation / Institutional Intelligence).
+  5. **The Drucker frame** (three-card grid) — [[builders-sellers-measurers]]. AI displaces measurers, amplifies builders and sellers. External validators (JPMorgan, Cloudflare, KPMG) called out in footer.
+  6. **Three-layer model** (numbered framework cards) — [[coordination-three-layer-model]]: Individual / Department / Organisation. AIO is currently the Layer-2 prototype.
+  7. **Organisational digital twin** (two-path comparison) — physical [[hgtft|HGTFT]] product vs the [[organisational-digital-twin]]. Janus uniquely positioned because the engineering DNA already exists.
+  8. **AI Policy** (stack table) — all 10 sections of Section 5 AI Charter v2.1 in a single table.
+  9. **Six non-negotiables** (two rows of numbered framework cards) — Shadow AI prohibited / no public LLMs with company data / HITL for high-stakes / Pilot in Command / no AI Slop / consent for recording.
+  10. **AI Tool Evaluation Framework** (four-step timeline) — Stage 1 Intake & Triage → Stage 2 Technical Qualification → Stage 3 Sandbox → Stage 4 Approval, IT Handover, Registry. Ongoing-review callout band.
+  11. **Standup pipeline** (icon row list) — Fireflies → Monday → Linear AIR/AIP → Notion → Janus Prime Radiant. Five-row variant (the example deck used four; layout absorbs five cleanly).
+  12. **Prime Radiant rollout** (stack table) — per-department instance status table: AIO live, Marketing in flight, PM / IT / HR / Office-of-CEO / Finance / Engineering / Training / ISO queued.
+  13. **External validation** (two-column with proof boxes) — the Drucker frame going mainstream (JPMorgan / Cloudflare / StanChart) + Anthropic Q2 profitability + KPMG alliance.
+  14. **How to engage** (closing dark slide with numbered asks) — 4 entry points all routing through `#ai-internal-hub`: propose tool / request internal solution / domain-expert sandbox eval / incident report.
+- judgment calls:
+  - **14 slides, not 12.** Per the skill, 8-12 is the sweet spot for executive decks. This is an *educational introduction* and Michael explicitly said "more detailed to start with" — landed on 14 to cover the AIO substrate without compression.
+  - **Used the example deck's CSS directly** rather than the bare template CSS. The example deck's stylesheet contains all the slide-pattern styles (card, path-card, stack-table, timeline, row-list, asks); the template-only CSS would have required adding most of them inline. Cleaner to copy the full proven stylesheet.
+  - **No standalone slide for the AI Registry or Tool Tiers.** Both are covered inside the AI Policy table (slide 8) + the evaluation flow (slide 10). A shorter follow-up version may compress further; a longer leadership-targeted version might split them out.
+  - **Footnote citations to wiki artefacts** kept in normal prose (no in-deck wikilink syntax). A reader doesn't need to know about CLAUDE.md slugs to follow the deck; the references are there for someone who wants to dig deeper.
+  - **Deck saved at vault root** following the existing convention (`2026-05-15-singapore-strategy-alignment.html`, `2026-05-14-project-management-prime-radiant-standup-proposal.html`, etc.). Date-prefixed slug, not filed in `sources/` because it's a deliverable, not an ingest source.
+- not done (deliberately):
+  - **Shorter version** — Michael flagged it can come later. The 14-slide detailed version is the load-bearing artefact; a 5-7 slide compressed version is straightforward to derive.
+  - **No deck-page entity in the wiki.** The deck is a deliverable, not a wiki artefact. If it becomes a frequently-referenced introduction (e.g., shared with every new hire), worth a thin pointer page in `projects/` or similar to track its version history.
+  - **No Bonaventure / CEO-pitch variant.** This is the *new-employee / partner / context-deficient-colleague* version. A senior-leadership variant would compress some material and emphasise the differentiation argument from the [[ai-native-enterprise-restructuring]] brief more heavily.
+- next iteration likely:
+  - Get review feedback from Andrew, Bonaventure, Jehad before treating as final.
+  - Once stable, derive a 5-7 slide compressed version for at-a-glance use.
+  - Possibly produce a CEO-pitch variant emphasising the differentiation argument + the HGTFT-applied-to-self storyline.
