@@ -7,11 +7,11 @@ updated: 2026-05-21
 departments: [ai-office]
 captured_by: jehad-altoutou
 audience: [department]
-sources: [section-5-ai-charter-policy-ai-native-framework-30-march-2026-v2, 2026-04-coordination-leverage-model-v0.3]
-related: [ai-policy, ai-tool-evaluation, ai-tool-evaluation-framework, shadow-ai-prohibition, coordination-leverage-model, coordination-tax, coordination-three-layer-model, organisational-digital-twin, ai-native-janus-positioning, builders-sellers-measurers]
+sources: [section-5-ai-charter-policy-v2.1, 2026-04-coordination-leverage-model-v0.3]
+related: [ai-policy, ai-tool-evaluation, ai-tool-evaluation-framework, shadow-ai-prohibition, pilot-in-command, tool-tiers, sandbox-environment, coordination-leverage-model, coordination-tax, coordination-three-layer-model, organisational-digital-twin, ai-native-janus-positioning, builders-sellers-measurers]
 ---
 
-The Janus Digital posture that AI is the foundational baseline of operations rather than a layer added over existing processes. Codified in `section-5-ai-charter-policy-ai-native-framework-30-march-2026-v2` (Section 5 of the AI Native Framework, v2 dated 30 March 2026) and aligned to ISO/IEC 42001:2023 AIMS.
+The Janus Digital posture that AI is the foundational baseline of operations rather than a layer added over existing processes. Codified in **§5.1 of the [[ai-policy|AI Policy]] v2.1** ([[section-5-ai-charter-policy-v2.1|canonical source filed 2026-05-22]]) and aligned to ISO/IEC 42001:2023 AIMS. (The earlier `section-5-ai-charter-policy-ai-native-framework-30-march-2026-v2` slug used as a placeholder is now superseded by the canonical v2.1 source.)
 
 **Theoretical underpinning** — the mandate's three strategic pillars (operational optimisation, strategic innovation, institutional intelligence) and the non-negotiable rules are the *policy compliance layer*. The *operating economics* behind why the mandate is structured this way is the [[coordination-leverage-model|Coordination Leverage Model]] (Michael, April 2026 draft). The mandate without the model is policy compliance; the model without the mandate is academic theory. Both together give the AIO an operating system. Cross-references: [[coordination-tax]] (the primitive being reduced), [[coordination-three-layer-model]] (where the substrate sits), [[organisational-digital-twin]] (the compounding mechanism), [[builders-sellers-measurers]] (the role-taxonomy companion frame).
 
