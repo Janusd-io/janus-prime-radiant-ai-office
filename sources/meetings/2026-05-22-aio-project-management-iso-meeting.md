@@ -59,9 +59,9 @@ Cross-functional working session on 22 May 2026 (~55 minutes). Confirmed partici
 
 ## Registry & Evaluation Outcomes
 
-| Tool | AIR # | Action |
-|---|---|---|
-| DTX | AIR-134 | Created — web-based SaaS drawing/project management platform used by PM dept; no known MCP/API connector for AI integration as of 2026-05-22 |
+| Tool | AIR #   | Action                                                                                                                                       |
+| ---- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| DTX  | AIR-134 | Created — web-based SaaS drawing/project management platform used by PM dept; no known MCP/API connector for AI integration as of 2026-05-22 |
 
 ---
 
