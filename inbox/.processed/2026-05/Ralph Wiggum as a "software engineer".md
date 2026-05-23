@@ -4,7 +4,7 @@ source: "https://ghuntley.com/ralph/"
 author:
   - "[[Geoffrey Huntley]]"
 published: 2025-07-14
-created: 2026-05-07
+created: 2026-05-23
 description: "How Ralph Wiggum went from 'The Simpsons' to the biggest name in AI right now - Venture Beat😎Here's a cool little field report from a Y Combinator hackathon event where they put Ralph Wiggum to the test.\"We Put a Coding Agent in a While Loop and It Shipped"
 tags:
   - "clippings"

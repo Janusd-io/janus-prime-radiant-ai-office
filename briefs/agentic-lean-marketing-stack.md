@@ -3,11 +3,11 @@ type: brief
 title: Agentic-lean marketing stack — why MCP-native tooling collapses SaaS sprawl risk for Janus
 slug: agentic-lean-marketing-stack
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-23
 departments: [ai-office, marketing, it-ops]
 confidence: high
-sources: [marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-05-18-ai-native-ceo, 2026-05-12-aio-andrew-marketing]
-related: [stack-composition-framework, ai-tool-evaluation-framework, marketing-prime-radiant, janus-website, janus-website-cms, janus-crm-selection, singapore-launch, crm-evaluation-and-selection, mcp, claude-code, ai-native-mandate, post-rag-agent-data-stack, agent-skills]
+sources: [marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-05-18-ai-native-ceo, 2026-05-12-aio-andrew-marketing, 2026-05-23-aie-singapore-5-person-conference-singh]
+related: [stack-composition-framework, ai-tool-evaluation-framework, marketing-prime-radiant, janus-website, janus-website-cms, janus-crm-selection, singapore-launch, crm-evaluation-and-selection, mcp, claude-code, ai-native-mandate, post-rag-agent-data-stack, agent-skills, builders-sellers-measurers, ai-native-enterprise-restructuring, resend, 2026-05-23-aie-singapore-5-person-conference]
 ---
 
 # Agentic-lean marketing stack — why MCP-native tooling collapses SaaS sprawl risk for Janus
@@ -92,6 +92,26 @@ Cosmic, Attio, and the full MarTech orchestration come **in June** post-Singapor
 5. **Privacy policy CLO review** — using Andrew's working draft for soft Singapore launch; CLO review before paid traffic.
 6. **Building / product terminology** — Jehad to sync with Rosa on the property-management naming before the Singapore site goes wide.
 
+## External validation — AI Engineer Singapore conference, 2026-05-23
+
+Agrim Singh published a [writeup](https://x.com/agrimsingh/status/2057919355808288946) on 2026-05-23 of how a **5-person part-time team ran the AI Engineer Singapore conference for 1,000+ attendees** — see [[2026-05-23-aie-singapore-5-person-conference]] for the AIO pulse entry; source filed at [[2026-05-23-aie-singapore-5-person-conference-singh]]. Same operating model as this brief, executed at conference scale in Singapore.
+
+Their stack overlap with Janus's marketing-stack picks is notable: **[[resend|Resend]]** is in both stacks (transactional + campaign email). They additionally used Convex (realtime backend), Next.js (web), Devin AI + OpenAI Codex + Cursor Cloud (build agents), Manus AI (browser outreach), and Notion (lightweight human-readable layer where it made sense). The architecture posture is identical: custom apps over a thin backend whenever a workflow repeats, agent-readable APIs over every internal system, lightweight human-readable layer only where state needs human eyeballs.
+
+Singh's **seven operating principles** are the cleanest articulation yet of the operating model this brief argues for:
+
+1. If data matters, put it in a backend.
+2. If a workflow repeats, build a small app.
+3. If staff need to inspect something, make an admin view.
+4. If attendees need to act, give them a direct surface.
+5. **If agents need to help, expose an API.**
+6. If email depends on state, send from state.
+7. If data is incomplete, save it anyway.
+
+Principle 5 is the one this brief's [[stack-composition-framework]] doesn't yet cover explicitly. The framework's agent-operability lens currently asks: *is this vendor agent-operable?* Singh's piece adds: *have we exposed our own data layer so an agent can act on it?* Worth proposing as a candidate fourth lens or as an addendum to the existing agent-operability lens — *agent operability is symmetric: the tools we adopt must be agent-operable, and the systems we build around them must be agent-readable too*. For Janus this means the website CMS API surface, the CRM data layer, the email-state queries, and the standup pipeline all need to be queryable by an agent without screen-scraping.
+
+External validation matters here for two reasons: (1) it shows the operating model is *being practised already in Singapore*, where Janus's [[singapore-launch]] is happening — relevant signal for the September 2026 launch lunch positioning; (2) it provides a 5-to-1000 ratio empirical proof point that mirrors the [[builders-sellers-measurers|Drucker frame]]'s large-scale claims (JPMorgan, Cloudflare) at small scale. Cite alongside the Cloudflare layoff-while-growing data when the position needs a relatable mid-size example.
+
 ## Cross-references
 
 - [[stack-composition-framework]] — the three-lens framework that produced these picks.
@@ -100,3 +120,5 @@ Cosmic, Attio, and the full MarTech orchestration come **in June** post-Singapor
 - [[singapore-launch]], [[janus-website]], [[janus-website-cms]], [[janus-crm-selection]] — the operational projects this brief locks in.
 - [[ai-native-mandate]] — the procurement principle this brief operationalises for marketing.
 - [[post-rag-agent-data-stack]] — sibling brief; both surface the same underlying shift (tooling re-shaped around agent consumption) but for different layers of the stack.
+- [[ai-native-enterprise-restructuring]] — sibling brief on the enterprise restructuring thesis; the 5-person conference exemplar is the small-scale companion to the JPMorgan / Cloudflare / KPMG large-scale signals.
+- [[builders-sellers-measurers]] — the Drucker frame; the 5-people-to-1000-attendees ratio is a clean small-scale instance of the frame's claim.

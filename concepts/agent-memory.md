@@ -3,11 +3,11 @@ type: concept
 title: Agent Memory
 slug: agent-memory
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-05-23
 departments: [ai-office]
 confidence: high
-sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory, magma-multi-graph-agentic-memory, transformers-are-graph-neural-networks]
-related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation, 2026-05-13-magma-multi-graph-agentic-memory, 2026-05-13-transformers-are-graph-neural-networks, 2026-05-12-mnemon-llm-supervised-memory]
+sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory, magma-multi-graph-agentic-memory, transformers-are-graph-neural-networks, 2026-05-22-marktechpost-gbrain-tutorial, 2026-05-21-mit-tech-review-code-with-claude-london]
+related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation, 2026-05-13-magma-multi-graph-agentic-memory, 2026-05-13-transformers-are-graph-neural-networks, 2026-05-12-mnemon-llm-supervised-memory, 2026-05-22-gbrain-yc-tan-memory-layer, 2026-05-21-code-with-claude-london, gbrain]
 ---
 
 # Agent Memory
@@ -55,6 +55,43 @@ This decomposition was surfaced independently by Mnemon ([[mnemon-github-readme]
 **Theoretical complement.** [[transformers-are-graph-neural-networks|Joshi 2026]] (arxiv 2506) argues that Transformers are mathematically GNNs operating on fully-connected token graphs — the dense-matrix implementation winning the "hardware lottery" over true sparse message-passing. Read together with the empirical multi-graph memory work: the agent-memory community is making *explicit and persistent* the same graph-structured representation the model uses implicitly during attention. Convergent or principled is an open question.
 
 The relational-structure axis is orthogonal to the storage axis and the LLM-role axis. The Janus Prime Radiant wiki itself is a primitive multi-graph (`departments` = entity edges, `related` = semantic edges, dated decision/lesson links = causal/temporal edges) — operating the same shape MAGMA and Mnemon are validating at the agent-runtime layer, at the institutional-KB layer instead.
+
+## Update — 2026-05-23: two more independent surfacings of the markdown-first multi-graph family
+
+Two further surfacings within ~10 days extend the convergence pattern materially:
+
+- **GBrain (Garry Tan / Y Combinator, surfaced 2026-05-22)** — markdown-first, PGLite + pgvector hybrid retrieval, MCP-native 74-tool surface, typed knowledge graph extracted via regex inference cascade with **zero LLM calls** (`FOUNDED → INVESTED → ADVISES → WORKS_AT → MENTIONS`). Production deployment of YC's CEO holds 146,646 pages / 24,585 people / 5,339 companies / 66 cron jobs. Each page follows a **compiled-truth-plus-timeline pattern** (current best-understanding on top, append-only evidence trail below) — strikingly close to Prime Radiant's vault-level append-only convention. See [[gbrain]] and [[2026-05-22-gbrain-yc-tan-memory-layer]].
+- **Claude Code "dreaming" feature (Anthropic, announced ~2026-05-07; surfaced at the Code with Claude London event 2026-05-19)** — Claude Code agents write task-specific notes; a *dreaming* consolidation pass spots patterns across them; later agents read the dreamed-out summaries to bootstrap context. Same multi-graph pattern landing as a vendor-native feature inside Claude Code rather than as a third-party add-on. See [[claude-code]] and [[2026-05-21-code-with-claude-london]].
+
+That brings the count to **four independent surfacings of the same architectural family within ~10 days** (Mnemon, MAGMA, GBrain, Claude Code dreaming), plus Anthropic's existing Managed Agents file-based memory. The pattern is now decisively the consensus shape of next-generation agent memory, not a single-vendor or single-project idiosyncrasy.
+
+### What GBrain adds: the compiled-truth-plus-timeline sub-pattern
+
+GBrain enforces the compiled-truth-plus-timeline discipline *at the per-page level*. Prime Radiant currently enforces it at the *vault* level (`log.md`, `decisions/`, `pulse/` are append-only; individual pages are edited in place with `updated:` frontmatter). The per-page variant is a finer-grained convention worth evaluating:
+
+```markdown
+---
+type: person
+title: Alice Chen
+---
+
+[current best-understanding paragraph — edited in place]
+
+---
+
+- 2024-03-12: Met at AI Engineer Summit.
+- 2024-09-04: Announced $12M seed led by Sequoia.
+- 2025-01-18: Shipped open-source inference router.
+```
+
+The trade-off: per-page timelines double the friction on every edit (every edit also requires a timeline entry) but produce a clean per-page causal/temporal trace without needing to grep dated decision slugs. Prime Radiant has not adopted this discipline; the question is whether the additional friction is worth the per-page traceability. Watch-for: whether GBrain's pattern produces qualitatively-better per-page retrieval results in practice.
+
+### What Claude Code dreaming adds: vendor-native multi-graph memory
+
+Claude Code's dreaming feature is the first vendor-shipped (not third-party / not OSS-side-project) instance of the multi-graph pattern. Implications for Janus:
+
+- The agent-memory layer is no longer something Janus needs to "build" — vendors will increasingly ship it natively.
+- The portability question gets harder: dreaming-store format, inspection, export are all unstated as of the 2026-05-19 surfacing. Janus's posture (markdown vault is the source of truth; agent dreaming-stores are derivative) preserves portability while letting Janus take advantage of the dreamed-out summaries when Claude Code is the consumer.
 
 ## Short-term vs long-term
 

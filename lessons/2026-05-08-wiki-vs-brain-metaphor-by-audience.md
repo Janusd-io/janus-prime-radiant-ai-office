@@ -1,6 +1,6 @@
 ---
 type: lesson
-title: "Wiki" vs "brain" — the supporting metaphor needs to match the audience
+title: '"Wiki" vs "brain" — the supporting metaphor needs to match the audience'
 slug: 2026-05-08-wiki-vs-brain-metaphor-by-audience
 created: 2026-05-08
 updated: 2026-05-13
