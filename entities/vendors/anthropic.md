@@ -3,12 +3,12 @@ type: vendor
 title: Anthropic
 slug: anthropic
 created: 2026-05-06
-updated: 2026-05-21
+updated: 2026-05-23
 departments: [ai-office]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter]
-related: [claude, llm-wiki, agentic-ai, ai-native-enterprise-restructuring, builders-sellers-measurers, ai-tool-evaluation-framework]
+sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03]
+related: [claude, llm-wiki, agentic-ai, ai-native-enterprise-restructuring, builders-sellers-measurers, ai-tool-evaluation-framework, observed-exposure-ai-labor-measure]
 ---
 
 # Anthropic
@@ -47,3 +47,11 @@ Two signals landed in one week that materially resolve vendor-viability risk on 
 - **Political risk absorbed.** Months earlier, the Trump administration directed federal agencies to cut ties with Anthropic on security grounds (Anthropic refused to allow tech for "all lawful uses" per DoD demand). Relationship since improved; ongoing administration meetings on the Mythos model (released to a select group of companies due to cybersecurity risk).
 
 **Implication for Gate 2.3 ("vendor viability — 24-month horizon").** The criterion is now structurally over-satisfied for Anthropic. Worth a footnote on [[ai-tool-evaluation-framework]] capturing the new baseline. See [[ai-native-enterprise-restructuring]] for the full thesis of how the Q2 signals validate the AIO operating model.
+
+## Corporate moves — May 2026
+
+- **Stainless acquisition (2026-05-19, ~$300M).** Anthropic acquired [Stainless](https://www.anthropic.com/news/anthropic-acquires-stainless), a platform for generating high-quality API SDKs and MCP servers. Reported price ~$300M per The Information. Notable: Stainless's former customers included **OpenAI and Google** — Anthropic has bought a developer-tools company that was core infrastructure for its top model-platform rivals. Strategic read: the acquisition extends Claude's ability to connect to data and tools (the MCP integration layer), tightens Anthropic's grip on the agent-to-software interoperability stack at a moment when both Google (Antigravity 2.0, Spark, Universal Commerce Protocol) and OpenAI (Codex) are pushing into the same surface. Surfaced via Every / Context Window's "Google I/O: Agents, Agents, Agents" coverage; see [[2026-05-20-every-google-io-agents-agents-agents]] for the broader weekly-cluster context. CEO Alex Rattray's earlier *AI & I* podcast appearance laid out the MCP design principles ("keep tools small, name them precisely, generate tightly defined outputs") that look in retrospect like the design ethos Anthropic was acquiring along with the company.
+
+## Research output worth flagging
+
+- **Labor market impacts of AI: A new measure and early evidence** (Anthropic Research; Massenkoff & McCrory; 2026-03-05, corrections 2026-03-08). Filed at [[anthropic-labor-market-impacts-2026-03]]. Introduces *[[observed-exposure-ai-labor-measure|observed exposure]]* — combines theoretical LLM capability with actual Claude-platform usage to measure occupational exposure to AI displacement. Reports no systematic unemployment increase in highly-exposed occupations since late 2022, but tentative evidence (statistically marginal) of a 14% drop in job-finding rates for *workers aged 22-25* entering exposed occupations. Echoes Brynjolfsson et al. (2025)'s 6-16% young-worker employment-fall finding. Important for Janus because Anthropic publishing this *itself* — using its own usage data as the input — is a meaningful posture choice (vendor transparency on the labor question is part of the AI-native sales narrative; cite when AIO is asked about displacement risk in the Marketing or HR positioning). Provides empirical reinforcement to the [[ai-native-enterprise-restructuring]] brief: the soft-landing thesis (no aggregate displacement, but pipeline tightening at the entry point) is now supported by Anthropic's own first-party data.

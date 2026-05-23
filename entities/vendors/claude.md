@@ -3,12 +3,12 @@ type: vendor
 title: Claude (Anthropic product family)
 slug: claude
 created: 2026-05-06
-updated: 2026-05-21
+updated: 2026-05-23
 departments: [ai-office, engineering]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, anthropic-building-effective-agents, claude-managed-agents-launch, claude-managed-agents-quickstart, claude-managed-agents-scaling, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, claude-code-routines, claude-code-prompt-caching-lessons, claude-code-limits-harness-pawelhuryn, himanshustwts-claude-code-memory-architecture, jehad-vault-claude, 2026-05-19-kpmg-claude-alliance]
-related: [anthropic, llm-wiki, janus-prime-radiant-build, agent-memory, agent-harness, agent-skills, model-context-protocol, 2026-05-06-skills-stay-as-skills-not-plugins, ai-native-enterprise-restructuring]
+sources: [karpathy-llm-wiki, anthropic-building-effective-agents, claude-managed-agents-launch, claude-managed-agents-quickstart, claude-managed-agents-scaling, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, claude-code-routines, claude-code-prompt-caching-lessons, claude-code-limits-harness-pawelhuryn, himanshustwts-claude-code-memory-architecture, jehad-vault-claude, 2026-05-19-kpmg-claude-alliance, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents]
+related: [anthropic, llm-wiki, janus-prime-radiant-build, agent-memory, agent-harness, agent-skills, model-context-protocol, 2026-05-06-skills-stay-as-skills-not-plugins, ai-native-enterprise-restructuring, claude-code]
 ---
 
 # Claude (Anthropic product family)
@@ -49,6 +49,16 @@ The **KPMG global alliance** (2026-05-19; see [[2026-05-19-kpmg-claude-alliance]
 - KPMG also using Claude internally for cybersecurity (finding and fixing vulnerabilities under KPMG's Trusted AI framework).
 
 Strategic implication for Janus's Claude-first stack: a Big-Four firm running a 276K-seat procurement, security, and legal review on Claude means Janus's choice is now defensible-on-precedent rather than pioneering. Cite KPMG when introducing Claude-first tooling to risk-sensitive Janus audiences (CLO once joined; legal review; investor pitches). See [[ai-native-enterprise-restructuring]] for the full thesis.
+
+## Model cadence — Q1/Q2 2026 (added 2026-05-23)
+
+- **Claude 4.6 (February 2026)** and **Claude 4.7 (April 2026)** — back-to-back model releases that materially upgraded the coding agent. Per Anthropic engineering lead Katelyn Lesse at Code with Claude London (2026-05-19; see [[2026-05-21-code-with-claude-london]]): *"I think that right now Claude is probably as good as a midlevel engineer at writing code. … But over time we want Claude to get better and better at all different types of engineering."*
+- **"Dreaming" — agent memory inside Claude Code natively** (announced ~2026-05-07). Claude Code agents write task-specific notes; a "dreaming" consolidation pass spots patterns across them; later agents read the dreamed-out summaries to bootstrap context. Lands the multi-graph [[agent-memory]] thesis directly inside Claude Code, in the same family as Mnemon and MAGMA but vendor-shipped. See [[claude-code]] for the deeper writeup.
+- **Stainless acquisition (2026-05-19, ~$300M).** Anthropic acquired Stainless, a platform for generating high-quality API SDKs and MCP servers — extending Claude's ability to connect to external data and tools at scale. Surfaced via Every / Context Window's I/O-week coverage at [[2026-05-20-every-google-io-agents-agents-agents]]; full context lives on the [[anthropic|parent vendor page]]. Implication for the Claude product family: the agent-to-software interoperability layer is now an Anthropic-owned strategic asset, not a third-party dependency.
+
+## Competitive context — May 2026
+
+The same week as Code with Claude, Google ran **I/O 2026** with **Gemini 3.5 Flash** (claimed Opus-4.7-class intelligence at 4× speed and half the cost), **Antigravity 2.0** (Cowork/Managed-Agents competitor on the desktop), and **Gemini Spark** (24/7 cloud personal agent). See [[2026-05-19-google-io-2026-agents-as-product]]. The Claude-vs-Gemini competitive surface is now most acute on (a) the price-performance frontier for fast routine inference, (b) the desktop-agent-orchestration platform, and (c) consumer ambient agents. Janus's posture is unchanged — Claude-first for AIO and engineering — but watch-for items below now include direct Google moves.
 
 ## Watch for
 

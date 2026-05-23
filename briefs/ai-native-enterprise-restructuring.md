@@ -3,11 +3,11 @@ type: brief
 title: AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
 slug: ai-native-enterprise-restructuring
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-23
 departments: [ai-office, marketing, hr, office-of-ceo]
 confidence: high
-sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter]
-related: [builders-sellers-measurers, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, anthropic, claude, andrew-soane, bonaventure-wong]
+sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents]
+related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
 ---
 
 # AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
@@ -118,3 +118,44 @@ Taken together, the four signals collapse three classes of risk that the AIO has
 - [[stack-composition-framework]] — the three lenses that operationalise the agentic-lean choice at vendor-selection time.
 - [[anthropic]] — vendor entity; updated this ingest with KPMG + profitability data.
 - [[claude]] — Anthropic's product family; updated this ingest with KPMG Digital Gateway integration data.
+
+## Update — 2026-05-23: empirical reinforcement + the W21 platform-competition week
+
+Three additional signals (ingested 2026-05-23) deepen the thesis above:
+
+### Signal 5 — Anthropic's first-party labor data ([[anthropic-labor-market-impacts-2026-03]])
+
+Anthropic published *Labor market impacts of AI: A new measure and early evidence* (Massenkoff & McCrory; 2026-03-05). Introduces a new metric — [[observed-exposure-ai-labor-measure|observed exposure]] — that combines theoretical LLM capability with actual Claude usage. The findings give the brief a *first-party empirical backbone*:
+
+- **The top-10 most-exposed occupations map cleanly onto the measurer cluster** Prince's Drucker frame predicts: Computer Programmers (75% coverage), Customer Service Representatives, Financial Analysts, Data Entry Keyers (67%). Zero-exposure roles (cooks, mechanics, lifeguards, bartenders) are exactly the physical/in-person work the frame doesn't claim. *The frame is now reinforced by first-party usage data, not just CEO op-eds.*
+- **High-exposure population skews older, female, higher-paid (47% more on average), more educated (4.5× more likely to hold a graduate degree).** This is the white-collar professional class — Prince's measurers — not the gig economy or trades. Operational use: when AIO is asked about AI-driven displacement risk by partners or investors, the precise answer is that the affected population is the white-collar professional class, and the AIO substrate re-routes that population's value into builder/seller-adjacent roles inside the firm.
+- **No systematic unemployment increase in highly-exposed occupations since late 2022.** The detectable effect-size threshold is ~1pp differential; observed effect is flat or marginally negative. The aggregate "AI takes jobs" prediction is empirically *not* showing up yet.
+- **But a tentative 14% drop in job-finding rates for workers aged 22-25 entering exposed occupations** (echoes Brynjolfsson 2025's 6-16% finding). The soft-landing thesis is the empirically-supported one: incumbent measurers absorbed by natural attrition (Dimon's 10%/yr framing), but the pipeline tightens at the entry point. This is *direct empirical support* for Andrew's choice to bias the Marketing hire plan toward builder/seller roles.
+- **Posture signal: Anthropic publishing this *itself*, using its own usage data, at a moment when other vendors are quiet on labor impact.** For [[ai-native-janus-positioning|Bonaventure's three-pillar positioning]], the Society pillar gains a vendor-side ally — *we standardised on the vendor that publishes on the labor question*.
+
+### Signal 6 — Code with Claude (London), 2026-05-19
+
+Anthropic's developer event in London ([[2026-05-21-mit-tech-review-code-with-claude-london]]; pulse at [[2026-05-21-code-with-claude-london]]). Three signals worth folding in:
+
+- Claude 4.6 (Feb 2026) and 4.7 (Apr 2026) bring [[claude-code]] to *"as good as a midlevel engineer at writing code"* per Anthropic engineering lead Katelyn Lesse — direct evidence that the agent surface is now ready for the agentic-lean operating model in production, not just preview.
+- Adoption metric: at the event, almost half the room had shipped a Claude-Code-written PR in the previous week, most without reading the code. The "let it cook" default is real and propagating.
+- **"Dreaming"** — agent-memory landing inside Claude Code natively. Same multi-graph pattern that surfaced via Mnemon (2026-05-12) and MAGMA (2026-05-13) earlier in May, now vendor-shipped. The agent-memory layer is converging across the industry on the same architectural shape Janus Prime Radiant uses for institutional knowledge. Reinforces the [[janus-prime-radiant-build|Prime Radiant pattern]] is on the consensus path, not heterodox.
+
+### Signal 7 — Google I/O 2026 + Stainless acquisition (2026-05-19)
+
+Google I/O 2026 ([[2026-05-19-google-io-2026-agents-as-product]]; coverage at [[2026-05-20-every-google-io-agents-agents-agents]]). Headline: **agents are now the product**. Gemini 3.5 Flash claims Opus-4.7-class intelligence at 4× speed and half the cost; AI Mode becomes default in search; Antigravity 2.0 is a desktop Cowork-and-Managed-Agents competitor; Gemini Spark is a 24/7 cloud personal agent. Same week, **Anthropic acquired Stainless for ~$300M** — the platform for high-quality API SDKs and MCP servers whose customers included OpenAI and Google. Anthropic bought the agent-to-software interoperability layer at the moment Google made its biggest play yet for the same surface.
+
+For the brief's thesis, this completes the W21 picture:
+- The agentic-lean operating model is now **vendor-platform-contested at the deepest level**. Google, Anthropic, OpenAI are no longer competing on "best model" — they're competing on "best agent substrate." Janus's Claude-first position is unchanged but is now operating in a more crowded contested space.
+- For [[ai-native-janus-positioning]], the differentiation argument sharpens: *Janus did the substrate work early enough to be operationally clean while the vendors are still fighting over which substrate becomes default.* The 12-18 month head start matters precisely because the next 6-12 months will see a lot of vendor-platform churn that catches late-movers flat-footed.
+
+### Net update to the AIO bets
+
+The three additional signals don't invalidate the original four — they *deepen* them:
+
+| Original bet | What W21 added | Net status |
+|---|---|---|
+| Agentic-lean is consensus, not differentiated | Anthropic's own labor data now backs the soft-landing thesis empirically; the operating model has first-party vendor validation | **Strengthened** — Janus is on the empirically-supported path |
+| Anthropic is the defensive choice, not the aggressive one | Stainless acquisition + 4.6/4.7 cadence + KPMG anchor + Q2 profitability = the most-defensible vendor position in the market | **Strengthened** — vendor-bet risk is at its lowest point YTD |
+| Drucker frame is the operating taxonomy | Top-10 exposed-occupations list maps cleanly onto the measurer cluster | **Strengthened with empirical evidence** — cite [[observed-exposure-ai-labor-measure]] alongside the Cloudflare op-ed when explaining the frame |
+| Differentiation risk is *increasing* (substrate is the moat, not "doing AI") | Google's I/O moves + Anthropic's Stainless / Code-with-Claude moves = the substrate is now the contested frontier, not the model | **Heightened urgency** — the next 6-12 months are when Janus needs to ship substrate work that redeems the head-start |

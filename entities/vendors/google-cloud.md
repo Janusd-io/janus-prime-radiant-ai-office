@@ -3,12 +3,12 @@ type: vendor
 title: Google Cloud
 slug: google-cloud
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-05-23
 departments: [ai-office, engineering, it-ops]
 status: active
 confidence: high
-sources: [google-agentic-data-cloud, google-skills-repository, a2a-mcp-five-integration-patterns, jehad-vault-google-cloud]
-related: [agentic-ai, model-context-protocol, agent-to-agent-protocol, agent-skills, 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins, hostinger]
+sources: [google-agentic-data-cloud, google-skills-repository, a2a-mcp-five-integration-patterns, jehad-vault-google-cloud, 2026-05-20-every-google-io-agents-agents-agents]
+related: [agentic-ai, model-context-protocol, agent-to-agent-protocol, agent-skills, 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins, hostinger, claude, ai-native-enterprise-restructuring]
 ---
 
 # Google Cloud
@@ -20,6 +20,19 @@ Google's enterprise cloud arm. Distinct from "Google" generally — this entity 
 - **Agentic Data Cloud** ([[2026-04-22-google-agentic-data-cloud]]) — Cloud Next 2026. Knowledge Catalog + cross-cloud lakehouse + Data Agent Kit. Reframes BigQuery for agent-scale workloads.
 - **Official Agent Skills Repository** ([[2026-04-22-google-skills-repository]]) — same Cloud Next event. Condensed expertise for GCP products as agent skills.
 - **A2A protocol push** ([[a2a-mcp-five-integration-patterns]]) — Google is the most visible advocate for cross-vendor [[agent-to-agent-protocol]] standards.
+
+## Google I/O 2026 — "agents are the product" (2026-05-19/20)
+
+Coverage at [[2026-05-20-every-google-io-agents-agents-agents]] and the pulse entry [[2026-05-19-google-io-2026-agents-as-product]]. The I/O keynote split announcements cleanly along the *collaborate with* vs *delegate to* axis for agents:
+
+- **Gemini 3.5 Flash** — new frontier model; claimed 4× speed and half the cost of comparable LLMs; per Every's reading of the benchmark slide, delivers Opus-4.7-level intelligence "in a quadrant of its own" on the speed/cost frontier. Engine for most of the agentic features below.
+- **AI Mode + new search box** (collaborate with). AI Mode becomes the default search mode; box widened for conversational queries; can build custom mini-apps (e.g., personalised fitness tracker) directly within search.
+- **Antigravity 2.0** (collaborate with). Google's agentic-development platform becomes a desktop app for managing teams of agents — new CLI tool, new SDK for custom workflows. Direct competitor framing against Anthropic's Cowork-and-Managed-Agents stack.
+- **Gemini Spark** (delegate to). 24/7 cloud-resident personal agent across Gmail / Docs / Workspace / Chrome / (eventually) third-party tools via MCP. Pitched by Josh Woodward (VP, Google Labs / Gemini / AI Studio): *"You can just throw tasks over your shoulder. Spark will catch them and then run with them."*
+- **Daily Brief** (delegate to). Out-of-the-box overnight agent — scans inbox/calendar/tasks and prepares a morning digest.
+- **Universal Cart + Universal Commerce Protocol** — cross-merchant cart with proactive price-tracking, restock alerts, and compatibility flagging (e.g., notice that a CPU and motherboard you selected are incompatible). The protocol is co-developed with Amazon, Meta, Microsoft and others — another emerging cross-vendor standard alongside [[model-context-protocol|MCP]] and [[agent-to-agent-protocol|A2A]] that Janus needs to track.
+
+Strategic read for Janus: the Gemini-3.5-Flash + AI-Mode-default combination is positioned to bring "billions of users" into a first agentic AI interaction without them having to opt into "AI" as a distinct product. Google's data moat (Gmail + Calendar + Docs context) materially reduces the agent-setup tax — Apple-via-Gemini will compound this. For Janus's [[ai-native-janus-positioning|three-pillar positioning]], the Society pillar's "AI for everyone" framing now has a credible vendor-side execution path (consumer ambient agents) — but the AIO's pillar contribution stays B2B / enterprise-infrastructure shaped, not consumer-shaped.
 
 ## Posture
 
@@ -36,3 +49,6 @@ Currently low active dependency at Janus (no production GCP workloads to my know
 - Whether AWS / Azure ship analogous "agentic data cloud" stories.
 - Skill format compatibility: Google skills vs. Anthropic skills vs. ecosystem fragmentation.
 - Pricing for the Data Agent Kit when it leaves preview.
+- Universal Commerce Protocol uptake — whether it ships outside the Google/Amazon/Meta/Microsoft founding-member set, and whether it overlaps awkwardly with MCP for transactional surfaces.
+- Antigravity 2.0 vs Claude Cowork / Managed Agents — direct enterprise-agent-platform competition; pricing + ecosystem moves to watch through H2 2026.
+- Gemini Spark's MCP-to-third-party-tools maturity — current keynote claim is "eventually"; real-world tool coverage will determine whether Spark stays a Google-stack assistant or becomes a competitor to Claude in the personal-agent slot.
