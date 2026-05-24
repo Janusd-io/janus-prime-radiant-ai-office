@@ -8,3 +8,5 @@
 people/*/private/
 people/*/.review-queue.md
 .state/
+# Claude Code per-user/per-machine settings — not portable across contributors
+.claude/settings.local.json
