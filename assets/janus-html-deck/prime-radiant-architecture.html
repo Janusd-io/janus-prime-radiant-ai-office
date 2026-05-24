@@ -161,7 +161,7 @@
   </p>
 
   <div class="diagram-wrap">
-    <svg class="architecture" viewBox="0 0 1400 1515" xmlns="http://www.w3.org/2000/svg">
+    <svg class="architecture" viewBox="0 0 1400 1865" xmlns="http://www.w3.org/2000/svg">
 
       <defs>
         <!-- Arrow markers -->
@@ -491,64 +491,121 @@
         <text x="1018" y="1232" class="box-sub">Writes report to pulse/YYYY-MM-DD-lint.md.</text>
       </g>
 
-      <!-- Arrow up from skills to interfaces -->
+      <!-- Arrow up from skills to interfaces — annotation parked under the divider to clear the Layer 5 label -->
       <g stroke="#FCB745" stroke-width="1.5" fill="none" marker-end="url(#arrow-orange)">
         <path d="M 510 1135 L 510 1075"/>
       </g>
-      <text x="520" y="1100" class="ann">invoked by Cowork / Code</text>
+      <text x="525" y="1130" class="ann">invoked by Cowork / Code</text>
 
       <!-- ============================ AIO INSTANCE — CURRENT CLONE TOPOLOGY ============================ -->
       <text x="40" y="1290" class="layer-label">AIO instance · current clone topology  (as of 2026-05-24)</text>
       <line x1="40" y1="1300" x2="1360" y2="1300" stroke="#DBE4EA" stroke-width="1"/>
 
       <!-- Subtle background panel marking the inset -->
-      <rect x="40" y="1310" width="1320" height="135" rx="8" fill="#E8EEF7" stroke="#013A7D" stroke-width="1" stroke-dasharray="4 3"/>
+      <rect x="40" y="1310" width="1320" height="160" rx="8" fill="#E8EEF7" stroke="#013A7D" stroke-width="1" stroke-dasharray="4 3"/>
 
       <!-- GitHub hub box (top center) -->
       <g>
-        <rect x="580" y="1322" width="240" height="46" rx="6" fill="#013A7D"/>
-        <text x="700" y="1342" text-anchor="middle" class="box-title-light">GitHub · Janusd-io</text>
-        <text x="700" y="1358" text-anchor="middle" class="box-sub-light">janus-prime-radiant-ai-office</text>
+        <rect x="580" y="1322" width="240" height="42" rx="6" fill="#013A7D"/>
+        <text x="700" y="1340" text-anchor="middle" class="box-title-light">GitHub · Janusd-io</text>
+        <text x="700" y="1356" text-anchor="middle" class="box-sub-light">janus-prime-radiant-ai-office</text>
       </g>
 
-      <!-- Spoke connections from hub to each clone -->
+      <!-- Spoke connections from hub to each clone (unlabeled — sync mode is in the clone titles) -->
       <!-- Michael (bidirectional) -->
-      <line x1="640" y1="1368" x2="265" y2="1382" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)" marker-start="url(#arrow-orange)"/>
-      <text x="320" y="1364" class="ann" font-style="italic">R/W · pull + push</text>
+      <line x1="635" y1="1364" x2="260" y2="1408" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)" marker-start="url(#arrow-orange)"/>
 
       <!-- Jehad (bidirectional) -->
-      <line x1="700" y1="1368" x2="700" y2="1380" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)" marker-start="url(#arrow-orange)"/>
-      <text x="710" y="1378" class="ann" font-style="italic">R/W</text>
+      <line x1="700" y1="1364" x2="700" y2="1408" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)" marker-start="url(#arrow-orange)"/>
 
       <!-- Nano (one-way pull, host-mediated) -->
-      <line x1="760" y1="1368" x2="1140" y2="1382" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)"/>
-      <text x="930" y="1364" class="ann" font-style="italic">R/O · host-mediated pull only</text>
+      <line x1="765" y1="1364" x2="1140" y2="1408" stroke="#FCB745" stroke-width="2" marker-end="url(#arrow-orange)"/>
 
-      <!-- Three clone boxes -->
+      <!-- Three clone boxes (R/W / R/O badge in title) -->
       <g>
-        <rect x="70" y="1382" width="380" height="42" rx="6" fill="#FFFFFF" stroke="#013A7D" stroke-width="1.5"/>
-        <text x="86" y="1400" class="box-title">Michael · curator clone</text>
-        <text x="86" y="1416" class="box-sub">~/janus/prime-radiant/ai-office/ · Obsidian Git plugin</text>
+        <rect x="70" y="1410" width="380" height="44" rx="6" fill="#FFFFFF" stroke="#013A7D" stroke-width="1.5"/>
+        <text x="86" y="1429" class="box-title">Michael · curator clone  ·  R/W</text>
+        <text x="86" y="1446" class="box-sub">~/janus/prime-radiant/ai-office/ · Obsidian Git plugin</text>
       </g>
 
       <g>
-        <rect x="510" y="1382" width="380" height="42" rx="6" fill="#FFFFFF" stroke="#013A7D" stroke-width="1.5"/>
-        <text x="526" y="1400" class="box-title">Jehad · curator clone</text>
-        <text x="526" y="1416" class="box-sub">~/janus/prime-radiant/ai-office/ · Obsidian Git plugin</text>
+        <rect x="510" y="1410" width="380" height="44" rx="6" fill="#FFFFFF" stroke="#013A7D" stroke-width="1.5"/>
+        <text x="526" y="1429" class="box-title">Jehad · curator clone  ·  R/W</text>
+        <text x="526" y="1446" class="box-sub">~/janus/prime-radiant/ai-office/ · Obsidian Git plugin</text>
       </g>
 
       <g>
-        <rect x="950" y="1382" width="380" height="42" rx="6" fill="#FFFFFF" stroke="#5D676F" stroke-width="1.5"/>
-        <text x="966" y="1400" class="box-title">Nano · container clone</text>
-        <text x="966" y="1416" class="box-sub">~/Code/nanoclaw-v2/.../vault/ on Michael's Mac</text>
+        <rect x="950" y="1410" width="380" height="44" rx="6" fill="#FFFFFF" stroke="#5D676F" stroke-width="1.5"/>
+        <text x="966" y="1429" class="box-title">Nano · container clone  ·  R/O</text>
+        <text x="966" y="1446" class="box-sub">~/Code/nanoclaw-v2/.../vault/ on Michael's Mac</text>
       </g>
 
-      <text x="700" y="1438" text-anchor="middle" class="ann" font-style="italic">Same hub, three spokes. Curators sync bidirectionally via the Obsidian Git plugin. Nano's container has no github.com egress — the host process pulls on its behalf.</text>
+      <text x="700" y="1466" text-anchor="middle" class="ann" font-style="italic">Same hub, three spokes. Curators sync bidirectionally via the Obsidian Git plugin; Nano's container has no github.com egress, so the host process pulls on its behalf.</text>
+
+      <!-- ============================ BUILDING BLOCKS INVENTORY ============================ -->
+      <text x="40" y="1500" class="layer-label">Building blocks inventory · license &amp; subscription posture</text>
+      <line x1="40" y1="1510" x2="1360" y2="1510" stroke="#DBE4EA" stroke-width="1"/>
+
+      <!-- Outer panel marking the inventory section -->
+      <rect x="40" y="1520" width="1320" height="280" rx="8" fill="#F7F9FA" stroke="#013A7D" stroke-width="1" stroke-dasharray="4 3"/>
+
+      <!-- COLUMN 1: Free today and at production scale -->
+      <g>
+        <rect x="60" y="1535" width="420" height="235" rx="6" fill="#FFFFFF" stroke="#013A7D" stroke-width="1.5"/>
+        <rect x="60" y="1535" width="6" height="235" rx="3" fill="#013A7D"/>
+        <text x="80" y="1556" class="ann-orange">FREE · OPEN SOURCE / NATIVE</text>
+        <text x="80" y="1577" class="box-title">Free today, free at scale</text>
+        <text x="80" y="1601" class="box-sub">• Git — version control</text>
+        <text x="80" y="1619" class="box-sub">• NanoClaw — agent framework (MIT)</text>
+        <text x="80" y="1637" class="box-sub">• Node.js — Nano host runtime</text>
+        <text x="80" y="1655" class="box-sub">• Docker Engine — container runtime</text>
+        <text x="80" y="1673" class="box-sub">• launchd — macOS service supervisor</text>
+        <text x="80" y="1691" class="box-sub">• Caddy — reverse proxy (planned)</text>
+        <text x="80" y="1709" class="box-sub">• Obsidian Git plugin — sync engine</text>
+        <text x="80" y="1727" class="box-sub">• Obsidian Web Clipper — capture path</text>
+        <text x="80" y="1745" class="box-sub">• Anthropic Agent SDK — library</text>
+        <text x="80" y="1763" class="box-sub">• Prime Radiant skills — custom (free)</text>
+      </g>
+
+      <!-- COLUMN 2: Watch — may need paid tier in production -->
+      <g>
+        <rect x="500" y="1535" width="420" height="235" rx="6" fill="#FEF5E0" stroke="#FCB745" stroke-width="2"/>
+        <rect x="500" y="1535" width="6" height="235" rx="3" fill="#FCB745"/>
+        <text x="520" y="1556" class="ann-orange">WATCH · MAY NEED PAID TIER</text>
+        <text x="520" y="1577" class="box-title">Free today, budget at scale</text>
+        <text x="520" y="1601" class="box-sub">• Obsidian — Commercial Licence</text>
+        <text x="520" y="1617" class="ann">  (~$50/user/yr once used for company work)</text>
+        <text x="520" y="1637" class="box-sub">• Docker Desktop — paid above</text>
+        <text x="520" y="1653" class="ann">  250 employees or $10M revenue</text>
+        <text x="520" y="1673" class="box-sub">• ngrok — free tier today; paid for</text>
+        <text x="520" y="1689" class="ann">  custom domains, multiple tunnels, uptime</text>
+        <text x="520" y="1709" class="box-sub">• OneCLI Agent Vault — pricing TBV (NanocoAI)</text>
+        <text x="520" y="1727" class="box-sub">• Hosting / VPS — when Caddy + Hostinger</text>
+        <text x="520" y="1743" class="ann">  migration lands; currently runs on Michael's Mac</text>
+      </g>
+
+      <!-- COLUMN 3: Already paid for via existing Janus subs -->
+      <g>
+        <rect x="940" y="1535" width="420" height="235" rx="6" fill="#E8EEF7" stroke="#013A7D" stroke-width="1.5"/>
+        <rect x="940" y="1535" width="6" height="235" rx="3" fill="#013A7D"/>
+        <text x="960" y="1556" class="ann-orange">COVERED · EXISTING JANUS SUBS</text>
+        <text x="960" y="1577" class="box-title">No new budget</text>
+        <text x="960" y="1601" class="box-sub">• GitHub — Janus org plan</text>
+        <text x="960" y="1619" class="box-sub">• Slack — Janus workspace</text>
+        <text x="960" y="1637" class="box-sub">• Linear — AIR + AIP teams</text>
+        <text x="960" y="1655" class="box-sub">• Notion — Operations Notebook</text>
+        <text x="960" y="1673" class="box-sub">• Monday — Automations board</text>
+        <text x="960" y="1691" class="box-sub">• Fireflies — meeting transcripts</text>
+        <text x="960" y="1709" class="box-sub">• Google Workspace — Gmail + Calendar</text>
+        <text x="960" y="1727" class="box-sub">• Anthropic — Cowork + Claude Code + API usage</text>
+      </g>
+
+      <text x="700" y="1788" text-anchor="middle" class="ann" font-style="italic">Snapshot as of 2026-05-24. Verify exact pricing tiers and seat counts before committing to a production rollout — vendor terms move.</text>
 
       <!-- ============================ LAYER 6: SOURCE-OF-TRUTH MAP (footer band) ============================ -->
-      <rect x="40" y="1465" width="1320" height="40" rx="6" fill="#FEF5E0" stroke="#FCB745" stroke-width="1"/>
-      <text x="60" y="1482" class="ann-orange">SOURCE-OF-TRUTH BOUNDARY</text>
-      <text x="60" y="1498" class="box-sub">Linear, Notion, Fireflies, Slack, Monday remain authoritative for their own domains. The wiki holds the narrative and cross-cutting synthesis — never duplicates, only references.</text>
+      <rect x="40" y="1815" width="1320" height="40" rx="6" fill="#FEF5E0" stroke="#FCB745" stroke-width="1"/>
+      <text x="60" y="1832" class="ann-orange">SOURCE-OF-TRUTH BOUNDARY</text>
+      <text x="60" y="1848" class="box-sub">Linear, Notion, Fireflies, Slack, Monday remain authoritative for their own domains. The wiki holds the narrative and cross-cutting synthesis — never duplicates, only references.</text>
 
     </svg>
   </div>
