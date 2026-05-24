@@ -2133,3 +2133,33 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - 0 unresolved escalations over the 14-day threshold (2 active escalations under threshold: FactSet, marketing-stack-vendor-pages)
 - carry-forward to next lint: missing meeting source `2026-05-08-jehad-michael-roza-simon-euclid-bonaventure-meeting` (Fireflies-blocked, 4 inbound refs); triage 3 aging questions (2026-05-06 pair + nomi-vs-brain); FactSet escalation; marketing-stack-vendor-pages escalation; memory-system-reference convention codification; lint script regex refinement
 - methodology refinements made this pass: strip backticked code spans before scanning (handles `[[wikilinks]]` mentioned-in-code); flag markdown-table escape-artefacts as false-positives; convention-acceptable categories for `sources:` (Linear IDs, jehad-vault-* prefix) now noted explicitly
+
+
+## [2026-05-24 12:46] curation | nanoclaw-prime-radiant-wiring | brief + vendor refresh
+- created: briefs/nanoclaw-prime-radiant-wiring.md
+- updated: entities/vendors/nanoclaw.md, index.md
+- created: assets/janus-html-deck/prime-radiant-architecture.html (architecture diagram updated to match)
+- notes: ground-truthed against live install at ~/Code/nanoclaw-v2/. Read CLAUDE.md, .mcp.json, .env (var names only), package.json, launchd plist, groups/dm-with-michaelb/{CLAUDE.md, CLAUDE.local.md, container.json, vault/}, .claude/skills/ listing, container/skills/ listing.
+- corrections vs prior vendor-page claims:
+  - "Installable, supports MCP" framing → actual `mcpServers: {}` in both root `.mcp.json` and per-group `container.json`. Zero MCP connectors wired today.
+  - "Native Slack Socket Mode" framing → actual deployment uses HTTP webhook mode (`SLACK_BOT_TOKEN` + `SLACK_SIGNING_SECRET`, no `SLACK_APP_TOKEN`); Socket Mode is supported by the adapter but not how Janus is wired.
+  - Implicit "vault read via filesystem" → clarified: vault is a *separate* git clone at `~/Code/nanoclaw-v2/groups/dm-with-michaelb/vault/` (last sync `8cb4b70` 2026-05-20), refreshed by host-side `git pull` because container egress is OneCLI-gated and cannot reach github.com.
+- judgment calls:
+  - **Brief written despite no `sources/` ingest landing.** This is a curation pass (read-existing-evidence + ground-truth-against-live-install + synthesise). The §5.1 ingest template fit poorly and §5.2 query template undersized the deliverable. Calling the workflow `curation` — propose adding it to CLAUDE.md §5 as a third named operation. Will file as a `questions/` page when the right moment arrives.
+  - **Confidence bumped to `high` on the vendor page.** Deployment claims are grounded in direct file evidence on disk, not vendor docs or transcript paraphrase.
+  - **AIR-103 Gate 2 flagged as stale-in-Linear, not updated.** Per CLAUDE.md SoR map, Linear AIR is only ever written via `/ai-registry` and `/ai-tool-evaluation` skills via subagent dispatch. The brief documents the correction; Michael runs the skill when ready. Candidate G2 findings already evident from the install enumerated in the brief.
+  - **Andrew Soane noted as planned-not-materialised.** Verbal onboarding confirmation 2026-05-21; no `dm-with-andrews` group on Michael's host. Andrew's install will be on his Windows machine, separate from this one. Per-person isolation is what the architecture *supports*, not yet what Janus *operates*.
+- not done (deliberately):
+  - **Did NOT create vendor / concept pages for `onecli-agent-vault` or `caddy`.** Both referenced load-bearingly in the brief and currently lint as broken refs. Filing a single combined `questions/missing-vendor-pages-onecli-agent-vault-and-caddy.md` as a follow-up (next entry below) — defers priority to Michael rather than expanding scope mid-brief.
+  - **Did NOT update CLAUDE.md to add `curation` as a §5 workflow.** Rulebook edits are themselves high-stakes; Michael has discretion. Bookmarked.
+  - **Did NOT log the architecture HTML changes in detail.** File was modified during the session in parallel; trust Michael's assertion it matches the brief.
+- next:
+  - Commit + push from Michael's vault-directory Claude Code per [[feedback_git_via_claude_code]] memory — Cowork can't do git ops on this mount.
+  - File the missing-vendor-pages questions/ page (queued as next log entry).
+  - Deferred: `/ai-tool-evaluation` re-run against the live NanoClaude install for Gate 2.
+  - Deferred: propose `curation` as §5 third workflow in CLAUDE.md (questions/ page).
+  - Deferred: Hostinger + Caddy migration ships → revisit brief + create caddy vendor page.
+
+## [2026-05-24 12:50] curation-followup | questions/missing-vendor-pages-onecli-agent-vault-and-caddy.md
+- created: questions/missing-vendor-pages-onecli-agent-vault-and-caddy.md
+- notes: filing the follow-up flagged in the prior entry. Two load-bearing references in the new brief that currently lint as broken refs. OneCLI Agent Vault is the credential isolation primitive NanoClaude depends on (referenced in §"Authentication", §"OneCLI Agent Vault — deployed and active", and §"Per-person isolation"). Caddy is the reverse-proxy that the Hostinger migration will introduce (referenced in §"Hosting & runtime"). Priority and scope (vendor vs concept page; together or separate) deferred to Michael. Lint will continue to flag both as missing entities until resolved.
