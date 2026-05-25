@@ -2163,3 +2163,87 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 ## [2026-05-24 12:50] curation-followup | questions/missing-vendor-pages-onecli-agent-vault-and-caddy.md
 - created: questions/missing-vendor-pages-onecli-agent-vault-and-caddy.md
 - notes: filing the follow-up flagged in the prior entry. Two load-bearing references in the new brief that currently lint as broken refs. OneCLI Agent Vault is the credential isolation primitive NanoClaude depends on (referenced in §"Authentication", §"OneCLI Agent Vault — deployed and active", and §"Per-person isolation"). Caddy is the reverse-proxy that the Hostinger migration will introduce (referenced in §"Hosting & runtime"). Priority and scope (vendor vs concept page; together or separate) deferred to Michael. Lint will continue to flag both as missing entities until resolved.
+
+## [2026-05-25 10:56] curation | vault top-level reorg + presentations/ folder + attribution-schema proposal
+- created: presentations/ (new top-level folder for outbound deliverables)
+- moved to presentations/:
+  - 2026-05-13-pm-followup-deck.html
+  - 2026-05-14-project-management-prime-radiant-standup-proposal.html
+  - 2026-05-15-singapore-strategy-alignment.html
+  - 2026-05-18-weekly-call-aio-update.html
+  - 2026-05-18-weekly-call-aio-update.md
+  - 2026-05-18-weekly-call-talking-points.md
+  - 2026-05-22-ai-office-introduction.html
+  - prime-radiant-architecture.html (relocated from assets/janus-html-deck/; that folder is reserved for janus-html-deck skill bundle snapshots, not deliverables)
+- moved to processes/: standup-skill-v3.14-wiki-inbox-mirror-spec.md (was at top level)
+- deleted: 2026-05-15.md (zero-byte file; deletion permission granted by curator)
+- updated: presentations/prime-radiant-architecture.html — Notion fully removed from Layer 1 signals (was "deprecating" treatment earlier in session, then "removed entirely" after curator clarified Notion is already deprecated and the standup skill no longer writes to it). Five remaining signal boxes evenly redistributed; funnel arrows re-targeted into the inbox. Inventory column 3 "Notion — no longer in the stack (AIO May 2026)" — replaced earlier "per Bonaventure 18 May" attribution which the curator flagged as misdirected (sourced from a single Fireflies-only transcript via the vendor page's claim, not corroborated). Also fixed the Layer 5 "invoked by Cowork / Code" annotation y-position (was overlapping the layer label band).
+- proposed (held for curator review, NOT committed to CLAUDE.md):
+  - §2 amendment: add presentations/ as a new top-level folder, distinguished from briefs/ (internal synthesis) and assets/ (binary artefacts pages reference inline).
+  - §4 amendment: add `attribution: confirmed | corroborated | transcript-only | inferred` enum and `attribution_sources:` list to the frontmatter schema. Required when `decided_by:` names a person; `transcript-only` mechanically blocks named-person attribution downstream.
+  - §5.1 amendment: replace the existing implicit binary attribution rule with the graded enum. New logging convention: `attribution: transcript-only; attributed to <meeting-slug>` when the transcript was the sole source.
+  - §5.3 amendment: add 9th lint check — pages where `decided_by:` names a person but `attribution:` is `transcript-only`, `inferred`, or absent.
+- curator decisions on the proposal (recorded for the eventual landing pass):
+  - Retroactive attribution sweep folds into normal lint cadence (not a one-shot pulse-lint pass).
+  - Backfill default: leave `attribution:` absent on pre-existing pages; enforce only on new pages and sweep when an existing page is touched.
+  - CLAUDE.md edit held — not bumped to v0.14 yet. Curator to sign off on wording.
+- attribution-discipline note: the Bonaventure-attributing error caught in this session is exactly the failure mode the proposed schema targets. entities/vendors/notion.md still carries "Reconfirmed by Bonaventure Wong in the 18 May 2026 AI Native CEO meeting" — flagged as a candidate for downgrade to `attribution: transcript-only` when the schema lands. NOT fixed in-line because editing a load-bearing claim without the schema in place is premature.
+- not done (deliberately):
+  - Did NOT edit entities/vendors/notion.md.
+  - Did NOT edit CLAUDE.md.
+- next: ingest queue from inbox/ (11 items pending); lint per §5.3 (28 ingests since last lint; threshold long since exceeded).
+
+## [2026-05-25 11:08] batch-ingest | inbox sweep — May 2026 news/research cluster | 11 items
+- filed sources (sources/articles/):
+  - 2026-05-21-after-automation-shipper-every.md (Every / Dan Shipper essay)
+  - 2026-05-21-bloomberg-jpmorgan-dimon-ai-hires.md (Bloomberg)
+  - 2026-05-19-kpmg-anthropic-claude-276k.md (Anthropic announcement)
+  - 2026-05-22-guardian-stanchart-lower-value-apology.md (Guardian)
+  - 2026-05-19-wsj-american-rebellion-ai.md (WSJ)
+  - 2026-05-19-nyt-gen-z-hates-ai.md (NYT)
+  - 2026-05-25-wsj-meta-bosworth-ai-transformation.md (WSJ)
+  - 2026-05-24-guardian-ai-washing-pr-firms.md (Guardian)
+  - 2026-05-20-ventureburn-viktor-series-a-75m.md (Ventureburn)
+  - 2026-05-20-forbes-viktor-series-a-75m.pdf (Forbes — same news, different outlet)
+  - 2026-05-broken-ladder-ai-wfh-junior-hiring.pdf + .md twin (SSRN-6787638; Lambert & Schindler working paper)
+- created:
+  - pulse/2026-05-25-ai-labor-restructuring-bank-and-tech-wave.md (clustered: JPMorgan, StanChart, KPMG, Meta, After Automation)
+  - pulse/2026-05-25-ai-public-backlash-strengthens-us.md (clustered: WSJ American Rebellion + NYT Gen Z)
+  - pulse/2026-05-25-broken-ladder-wfh-confounds-genai-junior-decline.md (SSRN paper as methodological counter-weight)
+- updated:
+  - concepts/ai-washing.md (was a stub from 2026-05-12; fleshed out with Guardian 2026-05-24 article + cross-refs to ai-native-janus-positioning and the public-backlash pulse; departments now [marketing, ai-office])
+  - entities/vendors/viktor.md (added "Funding update — 2026-05-20" section noting the $75M Series A. Status STAYS archived: the round does not address the per-user data control gap that drove the original rejection. The funding press release explicitly lists "stricter role-based access controls, per-user data isolation, localized data residency" as future "later this year" items — confirming the gap is real and still unfixed. Reconsideration trigger = those roadmap items shipping and being verified.)
+  - index.md (3 new pulse entries inserted at top of Pulse section)
+- escalations: none — all wiki updates were low-stakes per §5.1 (existing concept fleshed out, existing vendor page appended, new dated pulse entries).
+- duplicate-source observation (flagged for lint, NOT acted on):
+  - sources/articles/ already contains `2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers.md` (existing). Today's filing of `2026-05-21-bloomberg-jpmorgan-dimon-ai-hires.md` covers the same news from the same Bloomberg source. Probable duplicate ingest; lint should surface and resolve (merge / supersede / delete one).
+- thematic clustering rationale (informs future ingests):
+  - 5 of 11 items contribute to the "AI labor restructuring" cluster (Dimon, StanChart, KPMG, Meta/Bosworth, After Automation). Filed as one pulse rather than five because they are mutually-reinforcing data points on a single theme; individual atomic pulses would fragment the narrative without adding signal.
+  - 2 of 11 items are public-backlash sentiment (WSJ American Rebellion + NYT Gen Z). Filed as one pulse for the same reason.
+  - 1 SSRN paper filed as its own pulse because it materially contradicts the labor-restructuring framing and deserves equal billing (not buried inside the cluster pulse).
+  - 1 AI-washing article folded into the existing ai-washing concept page (was a stub waiting for content).
+  - 2 Viktor pieces (markdown + PDF, different outlets, same news) batched into one vendor-page update.
+- attribution discipline note:
+  - All three new pulse entries and the concept update name people only where the source itself directly attributes (e.g., "Jamie Dimon said..." from Bloomberg byline; "Bill Winters posted..." from Guardian byline). No transcript-only attributions; no curator inferences treated as confirmed. The proposed `attribution:` schema is not yet active in CLAUDE.md, but the rule is applied de facto.
+- not done (deliberately):
+  - Did NOT move originals into inbox/.processed/ — the `mv` operations relocated files directly from inbox/ to sources/articles/ (preserving content with kebab-case rename). Git history tracks the moves; this log entry tracks the wiki impact. Inbox/.processed/ would be redundant duplication. Pragmatic deviation from a strict reading of §5.1; lint may flag this — if so, will codify the practice (or change it) in CLAUDE.md.
+  - Did NOT update entities/vendors/claude.md with the KPMG news, anthropic.md, or create a meta.md vendor page. These are knock-on touches that didn't seem load-bearing this pass. Lint may surface them as missing-reference candidates.
+- ingest counter status:
+  - Before this batch: 28 ingests since last lint (2026-05-23).
+  - This batch: +1 (counted as a single batch-ingest per §5.1).
+  - Now: 29 since last lint. Lint trigger threshold (10) long exceeded. Running lint as the next workflow step.
+
+## [2026-05-25 11:18] lint
+- findings: 5 new + 7 carry-forward (12 total)
+- report: pulse/2026-05-25-lint.md
+- scope: 573 wiki pages + 178 sources scanned
+- inline fixes: none (all findings high-stakes or curator-decision)
+- top items surfaced this lint:
+  - **Top-level `vendors/` folder shadows `entities/vendors/`** (99 files vs 37; 87 with no entities/ counterpart; 12 overlap with divergent content). §2 schema deviation; warrants own migration workstream. NEW.
+  - **Marketing-handoff slug resolution** — slugs like `ai-native-janus-positioning` referenced from live pages but live only inside `marketing-handoff-2026-05-22-*/files/`. Two options proposed for curator decision. NEW.
+  - **Dimon-article duplicate** confirmed (2026-05-21-bloomberg-jpmorgan-dimon-ai-hires.md duplicates 2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers.md; identical Bloomberg source URL). Recommended deletion of newer, kept older. NEW.
+  - **Two >14-day-old ingest escalations** (Monday-hub-import + cowork-governance, both 19 days). NEW high-priority for triage.
+  - **`inbox/.processed/` discipline** — today's batch ingest used direct `mv` from inbox/ to sources/ rather than a copy-to-.processed/ + canonical-named-file workflow. Both readings of §5.1 have rationale; curator decision to codify. NEW.
+- index updated: 3 new pulse entries inserted in §Pulse section.
+- carry-forward queue prepared for next lint (9 items; see §"Carry-forward queue").
+- ingest counter reset: now 0 since last lint.
