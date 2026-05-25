@@ -3,11 +3,11 @@ type: meeting
 title: AIO, Marketing Meeting — 22 May 2026
 slug: 2026-05-22-aio-marketing-meeting
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-25
 departments: [ai-office, marketing]
 status: active
 captured_by: jehad-altoutou
-participants: [jehad-altoutou, andrew-soane]
+participants: [jehad-altoutou, andrew-soane, michael-bruck]
 sources: [2026-05-22-aio-marketing-meeting]
 related: [2026-05-22-aio-standup, assessify, janus-prime-radiant-build]
 parser_version: 3
@@ -17,7 +17,7 @@ fireflies_id: 01KS7KDZQ52VX7E2ZEK105XB17
 
 ## Clean Meeting Summary
 
-Cross-functional working session on 22 May 2026 (~62 minutes). Confirmed participants by name: Andrew Soane (Marketing) and Jehad Altoutou (AIO). Speaker attribution note: Fireflies returned "No speakers" — Speaker 1/2/3 labels only. Attribution corroborated by internal consistency: Speaker 2 references "Ja/Jihad" in third person (Speaker 2 = Michael Bruck or equivalent, not named but present); Speaker 3 manages GitHub scripts → Jehad; Speaker 1 = Andrew (being onboarded, brand expertise confirmed). Group attribution used where individual confirmation is absent.
+Cross-functional working session on 22 May 2026 (~62 minutes). Confirmed participants by name: Andrew Soane (Marketing), Michael Bruck (AIO), and Jehad Altoutou (AIO). Speaker attribution note: Speakers confirmed by Fireflies name tags (updated post-meeting): Andrew Soane (Speaker 1 — brand expertise, onboarding role, SDR tool introduction, Canva request), Michael Bruck (Speaker 2 — plugin suite identification, enrollment strategy direction, Obsidian/GitHub walkthrough), Jehad Altoutou (Speaker 3 — technical execution, GitHub setup, enrollment scripts, Fireflies ingestion).
 
 **Andrew onboarding — Cowork + Marketing Prime Radiant:** Andrew's Cowork onboarding was completed in this meeting. Steps executed: (1) Obsidian vault for Marketing Prime Radiant created; (2) GitHub repo set up and linked; (3) 30-day Fireflies ingestion history pulled into the vault; (4) vault-to-Cowork pointer configured. Andrew now has a functional Cowork + knowledge base setup. Canva access flagged for next week. The Anthropic marketing plugin suite was identified as a pre-built bundle to be installed immediately as the next action — would extend Andrew's Cowork with Amplitude, Klaviyo, and Supermetrics connectors.
 
@@ -86,6 +86,6 @@ Cross-functional working session on 22 May 2026 (~62 minutes). Confirmed partici
 
 ## Issues / Warnings
 
-- **Speaker attribution:** Fireflies returned "No speakers" label — all utterances tagged as Speaker 1/2/3. Individual attribution corroborated by internal consistency only (Andrew confirmed by brand expertise + onboarding role; Jehad confirmed by GitHub script context). Group attribution used where unsupported.
+- **Speaker attribution:** Confirmed via Fireflies name tags (updated post-meeting). Andrew Soane = Speaker 1 (brand expertise, onboarding, SDR tool introduction, Canva request). Michael Bruck = Speaker 2 (plugin suite identification, enrollment direction, Obsidian walkthrough). Jehad Altoutou = Speaker 3 (technical execution, GitHub setup, enrollment scripts). All Description Updates and action owners corrected to reflect confirmed attribution on 2026-05-25.
 - **KT AI SDR name uncertain:** "KT" may be a phonetic transcription or short form of a different product name. AIR-139 flagged for name confirmation before evaluation begins.
 - **AIO IT Meeting 21 May** (`01KS5413DKXPT58X77XQMRE629`, ~54 min): Identified in prior sessions as unprocessed. Separate standup run required.
