@@ -3,11 +3,11 @@ type: concept
 title: Builders, sellers, measurers (Drucker's role trichotomy applied to AI restructuring)
 slug: builders-sellers-measurers
 created: 2026-05-21
-updated: 2026-05-23
+updated: 2026-05-31
 departments: [ai-office, marketing, hr, office-of-ceo]
 status: active
-sources: [2026-05-21-prince-cloudflare-measurers-replaced, anthropic-labor-market-impacts-2026-03]
-related: [ai-native-mandate, ai-native-enterprise-restructuring, agentic-lean-marketing-stack, ai-native-janus-positioning, stack-composition-framework, andrew-soane, observed-exposure-ai-labor-measure]
+sources: [2026-05-21-prince-cloudflare-measurers-replaced, anthropic-labor-market-impacts-2026-03, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company]
+related: [ai-native-mandate, ai-native-enterprise-restructuring, agentic-lean-marketing-stack, ai-native-janus-positioning, stack-composition-framework, andrew-soane, observed-exposure-ai-labor-measure, recursive-self-improving-loop]
 ---
 
 # Builders, sellers, measurers
@@ -19,6 +19,26 @@ Peter Drucker's three-role decomposition from *The Practice of Management* (1954
 - **Builders** — create products. Engineers, designers, content creators, anyone whose output is a thing the company sells or uses. Output is *measurable in itself*.
 - **Sellers** — sell those products. Account executives, business development, partner managers, customer-facing reps. Output is *revenue*.
 - **Measurers** — everything else: internal audit, revenue recognition, finance, legal, compliance, middle management, operations. Output is *information about the business*.
+
+## Parallel role taxonomy — IC + DRI (added 2026-05-31)
+
+Two adjacent role taxonomies surfaced in 2026 land on a similar shape, and the YC consolidation is converging on **IC + DRI** as the two non-negotiable roles in an AI-native company:
+
+| Source | Role taxonomy | Notes |
+|---|---|---|
+| **Drucker / Cloudflare-Prince** (this concept) | Builders / Sellers / Measurers | The work-shape decomposition. Says *what* AI absorbs (measurer work) vs *what* AI amplifies (builder/seller). |
+| **Block "From Hierarchy to Intelligence"** ([[2026-03-31-block-from-hierarchy-to-intelligence]]) | ICs / DRIs / Player-coaches | The headcount-shape decomposition that *follows* once measurer work is absorbed. |
+| **Diana Hu / YC** ([[2026-04-24-yc-diana-hu-ai-native-company-from-ground-up]]) | IC / DRI / AI-founder-type | Same as Block + an "AI-founder-type" archetype for the dogfooding founder. |
+| **Tom Blomfield / YC** ([[2026-05-21-yc-blomfield-self-improving-company]]) | IC + DRI | Drops Diana's third role explicitly: *"Jack Dorsey has three. I actually don't like the third one, so I deleted it."* |
+
+The two taxonomies answer different questions and pair cleanly. **Drucker says which work AI absorbs; IC + DRI says which roles remain.** Operationally:
+
+- **Builders ↔ ICs.** Every retained IC is a builder. The IC role in AI-native vocabulary is *"a builder, an operator"* (Blomfield) who *"comes to meetings with working prototypes, not pitch decks"* (Diana Hu).
+- **Sellers ↔ ICs (with edge-case judgement).** Sellers also remain — Diana and Blomfield both keep human salespeople for trust-building / high-stakes conversations. In the IC + DRI vocabulary, sellers are ICs operating on the **edge** where the company makes contact with reality (Block's framing). The role doesn't have a dedicated name in the YC vocabulary; it's an IC variant.
+- **Measurers → absorbed into the loops.** The work the measurer role used to do (status rollups, audit, revenue recognition, compliance reporting, coordination) is precisely the work the [[recursive-self-improving-loop]] absorbs. *"Status, decisions, and outcomes are continuously captured and fed back into this intelligence layer"* (Diana Hu) is the literal description of measurer-replacement.
+- **DRI is the non-substitutable role.** Each outcome has one named human responsible. Diana: *"One person, one outcome, no hiding."* Blomfield: *"a named human, not a committee."* This is the accountability layer the loops cannot generate on their own — they need a designated edge-position human to hold the can if the loop produces a bad result.
+
+Three independent landings of **"DRI"** as a role name in 60 days (Block, Diana Hu, Blomfield — and the lineage is Apple-heritage via Block, propagating through YC). Strong evidence the vocabulary is stabilising. Worth absorbing into Janus operating language alongside or instead of bespoke owner-naming ([[ai-native-enterprise-restructuring]] flags this as an operational implication).
 
 All three are critical to a functioning business. The question is which scales linearly with revenue and which scales sub-linearly when AI is introduced into the workflow.
 

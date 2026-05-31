@@ -6,8 +6,8 @@ created: 2026-05-21
 updated: 2026-05-31
 departments: [ai-office, office-of-ceo, engineering]
 status: active
-sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1, 2026-03-31-block-from-hierarchy-to-intelligence]
-related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture, ai-native-enterprise-restructuring]
+sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company]
+related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture, ai-native-enterprise-restructuring, recursive-self-improving-loop]
 ---
 
 # Organisational digital twin
@@ -123,6 +123,21 @@ The architectural rhyme is striking. Block's framing of the *compounding signal*
 Block's org-design corollary — *"The intelligence lives in the system. The people are on the edge"* — is a useful complement to the [[builders-sellers-measurers]] frame for naming what humans contribute once the substrate is in place. The edge is where humans bring *"intuition, opinionated direction, cultural context, trust dynamics, the feeling in a room … especially ethical decisions, novel situations, and high-stakes moments."* This crisply names what [[pilot-in-command]] and the broader AIO governance vocabulary gesture toward.
 
 Caveat: Block's framing is forward-looking. The essay states *"Block is in the early stages of this transition. It will be a difficult one, and parts of it will likely break before they work."* Treat the architecture as **what Block intends to operate**, not necessarily what Block operates today. The fact that Block has *publicly committed* to the pattern is itself the most important signal — see [[ai-native-enterprise-restructuring]] for the cross-cutting consensus-restructuring narrative.
+
+## The loop dimension — added 2026-05-31 via the YC talks
+
+The twin is the *substrate*. What operates against it is a population of [[recursive-self-improving-loop|recursive self-improving loops]] — surfaced into teachable vocabulary in Q2 2026 via two YC batch talks ([[2026-04-24-yc-diana-hu-ai-native-company-from-ground-up|Diana Hu, 2026-04-24]] and [[2026-05-21-yc-blomfield-self-improving-company|Tom Blomfield, 2026-05-21]]; pulse at [[2026-05-31-yc-formalises-self-improving-company-playbook]]). The twin without loops is inert; the loops without a twin are blind.
+
+The architectural primitive (Sensor → Policy → Tools → Quality Gate → Learning) is the canonical instance of an *agentic pipeline* operating on the twin's data. Each loop:
+- **reads** from the twin's sensor network (the systems-of-record + AI-captured conversation streams documented above);
+- **acts** within policy-defined autonomy boundaries that match the twin's data-classification + permissioning tiers;
+- **writes back** via tools that produce new structured artefacts the twin then absorbs;
+- **filters** through a quality gate (evals, escalations to a human, supersession of prior decisions);
+- **learns** by feeding its own failure cases back as next-iteration sensor inputs.
+
+**Diana Hu's open-loop / closed-loop control-theory framing** is the most useful single addition to the twin's vocabulary that the YC talks contribute. Most pre-AI enterprise systems are open-loop: a decision is made, an action is taken, and the outcome is not systematically captured back into the deciding system. The twin's compounding property only materialises when the company's important processes are **closed-loop** — every output measured, every measurement fed back into the model. The list of AIO pipelines under "Janus state" below is, in those terms, the list of *closed loops* the twin already has; the work ahead is to identify the *open loops* (places where the company decides and acts but doesn't systematically learn) and convert them.
+
+**AI-as-operating-system framing** — Diana Hu: *"AI should not be a tool your company uses. It should be the operating system your company runs on."* The twin is the substrate on which that operating system runs. The cleanest framing surfaced to date for what Prime Radiant *is*, and why Janus is building it.
 
 ## Related concepts
 

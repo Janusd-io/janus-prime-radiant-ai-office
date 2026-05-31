@@ -2285,3 +2285,33 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - lint trigger (10) not yet reached.
 - inbox/.processed/ discipline: continued the 2026-05-25 precedent of direct `mv` from inbox/ to sources/ (not copy-to-.processed/). Lint will continue to flag this until codified in CLAUDE.md.
 - git ops: deferred — Cowork cannot do git operations on this mount per [[feedback_git_via_claude_code]] memory; commit + push to be run from Michael's vault-directory Claude Code.
+
+## [2026-05-31 18:52] batch-ingest | YC talks — Dorsey/Block lineage formalised into founder playbook | 2 items
+- filed sources (sources/articles/):
+  - 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up.md (YC Partner Diana Hu; closed-loop / open-loop framing; "AI as operating system"; software factories; queryable-organisation; IC + DRI + AI-founder-type roles; StrongDM + Mutiny named as examples; 10× sprint-time claim)
+  - 2026-05-21-yc-blomfield-self-improving-company.md (YC GP Tom Blomfield; explicitly *"based a little bit off a talk Diana gave"*; five-part loop Sensor → Policy → Tools → Quality Gate → Learning; YC's own monitor-agent-over-database-agent dogfood example; YC user-manual regeneration in a weekend from 2,000 hours of office-hour transcripts; "software is ephemeral, context is durable"; IC + DRI only — drops the third role)
+- created:
+  - concepts/recursive-self-improving-loop.md (new concept; canonical write-up of the five-part loop + Diana's closed-loop framing; maps onto AIO patterns — confirms AIO already runs 4 of 5 steps; the Learning step is the gap)
+  - pulse/2026-05-31-yc-formalises-self-improving-company-playbook.md (single combined pulse covering both talks; provenance chain Block → Dorsey → Diana → Blomfield; YC identified as founder-side propagation channel)
+  - questions/ingest-2026-05-31-1850-y-combinator-and-yc-partner-entity-pages.md (escalation — three named YC partners now load-bearing: Diana Hu, Tom Blomfield, Garry Tan. Should YC + 3 people pages be created? Recommended: defer YC org page; create 3 people pages.)
+- updated:
+  - briefs/ai-native-enterprise-restructuring.md — new "Update — 2026-05-31: YC formalises the playbook" section. YC = 6th and 7th public signals in the consensus-restructuring cluster. Bet-status table refreshed: founder-side propagation channel identified; differentiation-risk sharpened on a third axis (substrate quality, not substrate existence). Operating implications added: adopt "DRI" as wiki vocabulary; propose a `projects/` workstream to close the AIO's fifth loop step; refresh ai-native-janus-positioning with YC vocabulary; track Codex-class internal-dashboard one-shotting as Cowork watch-for.
+  - concepts/organisational-digital-twin.md — new "The loop dimension" section. Articulates the relationship between twin (substrate) and loops (population of recursive-self-improving processes operating on it). Diana Hu's open-loop / closed-loop framing folded in. AI-as-operating-system framing added as the cleanest single articulation of what Prime Radiant *is*.
+  - concepts/builders-sellers-measurers.md — new "Parallel role taxonomy — IC + DRI" section. Maps the Drucker work-shape decomposition (Builders / Sellers / Measurers) onto the YC-and-Block headcount-shape decomposition (IC + DRI). The two answer different questions and pair cleanly: Drucker says *which work* AI absorbs (measurer); IC + DRI says *which roles* remain. Three independent landings of "DRI" in 60 days (Block, Diana Hu, Blomfield) = vocabulary is stabilising.
+  - index.md — new pulse, new concept, new escalation; "Updated:" header refreshed.
+- escalations: 1 — questions/ingest-2026-05-31-1850-y-combinator-and-yc-partner-entity-pages.md (3 people pages — Diana Hu, Tom Blomfield, Garry Tan — proposed; YC org page deferred)
+- attribution discipline:
+  - All quotes attributed to a named YC partner come directly from the verbatim transcript byline ("Diana Hu" / "Tom Blomfield" headers in the source files). No transcript-only attribution risk since these are written + delivered speeches, not Fireflies recordings.
+  - Diana Hu's name-check of "Jack Dorsey doing this over at Block" is attributed in the wiki as her framing (Diana citing Dorsey), not as a Dorsey claim Janus has independently confirmed. Diana's StrongDM and Mutiny name-checks similarly attributed as her framing — they're worth a separate research pass (flagged in the pulse).
+  - The Jack Dorsey tweet thread itself is referenced inline but NOT cited as a wiki source (no source file exists). Flagged in the pulse as a follow-up — when surfaced, file at `sources/articles/2026-04-or-05-dorsey-twitter-thread-intelligence-not-hierarchy.md` (or similar; date TBD).
+- notes:
+  - Batch-ingest because both talks are clearly one unit of work (YC, same topic, second talk explicitly builds on the first). Per §5.1: "One batch entry per natural unit of work; per-source entries when sources are unrelated." Here they are deeply related.
+  - Continued the inbox/.processed/ direct-mv precedent from 2026-05-25 / 2026-05-31-first-batch. Same pending curator decision noted in those entries.
+  - The `recursive-self-improving-loop` concept page is low-stakes new — no similar concept exists (ralph-loop-pattern is the closest, and it covers a different scope — single-agent runtime loop vs business-process loop). Per §5.1 "Creating a new concept page when a similarly-named one might exist" is the high-stakes case; creating a new concept page where no similar one exists is low-stakes.
+  - The architectural insight worth flagging back to Michael: **AIO already runs 4 of the 5 loop steps. The Learning step is the open gap.** Closing it — a monitor agent watching `questions/` findings → proposing CLAUDE.md edits → review agent merging overnight — is the natural next AIO-build move. Surfaced in both the pulse and the brief; worth proposing as a `projects/` workstream.
+  - Ingest counter: 4 since 2026-05-25 lint (this session: 3 articles + 1 batch-of-2-YC-talks = 4 ingest log entries).
+- next:
+  - Curator decision on the YC-partner-entity-pages question (sets up retroactive wikilink updates if approved).
+  - Curator decision on whether to propose the "close the fifth loop step" workstream as a `projects/` page.
+  - Defer: Jack Dorsey tweet-thread ingest when surfaced.
+  - Defer: StrongDM AI team + Mutiny research pass (Diana's named examples; would substantiate the software-factories claim).

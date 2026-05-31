@@ -6,8 +6,8 @@ created: 2026-05-21
 updated: 2026-05-31
 departments: [ai-office, marketing, hr, office-of-ceo]
 confidence: high
-sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-03-31-block-from-hierarchy-to-intelligence]
-related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, organisational-digital-twin, coordination-leverage-model, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
+sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company]
+related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, organisational-digital-twin, coordination-leverage-model, recursive-self-improving-loop, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
 ---
 
 # AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
@@ -179,3 +179,31 @@ The three additional signals don't invalidate the original four — they *deepen
 | Anthropic is the defensive choice, not the aggressive one | No direct effect (Block doesn't disclose vendor stack) — but Block's intelligence-layer composition framing is multi-vendor-friendly, which aligns with [[stack-composition-framework]] |
 | Drucker frame is the operating taxonomy | **Complemented, not replaced**, by Block's IC / DRI / player-coach trichotomy. The edge framing adds vocabulary, not contradiction. |
 | Differentiation risk is increasing — the substrate is the moat | **Sharpened**: Block has *publicly committed* to the same architecture Janus is operating. The window in which "early and clean" is differentiating shortens further. |
+
+## Update — 2026-05-31: YC formalises the playbook (sixth and seventh public signals)
+
+Two consecutive YC batch talks ingested 2026-05-31 — Diana Hu's *"How To Build A Company With AI From The Ground Up"* ([[2026-04-24-yc-diana-hu-ai-native-company-from-ground-up]], 2026-04-24) and Tom Blomfield's *"How to Build a Self-Improving Company with AI"* ([[2026-05-21-yc-blomfield-self-improving-company]], 2026-05-21) — turn the Block/Dorsey thesis into a teachable founder playbook. Full read at [[2026-05-31-yc-formalises-self-improving-company-playbook]]; architectural primitive at [[recursive-self-improving-loop]].
+
+The two talks change what this brief tracks in three concrete ways:
+
+1. **Propagation channel identified — YC.** The brief previously tracked consensus-restructuring through Fortune-500 CEO statements (Dimon, Prince, Winters, Elhedery) and B2B partnerships (KPMG-Anthropic). YC is the *founder-side* distribution channel — ~200 founders per batch, twice a year, now hearing this framing as default operating discipline. Combined with Block (publish) and Dorsey (tweet-thread), the propagation pattern is now: **primary essay → social distribution → accelerator distillation → founder default.** The differentiation-risk row in the table above sharpens further accordingly: the window in which "early and clean" matters is now closing from *both* the Fortune-500 end (KPMG, Cloudflare, JPMorgan publicly committing) and the founder end (YC teaching it as default).
+
+2. **The architectural primitive gets a name.** Diana Hu's *closed-loop / open-loop* control-theory framing + Blomfield's *Sensor → Policy → Tools → Quality Gate → Learning* five-part loop are two presentations of one primitive, now filed at [[recursive-self-improving-loop]]. **What this surfaces for the AIO operationally:** the AIO already runs four of the five steps; what it does *not* yet have closed is the **Learning step fully-automated**. Today, the wiki's lint pass + curator approval is the learning step, with Michael as the human in the loop. Blomfield's YC dogfood example (monitor agent → fix → MR → review agent → merge overnight) is the existence-proof that the fifth step can be closed. Proposing a `projects/` workstream for closing it is the natural next AIO-build move.
+
+3. **"Software is ephemeral, context is durable"** lands as the cleanest articulation of the Prime Radiant moat. The argument: Codex/Claude Code can now one-shot most internal dashboards; the *software* layer is regenerable; the durable strategic asset is the **context** the wiki accumulates (transcripts, decisions, structured operating instructions — the [[organisational-digital-twin]] itself). This is what Janus has been building toward for ~12 months without naming it that way. The YC framing is more compact and more *defensible* than anything the wiki has produced internally — adopt it directly in outbound positioning rather than reinvent the language. Worth a direct paragraph in [[ai-native-janus-positioning|the three-pillar positioning brief]].
+
+### Bet status after the YC signals (updated)
+
+| Bet | What the YC talks add | Net status |
+|---|---|---|
+| Agentic-lean is consensus, not differentiated | YC now teaches it as default; ~200 founders/batch absorb it as starting posture | **Confirmed at sixth and seventh signals** — the founder-side propagation channel is identified |
+| Anthropic is the defensive choice | YC talks are vendor-agnostic — they reference Claude Code and Codex interchangeably as "code-generation tier" | No direct effect; consistent with [[stack-composition-framework|stack-composition discipline]] |
+| Drucker frame is the operating taxonomy | YC adopts **IC + DRI** as the two non-negotiable roles (Diana adds AI-founder-type; Blomfield drops it). Three independent landings of "DRI" (Apple-heritage / Block / YC) in 60 days = vocabulary is stabilising. | **Refined** — adopt "DRI" in AIO operating language alongside / instead of bespoke owner-language |
+| Differentiation risk is increasing — the substrate is the moat | **Sharpened on a third axis**: with YC teaching the architecture, founders building today will start from the same shape. Janus's 12-18 month head-start now races against ~200 batched founders/cycle entering at the same gate. The "early *and clean*" descriptor matters: cleanly-operating substrate vs hand-rolled bashware is the differentiation, not "we did it first." | **Heightened further** — substrate quality, not substrate existence, is the moat |
+
+### Operating implications (additions to prior section)
+
+- **Adopt "DRI" as wiki vocabulary.** Where the wiki currently says "owner-of-project" or "decided-by," consider DRI as a parallel field. Migration is low-stakes; the YC vocabulary is now founder-default and Janus shouldn't be linguistically out of step.
+- **Propose a `projects/` workstream to close the AIO's fifth loop step.** A monitor agent on the wiki ingest + lint flow that proposes CLAUDE.md edits in response to recurring `questions/` findings, with a second review agent merging overnight. This is the AIO version of Blomfield's YC database-agent example.
+- **Refresh the [[ai-native-janus-positioning]] brief with the YC vocabulary.** "Software is ephemeral, context is durable"; "closed-loop organisation"; "make the company queryable" — these are now founder-default phrasings. Outbound Janus positioning should mirror them rather than invent.
+- **Track Codex-class internal-dashboard one-shotting as a Cowork capability watch-for.** If it ships into Cowork at the level Blomfield describes, the [[stack-composition-framework]] gets a fourth axis — *generatability* of the software layer alongside composability / operability / reversibility.
