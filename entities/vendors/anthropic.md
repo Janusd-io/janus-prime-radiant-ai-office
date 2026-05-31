@@ -3,11 +3,11 @@ type: vendor
 title: Anthropic
 slug: anthropic
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-05-31
 departments: [ai-office]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03]
+sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03, 2026-05-26-bloomberg-bankers-claude-cost]
 related: [claude, llm-wiki, agentic-ai, ai-native-enterprise-restructuring, builders-sellers-measurers, ai-tool-evaluation-framework, observed-exposure-ai-labor-measure]
 ---
 
@@ -45,6 +45,8 @@ Two signals landed in one week that materially resolve vendor-viability risk on 
 - **KPMG global alliance** (announced 2026-05-19; see [[2026-05-19-kpmg-claude-alliance]]). 276,000+ KPMG employees across 138 countries get Claude access. Claude Cowork + Managed Agents embedded into KPMG's *Digital Gateway* client-work platform — starting with tax and legal client tools. Anthropic also named preferred-partner-for-private-equity. A tax-compliance agent that used to take weeks now takes minutes inside Digital Gateway. This is the largest single enterprise commit visible in the public record.
 - **First profitable quarter projected** (WSJ, 2026-05-21; see [[2026-05-21-anthropic-first-profitable-quarter]]). Q2 2026 revenue projected $10.9B (130% Q-over-Q from Q1's $4.8B) with first operating profit of $559M. Growth rate exceeds Zoom-during-pandemic, Google/Meta-pre-IPO trajectories. Computing-cost ratio improving from 71¢ to 56¢ per $1 revenue — operational leverage kicking in. Trillion-dollar IPO trajectory alongside OpenAI and SpaceX. Anthropic primarily uses Google + Amazon chips (cheaper than Nvidia); takes more conservative data-centre commits than OpenAI; smaller consumer business reduces free-user subsidy load.
 - **Political risk absorbed.** Months earlier, the Trump administration directed federal agencies to cut ties with Anthropic on security grounds (Anthropic refused to allow tech for "all lawful uses" per DoD demand). Relationship since improved; ongoing administration meetings on the Mythos model (released to a select group of companies due to cybersecurity risk).
+- **IPO target date sharpened (2026-05-26).** Bloomberg Opinion ([[2026-05-26-bloomberg-bankers-claude-cost]]) names *"as early as October"* for the stock-market listing — first specific calendar marker the wiki has captured for the IPO trajectory. Treat as opinion-column reporting, not an SEC filing, but consistent with the WSJ-reported Q2 profitability inflection.
+- **Pricing-power signal (2026-05-26).** Bloomberg reports per-firm Claude bills among European financial-services customers *"on track to rise from tens of thousands of dollars for a single firm to several million"*, with even the [SpaceX capacity deal](https://www.anthropic.com/news/higher-limits-spacex) not fully absorbing demand. Anthropic is exercising pricing power that should drive the profitable-quarter trajectory; the customer-side response (in-house models for non-frontier tasks; cost-discipline narratives from StanChart's Winters) is captured in [[2026-05-31-ai-cost-pressure-in-house-model-shift]] and on the [[claude]] page.
 
 **Implication for Gate 2.3 ("vendor viability — 24-month horizon").** The criterion is now structurally over-satisfied for Anthropic. Worth a footnote on [[ai-tool-evaluation-framework]] capturing the new baseline. See [[ai-native-enterprise-restructuring]] for the full thesis of how the Q2 signals validate the AIO operating model.
 

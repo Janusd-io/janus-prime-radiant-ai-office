@@ -3,11 +3,11 @@ type: concept
 title: Organisational digital twin
 slug: organisational-digital-twin
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-31
 departments: [ai-office, office-of-ceo, engineering]
 status: active
-sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1]
-related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture]
+sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1, 2026-03-31-block-from-hierarchy-to-intelligence]
+related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture, ai-native-enterprise-restructuring]
 ---
 
 # Organisational digital twin
@@ -104,6 +104,25 @@ As of 2026-05-21, the twin is *aspirational at Layer 3*. Sub-mechanisms in fligh
 - **Ontology — emerging.** The wiki's frontmatter schema (entity / semantic / temporal / causal edges per CLAUDE.md §4) is the de-facto ontology layer for one corner of the twin. Full company-wide ontology not yet built.
 
 The [[janus-prime-radiant-build|Janus Prime Radiant rollout]] is the operational expression of building the twin one department at a time.
+
+## External validation — Block (added 2026-05-31)
+
+[[2026-03-31-block-from-hierarchy-to-intelligence|Block's "From Hierarchy to Intelligence" essay]] articulates the same architecture under different vocabulary at Fortune-500 scale (full read at [[2026-05-31-block-intelligence-not-hierarchy]]). The closest external articulation surfaced to date.
+
+Block decomposes its company architecture into four components:
+
+| Block component | Mapping to this concept |
+|---|---|
+| **Capabilities** — atomic financial primitives (payments, lending, card issuance, etc.) | The product / platform primitives layer; outside the twin proper |
+| **Company world model** — *"how the company understands itself and its own operations, performance, and priorities, replacing the information that used to flow through layers of management"* | Identical to the **organisational digital twin** described above |
+| **Customer world model** — per-customer / per-merchant representation built from transaction data, evolving toward causal and predictive models | The HGTFT-pattern customer twin — the customer-facing analogue Janus already operates in physical-infrastructure form |
+| **Intelligence layer** — *"composes capabilities into solutions for specific customers at specific moments and delivers them proactively"* | The agentic pipelines layer that operates on top of the twin to drive coordination |
+
+The architectural rhyme is striking. Block's framing of the *compounding signal* — *"The richer the signal, the better the model. The better the model, the more transactions. The more transactions, the richer the signal"* — is the same flywheel described under "How it compounds" above, named in transaction-platform vocabulary.
+
+Block's org-design corollary — *"The intelligence lives in the system. The people are on the edge"* — is a useful complement to the [[builders-sellers-measurers]] frame for naming what humans contribute once the substrate is in place. The edge is where humans bring *"intuition, opinionated direction, cultural context, trust dynamics, the feeling in a room … especially ethical decisions, novel situations, and high-stakes moments."* This crisply names what [[pilot-in-command]] and the broader AIO governance vocabulary gesture toward.
+
+Caveat: Block's framing is forward-looking. The essay states *"Block is in the early stages of this transition. It will be a difficult one, and parts of it will likely break before they work."* Treat the architecture as **what Block intends to operate**, not necessarily what Block operates today. The fact that Block has *publicly committed* to the pattern is itself the most important signal — see [[ai-native-enterprise-restructuring]] for the cross-cutting consensus-restructuring narrative.
 
 ## Related concepts
 

@@ -3,10 +3,10 @@ type: pulse
 title: Google I/O 2026 — agents as the product, Gemini 3.5 Flash as the engine
 slug: 2026-05-19-google-io-2026-agents-as-product
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-31
 departments: [ai-office, engineering, marketing]
 confidence: high
-sources: [2026-05-20-every-google-io-agents-agents-agents]
+sources: [2026-05-20-every-google-io-agents-agents-agents, 2026-05-19-nyt-google-winning-ai-race]
 related: [google-cloud, claude, anthropic, model-context-protocol, agent-to-agent-protocol, ai-native-enterprise-restructuring, 2026-05-21-code-with-claude-london]
 ---
 
@@ -49,6 +49,16 @@ The strategic move: making AI Mode default-on for Google search requires the inf
 ## Figma in-canvas agent (mini-Vibe-Check)
 
 Same Every issue: Figma released its in-canvas agent the same day as I/O. Built on a mix of **Gemini Flash + Claude Sonnet + Figma's fine-tuned models** (a non-trivial multi-vendor architecture choice worth flagging — Figma is publicly multi-vendor in production, not Anthropic-only or Google-only). Solves the blank-canvas problem for early design exploration; falls short on detail/fidelity. No direct AIO action — bookmarked as evidence that the [[stack-composition-framework|stack-composition framing]] is operating in the market (Figma chose composability over single-vendor lock-in even at the agent layer).
+
+## Consumer-reach corroboration — NYT (added 2026-05-31)
+
+NYT's *How Google Is Starting to Win the A.I. Race* (Brian X. Chen, 2026-05-19; [[2026-05-19-nyt-google-winning-ai-race]]) lands the same week as I/O and rounds out the consumer-distribution picture with three additions worth noting alongside the I/O launches:
+
+- **Gemini at ~900M regular users** — per Google's own announcement at I/O, doubled in one year. NYT reports this as on par with OpenAI's self-reported ChatGPT user count and **~30× the estimated web traffic of Claude** (with the caveat that Anthropic *"is more focused on business customers"*).
+- **Apple Siri partnership confirmed for distribution scale.** Gemini becomes the foundational AI model for a future Siri (announcement January 2026). Combined with Android availability, Gemini ships into virtually every smartphone — the consumer ambient-agent distribution channel referenced above now has a concrete shipping path.
+- **AI-monetisation flywheel intact.** Google's Q1 2026 ad revenue +16% to $77B, attributed to AI tooling helping marketers collect deeper interest data. Google is the only frontier vendor visibly profitable on AI-adjacent revenue rather than absorbing losses on data-centre spend.
+
+NYT framing — Gary Rivlin (tech-industry AI race author): *"If I had to put a wager on the biggest winner of A.I., I would say it's Google. … If you asked me that same question a year and a half ago, the answer wouldn't have been Google."* — pairs cleanly with the Every / Context Window I/O coverage already filed here. The two read together describe **the same week from a developer-platform angle (Every) and a consumer-distribution angle (NYT)**.
 
 ## Why this matters
 

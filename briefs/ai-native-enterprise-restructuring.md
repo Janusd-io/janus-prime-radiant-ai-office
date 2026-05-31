@@ -3,11 +3,11 @@ type: brief
 title: AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
 slug: ai-native-enterprise-restructuring
 created: 2026-05-21
-updated: 2026-05-23
+updated: 2026-05-31
 departments: [ai-office, marketing, hr, office-of-ceo]
 confidence: high
-sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents]
-related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
+sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-03-31-block-from-hierarchy-to-intelligence]
+related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, organisational-digital-twin, coordination-leverage-model, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
 ---
 
 # AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
@@ -159,3 +159,23 @@ The three additional signals don't invalidate the original four — they *deepen
 | Anthropic is the defensive choice, not the aggressive one | Stainless acquisition + 4.6/4.7 cadence + KPMG anchor + Q2 profitability = the most-defensible vendor position in the market | **Strengthened** — vendor-bet risk is at its lowest point YTD |
 | Drucker frame is the operating taxonomy | Top-10 exposed-occupations list maps cleanly onto the measurer cluster | **Strengthened with empirical evidence** — cite [[observed-exposure-ai-labor-measure]] alongside the Cloudflare op-ed when explaining the frame |
 | Differentiation risk is *increasing* (substrate is the moat, not "doing AI") | Google's I/O moves + Anthropic's Stainless / Code-with-Claude moves = the substrate is now the contested frontier, not the model | **Heightened urgency** — the next 6-12 months are when Janus needs to ship substrate work that redeems the head-start |
+
+## Update — 2026-05-31: Block names the architecture publicly
+
+[[2026-03-31-block-from-hierarchy-to-intelligence|Block's "From Hierarchy to Intelligence" essay]] (Sequoia-introduced, Block-authored, ingested 2026-05-31 — published earlier in 2026 and surfaced now via the inbox; full read at [[2026-05-31-block-intelligence-not-hierarchy]]) is the first Fortune-500-scale company to publicly articulate the org-design corollary of the [[organisational-digital-twin]] thesis the AIO has been building under. The essay names a four-component company architecture — **capabilities**, **company world model**, **customer world model**, **intelligence layer**, **interfaces** — that maps onto the [[coordination-leverage-model|Coordination Leverage Model]] one-for-one. The org-design corollary they draw is identical to Cloudflare's and JPMorgan's: *"There is no need for a permanent middle management layer. Everything else the old hierarchy did, the system coordinates."* Block normalises down to three roles — **ICs**, **DRIs (Directly Responsible Individuals)**, and **player-coaches**.
+
+### Why it deepens the brief
+
+1. **External validation of the digital-twin substrate naming.** Block calls it the "company world model"; Janus calls it the [[organisational-digital-twin|organisational digital twin]]. Same concept, different vocabulary — Block's pairing of company world model + customer world model is the cleanest external articulation surfaced to date. Cite Block alongside Cloudflare/JPMorgan when introducing the substrate framing to risk-sensitive Janus audiences.
+2. **The "edge" framing is a useful addition.** Block: *"In a conventional company, the intelligence is spread throughout the people and the hierarchy routes it. In this model, the intelligence lives in the system. The people are on the edge."* The edge is where humans contribute *"intuition, opinionated direction, cultural context, trust dynamics, the feeling in a room … especially ethical decisions, novel situations, and high-stakes moments."* More compact than the builders-sellers-measurers frame for explaining what humans still do post-restructuring; complements rather than replaces Drucker.
+3. **The compounding-signal lens reinforces the Prime Radiant compounding-knowledge thesis.** Block: *"What does your company understand that is genuinely hard to understand, and is that understanding getting deeper every day?"* — the same question Prime Radiant exists to answer for Janus.
+4. **It's the fifth Fortune-500-scale public signal in 10 days** (Cloudflare, JPMorgan, KPMG, StanChart, Block). The "early-adopter signalling → consensus restructuring narrative" threshold the brief was watching for has effectively been crossed. The differentiation risk above sharpens accordingly.
+
+### Net update to the AIO bets (after Block)
+
+| Bet | Block's effect |
+|---|---|
+| Agentic-lean is consensus, not differentiated | **Confirmed at fifth signal**; Block writes that *"every company will eventually need to confront the same question we did"* |
+| Anthropic is the defensive choice, not the aggressive one | No direct effect (Block doesn't disclose vendor stack) — but Block's intelligence-layer composition framing is multi-vendor-friendly, which aligns with [[stack-composition-framework]] |
+| Drucker frame is the operating taxonomy | **Complemented, not replaced**, by Block's IC / DRI / player-coach trichotomy. The edge framing adds vocabulary, not contradiction. |
+| Differentiation risk is increasing — the substrate is the moat | **Sharpened**: Block has *publicly committed* to the same architecture Janus is operating. The window in which "early and clean" is differentiating shortens further. |

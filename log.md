@@ -2247,3 +2247,41 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - index updated: 3 new pulse entries inserted in §Pulse section.
 - carry-forward queue prepared for next lint (9 items; see §"Carry-forward queue").
 - ingest counter reset: now 0 since last lint.
+
+## [2026-05-31 18:28] ingest | 2026-05-26-bloomberg-bankers-claude-cost | article
+- filed source: sources/articles/2026-05-26-bloomberg-bankers-claude-cost.md (Bloomberg Opinion; Lionel Laurent; 2026-05-26)
+- created: pulse/2026-05-31-ai-cost-pressure-in-house-model-shift.md
+- updated:
+  - entities/vendors/claude.md — new "Cost trajectory — Bloomberg read" section (tens-of-thousands → several million per firm trajectory; in-house-model shift; "not every task needs a frontier model" framing). Sources list extended.
+  - entities/vendors/anthropic.md — added "IPO target date sharpened" bullet (October 2026 first specific calendar marker) + "Pricing-power signal" bullet under Commercial trajectory section. Sources list extended.
+- escalated: none
+- attribution: all attributions to named people (Christopher Tozzi quote; StanChart's Bill Winters cautionary line) come directly from the Bloomberg byline with quote marks; no Fireflies-only attribution involved.
+- notes: filing precedent from 2026-05-25 batch followed — moved directly from inbox/ to sources/ via `mv` rather than copy-to-.processed/. Pending curator decision per the 2026-05-25 lint finding. Article is opinion, not reporting — pulse confidence set to **medium** for that reason. Article also reinforces existing Anthropic IPO/profitability claims already on the wiki from the 2026-05-21 batch.
+
+## [2026-05-31 18:28] ingest | 2026-03-31-block-from-hierarchy-to-intelligence | article
+- filed source: sources/articles/2026-03-31-block-from-hierarchy-to-intelligence.md (Block, Sequoia-introduced; published 2026-03-31, surfaced via inbox 2026-05-31)
+- created: pulse/2026-05-31-block-intelligence-not-hierarchy.md
+- updated:
+  - briefs/ai-native-enterprise-restructuring.md — new "Update — 2026-05-31: Block names the architecture publicly" section. Block becomes the fifth Fortune-500-scale public signal in 10 days; consensus-restructuring threshold effectively crossed; differentiation-risk row in the net-update table sharpened. Sources + related lists extended.
+  - concepts/organisational-digital-twin.md — new "External validation — Block" section. Block's company-world-model + customer-world-model + intelligence-layer architecture maps onto this concept one-for-one; "edge" framing added as complement to builders-sellers-measurers. Sources + related lists extended.
+- escalated: none — Block is a signal source, not a Janus vendor / client / partner. Per CLAUDE.md §2 (entities/vendors/ is "AI tools, SaaS vendors, services we evaluate or use"), external companies that surface only as signal sources do not get vendor pages. The signal is captured via pulse + brief + concept updates.
+- attribution: essay byline is "Block" (Sequoia-introduced); no individual attribution made beyond what the essay itself does (which is none — Block speaks as the company).
+- notes: this is the highest-signal of the three articles ingested this session. The "company world model" / "customer world model" / "intelligence layer" / "edge" vocabulary lands cleanly enough on the AIO frame that it warrants absorbing into outbound positioning — flagged in the brief and concept updates. Caveat noted in the pulse: Block's essay is forward-looking ("we are in the early stages"); architecture is what they intend to operate, not necessarily what they operate today. Pulse confidence is high because the framing it confirms is already mature on the AIO wiki — Block adds external corroboration rather than novel claims.
+
+## [2026-05-31 18:28] ingest | 2026-05-19-nyt-google-winning-ai-race | article
+- filed source: sources/articles/2026-05-19-nyt-google-winning-ai-race.md (NYT; Brian X. Chen; 2026-05-19)
+- created: none
+- updated:
+  - pulse/2026-05-19-google-io-2026-agents-as-product.md — new "Consumer-reach corroboration — NYT" section. The NYT piece pairs with the existing Every / Context Window I/O coverage: same week, developer-platform-angle (Every) + consumer-distribution-angle (NYT). New data points: 900M Gemini MAU; 30× less Claude web traffic (consumer chatbot, not API); Apple Siri integration confirmed for distribution scale; Q1 2026 ad revenue +16% to $77B; 90% AI Overviews accuracy per NYT analysis. Sources list extended.
+  - entities/vendors/google-cloud.md — new "Consumer reach — NYT read" section before Posture. Sources list extended.
+  - entities/vendors/claude.md — "Competitive context — May 2026" section augmented with NYT data: 30× less Claude/Gemini consumer traffic; positioning sharpened — "Claude is the enterprise-AI choice; Gemini is the consumer-AI choice; both can be right." Sources list extended.
+- escalated: none
+- attribution: all attributions (Gary Rivlin quote; Carolina Milanesi quote) come from the NYT byline; no Fireflies-only attribution involved.
+- notes: pulse was already filed under 2026-05-19-google-io-2026-agents-as-product from the 2026-05-23 batch; this ingest extends that existing pulse rather than creating a new dated pulse, because the NYT piece is the same news week from a different angle. The 30×-less-Claude-traffic data point is the most concretely useful new metric — folded into the Claude vendor page as competitive context. Filing precedent from 2026-05-25 batch followed for inbox-to-sources mv.
+
+## [2026-05-31 18:28] ingest-counter | session summary
+- ingests this session: 3 (all single-article ingests; unrelated themes → 3 separate log entries per §5.1 batch rule)
+- ingest counter since last lint (2026-05-25): 3
+- lint trigger (10) not yet reached.
+- inbox/.processed/ discipline: continued the 2026-05-25 precedent of direct `mv` from inbox/ to sources/ (not copy-to-.processed/). Lint will continue to flag this until codified in CLAUDE.md.
+- git ops: deferred — Cowork cannot do git operations on this mount per [[feedback_git_via_claude_code]] memory; commit + push to be run from Michael's vault-directory Claude Code.

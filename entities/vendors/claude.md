@@ -3,11 +3,11 @@ type: vendor
 title: Claude (Anthropic product family)
 slug: claude
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-05-31
 departments: [ai-office, engineering]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, anthropic-building-effective-agents, claude-managed-agents-launch, claude-managed-agents-quickstart, claude-managed-agents-scaling, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, claude-code-routines, claude-code-prompt-caching-lessons, claude-code-limits-harness-pawelhuryn, himanshustwts-claude-code-memory-architecture, jehad-vault-claude, 2026-05-19-kpmg-claude-alliance, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents]
+sources: [karpathy-llm-wiki, anthropic-building-effective-agents, claude-managed-agents-launch, claude-managed-agents-quickstart, claude-managed-agents-scaling, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, claude-code-routines, claude-code-prompt-caching-lessons, claude-code-limits-harness-pawelhuryn, himanshustwts-claude-code-memory-architecture, jehad-vault-claude, 2026-05-19-kpmg-claude-alliance, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-05-19-nyt-google-winning-ai-race, 2026-05-26-bloomberg-bankers-claude-cost]
 related: [anthropic, llm-wiki, janus-prime-radiant-build, agent-memory, agent-harness, agent-skills, model-context-protocol, 2026-05-06-skills-stay-as-skills-not-plugins, ai-native-enterprise-restructuring, claude-code]
 ---
 
@@ -59,6 +59,12 @@ Strategic implication for Janus's Claude-first stack: a Big-Four firm running a 
 ## Competitive context — May 2026
 
 The same week as Code with Claude, Google ran **I/O 2026** with **Gemini 3.5 Flash** (claimed Opus-4.7-class intelligence at 4× speed and half the cost), **Antigravity 2.0** (Cowork/Managed-Agents competitor on the desktop), and **Gemini Spark** (24/7 cloud personal agent). See [[2026-05-19-google-io-2026-agents-as-product]]. The Claude-vs-Gemini competitive surface is now most acute on (a) the price-performance frontier for fast routine inference, (b) the desktop-agent-orchestration platform, and (c) consumer ambient agents. Janus's posture is unchanged — Claude-first for AIO and engineering — but watch-for items below now include direct Google moves.
+
+Updated 2026-05-31: NYT's *How Google Is Starting to Win the A.I. Race* ([[2026-05-19-nyt-google-winning-ai-race]]) reports **Gemini at ~900M regular users vs ~30× less estimated web traffic for Claude** — the consumer-chatbot gap is now an order of magnitude. The NYT framing names Claude as *"more focused on business customers"*. That positioning is consistent with the [[2026-05-19-kpmg-claude-alliance|KPMG alliance]] and Q2 enterprise trajectory: Anthropic isn't chasing consumer ambient agents head-on against Gemini; the enterprise-and-developer beachhead is where Claude is differentiated. Worth absorbing into outbound Janus positioning — "Claude is the enterprise-AI choice; Gemini is the consumer-AI choice; both can be right" is more defensible than implying Claude is winning a race it's not in.
+
+## Cost trajectory — Bloomberg read (added 2026-05-31)
+
+Bloomberg Opinion (Lionel Laurent, 2026-05-26; [[2026-05-26-bloomberg-bankers-claude-cost]]) reports per-firm Claude bills *"on track to rise from tens of thousands of dollars for a single firm to several million"* among European financial-services customers, driven by compute-supply constraints (H100 spot price rising even after Anthropic's SpaceX capacity deal). Laurent quotes Christopher Tozzi: *"Not every task needs a frontier model."* The piece reports financial-services customers experimenting with **in-house models for non-frontier tasks** — a posture the AIO already operates under via [[stack-composition-framework]] and [[tool-tiers]]. For Janus's current spend profile this is a watch-for, not a blocker: the pressure window for Janus is later than for tier-1 banks, but the discipline of *not* defaulting to frontier-class inference for every task is the right posture to enter the window with. Full read at [[2026-05-31-ai-cost-pressure-in-house-model-shift]].
 
 ## Watch for
 
