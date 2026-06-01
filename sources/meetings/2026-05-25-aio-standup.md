@@ -92,7 +92,7 @@ AIO working session on 25 May 2026 (~87 minutes). Confirmed participants by name
 
 ## Issues / Warnings
 
-- **"Anti-gravity" tool name uncertain:** Referenced ~10 times in transcript as an AI product/IDE compared to Cowork. Name is likely a Fireflies transcription artefact of another product. No AIR entry created — flagged for Michael to confirm the actual product name before registry entry.
+- **"Anti-gravity" tool name — RESOLVED (1 June 2026):** Confirmed as AIR-34 (Google Antigravity), which has been in the registry since February 2026 (status: Sandbox). The product Michael calls "anti-gravity" throughout the 25 May and 1 June standups is Google Antigravity — a Gemini-based desktop IDE/agent with MCP + skills support. Jehad migrated 68 skills to it (confirmed 1 June). No new AIR entry needed — AIR-34 covers it.
 - **Engineering hire parent item:** Created as new parent `2939688504` on the Planned Automations group since no existing hiring-related AIO parent existed.
 - **Bonaventure 3pm meeting:** This was a same-day meeting (3pm 25 May). No Monday item created since it was a scheduled meeting, not a trackable task — outcome to be captured in next standup.
 - **AIO IT Meeting 21 May** (`01KS5413DKXPT58X77XQMRE629`, ~54 min): Flagged as unprocessed across multiple standup files. Separate standup run required.
