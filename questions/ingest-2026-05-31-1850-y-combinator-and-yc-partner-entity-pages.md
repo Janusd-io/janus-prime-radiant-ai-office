@@ -5,7 +5,7 @@ slug: ingest-2026-05-31-1850-y-combinator-and-yc-partner-entity-pages
 created: 2026-05-31
 updated: 2026-05-31
 departments: [ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 related: [recursive-self-improving-loop, 2026-05-31-yc-formalises-self-improving-company-playbook, gbrain, 2026-05-22-gbrain-yc-tan-memory-layer]
 ---
@@ -79,3 +79,12 @@ The cleanest single resolution:
 3. **Retroactively update** the new pulse, the new concept, and `entities/vendors/gbrain.md` to use `[[wikilinks]]` once the pages exist.
 
 Estimated work: ~20 minutes if approved as a single change.
+
+## Resolution (2026-06-01)
+
+**Resolved — three `entities/people/` pages created** (per the proposed resolution shape, Option 1 for Decisions 2 + 3; YC org deferred per Decision 1):
+- [[diana-hu]] — `entities/people/diana-hu.md` — YC Partner; AI-as-OS + closed-loop framing load-bearing on [[recursive-self-improving-loop]] and [[organisational-digital-twin]].
+- [[tom-blomfield]] — `entities/people/tom-blomfield.md` — YC General Partner; Monzo co-founder; five-part self-improving loop load-bearing in [[recursive-self-improving-loop]] and [[ai-native-enterprise-restructuring]].
+- [[garry-tan]] — `entities/people/garry-tan.md` — YC President; [[gbrain]] markdown-first agent memory layer; load-bearing in [[2026-05-22-gbrain-yc-tan-memory-layer]].
+
+YC organisation page deferred per the Decision 1 reasoning — no Janus–YC direct interaction, partner count still at 3. Retroactive wikilink updates in pulse/concept pages deferred to next lint pass.

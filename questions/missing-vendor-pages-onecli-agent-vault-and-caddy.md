@@ -5,7 +5,7 @@ slug: missing-vendor-pages-onecli-agent-vault-and-caddy
 created: 2026-05-24
 updated: 2026-05-24
 departments: [ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 related: [nanoclaw, nanoclaw-prime-radiant-wiring, hostinger, 2026-05-18-nanoclaw-as-personal-ai-coa-candidate]
 ---
@@ -66,3 +66,11 @@ Michael's call on:
 1. Option 1 (both stubs now) vs option 2 (OneCLI now, Caddy deferred).
 2. Vendor vs concept categorisation for OneCLI (vendor is the leaning).
 3. AIR triage for OneCLI (probably yes; could inherit much of AIR-103's Gate 1 logic).
+
+## Resolution (2026-06-01)
+
+**Resolved — Option 1 executed (both stubs now).** Pages created per the recommendation:
+- [[onecli-agent-vault]] — `entities/vendors/onecli-agent-vault.md` — credential vault + outbound HTTP proxy; NanocoAI vendor; AIR triage recommended (not yet in AIR). Architecture, Janus deployment status, and operational gotchas documented.
+- [[caddy]] — `entities/vendors/caddy.md` — open-source reverse proxy with automatic HTTPS; AIR-133 (Sandbox); planned for NanoClaw Hostinger deployment (Monday 2931866304).
+
+Both categorised as `vendor` (separate shipping products with maintainers + versioning).

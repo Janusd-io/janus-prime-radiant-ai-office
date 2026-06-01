@@ -84,7 +84,9 @@ If Principle 10 is ratified, two follow-up framework questions surface:
 
 ## Status
 
-Awaiting Michael's decision after the [[singapore-monitoring-frame-audit-2026-05]] audit runs. Target resolution: end of 2026-W22.
+**Overdue (as of 2026-06-01).** Target was end of 2026-W22 (week of 26 May); we are now in W23. The [[singapore-monitoring-frame-audit-2026-05]] project file exists (created 2026-05-22) but the audit output — `pulse/2026-05-29-singapore-monitoring-frame-audit.md` — has not been filed. The experiment was a ~1 working day commitment from Michael.
+
+**Next step:** Michael to run the audit (Steps 1–4 per the project brief) and file the pulse entry. Once that exists, the Principle 10 ratification decision (Outcome A/B/C) follows immediately. This question stays `active` until the pulse entry is filed and Michael makes the call.
 
 ## Related
 

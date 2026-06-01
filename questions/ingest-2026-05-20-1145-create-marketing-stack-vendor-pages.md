@@ -5,7 +5,7 @@ slug: ingest-2026-05-20-1145-create-marketing-stack-vendor-pages
 created: 2026-05-20
 updated: 2026-05-20
 departments: [ai-office, marketing, it-ops]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting]
 related: [agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, janus-crm-selection, singapore-launch]
@@ -58,3 +58,14 @@ The writeup also analyses *rejected* vendors at length: Sanity, Contentful, Payl
 ## Status
 
 Awaiting Michael's confirmation. No action taken yet.
+
+## Resolution (2026-06-01)
+
+**Resolved — all 5 vendor entity pages created.** Pages created as stubs with Stack Composition Framework scoring from the [[agentic-lean-marketing-stack]] brief and AIR IDs from the source writeup:
+- [[cosmic]] — `entities/vendors/cosmic.md`
+- [[attio]] — `entities/vendors/attio.md`
+- [[vercel]] — `entities/vendors/vercel.md`
+- [[cloudflare]] — `entities/vendors/cloudflare.md`
+- [[cookiebot]] — `entities/vendors/cookiebot.md`
+
+All pages carry Stack Composition scoring, AIR IDs, role-in-Janus-stack, and watch-for items. Operational details will accrete with subsequent ingest as each vendor moves through the marketing build.

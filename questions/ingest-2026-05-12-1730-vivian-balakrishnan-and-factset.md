@@ -6,7 +6,7 @@ created: 2026-05-12
 updated: 2026-05-12
 departments: [ai-office, office-of-ceo, marketing]
 owner: michael-bruck
-status: active
+status: resolved
 sources: [2026-05-12-bonaventure-ai-native-call]
 related: [bonaventure-wong, ai-native-janus-positioning, 2026-05-12-singapore-as-lead-market, 2026-05-12-vivian-balakrishnan-llm-wiki-government, singapore-news-monitoring]
 ---
@@ -75,3 +75,7 @@ Michael — over to you. Once approved I'll create both pages and link them back
 - ⏳ FactSet vendor page still not created. The escalation reasoning (≥2 inbound references; vendor with AI/MCP/API integration; relevant to Singapore news monitoring) still holds. Re-scoping the question to FactSet only.
 
 Question stays `status: active` for the FactSet half. Re-name on next iteration if useful.
+
+## Resolution (2026-06-01)
+
+**Resolved — `entities/vendors/factset.md` created.** Page created from the content in this escalation (the 12 May Bonaventure call evidence + Michael's commentary on AIR history with Connor). AIR gate-stage confirmation still pending — the page notes the gap. Both halves of this escalation now closed.
