@@ -20,6 +20,10 @@ Hub for the `/janus-brain` Claude Code skill — the installer + orchestration l
 
 Replace the Drive-era Prime Radiant substrate (decommissioned per [[2026-05-13-github-canonical-prime-radiant-substrate]]) with a Git-backed, one-vault-per-department model where each employee runs `/janus-brain` once and ends up with `~/janus/prime-radiant/` cloned from their dept's repo, per-person content scaffolded at `people/<slug>/`, and meetings rendered in the [[standup]] digest schema. Success = every Janus employee can self-enroll into the canonical 13-dir layout without manual intervention.
 
+## Status — 2026-06-01
+
+- **v2.0 autopilot shipped** — quick mode (5 min) + background fill via twice-daily sync + model routing (haiku/sonnet/opus) for ~70% token reduction. Three modes: `quick` (first run, 30–50k tokens), `background-fill` (per sync fire, 100–150k tokens), `steady-state` (queue drained, 20–50k tokens). Pre-consent config at `~/.config/janus-brain/autopilot.yaml`. PR `feat/v2-autopilot` open against `main`.
+
 ## Status — 2026-05-25
 
 - Templates at v1.3.0 on both production (`Janus-com`) and sandbox (`Janusd-io`).
