@@ -3,7 +3,7 @@ type: project
 title: Janus Brain Bootstrap
 slug: janus-brain-bootstrap
 created: 2026-05-14
-updated: 2026-05-25
+updated: 2026-06-01
 status: active
 owner: jehad-altoutou
 captured_by: jehad-altoutou
@@ -47,6 +47,8 @@ This page is a hub — atomic decision records live in `decisions/`. Major calls
 - Canonical 13-dir layout amendment (2026-05-22) — walked back from over-pruned v1.0.0 template; restored `lessons/pulse/questions/briefs/entities/inbox/sources/` as canonical alongside the original six.
 - Production org is `Janus-com` (2026-05-22) — `Janusd-io` reserved as AI Office sandbox.
 - Vault-root `sources/` standardized (2026-05-22) with `articles/meetings/misc/linear/monday/notion/` subfolders; `meetings/` is an auto-emitted wikilink hub embedding canonical per-person meetings.
+- **CLAUDE.md v1.4 promotion** (2026-06-01) — promote AIO's mature v0.13 dept rulebook (~510 lines: four-graph framing, three-layer architecture, per-source ingest rules, attribution discipline, brief shape, lint cadence) to the canonical dept template. Genericized via `{{DEPT_DISPLAY}}` / `{{DEPT_SLUG}}` / `{{CURATOR_NAME}}` / `{{CURATOR_SLUG}}` placeholders that `bootstrap-dept-vault.sh` substitutes at enrollment time. Both template repos bumped to v1.4.0 via squash-merged PRs; Andrew's Marketing CLAUDE.md replaced in-place (was the lean v1.3 default, no Marketing customizations to preserve). AIO's own CLAUDE.md is NOT auto-aligned — it's the lead vault and is strictly richer than the generic template.
+- **Twice-daily auto-sync** (2026-06-01) — replaces the single-fire daily schedule. macOS launchd plist now carries an `<array>` of `<dict>` `StartCalendarInterval` entries; Windows Task Scheduler gets two `-Daily` triggers. Default fires at **12:00 + 17:00 in the employee's LOCAL time** (lunchtime + end-of-day catch-up) — both surfaces interpret against the local clock so Dubai / Singapore / London teammates all get the same shape without timezone config. Override via `install.sh --install-auto-sync --times "HH:MM,HH:MM"` (macOS) or `install.ps1 -InstallAutoSync -Times @('HH:MM','HH:MM')` (Windows). Migration for existing users: `--uninstall-auto-sync && --install-auto-sync`.
 
 ## Architecture
 
