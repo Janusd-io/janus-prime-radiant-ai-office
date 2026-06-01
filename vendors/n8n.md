@@ -5,14 +5,17 @@ slug: n8n
 air_id: AIR-19
 status: Sandbox
 labels: [Core Infrastructure, AI Policy, Technology]
-departments: []
+departments: [ai-office, engineering]
 url: https://linear.app/janusd/issue/AIR-19/n8n
 created: 2026-02-25
-updated: 2026-04-21
+updated: 2026-05-14
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
+confidence: medium
+related: [hostinger, monday, 2026-04-22-self-host-n8n-on-hostinger, 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins, 2026-04-23-monday-hostinger-notion-stack-adopted]
+migrated_from: entities/vendors/n8n.md
 ---
 <!-- jb:air-vendor-callout -->
 > Part of [[ai-registry|AI Registry]]
@@ -64,3 +67,33 @@ Open-source workflow automation platform. Workflow backbone of Janus AI Office i
 Automation engine tying together Janus AI infrastructure. Powers standup processing pipeline (Fireflies → N8N → Notion + Linear), meeting transcript analysis, cross-system sync, scheduled reporting. Self-hosting keeps workflow data within Janus-controlled infrastructure — critical for meeting transcripts and internal data.
 
 *Deployed to AI Policy and Technology. Core Infrastructure tier. Self-hosted on Hostinger VPS (AIR-79); migrated from GCP on 20 Apr 2026.*
+
+## Merged from `entities/vendors/n8n.md`
+
+# n8n
+
+Open-source workflow automation platform (Zapier-style). Self-hosted at Janus per the 2026-04-22 decision to self-host on [[hostinger]] rather than [[google-cloud|GCP]] — the per-trigger metering complexity of GCP was the trigger; n8n on Hostinger keeps automation costs predictable.
+
+## Janus use
+
+- Workflow glue for ingestion pipelines feeding the AI Office (Fireflies → Monday → wiki).
+- Part of the three-tool stack adopted on 2026-04-23: [[monday]] (ops SoR) + [[hostinger]] (self-host substrate, including n8n) + [[notion]] (docs).
+
+## Posture
+
+Workflow automation isn't an AI tool (per the 2026-05-06 taxonomy decision — see [[2026-05-06-ai-tool-taxonomy-scope-policy]]), but n8n's role in stitching together AI tooling (webhook receivers for Fireflies, scheduled triggers for ingest jobs) makes it load-bearing operational plumbing. Retained where the work is plumbing; superseded by purpose-built [[agent-skills|Claude skills]] where the work is AI-shaped.
+
+## Merged from `entities/vendors/n8n.md`
+
+# n8n
+
+Open-source workflow automation platform (Zapier-style). Self-hosted at Janus per the 2026-04-22 decision to self-host on [[hostinger]] rather than [[google-cloud|GCP]] — the per-trigger metering complexity of GCP was the trigger; n8n on Hostinger keeps automation costs predictable.
+
+## Janus use
+
+- Workflow glue for ingestion pipelines feeding the AI Office (Fireflies → Monday → wiki).
+- Part of the three-tool stack adopted on 2026-04-23: [[monday]] (ops SoR) + [[hostinger]] (self-host substrate, including n8n) + [[notion]] (docs).
+
+## Posture
+
+Workflow automation isn't an AI tool (per the 2026-05-06 taxonomy decision — see [[2026-05-06-ai-tool-taxonomy-scope-policy]]), but n8n's role in stitching together AI tooling (webhook receivers for Fireflies, scheduled triggers for ingest jobs) makes it load-bearing operational plumbing. Retained where the work is plumbing; superseded by purpose-built [[agent-skills|Claude skills]] where the work is AI-shaped.

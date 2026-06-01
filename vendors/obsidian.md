@@ -5,14 +5,18 @@ slug: obsidian
 air_id: AIR-74
 status: Sandbox
 labels: [Functional, AI Policy, Technology]
-departments: []
+departments: [ai-office]
 url: https://linear.app/janusd/issue/AIR-74/obsidian
 created: 2026-04-07
-updated: 2026-05-08
+updated: 2026-05-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
+confidence: high
+sources: [karpathy-llm-wiki]
+related: [llm-wiki, janus-prime-radiant-build]
+migrated_from: entities/vendors/obsidian.md
 ---
 <!-- jb:air-vendor-callout -->
 > Part of [[ai-registry|AI Registry]]
@@ -57,3 +61,33 @@ Local-first, Markdown-based KM and note-taking application. Originally evaluated
 * Notion — complementary; Obsidian is local Markdown layer, Notion remains collaborative database
 
 *Status note (8 May 2026): Promoted from Evaluating → Sandbox reflecting heavy active use across AI Office.*
+
+## Merged from `entities/vendors/obsidian.md`
+
+# Obsidian
+
+Local-first markdown editor and notes app. Operates over a folder of plain `.md` files; supports double-bracket wikilink syntax for cross-page references, YAML frontmatter, a graph view, and a plugin ecosystem (Dataview, Web Clipper, etc.).
+
+## Use in this wiki
+
+The browsing/editing interface for the [[llm-wiki]]. Per Karpathy's framing: Obsidian is the IDE, the LLM is the programmer, the wiki is the codebase.
+
+Relevant Obsidian features for this setup:
+- **Web Clipper** — Karpathy's recommended ingest path for articles; will replace Mivory once configured.
+- **Graph view** — visualises wiki shape; surfaces hubs and orphans during lint.
+- **Dataview** — queries YAML frontmatter to render filtered tables (e.g., "all vendors with `confidence: high` in `departments: ai-office`").
+
+## Merged from `entities/vendors/obsidian.md`
+
+# Obsidian
+
+Local-first markdown editor and notes app. Operates over a folder of plain `.md` files; supports double-bracket wikilink syntax for cross-page references, YAML frontmatter, a graph view, and a plugin ecosystem (Dataview, Web Clipper, etc.).
+
+## Use in this wiki
+
+The browsing/editing interface for the [[llm-wiki]]. Per Karpathy's framing: Obsidian is the IDE, the LLM is the programmer, the wiki is the codebase.
+
+Relevant Obsidian features for this setup:
+- **Web Clipper** — Karpathy's recommended ingest path for articles; will replace Mivory once configured.
+- **Graph view** — visualises wiki shape; surfaces hubs and orphans during lint.
+- **Dataview** — queries YAML frontmatter to render filtered tables (e.g., "all vendors with `confidence: high` in `departments: ai-office`").

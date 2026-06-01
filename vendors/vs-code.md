@@ -5,14 +5,17 @@ slug: vs-code
 air_id: AIR-15
 status: Production
 labels: [AI Policy, Technology, Functional]
-departments: []
+departments: [ai-office, engineering]
 url: https://linear.app/janusd/issue/AIR-15/vs-code
 created: 2026-02-25
-updated: 2026-04-06
+updated: 2026-05-06
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
+confidence: high
+related: [michael-bruck, zed]
+migrated_from: entities/vendors/vs-code.md
 ---
 <!-- jb:air-vendor-callout -->
 > Part of [[ai-registry|AI Registry]]
@@ -53,3 +56,23 @@ Microsoft's free, open-source code editor — most widely used IDE in the world.
 Foundational development tool. Serves as the IDE within which Claude Code, [[gemini|Gemini]] CLI, and other AI coding tools operate. Zero licensing cost, fully extensible.
 
 *Standard development tool for Technology and AI Policy. Functional tier.*
+
+## Merged from `entities/vendors/vs-code.md`
+
+# Visual Studio Code
+
+Microsoft's open-source code editor. Extension ecosystem includes GitHub Copilot, Continue, Cline, and direct Claude / OpenAI integrations.
+
+## Use at Janus
+
+One of Michael's two primary editors (alongside [[zed]]). Used for general development, scripting, and any text editing not better served by Obsidian (the [[llm-wiki]] interface).
+
+## Merged from `entities/vendors/vs-code.md`
+
+# Visual Studio Code
+
+Microsoft's open-source code editor. Extension ecosystem includes GitHub Copilot, Continue, Cline, and direct Claude / OpenAI integrations.
+
+## Use at Janus
+
+One of Michael's two primary editors (alongside [[zed]]). Used for general development, scripting, and any text editing not better served by Obsidian (the [[llm-wiki]] interface).

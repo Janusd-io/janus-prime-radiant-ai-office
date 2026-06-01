@@ -5,14 +5,18 @@ slug: hostinger
 air_id: AIR-79
 status: Sandbox
 labels: [Technology, AI Office Infrastructure, Core Infrastructure]
-departments: [ai-office]
+departments: [it-ops, ai-office]
 url: https://linear.app/janusd/issue/AIR-79/hostinger
 created: 2026-04-20
-updated: 2026-04-22
+updated: 2026-05-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
+confidence: medium
+sources: [aio-2026-05-06]
+related: [linear, ai-tool-evaluation, 2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins, google-cloud]
+migrated_from: entities/vendors/hostinger.md
 ---
 <!-- jb:air-vendor-callout -->
 > Part of [[ai-registry|AI Registry]]
@@ -81,3 +85,43 @@ April GCP pilot exposed opaque, non-forecastable unit costs (egress, per-request
 Pragmatic compromise between full hyperscaler sprawl (GCP/AWS) and back-of-napkin side project. For 30-person AI Office needing to host N8N, NemoClaw, LLAMA, future SaaS pilots — but no DevOps team — Hostinger flat pricing and one-click deploys remove "become DevOps engineer first" tax that hit Jehad on GCP. Official API + MCP server means [[claude|Claude]] can drive VPS lifecycle programmatically.
 
 *Moved to Evaluating 20 Apr 2026 following reversal of 17 Apr GCP hosting decision. Promoted to Sandbox 22 Apr.*
+
+## Merged from `entities/vendors/hostinger.md`
+
+# Hostinger
+
+Web hosting and infrastructure provider. At Janus, in active use — auto-promoted from Evaluation → Sandbox in Linear AIR by the standup skill v3.12 on 2026-05-06 upon noticing active use. The auto-promotion was cited in [[aio-2026-05-06]] as validation that the sub-skill orchestration design works.
+
+## Status
+
+- **Linear AIR stage:** Sandbox (as of 2026-05-06)
+- **Classification:** Infrastructure (vs Tool) per the [[ai-tool-evaluation]] Tool/Infrastructure/Workload framework. Confirm during next gate review — Infrastructure classification has implications for which Gate 1 criteria apply.
+
+## Why Hostinger (vs the alternative)
+
+Adopted in preference to [[google-cloud|GCP]] self-hosting on metering-complexity grounds: ~$920–1,020 (Hostinger) vs ~$4,290–5,000 (GCP) for equivalent self-hosted workloads. See [[2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins]] for the full lesson — the recurring cost overhang of GCP's per-resource metering vs Hostinger's flat plan was the deciding factor.
+
+## Watch for
+
+- Gate 2 / Gate 3 evaluation outcomes if Janus moves it toward Production.
+- Workload candidates running on Hostinger — those need their own G1.2 / G1.4 evaluations per the framework.
+
+## Merged from `entities/vendors/hostinger.md`
+
+# Hostinger
+
+Web hosting and infrastructure provider. At Janus, in active use — auto-promoted from Evaluation → Sandbox in Linear AIR by the standup skill v3.12 on 2026-05-06 upon noticing active use. The auto-promotion was cited in [[aio-2026-05-06]] as validation that the sub-skill orchestration design works.
+
+## Status
+
+- **Linear AIR stage:** Sandbox (as of 2026-05-06)
+- **Classification:** Infrastructure (vs Tool) per the [[ai-tool-evaluation]] Tool/Infrastructure/Workload framework. Confirm during next gate review — Infrastructure classification has implications for which Gate 1 criteria apply.
+
+## Why Hostinger (vs the alternative)
+
+Adopted in preference to [[google-cloud|GCP]] self-hosting on metering-complexity grounds: ~$920–1,020 (Hostinger) vs ~$4,290–5,000 (GCP) for equivalent self-hosted workloads. See [[2026-04-20-gcp-self-host-metering-complexity-hostinger-simplicity-wins]] for the full lesson — the recurring cost overhang of GCP's per-resource metering vs Hostinger's flat plan was the deciding factor.
+
+## Watch for
+
+- Gate 2 / Gate 3 evaluation outcomes if Janus moves it toward Production.
+- Workload candidates running on Hostinger — those need their own G1.2 / G1.4 evaluations per the framework.
