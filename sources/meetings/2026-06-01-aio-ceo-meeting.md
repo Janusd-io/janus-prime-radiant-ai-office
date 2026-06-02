@@ -15,6 +15,19 @@ standup_skill_version: v3.23
 fireflies_id: 01KT1A9MZTFQPAMYYP2AN4SZGP
 ---
 
+## Whiteboard Diagrams
+
+Four diagrams were drawn on the Huawei board during this meeting and have been redrawn as clean SVGs:
+
+| Diagram                 | File                                                                  | What it shows                                                               |
+| ----------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| ① Data Bank             | `assets/meetings/2026-06-01-ceo-meeting/01-data-bank.svg`             | Janus as institutional data ledger — Model → Data Bank ← Customers          |
+| ② System Architecture   | `assets/meetings/2026-06-01-ceo-meeting/02-system-architecture.svg`   | GitHub (breach risk) → KB Wiki → Obsidian (JA/MB) + VPS NanoClaw, ADIA/GIC  |
+| ③ AI Pyramid            | `assets/meetings/2026-06-01-ceo-meeting/03-ai-pyramid.svg`            | Brand + FLD flanking AI Model apex, DRI middle tier, Strawberry base        |
+| ④ Data Rating Ecosystem | `assets/meetings/2026-06-01-ceo-meeting/04-data-rating-ecosystem.svg` | MRI analogy, Singapore AAA rating, DT → Audit → Edge Computer → Keppel/ADIA |
+
+---
+
 ## Clean Meeting Summary
 
 AIO × CEO working session on 1 June 2026 (~90 minutes). Confirmed participants: Michael Bruck, Bonaventure Wong, Jehad Altoutou. First CEO-level briefing on the enrollment V2 autopilot and NanoClaw architecture. Jehad demoed the 5-minute / 7-day enrollment system — Bonaventure understood and approved, confirming Lysander as the pilot. The meeting produced major direction on three fronts: (1) an AI certification training platform to be built on top of the PM knowledge base, (2) multi-messenger NanoClaw access for external third-party contractors using whatever chat platform they already use, and (3) a formal production handover gate requiring IT sign-off before Sandbox → Production in Linear. Bonaventure also articulated two strategic pillars that should anchor future AIO work: "no worker left behind" (upskilling not displacement, with a union strategy for Singapore and UK) and the "SWIFT of data" vision (data provenance as a competitive moat, charging for cross-border data movement like financial transaction fees).
