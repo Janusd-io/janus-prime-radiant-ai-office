@@ -2315,3 +2315,67 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - Curator decision on whether to propose the "close the fifth loop step" workstream as a `projects/` page.
   - Defer: Jack Dorsey tweet-thread ingest when surfaced.
   - Defer: StrongDM AI team + Mutiny research pass (Diana's named examples; would substantiate the software-factories claim).
+
+## [2026-06-02 13:40] batch-ingest | inbox sweep — 13 items, 4 duplicates, 9 unique ingested | 9 items
+- duplicates detected and discarded (moved to inbox/.processed/2026-06/):
+  - "Bankers' Love of Claude AI Carries a Heavy Price" (Bloomberg re-clip; same URL as existing 2026-05-26-bloomberg-bankers-claude-cost.md)
+  - "Anthropic's Code with Claude showed off coding's future" (MIT TR; same URL + author + date as existing 2026-05-21-mit-tech-review-code-with-claude-london.md)
+  - "Scaling Managed Agents: Decoupling the brain from the hands" (Anthropic; same URL as existing claude-managed-agents-scaling.md)
+  - "From Hierarchy to Intelligence" (Dorsey X-post URL but identical body text to existing 2026-03-31-block-from-hierarchy-to-intelligence.md). NOTE: this closes the "Jack Dorsey tweet thread" follow-up flagged in [[2026-05-31-yc-formalises-self-improving-company-playbook]] — Dorsey's X post was the essay itself, not a separate tweet thread. Worth noting on the existing Block source's frontmatter (deferred to lint).
+- filed sources (sources/articles/):
+  - 2026-05-20-bloomberg-hsbc-elhedery-ai-job-cuts.md (Bloomberg; Denise Wee; Elhedery investor seminar Hong Kong)
+  - 2026-05-29-bloomberg-samsung-ai-bonuses-korea.md (Bloomberg; Choi/Eom/Lee; Samsung Pyeongtaek bonus dispute + "AI aristocrats" framing + SK citizen-dividend proposal)
+  - 2026-05-30-wsj-brockman-openai-tough-decisions.md (WSJ; Hagey + Nelson; Brockman OpenAI president profile)
+  - 2025-12-11-philschmid-gemini-interactions-api-x.md (Philipp Schmid X post; Gemini Interactions API launch)
+  - 2026-05-20-claude-html-effectiveness-shihipar.md (Anthropic blog; Thariq Shihipar; "Using Claude Code: The unreasonable effectiveness of HTML")
+  - 2025-10-01-bustamante-rag-obituary.md (Nicolas Bustamante; Fintool; "The RAG Obituary: Killed by Agents, Buried by Context Windows")
+  - 2025-11-10-fei-fei-li-spatial-intelligence-frontier.md (Fei-Fei Li Substack; World Labs / Marble framing)
+  - 2026-arxiv-harness-updating-not-harness-benefit.md (Lin et al., Penn State / UCSC / Amazon; "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents")
+  - 2026-05-29-deeplearning-ai-the-batch-355.md (DeepLearning.AI newsletter; Andrew Ng editorial on FDE-vs-AI-Engineer + Gemini 3.5 Flash deep-dive + EU AI Act amendments + agentic-traffic report)
+- created:
+  - pulse/2026-06-02-samsung-korea-ai-capital-redistribution.md (the capital-side corollary to the labor-restructuring narrative)
+  - pulse/2026-06-02-rag-obituary-bustamante-post-retrieval-age.md (RAG-post-mortem; external validation of wiki's grep + wikilink architecture)
+  - pulse/2026-06-02-fei-fei-li-spatial-intelligence-world-models.md (World Labs / Marble; world-model vocabulary bridges org-twin to spatial-AI research; HGTFT in the same lineage)
+- updated:
+  - concepts/html-as-deliverable.md — stub → full concept page. Shihipar's Anthropic blog post (2026-05-20) is the canonical primary source for the AIO's HTML-over-Markdown stance. AIO stance now Anthropic-blessed; cite when explaining to risk-sensitive Janus audiences. Use-case catalogue + AIO instances added. Operating principle codified.
+  - concepts/retrieval-augmented-generation.md — new "Post-retrieval read — Bustamante 'RAG Obituary'" section. The wiki's grep + wikilink + agent-driven navigation architecture is now externally validated as the correct post-RAG posture. Sources + related lists extended.
+  - concepts/recursive-self-improving-loop.md — new "Academic grounding — Harness Updating Is Not Harness Benefit" section. The Lin et al. arxiv preprint formalises the loop's *Learning* step in academic vocabulary: harness-updating vs harness-benefit capabilities are *decoupled* from base capability; AIO's curator pattern (Michael = task-solving agent; lint + standup skills = evolver) aligns with paper's role-allocation guidance.
+  - vendors/openai.md — new "Pre-IPO posture — Q2 2026" section. Brockman now overseeing product across 1,500 employees; merging ChatGPT + Codex + API into super-app; **Codex 4M weekly active users (8× since Jan)**; WSJ confirms Anthropic surpassed OpenAI valuation; $30B Brockman equity disclosed in trial; $50M political donations to AI-aligned PACs. Janus posture unchanged but competitive read sharpened.
+  - pulse/2026-05-25-ai-labor-restructuring-bank-and-tech-wave.md — new "Cluster update — 2026-06-02" section. HSBC Elhedery's measured tone added as messaging-discipline counter-example to Winters. Brockman/Codex data point folded in as competitive-stack evidence. Sources + related lists extended.
+  - index.md — 3 new pulse entries inserted in §Pulse section; "Updated:" header refreshed; sweep summary recorded.
+- escalations: none directly from this batch. Existing escalation [[ingest-2026-05-31-1850-y-combinator-and-yc-partner-entity-pages]] resolved by curator since previous session (Diana Hu, Tom Blomfield, Garry Tan people pages created); retroactive wikilink-update deferred to lint per resolution note.
+- attribution discipline:
+  - All quotes attributed to named people come directly from the cited source's byline (Bloomberg, WSJ, Anthropic blog, X post, arxiv paper) — no Fireflies-only attribution.
+  - The Bloomberg "AI aristocrats" framing is attributed to Weber (former Bundesbank chief, 2025) — descriptive use of an in-circulation label, not endorsement.
+  - The Brockman WSJ piece attributes a specific quote to Sam Altman; recorded as Altman quote per byline.
+  - Diana Hu / Tom Blomfield wikilinks deferred per the resolved questions/ page — pulse + concept + brief pages still use inline naming; retroactive update will happen in the lint pass.
+- structural finding (flagged for lint pass below):
+  - **vendors/ folder migration completed since previous session.** Earlier-session edits to entities/vendors/claude.md, entities/vendors/anthropic.md, entities/vendors/google-cloud.md are now in vendors/claude.md, vendors/anthropic.md, vendors/google-cloud.md. CLAUDE.md §2 currently says canonical location is entities/vendors/ — out of sync with current state. Two-way fix: either update CLAUDE.md §2 OR move vendors/ content back into entities/vendors/. **Defer to lint.**
+  - **Duplicate-section detected in vendors/claude.md and vendors/google-cloud.md**: the "Competitive context — May 2026" section and the "Consumer reach — NYT read" section each appear *twice* in these files (artefact of the migration merging earlier-session edits with the migrated-from-jehad-vault content). Fix in lint.
+- notes:
+  - Batch-ingest because 9 items arrived in one inbox sweep as a single unit of curator-work, even though thematically distinct. The dedupe step + the structural-finding scan made one log entry the right granularity. Per §5.1: per-source entries when sources are unrelated is also a valid reading — but here the dedupe + structural findings + cluster-shaped updates favoured batch.
+  - The DeepLearning.AI newsletter is a roundup with 5+ distinct news items (Gemini 3.5 Flash deep-dive; EU AI Act amendments; agentic-traffic report; image-generation staged-planning research). Filed as a single source; cross-references to individual items left in body for downstream extraction if needed.
+  - Continued direct mv from inbox/ to sources/ for unique items; moved duplicates to inbox/.processed/2026-06/ (per CLAUDE.md §5.1 reading: ".processed/ for non-canonical originals" — duplicates are non-canonical here). Slightly different from the precedent of moving everything directly to sources/; codify in lint.
+  - Counter check: this batch = 1 entry; session total since 2026-05-25 lint = 5 entries (3 articles 2026-05-31 + 1 batch-of-2 YC 2026-05-31 + 1 batch-of-9 today). Lint trigger threshold (10) NOT yet reached strictly per the §5.3 mechanical rule — but Michael explicitly requested a lint pass this turn, and the carry-forward queue from 2026-05-25 lint per the [[project-lint-workstream-backlog]] memory is the starting point. Running lint next.
+- next:
+  - Lint pass per §5.3, starting from 2026-05-25 carry-forward queue.
+  - Defer: Andrew Ng's "AI Forward Deployed Engineer vs AI Engineer" framing as a possible new concept page (`ai-forward-deployed-engineer.md` or similar) — held until lint can assess concept-folder shape.
+  - Defer: ingest the Dorsey-tweet URL onto the existing Block source frontmatter (one-line metadata patch).
+
+## [2026-06-02 13:50] lint
+- findings: 7 carry-forward + 6 fresh = 13 total
+- report: pulse/2026-06-02-lint.md
+- scope: ~600 wiki + ~190 sources spot-checked; structural-change findings dominate
+- inline fixes: none (all findings are either curator-decision or scheduled as micro-tasks)
+- top items surfaced this lint:
+  - **vendors/ migration progressed materially** since 2026-05-25 lint — entities/vendors/ down from 37 → 8; vendors/ up from 99 → 124. De-facto canonical is now `vendors/`. CLAUDE.md §2 out of sync.
+  - **Duplicate sections** in vendors/claude.md + vendors/google-cloud.md (artefact of the migration merging earlier-session edits with jehad-vault content). Need systematic micro-task to dedupe across all migrated vendor pages.
+  - **CLAUDE.md v0.14 schema bundle now 7-8 items deep** — needs a dedicated curator session. Highest priority finding.
+  - **Two 2026-05-06 escalations now 27 days old** (4 weeks past 14d threshold). Promoted to urgent.
+  - **YC-partner wikilink updates** for Diana Hu / Tom Blomfield / Garry Tan ready to execute (the resolved escalation deferred them to this lint).
+  - **Marketing-stack vendor pages question partially closed** (5 of 5 vendors created at entities/vendors/, though not yet migrated to vendors/).
+- carry-forward queue prepared for next lint (9 items; see pulse §"Carry-forward queue").
+- ingest counter reset: now 0 since last lint.
+- notes:
+  - Lint was curator-driven, not mechanically-threshold-triggered (5 ingests since 2026-05-25 vs §5.3 threshold of 10). Per memory directive, executed carry-forward queue first.
+  - The pattern from prior lints holds: carry-forward queue continues to be where most lint value lands. Convention working as designed.

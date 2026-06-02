@@ -7,8 +7,8 @@ updated: 2026-05-31
 departments: [ai-office, engineering, office-of-ceo]
 status: active
 confidence: high
-sources: [2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, 2026-03-31-block-from-hierarchy-to-intelligence]
-related: [organisational-digital-twin, coordination-leverage-model, ai-native-enterprise-restructuring, ralph-loop-pattern, builders-sellers-measurers, ai-native-mandate, agentic-pipeline, sandbox-environment]
+sources: [2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-arxiv-harness-updating-not-harness-benefit]
+related: [organisational-digital-twin, coordination-leverage-model, ai-native-enterprise-restructuring, ralph-loop-pattern, builders-sellers-measurers, ai-native-mandate, agentic-pipeline, sandbox-environment, agent-harness]
 ---
 
 # Recursive self-improving loop
@@ -91,3 +91,26 @@ The vocabulary did not spring up at YC. The transcripts make the chain explicit:
 - **Tom Blomfield's YC talk** (2026-05-21, [[2026-05-21-yc-blomfield-self-improving-company]]) *"based a little bit off a talk Diana gave"* + Dorsey's tweets, formalises the five-part loop and drops Diana's third role.
 
 This is the canonical pattern of how Fortune-500-scale architectural framings become founder-grade playbooks: primary essay → tweet-thread distribution → accelerator distillation into a teachable batch talk. **YC's role is the propagation channel**, not the originator. Worth noting for [[ai-native-janus-positioning|Janus's positioning]] — the consensus is now propagating through founder networks, not just through enterprise-IT trade press.
+
+## Academic grounding — Harness Updating Is Not Harness Benefit (added 2026-06-02)
+
+The academic literature on the **Learning** step of this loop is starting to formalise as *"harness self-evolution."* Lin, Wu, et al. (Penn State / UC Santa Cruz / Amazon / et al., 2026; [[2026-arxiv-harness-updating-not-harness-benefit]]) propose the disentangling vocabulary the engineering discussion has been missing:
+
+- **Harness-updating capability** — a model's ability to produce *useful persistent harness updates* (skills, prompts, memories, tools) from execution evidence. Played by the **evolver** role in the loop. *"Surprisingly flat in base capability"* — Qwen3.5-9B's harness updates yield gains comparable to Claude Opus 4.6's.
+- **Harness-benefit capability** — a model's ability to *benefit from updated harnesses* during task-solving. Played by the **task-solving agent** role. *"Non-monotonic in base capability"* — mid-tier models benefit most; weak-tier models benefit least (they fail to *invoke* harness artefacts or fail to *adhere* to them once loaded); strong-tier models hit the performance ceiling.
+
+The paper's design guidance maps onto the YC five-part-loop architecture:
+
+| Paper's recommendation | What it implies for the loop's Learning step |
+|---|---|
+| *"Allocate capability budget to the task-solving agent, not the evolver"* | The Quality-Gate + Sensor steps need the strongest model; the Learning step's evolver can be cheaper. Inverts the intuitive "use the best model for everything" default. |
+| *"Bake harness invocation into agent training"* | Weak-tier models often fail to *load* the harness at all (25% load rate for Qwen3-32B vs ~96% for strong models). For AIO's purposes: the agents that *use* the AIO's skills (standup, ai-registry, ai-tool-evaluation) need strong harness-invocation discipline — not just strong base capability. |
+| *"Strengthen long-horizon instruction following"* | Weak-tier adherence decays >4× more steeply across the trajectory than strong models. Long-running AIO loops (e.g., a closed lint workflow that runs overnight) need strong models or harnesses designed for adherence-recovery. |
+
+**Implication for AIO's Learning-step build.** The proposed AIO closed-loop workflow (monitor agent watching `questions/` findings → proposes CLAUDE.md edits → review agent merges overnight) has a built-in role assignment that aligns with the paper's guidance:
+- **Monitor / evolver** = mid-tier model is fine (harness-updating is flat in base capability). Cheap operating cost.
+- **Review / task-solving agent** = strong-tier model required (harness-benefit needs ceiling-capacity for high-stakes wiki schema decisions). Higher operating cost, but justified.
+
+This is also empirical support for the wiki's existing curator-pattern: Michael (strong-tier human reasoner) at the harness-benefit / task-solving role; the wiki's lint pass + standup skill (cheaper agentic execution) at the harness-updating role. The pattern Janus has been operating under is consistent with what the paper recommends — but now there's a citation. Worth carrying into outbound positioning when explaining why AIO's substrate works.
+
+**Caveat.** The paper is preprint (2026, arxiv); evaluated on three benchmarks (SWE-bench Verified, MCP-Atlas, SkillsBench). Findings on Claude Opus 4.6 / Sonnet 4.6 / Haiku 4.5 specifically — directly relevant to Janus's stack. Treat as the strongest currently-available academic anchor for the AIO's loop-Learning-step design; expect follow-on work to refine the role-allocation guidance.

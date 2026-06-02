@@ -3,11 +3,11 @@ type: concept
 title: Retrieval-Augmented Generation (RAG)
 slug: retrieval-augmented-generation
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-06-02
 departments: [ai-office]
 confidence: high
-sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, retrieval-after-rag-turbopuffer]
-related: [agentic-ai, context-engineering, post-rag-agent-data-stack]
+sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, retrieval-after-rag-turbopuffer, 2025-10-01-bustamante-rag-obituary]
+related: [agentic-ai, context-engineering, post-rag-agent-data-stack, organisational-digital-twin, claude-code]
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -35,3 +35,18 @@ A pattern where an LLM augments its prompt by retrieving relevant chunks from an
 ## Status (as of 2026-05-06)
 
 RAG is not dead but the consensus is shifting. The interesting frontier is what replaces or augments it for agentic workloads. See [[context-engineering]] for the broader discipline that this discussion sits within.
+
+## Post-retrieval read — Bustamante "RAG Obituary" (added 2026-06-02)
+
+Nicolas Bustamante (Fintool / formerly Doctrine) published *"The RAG Obituary: Killed by Agents, Buried by Context Windows"* on 2025-10-01 ([[2025-10-01-bustamante-rag-obituary]]) — a practitioner-grade post-mortem from someone who spent three years building and scaling RAG systems. Full read at [[2026-06-02-rag-obituary-bustamante-post-retrieval-age]].
+
+The headline argument: RAG was a *"clever workaround for a context-poor era"*. Two structural changes invalidate it:
+
+1. **Context windows expanded** — Claude Sonnet 4 at 200K, Gemini 2.5 at 1M, Grok 4-fast at 2M. At 2M tokens an entire year of SEC filings for one company fits in context.
+2. **Agentic search replaces retrieval with navigation** — Claude Code's Grep + Glob + Task Agents pattern outperforms vector-embedding pipelines on code by orders of magnitude. Grep (1973) beats Elasticsearch (heavy infrastructure) for in-context exploration; the agent loads whole files, follows cross-references, and reasons about structure.
+
+Bustamante's structural failure-mode list for traditional RAG — cascading-failure pipeline (chunking → embedding → BM25 → fusion → reranking), tables-split-mid-row, semantic-search-fails-on-numbers, $0 ripgrep vs $$$ Elasticsearch — is the kind of accumulated practitioner pain that pre-Q3-2025 RAG-stack vendors don't talk about publicly.
+
+**Caveat:** Bustamante concedes hybrid search remains useful *"as a tool for agents"* for cross-corpus filtering before navigation. The piece doesn't kill "filter then navigate" — it kills "embed-and-rerank-only." The wiki's current architecture (markdown + grep + wikilink navigation + agent-driven exploration) is the discipline Bustamante endorses; the wiki has never relied on a vector store.
+
+**Implication for Prime Radiant.** The wiki's design is now externally validated as the correct architectural posture for a context-rich agent substrate. The grep + frontmatter-slicing + wikilink-navigation pattern is the same one Bustamante endorses for SEC filings. See [[organisational-digital-twin]] for the broader framing — the twin is queried via navigation, not retrieval; that's a design feature, not a limitation.
