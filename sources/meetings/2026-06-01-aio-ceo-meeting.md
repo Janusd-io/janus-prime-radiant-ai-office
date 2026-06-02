@@ -17,15 +17,27 @@ fireflies_id: 01KT1A9MZTFQPAMYYP2AN4SZGP
 
 ## Whiteboard Diagrams
 
-Four diagrams were drawn on the Huawei board during this meeting and have been redrawn as clean SVGs:
+Four diagrams were drawn on the Huawei board during this meeting and redrawn as clean SVGs. Original photos supplied by Jehad.
 
-| Diagram                 | File                                                                  | What it shows                                                               |
-| ----------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| ① Data Bank             | `assets/meetings/2026-06-01-ceo-meeting/01-data-bank.svg`             | Janus as institutional data ledger — Model → Data Bank ← Customers          |
-| ② System Architecture   | `assets/meetings/2026-06-01-ceo-meeting/02-system-architecture.svg`   | GitHub (breach risk) → KB Wiki → Obsidian (JA/MB) + VPS NanoClaw, ADIA/GIC  |
-| ③ AI Pyramid            | `assets/meetings/2026-06-01-ceo-meeting/03-ai-pyramid.svg`            | Brand + FLD flanking AI Model apex, DRI middle tier, Strawberry base        |
-| ④ Data Rating Ecosystem | `assets/meetings/2026-06-01-ceo-meeting/04-data-rating-ecosystem.svg` | MRI analogy, Singapore AAA rating, DT → Audit → Edge Computer → Keppel/ADIA |
+### ① Data Bank
+*Janus as institutional data ledger — the "SWIFT of data" commercial model*
 
+![[01-data-bank.svg|572]]
+
+### ② System Architecture
+*GitHub (breach risk) → KB Wiki → Obsidian on JA/MB laptops + VPS NanoClaw — ADIA/GIC counterparties — Singapore context*
+
+![[02-system-architecture.svg|574]]
+
+### ③ AI Pyramid
+*Brand + FLD flanking AI Model at apex — DRI (Directly Responsible Individual) middle tier — Strawberry Generation base*
+
+![[03-ai-pyramid.svg|613]]
+
+### ④ Data Rating Ecosystem
+*MRI analogy — Singapore AAA Data Rating — Digital Twin → Audit/Verified → Edge Computer → IoT sensors → ADIA/Keppel*
+
+![[04-data-rating-ecosystem.svg|613]]
 ---
 
 ## Clean Meeting Summary

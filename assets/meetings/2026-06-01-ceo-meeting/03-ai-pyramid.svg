@@ -1,0 +1,33 @@
+<svg viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" role="img" style="background:#0f1117">
+  <title>AI Pyramid — CEO Meeting 1 June 2026</title>
+  <desc>Pyramid model: AI Model at apex, Brand and Field flanking, DRI (Directly Responsible Individual) in middle tier, Strawberry Generation at the base.</desc>
+  <rect width="700" height="430" fill="#0f1117"/>
+  <!-- Pyramid outline -->
+  <polygon points="350,38 645,368 55,368" fill="none" stroke="#475569" stroke-width="2"/>
+  <!-- Tier dividers -->
+  <line x1="200" y1="205" x2="500" y2="205" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="138" y1="296" x2="562" y2="296" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <!-- Apex: AI MODEL -->
+  <ellipse cx="350" cy="118" rx="82" ry="46" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="350" y="112" text-anchor="middle" fill="#93c5fd" font-size="14" font-weight="700" font-family="system-ui,sans-serif">AI MODEL</text>
+  <text x="350" y="130" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="system-ui,sans-serif">Claude · Gemini · LLM</text>
+  <!-- BRAND -->
+  <text x="148" y="88" fill="#a78bfa" font-size="19" font-weight="700" font-family="system-ui,sans-serif">BRAND</text>
+  <line x1="215" y1="86" x2="272" y2="104" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- FLD -->
+  <text x="482" y="88" fill="#fb923c" font-size="19" font-weight="700" font-family="system-ui,sans-serif">FLD</text>
+  <text x="482" y="104" fill="#fb923c" font-size="10" font-family="system-ui,sans-serif">Field / Finance</text>
+  <line x1="492" y1="86" x2="428" y2="104" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- DRI tier -->
+  <rect x="218" y="215" width="264" height="66" rx="10" fill="#1a2744" stroke="#6366f1" stroke-width="2"/>
+  <text x="350" y="240" text-anchor="middle" fill="#a5b4fc" font-size="15" font-weight="700" font-family="system-ui,sans-serif">DRI</text>
+  <text x="350" y="258" text-anchor="middle" fill="#818cf8" font-size="11" font-family="system-ui,sans-serif">Directly Responsible Individual</text>
+  <text x="350" y="274" text-anchor="middle" fill="#6366f1" font-size="10" font-family="system-ui,sans-serif">Human accountable for AI output quality</text>
+  <!-- Strawberry base -->
+  <rect x="96" y="306" width="508" height="52" rx="10" fill="#1a2d1a" stroke="#4ade80" stroke-width="2"/>
+  <text x="350" y="328" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700" font-family="system-ui,sans-serif">STRAWBERRY GENERATION</text>
+  <text x="350" y="347" text-anchor="middle" fill="#4ade80" font-size="10" font-family="system-ui,sans-serif">Workers to upskill · Singapore + UK union strategy · "No worker left behind"</text>
+  <!-- Strawberry callout -->
+  <text x="55" y="398" fill="#4ade80" font-size="10" font-family="system-ui,sans-serif">🍓 "Strawberry" = Singapore slang for easily bruised generation —</text>
+  <text x="55" y="412" fill="#4ade80" font-size="10" font-family="system-ui,sans-serif">   workers needing upskilling and protection, not displacement.</text>
+</svg>
