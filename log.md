@@ -2379,3 +2379,14 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - notes:
   - Lint was curator-driven, not mechanically-threshold-triggered (5 ingests since 2026-05-25 vs §5.3 threshold of 10). Per memory directive, executed carry-forward queue first.
   - The pattern from prior lints holds: carry-forward queue continues to be where most lint value lands. Convention working as designed.
+
+## [2026-06-03 12:42] ingest | 2026-06-02-founders-blueprint-agentic-ai-on-aws | meeting / event
+- filed source: sources/meetings/2026-06-02-founders-blueprint-agentic-ai-on-aws.md
+- created:
+  - pulse/2026-06-02-aws-agentic-ai-founder-event.md
+- updated:
+  - concepts/agentic-ai.md — added low-confidence AWS managed-agent-infrastructure market signal
+  - concepts/agentic-harness.md — upgraded from stub into substantive concept page; AWS AgentCore/Gateway filed as low-confidence vendor signal
+  - index.md — new pulse + concept catalogue entries and header
+- escalated: none
+- notes: Dry-run approved by Jehad. Curator assessment preserved: event had low practical value and weak speaker confidence; source filed as weak vendor/ecosystem signal, not architecture guidance. No Monday task created; optional AWS AgentCore/Bedrock comparison remains available under Agent Platform Evaluation if AIO wants a formal follow-up.

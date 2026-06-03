@@ -3,10 +3,10 @@ type: concept
 title: Agentic AI
 slug: agentic-ai
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-06-03
 departments: [ai-office]
 confidence: high
-sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud, agent-native-architectures, anthropic-building-effective-agents, a2a-mcp-five-integration-patterns, 100x-business-with-ai, are-ai-agents-slowing-us-down, get-good-at-agents, token-anxiety, agentic-entity-resolution]
+sources: [better-models-wont-save-your-agent, rag-era-ending-for-agentic-ai, google-agentic-data-cloud, agent-native-architectures, anthropic-building-effective-agents, a2a-mcp-five-integration-patterns, 100x-business-with-ai, are-ai-agents-slowing-us-down, get-good-at-agents, token-anxiety, agentic-entity-resolution, 2026-06-02-founders-blueprint-agentic-ai-on-aws]
 related: [retrieval-augmented-generation, context-engineering, agent-memory, agent-harness, agent-skills, model-context-protocol, agent-to-agent-protocol, ralph-loop-pattern]
 ---
 
@@ -27,6 +27,7 @@ The term is broad and rapidly being claimed by vendors. In this wiki, prefer usi
 - Existing data stacks (built for human-scale queries) are creaking. Vendors racing to rebuild — see [[2026-04-22-google-agentic-data-cloud]].
 - RAG-as-runtime-retrieval is hitting limits — see [[retrieval-augmented-generation]] limitations section. Successor framings include [[context-engineering]] and pre-compiled knowledge layers.
 - Tool ecosystems (MCP, Claude Code, Gemini CLI, VS Code agentic features) are where developer attention is concentrating.
+- Managed-agent infrastructure is becoming a vendor category. A low-confidence AWS founder event on 2026-06-02 positioned Amazon AgentCore around identity, memory, policy controls, observability, API gateway abstraction, deployment packaging, and human-in-the-loop checkpoints. Treat this as market-category evidence, not architecture guidance; see [[2026-06-02-aws-agentic-ai-founder-event]].
 
 ## Recommended primers (from this wiki's sources)
 
