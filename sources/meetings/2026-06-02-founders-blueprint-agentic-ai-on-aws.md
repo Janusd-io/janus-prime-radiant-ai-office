@@ -1,7 +1,7 @@
 ---
 type: source
 source_type: meeting
-title: The Founder's Blueprint: Architecting Agentic AI on AWS
+title: "The Founder's Blueprint: Architecting Agentic AI on AWS"
 slug: 2026-06-02-founders-blueprint-agentic-ai-on-aws
 created: 2026-06-02
 captured_by: jehad-altoutou
