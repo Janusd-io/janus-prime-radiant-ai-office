@@ -2415,3 +2415,36 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - attribution:
   - All wikilink updates preserve the original attribution claims; only the link syntax changed.
   - The Block-source `source_secondary:` patch records the audit trail of the 2026-06-02 dedupe finding; no claim changed.
+
+## [2026-06-02 14:55] curation | execute CLAUDE.md v0.13 → v0.14 schema bump
+- scope: apply the 8 approved diffs from [[claude-md-v0.14-schema-bump-proposal]] to CLAUDE.md; mark the proposal resolved; update memory pointer.
+- files-touched:
+  - CLAUDE.md: bumped status line v0.13 → v0.14 with new top-of-file changes note. Updated §1 prose (3 stale `entities/...` references). §2 vault structure: vendors/, people/, clients/, departments/ all canonical at top level; presentations/ added; legacy `entities/` paths flagged accepted-but-deprecated. §3 per-folder naming table: removed `entities/internal/` row, merged into `people/`. §4 frontmatter schema: added `attribution:`, `attribution_sources:`, `migrated_from:` fields with field-rule docs. §5.1: dedupe-check inserted as new step 2 (subsequent steps renumbered); step 8 split unique-vs-duplicate `mv` discipline. §5.3: check 5 exception for memory-system slug prefixes; check 8 reads frontmatter `status:`; new check 9 for attribution-discipline-violators; "Always end with Carry-forward" convention codified as load-bearing. §5.5 (new): Curate workflow inserted between §5.4 and §6. §6: new bullet for Memory-system references with the `feedback-*` / `project-*` / `user-*` slug-prefix convention.
+  - questions/claude-md-v0.14-schema-bump-proposal.md: status active → resolved; resolution block appended with executed-diffs summary.
+  - memory: project-lint-workstream-backlog updated to reflect v0.14 closures (most of the prior queue is now closed by the bump); new open-items queue documented.
+- decisions-made: all 8 items approved as proposed; no modifications during execution; v0.14 bump shipped in one curation pass per the approved sequence.
+- follow-ups (carry-forward for the next lint):
+  - 8 `entities/vendors/` stragglers (accepted-but-deprecated per v0.14)
+  - 6 `entities/people/` stragglers (same)
+  - 2 `.tmp` files in vendors/ (cleanup)
+  - Lint script update (if there's a code-level lint runner, escalation-aging check needs the frontmatter-read implementation to match the new §5.3 step 8)
+- not done (deliberately):
+  - Did NOT migrate the 8 entities/vendors/ stragglers — v0.14 explicitly allows the legacy paths; bulk migration was already executed; reconciling divergent content is a separate curation.
+  - Did NOT migrate the 6 entities/people/ stragglers for the same reason.
+  - Did NOT delete the `.tmp` files (sandbox couldn't `rm`); flagged for Michael's vault-directory Claude Code.
+- attribution: all v0.14 diff content is curator-approved (Michael, 2026-06-02 standup) and recorded as such on the resolved questions/ page.
+
+## [2026-06-02 15:00] lint
+- findings: 13 verifications (8 schema items + 5 spot-checks); 3 partial residuals; 1 carry-forward queue for next lint
+- report: pulse/2026-06-02-verification-lint.md
+- scope: schema-vs-reality verification post-v0.14 bump; all 8 §2 items confirmed; wikilinks resolve; vendor-page dedupe stuck; Block source_secondary recorded; aging-escalation methodology defect closed at rule level
+- inline fixes: none (this was a verification, not a corrective lint)
+- top items surfaced:
+  - **v0.14 schema lints cleanly** — first time wiki state and schema match since ~2026-05-25
+  - **3 small partial-residuals** (8 entities/vendors/ stragglers, 6 entities/people/ stragglers, 2 .tmp leftovers) — all accepted-but-deprecated per v0.14, not blocking
+  - **2 new inbox items appeared during this session** (Google Search piece + Google AI shift piece) — flagged for normal ingest in next session, not part of verification
+  - **1 out-of-band ingest entry from 2026-06-03 12:42** — possibly clock-skew from a separate workstation; verify with Jehad in next sync
+- carry-forward queue prepared for next lint (9 items; see pulse §"Carry-forward queue"). Substantially shorter than 2026-06-02 lint's queue — most items closed by v0.14 bump.
+- ingest counter reset: now 0 since last lint.
+- notes:
+  - The v0.14 bump closes 4 cycles of compounding "schema vs reality" debt. From here, lints should be faster — remaining work is content-level, not methodology-level.
