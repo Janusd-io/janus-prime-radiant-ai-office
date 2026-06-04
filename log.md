@@ -2448,3 +2448,18 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - ingest counter reset: now 0 since last lint.
 - notes:
   - The v0.14 bump closes 4 cycles of compounding "schema vs reality" debt. From here, lints should be faster — remaining work is content-level, not methodology-level.
+
+## [2026-06-04 10:30] batch-ingest | Google AI-Search shift (TechCrunch + Bloomberg) | 2 items
+- filed sources:
+  - sources/articles/google-search-as-you-know-it-is-over.md (TechCrunch, Sarah Perez, 2026-05-19)
+  - sources/articles/googles-ai-shift-collective-freak-out.md (Bloomberg, Parmy Olson, 2026-06-03)
+- dedupe: no prior copies in sources/articles/; both unique. These were the 2 items flagged "for normal ingest" in the 2026-06-02 verification-lint.
+- created:
+  - pulse/2026-06-03-google-search-ai-platform-geo-shift.md (Search-as-AI-platform mechanics + GEO/ad-market fallout; departments: ai-office, marketing; confidence high)
+  - questions/ingest-2026-06-04-1030-generative-engine-optimization-concept.md (escalation)
+- updated:
+  - vendors/google-antigravity.md (new capability: powers in-Search mini-app building; +sources, updated→2026-06-04)
+  - index.md (Pulse + Questions-open entries)
+- escalated:
+  - questions/ingest-2026-06-04-1030-generative-engine-optimization-concept.md — proposes new concept page for GEO (Generative Engine Optimization); high-stakes due to new-concept + slug-collision with geographic "geo" in agentic-lean-marketing-stack.
+- notes: Search overhaul itself already partly captured at 2026-05-19-google-io-2026-agents-as-product (dev-platform angle); new pulse adds the GEO/advertising/publisher-referral angle + UK regulator + $80B raise. No vendor-page bloat on google-gemini (gen-UI/Flash-3.5 already in competitive-context on claude + I/O pulse). Ingest counter: 2 since last lint.
