@@ -27,7 +27,7 @@ Every effective AI-native process follows this cycle:
 
 Run every step with minimal human intervention and the loop *"gets better and better while you're sleeping"* (Blomfield).
 
-## Closed-loop framing (Diana Hu)
+## Closed-loop framing ([[diana-hu|Diana Hu]])
 
 Equivalent decomposition under control-theory vocabulary:
 
@@ -87,8 +87,8 @@ The vocabulary did not spring up at YC. The transcripts make the chain explicit:
 
 - **Jack Dorsey** posted a series of tweets around late April / early May 2026 articulating the "company-as-intelligence-not-hierarchy" framing. Both YC talks name-check Dorsey directly.
 - **Block / Sequoia, "From Hierarchy to Intelligence"** ([[2026-03-31-block-from-hierarchy-to-intelligence|essay]], 2026-03-31 publish date; surfaced via inbox 2026-05-31) is Dorsey's company's formal articulation of the architecture.
-- **Diana Hu's YC talk** (2026-04-24, [[2026-04-24-yc-diana-hu-ai-native-company-from-ground-up]]) introduces the **closed-loop / queryable-organisation** framing and names Jack-at-Block as the canonical Fortune-500 instance.
-- **Tom Blomfield's YC talk** (2026-05-21, [[2026-05-21-yc-blomfield-self-improving-company]]) *"based a little bit off a talk Diana gave"* + Dorsey's tweets, formalises the five-part loop and drops Diana's third role.
+- **[[diana-hu|Diana Hu]]'s YC talk** (2026-04-24, [[2026-04-24-yc-diana-hu-ai-native-company-from-ground-up]]) introduces the **closed-loop / queryable-organisation** framing and names Jack-at-Block as the canonical Fortune-500 instance.
+- **[[tom-blomfield|Tom Blomfield]]'s YC talk** (2026-05-21, [[2026-05-21-yc-blomfield-self-improving-company]]) *"based a little bit off a talk Diana gave"* + Dorsey's tweets, formalises the five-part loop and drops Diana's third role.
 
 This is the canonical pattern of how Fortune-500-scale architectural framings become founder-grade playbooks: primary essay → tweet-thread distribution → accelerator distillation into a teachable batch talk. **YC's role is the propagation channel**, not the originator. Worth noting for [[ai-native-janus-positioning|Janus's positioning]] — the consensus is now propagating through founder networks, not just through enterprise-IT trade press.
 

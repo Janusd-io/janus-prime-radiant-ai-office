@@ -13,7 +13,7 @@ migrated_from: entities/vendors/gbrain.md
 ---
 # GBrain
 
-Open-source markdown-first agent memory layer built by **Garry Tan** (President and CEO of [Y Combinator](https://www.ycombinator.com/)). MIT licensed; repo at [github.com/garrytan/gbrain](https://github.com/garrytan/gbrain). Built to power Tan's own personal [[openclaw|OpenClaw]] and Hermes agent deployments. Surfaced to the AIO 2026-05-22 via MarkTechPost's hands-on tutorial — see [[2026-05-22-marktechpost-gbrain-tutorial]].
+Open-source markdown-first agent memory layer built by **[[garry-tan|Garry Tan]]** (President and CEO of [Y Combinator](https://www.ycombinator.com/)). MIT licensed; repo at [github.com/garrytan/gbrain](https://github.com/garrytan/gbrain). Built to power Tan's own personal [[openclaw|OpenClaw]] and Hermes agent deployments. Surfaced to the AIO 2026-05-22 via MarkTechPost's hands-on tutorial — see [[2026-05-22-marktechpost-gbrain-tutorial]].
 
 Pulse: [[2026-05-22-gbrain-yc-tan-memory-layer]] for the dated entry.
 
@@ -40,7 +40,7 @@ Key design elements:
 - **Autopilot / Minions queue.** `gbrain doctor --remediate` computes dependency-ordered remediation plans; `gbrain autopilot --install` runs a 5-minute cron tick. Deterministic work (pull tweets, parse JSON) goes to Minions; judgment work goes to LLM sub-agents.
 - **Thin harness, fat skills.** Explicitly stated design philosophy. The runtime stays small; intelligence lives in markdown skills the agent reads at decision time. Same operating thesis as Anthropic's [[agent-skills]] direction.
 
-## Production-deployment scale (Garry Tan's personal brain, v0.38.2.0)
+## Production-deployment scale ([[garry-tan|Garry Tan]]'s personal brain, v0.38.2.0)
 
 | Metric | Value |
 |---|---|
@@ -82,7 +82,7 @@ Strategic reads for AIO:
 
 - If multi-instance Prime Radiant federation hits search-latency or cross-vault-query problems, GBrain's PGLite + pgvector + RRF stack becomes a credible upgrade path.
 - If Andrew (or future department-instance owners) need richer retrieval over their vault than file-grep, GBrain provides a working pattern.
-- Garry Tan's adoption signal: YC's CEO uses this in production. That's evidence the design is robust.
+- [[garry-tan|Garry Tan]]'s adoption signal: YC's CEO uses this in production. That's evidence the design is robust.
 
 Reasons NOT to adopt yet:
 
@@ -95,7 +95,7 @@ Reasons NOT to adopt yet:
 ## Cross-cutting context
 
 - **The compiled-truth-plus-timeline-per-page pattern** is a precise sub-pattern within the broader markdown-first agent-memory family. Worth bookmarking — Prime Radiant uses this pattern at the *vault* level (the `log.md` for the wiki, the `decisions/` dated slugs, the `pulse/` timeline) but not strictly at the *per-page* level. GBrain enforces it per page. A future Prime Radiant convention pass could consider whether per-page timeline appendices would add value (vs the current pattern of dated body claims and explicit updated: frontmatter).
-- **Garry Tan as an external surface.** Tan is YC's CEO; OpenClaw is the YC-derived OSS agent harness lineage Janus already tracks ([[openclaw]], [[nemoclaw]], [[nanoclaw]]). GBrain extends that lineage to memory infrastructure. The lineage signals YC is broadly committing to open-source agent infrastructure over closed-vendor lock-in — useful for [[ai-native-janus-positioning|Bonaventure's positioning]] when discussing the open-source-substrate angle.
+- **[[garry-tan|Garry Tan]] as an external surface.** Tan is YC's CEO; OpenClaw is the YC-derived OSS agent harness lineage Janus already tracks ([[openclaw]], [[nemoclaw]], [[nanoclaw]]). GBrain extends that lineage to memory infrastructure. The lineage signals YC is broadly committing to open-source agent infrastructure over closed-vendor lock-in — useful for [[ai-native-janus-positioning|Bonaventure's positioning]] when discussing the open-source-substrate angle.
 
 ## Watch for
 

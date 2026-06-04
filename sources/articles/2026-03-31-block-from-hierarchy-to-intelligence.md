@@ -1,8 +1,11 @@
 ---
 title: "Block"
 source: "https://block.xyz/inside/from-hierarchy-to-intelligence"
+source_secondary:
+  - "https://x.com/jack/status/2039003879841362278"  # Dorsey's X post sharing the essay; web-clipped 2026-05-31 with identical body — confirmed via 2026-06-02 lint dedupe that the X post WAS the essay, not a separate Dorsey tweet thread
 author:
   - "[[Block]]"
+  - "[[@jack]]"
 published: 2026-03-31
 created: 2026-05-31
 description: "How Block is using AI to eliminate hierarchical bottlenecks, building the first company organized as intelligence rather than hierarchy."
