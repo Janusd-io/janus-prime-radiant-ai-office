@@ -2390,3 +2390,28 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - index.md — new pulse + concept catalogue entries and header
 - escalated: none
 - notes: Dry-run approved by Jehad. Curator assessment preserved: event had low practical value and weak speaker confidence; source filed as weak vendor/ecosystem signal, not architecture guidance. No Monday task created; optional AWS AgentCore/Bedrock comparison remains available under Agent Platform Evaluation if AIO wants a formal follow-up.
+
+## [2026-06-02 14:25] curation | execute 2026-06-02 lint carry-forward queue items 2, 3, 7
+- scope: 4 inline-fixable carry-forward items from the 2026-06-02 lint, executed pre-standup so Michael can review during.
+- executed:
+  - **Item 2 (wikilink retro-updates)**: Diana Hu, Tom Blomfield, Garry Tan now linked as `[[diana-hu]]` / `[[tom-blomfield]]` / `[[garry-tan]]` (with display aliases) in pulse/2026-05-31-yc-formalises-self-improving-company-playbook.md (8+ replacements), concepts/recursive-self-improving-loop.md (3 replacements), briefs/ai-native-enterprise-restructuring.md (2 replacements), vendors/gbrain.md (4 replacements). Forward-references that the resolved YC-partner escalation deferred to lint are now closed.
+  - **Item 3 (dedupe sections in migrated vendor pages)**: vendors/claude.md truncated 193 → 129 lines (deleted second "## Merged from" block + its duplicate content). vendors/google-cloud.md truncated 171 → 116 lines (same pattern). Both files now have a single coherent body without the migration-merge artefact.
+  - **Item 7 (Dorsey X URL on Block source frontmatter)**: added `source_secondary:` field with the X URL + a note explaining the dedupe finding. Author list extended to `[[Block]], [[@jack]]`. Closes the "Dorsey tweet thread" follow-up that 2026-05-31-yc-formalises pulse flagged.
+- created:
+  - questions/aging-escalation-triage-2026-06-02.md — surfaces that all 7 "aging" escalations are already `status: resolved` in frontmatter; aging-warning is a methodology defect. Recommends option (A): fix lint check to read frontmatter status, keep resolved pages in questions/. Folded into v0.14 proposal Item 5.
+  - questions/claude-md-v0.14-schema-bump-proposal.md — **the v0.14 bundle for Michael's sign-off.** 8 items, each with trigger / status quo / proposed diff / decision required / recommendation. Approve in standup; ~45min execution after sign-off. Items: (1) vendors/ + people/ canonical at top level, (2) attribution schema, (3) presentations/ formalised in §2, (4) inbox/.processed/ pattern, (5) lint methodology fix, (6) carry-forward convention, (7) memory-system-ref convention, (8) curation as 5th workflow.
+  - vendors/claude.md.tmp + vendors/google-cloud.md.tmp — sandbox-leftover files from the truncate operations; couldn't rm from this mount. Flagged for cleanup; Michael's vault-directory Claude Code can `rm vendors/*.tmp` if they exist.
+- updated:
+  - index.md — Questions section gains 2 new entries at top (v0.14 proposal + aging-escalation triage).
+- not done (deliberately, awaiting Michael standup decision):
+  - **Carry-forward Items 1 (CLAUDE.md v0.14 itself)** — high-stakes; the v0.14 proposal is filed for standup sign-off, then execution.
+  - **Item 4 (Dimon duplicate resolution)** — curator-decision blocker; remains active.
+  - **Item 6 (marketing-handoff slug resolution)** — curator-decision blocker; remains active.
+  - **Item 8 (Fireflies-blocked meeting source)** — external blocker.
+  - **Item 9 (memory-system-reference convention)** — folded into v0.14 proposal Item 7.
+- next:
+  - Michael standup with Jehad (30 min from now) — review the v0.14 proposal item-by-item. If approved, schedule execution.
+  - After v0.14: run a fresh lint to verify the new schema lints cleanly.
+- attribution:
+  - All wikilink updates preserve the original attribution claims; only the link syntax changed.
+  - The Block-source `source_secondary:` patch records the audit trail of the 2026-06-02 dedupe finding; no claim changed.

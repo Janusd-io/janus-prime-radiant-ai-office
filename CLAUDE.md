@@ -1,6 +1,8 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.13, 2026-05-21. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.14, 2026-06-02. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+>
+> *v0.14 changes (2026-06-02):* **Bundle of 8 schema-evolution items accumulated across 4 lint cycles.** Approved in the 2026-06-02 standup per [[claude-md-v0.14-schema-bump-proposal]]. (1) **`vendors/`, `people/`, `clients/`, `departments/` now canonical at top level**, not under `entities/`. The 2026-05-Q2 migration is now documented; the `migrated_from:` frontmatter field on each migrated page records the original location. `entities/` paths are accepted-but-deprecated. (2) **Attribution schema added to §4** — new `attribution: confirmed | corroborated | transcript-only | inferred` enum + `attribution_sources:` list. Required when `decided_by:` names a person. Backfill on-touch, not retroactive. (3) **`presentations/` formalised in §2** alongside `briefs/` and `assets/` — for outbound deliverables. (4) **`inbox/.processed/` discipline codified in §5.1** — unique items mv direct to `sources/`, duplicates mv to `inbox/.processed/<YYYY-MM>/`. New dedupe-check step 2.5 before filing. (5) **Lint methodology fix in §5.3 step 8** — escalation-aging check reads frontmatter `status:` field, not file presence. (6) **"Always end with Carry-forward" convention codified in §5.3** as the load-bearing mechanism for compounding lint workstreams. (7) **Memory-system-reference convention added to §6** — `[[project-*]]` / `[[feedback-*]]` / `[[user-*]]` slug prefixes are accepted-as-broken-by-design (targets live outside vault). (8) **Curation added as 5th workflow in §5** — curator-driven structural reorganisation now has explicit shape.
 >
 > *v0.13 changes (2026-05-21):* **`assets/` top-level folder formally documented in §2.** The convention existed in practice (`assets/branding/` for brand artefacts since 2026-05-15; `assets/janus-html-deck/` for the skill bundle snapshots since 2026-05-21) but wasn't in the schema. Now documented: one subfolder per content class, wiki pages link via relative paths, snapshots of externally-installed artefacts (skills, brand books) live here for direct reference while the external installation remains authoritative.
 >
@@ -26,7 +28,7 @@ It serves three coexisting purposes:
 2. **AI tool & vendor intelligence** — durable, compounding synthesis of the AI tool landscape, complementing the AI Registry in Linear.
 3. **Strategic synthesis** — briefs and pulse entries that connect external signals to AIO bets (see §6 brief shape), feeding planning conversations within AIO and surfacing outward when the implication warrants it.
 
-Beyond its role as the AIO institutional KB, this wiki is also the **first live instance** of the Prime Radiant pattern in a Janus-wide rollout. The Marketing instance (pilot kicking off 2026-05-08 with [[andrew-soane]]) is being stood up in parallel; HR, Finance, IT/Ops, Office-of-CEO, Engineering, Training, and ISO are queued. The program-level effort is tracked in [[janus-prime-radiant-build]] and points toward a long-term **Janus digital knowledge twin** — federated, leadership-visible institutional memory across departments. The cross-instance linkage layer is the `entities/departments/` entity type (see §4). This wiki itself remains in active development — running additional instances does not freeze AIO honing.
+Beyond its role as the AIO institutional KB, this wiki is also the **first live instance** of the Prime Radiant pattern in a Janus-wide rollout. The Marketing instance (pilot kicking off 2026-05-08 with [[andrew-soane]]) is being stood up in parallel; HR, Finance, IT/Ops, Office-of-CEO, Engineering, Training, and ISO are queued. The program-level effort is tracked in [[janus-prime-radiant-build]] and points toward a long-term **Janus digital knowledge twin** — federated, leadership-visible institutional memory across departments. The cross-instance linkage layer is the `departments/` entity type (see §4). This wiki itself remains in active development — running additional instances does not freeze AIO honing.
 
 The wiki is **the synthesis layer**. Linear, Notion, Fireflies, Slack, and Monday remain authoritative for their respective domains. The wiki holds the *narrative* and *cross-cutting analysis* across them.
 
@@ -50,7 +52,7 @@ This schema is designed to be portable across domain wiki instances, not just th
 
 What stays constant across domain instances: kebab-case file naming, frontmatter discipline, low/high-stakes ingest split, slug-form `[[wikilinks]]`, the inbox-as-intake flow, the lint cadence, the per-source-type ingest rules, the brief-shape guidance in §6.
 
-What's per-domain: the entity vocabulary. The AIO wiki has `entities/vendors/`, `concepts/`, `projects/`, etc. A marketing-domain wiki might have `entities/outlets/`, `themes/`, `campaigns/`, `signals/`. The folder shape adapts; the discipline doesn't. Each domain wiki ships its own `CLAUDE.md` derived from this one with the entity vocabulary swapped.
+What's per-domain: the entity vocabulary. The AIO wiki has `vendors/`, `concepts/`, `projects/`, etc. A marketing-domain wiki might have `outlets/`, `themes/`, `campaigns/`, `signals/`. The folder shape adapts; the discipline doesn't. Each domain wiki ships its own `CLAUDE.md` derived from this one with the entity vocabulary swapped.
 
 This generalisability is the reason content shape (especially briefs) is captured in this rulebook rather than left to ad-hoc convention — the next domain instance reuses the same content discipline, only adapting the vocabulary.
 
@@ -66,7 +68,7 @@ The Prime Radiant pattern decomposes any domain instance into three layers. The 
 
 **Build sequence for a new instance.** Identify the Signals (which sources?), curate the Infrastructure (which strategic anchors?), then let Outputs emerge. Outputs cannot be designed top-down without the Infrastructure layer — that's the lesson from the Marketing brainstorm. The first deliverable when standing up a new domain instance is the Infrastructure inventory; the second is the sensor array; the synthesis follows.
 
-**Cross-instance federation.** Each Prime Radiant instance is its own vault (separate folder, separate `CLAUDE.md` derived from this one). The `entities/departments/` pages are the lightweight federation layer — every instance has a stub for every department, describing that department from the instance's vantage point and pointing at the canonical Prime Radiant for that department where one exists. Heavier federation mechanisms (shared backend, programmatic cross-vault references) are deferred until the multi-instance pattern is proven.
+**Cross-instance federation.** Each Prime Radiant instance is its own vault (separate folder, separate `CLAUDE.md` derived from this one). The `departments/` pages are the lightweight federation layer — every instance has a stub for every department, describing that department from the instance's vantage point and pointing at the canonical Prime Radiant for that department where one exists. Heavier federation mechanisms (shared backend, programmatic cross-vault references) are deferred until the multi-instance pattern is proven.
 
 ### Substrate — GitHub-backed Git repos
 
@@ -119,17 +121,25 @@ sources/           → immutable raw inputs. LLM reads, never modifies after fil
   misc/            → non-article binaries that don't deserve their own subfolder:
                      slides, supplementary attachments, standalone screenshots, etc.
 
-entities/
-  vendors/         → AI tools, SaaS vendors, services we evaluate or use
-  clients/         → client context (when applicable)
-  people/          → external network: analysts, founders, partners
-  internal/        → Janus teammates, expertise map, role/scope
-  departments/     → Janus departments as entities (ai-office, marketing, hr,
+vendors/           → AI tools, SaaS vendors, services we evaluate or use.
+                     (Top-level; migrated from entities/vendors/ in 2026-05-Q2.
+                     The `migrated_from:` frontmatter field on each migrated page
+                     records the original location for audit. Legacy `entities/vendors/`
+                     paths are accepted-but-deprecated.)
+people/            → external + internal people: analysts, founders, partners,
+                     Janus teammates. (Top-level; merged 2026-05-Q2 from
+                     entities/people/ + entities/internal/.) Use a `kind:` frontmatter
+                     field if distinguishing external vs internal matters for a
+                     specific page; otherwise leave it implicit.
+clients/           → client context (when applicable). (Top-level; migrated from
+                     entities/clients/ in the same wave.)
+departments/       → Janus departments as entities (ai-office, marketing, hr,
                      finance, it-ops, office-of-ceo, engineering, training, iso).
                      Federation layer between Prime Radiant instances — see §1
                      "Architecture — three-layer model" / Cross-instance federation.
-                     Entity slugs match the values used in `departments:` frontmatter
-                     (so [[marketing]] resolves to entities/departments/marketing.md).
+                     Slugs match the values used in `departments:` frontmatter
+                     (so [[marketing]] resolves to departments/marketing.md).
+                     (Top-level; migrated from entities/departments/.)
 
 concepts/          → frameworks, methodologies, technical primitives (RAG, MCP, etc.)
 processes/         → runbooks, how-tos, internal procedures
@@ -138,9 +148,16 @@ decisions/         → atomic decision records (what / options / why / when / ow
 lessons/           → emergent retros: what didn't work and why
 questions/         → open threads, things being investigated without answers yet.
                      ALSO used as the escalation channel for high-stakes ingest
-                     ambiguity (see §5.1).
+                     ambiguity (see §5.1). Resolution recorded in frontmatter
+                     `status: resolved` rather than by moving the file.
 pulse/             → dated running log of industry / Janus-relevant developments
 briefs/            → synthesis output: state-of-X, comparisons, quarterly recaps
+presentations/     → outbound deliverables: HTML decks, marketing collateral,
+                     external one-pagers. Distinguished from briefs/ (internal
+                     synthesis) and assets/ (binary artefacts referenced inline).
+                     Naming: free-form within domain conventions; date-prefix for
+                     time-bound deliverables. Treated as ephemeral relative to
+                     the underlying context — per [[html-as-deliverable]].
 
 assets/            → binary / near-binary artefacts that wiki pages reference directly.
                      One subfolder per content class — keep subfolders distinct so
@@ -176,11 +193,10 @@ assets/            → binary / near-binary artefacts that wiki pages reference 
 
 | Folder | Pattern | Example |
 |---|---|---|
-| `entities/vendors/` | `<vendor-slug>.md` | `linear.md`, `cursor-ide.md` |
-| `entities/clients/` | `<client-slug>.md` | `acme-corp.md` |
-| `entities/people/` | `<firstname-lastname>.md` | `andrej-karpathy.md` |
-| `entities/internal/` | `<firstname-lastname>.md` | `michael-bruck.md` |
-| `entities/departments/` | `<dept-slug>.md` (matches `departments:` frontmatter values) | `marketing.md`, `it-ops.md` |
+| `vendors/` | `<vendor-slug>.md` | `linear.md`, `cursor-ide.md` |
+| `clients/` | `<client-slug>.md` | `acme-corp.md` |
+| `people/` | `<firstname-lastname>.md` | `andrej-karpathy.md`, `michael-bruck.md` |
+| `departments/` | `<dept-slug>.md` (matches `departments:` frontmatter values) | `marketing.md`, `it-ops.md` |
 | `concepts/` | `<concept-slug>.md` | `retrieval-augmented-generation.md` |
 | `processes/` | `<process-slug>.md` | `vendor-onboarding.md` |
 | `projects/` | `<project-slug>.md` | `ai-registry-v2.md` |
@@ -220,10 +236,13 @@ countries: [sg, gb, us]   # ISO 3166-1 alpha-2 codes; expandable as Janus expand
 status: active | resolved | dormant | archived | superseded
 owner: michael-bruck     # for project / decision / question; entity slug, not bare first name
 decided_by: michael-bruck   # for decision pages — who made the call
+attribution: confirmed | corroborated | transcript-only | inferred   # required when decided_by names a person; see Field rules
+attribution_sources: [<source-slug>, <meeting-slug>]   # optional; lists where attribution confidence comes from
 captured_by: jehad-altoutou   # provenance — whose contribution / ingest produced this page (optional)
 confidence: high | medium | low | rumor   # for vendor / pulse / brief
 sources: [karpathy-llm-wiki, 2026-04-22-vendor-eval-cursor]   # source slugs
 related: [linear, ai-registry-v2]   # other wiki page slugs
+migrated_from: entities/vendors/<slug>.md   # for pages relocated in the 2026-05-Q2 top-level migration (vendors/, people/, clients/, departments/)
 ---
 ```
 
@@ -235,10 +254,13 @@ related: [linear, ai-registry-v2]   # other wiki page slugs
 - `status` is required for `project`, `decision`, `question`, `lesson`. Optional elsewhere.
 - `owner` is required for `project`, `decision`, `question`. Use the entity slug (`michael-bruck`), not the bare first name — this makes the field a clean entity edge.
 - `decided_by` is required for `decision` pages. The entity slug of whoever made the call. Distinct from `owner` (who carries the decision forward).
+- `attribution` is required whenever `decided_by:` names a *person*. Values: **confirmed** (curator explicitly stated who said something), **corroborated** (non-Fireflies source supports it — Slack, Notion log, calendar, email), **transcript-only** (Fireflies transcript is the sole source; treat with skepticism), **inferred** (substantive consistency only — e.g., a CEO veto only the CEO could issue). The 2026-05-Q1 attribution discipline in §5.1 is enforced via this field. **Backfill rule:** leave `attribution:` absent on pre-existing pages; enforce only on new pages and sweep when an existing page is touched. Pages where `decided_by:` names a person but `attribution:` is `transcript-only` or `inferred` surface in lint §5.3 step 9.
+- `attribution_sources` is optional but encouraged when `attribution:` is `corroborated` or `confirmed`. Lists the source slugs / meeting slugs that back the attribution.
 - `captured_by` is optional but encouraged. The entity slug of whoever's contribution or ingest pass produced the page. Useful provenance when a page comes from a personal-vault import (`captured_by: jehad-altoutou`) or a meeting transcript pass (`captured_by: claude` for fully-automated ingest).
 - `confidence` is required for `vendor`, `pulse`, `brief`.
 - `sources` lists the slugs (not paths) of items in `sources/` that informed the page. Update when new sources reinforce or contradict the page.
 - `related` lists wiki page slugs (any folder) for explicit cross-linking. Use Obsidian-style `[[wikilinks]]` in the body too — both are useful.
+- `migrated_from` is optional but encouraged on pages relocated in the 2026-05-Q2 top-level migration. Records the original `entities/<...>/` path for audit. New pages do not need this field.
 
 ### Department vocabulary (locked)
 
@@ -246,7 +268,7 @@ related: [linear, ai-registry-v2]   # other wiki page slugs
 
 Do not invent new departments without proposing an addition first (file as a `questions/` page; Michael approves changes here).
 
-**The `departments:` frontmatter values match `entities/departments/` slugs.** A page with `departments: [marketing, ai-office]` is asserting it's relevant to those two departments; the same slugs are the filenames of the entity pages (`entities/departments/marketing.md`, `entities/departments/ai-office.md`). This means `[[marketing]]` resolves cleanly to the entity page, and the frontmatter tag and the entity link share the same vocabulary. When new departments are added to the locked list, also create the corresponding `entities/departments/<slug>.md` page in the same change.
+**The `departments:` frontmatter values match `departments/` slugs.** A page with `departments: [marketing, ai-office]` is asserting it's relevant to those two departments; the same slugs are the filenames of the entity pages (`departments/marketing.md`, `departments/ai-office.md`). This means `[[marketing]]` resolves cleanly to the entity page, and the frontmatter tag and the entity link share the same vocabulary. When new departments are added to the locked list, also create the corresponding `departments/<slug>.md` page in the same change. (Pre-2026-05-Q2 references to `entities/departments/` still appear in older pages; treat as legacy.)
 
 ### Country vocabulary (expandable)
 
@@ -293,15 +315,19 @@ Cowork executes pull/commit/push automatically when invoked through standard wor
 #### The flow
 
 1. **Detect** the new file in `inbox/`. Identify type from extension/content (article markdown, PDF, transcript, Linear export, Notion export, Slack thread, Monday task).
-2. **Normalize and file the source.** Move it to the appropriate `sources/<subfolder>/` with the correct kebab-case name per §3. Download embedded images locally where applicable.
-3. **Read it fully.**
-4. **Identify wiki impact.** Which entities, concepts, decisions, projects, briefs are referenced or affected.
-5. **Update the wiki directly** for low-stakes updates (see below).
-6. **Escalate high-stakes actions** to a `questions/` page rather than acting unilaterally (see below).
-7. **Move the original** from `inbox/` to `inbox/.processed/<YYYY-MM>/` for audit. Never delete.
-8. **Append one entry to `log.md`** detailing what happened.
-9. **Update `index.md`** for any created/renamed/deleted pages.
-10. **Increment the ingest counter** (counted off `log.md`; lint trigger fires at 10).
+2. **Dedupe check.** Before filing, grep `sources/<subfolder>/` for matching URL / title / date. Cheap (`grep -rl "<url-fragment>" sources/articles/`) and prevents duplicate-source pollution. If a match is found, treat as a duplicate per step 7. Note the duplicate in the ingest log entry.
+3. **Normalize and file the source.** Move it to the appropriate `sources/<subfolder>/` with the correct kebab-case name per §3. Download embedded images locally where applicable.
+4. **Read it fully.**
+5. **Identify wiki impact.** Which entities, concepts, decisions, projects, briefs are referenced or affected.
+6. **Update the wiki directly** for low-stakes updates (see below).
+7. **Escalate high-stakes actions** to a `questions/` page rather than acting unilaterally (see below).
+8. **Move the original.**
+   - **Unique items**: move directly from `inbox/` to the canonical location in `sources/<subfolder>/` with a kebab-case rename. The `mv` operation is the audit trail (git records it). Step 3 already did this for the new content.
+   - **Duplicates** (a source whose URL / body matches an existing `sources/<subfolder>/<slug>.md`): move to `inbox/.processed/<YYYY-MM>/` with the original filename. The duplicate file is preserved for audit but is not added to the canonical `sources/` tree.
+   - **Never delete from inbox/.** Move only.
+9. **Append one entry to `log.md`** detailing what happened.
+10. **Update `index.md`** for any created/renamed/deleted pages.
+11. **Increment the ingest counter** (counted off `log.md`; lint trigger fires at 10).
 
 #### Low-stakes vs. high-stakes (the trust line)
 
@@ -415,17 +441,22 @@ Trigger: Michael asks a question against the wiki.
 
 Track ingest count by counting `^## \[.*\] ingest` lines in `log.md` after the most recent `lint` line. When the count hits 10, surface a lint suggestion to Michael at the start of the next session.
 
+**Operating convention (v0.14): each lint executes its predecessor's carry-forward queue first, then layers a fresh structural scan on top.** Per Michael's 2026-05-20 directive, this is the load-bearing mechanism that lets each lint compound on the previous one rather than re-discover known issues. The next lint reads the prior pulse's `## Carry-forward queue for the next lint` section as the operational backlog.
+
 Lint pass checks:
 1. **Contradictions** — pages that disagree with each other on facts. Flag pairs.
 2. **Stale claims** — pages whose `updated` field is older than the most recent source about that topic. Flag for refresh.
 3. **Orphan pages** — pages with no `related` references and no inbound `[[wikilinks]]`. Decide: keep, link, or archive.
 4. **Missing pages** — concepts/entities/people mentioned across multiple pages but lacking their own page. Propose creation (as `questions/` escalations).
-5. **Broken references** — `related:` slugs and `[[wikilinks]]` that point to non-existent files.
+5. **Broken references** — `related:` slugs and `[[wikilinks]]` that point to non-existent files. *Exception:* memory-system-reference prefixes (`feedback-*`, `project-*`, `user-*`) are accepted-as-broken-by-design per §6.
 6. **Frontmatter compliance** — pages missing required fields per type.
 7. **Question aging** — questions older than 30 days that have accumulated 3+ supporting sources are candidates for promotion to brief.
-8. **Unresolved escalations** — `questions/ingest-*.md` pages older than 14 days waiting on Michael.
+8. **Unresolved escalations** — `questions/*.md` pages with **frontmatter `status: active`** AND `updated:` older than 14 days. Status-in-frontmatter is canonical; file presence alone is *not* the trigger (the title or filename may carry "(resolved)" or similar suffix as a curator convention — the frontmatter is the canonical signal). The 2026-06-02 lint surfaced this as a methodology defect; v0.14 fixes it.
+9. **Attribution discipline (v0.14)** — pages where `decided_by:` names a person but `attribution:` is `transcript-only`, `inferred`, or absent. Surface as candidates for confidence-downgrade or source-backfill.
 
 Output a lint report to a single page named `pulse/YYYY-MM-DD-lint.md` (yes, lint reports live in pulse — they're dated observations about the wiki) with sections per check above and proposed remediation for each finding.
+
+**Every lint pulse MUST end with a `## Carry-forward queue for the next lint` section.** This is the operational backlog for the *next* lint workstream — short, prioritised, with rationale for each item. The next lint reads it as its starting work.
 
 Append to `log.md`:
 ```
@@ -446,7 +477,7 @@ Append to `log.md`:
 _Updated: YYYY-MM-DD_
 
 ## Vendors
-- [linear](entities/vendors/linear.md) — issue tracking, system of record for AI Registry. [active, high]
+- [linear](vendors/linear.md) — issue tracking, system of record for AI Registry. [active, high]
 - ...
 
 ## Concepts
@@ -461,6 +492,22 @@ Each line is one wiki page. Format: `- [slug](relative/path.md) — one-line des
 
 ---
 
+### 5.5 Curate
+
+**Trigger:** curator-driven, not file-driven. Examples: folder restructuring, vendor-page deduplication, schema-aligned cleanup that touches multiple pages. The 2026-05-25 vault reorg, the 2026-05-Q2 vendors/-and-people/ migration, and the 2026-06-02 dedupe pass were each curation work that didn't cleanly fit Ingest / Query / Lint / Index Update.
+
+1. Begin with `git pull` per the standing rule (§5 Git-awareness).
+2. **Define the scope explicitly in the log entry header**: `## [YYYY-MM-DD HH:MM] curation | <scope description>`.
+3. **Execute the cleanup.** Touch only files in scope; do not opportunistically edit adjacent files (those are separate curations).
+4. Update affected pages' `updated:` frontmatter to today.
+5. If the cleanup reveals a schema gap that should be permanent, propose a CLAUDE.md edit via a `questions/` page (high-stakes; do not edit CLAUDE.md directly).
+6. **Append a `## [YYYY-MM-DD HH:MM] curation | <scope>` log entry** with: scope, files-touched, decisions-made, follow-ups, anything deliberately not-done.
+7. End with `git add . && git commit && git push`.
+
+Curation is distinct from ingest in that there's no `inbox/` input, and distinct from lint in that the curator decides scope explicitly rather than the lint check surfacing it. Lint *recommends* curation work; curation *executes* it.
+
+---
+
 ## 6. Tone and style for LLM-written pages
 
 - **Terse and concrete.** Prose over bullets unless the content is genuinely a list.
@@ -469,6 +516,7 @@ Each line is one wiki page. Format: `- [slug](relative/path.md) — one-line des
 - **Cross-link liberally.** Use `[[wikilinks]]` for any wiki entity, concept, project, decision mentioned. Cross-references are half the value of the wiki.
 - **Use slug form for `[[wikilinks]]`.** Always link to the kebab-case slug (`[[llm-wiki]]`), optionally with a display alias (`[[llm-wiki|LLM Wiki]]`) when capitalisation matters in prose. Never use the title form alone (`[[LLM Wiki]]`) — it relies on Obsidian's title-matching heuristics and is harder to grep.
 - **In `related:` frontmatter, use plain slugs.** Never `[[wikilink]]` syntax inside the YAML list — the brackets break the parser. Correct: `related: [fireflies, llm-wiki, standup]`. Incorrect: `related: [[fireflies]], [[llm-wiki]]`.
+- **Memory-system references** (v0.14). Some wikilinks reference files in the memory system (`<vault>/../memory/` or equivalent) rather than wiki pages — e.g., `[[project-lint-workstream-backlog]]`, `[[feedback-attribution-from-fireflies]]`, `[[user-michael]]`. These are *accepted-as-broken-by-design*: the targets exist but live outside the vault audit tree by design. **Convention:** slugs with `project-` / `feedback-` / `user-` prefixes are reserved for memory-system references. Lint (§5.3 check 5) skips these prefixes in broken-ref detection. Do not create wiki pages with those prefixes.
 - **Hedge appropriately.** Use `confidence` frontmatter and inline hedges ("likely", "reportedly", "unconfirmed") for vendor/pulse claims.
 - **Don't paraphrase to fill space.** A 3-sentence vendor page is fine if 3 sentences is what's known.
 - **Never quote sources at length.** Summarize. Brief direct quotes (under 15 words) only when wording matters.
