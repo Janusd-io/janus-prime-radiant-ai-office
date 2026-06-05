@@ -7,7 +7,7 @@ updated: 2026-05-21
 departments: [ai-office]
 confidence: high
 sources: []
-related: [2026-05-20-lint, feedback-attribution-from-fireflies, claude-md, 2026-05-11-notion-restricted-to-aio-no-broad-rollout]
+related: [2026-05-20-lint, feedback-attribution-from-fireflies, claude-md-rulebook, 2026-05-11-notion-restricted-to-aio-no-broad-rollout]
 ---
 
 # Retroactive attribution sweep — 2026-05-21

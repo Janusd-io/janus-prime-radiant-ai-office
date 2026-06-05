@@ -7,7 +7,7 @@ updated: 2026-05-13
 departments: [ai-office, engineering]
 confidence: high
 sources: [magma-multi-graph-agentic-memory]
-related: [agent-memory, agent-memory-2026-q2, 2026-05-12-mnemon-llm-supervised-memory, janus-prime-radiant-build, transformers-are-graph-neural-networks-2026-05-13]
+related: [agent-memory, agent-memory-2026-q2, 2026-05-12-mnemon-llm-supervised-memory, janus-prime-radiant-build, 2026-05-13-transformers-are-graph-neural-networks]
 ---
 
 # MAGMA — second multi-graph agent-memory architecture in a week
