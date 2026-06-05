@@ -14,7 +14,7 @@ related: [janus-prime-radiant-build, prime-radiant-instance-setup, nanoclaw-prim
 
 ## TL;DR for standup
 
-Each Prime Radiant instance gets **one designated curator** running Obsidian on their own machine. They own the vault's discipline: triage incoming drafts, run lints, make schema judgment calls, federate with other instances. Every *other* team member is a **contributor / user** who interacts with the instance through NanoClaude (Slack) — no local Obsidian, no local clone, no Docker, no rulebook to memorize. The PM-team rollout (Lysander as curator, Rosa + Spike as contributors) is the first place this pattern gets explicitly deployed; AIO + Marketing + Bonaventure's instances have been operating this way informally already. Asking Jehad to ratify, surface concerns, and confirm a few open points so we can land it as the rulebook default before PM goes live.
+Each Prime Radiant instance gets **one designated curator** running Obsidian on their own machine. They own the vault's discipline: triage incoming drafts, run lints, make schema judgment calls, federate with other instances. Every *other* team member is a **contributor / user** who interacts with the instance through NanoClaude (Slack) — no local Obsidian, no local clone, no Docker, no rulebook to memorize. The PM-team rollout is the first place this pattern gets explicitly deployed: **Lysander as curator** (selected for AI/tooling-fluency + PM-domain depth + inclination toward the work), with **Euclid + Rosa remaining the team leads** per the 2026-05-13 decision, and Rosa + Spike as contributors via NanoClaude. AIO + Marketing + Bonaventure's instances have been operating in the spirit of this pattern informally already — PM is the first place curator-role and team-lead-role are cleanly separated. Asking Jehad to ratify, surface concerns, and confirm a few open points so we can land it as the rulebook default before PM goes live.
 
 ## Why now
 
@@ -32,7 +32,7 @@ The PM-team rollout is the first time we have a multi-person team where curator 
 | **AIO** | [[michael-bruck]] | [[jehad-altoutou]] | Implicit; works because Jehad is highly rulebook-fluent. |
 | **Marketing** | [[andrew-soane]] | (none yet) | Single-person; curator-contributor distinction collapsed. |
 | **Bonaventure's** | [[bonaventure-wong]] | (none) | Single-person; CEO's personal vault. |
-| **PM team** | proposed: [[lysander-liu]] | [[rosa-wu]], [[spike-zhao]] | **Pending — first explicit deployment of the pattern.** Open: confirm Lysander as lead vs Euclid (per 2026-05-13 decision Euclid was named — has the lead rotated?). |
+| **PM team** | [[lysander-liu]] (curator-only role; not team lead) | [[rosa-wu]], [[spike-zhao]] | **First explicit deployment of the pattern.** Note: PM team lead is [[euclid-wong]] co with Rosa per [[2026-05-13-pm-team-prime-radiant-pilot-two]] — that arrangement is unchanged. Lysander takes on the *curator role* within the team while Euclid + Rosa remain the team leads. First clean separation of curator-role from team-lead-role in any Janus instance. |
 
 ## The proposal
 
@@ -70,13 +70,16 @@ Sharpened by the curator pattern: it is the **contributors' read interface** pri
 
 ## The PM-team deployment (first explicit test)
 
-Proposed shape:
+Confirmed roles (Michael 2026-06-05):
 
-- **Curator:** [[lysander-liu]] (confirm vs. 2026-05-13 decision naming Euclid Wong — has the lead shifted, or is Lysander a different role here?).
-- **Contributors:** [[rosa-wu]], [[spike-zhao]] — Slack + NanoClaude only.
+- **Team leads:** [[euclid-wong]] (co with [[rosa-wu|Rosa]]) — per [[2026-05-13-pm-team-prime-radiant-pilot-two]], unchanged.
+- **Curator:** [[lysander-liu]] — taking on the curator role within the team while Euclid + Rosa remain the team leads. Selected because (a) he's *inclined* toward this kind of work, (b) he's spent meaningful time vibe-coding agents (so tooling-fluent for NanoClaude / Prime Radiant maintenance), and (c) he has many years of project-management experience (so domain-fluent for the team's content). The combination — inclination + AI/tooling-fluency + PM domain knowledge — is the closest fit Janus has yet seen for the role definition above.
+- **Contributors / users:** [[rosa-wu]], [[spike-zhao]] — Slack + NanoClaude only.
 - **Vault:** new `janus-prime-radiant-pm` repo under `Janusd-io`, cloned to Lysander's machine per the [[prime-radiant-instance-setup]] runbook.
 - **NanoClaude instance:** TBD timing — could be local on Lysander's machine first (matching the Michael-2026-05-21 pattern), or wait until the cloud-bot host comes online (Plan A from the NanoClaude wiring conversation). Cleanest option: stand up the vault first, give Lysander a few weeks to curate against it solo, then add NanoClaude once content density justifies it.
 - **Onboarding sequence:** [[prime-radiant-instance-setup]] runbook + a curator-specific addendum (rulebook walk-through, lint dry-run, schema judgment-call examples). To be written.
+
+**Why this matters for the rulebook generally.** The curator role can be filled by someone *other than* the team lead. That's a useful precedent: it means the role doesn't depend on hierarchical authority. The curator is the person best-positioned to do the work — by skill, inclination, and bandwidth — regardless of where they sit on the team's org chart. Worth capturing this explicitly in the `concepts/per-instance-curator-role.md` page when it's written.
 
 ## Dashboard idea (related but separate)
 
@@ -99,15 +102,18 @@ Scope of edits if the pattern lands:
 
 No other rulebook surfaces affected.
 
+## Resolved pre-standup (Michael 2026-06-05)
+
+- **PM curator = Lysander; PM team leads = Euclid + Rosa (unchanged).** First clean separation of curator-role from team-lead-role. Rationale: Lysander is inclined toward this work, vibe-coding-agents-fluent, and PM-domain-experienced. See "PM-team deployment" section above.
+
 ## Open sub-questions for Jehad (and standup discussion)
 
-1. **PM lead — Lysander or Euclid?** The 2026-05-13 decision says Euclid is pilot lead. Michael's framing today says Lysander as curator. Has the team rotated, or are these two different roles (Euclid = strategic owner; Lysander = day-to-day curator)? Need this nailed before the PM-instance setup runs.
-2. **Deputy curator model.** Should every instance have a designated backup curator for PTO / illness / busy-week coverage, or do we accept that some instances are too small for that (Marketing, Bonaventure's) and just queue work in `inbox/` until the primary returns? Tentative answer: deputies where headcount allows (AIO: Jehad; PM: Rosa or Spike). Single-person instances accept the queue.
-3. **Power-user-Obsidian policy.** Restrictive "only the curator runs Obsidian" is probably too strong — some contributors will want to navigate the graph view or use Obsidian as a query tool. Soft norm: "discouraged because (a) maintenance load shouldn't be distributed, (b) you risk creating divergent local edits that don't fit the discipline; but not blocked." Curator empowered to push back on inconsistent edits. Confirm this is the posture.
-4. **Curator handoff protocol.** When a curator leaves Janus or rotates out, what's the handoff? Tentative: 2-week pair-curate with the incoming curator; rulebook (CLAUDE.md) is the manual; per-instance bootstrap docs are the runbook. Possibly add a `processes/curator-handoff.md` page when the first handoff actually happens — too speculative to design abstractly.
-5. **NanoClaude timing for PM instance.** Stand up vault first then add bot, or both at once? Recommendation: vault first; bot once content density justifies it (~50 pages? a month of curation?). The reasoning is that NanoClaude is most valuable as a query layer over existing content, and a near-empty vault produces low-signal answers.
-6. **Curator-as-formal-job-allocation vs role-assignment.** For PM, Lysander has a day job. The curator role costs a few hours/week. Does this need to be reflected in Lysander's quarterly objectives / Monday surface, or is it implicit in the pilot agreement? AIO's answer for Michael is "implicit because curator and AIO-lead are the same person"; PM is the first place this needs an explicit answer.
-7. **Cross-instance federation in practice.** When Marketing's curator writes a brief about a vendor decision that's also AIO-relevant, who initiates the cross-vault reference? Tentative: the *receiving* instance's curator pulls. The originating curator publishes; downstream curators decide whether to absorb. Confirm.
+1. **Deputy curator model.** Should every instance have a designated backup curator for PTO / illness / busy-week coverage, or do we accept that some instances are too small for that (Marketing, Bonaventure's) and just queue work in `inbox/` until the primary returns? Tentative answer: deputies where headcount allows (AIO: Jehad; PM: Rosa or Spike). Single-person instances accept the queue.
+2. **Power-user-Obsidian policy.** Restrictive "only the curator runs Obsidian" is probably too strong — some contributors will want to navigate the graph view or use Obsidian as a query tool. Soft norm: "discouraged because (a) maintenance load shouldn't be distributed, (b) you risk creating divergent local edits that don't fit the discipline; but not blocked." Curator empowered to push back on inconsistent edits. Confirm this is the posture.
+3. **Curator handoff protocol.** When a curator leaves Janus or rotates out, what's the handoff? Tentative: 2-week pair-curate with the incoming curator; rulebook (CLAUDE.md) is the manual; per-instance bootstrap docs are the runbook. Possibly add a `processes/curator-handoff.md` page when the first handoff actually happens — too speculative to design abstractly.
+4. **NanoClaude timing for PM instance.** Stand up vault first then add bot, or both at once? Recommendation: vault first; bot once content density justifies it (~50 pages? a month of curation?). The reasoning is that NanoClaude is most valuable as a query layer over existing content, and a near-empty vault produces low-signal answers.
+5. **Curator-as-formal-job-allocation vs role-assignment.** For PM, Lysander has a day job. The curator role costs a few hours/week. Does this need to be reflected in Lysander's quarterly objectives / Monday surface, or is it implicit in the pilot agreement? AIO's answer for Michael is "implicit because curator and AIO-lead are the same person"; PM is the first place this needs an explicit answer. **Heightened importance** now that curator ≠ team lead — Lysander needs explicit time-allocation buy-in from Euclid as team lead.
+6. **Cross-instance federation in practice.** When Marketing's curator writes a brief about a vendor decision that's also AIO-relevant, who initiates the cross-vault reference? Tentative: the *receiving* instance's curator pulls. The originating curator publishes; downstream curators decide whether to absorb. Confirm.
 
 ## Real-world precedent (just to legitimize)
 
@@ -115,9 +121,9 @@ This shape isn't novel — it's the pattern Wikipedia's WikiProject maintainers,
 
 ## Decisions sought (for this standup or the next)
 
-1. **Ratify the curator-role pattern as the rulebook default.** If yes, schedule the CLAUDE.md §1 amendment and the new `concepts/per-instance-curator-role.md` page as a separate curation task.
-2. **Confirm PM curator = Lysander (or correct to Euclid / different mapping).**
-3. **Confirm deputy policy, power-user-Obsidian policy, and federation-direction defaults** (or note these as further-discussion items).
+1. **Ratify the curator-role pattern as the rulebook default.** If yes, schedule the CLAUDE.md §1 amendment and the new `concepts/per-instance-curator-role.md` page as a separate curation task. The concept page should explicitly capture that curator ≠ team lead (per the PM precedent).
+2. **Confirm deputy policy, power-user-Obsidian policy, and federation-direction defaults** (or note these as further-discussion items).
+3. **Confirm Lysander's time allocation for the curator role** — who needs to sign off (Euclid as team lead? Bonaventure? implicit?), and whether it lands on Lysander's quarterly objectives / Monday surface.
 4. **Greenlight the per-user dashboard as its own `questions/` page** — to be filed separately, not bundled here.
 5. **Decide PM-instance NanoClaude timing** — vault-first then bot, or both at once.
 

@@ -2463,3 +2463,27 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - escalated:
   - questions/ingest-2026-06-04-1030-generative-engine-optimization-concept.md — proposes new concept page for GEO (Generative Engine Optimization); high-stakes due to new-concept + slug-collision with geographic "geo" in agentic-lean-marketing-stack.
 - notes: Search overhaul itself already partly captured at 2026-05-19-google-io-2026-agents-as-product (dev-platform angle); new pulse adds the GEO/advertising/publisher-referral angle + UK regulator + $80B raise. No vendor-page bloat on google-gemini (gen-UI/Flash-3.5 already in competitive-context on claude + I/O pulse). Ingest counter: 2 since last lint.
+
+
+## [2026-06-05 08:30] curation | questions/per-instance-curator-role.md | draft for Jehad standup
+- created: questions/per-instance-curator-role.md
+- updated: index.md (added new question entry; moved missing-vendor-pages entry to resolved list)
+- notes: drafted in response to Michael's proposal that each Prime Radiant instance have a designated curator running Obsidian locally, with all other team members interacting via NanoClaude (Slack). Pattern is already implicit at AIO (Michael curator / Jehad contributor), Marketing (Andrew, solo), and Bonaventure's vault (solo). The PM-team rollout is the first place curator ≠ contributors will be explicitly tested. Drafted for discussion in this morning's Jehad standup; resolution to be recorded in frontmatter `status:` field once aligned.
+- judgment calls:
+  - **Flagged Lysander-vs-Euclid as PM lead.** Michael's framing today names Lysander as curator; existing 2026-05-13 decision ([[2026-05-13-pm-team-prime-radiant-pilot-two]]) names Euclid as pilot lead. Either the lead rotated or these are two roles. Surfaced as open sub-question 1.
+  - **Dashboard idea flagged but deferred to its own questions/ page.** Michael also mentioned building a per-user dashboard to simplify contributor UX. The design surface is too large to develop inside this question without diluting the curator-role focus. Noted that Rosa already has dynamic-dashboard work on her plate per the 2026-05-13 PM decision — so this isn't a new ask, it's surfacing existing work. Proposed slug for the follow-up: `per-user-jpr-dashboard-design`.
+  - **No rulebook edits made.** Rulebook proposals stay as proposals until ratified — CLAUDE.md §1 amendment + new `concepts/per-instance-curator-role.md` page are noted as scoped follow-ups, not executed.
+  - **No commit-via-Cowork attempted.** Per [[feedback_git_via_claude_code]] memory, handing the commit command back to Michael's vault-directory Claude Code.
+- next:
+  - Standup discussion this morning; resolution → frontmatter `status:` field.
+  - If ratified: schedule (a) CLAUDE.md §1 amendment, (b) new `concepts/per-instance-curator-role.md`, (c) [[prime-radiant-instance-setup]] addendum.
+  - File `questions/per-user-jpr-dashboard-design.md` when the moment arrives.
+
+
+## [2026-06-05 08:55] curation-update | questions/per-instance-curator-role.md | Lysander-vs-Euclid resolved pre-standup
+- updated: questions/per-instance-curator-role.md (sub-question 1 resolved; PM-team-deployment section confirmed; TL;DR + open-questions + decisions-sought reworked)
+- updated: index.md (entry description updated to reflect curator-role / team-lead-role separation)
+- resolution: PM curator = Lysander Liu; PM team leads = Euclid Wong + Rosa Wu (unchanged from 2026-05-13). First clean separation of curator-role from team-lead-role at Janus. Rationale from Michael: Lysander is inclined toward this kind of work, has spent time vibe-coding agents (AI/tooling-fluent), and has many years of project-management experience (domain-fluent). The combination — inclination + AI/tooling-fluency + PM domain knowledge — is the closest fit Janus has yet seen for the role.
+- promoted insight (worth carrying into the eventual concepts/per-instance-curator-role.md): **curator role does not depend on hierarchical authority.** The curator is the person best-positioned to do the work — by skill, inclination, and bandwidth — regardless of where they sit on the team's org chart. This generalises beyond PM.
+- emerged-from-resolution: sub-question 5 (curator-as-formal-job-allocation) gains weight — now that curator ≠ team lead, Lysander needs explicit time-allocation buy-in from Euclid. Heightened-importance note added inline.
+- not done: still no rulebook edits; CLAUDE.md §1 amendment + concept page remain as scheduled follow-ups pending standup ratification.
