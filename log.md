@@ -2532,3 +2532,22 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - other structural: 2nd marketing-handoff bundle (broader-marketing-corpus, 67 files); stray empty root 2026-05-31.md; scripts/ dir now present
 - carry-forward: 9 items (jehad corpus decision #1; vendor junk cleanup; entities stragglers; §4 vendor-confidence clarification; missing-page triage; stray root file; 2nd handoff; Dimon+Fireflies blocked; attribution backlog watch)
 - ingest counter reset: 0 since this lint
+
+## [2026-06-05 11:08] batch-ingest | Letta Context Constitution + Era of Experience cluster | 5 items
+- sources filed:
+  - sources/articles/letta-context-constitution.md — Letta's full Context Constitution document (CC0, written to Letta agents; principles for context management as identity, memory, continuity)
+  - sources/articles/letta-continual-learning-token-space.md — Letta blog post (2025-12-11): formal token-space learning framing; why weight-based continual learning is impractical; the Cᵢ optimisation reframing
+  - sources/articles/era-of-experience-silver-sutton.md — MD twin of DeepMind preprint by David Silver & Richard Sutton; four properties of era-of-experience AI (streams, grounded actions, grounded rewards, non-human reasoning)
+  - sources/articles/era-of-experience-silver-sutton.pdf — PDF binary (226KB)
+  - sources/articles/letta-memory-not-plugin-wooders.md — Sarah Wooders X thread (2026-03-31): memory isn't pluggable; context management is the core harness responsibility
+  - sources/articles/letta-context-constitution-github-readme.md — GitHub README for letta-ai/context-constitution repo (context and links to related Letta work)
+- dedupe: all 5 items unique; no existing sources matched on URL or title
+- created:
+  - vendors/letta.md — new vendor page; Letta (formerly MemGPT); memory-first harness; token-space learning; Context Constitution; co-founders Sarah Wooders + Charles Packer
+  - pulse/2026-06-05-letta-context-constitution-era-of-experience.md — pulse entry framing the cluster as the theoretical grounding for the May 2026 multi-graph convergence
+- updated:
+  - concepts/agent-memory.md — new "Update — 2026-06-05" section; token-space learning formalism (Letta blog); Context Constitution principles; Silver/Sutton era-of-experience macro frame; connection to Prime Radiant as institutional-scale experiential memory instance
+  - concepts/agent-harness.md — new "Update — 2026-06-05" section; Wooders repudiation of pluggable memory; invisible harness decisions as memory decisions; letta added to sources/related
+- inbox mv: inbox originals NOT removed — sandbox filesystem restriction (Operation not permitted on the Cowork mount). Sources copies confirmed present in sources/articles/. Curator should manually clear inbox files on next Obsidian session.
+- attribution: all sources are public articles/posts/papers; no meeting transcripts; no attribution issues
+- ingest counter: 1 since 2026-06-05 12:30 lint (batch counts as 1)

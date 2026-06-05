@@ -3,11 +3,11 @@ type: concept
 title: Agent Memory
 slug: agent-memory
 created: 2026-05-06
-updated: 2026-05-23
+updated: 2026-06-05
 departments: [ai-office]
 confidence: high
-sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory, magma-multi-graph-agentic-memory, transformers-are-graph-neural-networks, 2026-05-22-marktechpost-gbrain-tutorial, 2026-05-21-mit-tech-review-code-with-claude-london]
-related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation, 2026-05-13-magma-multi-graph-agentic-memory, 2026-05-13-transformers-are-graph-neural-networks, 2026-05-12-mnemon-llm-supervised-memory, 2026-05-22-gbrain-yc-tan-memory-layer, 2026-05-21-code-with-claude-london, gbrain]
+sources: [agent-memory-engineering-nicbstme, your-harness-your-memory-hwchase17, mempalace-milla-jovovich, claude-managed-agents-memory, claude-managed-agents-memory-rlancemartin, himanshustwts-claude-code-memory-architecture, openai-agents-sdk-session-memory, mnemon-github-readme, jehad-vault-agent-memory, magma-multi-graph-agentic-memory, transformers-are-graph-neural-networks, 2026-05-22-marktechpost-gbrain-tutorial, 2026-05-21-mit-tech-review-code-with-claude-london, letta-continual-learning-token-space, letta-context-constitution, era-of-experience-silver-sutton, letta-memory-not-plugin-wooders]
+related: [context-engineering, agentic-ai, agent-harness, retrieval-augmented-generation, 2026-05-13-magma-multi-graph-agentic-memory, 2026-05-13-transformers-are-graph-neural-networks, 2026-05-12-mnemon-llm-supervised-memory, 2026-05-22-gbrain-yc-tan-memory-layer, 2026-05-21-code-with-claude-london, gbrain, letta]
 ---
 
 # Agent Memory
@@ -98,6 +98,50 @@ Claude Code's dreaming feature is the first vendor-shipped (not third-party / no
 The above patterns are about *long-term* memory — what survives across sessions. There's a separate short-term axis: what fits in the active context window during a single multi-turn run. Per [[openai-agents-sdk-session-memory|OpenAI's Agents SDK Cookbook]] (May 2026), short-term memory is managed via a `Session` primitive with two canonical techniques: **trimming** (keep last-N user turns verbatim, drop the rest — deterministic, low latency, weak long-range recall) and **summarisation** (compress older turns into a synthetic summary message — strong long-range recall, vulnerable to "context poisoning" if a bad fact enters the summary). See [[context-engineering]] for the broader discipline; the Session abstraction is what makes the in-session technique a first-class harness concern rather than ad-hoc prompt wrangling.
 
 This makes [[openai|OpenAI]]'s memory story explicit: short-term context management is well-developed (the Cookbook lays out concrete patterns and code); long-term/portable memory is comparatively under-articulated. The opposite of [[anthropic|Anthropic]]'s position, where the Managed Agents file-based memory is the public surface and short-term in-session context management is comparatively implicit.
+
+## Update — 2026-06-05: token-space learning as the emerging theory of agent memory
+
+Three sources landed together (inbox 2026-06-05) that sharpen the theoretical frame behind the multi-graph convergence pattern above:
+
+**1. Letta's "Continual Learning in Token Space" (blog, 2025-12-11, [[letta-continual-learning-token-space]]).**
+
+Formal argument that the agent-memory problem is better framed as *optimising learned context C* rather than *updating model weights θ*:
+
+```
+Traditional: minimise Σ ℓ(C, θᵢ) for each task Tᵢ by updating θ
+Token-space: minimise Σ ℓ(Cᵢ, θᵢ) for each task Tᵢ by updating C
+```
+
+This reframing sidesteps the catastrophic-forgetting problem (rollback is trivial — just restore a prior C checkpoint) and the sparse-reward problem (updates derive from rich natural-language feedback rather than scalar RL rewards). The paper formalises why the "append-then-summarise" default is inadequate: appending defers all representational work to inference time; summarisation is abrupt and lossy. Two research directions toward true token-space learning: **sleep-time compute** (background memory consolidation between sessions) and **training agents to manage their own memory** (post-training for context-management self-awareness).
+
+**2. Letta's Context Constitution ([[letta-context-constitution]]).**
+
+The operating manual for token-space experiential AI — written directly to Letta agents. Key principles for memory discipline:
+- **Progressive disclosure**: compact indexes always in context; full skill/memory documents loaded only when needed, then released
+- **System prompt as durable identity**: the system prompt should accumulate durable learnings incrementally; it IS the agent's identity
+- **Efficiency without identity loss**: pruning is safe for stale operational content; it is NOT safe for accumulated persona/identity context
+- Context = identity + memory + continuity (three distinct dimensions)
+
+The Context Constitution is notable as the first vendor-published policy document for context management — not just a product feature, but an explicit philosophy. Released CC0 on GitHub.
+
+**3. Silver & Sutton, "Era of Experience" (Google DeepMind preprint, [[era-of-experience-silver-sutton]]).**
+
+The macro-level framing that contains and validates both Letta's specific technical bets and the wiki's architectural choices. Four defining properties of next-generation AI:
+- **Streams** (continuous experience, not isolated episodes)
+- **Grounded actions/observations** (real-world autonomous action, not dialogue-only)
+- **Grounded rewards** (from environment, not human pre-judgement)
+- **Non-human reasoning** (discovered via experience, not inherited from human data)
+
+Silver & Sutton argue this transition is imminent and may have already started (AlphaProof, DeepSeek-R1). The agent-memory question maps directly onto the "streams" and "grounded rewards" properties: an agent that learns from experience needs a memory layer that accumulates what was experienced and retrieves it efficiently — which is exactly what the multi-graph memory architecture enables.
+
+**How these three sources fit the existing map:**
+
+The May 2026 convergence cluster (Mnemon, MAGMA, GBrain, Claude Code dreaming) answered *how to structure memory* (multi-graph, four relational dimensions). The June 2026 cluster adds the *why* and *what for*:
+- Silver/Sutton: agents need experiential learning because human-data scaling is saturating
+- Letta blog: the mechanism is token-space context updates, not weight updates
+- Context Constitution: the implementation discipline for doing token-space learning correctly
+
+The Prime Radiant wiki itself is now legible as an **institutional-scale instance of experiential AI architecture**: long-horizon memory accumulation (sources/ + log.md), multi-graph structure (four frontmatter axes), context management discipline (this CLAUDE.md), and agent-mediated synthesis (ingest/query/lint workflows). The era-of-experience frame lands at the wiki level, not just the tool-evaluation level.
 
 ## Open question for Janus
 
