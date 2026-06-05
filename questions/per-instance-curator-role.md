@@ -5,7 +5,7 @@ slug: per-instance-curator-role
 created: 2026-06-05
 updated: 2026-06-05
 departments: [ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 related: [janus-prime-radiant-build, prime-radiant-instance-setup, nanoclaw-prime-radiant-wiring, nanoclaw, 2026-05-13-pm-team-prime-radiant-pilot-two, michael-bruck, jehad-altoutou, andrew-soane, lysander-liu, rosa-wu, spike-zhao, bonaventure-wong]
 ---
@@ -128,3 +128,49 @@ This shape isn't novel — it's the pattern Wikipedia's WikiProject maintainers,
 5. **Decide PM-instance NanoClaude timing** — vault-first then bot, or both at once.
 
 Resolution recorded in frontmatter `status:` field once Michael + Jehad align.
+
+---
+
+## Resolution (2026-06-05 — AIO Standup)
+
+**Resolved in today's standup.** Fireflies ID `01KTB47JKRH6W4779155H1K4YN`. Both Michael and Jehad aligned on all five decisions sought. Answers per-item:
+
+### Decision 1 — Ratify the curator-role pattern ✅ RATIFIED
+
+Jehad: "Take the decisions. This just makes sense everything here? Everything makes sense. Let's go for it. New policy. Make it formal." Michael aligned. Both fully agreed. The one-curator-per-group pattern is now the **rulebook default** for all Janus Prime Radiant instances.
+
+**Follow-up work triggered:**
+- CLAUDE.md §1 amendment needed (extend "Michael is the primary curator" to the per-instance vocabulary)
+- New `concepts/per-instance-curator-role.md` page to be written — explicitly capturing that curator ≠ team lead (PM precedent)
+- [[prime-radiant-instance-setup]] addendum: "identify + onboard curator" as step 1 of any new instance bootstrap
+
+### Decision 2 — Sub-questions (deputy, power-user Obsidian, federation) 🟡 PARTIALLY RESOLVED
+
+**Deputy curator model:** Confirmed in spirit — Jehad said "Let them decide on their own" for the PM team, and Michael nominated Lysander (with Rosa as an alternative). Pattern: deputies where headcount allows; single-person instances accept the queue. Formally resolved but not yet written into the rulebook.
+
+**Power-user Obsidian policy:** Not explicitly discussed in today's standup. Tentative soft-norm from the question stands — discouraged but not blocked. Mark as carry-forward for next lint.
+
+**Federation direction:** Not explicitly discussed. Tentative "receiving curator pulls" stands. Carry-forward.
+
+### Decision 3 — Lysander time allocation ⏳ DEFERRED
+
+Not explicitly resolved today. Michael noted it's important ("Lysander has a day job"), but no explicit sign-off sought in this standup. **Jehad's follow-up:** raise with Euclid during the handover clarification meeting (item 2969245116 — today). Euclid as team lead needs to confirm Lysander's time allocation for the curator role.
+
+### Decision 4 — Per-user dashboard as separate `questions/` page ✅ AGREED
+
+Michael mentioned the dashboard idea in passing; Jehad flagged it as worth tracking. Not bundled into this question. A separate `questions/per-user-jpr-dashboard-design.md` page should be filed when the design conversation is ready — not blocking anything today.
+
+### Decision 5 — NanoClaude timing for PM instance ✅ VAULT-FIRST
+
+Implicit from the standup context: Jehad said "I still need to add myself as a contributor" and "I'm not sure it's working properly" — the vault isn't stable yet. Michael: "Let's get the vault right first." Confirmed: **stand up vault first, add NanoClaude bot once content density justifies it** (~1 month of curation, or once Lysander is onboarded and the vault has meaningful content). No hard threshold set — Jehad and Michael to judge.
+
+---
+
+## Carry-forward items (for next lint or next standup)
+
+- [ ] Write `concepts/per-instance-curator-role.md` — full role definition, curator ≠ team lead framing
+- [ ] Amend CLAUDE.md §1 to formalise the curator vocabulary
+- [ ] Update [[prime-radiant-instance-setup]] with "identify curator" as step 1
+- [ ] Confirm Lysander's time allocation with Euclid (today's handover conversation)
+- [ ] File `questions/per-user-jpr-dashboard-design.md` when ready
+- [ ] Power-user-Obsidian policy and federation direction: resolve at next lint
