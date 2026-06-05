@@ -2512,3 +2512,8 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - escalated: none
 - notes: SG lead-market relevant. Regional research economist = in-region extension of observed-exposure labor work. No new people/ entity created for the article authors (low value); GIC mentioned inline, no entity page (candidate if it recurs). Attribution from published source — fine.
 - ingest counter: 4 since last lint (1 GEO batch counted as 1 + 3 here). Lint trigger at 10 not yet reached.
+
+## [2026-06-05 16:00] automated-ingest-run | inbox empty | no action
+- inbox: 0 items (inbox/ contains only .DS_Store; inbox/.processed/2026-06/ has 4 previously processed items)
+- ingest counter: 4 since last lint (unchanged)
+- notes: scheduled daily-jdg-aio-ingest task ran; nothing to process. Git pull skipped — remote auth not available in scheduled context.
