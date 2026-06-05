@@ -2517,3 +2517,18 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - inbox: 0 items (inbox/ contains only .DS_Store; inbox/.processed/2026-06/ has 4 previously processed items)
 - ingest counter: 4 since last lint (unchanged)
 - notes: scheduled daily-jdg-aio-ingest task ran; nothing to process. Git pull skipped — remote auth not available in scheduled context.
+
+## [2026-06-05 12:30] lint
+- findings: ~9 checks; 1 high-stakes structural escalation; 4 inline fixes; 1 index reconciliation
+- report: pulse/2026-06-05-lint.md
+- scope: 582 core AIO pages (excl. people/jehad-altoutou/ nested corpus, sources/, inbox/, marketing-handoff*/); deterministic mechanical checks + targeted contradiction/stale pass
+- headline: people/jehad-altoutou/ is a complete nested Prime Radiant instance (own CLAUDE.md + .config.yaml + 1096 sources; 1116 files) committed into the AIO repo — distorts all vault-wide metrics. Escalated, not touched.
+- inline fixes:
+  - removed vendors/claude.md.tmp + vendors/google-cloud.md.tmp (carry-forward #4; cleared from in-repo Claude Code)
+  - fixed 2 broken related: slugs (claude-md→claude-md-rulebook; reversed transformers date-slug)
+  - reconciled index "Questions (open)": 9 listed → 4 actually status:active; moved 5 resolved (incl. per-instance-curator-role, ratified by today's v0.15) into resolved section
+- escalated: questions/lint-2026-06-05-jehad-altoutou-nested-corpus.md
+- check results: contradictions 0 (targeted); orphans 43 (mostly AIR catalog vendors + 2 junk pages: attio-duplicate-air-76, import-your-data-linear-placeholder); broken refs 2 fixed + remainder = missing-page candidates; frontmatter 60 vendor missing-confidence (AIR-import divergence, systemic) + 2 real asset gaps; escalation aging 1 (bonaventure, external-blocked); attribution 146 person-decided no-attribution = rule-compliant on-touch backfill backlog (NOT swept)
+- other structural: 2nd marketing-handoff bundle (broader-marketing-corpus, 67 files); stray empty root 2026-05-31.md; scripts/ dir now present
+- carry-forward: 9 items (jehad corpus decision #1; vendor junk cleanup; entities stragglers; §4 vendor-confidence clarification; missing-page triage; stray root file; 2nd handoff; Dimon+Fireflies blocked; attribution backlog watch)
+- ingest counter reset: 0 since this lint
