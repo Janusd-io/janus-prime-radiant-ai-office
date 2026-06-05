@@ -7,7 +7,7 @@ updated: 2026-05-31
 departments: [ai-office, engineering, office-of-ceo]
 status: active
 confidence: high
-sources: [2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-arxiv-harness-updating-not-harness-benefit]
+sources: [2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-arxiv-harness-updating-not-harness-benefit, anthropic-when-ai-builds-itself, anthropic-self-service-data-analytics]
 related: [organisational-digital-twin, coordination-leverage-model, ai-native-enterprise-restructuring, ralph-loop-pattern, builders-sellers-measurers, ai-native-mandate, agentic-pipeline, sandbox-environment, agent-harness]
 ---
 
@@ -114,3 +114,12 @@ The paper's design guidance maps onto the YC five-part-loop architecture:
 This is also empirical support for the wiki's existing curator-pattern: Michael (strong-tier human reasoner) at the harness-benefit / task-solving role; the wiki's lint pass + standup skill (cheaper agentic execution) at the harness-updating role. The pattern Janus has been operating under is consistent with what the paper recommends — but now there's a citation. Worth carrying into outbound positioning when explaining why AIO's substrate works.
 
 **Caveat.** The paper is preprint (2026, arxiv); evaluated on three benchmarks (SWE-bench Verified, MCP-Atlas, SkillsBench). Findings on Claude Opus 4.6 / Sonnet 4.6 / Haiku 4.5 specifically — directly relevant to Janus's stack. Treat as the strongest currently-available academic anchor for the AIO's loop-Learning-step design; expect follow-on work to refine the role-allocation guidance.
+
+## First-party empirical grounding — Anthropic (added 2026-06-04)
+
+The Anthropic Institute's *When AI builds itself* ([[2026-06-04-anthropic-when-ai-builds-itself|pulse]]; [[anthropic-when-ai-builds-itself|source]]) supplies the frontier-lab production data this concept previously lacked (it had YC/Block framing and a preprint, but no first-party numbers):
+
+- **The loop is already running at a frontier lab.** >80% of code merged at Anthropic is Claude-authored; 8× LoC/engineer/day vs 2024; open-ended-task session success 76% in May 2026 (+50pts in six months); a fixed-goal research-speedup test went ~3×→~52× in a year. METR task-horizons double ~every 4 months.
+- **The Learning step, closed, in production.** Anthropic's analytics team runs *active correction harvesting* — a scheduled agent scans stakeholder channels for correction language, drafts a reference-doc fix, opens a PR to the domain owner; the same corrections feed the eval set ([[2026-06-04-anthropic-self-service-analytics-stack|analytics-stack pulse]]; [[anthropic-self-service-data-analytics|source]]). This is the fifth step of the loop — the one the AIO has *not* yet automated — running for real, and it confirms the "boring fix path" (edit markdown → merge → auto-sync) design.
+- **Amdahl's law names the next bottleneck.** Anthropic found that pushing more code around made *human code review* the binding constraint — the direct analogue of the AIO's curator-as-review-bottleneck on ingest/lint. The article elevates "spot and fix the shifting bottleneck" to *"the most important skill for any organization,"* which reframes closing the AIO's Learning step as central rather than incremental.
+- **Human comparative advantage = research taste / direction-setting**, which validates the [[curator-pattern]] role-split (cheap agentic execution + strong human reasoner at judgment) — the same conclusion the harness-updating-vs-benefit paper reaches from the model side.

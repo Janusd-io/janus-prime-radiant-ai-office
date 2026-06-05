@@ -3,11 +3,11 @@ type: vendor
 title: Anthropic
 slug: anthropic
 created: 2026-05-06
-updated: 2026-05-31
+updated: 2026-06-04
 departments: [ai-office]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03, 2026-05-26-bloomberg-bankers-claude-cost]
+sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03, 2026-05-26-bloomberg-bankers-claude-cost, anthropic-singapore-office]
 related: [claude, llm-wiki, agentic-ai, ai-native-enterprise-restructuring, builders-sellers-measurers, ai-tool-evaluation-framework, observed-exposure-ai-labor-measure]
 migrated_from: entities/vendors/anthropic.md
 ---
@@ -49,6 +49,10 @@ Two signals landed in one week that materially resolve vendor-viability risk on 
 - **Pricing-power signal (2026-05-26).** Bloomberg reports per-firm Claude bills among European financial-services customers *"on track to rise from tens of thousands of dollars for a single firm to several million"*, with even the [SpaceX capacity deal](https://www.anthropic.com/news/higher-limits-spacex) not fully absorbing demand. Anthropic is exercising pricing power that should drive the profitable-quarter trajectory; the customer-side response (in-house models for non-frontier tasks; cost-discipline narratives from StanChart's Winters) is captured in [[2026-05-31-ai-cost-pressure-in-house-model-shift]] and on the [[claude]] page.
 
 **Implication for Gate 2.3 ("vendor viability — 24-month horizon").** The criterion is now structurally over-satisfied for Anthropic. Worth a footnote on [[ai-tool-evaluation-framework]] capturing the new baseline. See [[ai-native-enterprise-restructuring]] for the full thesis of how the Q2 signals validate the AIO operating model.
+
+## International expansion — Singapore (added 2026-06-04)
+
+Anthropic advertised four Singapore-based roles on 2026-06-04 (APAC head of accounting, two product support specialists, a regional research economist) — its first visible move toward an SG presence, following OpenAI and Google DeepMind. SG-relevant for Janus (lead market; opens W19). The **regional research economist** role — measuring AI's economic effects with governments/academics — is the in-region extension of the [[observed-exposure-ai-labor-measure|observed-exposure labor work]]. Valuation context: SG sovereign fund **GIC** (first invested Sept 2025; led the Feb 2026 US$30B Series G) is a major backer; the subsequent **Series H puts Anthropic at US$965B, ahead of OpenAI's US$852B**. Full read at [[2026-06-04-anthropic-singapore-office]].
 
 ## Corporate moves — May 2026
 

@@ -2487,3 +2487,28 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - promoted insight (worth carrying into the eventual concepts/per-instance-curator-role.md): **curator role does not depend on hierarchical authority.** The curator is the person best-positioned to do the work — by skill, inclination, and bandwidth — regardless of where they sit on the team's org chart. This generalises beyond PM.
 - emerged-from-resolution: sub-question 5 (curator-as-formal-job-allocation) gains weight — now that curator ≠ team lead, Lysander needs explicit time-allocation buy-in from Euclid. Heightened-importance note added inline.
 - not done: still no rulebook edits; CLAUDE.md §1 amendment + concept page remain as scheduled follow-ups pending standup ratification.
+
+## [2026-06-05 09:10] ingest | anthropic-when-ai-builds-itself | article
+- filed source: sources/articles/anthropic-when-ai-builds-itself.md (Anthropic Institute; Favaro & Clark; embedded chart images preserved, incl. one 291KB inline base64 blob on line 19)
+- dedupe: no prior copy
+- created: pulse/2026-06-04-anthropic-when-ai-builds-itself.md
+- updated: concepts/recursive-self-improving-loop.md (new "First-party empirical grounding — Anthropic" section; +2 sources); index.md
+- escalated: none
+- notes: first frontier-lab first-party data behind the recursive-self-improving-loop concept (was YC/Block + 1 preprint only). 8×/>80%/METR; Amdahl's-law bottleneck-shift maps onto curator-as-review-bottleneck. Governance/pause frame noted but not AIO-actionable.
+
+## [2026-06-05 09:10] ingest | anthropic-self-service-data-analytics | article
+- filed source: sources/articles/anthropic-self-service-data-analytics.md (claude.com blog; Anthropic Data Science/Eng team)
+- dedupe: no prior copy
+- created: pulse/2026-06-04-anthropic-self-service-analytics-stack.md
+- updated: concepts/knowledge-compilation.md (4th instantiation — in-production validation; +source); briefs/post-rag-agent-data-stack.md ("Update 2026-06-04 — in-production validation" + 2 related); concepts/recursive-self-improving-loop.md (active-correction-harvesting cited as real closed Learning-step; +source); index.md
+- escalated: none
+- notes: load-bearing negative ablation (raw grep <1pt accuracy gain → structure not access is the bottleneck) is the cleanest practitioner validation of the Prime Radiant compilation bet. Skills-as-procedural-knowledge mirrors CLAUDE.md §5. Two CLAUDE.md refinement candidates flagged in the pulse Watch-for (semantic-layer-first analogue for §5.2 query; CI-hook lint). Not escalated — left as watch-items, not yet proposed edits.
+
+## [2026-06-05 09:10] ingest | anthropic-singapore-office | article
+- filed source: sources/articles/anthropic-singapore-office.md (Business Times; Sarah Koh; 2026-06-04)
+- dedupe: no prior copy
+- created: pulse/2026-06-04-anthropic-singapore-office.md (countries: sg)
+- updated: vendors/anthropic.md (new "International expansion — Singapore" section; Series H US$965B > OpenAI US$852B; +source; updated→2026-06-04); index.md
+- escalated: none
+- notes: SG lead-market relevant. Regional research economist = in-region extension of observed-exposure labor work. No new people/ entity created for the article authors (low value); GIC mentioned inline, no entity page (candidate if it recurs). Attribution from published source — fine.
+- ingest counter: 4 since last lint (1 GEO batch counted as 1 + 3 here). Lint trigger at 10 not yet reached.

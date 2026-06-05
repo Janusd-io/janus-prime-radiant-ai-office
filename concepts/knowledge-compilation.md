@@ -6,7 +6,7 @@ created: 2026-05-14
 updated: 2026-05-14
 departments: [ai-office, engineering]
 confidence: high
-sources: [better-models-wont-save-your-agent, recursive-language-models]
+sources: [better-models-wont-save-your-agent, recursive-language-models, anthropic-self-service-data-analytics]
 related: [context-engineering, retrieval-augmented-generation, post-rag-agent-data-stack, llm-wiki, janus-prime-radiant-build, pinecone, google-cloud]
 ---
 
@@ -23,6 +23,7 @@ The 2026 industry observation: "most agent failures are data failures, not model
 - **Pinecone Nexus** (2026-05-04) — explicit "knowledge compiler" framing; KnowQL is the declarative compilation query language. See [[pinecone]].
 - **Google Knowledge Catalog** (2026-04-22) — auto-curated semantic metadata as the compilation target. See [[google-cloud]].
 - **Janus Prime Radiant** (this wiki + sibling instances) — file-based, schema-driven, LLM-maintained. The compilation target is markdown + YAML frontmatter; the maintenance engine is Claude. See [[janus-prime-radiant-build]].
+- **Anthropic's self-service analytics stack** (2026-06-04) — in-production validation, not a vendor product. Anthropic's data team compiles canonical governed datasets + a human-owned semantic layer + LLM-retrieval-optimised reference docs ("skills"), reaching ~95% analytics accuracy. The load-bearing finding: a negative ablation showed raw grep access to thousands of prior queries moved accuracy <1 point — *structure*, not retrieval *access*, was the bottleneck. The cleanest practitioner evidence that compilation beats runtime retrieval. See [[2026-06-04-anthropic-self-service-analytics-stack]] and [[anthropic-self-service-data-analytics]].
 
 ## Cross-references
 
