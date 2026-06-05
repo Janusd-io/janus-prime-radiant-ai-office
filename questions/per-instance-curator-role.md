@@ -1,15 +1,27 @@
 ---
 type: question
-title: "Per-instance curator role — formalize before PM-team rollout deploys it"
+title: Per-instance curator role — formalize before PM-team rollout deploys it
 slug: per-instance-curator-role
 created: 2026-06-05
 updated: 2026-06-05
-departments: [ai-office]
+departments:
+  - ai-office
 status: resolved
 owner: michael-bruck
-related: [janus-prime-radiant-build, prime-radiant-instance-setup, nanoclaw-prime-radiant-wiring, nanoclaw, 2026-05-13-pm-team-prime-radiant-pilot-two, michael-bruck, jehad-altoutou, andrew-soane, lysander-liu, rosa-wu, spike-zhao, bonaventure-wong]
+related:
+  - janus-prime-radiant-build
+  - prime-radiant-instance-setup
+  - nanoclaw-prime-radiant-wiring
+  - nanoclaw
+  - 2026-05-13-pm-team-prime-radiant-pilot-two
+  - michael-bruck
+  - jehad-altoutou
+  - andrew-soane
+  - lysander-liu
+  - rosa-wu
+  - spike-zhao
+  - bonaventure-wong
 ---
-lint
 # Per-instance curator role — formalize before PM-team rollout deploys it
 
 ## TL;DR for standup
