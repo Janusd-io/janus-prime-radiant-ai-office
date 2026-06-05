@@ -37,6 +37,11 @@ Windows Tesseract detection.
 
 ## Operating decision
 
+Programme owner correction:
+
+- Janus Prime Radiant programme owner is Jehad Altoutou.
+- Michael Bruck must not be recorded as programme owner for this project.
+
 Use:
 
 ```text
