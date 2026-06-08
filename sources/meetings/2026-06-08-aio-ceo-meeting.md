@@ -14,7 +14,7 @@ audience: department
 departments: [ai-office]
 standup_skill_version: v3.24
 parser_version: 3
-related: [2900825519, 2924305391, 2976752077, 2976746728, 2976735394, 2976744834, fireflies, obsidian, plaud, google-calendar-mcp, gmail-mcp, bonaventure-wong, michael-bruck, jehad-altoutou]
+related: [2900825519, 2924305391, 2976752077, 2976746728, 2976735394, 2976744834, fireflies, obsidian, google-calendar-mcp, gmail-mcp, bonaventure-wong, michael-bruck, jehad-altoutou]
 ---
 
 # AIO CEO Meeting — 8 Jun 2026
@@ -33,7 +33,7 @@ The meeting covered seven threads: (1) Fireflies Android performance, (2) Cowork
 
 **Google Calendar and Gmail MCP.** Jehad demonstrated the Google Calendar MCP connector: respond-to-event (notifying a meeting organizer when the user can't attend a meeting they can't directly edit), analyze-availability (reading team schedules), and schedule-meetings. Gmail MCP was mentioned for sending the reschedule email. Both tools filed in AIR (AIR-156, AIR-155). Open question: data passing through Claude context window and Section 5.2.3 boundaries — IT/Ops and AI Policy to confirm.
 
-**Bonaventure Prime Radiant enrollment.** Bonaventure has been autonomously enrolled on a 7-day rolling window. He is browsing his knowledge graph. Plaud device transcripts can be dropped directly into the Prime Radiant inbox for ingest — this is a new intake path. Obsidian mobile requires a paid Sync subscription; Android lacks Web Clipper and Graph View. Items tracked.
+**Bonaventure Prime Radiant enrollment.** Bonaventure has been autonomously enrolled on a 7-day rolling window. He is browsing his knowledge graph. Obsidian mobile requires a paid Sync subscription; Android lacks Web Clipper and Graph View. Items tracked.
 
 **Keppel BIM certification.** External teams deliver BIM files; Janus certifies them. First certification module for Keppel is a key deliverable. Data provenance is critical — future vision includes IoT devices "pre-baked as Genus compatible." AIO to align on what is needed before contract.
 
@@ -46,7 +46,6 @@ The meeting covered seven threads: (1) Fireflies Android performance, (2) Cowork
 ## Decisions
 
 - Prepare Jane bot installation and configuration guide for handover to receiving team (AIO deliverable).
-- Plaud transcripts can be dropped directly into the Prime Radiant inbox — formalise as an intake path.
 - Bonaventure to raise ARM secure enclave concept with Alexander at ARM (tomorrow).
 - BIM certification for Keppel is a priority deliverable; align scope before contract.
 
@@ -73,7 +72,7 @@ The meeting covered seven threads: (1) Fireflies Android performance, (2) Cowork
 |---|---|---|---|
 | Fireflies.ai | AIR-9 | ENRICHED | Android performance gap added. iOS opens instantly; Android significantly slower. |
 | Obsidian | AIR-74 | ENRICHED | Mobile sync findings added: paid Sync subscription required; Android lacks Web Clipper; Graph View desktop-only. Distinct from earlier substrate finding. |
-| Plaud | AIR-157 | CREATED | Backlog. Physical recorder + transcription service; Bonaventure uses it. Transcripts ingestible via Prime Radiant inbox. Gate 1 chained. |
+| Plaud | AIR-157 | REVERTED | Entry was a hallucination artefact — Plaud was never mentioned in this meeting. AIR-157 moved to Rejected 2026-06-08. Grep of raw transcript confirmed zero matches. |
 | Google Calendar MCP | AIR-156 | CREATED | Backlog. Respond-to-event, analyze-availability, schedule-meetings capabilities demonstrated. Data-boundary open question for IT/Ops. Gate 1 chained. |
 | Gmail MCP | AIR-155 | CREATED | Backlog. Send emails via MCP. OAuth scope and admin policy open questions. Gate 1 chained. |
 

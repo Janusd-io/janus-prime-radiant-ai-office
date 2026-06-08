@@ -2,6 +2,32 @@
 
 > Append-only chronological record of ingests, queries, and lint passes. See `CLAUDE.md` §5 for entry formats.
 
+## [2026-06-08 08:30] standup | 2026-06-08-aio-standup | meeting
+- filed source: sources/meetings/2026-06-08-aio-standup.md
+- updated: 7 Monday sub-items created, 6 AIR enrichments/creates (standup skill v3.24)
+- created: sources/meetings/2026-06-08-aio-standup.md
+- escalated: none
+- notes: processed by standup skill from AIO 8 Jun daily standup; see file for full breakdown
+
+## [2026-06-08 09:00] standup | 2026-06-08-aio-ceo-meeting | meeting
+- filed source: sources/meetings/2026-06-08-aio-ceo-meeting.md
+- updated: 2900825519 (Prime Radiant parent), 2924305391 (PM team onboarding)
+- created: sources/meetings/2026-06-08-aio-ceo-meeting.md; Monday parent 2976752077 (Jane bot); sub-items 2976746728, 2976735394, 2976744834
+- escalated: none
+- notes: AIR-155 (Gmail MCP), AIR-156 (Google Calendar MCP) created; AIR-9 (Fireflies), AIR-74 (Obsidian) enriched; AIR-157 (Plaud) created in error — see correction entry below
+
+## [2026-06-08 14:00] standup | 2026-06-08-aio-mktg-meeting | meeting
+- filed source: sources/meetings/2026-06-08-aio-mktg-meeting.md
+- updated: 2882205554 (CRM parent), 2926686817 (Martech parent), 2926633922 (Cloudflare/Vercel sub-item)
+- created: sources/meetings/2026-06-08-aio-mktg-meeting.md; sub-items 2977253646, 2977244810, 2977270031 (CRM), 2977232794, 2977270189 (Martech), 2977244581 (website), 2977253879 (agentic marketing)
+- escalated: none
+- notes: AIR-158 (LinkedIn organic platform), AIR-159 (Twenty CRM) created; AIR-77, AIR-83, AIR-93, AIR-113, AIR-116 enriched; CookieBot dedup blocked (HIGH: 2926631478 + 2928680296); transcript access limitation — full 78KB persisted file inaccessible; digest built from 2KB raw excerpt + Fireflies action items (medium confidence)
+
+## [2026-06-08 14:05] correction | AIR-157 plaud hallucination revert
+- files updated: sources/meetings/2026-06-08-aio-ceo-meeting.md (4 locations: related: frontmatter, body paragraph, Decisions section, Registry table)
+- AIR-157 moved to Rejected in Linear (hallucination artefact — Plaud never mentioned in AIO CEO Meeting 2026-06-08; zero transcript matches confirmed by grep)
+- notes: caused by session compaction hallucination in prior context window; detected and corrected same session
+
 ## [2026-05-05 12:58] kb-init
 - Created folder scaffolding per `CLAUDE.md` §2.
 - Wrote v0 schema doc (`CLAUDE.md`).
