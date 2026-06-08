@@ -3,11 +3,11 @@ type: concept
 title: LLM Wiki
 slug: llm-wiki
 created: 2026-05-06
-updated: 2026-05-07
+updated: 2026-06-08
 departments: [ai-office]
 confidence: high
-sources: [karpathy-llm-wiki, greg-isenberg-obsidian-claude-code-os, elvis-saravia-personal-research-kb, arscontexta-claude-code-plugin, obsidian-knowledge-vault-auto-synthesis]
-related: [andrej-karpathy, janus-prime-radiant-build, obsidian, agent-skills]
+sources: [karpathy-llm-wiki, greg-isenberg-obsidian-claude-code-os, elvis-saravia-personal-research-kb, arscontexta-claude-code-plugin, obsidian-knowledge-vault-auto-synthesis, prime-radiant-continual-learning-memory]
+related: [andrej-karpathy, janus-prime-radiant-build, obsidian, agent-skills, prime-radiant, compounding-learning, agent-memory]
 ---
 
 # LLM Wiki
@@ -55,6 +55,26 @@ The Janus instance of this pattern is named **Janus Prime Radiant**, after Hari 
 By contrast, Asimov's Multivac / Galactic AC / Cosmic AC lineage are *computational* metaphors — black-box mainframes you query for answers. That's an oracle / search-engine model, which the wiki isn't. The wiki is closer to a guarded, contributed-to instrument than a giant computer in a basement.
 
 The naming pattern: one Prime Radiant, many domain facets — *Janus Prime Radiant · AI Office* (this instance), *· Marketing*, *· HR*, etc., as the pattern extends to other departments.
+
+## The stateless AI trap — why the wiki is not optional
+
+Every AI conversation starts cold. The model has no memory of what was discussed last week, last month, or last year. It doesn't know which vendors were rejected and why, which strategic bets are in flight, which decisions were made under which constraints. This is not a quirk of any platform — it is the default state of all current commercial AI.
+
+The consequence is that intelligence produced in a session evaporates when it ends. The next session recomputes it from scratch. For one-off queries, tolerable. For strategic knowledge work — where almost all value comes from accumulation — fatal.
+
+The instinct is to say "we already have Notion, Slack, Fireflies." But these systems are not connected, not synthesised, and not queryable across the whole. An AI that can search each independently cannot answer "why did we make the decision we made in April?" — the answer requires pulling the meeting transcript, the Notion log, the Linear evaluation, and the Slack thread where it was contested. No single system holds the synthesis. The wiki holds it, by design. See [[prime-radiant]] for the full argument.
+
+## Why in-context learning beats fine-tuning for institutional knowledge
+
+The alternative to the wiki approach — encoding institutional knowledge in model weights via fine-tuning — has superficial appeal but fails on the dimensions that matter most for organisational knowledge:
+
+- **Updatability.** In-context knowledge changes by editing a file. In-weights knowledge requires a new training run. For knowledge that evolves weekly, this is not a marginal difference — it is the difference between a living record and a slowly degrading snapshot.
+- **Inspectability.** Context is readable by anyone — human or AI. Weights are opaque. You cannot audit what a fine-tuned model "knows" or identify where it is wrong. A structured wiki page can be read, corrected, and version-controlled.
+- **Vendor independence.** In-context knowledge travels across model generations and providers unchanged. Fine-tuned weights are locked to the model they were trained on.
+
+The research grounding: Brown et al.'s 2020 GPT-3 work established that in-context learning is competitive with fine-tuning for knowledge retrieval tasks, and subsequent research has consistently found that well-structured, curated context outperforms large-volume raw injection. Quality and organisation of context matter more than volume — which is precisely what the wiki's curation discipline provides.
+
+The wiki solves the remaining challenge of in-context learning — scale — by injecting only the relevant subset on each query. The multi-graph frontmatter (department, temporal, causal, semantic edges) makes targeted retrieval possible regardless of how large the vault grows. See [[prime-radiant]] for the multi-graph architecture and [[agent-memory]] for the broader memory-system research context.
 
 ## Related approaches surfaced post-Karpathy
 

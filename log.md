@@ -2577,3 +2577,17 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - inbox mv: inbox originals NOT removed — sandbox filesystem restriction (Operation not permitted on the Cowork mount). Sources copies confirmed present in sources/articles/. Curator should manually clear inbox files on next Obsidian session.
 - attribution: all sources are public articles/posts/papers; no meeting transcripts; no attribution issues
 - ingest counter: 1 since 2026-06-05 12:30 lint (batch counts as 1)
+
+## [2026-06-08 00:00] ingest | prime-radiant-continual-learning-memory | misc (internal brief)
+- filed source: sources/misc/prime-radiant-continual-learning-memory.md (Nano/AI Office; 2026-06-05; internal strategic brief)
+- dedupe: unique; no prior copy in sources/ (related content exists in agent-memory, llm-wiki, prime-radiant-three-layer-architecture but this is a distinct synthesis document)
+- inbox mv: moved to inbox/.processed/2026-06/prime-radiant-continual-learning-memory.md
+- updated:
+  - concepts/prime-radiant.md — **stub populated**: full concept page; continual learning framing (Mike Ross vs Dory); multi-graph architecture; four-relationship-type comparison table; candidate approaches compared; in-context learning research grounding (Brown et al.); why flat markdown files; LLM-maintained rationale; CLAUDE.md schema evolution; three compounding mechanisms; three-layer architecture note; federation vision; why-now (three conditions); naming rationale. sources/related expanded.
+  - concepts/compounding-learning.md — **stub populated**: full concept page; why compounding is non-linear (network-valued); three mechanisms (cross-reference, query-back, lint); prerequisite: structure; relationship to ML continual learning (Letta/token-space framing); strategic implication for Janus.
+  - concepts/llm-wiki.md — new "stateless AI trap" section (Mike Ross framing, why wiki is not optional); new "why in-context learning beats fine-tuning" section (Brown et al. research grounding, updatability/inspectability/vendor-independence); sources + related expanded.
+- created: none (all updates to existing pages; no new entities needed)
+- escalated: none
+- attribution: source is internal AI Office brief authored by Nano; no meeting transcript; no attribution issues
+- notes: this brief is the most complete "why Prime Radiant" document in the vault. Two long-standing stubs (prime-radiant, compounding-learning) are now full concept pages. The in-context vs fine-tuning research framing is the most substantively new content for llm-wiki.md.
+- ingest counter: 2 since 2026-06-05 12:30 lint (Letta batch = 1, this = 2). Lint trigger at 10.
