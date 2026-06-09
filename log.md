@@ -2653,3 +2653,23 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - attribution: official Anthropic publication; no attribution issues
 - notes: first-party Anthropic articulation of the compounding-advantage thesis validates the AIO's own framing. The three-pillar framework + deployment phasing are directly applicable to how AIO positions the Prime Radiant rollout to department heads. Trust-boundary framing is new vocabulary for the IAM section of [[organisational-digital-twin]].
 - ingest counter: 7 since 2026-06-05 12:30 lint
+
+## [2026-06-09 11:35] curation | add SaaS Blueprint build-kit (assets/saas-blueprint/ + concepts/saas-blueprint.md)
+- scope: add a self-contained, reusable SaaS/CRM build-kit distilled from a deep multi-agent study of the Twenty CRM codebase (github.com/twentyhq/twenty); mirror of the same kit in Jehad's personal Obsidian vault.
+- files created:
+  - assets/saas-blueprint/_SaaS Blueprint.md (read-first: philosophy, 7 non-negotiables, build order)
+  - assets/saas-blueprint/Folder Structure.md (repo skeleton + module convention + naming)
+  - assets/saas-blueprint/Design Tokens.md (paste-ready globals.css CSS vars + tailwind.config.ts with real Twenty-derived values + state-styling contract)
+  - assets/saas-blueprint/Architecture Patterns.md (14 patterns with "use when" + anti-patterns)
+  - assets/saas-blueprint/Code Recipes.md (working code: tenant-scoped Prisma, RBAC, event backbone, metadata objects, polymorphic field renderer, cursor pagination, Server-Action shape, jobs, saved views)
+  - assets/saas-blueprint/DESIGN Templates.md (drop-in DESIGN.md for product register + editorial register)
+  - assets/saas-blueprint/Twenty CRM Overview.md (high-level reference summary)
+  - assets/saas-blueprint/Twenty CRM PROJECT_REFERENCE.md (full 21-section deep architecture reference)
+  - concepts/saas-blueprint.md (discovery concept page; vault frontmatter; links the bundle)
+- updated:
+  - index.md — new Concepts catalog line for [[saas-blueprint]]; new dated header.
+- decisions-made: filed as a bundle under assets/ (precedent: assets/janus-html-deck/) rather than scattering pages into concepts/, to keep it self-contained and avoid polluting the curated concept graph. Concept page created with explicit curator authorisation (Jehad), satisfying the human-in-the-loop for new-concept-page creation; internal wikilinks repointed from personal-vault paths to in-vault targets.
+- ingest counter: unchanged (curation, not an inbox ingest; counter remains 7 since 2026-06-05 12:30 lint).
+- escalated: none
+- not-done (deliberately): git commit/push withheld per curator instruction (shared remote; deferred to Jehad). No CLAUDE.md schema change proposed.
+- notes: targets the Next.js 15 / Prisma / Clerk / Tailwind+shadcn / Stripe / Resend stack; the *patterns* originate in Twenty (NestJS/TypeORM/Jotai/Linaria). Quality substrate for the build phase of platform-development-process; encodes the discipline behind the 5-area-stress-test gate.
