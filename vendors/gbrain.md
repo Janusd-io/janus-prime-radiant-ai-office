@@ -7,7 +7,7 @@ updated: 2026-05-23
 departments: [ai-office, engineering]
 status: monitored
 confidence: medium
-sources: [2026-05-22-marktechpost-gbrain-tutorial]
+sources: [2026-05-22-marktechpost-gbrain-tutorial, odt-competitive-analysis-2026]
 related: [agent-memory, openclaw, anthropic, claude-code, mcp, janus-prime-radiant-build, observed-exposure-ai-labor-measure]
 migrated_from: entities/vendors/gbrain.md
 ---
@@ -96,6 +96,17 @@ Reasons NOT to adopt yet:
 
 - **The compiled-truth-plus-timeline-per-page pattern** is a precise sub-pattern within the broader markdown-first agent-memory family. Worth bookmarking — Prime Radiant uses this pattern at the *vault* level (the `log.md` for the wiki, the `decisions/` dated slugs, the `pulse/` timeline) but not strictly at the *per-page* level. GBrain enforces it per page. A future Prime Radiant convention pass could consider whether per-page timeline appendices would add value (vs the current pattern of dated body claims and explicit updated: frontmatter).
 - **[[garry-tan|Garry Tan]] as an external surface.** Tan is YC's CEO; OpenClaw is the YC-derived OSS agent harness lineage Janus already tracks ([[openclaw]], [[nemoclaw]], [[nanoclaw]]). GBrain extends that lineage to memory infrastructure. The lineage signals YC is broadly committing to open-source agent infrastructure over closed-vendor lock-in — useful for [[ai-native-janus-positioning|Bonaventure's positioning]] when discussing the open-source-substrate angle.
+
+## "Company Brain Confinement" structural issue (added 2026-06-09)
+
+[[odt-competitive-analysis-2026]] identifies a fundamental architectural tension in deploying shared corporate GBrains: **the single-writer constraint**. Standard embedded databases (like PGLite) allow only one writer at a time. Running an automated sync operation requires locking the database and halting all active MCP servers. This is the Janus sandbox's git-lock problem at the database layer.
+
+Scaling GBrain safely to multi-user, multi-agent writes requires:
+- HTTP MCP server (vs stdio MCP, which is single-session)
+- Dynamic Client Registration
+- Scope-gated **OAuth 2.1** authentication to isolate user-level access
+
+This is a meaningful architectural tax before GBrain becomes a genuine team-shared substrate (vs a personal or single-curator deployment). Worth factoring into any Janus adoption evaluation — the setup that works for Garry Tan's personal brain may not cleanly generalise to a 10-department Prime Radiant deployment without the HTTP + OAuth layer. The [[prime-radiant-storage-substrate|substrate brief]] should capture this as the "write-concurrency" design decision for the retrieval-infrastructure path.
 
 ## Watch for
 

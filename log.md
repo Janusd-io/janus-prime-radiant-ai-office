@@ -2654,6 +2654,28 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - notes: first-party Anthropic articulation of the compounding-advantage thesis validates the AIO's own framing. The three-pillar framework + deployment phasing are directly applicable to how AIO positions the Prime Radiant rollout to department heads. Trust-boundary framing is new vocabulary for the IAM section of [[organisational-digital-twin]].
 - ingest counter: 7 since 2026-06-05 12:30 lint
 
+## [2026-06-09 10:00] ingest | odt-competitive-analysis-2026 | article (competitive intelligence report)
+- filed source: sources/articles/odt-competitive-analysis-2026.md
+- dedupe: unique; no prior filing of this report (title + content not matching any sources/articles/ entry)
+- inbox mv: inbox/Organizational Digital Twin Competitive Analysis.md → inbox/.processed/2026-06/ ✓
+- updated:
+  - concepts/organisational-digital-twin.md — new "Competitive landscape and analyst positioning — Gartner DTO category" section: Gartner MQ dates (Sep 14 London + Nov 11 Barcelona 2026), analyst-DTO platforms (Mavim, QualiWare, Corporater, Interfacing), anti-RAG structural finding (Atlassian Rovo + Pinecone Nexus), data-debt primacy finding (30.6% DEMATEL-ANP research), Janus SWOT summary. sources + related expanded.
+  - briefs/ai-native-enterprise-restructuring.md — new update section (2026-06-09): Block 40% / ~4,000 employees confirmed, ClickUp 20% cut May 2026 (new signal), anti-RAG as economic unlock (Rovo + Nexus benchmarks).
+  - vendors/pinecone.md — added Nexus benchmark data: 7× token reduction, 40% latency, 100% task completion, KnowQL; sources + related expanded.
+  - vendors/gbrain.md — added "Company Brain Confinement" structural issue: single-writer PGLite lock, HTTP MCP + OAuth 2.1 required for multi-user scale; sources expanded.
+  - vendors/glean.md — added scale data ($200M ARR, 27B docs, 20T tokens/year) and Glean Skills product framing.
+- created:
+  - sources/articles/odt-competitive-analysis-2026.md
+  - pulse/2026-06-09-gartner-dto-magic-quadrant-2026.md
+  - questions/ingest-2026-06-09-atlassian-rovo-vendor-page.md (escalation — Atlassian Rovo vendor page)
+  - questions/ingest-2026-06-09-celonis-vendor-page.md (escalation — Celonis vendor page)
+- escalated:
+  - questions/ingest-2026-06-09-atlassian-rovo-vendor-page.md — Atlassian Rovo lacks a vendor page; entity-page creation is high-stakes per §5.1. Propose Atlassian parent page with Rovo section.
+  - questions/ingest-2026-06-09-celonis-vendor-page.md — Celonis lacks a vendor page; directly adjacent to the Park/van der Aalst academic work already filed.
+- attribution: publisher and author not identified in document; framed as competitive intelligence report. ODT category claims corroborated by Gartner URLs and vendor sources cited inline (numbered footnotes). Confidence: high for publicly-verifiable claims; medium for "\[User Prompt\]" entries where primary source is not disclosed.
+- notes: report directly validates [[hgtft]] engineering DNA as primary Janus competitive strength for ODT market entry. Gartner MQ dates are the single most time-sensitive intelligence item — Sep 14 and Nov 11 2026 are when enterprise buyers begin formal vendor evaluation. PE mid-market opportunity is named explicitly and maps to Janus's size/positioning. Anti-RAG finding reinforces the Prime Radiant schema discipline as the right architectural bet.
+- ingest counter: 8 since 2026-06-05 12:30 lint
+
 ## [2026-06-09 11:35] curation | add SaaS Blueprint build-kit (assets/saas-blueprint/ + concepts/saas-blueprint.md)
 - scope: add a self-contained, reusable SaaS/CRM build-kit distilled from a deep multi-agent study of the Twenty CRM codebase (github.com/twentyhq/twenty); mirror of the same kit in Jehad's personal Obsidian vault.
 - files created:

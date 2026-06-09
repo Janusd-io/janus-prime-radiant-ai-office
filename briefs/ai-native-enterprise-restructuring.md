@@ -3,10 +3,10 @@ type: brief
 title: AI-native enterprise restructuring — what JPMorgan, Cloudflare, and KPMG are signalling, and what it validates in the AIO bet
 slug: ai-native-enterprise-restructuring
 created: 2026-05-21
-updated: 2026-05-31
+updated: 2026-06-09
 departments: [ai-office, marketing, hr, office-of-ceo]
 confidence: high
-sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company]
+sources: [2026-05-21-dimon-jpmorgan-more-ai-fewer-bankers, 2026-05-21-prince-cloudflare-measurers-replaced, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, anthropic-labor-market-impacts-2026-03, 2026-05-21-mit-tech-review-code-with-claude-london, 2026-05-20-every-google-io-agents-agents-agents, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, odt-competitive-analysis-2026]
 related: [builders-sellers-measurers, observed-exposure-ai-labor-measure, ai-native-mandate, ai-native-janus-positioning, agentic-lean-marketing-stack, stack-composition-framework, janus-prime-radiant-build, organisational-digital-twin, coordination-leverage-model, recursive-self-improving-loop, anthropic, claude, claude-code, google-cloud, andrew-soane, bonaventure-wong]
 ---
 
@@ -159,6 +159,29 @@ The three additional signals don't invalidate the original four — they *deepen
 | Anthropic is the defensive choice, not the aggressive one | Stainless acquisition + 4.6/4.7 cadence + KPMG anchor + Q2 profitability = the most-defensible vendor position in the market | **Strengthened** — vendor-bet risk is at its lowest point YTD |
 | Drucker frame is the operating taxonomy | Top-10 exposed-occupations list maps cleanly onto the measurer cluster | **Strengthened with empirical evidence** — cite [[observed-exposure-ai-labor-measure]] alongside the Cloudflare op-ed when explaining the frame |
 | Differentiation risk is *increasing* (substrate is the moat, not "doing AI") | Google's I/O moves + Anthropic's Stainless / Code-with-Claude moves = the substrate is now the contested frontier, not the model | **Heightened urgency** — the next 6-12 months are when Janus needs to ship substrate work that redeems the head-start |
+
+## Update — 2026-06-09: Competitive landscape validation + anti-RAG structural finding
+
+[[odt-competitive-analysis-2026]] (ingested 2026-06-09) consolidates 50 competitive players in the ODT / AI-native operating model space and adds three data points that deepen this brief's picture:
+
+### Block's 40% cut figure confirmed
+
+The competitive intelligence report confirms Block's **early 2026 headcount reduction at ~4,000 employees (40%)**. This is the clearest single quantification of the F-500 internal restructuring pattern — not a pilot or phased plan but a completed structural reduction in the first quarter of the year. Context: Block is ~10,000 employees at the time, so the reduction is substantial. The essay ("From Hierarchy to Intelligence") was published separately; the employee-count cut accompanies it.
+
+### ClickUp — May 2026 (new signal)
+
+ClickUp executed a **20% headcount reduction in May 2026** explicitly to support a flat AI-native coordination model. Joins Block / Cloudflare / JPMorgan / Standard Chartered / HSBC / Goldman in the cross-industry consensus signal this brief tracks. Notable because ClickUp is a mid-market SaaS company (not F-500) — evidence the restructuring pattern is propagating down-market from the Fortune-500 vanguard.
+
+### Anti-RAG as the economic unlock
+
+The report names a structural finding this brief hasn't yet captured explicitly: **the true economic unlock of AI-native architecture is avoiding vector-only semantic search where possible.** Two market proofs:
+
+- **Atlassian Rovo** queries the 20-year "Teamwork Graph" (Jira/Confluence relational data) directly rather than running vector search. Result: doubled customer ARR growth, 32% YoY Atlassian stock growth, token costs halved. Rovo's value is that it doesn't need RAG — 20 years of pre-structured relationships in Jira is better infrastructure than any runtime retrieval system.
+- **Pinecone Nexus** compiles unstructured data at build time into pre-shaped JSON artifacts. 7× token reduction, 40% latency reduction, 100% task completion on complex queries vs traditional RAG.
+
+**AIO implication:** every relationship the wiki encodes in frontmatter at ingest time is one less token burned at query time. The Prime Radiant's schema discipline is the anti-RAG architecture at institutional-KB scale. The measurer-replacement substrate (this brief) and the substrate's knowledge-architecture discipline ([[organisational-digital-twin]]) reinforce each other — the "agentic-lean" claim is only credible if the knowledge layer is structured rather than raw.
+
+See [[2026-06-09-gartner-dto-magic-quadrant-2026]] for the analyst-category update (Gartner MQ sessions Sep + Nov 2026).
 
 ## Update — 2026-05-31: Block names the architecture publicly
 
