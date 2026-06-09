@@ -1,6 +1,8 @@
 # CLAUDE.md — Janus Prime Radiant Schema & Workflows
 
-> **Status:** v0.15, 2026-06-05. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+> **Status:** v0.16, 2026-06-08. This document is the load-bearing rulebook for the wiki. It tells you (the LLM) how to file things, what frontmatter to use, how to handle each source type, and when to run maintenance. It is expected to evolve. When rules feel wrong in practice, propose edits to this file rather than silently deviating.
+>
+> *v0.16 changes (2026-06-08):* **Three concepts absorbed from Semiont comparative analysis.** (1) **Eight-flows vocabulary added to §5 preamble** — frame, yield, mark, match, bind, gather, browse, beckon as named sub-operations for knowledge work; *bind* (entity disambiguation during ingest) and *gather* (assembling context for a query) are the most operationally relevant. (2) **Human-AI Mix axis named explicitly in §5.1** — the low/high-stakes trust line is now described as the agent-primary vs human-primary axis, making the governing principle legible to new instance curators without requiring them to infer it from the rule list. (3) **Passage-level attribution added to §5.1** — for high-stakes ingests (vendor evaluations, primary research, meeting decisions), load-bearing claims in the wiki page body should cite the specific source passage, not just the source slug in frontmatter. Applies on high-stakes ingests only; does not affect routine updates or pulse entries.
 >
 > *v0.15 changes (2026-06-05):* **Per-instance curator role formalised.** Ratified in AIO Standup 5 June 2026. (1) Each Prime Radiant instance has exactly **one designated curator** who runs Obsidian locally and owns the vault's discipline. (2) All other team members are **contributors / users** who interact with the instance through NanoClaude (Slack) — no local Obsidian, no rulebook memorisation required. (3) **Curator ≠ team lead** — the PM-team instance (Lysander as curator, Euclid + Rosa as team leads) establishes this as the first clean separation. (4) Deputy curators are encouraged where headcount allows; only the primary or deputy runs Obsidian at any given time (race-condition prevention). (5) The full role definition, responsibilities, and current instance assignments live in [[per-instance-curator-role]] (`concepts/per-instance-curator-role.md`). See also the [[prime-radiant-instance-setup]] addendum (to be written) for "identify curator" as step 1 of any new-instance bootstrap.
 >
@@ -301,6 +303,23 @@ The four dimensions are **orthogonal** — a single page contributes to multiple
 
 There are four operations: **Ingest**, **Query**, **Lint**, and **Index update**.
 
+### Knowledge work vocabulary
+
+The following eight verbs (adapted from the Semiont protocol, absorbed 2026-06-08) name the sub-operations that occur within the four workflows above. They are a thinking vocabulary, not a separate layer — every verb maps onto steps that already happen. Using them consistently makes the operations easier to reason about, easier to name in log entries, and easier to explain when standing up new instances.
+
+| Verb | What it names | Where it occurs |
+|---|---|---|
+| **Frame** | Evolving the KB's schema — adding a new type, proposing a CLAUDE.md edit | Curation, lint |
+| **Yield** | Introducing new material into the system — filing a source, creating a page | Ingest |
+| **Mark** | Adding structured metadata — frontmatter fields, tags, entity references | Ingest, curation |
+| **Match** | Searching for candidate pages relevant to a question | Query |
+| **Bind** | Resolving an ambiguous entity mention to an existing page — "is this the same Cursor IDE we already have?" | Ingest (step 5 — identify wiki impact) |
+| **Gather** | Assembling the relevant context around a focal question before synthesising the answer | Query (step 2–3) |
+| **Browse** | Navigating the index and linked pages to explore a topic | Query |
+| **Beckon** | Directing curator attention — escalation questions, lint flags, watch-for notes | Ingest (escalation), lint |
+
+*Bind* and *gather* are the most operationally significant additions. **Bind** makes explicit what step 5 of the ingest flow does: before creating a new entity page, resolve whether the entity already exists under a different slug. **Gather** makes explicit what query does before synthesising: pull the relevant multi-graph neighbourhood, not just the most obviously matching page.
+
 ### Git-awareness across every workflow
 
 Every workflow below runs against a git working tree (see §1 "Substrate — GitHub-backed Git repos"). The standing rule:
@@ -333,16 +352,18 @@ Cowork executes pull/commit/push automatically when invoked through standard wor
 10. **Update `index.md`** for any created/renamed/deleted pages.
 11. **Increment the ingest counter** (counted off `log.md`; lint trigger fires at 10).
 
-#### Low-stakes vs. high-stakes (the trust line)
+#### Low-stakes vs. high-stakes (the trust line) — calibrating the Human-AI Mix
 
-**Low-stakes — write directly:**
+This split governs the **Human-AI Mix**: whether a given operation is **agent-primary** (LLM writes directly, human sees the result) or **human-primary** (LLM escalates, human decides before anything is written). The axis is a deployment decision, not an architectural one — the same LLM applies different autonomy levels to different operation types based on reversibility and collision risk. New instance curators: this is the governing principle behind the rule lists below.
+
+**Agent-primary (low-stakes) — write directly:**
 - Updating an existing entity/concept/project page with new factual content from the source.
 - Adding a new `pulse/` entry (always atomic, always reversible).
 - Adding source slugs to a page's `sources:` frontmatter.
 - Adding `[[wikilinks]]` between existing pages.
 - Creating a new source file in `sources/`.
 
-**High-stakes — file a `questions/` page for Michael's review before acting:**
+**Human-primary (high-stakes) — file a `questions/` page for Michael's review before acting:**
 - Creating a new entity page (vendor, person, client, internal) — name collision risk, duplication risk.
 - Creating a new concept page when a similarly-named one might exist.
 - Merging, renaming, or deleting any existing page.
@@ -363,6 +384,18 @@ The escalation page is named `questions/ingest-YYYY-MM-DD-HHMM-<slug>.md` with t
 ```
 
 **Batch ingests** are permitted when many sources arrive together as a clear unit of work (e.g., a Mivory backfill, a thematic article dump on the same day). Use one log entry with header `## [YYYY-MM-DD HH:MM] batch-ingest | <description> | N items`, listing the filed source slugs and cumulative wiki impact (created concepts, updated pages, escalations, ingest counter increment). One batch entry per natural unit of work; per-source entries when sources are unrelated.
+
+#### Per-source ingest rules
+
+#### Passage-level attribution (high-stakes ingests)
+
+For **high-stakes ingests** — vendor evaluations, primary research papers, meeting decisions, any ingest that produces a decision or lesson record — load-bearing claims in the wiki page body should cite the specific passage that justifies them, not just the source slug in frontmatter.
+
+**Format:** inline, at the point of the claim: `Per [source-slug] §3 ("exact or near-exact quote, ≤15 words")…` or `As [source-slug] puts it, "[short quote]."` If the source has no section numbers, use a descriptive anchor: `Per [source-slug] (§"Why it works" section)…`
+
+**When this applies:** creating or substantially updating a decision page, a lesson page, a vendor evaluation, or any brief whose aha depends on a specific finding in a source. It does *not* apply to routine pulse entries, frontmatter-only updates, or wikilink additions — those remain agent-primary without passage citation.
+
+**What this provides:** a finer-grained causal graph — the wiki not only records *which source* supports a claim (via `sources:` frontmatter) but *which passage* in that source, making future contradiction-checking and source-deprecation trivially auditable. This is the passage-grounding discipline from Semiont's annotation model, applied at the body-text level without requiring database infrastructure.
 
 #### Per-source ingest rules
 

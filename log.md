@@ -2591,3 +2591,65 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - attribution: source is internal AI Office brief authored by Nano; no meeting transcript; no attribution issues
 - notes: this brief is the most complete "why Prime Radiant" document in the vault. Two long-standing stubs (prime-radiant, compounding-learning) are now full concept pages. The in-context vs fine-tuning research framing is the most substantively new content for llm-wiki.md.
 - ingest counter: 2 since 2026-06-05 12:30 lint (Letta batch = 1, this = 2). Lint trigger at 10.
+
+## [2026-06-08 00:00] ingest | annunziata-context-model-compute-semiont | article (LinkedIn clipping)
+- filed source: sources/articles/annunziata-context-model-compute-semiont.md (Anthony J. Annunziata / The AI Alliance; LinkedIn; 2026-06-07)
+- dedupe: unique; no prior Semiont, Annunziata, or AI Alliance content in vault
+- inbox mv: moved to inbox/.processed/2026-06/annunziata-context-model-compute-semiont.md
+- created:
+  - pulse/2026-06-07-context-model-compute-semiont.md — Context-Model-Compute framing; Semiont project intro; relevance to AIO context-layer / Prime Radiant space
+  - questions/ingest-2026-06-08-semiont-entity-page.md — escalation: should Semiont get its own vendor/concept entity page? Recommendation: hold until second source
+- updated:
+  - concepts/context-engineering.md — new "Update — 2026-06-08" section: Context-Model-Compute frame; Semiont intro; new open question. sources + related expanded.
+- escalated: questions/ingest-2026-06-08-semiont-entity-page.md
+- attribution: public LinkedIn post; no attribution issues
+- notes: Context-Model-Compute is a clean mainstream articulation of the post-RAG infrastructure thesis already in the wiki. Semiont is too early-stage for a full entity page; escalated.
+- ingest counter: 3 since 2026-06-05 12:30 lint
+
+## [2026-06-08 00:00] batch-ingest | Semiont GitHub README + Protocol README | 2 items
+- sources filed:
+  - sources/articles/semiont-github-readme.md — GitHub main README; eight flows; quick start; demo KBs; SDK/CLI/Agent Skills surfaces; Alpha status
+  - sources/articles/semiont-protocol-readme.md — Protocol README; design tenets; peer-collaboration model; eight flows detail; W3C Web Annotation; event bus; coordination signals
+- dedupe: both unique; prior annunziata-context-model-compute-semiont was LinkedIn-only with no technical detail
+- inbox mv: both moved to inbox/.processed/2026-06/
+- created:
+  - vendors/semiont.md — full vendor page: eight flows, three programmable surfaces, three core tenets, demo KB list, Alpha status, watch-list recommendation
+- updated:
+  - questions/ingest-2026-06-08-semiont-entity-page.md — status: active → resolved; resolution note added; vendor page created
+- escalated: none (escalation resolved)
+- attribution: public GitHub repos; no attribution issues
+- notes: Semiont is Alpha but architecturally substantive. Eight-flows vocabulary and peer-collaboration model are conceptually interesting relative to Prime Radiant. Full comparative analysis produced for Michael (see conversation).
+- ingest counter: 5 since 2026-06-05 12:30 lint (Letta=1, prime-radiant-memo=2, annunziata-li=3, this batch=4+5 → counter 5)
+
+## [2026-06-08 00:00] schema-update | CLAUDE.md v0.15 → v0.16 | three Semiont-derived concepts
+- changes:
+  1. §5 preamble — new "Knowledge work vocabulary" subsection: eight-flows table (frame/yield/mark/match/bind/gather/browse/beckon); bind and gather called out as most operationally significant
+  2. §5.1 trust-line section — renamed "Low-stakes vs. high-stakes (the trust line) — calibrating the Human-AI Mix"; added Human-AI Mix axis framing (agent-primary vs human-primary); labels applied to both rule lists
+  3. §5.1 — new "Passage-level attribution (high-stakes ingests)" subsection before per-source rules: format, scope (decision/lesson/vendor-eval/brief only), rationale
+- rationale: concepts absorbed from Semiont comparative analysis (2026-06-08 conversation); no behaviour change for routine operations; passage-level attribution adds discipline on high-stakes ingests only
+- files touched: CLAUDE.md
+
+## [2026-06-08 12:00] ingest | park-van-der-aalst-dto-process-mining | article (academic paper)
+- filed source: sources/articles/park-van-der-aalst-dto-process-mining.md + .pdf (Park & van der Aalst, RWTH Aachen PADS; 8 pages; conference paper; GitHub: gyunamister/dtween)
+- dedupe: unique; no prior process-mining or DTO academic content in vault
+- inbox mv: PDF moved to sources/articles/. Inbox originals not removable from sandbox (filesystem restriction); curator to clear manually.
+- updated:
+  - concepts/organisational-digital-twin.md — new "Academic grounding — action-oriented process mining" section: DT-IM architecture mapping table (OCPN → knowledge graph, operational view → sensor readout, control view → config surface, action patterns → closed-loop control, action engine → agentic pipeline); 55% sojourn-time improvement result; PADS/RWTH lineage connection to HGTFT. sources + related expanded. updated: 2026-06-08.
+- created: none (all updates to existing pages)
+- escalated: none
+- attribution: public academic paper; no attribution issues
+- notes: provides formal academic grounding for the DTO concept; the DT-IM vocabulary (action patterns, action engine, operational/control views) is directly relevant to how AIO frames its closed-loop pipelines. Janus's existing pipelines are already ahead of the academic state-of-the-art on closed loops.
+- ingest counter: 6 since 2026-06-05 12:30 lint
+
+## [2026-06-08 12:05] ingest | anthropic-building-ai-agents-enterprise | article (enterprise guide)
+- filed source: sources/articles/anthropic-building-ai-agents-enterprise.md + .pdf (Anthropic; 23 pages; H1 2026 enterprise guide)
+- dedupe: unique; no prior copy of this specific guide
+- inbox mv: PDF moved to sources/articles/. Inbox originals not removable from sandbox; curator to clear manually.
+- updated:
+  - vendors/anthropic.md — new "Enterprise deployment guide" section: three-pillar framework (upskilling/accelerating/transforming), case studies (L'Oréal 99.9%, Lyft 87%, Rakuten 2-week releases), compounding thesis, trust-boundary design constraint, three-phase deployment model. sources expanded. updated: 2026-06-08.
+  - concepts/compounding-learning.md — new "External validation — Anthropic's enterprise framing" section: vendor-published articulation of the same compounding thesis; query-back analogue; first-mover implication. sources expanded.
+- created: none
+- escalated: none
+- attribution: official Anthropic publication; no attribution issues
+- notes: first-party Anthropic articulation of the compounding-advantage thesis validates the AIO's own framing. The three-pillar framework + deployment phasing are directly applicable to how AIO positions the Prime Radiant rollout to department heads. Trust-boundary framing is new vocabulary for the IAM section of [[organisational-digital-twin]].
+- ingest counter: 7 since 2026-06-05 12:30 lint

@@ -3,11 +3,11 @@ type: vendor
 title: Anthropic
 slug: anthropic
 created: 2026-05-06
-updated: 2026-06-04
+updated: 2026-06-08
 departments: [ai-office]
 status: active
 confidence: high
-sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03, 2026-05-26-bloomberg-bankers-claude-cost, anthropic-singapore-office]
+sources: [karpathy-llm-wiki, claude-managed-agents-launch, claude-managed-agents-scaling, anthropic-building-effective-agents, claude-code-routines, 2026-05-19-kpmg-claude-alliance, 2026-05-21-anthropic-first-profitable-quarter, 2026-05-20-every-google-io-agents-agents-agents, anthropic-labor-market-impacts-2026-03, 2026-05-26-bloomberg-bankers-claude-cost, anthropic-singapore-office, anthropic-building-ai-agents-enterprise]
 related: [claude, llm-wiki, agentic-ai, ai-native-enterprise-restructuring, builders-sellers-measurers, ai-tool-evaluation-framework, observed-exposure-ai-labor-measure]
 migrated_from: entities/vendors/anthropic.md
 ---
@@ -57,6 +57,20 @@ Anthropic advertised four Singapore-based roles on 2026-06-04 (APAC head of acco
 ## Corporate moves — May 2026
 
 - **Stainless acquisition (2026-05-19, ~$300M).** Anthropic acquired [Stainless](https://www.anthropic.com/news/anthropic-acquires-stainless), a platform for generating high-quality API SDKs and MCP servers. Reported price ~$300M per The Information. Notable: Stainless's former customers included **OpenAI and Google** — Anthropic has bought a developer-tools company that was core infrastructure for its top model-platform rivals. Strategic read: the acquisition extends Claude's ability to connect to data and tools (the MCP integration layer), tightens Anthropic's grip on the agent-to-software interoperability stack at a moment when both Google (Antigravity 2.0, Spark, Universal Commerce Protocol) and OpenAI (Codex) are pushing into the same surface. Surfaced via Every / Context Window's "Google I/O: Agents, Agents, Agents" coverage; see [[2026-05-20-every-google-io-agents-agents-agents]] for the broader weekly-cluster context. CEO Alex Rattray's earlier *AI & I* podcast appearance laid out the MCP design principles ("keep tools small, name them precisely, generate tightly defined outputs") that look in retrospect like the design ethos Anthropic was acquiring along with the company.
+
+## Enterprise deployment guide — "Building AI agents for the enterprise" (added 2026-06-08)
+
+Anthropic published a 23-page enterprise guide ([[anthropic-building-ai-agents-enterprise]]) framing the Claude/Cowork/plugins stack across three organisational pillars:
+
+1. **Upskilling employees** — encoding organisational context into plugins so institutional knowledge scales from individual to org. L'Oréal case: 44K monthly users, conversational-analytics accuracy 90% → **99.9%** with Claude; 15 specialised agents routing across 2.5M monthly messages.
+2. **Accelerating processes** — compounding-accuracy loop: each expert review of AI output feeds back into the KB, making subsequent passes more accurate without additional effort. Lyft case: **87% reduction** in support-resolution time; 30%+ improvement in decision-making accuracy.
+3. **Transforming product development** — combine frontier model + proprietary data + existing trust relationships + domain expertise = product competitors can't replicate. Rakuten case: major releases ship every **2 weeks** (was once per quarter); critical errors down 97% in pilot; long-running agents remember prior-session failures and avoid repeating them — "individual learning becomes organisational learning instantly."
+
+**Compounding thesis** (first Anthropic-published articulation in enterprise deployment terms): *"Self-educating, compounding AI systems help the organisations that start earliest build the largest advantage. Every month of accumulated expert approvals, feedback, and refinements makes the next month's output faster and more accurate."* And, from the deployment section: *"this is the compounding dynamic in action: every investment in context, configuration, and governance makes the next deployment cheaper and more effective."* Validates [[compounding-learning]]'s framing from the vendor's own position.
+
+**Trust-boundary as design constraint** (new vocabulary; relevant to [[organisational-digital-twin]]'s IAM section): in regulated industries, the trust boundary is "the first design constraint for any AI-powered product." Anthropic's response: Claude Cowork runs tasks locally — no cloud processing of files or documents. Enterprise compliance posture baked in, not bolted on.
+
+**Three-phase deployment model:** Weeks 1–4 define success criteria + select pilot teams. Months 2–3 champion pilot in production (not sandbox). Months 4–6 governance infrastructure + admin marketplace + broader rollout. Explicit warning: "Never underestimate the governance layer — prerequisites for broad rollout, not features you add after adoption."
 
 ## Research output worth flagging
 

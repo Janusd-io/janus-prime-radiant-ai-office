@@ -3,11 +3,11 @@ type: concept
 title: Organisational digital twin
 slug: organisational-digital-twin
 created: 2026-05-21
-updated: 2026-05-31
+updated: 2026-06-08
 departments: [ai-office, office-of-ceo, engineering]
 status: active
-sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company]
-related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture, ai-native-enterprise-restructuring, recursive-self-improving-loop]
+sources: [2026-04-coordination-leverage-model-v0.3, 2026-04-coordination-leverage-model-v0.1, 2026-03-31-block-from-hierarchy-to-intelligence, 2026-04-24-yc-diana-hu-ai-native-company-from-ground-up, 2026-05-21-yc-blomfield-self-improving-company, park-van-der-aalst-dto-process-mining]
+related: [coordination-leverage-model, coordination-three-layer-model, coordination-tax, digital-twin, digital-twin-of-the-company, fireflies, knowledge-graph, ai-tool-evaluation-framework, ai-native-mandate, janus-prime-radiant-build, prime-radiant-three-layer-architecture, ai-native-enterprise-restructuring, recursive-self-improving-loop, hgtft]
 ---
 
 # Organisational digital twin
@@ -104,6 +104,26 @@ As of 2026-05-21, the twin is *aspirational at Layer 3*. Sub-mechanisms in fligh
 - **Ontology — emerging.** The wiki's frontmatter schema (entity / semantic / temporal / causal edges per CLAUDE.md §4) is the de-facto ontology layer for one corner of the twin. Full company-wide ontology not yet built.
 
 The [[janus-prime-radiant-build|Janus Prime Radiant rollout]] is the operational expression of building the twin one department at a time.
+
+## Academic grounding — action-oriented process mining (added 2026-06-08)
+
+Park & van der Aalst (RWTH Aachen, PADS Group; [[park-van-der-aalst-dto-process-mining]]) provide the most concrete formal realization of a DTO for business process improvement yet surfaced. The same research group that produced the Object-Centric Petri Net (OCPN) formalism underlying HGTFT's graph layer.
+
+Their **Digital Twin Interface Model (DT-IM)** architecture maps directly onto this concept's layers:
+
+| DT-IM component | Mapping |
+|---|---|
+| **OCPN** — formal multi-object process model | Knowledge graph / ontology layer |
+| **Operational view** — marking (which objects reside where) + diagnostics (KPIs, wait times) | Sensor network readout — real-time process state |
+| **Control view** — valves and guards (configuration + routing/resource rules) | The configuration surface that agents can act on |
+| **Action patterns** — `(constraint, action)` pairs | Closed-loop control rules: *if [avg-wait > 16h], then [skip-notification]* |
+| **Action engine** — continuously evaluates constraints, triggers actions | Agentic pipeline layer — automated coordination logic |
+
+Per [[park-van-der-aalst-dto-process-mining]] §I: *"a concrete realization and implementation of DTOs are missing both in research and in practice."* This paper fills that gap — and places Janus's operational pipelines (standup, AI registry, Prime Radiant) ahead of the academic state-of-the-art on "are these loops actually closed?"
+
+**Proof-of-concept result.** Action patterns reduced average sojourn time in a notification step from 20 hours (no-intervention baseline) to 9 hours — 55% improvement, **fully automated**. The action engine detected the constraint violation and adjusted system configuration without human intervention. This is the clearest published evidence of a DTO closing the monitor-act loop in a real business process.
+
+**PADS/RWTH connection.** Van der Aalst is the originator of process mining; PADS is the canonical research group in the space. The OCPN formalism they use is also the foundation of [[hgtft-neurips-2025]]'s graph layer. Janus's engineering DNA is directly downstream of this research lineage.
 
 ## External validation — Block (added 2026-05-31)
 
