@@ -115,6 +115,7 @@ _(none yet)_
 
 ## Concepts
 
+- [saas-blueprint](concepts/saas-blueprint.md) — self-contained build-kit for shipping high-end SaaS/CRM (tokens, scaffold, code recipes, DESIGN templates) distilled from a deep study of Twenty CRM; bundle in `assets/saas-blueprint/`. Quality substrate for the build phase of [[platform-development-process]]. [high]
 - [recursive-self-improving-loop](concepts/recursive-self-improving-loop.md) — Sensor → Policy → Tools → Quality Gate → Learning. The five-part architectural primitive surfaced via Diana Hu (closed-loop framing) + Tom Blomfield (five-part-loop framing) YC talks 2026-04 / 2026-05. AIO already runs 4 of the 5 steps; closing the fully-automated Learning step is the natural next AIO-build move. [high]
 - [agent-harness](concepts/agent-harness.md) — orchestration layer around an LLM; locus of memory, tools, retries, optimisation. [medium]
 - [agentic-harness](concepts/agentic-harness.md) — system around a model that makes agentic work governable: tools, memory, permissions, execution, observability, gateway abstraction, and human checkpoints. [medium]
