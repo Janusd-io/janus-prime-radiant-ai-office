@@ -2766,3 +2766,17 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - Standup discussion today; resolution → frontmatter `status:` field.
   - If approved: Jehad (or assignee) runs the sandbox; reports findings as a `pulse/2026-06-XX-obsidian-headless-sandbox-findings.md`.
   - Stage 2 decision based on findings; Stage 3 cloud-migration dry-run on Hostinger if findings clear the bar.
+
+## [2026-06-10 10:00] ingest | janus-ai-software-engineer-jd-2026 | internal-hr (job description)
+- filed source: sources/misc/janus-ai-software-engineer-jd-2026.md
+- updated: projects/janus-careers-page.md (stub replaced with substantive content; AI Software Engineer JD catalogued as the first AIO hiring document filed in the wiki); projects/hgtft.md (added "External-facing HGTFT description" section with the JD's HGTFT marketing copy — MRI framing, 91% physical realism figure, ~29% outcome metrics; sources expanded); projects/janus-prime-radiant-build.md (added "External validation" section noting the JD describes the Prime Radiant pattern in outbound hiring materials as "among the hardest and most consequential engineering problems on the platform"; sources expanded)
+- created: (none)
+- escalated: (none)
+- attribution note: internal Janus document; no attribution uncertainty
+- ingest counter: 9 (trigger at 10 — next ingest fires lint suggestion)
+- notes: JD confirms as of 2026-06-10 that the Prime Radiant memory system, MCP-based multi-model orchestration (Claude + Gemini), and Claude Code are now part of Janus's outward engineering identity. Also confirms Dubai as global operations base with travel to SG, Turkey, Spain, UK. Companion "AI Platform Engineer" JD exists as a .docx in the repo but was not ingested this pass.
+
+## [2026-06-10 10:05] ingest | anthropic-self-service-data-analytics | DUPLICATE — no wiki action
+- duplicate of: sources/articles/anthropic-self-service-data-analytics.md (already filed; pulse at 2026-06-04-anthropic-self-service-analytics-stack.md)
+- action: moved inbox original to inbox/.processed/2026-06/ — no new source file, no wiki updates
+- notes: inbox item "How Anthropic enables self-service data analytics with Claude.md" (32KB, Jun 8) matches existing source exactly. Standard dedupe-check catch per §5.1 step 2.

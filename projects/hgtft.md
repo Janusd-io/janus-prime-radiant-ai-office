@@ -3,11 +3,11 @@ type: project
 title: HGTFT — Janus's heterogeneous-graph building digital-twin platform
 slug: hgtft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-10
 departments: [engineering, ai-office]
 status: active
 owner: michael-bruck
-sources: [hgtft-neurips-2025, 2026-04-coordination-leverage-model-v0.3]
+sources: [hgtft-neurips-2025, 2026-04-coordination-leverage-model-v0.3, janus-ai-software-engineer-jd-2026]
 related: [coordination-leverage-model, organisational-digital-twin, digital-twin, ai-native-janus-positioning, ai-native-enterprise-restructuring, ingest-2026-05-21-1015-create-hgtft-entity-page]
 audience: department
 ---
@@ -75,6 +75,18 @@ The RCS result is the most strategically meaningful — *physics-consistency* of
 - **Not a canonical product description.** Engineering owns the product; that page lives in the future Engineering Prime Radiant instance. This is the AIO-side framing.
 - **Not a sales / marketing page.** That's [[andrew-soane|Andrew's]] domain in the Marketing Prime Radiant.
 - **Not a deployment runbook.** That's customer-engineering territory.
+
+## External-facing HGTFT description — AI Software Engineer JD (2026-06-10)
+
+The [[janus-ai-software-engineer-jd-2026|AI Software Engineer job description]] filed 2026-06-10 contains Janus's most polished external-facing HGTFT description to date. Verbatim from the JD:
+
+> *"The platform is powered by HGTFT (Heterogeneous Graph Temporal Fusion Transformer), a proprietary forecasting framework that combines Transformer layers for temporal pattern recognition with Graph Attention layers for modelling physical relationships — the result: 91% improvement in physical realism compared to standard models. Janus calculates — it doesn't guess."*
+
+The "MRI for buildings" metaphor also appears: *"Think of Janus as an MRI for buildings and critical infrastructure. The platform creates millimetre-accurate digital twins of entire structures — every pipe, wire, and duct."*
+
+Stated outcome metrics: ~29% energy cost savings, ~29% reduced staffing needs, ~28% less equipment downtime.
+
+The JD is now the go-to citation for the approved marketing framing of HGTFT when non-technical audiences or sales materials need a plain-language version. The NeurIPS paper remains the technical source of truth.
 
 ## Watch for
 
