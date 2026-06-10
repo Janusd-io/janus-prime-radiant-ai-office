@@ -2781,6 +2781,15 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - action: moved inbox original to inbox/.processed/2026-06/ — no new source file, no wiki updates
 - notes: inbox item "How Anthropic enables self-service data analytics with Claude.md" (32KB, Jun 8) matches existing source exactly. Standard dedupe-check catch per §5.1 step 2.
 
+## [2026-06-10 11:00] ingest | 2026-06-03-emma-mccall-intro | meeting
+- filed source: sources/meetings/2026-06-03-emma-mccall-intro.md
+- updated: projects/singapore-launch.md (added BMS Certification Programme section — Singapore as first cert market; source + related expanded)
+- created: projects/bms-engineer-certification.md (BMS Engineer Certification Programme hub — Emma McCall's mandate; train-the-trainer model; Singapore-first; Prime Radiant as knowledge substrate; internal training gap also captured); pulse/2026-06-03-bms-certification-programme-kickoff.md (programme kickoff + Prime Radiant demo to Emma; internal AI tool training gap; build-not-buy direction)
+- escalated: questions/ingest-2026-06-10-emma-mccall-person-page.md (new internal person; role confirmed; background partially known from transcript)
+- attribution note: Speaker 4 appeared extensively but not named by Fireflies; transcript attribution to Rosa plausible (Bonaventure introduces Rosa at [09:18]) but not confirmed — recorded as unattributed delivery/PM team member throughout per §5.1
+- ingest counter: 10 — LINT TRIGGER REACHED. Suggest lint pass next session.
+- notes: first external-facing use of Prime Radiant documented — wiki is now the knowledge substrate for a programme targeting 10-country BMS engineer certification rollout. Meeting was also notable for the live Prime Radiant demo to Emma; Bonaventure's "I've already forgotten about that" (on the CEO certification decision, which the wiki surfaced instantly) is the compounding-value proof point this system is designed to produce.
+
 ## [2026-06-10 12:30] ingest | ims-doc-system-hierarchy | document
 - filed source: iso/sources/ims-doc-system-hierarchy.md (verbatim, full-fidelity) + original PDF at iso/sources/_assets/IMS_DocSystem_Single.pdf
 - updated: iso/iso-ims-puls.md (MOC — methodology & tooling list), index.md (ISO/IMS section + source-documents line)
