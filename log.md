@@ -2767,9 +2767,28 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - If approved: Jehad (or assignee) runs the sandbox; reports findings as a `pulse/2026-06-XX-obsidian-headless-sandbox-findings.md`.
   - Stage 2 decision based on findings; Stage 3 cloud-migration dry-run on Hostinger if findings clear the bar.
 
+## [2026-06-10 10:00] ingest | janus-ai-software-engineer-jd-2026 | internal-hr (job description)
+- filed source: sources/misc/janus-ai-software-engineer-jd-2026.md
+- updated: projects/janus-careers-page.md (stub replaced with substantive content; AI Software Engineer JD catalogued as the first AIO hiring document filed in the wiki); projects/hgtft.md (added "External-facing HGTFT description" section with the JD's HGTFT marketing copy — MRI framing, 91% physical realism figure, ~29% outcome metrics; sources expanded); projects/janus-prime-radiant-build.md (added "External validation" section noting the JD describes the Prime Radiant pattern in outbound hiring materials as "among the hardest and most consequential engineering problems on the platform"; sources expanded)
+- created: (none)
+- escalated: (none)
+- attribution note: internal Janus document; no attribution uncertainty
+- ingest counter: 9 (trigger at 10 — next ingest fires lint suggestion)
+- notes: JD confirms as of 2026-06-10 that the Prime Radiant memory system, MCP-based multi-model orchestration (Claude + Gemini), and Claude Code are now part of Janus's outward engineering identity. Also confirms Dubai as global operations base with travel to SG, Turkey, Spain, UK. Companion "AI Platform Engineer" JD exists as a .docx in the repo but was not ingested this pass.
+
+## [2026-06-10 10:05] ingest | anthropic-self-service-data-analytics | DUPLICATE — no wiki action
+- duplicate of: sources/articles/anthropic-self-service-data-analytics.md (already filed; pulse at 2026-06-04-anthropic-self-service-analytics-stack.md)
+- action: moved inbox original to inbox/.processed/2026-06/ — no new source file, no wiki updates
+- notes: inbox item "How Anthropic enables self-service data analytics with Claude.md" (32KB, Jun 8) matches existing source exactly. Standard dedupe-check catch per §5.1 step 2.
+
 ## [2026-06-10 12:30] ingest | ims-doc-system-hierarchy | document
 - filed source: iso/sources/ims-doc-system-hierarchy.md (verbatim, full-fidelity) + original PDF at iso/sources/_assets/IMS_DocSystem_Single.pdf
 - updated: iso/iso-ims-puls.md (MOC — methodology & tooling list), index.md (ISO/IMS section + source-documents line)
 - created: iso/concepts/ims-documentation-hierarchy.md (L1–L6 pyramid synthesised + mapped onto Simon's existing document set and the open questions)
 - escalated: none
 - notes: received from Simon as IMS_DocSystem_Single.pdf (Downloads, 2026-06-10). Single-page L1–L6 documentation hierarchy — new content, no duplicate in iso/sources/ (dedupe-checked). Executes Monday subitem 2983087073 "Process Simon's ISO files into Prime Radiant and surface blockers to Claude". Blockers surfaced on the Monday item: all 7 IMS docs still DRAFT/unapproved; diagram-template sign-off (2934524410) still pending; UAE/SG legal research (2924557920) unassigned and blocking the unified privacy policy; process-owner confirmation (Q1) still open.
+
+## [2026-06-10 13:00] query | ISO blockers + enrolment-recommendation review → filed back as pulse
+- pages read: 9 (iso MOC, ims-digital-twin, ims-enrolment-interview-flow, tmpl-light-process-discovery, readiness assessment, gap analysis pulse, 2 meeting sources, open questions)
+- filed back: yes — pulse/2026-06-10-enrolment-approaches-converge-light-template-vs-ims-enrolment-skill.md
+- notes: triggered by Jehad's review of pending ISO Monday tasks. Finding: Simon's Light template (v2.0, 9 Jun doc set) and Jehad's /ims-enrolment skill independently implement the same low-friction enrolment concept; format "evidence" Jehad awaited since May effectively arrived 9 Jun as TMPL-IMS-UnifiedProcessDesign v11.0 + pilot worked example. Monday 2934524410 (diagram sign-off) closed as superseded by Simon's visualization standard. Proposed merge: /ims-enrolment interview populates Light-template fields → AI emits Technical v11 + diagram (19-rule prompt) + HTML tables = executes readiness-report milestone 2 (Light→Technical translation).

@@ -3,11 +3,11 @@ type: project
 title: Janus Prime Radiant Build
 slug: janus-prime-radiant-build
 created: 2026-05-05
-updated: 2026-05-21
+updated: 2026-06-10
 departments: [ai-office]
 status: active
 owner: michael-bruck
-sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build, 2026-05-18-ai-native-ceo, 2026-04-coordination-leverage-model-v0.3]
+sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build, 2026-05-18-ai-native-ceo, 2026-04-coordination-leverage-model-v0.3, janus-ai-software-engineer-jd-2026]
 related: [llm-wiki, michael-bruck, jehad-altoutou, obsidian, linear, notion, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag, 2026-05-05-notion-degrades-as-ai-searchable-kb, peer-to-peer-mesh-federation-pattern, 2026-05-11-bonaventure-prime-radiant-shoutout, 2026-05-11-notion-restricted-to-aio-no-broad-rollout, 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain, ai-native-janus-positioning, 2026-05-12-html-as-presentation-format-adopted, project-management-digital-delivery-workflow, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, euclid-wong, joyce-woo, bonaventure-wong, 2026-05-18-ceo-global-kb-unified-market-ui, coordination-leverage-model, coordination-three-layer-model, organisational-digital-twin]
 ---
 
@@ -91,6 +91,16 @@ This demo prompted Bonaventure to articulate the long-arc architectural intent, 
 - Cross-department connectivity design and the UI layer become first-class engineering requirements alongside the federation redesign work.
 - Andrew Prime Radiant initialisation (bulk Fireflies + Markdown doc import as primary seed) is near-term.
 - **CLAUDE.md:** v0.11 (2026-05-14). Standup skill: v3.17.
+
+## External validation — Prime Radiant as engineering identity (2026-06-10)
+
+The [[janus-ai-software-engineer-jd-2026|AI Software Engineer JD]] (filed 2026-06-10) explicitly names the Prime Radiant memory system as a core engineering responsibility and a defining challenge of the Janus platform:
+
+> *"Contribute to and evolve the memory and knowledge architecture at the core of the platform — a structured, multi-graph, file-based system underpinning institutional intelligence across the company. This is among the hardest and most consequential engineering problems on the platform."*
+
+This is the first time the Prime Radiant architecture appears in an outbound Janus document. As of 2026-06-10, the system is no longer just an internal AIO project — it's part of Janus's engineering hiring identity and the public-facing description of what the AI Office builds. The JD also confirms multi-model orchestration (Claude + Gemini), MCP, and Claude Code as standard tooling expectations.
+
+CLAUDE.md version at time of filing: v0.16.
 
 ## Nomenclature anchors (immutable by schema)
 
