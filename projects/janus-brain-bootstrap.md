@@ -3,7 +3,7 @@ type: project
 title: Janus Brain Bootstrap
 slug: janus-brain-bootstrap
 created: 2026-05-14
-updated: 2026-06-04
+updated: 2026-06-09
 status: active
 owner: jehad-altoutou
 captured_by: jehad-altoutou
@@ -92,3 +92,64 @@ Continuous sync runs via Obsidian Git plugin (5-min auto-pull + auto-commit-push
 - [[prime-radiant-storage-substrate]] — the brief that decided Git over Drive.
 - [[llm-wiki]] — the underlying knowledge-system concept this implements.
 - `REWRITE-SPEC.md` + `HANDOVER.md` + `REPORT-2026-05-14-first-run-jehad.md` (in the bootstrap repo) — full forensic + design history.
+
+---
+
+## Full decisions & progress log
+
+_Migrated from Jehad's personal Obsidian vault, 2026-06-09. Detail not previously in this page._
+
+## Key Decisions
+
+- *(2026-05-13)* Migrate substrate from Google Drive → Git on GitHub. Reason: Drive's stream-on-demand sync caused Cowork mount failures; Cross-Workspace identity (`.com` vs `.io`) was broken; Git solved both structurally. Per Michael Bruck's brief.
+- *(2026-05-13)* One repo per Prime Radiant instance (dept + personal), federation via curator-mediated `inbox/`. *Superseded same-day by single-vault model below.*
+- *(2026-05-14)* **Single-vault rewrite**: kill the separate personal-repo + federation model. Each employee = one local vault = one clone of their dept's GitHub repo. Per-person content lives in `people/<slug>/`. Multiple teammates push to the same dept repo via standard git. Privacy boundary = GitHub Team membership; sensitive items go to gitignored `private/`. See `REWRITE-SPEC.md` in the repo.
+- *(2026-05-14)* Meeting notes use the [[standup|/standup]] skill's output schema (Summary / Decisions / Action items / 🎯 This week / 🏔️ Long horizon / Findings / Open questions / Blockers / Tool mentions / Related). Raw transcripts go to a sibling `<slug>.transcript.md` file, never inline.
+- *(2026-05-14)* Task-tracker is asked per-employee at enrollment (`monday` / `linear` / `asana` / `notion` / `none` / `other`); action-item formatting adapts. AI Office uses Linear AIP; Marketing likely Notion or Monday. Multi-tracker support shipped in 2.16 fix.
+- *(2026-05-14)* Sensitivity classifier (Phase 5 enrichment subagent) with hard rule: canonical OSS public docs (README/SECURITY/CONTRIBUTING/LICENSE/CODE_OF_CONDUCT/CHANGELOG/ARCHITECTURE/INSTALL/USAGE) are ALWAYS `dept`, never `self` or `confidential`. Repo ownership ≠ sensitivity.
+- *(2026-05-14)* No org-tier repo for now; deferred to a future read-only "CEO brain" federation skill. Cross-dept items get cross-tagged in originating repo until then.
+- *(2026-05-15)* **Transcript siblings killed**: bump `parser_version` 2→3, applier no longer writes `<slug>.transcript.md` next to meeting notes — the `## Transcript` section now points at the Fireflies URL. Shipped one-shot `migrate-v2-to-v3-meetings.py` to retrofit existing vaults (Jehad's: 12 transcripts deleted, 12 meetings re-rendered).
+- *(2026-05-15)* **Auto-diagnostic reports**: every enrollment now emits `.last-run-report.md` (brief) + `.last-run-diagnostic-report.md` (forensic, same shape as REPORT-2026-05-14-first-run-jehad.md). Phase 8 gates the `git push` when any `blocker`-severity issue lands in `.state/run-issues.jsonl`.
+- *(2026-05-15)* **Multilingual + embedded image pipeline**: extract-content.py uses pandoc `--extract-media` + pdfimages → `_media/<stem>/`; language detection adds `needs_translation: true` for non-English bodies; Phase 5 enrichment subagent translates to English with `## Original (<lang>)` appendix preserving the source; vision-captioned images injected inline as `_Caption: …_`.
+- *(2026-05-15)* **Fireflies horizon configurable per enrollee**: Phase 1 asks 30/90/180/365/all (default 180); `limit` raised 30→200 with pagination up to a 500-meeting safety ceiling. Long-tenured staff can pull years of history.
+- *(2026-05-15)* **`/standup` skill patched to v3.17**: retargets the daily standup write from legacy `personal/sources/meetings/` to single-vault `people/<slug>/meetings/`. Stops creating ghost paths in the dept repo.
+- *(2026-05-22)* **Canonical 13-dir layout amendment**: my initial v1.0.0 template over-pruned (removed lessons/pulse/questions/briefs/entities/inbox/sources). Walked back to the full 13 canonical top-level dirs: `decisions/projects/vendors/concepts/processes/people/lessons/pulse/questions/briefs/entities/inbox/sources/`. `entities/` keeps only `clients/` and `departments/` sub-dirs; `entities/internal/external/vendors/` deprecated (warn-only) in favor of top-level `people/<slug>.md` + `vendors/<slug>.md`. Bumped both templates to v1.2 / v1.2.0.
+- *(2026-05-22)* **Production org is `Janus-com`**; `Janusd-io` reserved as AI Office sandbox. Skill default `--org` flipped; `--sandbox` / `JB_SANDBOX=1` opt-in for dev work. Existing `Janusd-io` repos stay where they are.
+- *(2026-05-22)* **Vault-root `sources/` standardized** to 6 subfolders: `articles/`, `meetings/`, `misc/`, `linear/`, `monday/`, `notion/`. The `meetings/` subdir is auto-emitted by the applier as a wikilink hub — each stub embeds the canonical per-person meeting via `![[…]]` for dept-wide browsability. Bumped both templates to v1.3.0.
+- *(2026-05-22)* **Windows production-ready**: `install.ps1` + `auto-sync.ps1` + `install.cmd` ship; PowerShell-native install + Windows Task Scheduler auto-sync; bash scripts execute under Git Bash; Python scripts are platform-aware via `Path.home()` + `sys.platform` branches. ENROLLMENT.md has a top-of-doc Windows section.
+- *(2026-06-02)* **v2.0 autopilot architecture** (PR #5): three-mode skill — `quick` (~5-min enrollment, 30–50k tokens), `background-fill` (twice-daily sync drains ~200 items/fire × 14 fires ≈ 7-day backlog drain), `steady-state` (incremental only). Pre-consent config at `~/.config/janus-brain/autopilot.yaml` (autopilot true by default — full consent given). Model routing: haiku (parser/classifier/captions), sonnet (enrichment/stub-fill/translation), opus (orchestration) → ~70% token reduction. Work queue at `.state/enrollment-queue.jsonl`. Layer A pre-sync hook auto-pulls bootstrap repo before each fire.
+- *(2026-06-02)* **Phase 4.7 inbox sweep** (PR #6): Web Clipper drops to `inbox/` auto-promoted to `sources/articles/<slug>.md` with proper frontmatter; swept originals archived to `inbox/.swept/`. Calls inbox-sweep subagent (haiku) per item — ~5-10k tokens per fire at 20 items.
+- *(2026-06-02)* **7-day full coverage** (PR #7): defaults raised to 5 chunks × 40 files = 200 items/fire; scope broadened from `~/Documents` → `$HOME` (with `laptop_exclude_dirs` for Library/Trash/cache/media); 12 file categories (pdf/docx/md/pptx/txt/rtf/odt/key/pages/numbers/xlsx/csv); 365-day Fireflies horizon; 10k file cap. `target_drain_days: 7` in config.
+- *(2026-06-03)* **Auto-create dept repo** (PRs #8 + #11): Phase 2 detects missing `Janus-com/janus-prime-radiant-<dept>` and creates from template + adds curator as collaborator + creates `Janus-com/<dept>` GitHub Team so subsequent dept employees inherit access. Falls back to per-user collaborator on org-admin 403.
+- *(2026-06-03)* **HTML + content-dedup + full-fidelity ingest** (PR #9): `.html` first-class category (preferred over `.pptx` as AI-readable slide alternative); Layer 2a content-sha256 dedup at queue-build time (`.state/content-fingerprints.json`) prevents byte-identical re-ingest; **explicit "documents ingested in full, never summarized" rule** — enrichment subagent prompt forbids summary; applier guard rejects manifests with `summary:` key on `sources/articles/` and `people/<slug>/sources/laptop/`. Meetings keep the structured digest (digest is for meetings only).
+- *(2026-06-03)* **Incremental rescan on every fire** (PR #10): `.state/last-sync.json` tracks per-scope timestamps (laptop / Fireflies / Obsidian / inbox). Each auto-sync pre-calls `build-enrollment-queue.py --incremental` so a laptop sleeping for N days catches up on first wake. No data loss from missed fires.
+- *(2026-06-03)* **Two-pass production audit + hardening** (PR #11): `AUDIT-2026-06-03.md` (10 findings) + `AUDIT-2026-06-03-REAUDIT.md` (3 follow-on blockers R1/R2/R5). All fixed. New `_filelock.py` (cross-platform file locking — POSIX flock + Windows msvcrt + stale-PID recovery), `.state/sync.lock` (fire-overlap defense), pre-push `assert-gitignore-private.sh` (block leaked `people/*/private/` content), `auto-sync-prelude.sh` tag-pinning with `git fetch --tags --prune --force` (rollback propagates fleet-wide), `scripts/release.sh`, log rotation (5MB → gzipped, keep 6), `inbox_item` queue-loop closed, dept GitHub Team creation.
+- *(2026-06-03)* **v0.1.0 released** — first production-pinned tag. `./scripts/release.sh v0.1.0 "Production baseline — audit-hardened"`. Every employee's next auto-sync fire (within 12h) pins to this baseline.
+- *(2026-06-04)* Lysander (PM lead, Windows) enrollment day — first fresh-employee Windows pilot. Andrew (Marketing, macOS) update commands ready to migrate from pre-v0.1.0 state.
+
+## Blockers / Open Questions
+
+- [x] ~~Empty entity stubs~~ — **resolved 2026-06-01**: Phase 6.6 stub-fill subagent shipped (commit `c5d6634`). `apply-stub-enrichment.py` + `prompts/stub-fill-subagent.md` ship; orchestrator detects new stubs via `.state/new-stubs-this-run.jsonl`; up to 20 fill subagents per batch. Cost-bounded to current-run stubs by default; `--backfill-all` opt-in for retroactive fill.
+- [x] ~~AIO legacy `entities/internal/external/vendors/`~~ — **resolved 2026-06-01**: `migrate-legacy-entities.py` shipped (commit `c5d6634`); ran live on Jehad's AIO vault — 60 files migrated (15 internal + 1 external + 41 vendors merged), 0 stale wikilinks (vault was already slug-form). Pending: final `git push` from `~/janus/prime-radiant/` to publish to the dept repo.
+- [ ] Phase 6.6 needs a real-world run — built + unit-tested, but hasn't fired on Jehad's or Andrew's actual ~1,500 stub backlog yet. Trigger via `/janus-brain sync` (or `--backfill-all` for full sweep with token-cost decision).
+- [ ] Schema-version CI between templates and dept clones — still manual; worth a GitHub Action.
+- [ ] Cross-dept CEO-tier federation skill — deferred (out of current scope).
+- [ ] Layer 2b semantic / cross-language dedup — documented in SKILL.md but subagent fields not yet wired. Layer 2a (byte-identical) covers ~80%.
+- [ ] PowerShell `.ps1` runtime parse-check on a real Windows machine — Lysander's enrollment 2026-06-04 is the first live test. Will catch any syntax surprise.
+- [ ] 4 peripheral JSONL appenders still use plain append (sub-PIPE_BUF atomic on POSIX — safe in practice but not under explicit lock).
+
+## Progress Log
+
+- *(2026-05-12)* Initial Google-Drive-based skill shipped. Real-data run by Jehad surfaced sync failures.
+- *(2026-05-13)* Substrate migration to Git on GitHub. Personal-template repo created. First end-to-end enrollment ran for Jehad (507 files in personal vault, 121 items federated to AIO inbox).
+- *(2026-05-14)* **First-pass rewrite**: single-vault architecture replacing personal+dept split. 5 commits on `rewrite/single-vault-2026-05-14`. Merged to main, installed.
+- *(2026-05-14)* **First end-to-end rerun on Jehad's vault** produced a 1,793-file local commit (not pushed). Surfaced 18 issues — see `REPORT-2026-05-14-first-run-jehad.md` in the repo.
+- *(2026-05-14)* **Second-pass fixes**: 12+ commits on `rewrite/post-first-run-fixes-2026-05-14` addressing all P0/P1/P2/P3 items + every §3 gap from the report.
+- *(2026-05-15)* Fix branch merged to main; install.sh re-run; bootstrap repo pushed to GitHub. v2→v3 meeting migration ran cleanly on Jehad's vault. Obsidian Git push/pull stale-lock errors diagnosed + resolved. `/standup` skill patched to v3.17 (legacy paths eliminated).
+- *(2026-05-20)* **Notion ingestion replaced by Obsidian-vault ingestion**: skill now reads from any *other* local Obsidian vault the user has registered (via `scripts/fetch-obsidian.py`). Notion ingest deprecated.
+- *(2026-05-22)* Andrew enrolled on his laptop (Marketing). Output landed in `Janus-com/janus-prime-radiant-marketing` (correct org, since Janus-com is production). Surfaced template drift (v0.9.0 inherited stuff still in his repo) → ran walk-back to restore canonical 13 dirs and bumped both templates to v1.3.0. Andrew's repo brought in line + new sources schema added.
+- *(2026-05-22)* Windows readiness audited. `install.ps1` shipped. Marketing repo standardized. Auto-emitted `sources/meetings/` wikilink hub wired into applier.
+- *(2026-05-25)* Status: 23+ commits on main, both template repos at v1.3.0, Windows + macOS production-ready, Andrew running on the latest skill. Empty-stub enrichment is the one remaining quality issue blocking "full" production polish.
+- *(2026-06-01)* **CLAUDE.md v1.4 promotion shipped.** AIO's mature v0.13 rulebook (~510 lines, four-graph framing, three-layer architecture, per-source ingest rules, attribution discipline, brief shape, lint cadence) genericized via `{{DEPT_DISPLAY}}` / `{{DEPT_SLUG}}` / `{{CURATOR_NAME}}` / `{{CURATOR_SLUG}}` placeholders, shipped as `templates/dept-claude-md.template.md` in the bootstrap repo, and pushed to both `Janus-com` and `Janusd-io` template repos (TEMPLATE-VERSION → 1.4.0, squash-merged PRs #3 and #4). `bootstrap-dept-vault.sh` extended to substitute the placeholders at enrollment time. Andrew's `Janus-com/janus-prime-radiant-marketing` CLAUDE.md replaced in place (3,977 B → 43,424 B). Jehad's AIO vault NOT touched — it's the source we promoted from.
+- *(2026-06-01)* **Auto-sync now twice-daily at 12:00 + 17:00 LOCAL time.** macOS launchd plist gained an `<array>` of `<dict>` `StartCalendarInterval` entries; Windows Task Scheduler gets two `-Daily` triggers; both surfaces interpret times against the LOCAL clock so Dubai / Singapore / London / etc. all get sync at their own lunchtime + EOD with zero timezone config. `install.sh --install-auto-sync` now defaults to twice-daily; legacy `--time HH:MM` still accepted (back-compat); new `--times "HH:MM,HH:MM"` for custom schedules. `install.ps1 -InstallAutoSync` defaults to `@('12:00','17:00')`; `-Times` accepts an array; legacy `-Time` still accepted. Existing users migrate via `--uninstall-auto-sync && --install-auto-sync`.
+

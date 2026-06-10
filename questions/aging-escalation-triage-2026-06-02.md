@@ -3,9 +3,9 @@ type: question
 title: Aging-escalation triage (2026-06-02) — methodology defect, not real aging
 slug: aging-escalation-triage-2026-06-02
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-09
 departments: [ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 related: [2026-06-02-lint, 2026-05-25-lint, project-lint-workstream-backlog]
 ---
@@ -62,3 +62,15 @@ Two options for handling resolved questions/ pages going forward:
 **Disposition:** All 7 escalations in the lint report are false positives — already resolved. No action needed beyond a one-line lint-script fix to read `status:` from frontmatter. The "urgent" priority in the 2026-06-02 lint can be downgraded.
 
 The substantive question for Michael's standup: do we adopt option (A) (fix the check) or option (B) (move resolved pages out of questions/)? Recommended (A).
+
+---
+
+## Resolution (2026-06-09)
+
+**Resolved — both parts settled.**
+
+1. **The 7 false positives:** confirmed already-resolved; no action was ever needed (the lint had mis-detected them).
+2. **The methodology defect (the real ask):** **fixed in CLAUDE.md v0.14**, item (5) — *"Lint methodology fix in §5.3 step 8 — escalation-aging check reads frontmatter `status:` field, not file presence."* This is exactly the two-line fix this triage requested.
+3. **Process question (Option A vs B):** **Option A adopted** (fix the check, keep resolved pages in `questions/` with status-in-frontmatter as the canonical signal) — now codified in CLAUDE.md §5.3 step 8 and the §5.3-check-8 lint rule (*"Status-in-frontmatter is canonical; file presence alone is not the trigger"*).
+
+**How / who:** approved by **Michael Bruck** in the **2026-06-02 standup** as part of the v0.14 schema bundle (see [[claude-md-v0.14-schema-bump-proposal]], status: resolved — *"All 8 items approved as proposed"*); executed in the v0.13 → v0.14 curation pass. Solution lives in `CLAUDE.md` §5.3 step 8.

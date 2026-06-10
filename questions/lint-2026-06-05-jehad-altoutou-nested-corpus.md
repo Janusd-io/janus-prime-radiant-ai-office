@@ -3,7 +3,7 @@ type: question
 title: "What to do about the people/jehad-altoutou/ nested Prime Radiant instance (1,116 files)?"
 slug: lint-2026-06-05-jehad-altoutou-nested-corpus
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-09
 departments: [ai-office]
 status: active
 owner: michael-bruck
@@ -44,3 +44,14 @@ Option 1 (extract to own repo) + Option 4 (keep a normal `people/jehad-altoutou.
 
 ## How it got here (hypothesis, unconfirmed)
 Likely a `janus-brain` enrollment that wrote into the AIO clone's `people/` rather than a dedicated clone, then got swept into a `vault backup:` auto-commit. The git log shows people/ activity on the Jehad workstation (b91d766, 2026-06-01). Confirm with Jehad in the next sync.
+
+---
+
+## Status (2026-06-09) — still open; corpus grew during the personal-vault migration
+
+**Decision still pending (Michael + Jehad).** The corpus remains nested in the AIO repo and is now **~1,193 files** — it grew on 2026-06-09 when Jehad's personal Obsidian vault was migrated in (that pass added `people/jehad-altoutou/self.md` profile content and `people/jehad-altoutou/personal-vault-index.md`; laptop sources still live under this subtree). See the 2026-06-09 migration `log.md` curation entry.
+
+- **Option 4 (keep a normal `people/jehad-altoutou.md` person page):** ✅ already satisfied — that page exists alongside the directory.
+- **Option 1 (extract the corpus to its own instance repo) / Option 2 (gitignore in place):** ❌ still not done — this is the open decision. Recommended path remains **Option 1 + Option 4**.
+
+**Note:** until this is resolved, vault-wide lint metrics (orphans, file counts) must continue to exclude `people/jehad-altoutou/` — e.g. the 2026-06-09 orphan audit counted ~1,148 orphans in `people/` that are this corpus's leaf source nodes, not real wiki orphans. Owner: [[michael-bruck|Michael]] + [[jehad-altoutou|Jehad]]. **Do not delete** — extract or de-track only. Stays `active`.

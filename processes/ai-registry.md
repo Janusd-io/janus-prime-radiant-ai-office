@@ -3,7 +3,7 @@ type: process
 title: AI Registry (Linear AIR) management
 slug: ai-registry
 created: 2026-05-12
-updated: 2026-05-22
+updated: 2026-06-09
 departments: [ai-office]
 sources: [section-5-ai-charter-policy-v2.1]
 related: [linear, ai-tool-evaluation, ai-tool-evaluation-framework, ai-policy, shadow-ai-prohibition, tool-tiers, standup, claude, anthropic, janus-prime-radiant-build, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, viktor, hostinger, n8n, obsidian]
@@ -100,3 +100,159 @@ This page exists so that the wikilink form `[[ai-registry|/ai-registry]]` (displ
 ## Merge history
 
 **2026-05-20** — folded in content from `concepts/ai-registry.md` (created 2026-05-15, captured_by Jehad). The duplicate concept page is removed; its pipeline-detail and dated lessons list are merged into the sections above. The 2026-05-20 lint surfaced the duplicate-slug as the only real action item from the duplicate-slug check.
+
+---
+
+## Operational notes — Linear AIR (AI Registry)
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# Linear — AI Registry (AIR)
+
+Team UUID: `598dd614-dce5-4ede-98ef-207f3bdff33c`
+Issue prefix: `AIR-N` (e.g. AIR-92)
+
+The single source of truth for every AI/SaaS tool the company uses, evaluates, deprecates, or rejects. **Owned by [[ai-registry]]**; gate-evaluation comments owned by [[ai-tool-evaluation]].
+
+> ⚠️ The team's UUID was originally created with the name "AI Office" but issues are prefixed `AIR-N`. The legacy UUID is correct; the prefix is what matters.
+
+## What lives here
+
+For every tool:
+- **Title** — canonical tool name
+- **Description** — full template per [[ai-registry]]'s schema (Category, Cost per User/Month, Number of Licences, Total Monthly Cost, Departments, Janus-specific analysis, Requested by)
+- **Status** — Backlog / Evaluating / Sandbox / Production / Monitor / Deprecated / Rejected / Duplicate
+- **Labels** — Tier (Core Infrastructure / Functional / AI Office Infrastructure) + Department(s)
+- **Priority** — 1 (Urgent) → 4 (Low)
+- **Comments** — Gate 1, 2, 3, 4 assessments (added by [[ai-tool-evaluation]])
+- **Links** — vendor URL, pricing page, ToS, DPA, etc.
+
+## Pipeline (status workflow)
+
+```
+Backlog → Evaluating → Sandbox → Production
+                              ↘ Monitor
+                ↘ Deprecated / Rejected / Duplicate
+```
+
+Tools enter at Backlog, move through Evaluating (Gate 1 + 2), Sandbox (Gate 3 domain expert testing), then Production (Gate 4 IT handover). Monitor is for tools in production but flagged for ongoing review.
+
+## Status UUIDs (for direct API writes)
+
+Documented in `/ai-registry/references/linear-context.md`. Not duplicated here per the Context Separation Rule.
+
+## Tier classification (Janus AI policy §5.2.1)
+
+- **Core Infrastructure (Tier 1)** — universal tools deployed across all departments
+- **Functional (Tier 2)** — department-specific approved applications
+- **AI Office Infrastructure (Tier 3)** — infrastructure tools managed by AI Policy
+
+## Department labels (requestor / owner)
+
+Office of CEO, AI Policy, Technology, Finance, Marketing, Commercial, Legal, Training, Country.
+
+## Snapshot stats (May 2026)
+
+74 active issues, distributed across all states. Most recent additions:
+- **AIR-92** Wispr Flow (Whisper Flow) — added 1 May 2026 standup; Backlog; Functional + Technology + AI Policy
+
+## Derivative views (regenerated on demand by [[ai-registry]])
+
+- **Slack Canvas** — "Janus Digital — Approved AI Tools" (Production-only, employee-facing; tier-grouped)
+- **Excel workbook** — `Janus_AI_Registry.xlsx` (full registry, dashboard, AIP project sheet)
+
+## Read-vs-write
+
+- **[[ai-registry]]** writes (descriptions, status, labels, priority)
+- **[[ai-tool-evaluation]]** writes (gate-decision comments only)
+- **[[standup]] never writes here directly** — it dispatches subagents to [[ai-registry]] / [[ai-tool-evaluation]]
+- The deprecated [[monday]] is a frozen one-time mirror; not synced
+
+## Related
+
+- Skill: [[ai-registry]] (CRUD)
+- Skill: [[ai-tool-evaluation]] (gate comments)
+- Deprecated mirror: [[monday]]
+- Reference docs: `references/linear-context.md`, `references/template.md`
+
+---
+
+## Notes — ai-registry skill
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# /ai-registry — AI Tools Registry engine
+
+Manages the AI Registry on Linear (the AIR team). The single source of truth for every AI/SaaS tool the company uses, evaluates, deprecates, or rejects. Companion to [[ai-tool-evaluation]].
+
+## When to use
+
+Trigger phrases include:
+- *"Add Harvey AI to the backlog"*
+- *"Update AIR-25 status to Production"*
+- *"Enrich the description for Wispr Flow"*
+- *"Mark AIR-N as deprecated"*
+- *"Update the Slack Canvas / regenerate the Excel workbook"*
+
+Also dispatched as a subagent by [[standup]] when transcripts contain explicit tool decisions / actions / registry instructions.
+
+## What it does
+
+1. **Add a new tool** — research via Chrome (homepage, pricing, ToS, integrations, security), create AIR-N issue with the standard description schema, assign labels (department + tier), set priority, note the requester.
+2. **Enrich an existing entry** — fetch current description, research deeper, save updated description preserving anything still accurate.
+3. **Update status / labels / assignments** — `save_issue` on the identifier (e.g. AIR-25) with the changed fields.
+4. **Handle duplicates** — fetch both issues, merge unique info into the primary, mark the duplicate with status `Duplicate` and `duplicateOf`.
+5. **Bulk updates from meeting transcripts** — apply meeting decisions (status changes, assignments, new tools, deprecations) one at a time.
+6. **Regenerate derivative views**:
+   - **Slack Canvas** — "Janus Digital — Approved AI Tools" (Production-only, employee-facing).
+   - **Excel workbook** — `Janus_AI_Registry.xlsx` (full registry, dashboard, AIP sheet).
+
+## Pipeline (the AIR workflow)
+
+Tools flow through:
+
+```
+Backlog → Evaluating → Sandbox → Production
+                               ↘ Monitor
+                  ↘ Deprecated / Rejected / Duplicate
+```
+
+## Labels
+
+**Tier (governance level):**
+- Core Infrastructure — universal tools deployed across all departments (Tier 1)
+- Functional — department-specific approved applications (Tier 2)
+- AI Office Infrastructure — infrastructure tools managed by AI Policy (Tier 3)
+
+**Department (requestor / owner):**
+Office of CEO, AI Policy, Technology, Finance, Marketing, Commercial, Legal, Training, Country.
+
+## Source of truth
+
+[[ai-registry]] — team UUID `598dd614-dce5-4ede-98ef-207f3bdff33c`. **This skill writes here directly.**
+
+[[monday]] is deprecated and not maintained by this skill any longer.
+
+## Subagent invocation contract (when dispatched by [[standup]])
+
+Receives a JSON hand-off package per the [[ai-office-architecture]] schema. Returns a JSON object with `action_completed`, `linear_air_issue` (AIR-N), `final_status_or_result`, `monday_task_required` (boolean + optional task_title/reason), `notion_journal_addition`, `unresolved_questions_or_blockers`.
+
+`monday_task_required.required` MUST be a boolean. Used by [[standup]] to optionally create a follow-up Monday Automations task when the registry work implies operational follow-up (e.g., "Configure SSO for new tool").
+
+## Governance context
+
+Enforces the Janus Digital AI & Automated Systems Policy:
+- §5.2.1 — Tool categorisation (3 tiers)
+- §5.2.3 — Data boundaries (no internal/confidential data in public/free-tier models)
+- §5.2.4 — Justification protocol
+- §5.3.1 — Human-in-the-loop accountability
+- §5.4 — Violations
+
+When an employee asks about tool approval or data handling, cite the relevant policy section.
+
+## Related
+
+- Companion: [[ai-tool-evaluation]] (formal Gate 1–4 methodology)
+- Orchestrator: [[standup]] (dispatches this skill via subagent)
+- System of record: [[ai-registry]]
+- Reference docs (in plugin): `references/linear-context.md`, `references/template.md`

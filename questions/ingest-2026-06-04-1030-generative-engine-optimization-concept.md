@@ -3,7 +3,7 @@ type: question
 title: "Create a concept page for GEO (Generative Engine Optimization)?"
 slug: ingest-2026-06-04-1030-generative-engine-optimization-concept
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-09
 departments: [ai-office, marketing]
 status: active
 owner: michael-bruck
@@ -31,3 +31,11 @@ related: [2026-06-03-google-search-ai-platform-geo-shift, agentic-lean-marketing
 3. Create now without escalation — rejected per trust line (new concept + slug collision).
 
 **Recommendation.** Approve `concepts/generative-engine-optimization.md`. Confirm the slug (vs e.g. `geo-generative-engine-optimization`) and the home instance (AIO vs Marketing — likely Marketing-canonical with an AIO stub, once the Marketing instance has a concepts surface).
+
+---
+
+## Status (2026-06-09) — still open, pending Michael's call
+
+**Not yet actioned.** No `concepts/generative-engine-optimization.md` exists, and no June meeting/decision records an approval. The supporting pulse [[2026-06-03-google-search-ai-platform-geo-shift]] is filed; the recommendation (approve the page under the unambiguous slug `generative-engine-optimization`) still stands.
+
+**Still needs Michael's decision on two points** before the page is created: (1) confirm slug `generative-engine-optimization` (vs `geo-…`); (2) home instance — AIO vs Marketing-canonical (likely Marketing once that instance has a concepts surface). Held per the §5.1 trust line (new concept page = high-stakes). Owner: [[michael-bruck|Michael]]. Stays `active`.

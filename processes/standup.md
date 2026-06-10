@@ -3,7 +3,7 @@ type: process
 title: Standup Skill (AIO daily standup workflow)
 slug: standup
 created: 2026-05-07
-updated: 2026-05-13
+updated: 2026-06-09
 sources: [jehad-vault-standup]
 departments: [ai-office]
 related: [jehad-altoutou, michael-bruck, ai-tool-evaluation, fireflies, monday, notion, linear, claude, aio-skills-sor-architecture-jehad, aio-playbooks-jehad, ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox, 2026-05-06-standup-skill-v3-12-self-correcting-behavior, april-2026-aio-transcripts-recovery, janus-prime-radiant-build]
@@ -115,3 +115,89 @@ The transcripts this skill consumes are durable backstops, not ephemeral inputs.
 ## Vault inbox dual-write (landed v3.15, 2026-05-13)
 
 Originally proposed in [[ingest-2026-05-11-standup-skill-dual-write-to-aio-inbox]]; spec landed as `standup-skill-v3.14-wiki-inbox-mirror-spec.md`; routing shipped in v3.15 once the filesystem-path approach was ruled out in favour of the Google Drive MCP connector (per [[2026-05-13-aio-it-meeting]]). Standup logs are now written both to the [[notion]] Operations Notebook and to the Prime Radiant vault `inbox/` via Drive MCP — the same dual-write pattern that carries the AIO through the Notion deprecation window (end of May 2026).
+
+---
+
+## Notes — standup skill
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# /standup — daily standup orchestrator
+
+The central skill for the AI Office. Runs after every daily AIO standup. Single source of orchestration for Fireflies → Monday → Linear → Notion.
+
+## When to use
+
+Trigger phrases:
+- *"Process today's standup"*
+- *"Log the standup from [date]"*
+- *"Dry run the standup from [date]"* — runs only Phase 1 + Phase 2 (no writes)
+
+## What it does
+
+1. **Phase 1 — Analyse** (read-only)
+   - Retrieve Fireflies transcript (raw, not summary)
+   - Build Meeting Intelligence Digest
+   - Notion idempotency check (skip / rerun / abort if today's entry exists)
+2. **Phase 2 — Plan** (read-only)
+   - Confidence-scored matching to Monday tasks
+   - Duplicate detection across [[monday]] (and [[monday]] when relevant)
+   - Parent-project routing (attach > create)
+   - Subagent Dispatch Gate (drop casual mentions)
+   - Generate execution plan
+3. **Phase 3 — Execute** (writes, in strict priority order)
+   1. [[monday]] writes
+   2. No-orphan next-step pass
+   3. Subagent dispatch to [[ai-registry]] / [[ai-tool-evaluation]]
+   4. [[linear]] reconciliation (with Conflict Safety)
+   5. [[notion]] journal entry (size-checked)
+   6. Final Execution Report
+
+## Key safeguards (v3.8.1 hardening + v3.9 size hygiene)
+
+- **Strict Write Safety** — never change Status / Owner / Timeline / Group without explicit transcript evidence
+- **Subagent Dispatch Gate** — only dispatch on explicit decision, action, comparison, or registry instruction
+- **Subagent Return Validation** — JSON schema validation with one retry; failures logged, don't block other steps
+- **Subagent Task Volume Control** — >3 follow-ups per tool consolidate under one parent
+- **Execution Control Mode** — large/ambiguous runs require literal "Approve execution"
+- **Linear AIP Conflict Safety** — never silently reconcile drift; log conflict, request manual review
+- **Notion Size Hygiene** — page kept under 80KB; entries older than 14 days auto-archive to monthly child pages
+- **Defensive Execution Principle** — when in doubt, don't write; ask the user; surface in Final Report
+
+## Inputs
+
+- Fireflies transcript (canonical)
+- [[monday]] board (cached snapshot)
+- [[monday]] board (when tools/recruitment topics surface)
+- [[notion]] (idempotency check + final append)
+- [[linear]] (reconciliation)
+
+## Outputs
+
+- Updated / created Monday Automations items + sub-items + Updates threads
+- AIR-N issues created via [[ai-registry]] subagent (when tools are explicitly added)
+- AIR Gate-N comments via [[ai-tool-evaluation]] subagent (when explicit gate is requested)
+- Notion journal entry (`## AIO DD Mon YYYY`)
+- Linear AIP status updates (only when authorised)
+- Final Execution Report (always, except on Phase 1 abort)
+
+## Source-of-truth boundaries
+
+This skill **never writes to**:
+- [[ai-registry]] — that's [[ai-registry]]'s domain (always via subagent dispatch)
+- [[ai-registry]] gate-evaluation comments — that's [[ai-tool-evaluation]]'s domain
+- [[monday]] — deprecated as an active surface
+- Assessify SaaS — that's [[assessify]]'s domain
+
+## Format conventions
+
+- **Standup entries:** `## AIO DD Mon YYYY` (no sequence numbers — date-titled)
+- **Source column on Monday items:** `AIO DD Mon YYYY` (most-recent toucher)
+- **Per-standup Update stub on Monday items:** `<p><b>Next step from AIO DD Mon YYYY:</b> ...</p>` (HTML, idempotency-protected)
+
+## Related
+
+- Architecture overview: [[ai-office-architecture]]
+- Common workflows: [[ai-office-playbooks]]
+- Sibling skills: [[ai-registry]], [[ai-tool-evaluation]], [[assessify]]
+- Source SKILL.md: kept in plugin source, current version is 3.9

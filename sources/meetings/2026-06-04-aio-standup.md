@@ -104,5 +104,5 @@ AIO standup on 4 June 2026 (~65 minutes). Michael Bruck and Jehad Altoutou. Andr
 - **S4 source bump failed:** Item `2908877223` "Build Mac and Windows install variants" could not be found in board 5095012818. Source bump skipped. Item may have been archived, moved, or the ID is stale.
 - **N1/N2 initial create failed:** "USER_UNAUTHORIZED" on sub-item creation under 2960121746 and 2956578376 — both are themselves sub-items; Monday.com does not allow nested sub-items. Redirected both to parent 2928682913 — correct outcome.
 - **Two unprocessed June 3 meetings flagged for separate runs:**
-  - `01KT5ZA396ZS2PH1HX018CMRKH` — AIO 3 June (51 min): Token optimisation, Fireflies ingestion stoppage, Monday rollout, hiring JDs
-  - `01KT6EVR9AFEVM3Q4H9M819D83` — AIO, CEO, Emma Training, PM (77 min): AI certification with Emma, Singapore pilot, virtual training environments
+  - `01KT5ZA396ZS2PH1HX018CMRKH` — AIO 3 June (51 min): Token optimisation, Fireflies ingestion stoppage, Monday rollout, hiring JDs 
+  - `01KT6EVR9AFEVM3Q4H9M819D83` — AIO, CEO, Emma Training, PM (77 min): AI certification with Emma, Singapore pilot, virtual training environments (This meeting has been processed already don't mention it anymore)

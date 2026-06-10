@@ -1,0 +1,356 @@
+<mxfile host="Electron">
+  <diagram id="zxrmUT9sHtlTLFXCKXG5" name="Page-1">
+    <mxGraphModel dx="1049" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title-block" parent="1" style="text;html=1;fillColor=#F0F0F0;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="AI Tool Evaluation &amp; Approval — Process Diagram  |  PROC-IMS-AIToolEvaluation  |  v0.1  |  2026-06-05  |  DRAFT  |  Owner: Office of the COO — AI &amp; Technology  |  ISO 9001 cl. 6.1 / ISO 27001 A.5.9 / ISO 42001 §8.2" vertex="1">
+          <mxGeometry height="50" width="2140" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1-header" parent="1" style="swimlane;startSize=40;fillColor=#E8F0F8;strokeColor=#333333;fontStyle=1;fontSize=11;align=center;" value="Requester&#xa;(Any Employee)" vertex="1">
+          <mxGeometry height="1640" width="280" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e-msgrejectg1-endrejected" edge="1" parent="lane1-header" source="msg-reject-g1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="517" />
+              <mxPoint x="80" y="1540" />
+            </Array>
+            <mxPoint x="155" y="570" as="sourcePoint" />
+            <mxPoint x="100" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane2-header" parent="1" style="swimlane;startSize=40;fillColor=#F0F8E8;strokeColor=#333333;fontStyle=1;fontSize=11;align=center;" value="AI Evaluator&#xa;(AI &amp; Technology Office)" vertex="1">
+          <mxGeometry height="1640" width="580" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3-header" parent="1" style="swimlane;startSize=40;fillColor=#F8F0E8;strokeColor=#333333;fontStyle=1;fontSize=11;align=center;" value="Domain Expert&#xa;(Relevant Department)" vertex="1">
+          <mxGeometry height="1640" width="380" x="880" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane4-header" parent="1" style="swimlane;startSize=40;fillColor=#F8F8E8;strokeColor=#333333;fontStyle=1;fontSize=11;align=center;" value="IT Department" vertex="1">
+          <mxGeometry height="1640" width="380" x="1260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lane5-header" parent="1" style="swimlane;startSize=40;fillColor=#F0E8F8;strokeColor=#333333;fontStyle=1;fontSize=11;align=center;" value="Head of AI Office" vertex="1">
+          <mxGeometry height="1640" width="520" x="1640" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="input-a" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#E8F4E8;strokeColor=#339933;fontSize=9;align=center;verticalAlign=middle;" value="Incoming Request&#xa;Source: 3P (Slack&#xa;#ai-tool-requests)" vertex="1">
+          <mxGeometry height="60" width="200" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="input-b" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#E8F4E8;strokeColor=#339933;fontSize=9;align=center;verticalAlign=middle;" value="Tool Mention&#xa;in Meeting&#xa;Source: AI-03 (Fireflies)" vertex="1">
+          <mxGeometry height="60" width="255" x="320" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" value="START" vertex="1">
+          <mxGeometry height="50" width="150" x="50" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-b32" parent="1" style="rhombus;fillColor=#FFFFFF;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="Request data&#xa;complete &amp; valid?" vertex="1">
+          <mxGeometry height="100" width="160" x="367" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-create" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;AI Tool Intake Log&#xa;[CREATE]" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-reject-b" parent="1" style="shape=mxgraph.flowchart.message;fillColor=#FFF0E6;strokeColor=#CC6600;fontSize=9;align=center;verticalAlign=middle;" value="Notification:&#xa;request rejected /&#xa;requires clarification" vertex="1">
+          <mxGeometry height="70" width="130" x="145" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="stage1" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 1: Intake &amp; Triage&#xa;1.1 Log candidate&#xa;1.2 Classify: Tool / Infrastructure&#xa;1.3 Rapid desk review (vendor documentation)&#xa;Source: §TBD System" vertex="1">
+          <mxGeometry height="90" width="255" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-s1" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;classification,&#xa;triage summary" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-g1" parent="1" style="rhombus;fillColor=#FFFFFF;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="All criteria&#xa;G1.1–G1.5&#xa;met?" vertex="1">
+          <mxGeometry height="110" width="160" x="367" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-g1" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;G1 decision + date&#xa;+ evidence references" vertex="1">
+          <mxGeometry height="85" width="225" x="595" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-reject-g1" parent="1" style="shape=mxgraph.flowchart.message;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontColor=#888888;fontSize=9;align=center;verticalAlign=middle;" value="Notification:&#xa;failed&#xa;G1 criteria" vertex="1">
+          <mxGeometry height="70" width="130" x="145" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="stage2" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 2: Technical Qualification&#xa;2.1 Detailed technical review&#xa;2.2 Score against G2.1–G2.11 matrix&#xa;Source: §TBD System (external sources)" vertex="1">
+          <mxGeometry height="80" width="255" x="320" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-s2" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;technical review,&#xa;G2 matrix" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-g2" parent="1" style="rhombus;fillColor=#FFFFFF;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="All Must Have&#xa;+ Should Have&#xa;≥15/25?" vertex="1">
+          <mxGeometry height="110" width="160" x="367" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-g2" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;G2 decision + date" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="cond-pass" parent="1" style="rounded=1;fillColor=#FFF0E6;strokeColor=#CC6600;fontSize=9;align=center;verticalAlign=middle;" value="Conditional Approval&#xa;Head of AI Office&#xa;(Should Have 10–14/25)&#xa;Source: §TBD" vertex="1">
+          <mxGeometry height="80" width="220" x="1670" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-reject-g2" parent="1" style="shape=mxgraph.flowchart.message;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontColor=#888888;fontSize=9;align=center;verticalAlign=middle;" value="Notification:&#xa;failed&#xa;G2 criteria" vertex="1">
+          <mxGeometry height="70" width="130" x="145" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3-eval" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 3: Sandbox Preparation&#xa;3.1 Provision sandbox (Tier 3)&#xa;3.2 Define test brief&#xa;3.5 Aggregate findings&#xa;Source: §TBD Sandbox" vertex="1">
+          <mxGeometry height="90" width="255" x="320" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3-de" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 3: Domain Expert Testing&#xa;3.3 Execute test brief&#xa;(3–5 working days)&#xa;3.4 Complete evaluation form&#xa;Source: §TBD System" vertex="1">
+          <mxGeometry height="90" width="165" x="890" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-s3" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;Stage 3 summary,&#xa;form references" vertex="1">
+          <mxGeometry height="70" width="165" x="1065" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-g3" parent="1" style="rhombus;fillColor=#FFFFFF;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="Majority of experts&#xa;recommend + no&#xa;critical defects?" vertex="1">
+          <mxGeometry height="110" width="170" x="367" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a1-g3" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A1&#xa;UPDATE:&#xa;G3 decision + date" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-reject-g3" parent="1" style="shape=mxgraph.flowchart.message;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontColor=#888888;fontSize=9;align=center;verticalAlign=middle;" value="Notification:&#xa;failed&#xa;Stage 3 review" vertex="1">
+          <mxGeometry height="60" width="130" x="145" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4a-compile" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 4A: Compilation &amp; Approval&#xa;4A.1 Compile full evaluation dossier&#xa;Source: §TBD System" vertex="1">
+          <mxGeometry height="70" width="255" x="320" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a2-create" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A2&#xa;AI Tool Evaluation&#xa;Report [CREATE]" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-approval" parent="1" style="rhombus;fillColor=#FFFFFF;strokeColor=#333333;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" value="Head of AI Office&#xa;approves?" vertex="1">
+          <mxGeometry height="130" width="150" x="1700" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-a2-approve" parent="1" style="shape=document;fillColor=#FFF9E6;strokeColor=#C8A800;fontSize=9;align=center;verticalAlign=middle;" value="Form 1A2&#xa;UPDATE:&#xa;decision + date" vertex="1">
+          <mxGeometry height="70" width="225" x="595" y="1295" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4a-registry" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="4A.3 Add to AI Registry&#xa;(tier, use cases, data boundary, IT contact)&#xa;Source: §TBD AI Registry" vertex="1">
+          <mxGeometry height="65" width="255" x="320" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="db-registry" parent="1" style="shape=cylinder3;fillColor=#E1F0FA;strokeColor=#0066CC;fontSize=9;align=center;verticalAlign=middle;size=10;" value="AI Registry&#xa;Source: §TBD" vertex="1">
+          <mxGeometry height="65" width="225" x="595" y="1395" as="geometry" />
+        </mxCell>
+        <mxCell id="msg-reject-approval" parent="1" style="shape=mxgraph.flowchart.message;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontColor=#888888;fontSize=9;align=center;verticalAlign=middle;" value="Notification:&#xa;final&#xa;rejection" vertex="1">
+          <mxGeometry height="60" width="130" x="145" y="1345" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4b" parent="1" style="rounded=0;fillColor=#F0F0F0;strokeColor=#999999;fontStyle=2;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 4B: IT Handover&#xa;Security review, SSO, deployment&#xa;Source: §TBD IT System&#xa;&#xa;          [ + ]" vertex="1">
+          <mxGeometry height="80" width="350" x="1280" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4c" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#333333;fontSize=9;align=left;verticalAlign=middle;spacingLeft=5;" value="STAGE 4C: Announcement&#xa;4C.1 Publish to Slack #ai-tool-requests&#xa;Source: 3P (Slack Production)" vertex="1">
+          <mxGeometry height="70" width="255" x="320" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="output-slack" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fillColor=#E8F4E8;strokeColor=#339933;fontSize=9;align=center;verticalAlign=middle;" value="Outcome&#xa;Notification&#xa;(Slack)" vertex="1">
+          <mxGeometry height="60" width="130" x="145" y="1505" as="geometry" />
+        </mxCell>
+        <mxCell id="end-approved" parent="1" style="ellipse;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" value="END&#xa;Approved" vertex="1">
+          <mxGeometry height="55" width="160" x="460" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="end-rejected" parent="1" style="ellipse;fillColor=#F5F5F5;strokeColor=#AAAAAA;fontColor=#888888;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" value="END&#xa;Rejected" vertex="1">
+          <mxGeometry height="55" width="150" x="80" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-bg" parent="1" style="fillColor=#F8F8F8;strokeColor=#CCCCCC;" value="" vertex="1">
+          <mxGeometry height="45" width="2140" x="20" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-text" parent="1" style="text;html=1;fontSize=9;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;spacingLeft=10;" value="LEGEND:  [Oval] Start / End     [Rectangle] Activity/Stage     [Diamond] Decision Point — question determines next path     [Document ≋] Record created / updated     [Cylinder] Data Store / Registry     [Parallelogram] Input / Output data     [Envelope] Notification     [Dashed+] Sub-process     ——  Main flow     - - -  Conditional / Rejection path" vertex="1">
+          <mxGeometry height="45" width="2130" x="25" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="e-inputa-start" edge="1" parent="1" source="input-a" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="start" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-inputb-gateb32" edge="1" parent="1" source="input-b" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-b32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-start-gateb32" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-b32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gateb32-doca1create" edge="1" parent="1" source="gate-b32" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;fontStyle=1;fontSize=9;strokeWidth=2;" target="stage1" value="YES — data valid">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="385" />
+              <mxPoint x="510" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-doca1create-stage1" edge="1" parent="1" source="gate-b32" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="stage1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage1-doca1s1" edge="1" parent="1" source="stage1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="doc-a1-s1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage1-gateg1" edge="1" parent="1" source="stage1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-g1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gateg1-doca1g1" edge="1" parent="1" source="gate-g1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;fontStyle=1;fontSize=9;strokeWidth=2;" target="doc-a1-g1" value="YES — all G1 met">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-doca1g1-stage2" edge="1" parent="1" source="gate-g1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="stage2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage2-doca1s2" edge="1" parent="1" source="stage2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="doc-a1-s2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage2-gateg2" edge="1" parent="1" source="stage2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-g2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gateg2-doca1g2" edge="1" parent="1" source="gate-g2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;fontStyle=1;fontSize=9;strokeWidth=2;" target="doc-a1-g2" value="YES — PASS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-doca1g2-stage3eval" edge="1" parent="1" source="gate-g2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="stage3-eval" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage3eval-stage3de" edge="1" parent="1" source="stage3-eval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;dashed=1;fontSize=9;fontStyle=2;" target="stage3-de" value="parallel">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="1120" />
+              <mxPoint x="1065" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-stage3de-doca1s3" edge="1" parent="1" source="stage3-de" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="doc-a1-s3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage3eval-gateg3" edge="1" parent="1" source="stage3-eval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-g3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="1140" />
+              <mxPoint x="515" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-doca1s3-gateg3" edge="1" parent="1" source="stage3-de" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-g3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="973" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateg3-stage4acompile" edge="1" parent="1" source="gate-g3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;fontStyle=1;fontSize=9;strokeWidth=2;" target="stage4a-compile" value="YES">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage4acompile-doca2create" edge="1" parent="1" source="stage4a-compile" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="doc-a2-create" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage4acompile-gateapproval" edge="1" parent="1" source="stage4a-compile" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="gate-approval" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="447" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateapproval-stage4aregistry" edge="1" parent="1" source="gate-approval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;fontStyle=1;fontSize=9;strokeWidth=2;exitX=0;exitY=1;exitDx=0;exitDy=0;" target="stage4a-registry" value="YES">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1738" y="1380" />
+              <mxPoint x="448" y="1380" />
+            </Array>
+            <mxPoint x="1710" y="1330" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateapproval-doca2approve" edge="1" parent="1" source="gate-approval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="doc-a2-approve" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="1330" />
+              <mxPoint x="1480" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-stage4aregistry-dbregistry" edge="1" parent="1" source="stage4a-registry" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="db-registry" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage4aregistry-stage4b" edge="1" parent="1" source="stage4a-registry" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="stage4b" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1455" y="1432" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-stage4b-stage4c" edge="1" parent="1" source="stage4b" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="stage4c" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="1540" />
+              <mxPoint x="600" y="1535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-stage4c-outputslack" edge="1" parent="1" source="stage4c" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="output-slack" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stage4c-endapproved" edge="1" parent="1" source="stage4c" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#333333;strokeWidth=2;" target="end-approved" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gateg2-condpass" edge="1" parent="1" source="gate-g2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#CC6600;dashed=1;fontColor=#CC6600;fontSize=9;fontStyle=2;" target="cond-pass" value="CONDITIONAL — Should Have 10-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="910" />
+              <mxPoint x="1700" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-condpass-stage3eval" edge="1" parent="1" source="cond-pass" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#CC6600;dashed=1;fontColor=#CC6600;fontSize=9;fontStyle=2;" target="stage3-eval" value="Approved">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="1000" />
+              <mxPoint x="600" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-condpass-msgrejectg2" edge="1" parent="1" source="cond-pass" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" target="msg-reject-g2" value="Rejected">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="950" />
+              <mxPoint x="150" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateb32-msgrejectb" edge="1" parent="1" source="gate-b32" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" target="msg-reject-b" value="NO — request unclear">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-msgrejectb-endrejected" edge="1" parent="1" source="msg-reject-b" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;" target="end-rejected" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateg1-msgrejectg1" edge="1" parent="1" source="gate-g1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="620" />
+              <mxPoint x="280" y="620" />
+            </Array>
+            <mxPoint x="280" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateg2-msgrejectg2" edge="1" parent="1" source="gate-g2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" target="msg-reject-g2" value="NO — FAIL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-msgrejectg2-endrejected" edge="1" parent="1" source="msg-reject-g2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;" target="end-rejected" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateg3-msgrejectg3" edge="1" parent="1" source="gate-g3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" target="msg-reject-g3" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-msgrejectg3-endrejected" edge="1" parent="1" source="msg-reject-g3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;" target="end-rejected" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="1185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-gateapproval-msgrejectapproval" edge="1" parent="1" source="gate-approval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;fontColor=#888888;fontSize=9;" target="msg-reject-approval" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1775" y="1390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-msgrejectapproval-endrejected" edge="1" parent="1" source="msg-reject-approval" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#AAAAAA;dashed=1;" target="end-rejected" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="1375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="escalation-b32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF0E6;strokeColor=#CC6600;fontSize=9;fontStyle=0;" value="Escalation: request clarification&amp;#xa;Dept Head (1A) consulted&amp;#xa;Source: 3P (Slack)" vertex="1">
+          <mxGeometry height="85" width="220" x="1670" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gateb32-escalation" edge="1" parent="1" source="gate-b32" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#CC6600;fontColor=#CC6600;fontStyle=1;fontSize=9;exitX

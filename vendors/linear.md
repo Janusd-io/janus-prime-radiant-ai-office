@@ -8,7 +8,7 @@ labels: [AI Policy, Technology, Functional]
 departments: [ai-office, engineering]
 url: https://linear.app/janusd/issue/AIR-36/linear
 created: 2026-02-25
-updated: 2026-05-12
+updated: 2026-06-09
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
@@ -180,3 +180,88 @@ From Jehad's federated view ([[aio-skills-sor-architecture-jehad]], 2026-05-11) 
 ### AIR snapshot stats (May 2026)
 
 74 active issues. Most recent: **AIR-92 Wispr Flow (Whisper Flow)** — added 1 May 2026 standup; Backlog; Functional + Technology + AI Policy.
+
+---
+
+## Operational notes — Linear AIP (AI Projects)
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# Linear — AI Projects (AIP)
+
+Team UUID: `2d1b5c04-94fd-4087-8e95-a5a7aa244a16`
+Issue prefix: `AIP-N` (e.g. AIP-15, AIP-21)
+
+Tracks **implementation initiatives** — the actual work projects that come out of approved tools or AI strategy decisions. Reconciled against [[monday]] in every standup run.
+
+## Workflow
+
+Simpler than [[ai-registry]]:
+
+```
+Backlog → Planned → In Progress → Done
+                              ↘ Cancelled
+```
+
+## AIP Status UUIDs (used by [[standup]] reconciliation)
+
+| Status | UUID |
+|---|---|
+| Backlog | `57d6d704-7a3b-41f9-b936-a7d64252d00a` |
+| Planned | `d5ccd469-37b4-4b5b-92d6-21be9f27dc90` |
+| In Progress | `210b719c-eb51-4d5f-88fb-dcde85ae9939` |
+| Done | `661dd6ca-5d5b-4378-8cb4-f1b0384975dc` |
+| Cancelled | `ebfcf4e3-f40e-4599-a2b2-827656299627` |
+
+## Reconciliation by [[standup]]
+
+Step 4 of every [[standup]] run cross-checks AIP status against [[monday]] using a two-source mapping algorithm:
+
+1. **Source 1 (canonical):** Monday item's `link_mm2xexj3` Link column → matches `https://linear.app/janusd/issue/AIP-N`
+2. **Source 2 (incidental):** regex `/AIP-(\d+)/g` over Monday Updates body
+3. **Fallback:** name similarity ≥ 85%
+
+Source 1 wins on conflict.
+
+## Monday → AIP status mapping
+
+| Monday Automations Status | Linear AIP Status |
+|---|---|
+| Backlog | Backlog |
+| In Definition | Planned |
+| In Development | In Progress |
+| In Testing | In Progress |
+| In Production | Done |
+| Postponed | Backlog |
+| Deprecated | Cancelled |
+
+## Conflict Safety (Step 4C)
+
+[[standup]] **never silently reconciles** AIP drift. If a mismatch exists between Linear and Monday but the transcript doesn't authorise the change AND the Monday execution doesn't clearly justify it, the conflict is logged under **AIP Conflicts Unresolved** in the Final Execution Report — manual review required.
+
+Live example (4 May 2026):
+- **AIP-21** "Assessify — Candidate Assessment Platform" — Linear says Done; Monday Assessify is In Testing with active expansion. Logged as conflict because the original AIP-21 scope IS done; new work is beyond it. Recommendation: open a new AIP issue.
+- **AIP-15** "Deel API & Developer Platform — Capability Assessment" — Linear says Planned; transcript discussed using Deel as backend (operational use). Logged because no explicit transcript evidence of status change.
+
+## Snapshot of recent AIP issues (May 2026)
+
+- AIP-1 Finance Department API Integration (Planned)
+- AIP-15 Deel API & Developer Platform — Capability Assessment (Planned)
+- AIP-16 Town Hall Transcript Processing — Pilot (Planned)
+- AIP-17 CEO Dashboard — Global Operations View (Backlog)
+- AIP-18 Cross-Department Action Routing (Backlog)
+- AIP-21 Assessify — Candidate Assessment Platform (Done — but expansion beyond)
+- AIP-22 Decide n8n hosting (Done)
+- AIP-19 Invoice Bot v3/v4 (Done)
+- AIP-20 HR Employee Form Replacement (Done)
+
+## Read-vs-write
+
+- **[[standup]]** writes (only AIP status changes from reconciliation, only when authorised by transcript or completed Monday execution)
+- **[[ai-registry]] / [[ai-tool-evaluation]]** never write here (they're AIR-side)
+
+## Related
+
+- Reconciled by: [[standup]] (Step 4)
+- Linked from: [[monday]] Link column
+- Sibling: [[ai-registry]] (different team, different lifecycle)

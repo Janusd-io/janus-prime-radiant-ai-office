@@ -3,7 +3,7 @@ type: question
 title: Should the Coordination Leverage Model ratify a 10th principle — "The Framer Stays In The Room"?
 slug: 2026-05-22-coordination-leverage-model-principle-10-framer-stays-in-the-room
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-06-09
 departments: [ai-office, office-of-ceo]
 status: active
 owner: michael-bruck
@@ -97,3 +97,11 @@ If Principle 10 is ratified, two follow-up framework questions surface:
 - [[pilot-in-command]] — the existing accountability framing being distinguished from.
 - [[builders-sellers-measurers]] — the companion role-taxonomy frame.
 - *After Automation* (Dan Shipper, Every, 2026) — source for Claims 6 + 7.
+
+---
+
+## Status (2026-06-09) — still open, blocked on the audit
+
+**Not resolved.** As of the **2026-06-08 AIO standup** this is still flagged: *"Principle 10 'Framer Stays in the Room' — singapore-monitoring-frame-audit overdue."* The [[singapore-monitoring-frame-audit-2026-05]] project is still `status: active`; its output pulse was never filed, and [[coordination-leverage-model]] still has **9 principles** (no Principle 10, no `framed_by:` field in any live page).
+
+**Blocker unchanged:** Michael to run the ~1-day Singapore-monitoring frame audit and file the result pulse; the Outcome A/B/C ratification follows immediately. Owner: [[michael-bruck|Michael]]. Stays `active`.

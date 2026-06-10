@@ -18,16 +18,16 @@ A self-contained **build-kit** for shipping a high-end SaaS / CRM / admin / dash
 
 Target stack: Next.js 15 App Router + TypeScript · Prisma + Postgres · Clerk (orgs = tenants) · Tailwind + shadcn/ui · Stripe · Resend · Upstash Redis · Vercel. The *patterns* originate in Twenty (NestJS / TypeORM / Jotai / Linaria) and are translated to this stack.
 
-## The kit (lives in `assets/saas-blueprint/`)
+## The kit (lives in `references/reference-projects/saas-blueprint/`)
 
 Read in order:
-1. [[_SaaS Blueprint]] — philosophy, the 7 non-negotiables, build order (read first).
-2. [[Folder Structure]] — repo skeleton + module convention + naming.
-3. [[Design Tokens]] — paste-ready `globals.css` CSS vars + `tailwind.config.ts` (real Twenty-derived values) + the state-styling contract.
-4. [[Architecture Patterns]] — 14 patterns each with a "use when" + the anti-patterns to avoid.
-5. [[Code Recipes]] — working code: tenant-scoped Prisma, layered RBAC, the **event-driven backbone**, metadata-driven objects, polymorphic field renderer, cursor pagination, the standard Server-Action mutation shape, jobs, saved views.
-6. [[DESIGN Templates]] — drop-in `DESIGN.md` for the **product register** and the **editorial register**.
-7. [[Twenty CRM PROJECT_REFERENCE]] — the full 21-section deep reference for anything not covered.
+1. [[saas-blueprint-guide]] — philosophy, the 7 non-negotiables, build order (read first).
+2. [[folder-structure]] — repo skeleton + module convention + naming.
+3. [[design-tokens]] — paste-ready `globals.css` CSS vars + `tailwind.config.ts` (real Twenty-derived values) + the state-styling contract.
+4. [[architecture-patterns]] — 14 patterns each with a "use when" + the anti-patterns to avoid.
+5. [[code-recipes]] — working code: tenant-scoped Prisma, layered RBAC, the **event-driven backbone**, metadata-driven objects, polymorphic field renderer, cursor pagination, the standard Server-Action mutation shape, jobs, saved views.
+6. [[design-templates]] — drop-in `DESIGN.md` for the **product register** and the **editorial register**.
+7. [[twenty-crm-project-reference]] — the full 21-section deep reference for anything not covered (overview: [[twenty-crm]]).
 
 ## Why it matters here
 

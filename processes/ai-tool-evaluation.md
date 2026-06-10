@@ -3,7 +3,7 @@ type: process
 title: AI Tool Evaluation Framework
 slug: ai-tool-evaluation
 created: 2026-05-06
-updated: 2026-05-13
+updated: 2026-06-09
 sources: [jehad-vault-ai-tool-evaluation]
 departments: [ai-office, it-ops]
 related: [linear, claude, anthropic, janus-prime-radiant-build, 2026-05-06-backlog-cleanup-no-return-to-backlog]
@@ -78,3 +78,107 @@ Failure at any gate → rejection or return to a previous stage.
 ## When to update this page
 
 Whenever the gate criteria change in the skill — keep the wiki summary in sync with the skill version. As of 2026-05-06 the skill version is unspecified in this reference; check the skill file directly for current status.
+
+---
+
+## Notes — ai-tool-evaluation skill
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# /ai-tool-evaluation — Gate 1–4 evaluation framework
+
+Janus Digital's formal multi-stage evaluation process for AI tools and platforms. Companion to [[ai-registry]] — where [[ai-registry]] manages Linear issues and derivative views, this skill handles the **structured assessment methodology**: research, gate criteria, scored assessments, formal evaluation records.
+
+## When to use
+
+Trigger phrases:
+- *"Do a Stage 1 on AIR-N"* / *"Triage [tool name]"*
+- *"Run Gate 1 / Gate 2 / Gate 3 / Gate 4"*
+- *"Score [tool] against the framework"*
+- *"Prepare an approval dossier for [tool]"*
+- *"Domain expert evaluation"* / *"Sandbox evaluation write-up"*
+
+Also dispatched as a subagent by [[standup]] when transcripts contain explicit gate evaluation requests (e.g. "we should run Gate 1 on Stitch", "evaluate Harvey AI for security").
+
+## The four-stage process
+
+| Stage | Gate | Linear status (on PASS) | What happens |
+|---|---|---|---|
+| Stage 1: Intake & Triage | Gate 1 | Evaluating | Rapid desk review against 5 binary integration/data criteria |
+| Stage 2: Technical Qualification | Gate 2 | Sandbox | Deep technical review with Must Have + scored criteria |
+| Stage 3: Sandbox & Domain Expert | Gate 3 | (remains Sandbox until Stage 4) | Controlled testing with structured domain expert feedback |
+| Stage 4: Approval & Registry Listing | Final approval | Production | Dossier compilation, Head of AI Office approval, IT handover |
+
+A failure at any gate results in **Rejected** (or return to a previous stage for re-evaluation).
+
+## Stage 1 — Intake & Triage (most common)
+
+**Five binary criteria** — all must PASS to proceed:
+- **G1.1** — Google Workspace / Cloud integration or export
+- **G1.2** — Slack integration (app, webhook, or MCP connector)
+- **G1.3** — Data portability (standard export formats)
+- **G1.4** — Data training exclusion (contractual guarantee)
+- **G1.5** — Documented API
+
+Each evaluated as PASS / FAIL / CONDITIONAL PASS with specific evidence (URL, page section, ToS clause).
+
+Gate 1 outcome:
+- All PASS → **GATE 1 PASS** → tool proceeds to Stage 2
+- Any FAIL with no viable path → **GATE 1 FAIL** → tool rejected
+- Conditional / uncertain → **GATE 1 BLOCKED** → flagged for clarification
+
+## Stage 2 — Technical Qualification
+
+Three categories of criteria:
+- **Must Have** (binary pass/fail, all required) — MCP/AI orchestration, enterprise auth, vendor viability
+- **Should Have** (scored 0–5, threshold 15/25) — efficiency gain, ease of adoption, multi-platform, audit trail, Gemini integration
+- **Nice to Have** (scored 0–5, informational only) — automation support, competitive differentiation, cost efficiency
+
+Outcome:
+- All Must Haves pass + Should Have ≥ 15/25 → **PASS** → Sandbox
+- Should Have 10–14/25 → **CONDITIONAL** → Head of AI Office decides
+- Any Must Have fails OR Should Have < 10/25 → **FAIL** → Rejected
+
+## Stage 3 — Sandbox & Domain Expert
+
+Human-driven. This skill **structures and documents** rather than conducts the evaluation:
+- Generates the test brief (representative tasks for domain experts)
+- Generates blank evaluation forms
+- Summarises domain expert feedback
+- Posts the Gate 3 Assessment comment with aggregated findings
+
+Gate 3 criteria (qualitative):
+- **G3.1** — Majority of domain experts recommend Approve / Approve-with-conditions (≥ 50%)
+- **G3.2** — No critical defects identified during sandbox testing
+- **G3.3** — Evaluator confirms viable workflow integration path
+
+## Stage 4 — Approval & Registry Listing
+
+Administrative. This skill:
+- Compiles the evaluation dossier (Gates 1, 2, 3 + domain expert forms + enriched description)
+- Drafts the IT handover document (auth, provisioning, network, data boundary, support ownership)
+- Prepares the approval recommendation for Head of AI Office
+- On approval — moves the AIR issue to Production, drafts the Slack #ai-internal-hub announcement
+
+## Where the evaluation lives
+
+Each gate posts a structured **comment** on the corresponding Linear AIR issue (created/managed by [[ai-registry]]). Comments form the audit trail of the evaluation history.
+
+## Subagent invocation contract
+
+Same as [[ai-registry]] — JSON hand-off + JSON return per [[ai-office-architecture]]. The `notion_journal_addition` field surfaces the gate decision (e.g. "Gate 1 PASS — proceed to Stage 2") in [[standup]]'s Notion entry.
+
+## Conventions
+
+- British English
+- USD costs
+- Cite specific evidence source (URL, page section, ToS clause) for every criterion
+- Conditional criteria flagged explicitly (not converted to PASS/FAIL)
+- Reference framework section numbers when relevant
+
+## Related
+
+- Companion: [[ai-registry]] (Linear issue management + description schema)
+- Orchestrator: [[standup]] (dispatches via subagent)
+- System of record: [[ai-registry]] (gate comments)
+- Reference docs (in plugin): `references/gate-criteria.md`, `references/scoring-matrix.md`, `references/evaluation-form.md`

@@ -3,9 +3,9 @@ type: question
 title: Bonaventure Friday-meeting transcript — missing audio recovery
 slug: 2026-05-11-bonaventure-friday-meeting-audio-recovery
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-06-09
 departments: [ai-office, office-of-ceo]
-status: active
+status: dormant
 owner: jehad-altoutou
 sources: [2026-05-11-aio-standup-with-jehad]
 related: [bonaventure-wong, jehad-altoutou, michael-bruck, fireflies, simon-tarskih]
@@ -49,3 +49,13 @@ Michael Bruck demonstrated Whisper Large Turbo MLX in [[LM Studio]] during the A
 5. Ingest per CLAUDE.md §5.1.
 
 **Blocker:** confirm the exact Fireflies meeting ID for the Friday post-ISO meeting (not the `01KRAZJ9RN9TSNASHPCPD8NS9S` standup — a separate Bonaventure meeting recorded ~8–9 May 2026). Jehad to identify the meeting in Fireflies. If the MP3 retention has expired, this question closes as unrecoverable.
+
+---
+
+## Status (2026-06-09) — dormant, likely moot
+
+No recovered transcript was ever filed in `sources/meetings/`, and no recovery run is recorded in any source/pulse. ~4 weeks have elapsed since the early-May meeting, so the Fireflies MP3 retention window has likely closed (the original plan noted: *"If the MP3 retention has expired, this question closes as unrecoverable"*).
+
+Largely overtaken by events: per the **2026-06-01 AIO×CEO meeting**, **Bonaventure is being enrolled directly** and *"all his Fireflies meetings to be ingested"* going forward (multilingual ingestion already configured), so future capture is handled at source. The exact Friday post-ISO meeting was never re-identified in Fireflies.
+
+**Marking dormant.** Reopen only if [[jehad-altoutou|Jehad]] confirms the MP3 is still available and worth recovering; otherwise this closes as unrecoverable. Owner to give a one-line confirm (recovered / unrecoverable / abandoned).

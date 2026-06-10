@@ -3,7 +3,7 @@ type: project
 title: Janus Digital marketing website (janusd.com)
 slug: janus-website
 created: 2026-05-15
-updated: 2026-05-19
+updated: 2026-06-09
 captured_by: jehad-altoutou
 status: active
 owner: jehad-altoutou
@@ -93,3 +93,60 @@ The [[agentic-lean-marketing-stack|2026-05-19 marketing stack analysis]] (Michae
 - **CMS layer (Cosmic) lands in June** per [[janus-website-cms]] — current hand-coded Next.js pages migrate into Cosmic with multi-bucket pattern (master + per-region buckets).
 - **Multi-region pattern locked.** One Next.js codebase, locale-aware middleware, one Vercel project per ccTLD, Cloudflare DNS + edge in front of all of them — gives [[bonaventure-wong|Bonaventure]] the Singapore-resolved-IP / UK-resolved-IP locality requirement without per-region servers. See [[agentic-lean-marketing-stack|brief]] for the full pattern.
 - **No CMS / CRM tooling for the initial Singapore landing** — the 10-day soft-launch plan stays on the current stack ([[singapore-launch]] hub captures the operational detail).
+
+---
+
+## Build detail (routes, brand tokens, blockers)
+
+_Migrated from Jehad's personal Obsidian vault, 2026-06-09. Detail not previously in this page._
+
+## Routes
+
+- `/` — upgraded home: hero video, 5 highlight cards, stats, AI Brain video showcase, Property Types grid, contact form
+- `/platform` — Stats strip, VoltAgent-style topology diagram, 4 capability cards, commercial model band
+- `/insights/white-paper` — gated email-capture page (no preview, no direct PDF link)
+- `/contact` — contact form
+- `/privacy`, `/cookies` — draft pending Simla review
+- `/api/leads`, `/api/white-paper` — lead capture endpoints
+
+## Key Decisions
+
+- *(2026-05-12)* Singapore confirmed as lead market — [[2026-05-12-singapore-as-lead-market]]
+- *(2026-05-15)* Hosting on Hostinger Node.js, not Vercel — [[2026-05-18-janus-website-hostinger-deploy]]
+- *(2026-05-15)* White paper is gated behind email form — [[2026-05-18-gated-white-paper-pattern]]
+- *(2026-05-15)* Standalone `/singapore-lunch` subpage removed; demo CTA routes to `/contact` instead
+- *(2026-05-18)* Typography locked to **Montserrat across the board**, diverging from the Brand Guidelines body-font (Arial). To be defended with Andrew on review.
+- *(2026-05-18)* No Lenis or any JS-driven smooth scroll. Native browser scroll only.
+
+## Brand
+
+Official tokens from `web/public/janus-brand-guidelines.pdf` (Janus Branding v1.0, 2025):
+
+- **Main** `#FCB745` yellow (energy, reality)
+- **Sub 01** `#000000` ink (structure, transition)
+- **Sub 02** `#013A7D` navy (technology, digital space)
+- **Sub 03** `#028CDC` azure accent
+- **BG** `#FFFFFF` white
+
+Logo at `web/public/janus-logo.png` (transparent PNG, extracted from the brand-guidelines screenshot).
+
+## Live URLs (local)
+
+- Dev: `http://localhost:3000` (or 3001/3002 if other dev servers are running)
+- Brand guidelines PDF: `http://localhost:3000/janus-brand-guidelines.pdf`
+- White paper PDF: `http://localhost:3000/janus-white-paper.pdf`
+
+## Outstanding blockers
+
+1. Andrew Soane brand-application review (mostly the Montserrat-body divergence)
+2. Simla privacy-policy review
+3. Provisioning: Google Sheet (`Leads` tab) + service account, Resend API key, GA4 ID, DNS for both domains
+4. OG image — `/og.png` referenced in metadata but not in `public/`
+5. Hostinger Node.js account access for deploy
+
+## Repository
+
+- **Repo:** [Janusd-io/janus-website](https://github.com/Janusd-io/janus-website) (private)
+- **Branch:** `phase-1/singapore-landing` (PR #1)
+- **HANDOVER doc:** `HANDOVER.md` at the repo root — read first when picking this up
+

@@ -3,7 +3,7 @@ type: vendor
 title: Fireflies
 slug: fireflies
 created: 2026-05-06
-updated: 2026-05-21
+updated: 2026-06-09
 departments: [ai-office, hr]
 status: active
 confidence: high
@@ -50,3 +50,55 @@ From Jehad's federated view ([[aio-skills-sor-architecture-jehad]], 2026-05-11) 
 - **Custom vocabulary** for Janus-specific terms (team names, tool names like [[wispr-flow|Wispr Flow]] vs Whisper Flow, product names, internal acronyms AIO/AIR/AIP/ISO) tracked on Monday Automations as item `2882206428` (#56 "Configure Fireflies custom vocabulary for team-name transcription").
 - **Title convention for standup search:** `AIO DD Mon` (e.g. "AIO 1 May"). `/standup` searches with ±1 day window; typos degrade matching, fallback is `keyword:"standup"`.
 - **Quiet-voice capture failure mode** — observed 2026-05-08 Bonaventure meeting transcript missed [[bonaventure-wong|Bonaventure]]'s audio entirely (flagged in the 11 May standup). Mitigation: download the MP3 from Fireflies and rerun through Whisper to recover the missing channel.
+
+---
+
+## Operational notes — Fireflies as system of record
+
+_Migrated from the personal-vault 'AI Office Brain' base, 2026-06-09._
+
+# Fireflies — meeting transcripts
+
+URL: https://app.fireflies.ai
+
+The canonical source for all meeting content. Every standup transcript is the absolute source of truth for what was said in the room. [[standup]] reads from here at the start of every run.
+
+## Why "canonical"
+
+[[standup]]'s Phase 1 explicitly states: **the Fireflies summary is unreliable. The raw transcript is the only source of truth.**
+
+The summary may be used as a weak hint when the raw transcript is ambiguous — never as final output. Every Meeting Intelligence Digest is built from the raw sentences.
+
+## Standup meeting title convention
+
+`AIO DD Mon` — e.g. "AIO 1 May", "AIO 4 May".
+
+[[standup]] searches for this pattern with a ±1 day window. Typos in the title (e.g. "AIO Satndup") will degrade matching — broaden the search to `keyword:"standup"` as a fallback.
+
+## What's recorded
+
+- Daily AIO standups (Michael Bruck + Jehad Altoutou ± occasional third party)
+- Weekly CEO calls with Bonaventure
+- Town halls
+- Ad-hoc working sessions (Simon meetings, Bonaventure meetings, Vibe-Coding bakeoffs)
+- Interview transcripts (planned: centralised setup with webhook → shared inbox; tracked on [[monday]])
+
+## Speaker diarisation
+
+Variable quality. Sometimes speakers are correctly named (Michael Bruck, Jehad Altoutou); sometimes they appear as `Speaker 1`, `Speaker 2`, etc. AIP-13 ("Speaker diarisation for Fireflies") is in Backlog — improvement project.
+
+## Custom vocabulary
+
+Tracked on [[monday]] as item `2882206428` — #56 "Configure Fireflies custom vocabulary for team-name transcription". Adds team names, tool names (e.g. Wispr Flow vs Whisper Flow), product names, internal acronyms (AIO, AIR, AIP, ISO).
+
+## Read-vs-write
+
+- **[[standup]]** reads only — `fireflies_search`, `fireflies_get_transcript`, `fireflies_get_summary` (the summary used only as weak hint)
+- No skill writes to Fireflies (it's a passive source)
+
+## Related
+
+- Consumer: [[standup]]
+- Custom vocabulary tracking: [[monday]] #56
+- Diarisation improvement: [[linear]] AIP-13
+- Future use: post-interview transcripts for [[assessify]] scoring (tracked on [[monday]])

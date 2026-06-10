@@ -2673,3 +2673,60 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - escalated: none
 - not-done (deliberately): git commit/push withheld per curator instruction (shared remote; deferred to Jehad). No CLAUDE.md schema change proposed.
 - notes: targets the Next.js 15 / Prisma / Clerk / Tailwind+shadcn / Stripe / Resend stack; the *patterns* originate in Twenty (NestJS/TypeORM/Jotai/Linaria). Quality substrate for the build phase of platform-development-process; encodes the discipline behind the 5-area-stress-test gate.
+
+## [2026-06-09 12:10] curation | full personal-vault migration into Prime Radiant
+- scope: migrate ALL knowledge from Jehad's personal Obsidian vault (~/Documents/Obsidian Vault) into the shared Prime Radiant; personal vault kept fully intact as backup (copy, not move). Decommission target: PR becomes the single brain. Naming: no numeric prefixes, lowercase-kebab.
+- new area: references/ (top-level; shared-schema addition — flag for Michael/curator): design-systems/ (63), tech-stacks/ (3 + index), skills/ (30 incl. graphify, ims-enrolment), libraries/ (2), reference-projects/ (twenty-crm, twenty-crm-project-reference, saas-engineering-patterns, saas-blueprint/ bundle relocated from assets/). Area MOC references.md + folder notes.
+- projects: projects/assessify/ (614-file graphify subtree) + projects/brightbean-studio/ (337-file subtree) added; empty PR stubs projects/assessify.md + projects/brightbean-studio.md populated from rich personal hubs; net-new build detail appended to projects/janus-website.md + projects/janus-brain-bootstrap.md; projects/janus-puls-onboarding.md + projects/_template.md added.
+- merges (no duplicate pages): AI Office Brain Systems-of-Record + Skills appended as labelled migration sections into vendors/{fireflies,linear,monday,notion} + processes/{ai-registry,ai-tool-evaluation,standup} + projects/assessify; Architecture + Playbooks -> new processes/ai-office-architecture.md + processes/ai-office-playbooks.md.
+- ISO/IMS/PULS (8 net-new): concepts/{puls-programme,three-iso-standards,iso-ims-puls}; processes/{ims-process-documents,ims-process-owners-map}; questions/ims-open-questions-for-simon; references/skills/ims-enrolment.
+- identity: people/jehad-altoutou/self.md got migrated profile section; people/jehad-altoutou/personal-vault-index.md archives the personal MOC.
+- index.md: new ## References section + catalog lines under Concepts/Processes/Projects/Questions + dated header.
+- lint: wikilinks rewritten old-numbered-paths -> PR slugs across all migrated files; dump->hub links fixed (336 BrightBean + 10 Assessify); references/skills/0.md -> 0-command.md to clear an introduced dup-basename; 0 orphans in migrated areas (the 1 found, ims-enrolment-interview-flow, was pre-existing and is now linked from iso-ims-puls).
+- ingest counter: unchanged (curation, not inbox ingest; remains 7 since 2026-06-05 12:30 lint).
+- not-done (deliberately): (a) git commit/push withheld — auto-sync/curator publishes; (b) graphify-dump residual artifacts NOT chased — code-fragment pseudo-links (views.py, models.py, "String: Any", etc.) and the single main() basename shared by both dumps are inherent to the imported generated artifact and were already unresolved in the source vault; (c) pre-existing PR dup-basenames (sources/ mirror pattern, marketing-handoff/) left untouched — out of scope.
+- notes: personal vault left fully intact as backup per curator instruction; this migration is additive to PR. References/ as a new top-level area should be ratified with Michael as a shared-layout change.
+
+## [2026-06-09 12:30] curation | graph-dump orphan cleanup + empty-note removal
+- #1: generated full node-index notes (projects/assessify/assessify-graph-index.md, projects/brightbean-studio/brightbean-studio-graph-index.md) linking every graphify node; linked each from its hub page. Result: 442 dump orphan nodes (219 assessify + 223 brightbean) → 0.
+- #3: deleted pre-existing empty daily note 2026-05-31.md.
+- index files uniquely named (no _index basename clash); both indexes linked from hubs (not orphans).
+- remaining orphans (~1298) are pre-existing vault structure (people/ laptop sources, sources/, vendors/decisions/etc.) — out of scope, untouched. 55 near-empty graphify type/asset stubs left in place (regenerate on /graphify; carry no info).
+
+## [2026-06-09 13:00] curation | questions/ folder review + status reconciliation
+- scope: reviewed all 28 questions/ pages; reconciled status against vault evidence (decisions, meetings through 2026-06-09, CLAUDE.md, project pages). Only update where real evidence exists — no fabricated resolutions.
+- resolved: aging-escalation-triage-2026-06-02 -> resolved. Its requested fix (escalation-aging lint must read frontmatter status:, not file presence) shipped in CLAUDE.md v0.14 §5.3 step 8; Option A adopted; approved by Michael in the 2026-06-02 standup (see [[claude-md-v0.14-schema-bump-proposal]]).
+- dormant: 2026-05-11-bonaventure-friday-meeting-audio-recovery -> dormant. No recovered transcript ever filed; ~4wk elapsed (MP3 retention likely closed); overtaken by direct Bonaventure enrollment per 2026-06-01 CEO meeting. Needs Jehad one-line confirm to close as unrecoverable.
+- kept active (genuinely still open per 2026-06-08 standup), status notes added: principle-10-framer (frame audit still overdue, blocked on Michael); generative-engine-optimization-concept (page not created, pending Michael's slug + home-instance call); lint-2026-06-05-jehad-altoutou-nested-corpus (corpus now ~1,193 files after the 2026-06-09 personal-vault migration; Option 4 person page satisfied, Option 1 extraction still pending Michael+Jehad).
+- left as-is: 22 already-resolved questions (spot-confirmed), ims-open-questions-for-simon (live; genuinely open external dependency on Simon).
+- not-done: did NOT create the GEO concept page or run the frame audit or extract the nested corpus — all require Michael's decision / owner action, not a curator edit. Flagged back to Jehad for any resolutions settled verbally but not yet in the vault.
+
+## [2026-06-09 13:15] curation | delete 8 empty Untitled*.canvas files
+- removed Untitled.canvas + "Untitled 1..7.canvas" from vault root (each 2 bytes, content `{}` — accidental empty Obsidian canvases). 0 empty .md/.canvas files remain in the vault.
+- note: questions Principle-10 / GEO / nested-corpus confirmed by Jehad as still unresolved — left active (correct). Future question-resolution passes: work oldest-first (older questions have accumulated resolution evidence; recent ones don't yet).
+
+## [2026-06-09 13:30] curation | resolved-questions completeness audit (oldest→newest)
+- audited all 23 status:resolved questions/ pages oldest-first for: (a) a resolution statement, (b) link to the solution, (c) attribution/who.
+- result: 23/23 complete. Each states how it was resolved and links to the created/changed artifact (entity pages, vendor pages, CLAUDE.md version, decisions). Resolution headers vary by convention ("## Resolution", "## Status update", "## Resolved YYYY-MM-DD", "Disposition") — all present.
+- false positives investigated + cleared: lysander-liu-and-spike-zhao + joyce-woo (resolution under "## Status update"/"## Resolved" headers, complete); semiont (curator-executed ingest, no person needed); yc-partner-entity-pages ([[name]]/[[wikilinks]] are prose examples quoting CLAUDE.md §6, not solution links — diana-hu/tom-blomfield/garry-tan pages exist, YC org deferred per Decision 1).
+- no edits needed. The questions/ folder is now fully reconciled: 23 resolved (all properly documented), 3 active (Principle 10, GEO, nested-corpus — confirmed open), 1 live (ims-open-questions-for-simon), 1 dormant (bonaventure-audio-recovery).
+
+## [2026-06-09 14:20] ingest | ISO/IMS department document set (Simon) | 8 documents (batch)
+- filed sources (full-fidelity, ingested_in_full: true; pandoc docx→md, openpyxl xlsx→md, drawio labels): sources/iso/{ims-readiness-assessment-2026-06-08, ims-process-visualization-standard, ims-clause-comparison-matrix, ims-process-register, ai-tool-evaluation-process-map, tmpl-unified-process-design, tmpl-light-process-discovery, ai-tool-evaluation-diagram}.md + raw .drawio in sources/iso/_assets/. Source origin: Google Drive ISO/IMS dept; downloaded by Jehad to ~/Downloads (folder access wasn't shared to jehada@janusd.io, so user supplied files locally).
+- created knowledge pages: concepts/ims-digital-twin.md; processes/{ims-process-register, ims-process-visualization-standard, unified-process-design-template, ai-tool-evaluation-process-map}.md.
+- updated: concepts/iso-ims-puls.md (full document-set map), concepts/three-iso-standards.md (clause-matrix link), processes/ims-process-documents.md + ims-process-owners-map.md (pointed at authoritative sources), index.md (dated header + Concepts/Processes catalog lines).
+- structure note: created sources/iso/ subfolder (extends the standard 6 sources/ subfolders for a coherent ISO set) — flag for curator if the 6-subfolder rule is strict.
+- ingest counter: this is a substantial external-source ingest; +1 (8-doc batch). [counter bookkeeping left to next lint per curator.]
+- notes: all docs DRAFT. Owner = Simon (Head of IMS & Compliance). Captures the full IMS digital-twin methodology (two-template architecture), 41-process register, clause matrix, viz standard, and the AI Tool Evaluation pilot — reusable across the org for ISO certification + department process documentation.
+
+## [2026-06-09 14:45] curation | consolidate all ISO content into a single iso/ department area
+- per curator (Jehad): "everything related to ISO in one place" for the ISO-department big picture. Created top-level iso/ with subfolders concepts/ processes/ reference/ sources/ + the area MOC iso/iso-ims-puls.md.
+- moved in: sources/iso/ → iso/sources/ (8 docs + _assets); concepts/{ims-digital-twin,three-iso-standards,puls-programme} → iso/concepts/; processes/{ims-process-register,ims-process-visualization-standard,unified-process-design-template,ai-tool-evaluation-process-map,ims-process-documents,ims-process-owners-map,ims-enrolment-interview-flow} → iso/processes/; references/skills/ims-enrolment → iso/reference/; questions/ims-open-questions-for-simon → iso/reference/.
+- fixed a basename clash introduced at ingest: 3 source files shared a slug with their knowledge page. Renamed sources to doc-id slugs (reg-ims-process-register, diag-ims-visualization-standard, proc-ims-ai-tool-evaluation) and repointed all source-intent links + frontmatter sources: arrays. Path text sources/iso/ → iso/sources/ throughout.
+- index.md: removed scattered ISO catalog lines from Concepts/Processes; added one consolidated ## ISO / IMS section pointing at iso/.
+- verification: iso/ = 21 md, 0 broken links, 0 orphans.
+- schema note (flag for Michael/curator): iso/ is a department-area top-level folder (departure from the strict type-based layout) — adopted per curator request to keep the ISO department's full picture co-located. ims-open-questions-for-simon (status: live) now lives in iso/reference/ rather than questions/, so the escalation-aging lint won't auto-scan it — flagged.
+
+## [2026-06-09 15:00] curation | IMS RACI matrix + relocate IMS open-questions to questions/
+- created iso/processes/ims-raci-matrix.md (DRAFT v0.1) — R/A/C/I across all 41 processes; A/R from the register's real owners, C/I first-pass with [TBD]s to confirm during documentation; standing-Consulted convention = Simon (IMS coherence). The register's "next step" deliverable. Linked from iso-ims-puls MOC, ims-process-register (next-step line), and index.md.
+- moved questions/ims-open-questions-for-simon.md back from iso/reference/ to questions/ (per curator: lint resolves IMS questions from meetings, so it belongs on the escalation-lint surface). Still linked from the ISO MOC by basename + listed under index ## Questions (open) and the ## ISO / IMS section.
