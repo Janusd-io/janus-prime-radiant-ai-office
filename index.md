@@ -158,6 +158,7 @@ _(none yet)_
 - [design-systems](references/design-systems/design-systems.md) — 63 design-system templates. [index]
 - [tech-stacks](references/tech-stacks/tech-stacks.md) — reusable stack bundles. [index]
 - [skills](references/skills/skills.md) — Claude/agent skill docs. [index]
+- [build-your-own-x](references/build-your-own-x/build-your-own-x.md) — 358 from-scratch tutorials across 31 categories, skill-mapped (codecrafters-io/build-your-own-x). [index]
 - [libraries](references/libraries/libraries.md) — creative-dev libraries + learning resources. [index]
 - [twenty-crm](references/reference-projects/twenty-crm.md) — deep-study reference CRM (+ twenty-crm-project-reference). [reference]
 - [saas-engineering-patterns](references/reference-projects/saas-engineering-patterns.md) — stack-agnostic SaaS patterns. [reference]
