@@ -135,3 +135,5 @@ The [[ims-digital-twin|IMS Digital Twin]] build. Full-fidelity source documents 
 
 **Status** — [[ims-readiness-assessment-2026-06-08|build progress report]] (2026-06-08): foundation complete, all DRAFT; next = validate pilot, prove Light→Technical translation, prioritise the sprint. Owner: [[simon-tarskih|Simon]] (Head of IMS & Compliance).
 
+**AIO proposal (2026-06-10, awaiting Michael)** — [[iso-skill-to-platform-staged-path]]: staged skill → dashboard → interactive platform path; AIO proves the Light→Technical translation and merges [[ims-enrolment]] with Simon's Light template (see [[2026-06-10-enrolment-approaches-converge-light-template-vs-ims-enrolment-skill|convergence pulse]]).
+

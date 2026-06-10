@@ -2792,3 +2792,16 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - pages read: 9 (iso MOC, ims-digital-twin, ims-enrolment-interview-flow, tmpl-light-process-discovery, readiness assessment, gap analysis pulse, 2 meeting sources, open questions)
 - filed back: yes — pulse/2026-06-10-enrolment-approaches-converge-light-template-vs-ims-enrolment-skill.md
 - notes: triggered by Jehad's review of pending ISO Monday tasks. Finding: Simon's Light template (v2.0, 9 Jun doc set) and Jehad's /ims-enrolment skill independently implement the same low-friction enrolment concept; format "evidence" Jehad awaited since May effectively arrived 9 Jun as TMPL-IMS-UnifiedProcessDesign v11.0 + pilot worked example. Monday 2934524410 (diagram sign-off) closed as superseded by Simon's visualization standard. Proposed merge: /ims-enrolment interview populates Light-template fields → AI emits Technical v11 + diagram (19-rule prompt) + HTML tables = executes readiness-report milestone 2 (Light→Technical translation).
+
+## [2026-06-10 13:20] ingest | iso-skill-to-platform-staged-path | brief (discovery for Michael)
+- created: briefs/iso-skill-to-platform-staged-path.md — staged skill → dashboard → interactive-platform path for the ISO programme; strategic-aha shape per §6
+- updated: index.md (Briefs section, top), iso/iso-ims-puls.md (MOC — AIO-proposal line under Status)
+- escalated: none (brief itself is the decision artefact — owner jehad-altoutou, status active, decision sought from Michael)
+- notes: synthesises the 2026-06-10 convergence pulse + readiness-report gaps into a build proposal. Key claims: Stage 1 skill proves Light→Technical translation (Simon's own #1 unproven milestone) in days; JSON-alongside-HTML output makes the skill the platform's engine; Stage 3 = PULS MVP with DTO-product framing for the Teresa conversation. Open points for Michael listed in the brief (sequence endorsement, Teresa framing, when to bring Simon in, product-track question).
+
+## [2026-06-10 14:30] curation | /ims-enrolment skill upgraded v1.4 → v2.0 (Stage 1 of the staged-path brief)
+- scope: skill source repo ~/Documents/janus-puls-onboarding/skills/ims-enrolment/ + install.sh manifest; reinstalled to ~/.claude/skills/ims-enrolment (30 files, verified)
+- rebuilt on Simon's June 2026 document set (all from iso/sources/): interview now populates the Light Process Discovery Template v2.0; new Phase T executes the Light→Technical v11 translation (the digital-twin core mechanism); diagrams per the Process Visualization Standard v1.0 (.drawio + Mermaid; ChatGPT image flow retired); HTML delivery (22 May decision); every process maps to the 41-process register codes; every process also emits structured JSON (templates/process-json-schema.md) as the future PULS platform ingestion layer
+- new files: 5 references (simon-light-template-v2, simon-technical-template-v11, simon-visualization-standard-v1, ims-process-register-v0.5, ims-documentation-hierarchy), 1 prompt (light-to-technical-translation), 1 template (process-json-schema); v1.x artefacts retained marked LEGACY
+- validation benchmark defined: regenerate Simon's G12 pilot from a Light-template input and diff vs his hand-made v0.1
+- not done: git commit/push of the skill repo (awaiting Jehad), validation run itself, Claude Desktop restart for skill reload
