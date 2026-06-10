@@ -19,7 +19,7 @@ Reusable engineering & design reference knowledge for the AI Office. Area MOC. M
 - [[skills]] — Claude Code / agent skill docs (dev + Janus skills).
 - [[build-your-own-x]] — 358 from-scratch tutorials across 31 categories (codecrafters-io/build-your-own-x), each mapped to the related skills for reusable learning.
 - [[libraries]] — [[creative-dev-libraries]], [[learning-resources]].
-- **reference-projects/** — deep-study blueprints: [[twenty-crm]] (+ [[twenty-crm-project-reference]]), [[saas-engineering-patterns]], and the [[saas-blueprint-guide|SaaS Blueprint build-kit]] · [[twenty-crm-brain|Twenty working brain]] ([[saas-blueprint]] concept).
+- **reference-projects/** — deep-study blueprints: [[twenty-crm]] (+ [[twenty-crm-project-reference]]), [[saas-engineering-patterns]], 0 · [[embedded-ai-agent|Embedded AI agent pattern]] ([[saas-blueprint]] concept).
 
 ## Related
 - [[platform-development-process]] · [[index|Wiki Index]]

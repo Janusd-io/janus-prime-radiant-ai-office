@@ -49,3 +49,5 @@ If the product needs user-defined objects/fields (custom CRM, no-code tables), u
 ## Related
 - [[architecture-patterns]] · [[design-tokens]] · [[folder-structure]] · [[code-recipes]] · [[design-templates]]
 - [[twenty-crm]] · the SaaS Default Stack (Next.js 15 / Prisma / Clerk / Tailwind+shadcn / Stripe / Resend) · [[saas-blueprint|SaaS Blueprint concept]]
+
+- [[embedded-ai-agent]] — put an AI chat inside your product that executes actions, scoped to the user's permissions (RBAC). 
