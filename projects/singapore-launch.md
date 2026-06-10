@@ -9,8 +9,9 @@ owner: andrew-soane
 captured_by: jehad-altoutou
 departments: [marketing, ai-office, it-ops, office-of-ceo]
 countries: [sg]
-sources: [2026-05-12-aio-andrew-marketing, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-05-18-ai-native-ceo, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-14-janus-singapore-white-paper-storms-ahead]
-related: [janus-website, janus-website-cms, janus-crm-selection, agentic-lean-marketing-stack, marketing-prime-radiant, joyce-woo]
+sources: [2026-05-12-aio-andrew-marketing, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-05-18-ai-native-ceo, 2026-05-15-singapore-marketing-launch-plan-v1, 2026-05-14-janus-singapore-white-paper-storms-ahead, 2026-06-03-emma-mccall-intro]
+related: [janus-website, janus-website-cms, janus-crm-selection, agentic-lean-marketing-stack, marketing-prime-radiant, joyce-woo, bms-engineer-certification]
+updated: 2026-06-10
 audience: department
 ---
 
@@ -63,6 +64,12 @@ When UK launches, it's a clone exercise: new Vercel project, new Cloudflare-rout
 - **2026-06–07** — Cosmic comes in. Migrate content from hand-coded Next.js into Cosmic. Set up MCP + Agent Skill.
 - **2026-06–07** — Attio CRM. Import the Google Sheet leads as seed data.
 - **2026-09** — Lunch event with hot-shot clients (postponed from July).
+
+## BMS Certification Programme — Singapore as first market (added 2026-06-10)
+
+Per [[2026-06-03-emma-mccall-intro]], Singapore is also the first market for the [[bms-engineer-certification|BMS Engineer Certification Programme]] (Emma McCall's mandate). The Keppel building is the PoC/guinea pig for certifying the first cohort of BMS engineers. This adds a second Singapore-facing workstream alongside the marketing launch — engineering-side customer engagement vs marketing-side demand generation.
+
+The two workstreams share the Singapore-as-test-ground logic (Bonaventure: *"we nailed down Singapore, we see the engagement is good"*) and the broader geographic rollout sequence (Singapore → UK → remaining 8 countries). They are independently managed: Andrew owns the marketing launch; Emma McCall owns certification.
 
 ## Watch for
 
