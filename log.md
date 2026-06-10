@@ -2766,3 +2766,10 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - Standup discussion today; resolution → frontmatter `status:` field.
   - If approved: Jehad (or assignee) runs the sandbox; reports findings as a `pulse/2026-06-XX-obsidian-headless-sandbox-findings.md`.
   - Stage 2 decision based on findings; Stage 3 cloud-migration dry-run on Hostinger if findings clear the bar.
+
+## [2026-06-10 12:30] ingest | ims-doc-system-hierarchy | document
+- filed source: iso/sources/ims-doc-system-hierarchy.md (verbatim, full-fidelity) + original PDF at iso/sources/_assets/IMS_DocSystem_Single.pdf
+- updated: iso/iso-ims-puls.md (MOC — methodology & tooling list), index.md (ISO/IMS section + source-documents line)
+- created: iso/concepts/ims-documentation-hierarchy.md (L1–L6 pyramid synthesised + mapped onto Simon's existing document set and the open questions)
+- escalated: none
+- notes: received from Simon as IMS_DocSystem_Single.pdf (Downloads, 2026-06-10). Single-page L1–L6 documentation hierarchy — new content, no duplicate in iso/sources/ (dedupe-checked). Executes Monday subitem 2983087073 "Process Simon's ISO files into Prime Radiant and surface blockers to Claude". Blockers surfaced on the Monday item: all 7 IMS docs still DRAFT/unapproved; diagram-template sign-off (2934524410) still pending; UAE/SG legal research (2924557920) unassigned and blocking the unified privacy policy; process-owner confirmation (Q1) still open.

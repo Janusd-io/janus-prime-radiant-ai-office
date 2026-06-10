@@ -120,6 +120,7 @@ The [[ims-digital-twin|IMS Digital Twin]] build. Full-fidelity source documents 
 
 **Methodology & tooling**
 - [[ims-digital-twin]] — the two-template, AI-translated digital-twin approach (core concept).
+- [[ims-documentation-hierarchy]] — L1–L6 documentation pyramid (policies → manual/maps → procedures → forms → records → external docs); received from Simon 2026-06-10 ([[ims-doc-system-hierarchy|source]]).
 - [[unified-process-design-template]] — technical + light ([[tmpl-unified-process-design]] / [[tmpl-light-process-discovery]]).
 - [[ims-process-visualization-standard]] — diagram notation + 19-rule AI build prompt.
 

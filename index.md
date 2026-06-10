@@ -170,6 +170,7 @@ _(none yet)_
 Everything for the **ISO department** lives in one area: `iso/` (Integrated Management System — ISO 9001 / 27001 / 42001). Owner: [[simon-tarskih|Simon]].
 - [iso-ims-puls](iso/iso-ims-puls.md) — **ISO area MOC / big-picture map** (start here). [index]
 - [ims-digital-twin](iso/concepts/ims-digital-twin.md) — AI-managed two-template IMS digital twin (core concept). [high]
+- [ims-documentation-hierarchy](iso/concepts/ims-documentation-hierarchy.md) — L1–L6 documentation pyramid from Simon (2026-06-10); maps doc set to levels. [high]
 - [ims-process-register](iso/processes/ims-process-register.md) — 41 processes, 4 categories, owners + clause linkage. [high]
 - [ims-raci-matrix](iso/processes/ims-raci-matrix.md) — R/A/C/I responsibility assignment across the 41 processes. [DRAFT]
 - [unified-process-design-template](iso/processes/unified-process-design-template.md) — technical + light process-design templates. [high]
@@ -177,7 +178,7 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 - [ai-tool-evaluation-process-map](iso/processes/ai-tool-evaluation-process-map.md) — first end-to-end IMS process (AI tool gate, G12). [high]
 - [three-iso-standards](iso/concepts/three-iso-standards.md) · [puls-programme](iso/concepts/puls-programme.md) · [ims-process-documents](iso/processes/ims-process-documents.md) · [ims-process-owners-map](iso/processes/ims-process-owners-map.md) · [ims-enrolment-interview-flow](iso/processes/ims-enrolment-interview-flow.md)
 - Reference: [ims-enrolment](iso/reference/ims-enrolment.md) (enrolment skill) · [ims-open-questions-for-simon](questions/ims-open-questions-for-simon.md) [live] — tracked in questions/ (lint scans it), linked here
-- Source documents (verbatim, from Simon): `iso/sources/` — readiness report, process register, clause matrix, viz standard, unified+light templates, AI-tool-eval map + diagram (raw .drawio in `iso/sources/_assets/`).
+- Source documents (verbatim, from Simon): `iso/sources/` — readiness report, process register, clause matrix, viz standard, unified+light templates, AI-tool-eval map + diagram, documentation-hierarchy one-pager (raw .drawio + original IMS_DocSystem_Single.pdf in `iso/sources/_assets/`).
 
 ## Processes
 
