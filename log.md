@@ -2805,3 +2805,11 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - new files: 5 references (simon-light-template-v2, simon-technical-template-v11, simon-visualization-standard-v1, ims-process-register-v0.5, ims-documentation-hierarchy), 1 prompt (light-to-technical-translation), 1 template (process-json-schema); v1.x artefacts retained marked LEGACY
 - validation benchmark defined: regenerate Simon's G12 pilot from a Light-template input and diff vs his hand-made v0.1
 - not done: git commit/push of the skill repo (awaiting Jehad), validation run itself, Claude Desktop restart for skill reload
+
+## [2026-06-10 17:45] curation | /ims-enrolment v2.0 made globally distributable (all departments, Cowork-first)
+- scope: skills/ims-enrolment/SKILL.md Phase 0 + Phase 5 + INSTALL.md in the repo; reinstalled; ims-enrolment.zip rebuilt on Desktop (36 files)
+- Phase 0 rewritten as environment detection: A Cowork (no shell, self-contained bundle, output to working folder) / B Code-tab ZIP install (repo absence is normal; verify own sibling folders) / C maintainer repo. Non-technical users are never asked to clone GitHub, run installers, or install pandoc.
+- HTML deliverables now written directly by the skill (pandoc demoted to optional .docx convenience). Desktop output falls back to the session working folder in Cowork.
+- Prime Radiant vault paths marked maintainer-only; all end-user knowledge ships inside references/.
+- INSTALL.md rewritten Cowork-first: Path 0 = ZIP upload via Customize → Skills → + (with the 200-char description limit + ZIP-structure constraints documented); distribution table per audience; troubleshooting for the Cowork-registry-vs-disk gotcha.
+- distribution unit: ~/Desktop/ims-enrolment.zip — send via Slack to department heads; they self-install via Path 0.
