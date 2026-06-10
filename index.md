@@ -319,6 +319,7 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Questions (open)
 
+- [sandbox-eval-obsidian-headless](questions/sandbox-eval-obsidian-headless.md) — propose a time-boxed 1–2 day sandbox eval of `obsidian-headless` (Obsidian's open-beta CLI tool) before any in-container Prime Radiant integration. Pre-flight doc study surfaces three concerns: open-beta status, unconfirmed plugin support (Obsidian-Git specifically), and substrate-conflict with the [[prime-radiant-storage-substrate|GitHub-as-substrate]] decision. Decision tree exits to either integrate into the NanoClaw container build or fall back to pure-git container with bidirectional git ops. Drafted for Jehad standup discussion 2026-06-10. [active]
 - [ims-open-questions-for-simon](questions/ims-open-questions-for-simon.md) — open IMS questions for Simon; lint resolves from meetings. [live]
 - [ingest-2026-06-09-atlassian-rovo-vendor-page](questions/ingest-2026-06-09-atlassian-rovo-vendor-page.md) — create Atlassian vendor page with Rovo section; Teamwork Graph architecture (no RAG); doubled ARR growth, 32% YoY stock growth, halved token costs; strongest published anti-RAG business-case proof. High-stakes entity creation. [active]
 - [ingest-2026-06-09-celonis-vendor-page](questions/ingest-2026-06-09-celonis-vendor-page.md) — create Celonis vendor page; OCEL/OCPN-based process mining; commercial instantiation of the Park/van der Aalst DT-IM academic work; adjacent to the ODT space. High-stakes entity creation. [active]

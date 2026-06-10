@@ -2752,3 +2752,17 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 ## [2026-06-09 15:00] curation | IMS RACI matrix + relocate IMS open-questions to questions/
 - created iso/processes/ims-raci-matrix.md (DRAFT v0.1) — R/A/C/I across all 41 processes; A/R from the register's real owners, C/I first-pass with [TBD]s to confirm during documentation; standing-Consulted convention = Simon (IMS coherence). The register's "next step" deliverable. Linked from iso-ims-puls MOC, ims-process-register (next-step line), and index.md.
 - moved questions/ims-open-questions-for-simon.md back from iso/reference/ to questions/ (per curator: lint resolves IMS questions from meetings, so it belongs on the escalation-lint surface). Still linked from the ISO MOC by basename + listed under index ## Questions (open) and the ## ISO / IMS section.
+
+## [2026-06-10 09:00] curation | questions/sandbox-eval-obsidian-headless.md | draft for Jehad standup
+- created: questions/sandbox-eval-obsidian-headless.md
+- updated: index.md (new question entry at top of open list)
+- notes: drafted in response to Michael's proposal to install `obsidian-headless` in the NanoClaude Docker container as a step toward Prime Radiant cloud migration. WebFetch'd obsidian.md/help/headless to ground the design — surfaced that obsidian-headless is (a) an npm-installed CLI tool (not Obsidian desktop under xvfb), (b) open beta with operational details unspecified, (c) plugin support (Obsidian-Git specifically) not addressed in docs, (d) architected around Obsidian Sync (paid, conflicts with our [[prime-radiant-storage-substrate]] decision).
+- judgment calls:
+  - **Sandbox-first, integrate-later.** Rather than installing obsidian-headless directly into the live NanoClaude container, proposed a time-boxed 1–2 day sandbox eval to answer four primary questions (sync-required? plugins work? concurrency sane? resource footprint?) before any production commitment. Decision tree in the page routes findings to either integration or fallback to pure-git container.
+  - **Surfaced the substrate-conflict risk as a hard constraint.** Obsidian Sync would split or replace our GitHub substrate; framed as non-negotiable per [[prime-radiant-storage-substrate]] and [[2026-04-22-per-user-data-control-hard-requirement-agent-platforms]]. Hard exit defined: if obsidian-headless requires sync even in sync-off mode, stop and write up the negative finding.
+  - **Reframed the value-prop honestly.** Per the just-ratified [[per-instance-curator-role]], the curator runs Obsidian locally — the container doesn't strictly need Obsidian. The case for obsidian-headless is "auto-link-update + auto-commit + plugin layer for free"; the case against is "open beta + sync-tied + adds dependency for capability the bot could mechanise itself." The sandbox decides which way it cuts.
+  - **No git commit attempted.** Per [[feedback_git_via_claude_code]] memory — handing the commit command back to Michael's vault-directory Claude Code.
+- next:
+  - Standup discussion today; resolution → frontmatter `status:` field.
+  - If approved: Jehad (or assignee) runs the sandbox; reports findings as a `pulse/2026-06-XX-obsidian-headless-sandbox-findings.md`.
+  - Stage 2 decision based on findings; Stage 3 cloud-migration dry-run on Hostinger if findings clear the bar.
