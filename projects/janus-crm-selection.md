@@ -3,19 +3,36 @@ type: project
 title: Janus CRM Selection
 slug: janus-crm-selection
 created: 2026-05-05
-updated: 2026-05-19
+updated: 2026-06-11
 status: active
 owner: michael-bruck
 captured_by: jehad-altoutou
 departments: [marketing, ai-office, office-of-ceo]
-sources: [2026-05-05-michael-jehad-andrew-weekly-meeting, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting]
-related: [crm-evaluation-and-selection, agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, marketing-prime-radiant]
+sources: [2026-05-05-michael-jehad-andrew-weekly-meeting, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-06-10-andrew-soane-attio-demo, 2026-06-10-michael-bruck-twenty-crm-demo]
+related: [crm-evaluation-and-selection, agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, marketing-prime-radiant, attio, twenty]
 audience: department
 ---
 
 # Janus CRM Selection
 
-The Janus CRM platform decision. **Attio** as of 2026-05-19, on the basis of the [[agentic-lean-marketing-stack]] analysis. Companion to the broader [[crm-evaluation-and-selection]] hub.
+The Janus CRM platform decision. **Attio** was the leading candidate as of 2026-05-19; evaluation reopened in June 2026 with a structured 5-vendor sprint week. **[[twenty|Twenty CRM]]** emerged as a strong second contender after a June 10 demo. Decision expected week of June 16, 2026. Companion to the broader [[crm-evaluation-and-selection]] hub.
+
+## June 2026 evaluation sprint
+
+Week of June 9–13, 2026 — Andrew ran 5 vendor calls. One vendor dropped immediately (unnamed; described as corporate, inflexible, "their way or the highway" — likely Salesforce or HubSpot Enterprise). Four remaining:
+
+| Vendor | Demo date | Status |
+|---|---|---|
+| [[attio\|Attio]] | Jun 10 (intro) + Jun 11 (full demo) | Active — top contender |
+| [[twenty\|Twenty CRM]] | Jun 10 | Active — top contender |
+| HubSpot | Jun 9 (referenced) | Lower-ranked per Andrew |
+| Monday.com | Jun 9 (referenced) | Possible; but board-model mismatch for CRM |
+
+**Twenty CRM signals (Jun 10 demo):** Open source, 3 years old, US company, founder Felix Malfait (prior company Kunai sold to Airbnb). Clients: Bayer (migrating from Salesforce), PwC. Fully configurable relational model; API/MCP-first; RBAC for agent scoping; Fuelty Edge for code-declared custom apps. Jehad code-reviewed it: "nicely built, well defined." Michael: "big fan of open source... more than I was expecting." Andrew: above HubSpot in ranking.
+
+**Attio signals (Jun 10 intro + Jun 11 full demo):** Confirmed agent-native MCP design; call transcription potentially replacing Fireflies; full Janus use-case demo (Singapore white paper lead capture flow) to run Jun 11.
+
+**Decision criteria (unchanged):** composability, agent operability, reversibility per [[stack-composition-framework]].
 
 ## Decision — Attio
 

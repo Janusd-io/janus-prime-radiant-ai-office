@@ -3,11 +3,11 @@ type: project
 title: Janus Prime Radiant Build
 slug: janus-prime-radiant-build
 created: 2026-05-05
-updated: 2026-06-10
+updated: 2026-06-11
 departments: [ai-office]
 status: active
 owner: michael-bruck
-sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build, 2026-05-18-ai-native-ceo, 2026-04-coordination-leverage-model-v0.3, janus-ai-software-engineer-jd-2026]
+sources: [karpathy-llm-wiki, aio-2026-05-05, aio-2026-05-06, 2026-05-11-aio-standup-with-jehad, 2026-05-12-bonaventure-ai-native-call, 2026-05-13-aio-it-meeting, 2026-05-13-aio-pm-meeting, 2026-05-14-pm-workflow-walkthrough-lysander, jehad-vault-janus-prime-radiant-build, 2026-05-18-ai-native-ceo, 2026-04-coordination-leverage-model-v0.3, janus-ai-software-engineer-jd-2026, haber-everything-is-recorded-now]
 related: [llm-wiki, michael-bruck, jehad-altoutou, obsidian, linear, notion, 2026-05-05-kb-direction-markdown-progressive-exposure-not-rag, 2026-05-05-notion-degrades-as-ai-searchable-kb, peer-to-peer-mesh-federation-pattern, 2026-05-11-bonaventure-prime-radiant-shoutout, 2026-05-11-notion-restricted-to-aio-no-broad-rollout, 2026-05-11-internal-branding-prime-radiant-vs-nomi-vs-brain, ai-native-janus-positioning, 2026-05-12-html-as-presentation-format-adopted, project-management-digital-delivery-workflow, 2026-05-14-ai-bounded-role-in-project-management, 2026-05-14-project-management-document-management-gap, euclid-wong, joyce-woo, bonaventure-wong, 2026-05-18-ceo-global-kb-unified-market-ui, coordination-leverage-model, coordination-three-layer-model, organisational-digital-twin]
 ---
 
@@ -101,6 +101,14 @@ The [[janus-ai-software-engineer-jd-2026|AI Software Engineer JD]] (filed 2026-0
 This is the first time the Prime Radiant architecture appears in an outbound Janus document. As of 2026-06-10, the system is no longer just an internal AIO project — it's part of Janus's engineering hiring identity and the public-facing description of what the AI Office builds. The JD also confirms multi-model orchestration (Claude + Gemini), MCP, and Claude Code as standard tooling expectations.
 
 CLAUDE.md version at time of filing: v0.16.
+
+## External validation — a16z names the pattern (2026-06-10)
+
+David Haber (a16z) published "Everything is Recorded Now" (Jun 10, 2026) coining the "living context layer" — the new enterprise system of record built from voice/conversation rather than structured text. Per [[haber-everything-is-recorded-now]]:
+
+> *"The model that's ingested two years of your company's internal discussion is simply a better assistant than the one that only read your documentation."*
+
+This is an independent external arrival at the same thesis Janus Prime Radiant is executing. Haber names Bridgewater, OpenAI, and Granola as practitioners. The Prime Radiant is the same pattern at the institutional KB layer. The a16z framing also opens a product question: Haber calls this a "large enterprise opportunity with no obvious winner yet" — relevant to whether the Prime Radiant pattern becomes a Janus product offering or remains internal competitive advantage. See [[2026-06-10-haber-living-context-layer]].
 
 ## Nomenclature anchors (immutable by schema)
 

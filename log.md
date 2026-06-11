@@ -2822,3 +2822,30 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Prime Radiant vault paths marked maintainer-only; all end-user knowledge ships inside references/.
 - INSTALL.md rewritten Cowork-first: Path 0 = ZIP upload via Customize → Skills → + (with the 200-char description limit + ZIP-structure constraints documented); distribution table per audience; troubleshooting for the Cowork-registry-vs-disk gotcha.
 - distribution unit: ~/Desktop/ims-enrolment.zip — send via Slack to department heads; they self-install via Path 0.
+
+## [2026-06-11 10:00] batch-ingest | CRM evaluation demos + a16z living-context-layer article | 3 items
+
+### Sources filed
+- sources/articles/haber-everything-is-recorded-now.md (a16z opinion, David Haber, Jun 10 2026)
+- sources/meetings/2026-06-10-andrew-soane-attio-demo.md (Attio intro demo — Andrew Soane + Michael Bruck in conf room jdg-cr02 + Moses Francis/Attio; Fireflies unable to distinguish Andrew vs Michael)
+- sources/meetings/2026-06-10-michael-bruck-twenty-crm-demo.md (Twenty CRM demo — Michael Bruck, Andrew Soane, Jehad Altoutou + Felix Malfait/Twenty; speakers named explicitly)
+
+### Updated
+- vendors/attio.md — promoted from low/stub to medium confidence; added June 10 demo findings; full demo June 11 scheduled
+- projects/janus-crm-selection.md — evaluation reopened; Twenty CRM now a top contender alongside Attio; 4-vendor shortlist; decision expected week of June 16
+- projects/janus-prime-radiant-build.md — added a16z external validation section (Haber "living context layer" = independent arrival at Prime Radiant thesis)
+
+### Created
+- pulse/2026-06-10-haber-living-context-layer.md — a16z external validation of Prime Radiant recording-as-institutional-memory thesis; product opportunity question raised
+- questions/ingest-2026-06-11-twenty-crm-vendor-page.md — escalation for Twenty CRM vendor page (new entity; open source CRM, Felix Malfait/founder, Bayer + PwC clients, in active evaluation)
+
+### Escalated
+- questions/ingest-2026-06-11-twenty-crm-vendor-page.md (new vendor entity page)
+
+### Moved to processed
+- inbox/Everything is Recorded Now.md → inbox/.processed/2026-06/
+- inbox/Andrew-Soane-and-Moses-Francis-Attio-Demo-57c04d4e-c2de.md → inbox/.processed/2026-06/
+- inbox/Twenty-CRM-51056064-e773.md → inbox/.processed/2026-06/
+
+- attribution note: jdg-cr02_janusd is the Janus conference room system; both Andrew Soane and Michael Bruck were in the room for the Attio demo — Fireflies could not distinguish speakers; all Janus-side utterances attributed to group per §5.1
+- ingest counter: 13 (10 + 3) — lint trigger already reached; lint pass next
