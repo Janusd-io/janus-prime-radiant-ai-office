@@ -1,9 +1,11 @@
 ---
-type: reference
+type: project
 title: Janus PULS Onboarding (external repo)
 slug: janus-puls-onboarding
 created: 2026-05-08
-updated: 2026-06-09
+updated: 2026-06-11
+status: active
+owner: jehad-altoutou
 departments: [ai-office]
 captured_by: jehad-altoutou
 audience: [department]

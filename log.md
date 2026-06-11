@@ -2,6 +2,12 @@
 
 > Append-only chronological record of ingests, queries, and lint passes. See `CLAUDE.md` §5 for entry formats.
 
+## [2026-06-11 11:30] lint
+- findings: 16 (across 9 checks + 9 carry-forward items)
+- report: pulse/2026-06-11-lint.md
+- agent-primary fixes applied: janus-crm-selection.md heading contradiction resolved; janus-puls-onboarding.md frontmatter compliance fixed (added status/owner/type correction)
+- carry-forward queue: 10 items; see pulse/2026-06-11-lint.md
+
 ## [2026-06-08 08:30] standup | 2026-06-08-aio-standup | meeting
 - filed source: sources/meetings/2026-06-08-aio-standup.md
 - updated: 7 Monday sub-items created, 6 AIR enrichments/creates (standup skill v3.24)

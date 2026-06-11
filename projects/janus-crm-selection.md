@@ -34,7 +34,9 @@ Week of June 9–13, 2026 — Andrew ran 5 vendor calls. One vendor dropped imme
 
 **Decision criteria (unchanged):** composability, agent operability, reversibility per [[stack-composition-framework]].
 
-## Decision — Attio
+## Attio evaluation — scoring
+
+*(Decision pending week of Jun 16, 2026. See intro paragraph. This section records Attio's evaluation scores, not a final selection.)*
 
 **Attio** scored 3/3 on the [[stack-composition-framework]]:
 
