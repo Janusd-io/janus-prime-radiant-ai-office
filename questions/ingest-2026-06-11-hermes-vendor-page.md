@@ -5,7 +5,7 @@ slug: ingest-2026-06-11-hermes-vendor-page
 created: 2026-06-11
 updated: 2026-06-11
 departments: [ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [2026-06-11-jon-austin-cto-intro]
 related: [janus-prime-radiant-build]

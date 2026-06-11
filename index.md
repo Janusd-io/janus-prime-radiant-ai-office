@@ -62,6 +62,7 @@ _Updated: 2026-05-20 (**Marketing stack batch ingest + lint + lint-followup.** M
 - [claude-code](entities/vendors/claude-code.md) — Anthropic's CLI/IDE coding agent; thin pointer to umbrella [[claude]] entry. [active, high]
 - [deel](entities/vendors/deel.md) — HR/payroll platform; used as headless backend at Janus. [active, medium]
 - [fireflies](entities/vendors/fireflies.md) — meeting transcription; system of record for "what was said" at Janus. [active, high]
+- [hermes](vendors/hermes.md) — NousResearch open-source agent framework; provider-agnostic; persistent memory; SKILL.md open standard; FlyHermes cloud SaaS option. CTO Jon Austin recommendation. [evaluating, medium] AIR-163
 - [gbrain](entities/vendors/gbrain.md) — open-source markdown-first agent memory layer (Garry Tan / YC); MIT licensed; PGLite + pgvector + RRF + 74-tool MCP surface; production-deployed at 146K-page scale. Closest external system to Prime Radiant pattern surfaced to date. [monitored, medium]
 - [github](entities/vendors/github.md) — code hosting + version control; confirmed substrate for Prime Radiant vault sync as of 2026-05-13. [active, high]
 - [google-cloud](entities/vendors/google-cloud.md) — GCP arm; Agentic Data Cloud, Skills Repo, A2A protocol push. [active, high]
@@ -110,6 +111,7 @@ _(none yet)_
 - [bonaventure-wong](entities/internal/bonaventure-wong.md) — CEO; sponsor of ISO programme + Singapore news bot; strict-policy holder.
 - [euclid-wong](entities/internal/euclid-wong.md) — Head of three teams (IT, Project Management, Operations); IT approved-tools list owner; CRM lock-in stakeholder; sponsor on the Project Management Prime Radiant rollout.
 - [jehad-altoutou](entities/internal/jehad-altoutou.md) — AI Office; owner of the `/standup` skill; engineering lead on most active projects.
+- [jon-austin](people/jon-austin.md) — incoming CTO; Australian; ex-AWS principal architect Singapore; fintech (Mox/Vacuum Labs); Hermes advocate; Claude Fable signal. [active]
 - [joyce-woo](entities/internal/joyce-woo.md) — CEO Janus Digital Singapore; co-signed author of the Janus SG white paper; BW/JW direct-outreach pairing on the SG launch campaign; 40+ years SG banking (DBS Finance → Merrill Lynch → OCBC Private Bank → Citi/UBS/MS/BoS → Jachin Capital → Leo Wealth → Janus).
 - [lysander-liu](entities/internal/lysander-liu.md) — Head of Project Management (operational lead); authored the 28-phase digital delivery workflow; curator candidate for the Project Management Prime Radiant.
 - [mariam-mahmood](entities/internal/mariam-mahmood.md) — HR; sample-data provider for the recruitment-automation pipeline.
@@ -335,8 +337,6 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 - [sandbox-eval-obsidian-headless](questions/sandbox-eval-obsidian-headless.md) — propose a time-boxed 1–2 day sandbox eval of `obsidian-headless` (Obsidian's open-beta CLI tool) before any in-container Prime Radiant integration. Pre-flight doc study surfaces three concerns: open-beta status, unconfirmed plugin support (Obsidian-Git specifically), and substrate-conflict with the [[prime-radiant-storage-substrate|GitHub-as-substrate]] decision. Decision tree exits to either integrate into the NanoClaw container build or fall back to pure-git container with bidirectional git ops. Drafted for Jehad standup discussion 2026-06-10. [active]
 - [ims-open-questions-for-simon](questions/ims-open-questions-for-simon.md) — open IMS questions for Simon; lint resolves from meetings. [live]
-- [ingest-2026-06-11-jon-austin-person-page](questions/ingest-2026-06-11-jon-austin-person-page.md) — create people/jon-austin.md; incoming CTO; Australian; ex-AWS principal SG; fintech background (Mox/Vacuum Labs); Hermes + Cloudflare Workers advocate. [active]
-- [ingest-2026-06-11-hermes-vendor-page](questions/ingest-2026-06-11-hermes-vendor-page.md) — create vendors/hermes.md after research to disambiguate; agent orchestration framework; open source/Supabase SaaS model; provider abstraction; CTO-circle consensus recommendation (Jon Austin). [active]
 - [ingest-2026-06-11-twenty-crm-vendor-page](questions/ingest-2026-06-11-twenty-crm-vendor-page.md) — create Twenty CRM vendor page; open-source CRM, Felix Malfait/founder, Bayer + PwC clients; in active evaluation alongside Attio; decision week of June 16. [active]
 - [ingest-2026-06-10-emma-mccall-person-page](questions/ingest-2026-06-10-emma-mccall-person-page.md) — create Emma McCall person page; training and certification programme lead; BMS Engineer Certification Programme; Dubai-based; L&D background. [active]
 - [ingest-2026-06-09-atlassian-rovo-vendor-page](questions/ingest-2026-06-09-atlassian-rovo-vendor-page.md) — create Atlassian vendor page with Rovo section; Teamwork Graph architecture (no RAG); doubled ARR growth, 32% YoY stock growth, halved token costs; strongest published anti-RAG business-case proof. High-stakes entity creation. [active]
@@ -349,6 +349,8 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Questions (resolved)
 
+- [ingest-2026-06-11-jon-austin-person-page](questions/ingest-2026-06-11-jon-austin-person-page.md) — people/jon-austin.md created; start date TBD. [resolved 2026-06-11]
+- [ingest-2026-06-11-hermes-vendor-page](questions/ingest-2026-06-11-hermes-vendor-page.md) — vendors/hermes.md created; AIR-163 in Evaluating. [resolved 2026-06-11]
 - [per-instance-curator-role](questions/per-instance-curator-role.md) — ratified by the CLAUDE.md v0.15 bump (2026-06-05): one curator per Prime Radiant instance + contributors via NanoClaude; curator ≠ team lead. Concept page [[per-instance-curator-role]] created. [resolved 2026-06-05]
 - [claude-md-v0.14-schema-bump-proposal](questions/claude-md-v0.14-schema-bump-proposal.md) — 8-item schema bundle approved in the 2026-06-02 standup and shipped as CLAUDE.md v0.14. [resolved 2026-06-02]
 - [ingest-2026-06-08-semiont-entity-page](questions/ingest-2026-06-08-semiont-entity-page.md) — vendors/semiont.md created; watch-list only. [resolved 2026-06-08]
