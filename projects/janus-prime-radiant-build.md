@@ -110,6 +110,14 @@ David Haber (a16z) published "Everything is Recorded Now" (Jun 10, 2026) coining
 
 This is an independent external arrival at the same thesis Janus Prime Radiant is executing. Haber names Bridgewater, OpenAI, and Granola as practitioners. The Prime Radiant is the same pattern at the institutional KB layer. The a16z framing also opens a product question: Haber calls this a "large enterprise opportunity with no obvious winner yet" — relevant to whether the Prime Radiant pattern becomes a Janus product offering or remains internal competitive advantage. See [[2026-06-10-haber-living-context-layer]].
 
+## CTO validation — Jon Austin intro call (2026-06-11)
+
+Jon Austin (joining as CTO; intro call [[2026-06-11-jon-austin-cto-intro]]) independently validated the Prime Radiant continual-distillation architecture. His characterisation: *"It's a continual distillation. Right. It just gets tighter and tighter."* Drew the SQLite analogy — a system that scales from one user to a million on a flat file is elegant, not under-engineered. Independently landed on the Markdown/ASCII parallel (both appeared dead; both resurgent because of LLMs).
+
+**Cloud hosting discussion:** Current brittleness acknowledged (lock file issues, laptop-bound, Obsidian Git sync dependencies). Jon offered to assist with infrastructure migration. Cloudflare Workers flagged by Jon as the simplest, most reliable infra substrate — *"100% success on Cloudflare Workers, free tier."* This is consistent with the AIO × IT meeting (June 10) where Euclid suggested a shared server as the direction. Jon also mentioned Terraform + Claude Code as a workable provisioning path.
+
+**Hermes evaluation added to queue:** Jon recommended Hermes as the agent orchestration framework generating CTO-circle consensus (open source, Supabase-model commercial SaaS, provider abstraction, guardrails). Escalation: [[questions/ingest-2026-06-11-hermes-vendor-page]]. Michael confirmed Hermes is already on his tracker; needs formal Linear AIR entry.
+
 ## Nomenclature anchors (immutable by schema)
 
 Per CLAUDE.md filing convention, certain slugs are immutable and cannot be renamed:

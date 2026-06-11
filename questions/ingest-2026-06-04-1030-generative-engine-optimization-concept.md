@@ -3,9 +3,9 @@ type: question
 title: "Create a concept page for GEO (Generative Engine Optimization)?"
 slug: ingest-2026-06-04-1030-generative-engine-optimization-concept
 created: 2026-06-04
-updated: 2026-06-09
+updated: 2026-06-11
 departments: [ai-office, marketing]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [googles-ai-shift-collective-freak-out, google-search-as-you-know-it-is-over]
 related: [2026-06-03-google-search-ai-platform-geo-shift, agentic-lean-marketing-stack]
@@ -34,8 +34,6 @@ related: [2026-06-03-google-search-ai-platform-geo-shift, agentic-lean-marketing
 
 ---
 
-## Status (2026-06-09) — still open, pending Michael's call
+## Resolution (2026-06-11)
 
-**Not yet actioned.** No `concepts/generative-engine-optimization.md` exists, and no June meeting/decision records an approval. The supporting pulse [[2026-06-03-google-search-ai-platform-geo-shift]] is filed; the recommendation (approve the page under the unambiguous slug `generative-engine-optimization`) still stands.
-
-**Still needs Michael's decision on two points** before the page is created: (1) confirm slug `generative-engine-optimization` (vs `geo-…`); (2) home instance — AIO vs Marketing-canonical (likely Marketing once that instance has a concepts surface). Held per the §5.1 trust line (new concept page = high-stakes). Owner: [[michael-bruck|Michael]]. Stays `active`.
+**Decided by Michael Bruck.** Concept page is **Marketing-canonical** — it belongs in the Marketing Prime Radiant instance, not the AIO home vault. Slug confirmed as `generative-engine-optimization` (not abbreviated `geo`, which collides with geographic usage). No AIO page to be created. Action: create `concepts/generative-engine-optimization.md` when Marketing PR instance is set up and has a concepts surface.

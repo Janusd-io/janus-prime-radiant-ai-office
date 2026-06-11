@@ -5,7 +5,7 @@ slug: ingest-2026-06-11-twenty-crm-vendor-page
 created: 2026-06-11
 updated: 2026-06-11
 departments: [marketing, ai-office]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [2026-06-10-michael-bruck-twenty-crm-demo]
 related: [janus-crm-selection, attio]

@@ -5,7 +5,7 @@ slug: ingest-2026-06-09-celonis-vendor-page
 created: 2026-06-09
 updated: 2026-06-09
 departments: [ai-office, engineering]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [odt-competitive-analysis-2026, park-van-der-aalst-dto-process-mining]
 related: [organisational-digital-twin, park-van-der-aalst-dto-process-mining]

@@ -3,7 +3,7 @@ type: vendor
 title: Anthropic
 slug: anthropic
 created: 2026-05-06
-updated: 2026-06-08
+updated: 2026-06-11
 departments: [ai-office]
 status: active
 confidence: high
@@ -71,6 +71,16 @@ Anthropic published a 23-page enterprise guide ([[anthropic-building-ai-agents-e
 **Trust-boundary as design constraint** (new vocabulary; relevant to [[organisational-digital-twin]]'s IAM section): in regulated industries, the trust boundary is "the first design constraint for any AI-powered product." Anthropic's response: Claude Cowork runs tasks locally — no cloud processing of files or documents. Enterprise compliance posture baked in, not bolted on.
 
 **Three-phase deployment model:** Weeks 1–4 define success criteria + select pilot teams. Months 2–3 champion pilot in production (not sandbox). Months 4–6 governance infrastructure + admin marketplace + broader rollout. Explicit warning: "Never underestimate the governance layer — prerequisites for broad rollout, not features you add after adoption."
+
+## Policy pivot — binding regulation advocacy (added 2026-06-11)
+
+Dario Amodei published "Policy on the AI Exponential" (~Jun 2026; see [[dario-amodei-policy-ai-exponential]]). Marks Anthropic's public shift from *transparency advocacy* (its stance 2023–2025) to *binding regulation advocacy*. Catalyst is Claude Mythos Preview — Amodei explicitly cites it as proof that frontier AI poses undeniable real-world cybersecurity risks.
+
+**The five pillars:** (1) FAA-equivalent mandatory pre-release testing above a compute threshold across four risk domains; (2) job-displacement policy including Anthropic's own Economic Index, pro-employment incentives, and long-term UBI; (3) FDA reform to match AI's acceleration of the drug pipeline; (4) accountability rules for autonomous weapons and closing of data-broker loopholes; (5) democratic AI coalition — chip/SME controls, coordinated regulation, mutual AI defence.
+
+**Amodei's framing of the displacement risk** is the most operationally significant passage for Janus: AI substitutes for *cognition broadly* (not narrow skills), making displacement potentially enduring in a way prior automation waves were not. This is the Anthropic CEO's own admission — relevant when the AIO is asked about transformation risk in the context of Janus's AI-native positioning.
+
+Two concurrent Anthropic legislative proposals filed with Congress: frontier model testing bill and job displacement policy framework.
 
 ## Research output worth flagging
 

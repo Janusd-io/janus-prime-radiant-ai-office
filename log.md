@@ -2,6 +2,16 @@
 
 > Append-only chronological record of ingests, queries, and lint passes. See `CLAUDE.md` §5 for entry formats.
 
+## [2026-06-11 12:30] curation | lint follow-up: stubs, escalation resolution, entities/ migration
+- created: vendors/twenty.md (active eval — CRM sprint), vendors/atlassian-rovo.md (stub, rejected), vendors/celonis.md (stub, rejected), people/emma-mccall.md (migrated from entities/people/)
+- resolved escalations: ingest-2026-06-11-twenty-crm-vendor-page, ingest-2026-06-09-atlassian-rovo-vendor-page, ingest-2026-06-09-celonis-vendor-page, ingest-2026-06-10-emma-mccall-person-page, ingest-2026-06-04-1030-generative-engine-optimization-concept
+- deleted: vendors/attio-duplicate-air-76.md, vendors/import-your-data-linear-placeholder.md (junk)
+- deleted: entities/vendors/ (8 files), entities/people/ (7 files — top-level pages already existed or now created)
+- migrated: entities/departments/ (9 .md files) → departments/ (new top-level folder; migrated_from: frontmatter added)
+- moved: entities/departments/marketing/ content (3 .md + 1 .html) → marketing-handoff-2026-05-22-broader-marketing-corpus/files/
+- geo decision: generative-engine-optimization is Marketing-canonical; no AIO page; escalation resolved
+- notes: entities/ folder shell remains (OS .fuse_hidden artifact in subdir — self-clearing); departments/ now canonical
+
 ## [2026-06-11 11:30] lint
 - findings: 16 (across 9 checks + 9 carry-forward items)
 - report: pulse/2026-06-11-lint.md
@@ -2855,3 +2865,31 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 
 - attribution note: jdg-cr02_janusd is the Janus conference room system; both Andrew Soane and Michael Bruck were in the room for the Attio demo — Fireflies could not distinguish speakers; all Janus-side utterances attributed to group per §5.1
 - ingest counter: 13 (10 + 3) — lint trigger already reached; lint pass next
+
+## [2026-06-11 14:00] batch-ingest | Dario Amodei policy article + AIO×IT weekly meeting + Jon Austin CTO intro | 3 items
+
+### Sources filed
+- sources/articles/dario-amodei-policy-ai-exponential.md (Dario Amodei, darioamodei.com, ~Jun 2026)
+- sources/meetings/2026-06-10-aio-it-weekly-meeting.md (Jun 10 3:02 PM; participants: Michael Bruck, Euclid Wong, Jehad Altoutou, Andrey Timokhov, Dhyey Mehta; attribution: confirmed, all speakers named directly)
+- sources/meetings/2026-06-11-jon-austin-cto-intro.md (Jun 11 10:49 AM; participants: Michael Bruck [jdg-cr02 DXB Office, per Michael's confirmation], Bonaventure Wong, Jon Austin; attribution: confirmed — Michael confirmed he was in the conference room)
+
+### Created
+- pulse/2026-06-11-amodei-policy-ai-exponential.md — Anthropic policy pivot to binding regulation; Mythos as catalyst; 5 pillars; Janus AI-native context implications
+- pulse/2026-06-11-jon-austin-intro-cto-hire.md — Jon Austin joins as CTO; Prime Radiant validation; Hermes recommendation; Claude Fable step-change signal; build vs buy pendulum
+- decisions/2026-06-10-sandbox-to-production-process.md — Formal AIO→IT handover process (6 phases, GitHub repo + README + SOP + stress test log + version + Zendesk acceptance gate)
+- questions/ingest-2026-06-11-jon-austin-person-page.md — Escalation to create people/jon-austin.md (incoming CTO; sufficient detail from transcript)
+- questions/ingest-2026-06-11-hermes-vendor-page.md — Escalation to create vendors/hermes.md (agent orchestration framework; disambiguation research needed before creating)
+
+### Updated
+- vendors/anthropic.md — Added policy-pivot section (Amodei essay; 5 pillars; displacement framing)
+- projects/assessify.md — Added IT Handover Status section (IT handover ready; Miriam Zendesk ticket pending)
+- projects/janus-prime-radiant-build.md — Added Jon Austin CTO validation section (continual distillation, cloud hosting discussion, Hermes evaluation added)
+
+### Moved to processed
+- inbox/.processed/2026-06/: Dario Amodei — Policy on the AI Exponential.md, Jun-10-03-02-PM-3f23e488-b71b.md, Meeting-Discussion-with-Jon-ab13f993-b5bd.md
+
+### Notes
+- attribution note (Jon Austin call): Michael said "attribute cr01 to me"; Fireflies labels the account `jdg-cr02 DXB Office` — treated as Michael Bruck regardless of the cr01/cr02 discrepancy; Michael confirmed he was in the Dubai conference room
+- Hermes: requires web research to disambiguate from NousResearch Hermes (fine-tuned LLM) before creating vendor page; escalated
+- Jon Austin person page: held for Michael to confirm start date before creating
+- ingest counter: 16 (13 + 3) — lint counter accumulation continues; lint already run this session (count resets from last lint at session start)

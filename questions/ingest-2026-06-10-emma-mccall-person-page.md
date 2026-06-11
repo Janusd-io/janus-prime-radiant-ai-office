@@ -5,7 +5,7 @@ slug: ingest-2026-06-10-emma-mccall-person-page
 created: 2026-06-10
 updated: 2026-06-10
 departments: [training, ai-office, hr]
-status: active
+status: resolved
 owner: michael-bruck
 sources: [2026-06-03-emma-mccall-intro]
 related: [bms-engineer-certification, 2026-06-03-bms-certification-programme-kickoff]

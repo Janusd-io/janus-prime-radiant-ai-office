@@ -3,7 +3,7 @@ type: project
 title: Assessify
 slug: assessify
 created: 2026-05-14
-updated: 2026-06-09
+updated: 2026-06-11
 captured_by: jehad-altoutou
 status: live
 owner: jehad-altoutou
@@ -122,6 +122,16 @@ Hosted at `https://n8n.srv1086109.hstgr.cloud`. Webhook endpoint: `/webhook/2f15
 - **DB:** SQLite at `/app/data/dev.db` inside container
 - **ngrok:** `https://disseminative-indistinctive-roseanne.ngrok-free.dev` → `localhost:3000`
 - **Demo reset:** Backup + truncate transactional tables (sessions, responses, results, invites, submissions, analytics, audit logs) — keep admin/templates/departments/roles
+
+## IT Handover Status (updated 2026-06-10)
+
+**Status: Ready for IT handover; user acceptance gate pending.**
+
+The sandbox-to-production process was formally agreed in the 2026-06-10 AIO × IT weekly meeting ([[2026-06-10-aio-it-weekly-meeting]]). Assessify is the first deliverable in the new process. Per the agreed [[2026-06-10-sandbox-to-production-process|handover process]]:
+
+- AIO side: GitHub repo, README (installation), SOP (usage manual), and stress test log are ready.
+- IT side: Andrey Timokhov and Dhyey Mehta have been added to the `Janusd-io` GitHub org.
+- **Blocking item:** Miriam has not yet filed a Zendesk ticket confirming user acceptance. No Zendesk ticket = IT will not consider the deployment accepted. Michael agreed to follow up with Miriam.
 
 ## Open / Next
 - [ ] Custom domain + HTTPS setup (waiting on IT for hosting decision)
