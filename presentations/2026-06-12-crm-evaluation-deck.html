@@ -250,6 +250,15 @@
   .nav button:disabled { color: var(--ink-faint); cursor: not-allowed; }
   .nav-counter { font-variant-numeric: tabular-nums; font-weight: 600; }
 
+  /* Compact variant — for dense scorecard slides */
+  .slide.compact { padding-top: 7vh; }
+  .slide.compact .title-lg { font-size: clamp(1.3rem, 2.2vw, 1.8rem); margin-bottom: 0.4rem; }
+  .slide.compact .lede { margin-bottom: 1.2vh; font-size: 0.92rem; }
+  .slide.compact table.matrix td { padding: 0.32rem 0.55rem; font-size: 0.79rem; }
+  .slide.compact table.matrix th { padding: 0.4rem 0.55rem; font-size: 0.76rem; }
+  .slide.compact table.matrix td.dim { font-size: 0.73rem; }
+  .slide.compact .legend { margin-top: 0.5rem; font-size: 0.74rem; }
+
   @media print {
     @page { size: 1280px 720px; margin: 0; }
     body { background: white; }
@@ -260,7 +269,14 @@
       width: 1280px;
       min-height: 720px;
       max-height: 720px;
+      overflow: hidden;
     }
+    /* Dense tables: tighten further so scorecards stay within one page */
+    .slide.compact { padding-top: 4vh; padding-bottom: 3vh; }
+    .slide.compact .lede { margin-bottom: 0.6vh; }
+    .slide.compact table.matrix td { padding: 0.26rem 0.5rem; font-size: 0.74rem; line-height: 1.35; }
+    .slide.compact table.matrix th { padding: 0.34rem 0.5rem; font-size: 0.72rem; }
+    .slide.compact table.matrix td.dim { font-size: 0.68rem; }
   }
 </style>
 </head>
@@ -432,7 +448,7 @@
   </section>
 
   <!-- SLIDE 5 — BUSINESS REQUIREMENTS SCORECARD -->
-  <section class="slide">
+  <section class="slide compact">
     <div class="header-band"></div>
     <div class="logo-block"><svg viewBox="0 0 130 45"><use href="#janus-logo"/></svg></div>
     <h2 class="title-lg">Scorecard 1 — the nine requirement areas</h2>
@@ -487,7 +503,7 @@
   </section>
 
   <!-- SLIDE 6 — TECHNICAL SCORECARD -->
-  <section class="slide">
+  <section class="slide compact">
     <div class="header-band"></div>
     <div class="logo-block"><svg viewBox="0 0 130 45"><use href="#janus-logo"/></svg></div>
     <h2 class="title-lg">Scorecard 2 — Stack Composition Framework</h2>
