@@ -3,7 +3,7 @@ type: vendor
 title: Fireflies
 slug: fireflies
 created: 2026-05-06
-updated: 2026-06-09
+updated: 2026-06-12
 departments: [ai-office, hr]
 status: active
 confidence: high
@@ -20,7 +20,7 @@ Meeting transcription and recording platform. Janus's authoritative system of re
 ## Use at Janus
 
 - **AIO daily standups** — every standup is recorded; the transcript becomes the source for the `/standup` skill which writes the consolidated entry to the [[notion]] Operations Notebook.
-- **Interview transcripts** — per [[2026-05-04-centralised-fireflies-webhook-for-interviews]], a centralised Fireflies invitee email auto-records recruitment interviews and triggers the post-assessment scoring skill via webhook.
+- **Interview transcripts** — per [[2026-05-04-centralised-fireflies-webhook-for-interviews]], a centralised Fireflies invitee email auto-records recruitment interviews and triggers the post-assessment scoring skill via webhook. As of 2026-06-12 (Assessify HR meeting), the plan is a **dedicated interviews-only Fireflies instance** auto-attached to every interview booked through [[assessify]]; transcripts are mapped back to candidates and feed the post-interview scoring rubric. Provisioning is **pending the IT department** — [[jehad-altoutou|Jehad]] lacks Fireflies admin access to create it.
 - **Strategic / cross-team meetings** — Bonaventure reframes, Simon ISO discovery, customer/vendor calls — captured for later reference.
 
 ## Janus conventions
@@ -39,6 +39,7 @@ Fireflies transcripts are an ingest source for `sources/meetings/` per `CLAUDE.m
 
 ## Watch for
 
+- IT provisioning of the dedicated interviews-only Fireflies instance for the [[assessify]] recruitment flow (pending as of 2026-06-12; Jehad lacks admin access).
 - Webhook reliability once the recruitment-interview pipeline goes live.
 - Whether the centralised-invitee pattern generalises beyond interviews (vendor demos, customer interviews).
 

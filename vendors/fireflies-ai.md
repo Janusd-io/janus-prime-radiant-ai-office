@@ -8,7 +8,7 @@ labels: [Country, Training, AI Policy, Legal, Marketing, Commercial, Technology,
 departments: [finance, marketing, office-of-ceo, training]
 url: https://linear.app/janusd/issue/AIR-9/firefliesai
 created: 2026-02-25
-updated: 2026-04-06
+updated: 2026-06-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
@@ -63,5 +63,9 @@ AI-powered meeting assistant — auto-joins, records, transcribes, summarises vi
 ## Relevance
 
 Foundational AI infrastructure. Every meeting auto-transcribed, creating searchable knowledge base. AI Office uses transcripts as input for standup processing pipeline — flowing into Notion and Linear.
+
+## Enrichment notes
+
+- **2026-06-12 (Assessify HR meeting):** new use case — dedicated interviews-only Fireflies instance, auto-attached to every interview booked through [[assessify]]; transcripts mapped back to candidates feed the post-interview scoring (post-assessment rubric). Provisioning **pending IT department** ([[jehad-altoutou|Jehad]] lacks Fireflies admin access). AIR-9 description and comment updated accordingly; status/priority/labels unchanged.
 
 *Universal deployment. Core Infrastructure tier.*
