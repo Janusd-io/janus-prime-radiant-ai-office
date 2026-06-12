@@ -1,6 +1,6 @@
 ---
 type: brief
-title: ISO documentation — skill first, platform second: the staged path from 41 DRAFT docs to a productizable IMS platform
+title: "ISO documentation — skill first, platform second: the staged path from 41 DRAFT docs to a productizable IMS platform"
 slug: iso-skill-to-platform-staged-path
 created: 2026-06-10
 updated: 2026-06-10
@@ -12,6 +12,7 @@ confidence: high
 sources: [ims-readiness-assessment-2026-06-08, tmpl-light-process-discovery, tmpl-unified-process-design, 2026-05-22-aio-project-management-iso-meeting, 2026-05-18-aio-iso-meeting]
 related: [ims-digital-twin, ims-enrolment, puls-programme, iso-ims-puls, unified-process-design-template, ims-process-visualization-standard, ims-documentation-hierarchy, organisational-digital-twin, 2026-06-10-enrolment-approaches-converge-light-template-vs-ims-enrolment-skill, michael-bruck, simon-tarskih]
 ---
+
 # ISO documentation — skill first, platform second: the staged path from 41 DRAFT docs to a productizable IMS platform
 
 > **Status: discovery — for Michael's review.** Drafted 2026-06-10 by Jehad + Claude. Decision sought: endorse the staged sequence (and its framing for the Teresa conversation), or redirect.
