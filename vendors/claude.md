@@ -8,7 +8,7 @@ labels: [AI Policy, Office of CEO, Functional]
 departments: [ai-office, engineering, office-of-ceo]
 url: https://linear.app/janusd/issue/AIR-10/claude
 created: 2026-02-25
-updated: 2026-05-31
+updated: 2026-06-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
@@ -110,6 +110,12 @@ Strategic implication for Janus's Claude-first stack: a Big-Four firm running a 
 - **Claude 4.6 (February 2026)** and **Claude 4.7 (April 2026)** — back-to-back model releases that materially upgraded the coding agent. Per Anthropic engineering lead Katelyn Lesse at Code with Claude London (2026-05-19; see [[2026-05-21-code-with-claude-london]]): *"I think that right now Claude is probably as good as a midlevel engineer at writing code. … But over time we want Claude to get better and better at all different types of engineering."*
 - **"Dreaming" — agent memory inside Claude Code natively** (announced ~2026-05-07). Claude Code agents write task-specific notes; a "dreaming" consolidation pass spots patterns across them; later agents read the dreamed-out summaries to bootstrap context. Lands the multi-graph [[agent-memory]] thesis directly inside Claude Code, in the same family as Mnemon and MAGMA but vendor-shipped. See [[claude-code]] for the deeper writeup.
 - **Stainless acquisition (2026-05-19, ~$300M).** Anthropic acquired Stainless, a platform for generating high-quality API SDKs and MCP servers — extending Claude's ability to connect to external data and tools at scale. Surfaced via Every / Context Window's I/O-week coverage at [[2026-05-20-every-google-io-agents-agents-agents]]; full context lives on the [[anthropic|parent vendor page]]. Implication for the Claude product family: the agent-to-software interoperability layer is now an Anthropic-owned strategic asset, not a third-party dependency.
+
+## Fable 5 adoption — Prime Radiant / Cowork (added 2026-06-12)
+
+As of the AIO PM Meeting on 2026-06-11, Janus has adopted Anthropic's **Fable 5** model (released ~2026-06-10) for [[janus-prime-radiant-build|Prime Radiant]] / Cowork knowledge-base work, beginning with initialisation of the PM team's Prime Radiant instance. Per Michael Bruck in the meeting: "It's the Fable, which is Fable 5. It just came out yesterday. It's very powerful."
+
+Cost posture: Fable 5 usage is covered under the existing Claude subscription **until July 2026**; thereafter API access must be enabled — per Michael Bruck, "It'll be part of our subscription until July, and then we have to turn on APIs." The post-July API enablement is tracked as a Monday sub-item under the PM-onboarding parent task; the API surface is [[claude-console|AIR-11 (Anthropic Console)]]. Registry impact recorded on [AIR-10](https://linear.app/janusd/issue/AIR-10/claude) as a dated Adoption Findings entry (pipeline status unchanged — Production). Meeting transcript pending ingest as of 2026-06-12.
 
 ## Competitive context — May 2026
 

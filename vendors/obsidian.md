@@ -8,14 +8,14 @@ labels: [Functional, AI Policy, Technology]
 departments: [ai-office]
 url: https://linear.app/janusd/issue/AIR-74/obsidian
 created: 2026-04-07
-updated: 2026-05-12
+updated: 2026-06-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
 confidence: high
 sources: [karpathy-llm-wiki]
-related: [llm-wiki, janus-prime-radiant-build]
+related: [llm-wiki, janus-prime-radiant-build, per-instance-curator-role]
 migrated_from: entities/vendors/obsidian.md
 ---
 <!-- jb:air-vendor-callout -->
@@ -61,6 +61,16 @@ Local-first, Markdown-based KM and note-taking application. Originally evaluated
 * Notion — complementary; Obsidian is local Markdown layer, Notion remains collaborative database
 
 *Status note (8 May 2026): Promoted from Evaluating → Sandbox reflecting heavy active use across AI Office.*
+
+## PM / delivery team instance (AIO PM Mtg, 11 Jun 2026)
+
+As of 2026-06-11, Obsidian adoption is expanding to the PM / delivery team as a new Prime Radiant instance (see [[janus-prime-radiant-build]]). Decided at the AIO PM Meeting, 11 June 2026; AIR-74 enriched 2026-06-12, status remains Sandbox.
+
+* **Rebuild, not migrate** — the PM delivery KB will be rebuilt from audited Google Drive documents rather than migrating [[lysander-liu|Lysander Liu]]'s legacy Obsidian vault (content stale, 2–3 months old). Per the meeting transcript ([[rosa-wu|Rosa Wu]]): "build the clear version according to the documentation we already had".
+* **Skeleton-first** — vault structure stands up first; content lands when Lysander provides the structured document folder, expected ~15–16 Jun 2026.
+* **Scope** — delivery knowledge + pre-sales docs; product / solutions content excluded.
+* **Onboarding sequence** — Lysander first, then Rosa and [[spike-zhao|Spike]]. Curator model per [[per-instance-curator-role]].
+* **Positioning** — per [[michael-bruck|Michael Bruck]] in the meeting: "Obsidian on its own is no intelligence. It's just an indexing system" — value is local Markdown files (portable, human-readable); intelligence is the LLM layer on top.
 
 ## Merged from `entities/vendors/obsidian.md`
 
