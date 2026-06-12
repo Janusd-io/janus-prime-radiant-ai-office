@@ -2927,3 +2927,11 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - updated: vendors/hermes.md — status evaluating → rejected, confidence medium → high; lede reflects rejection; new "Ratified at the AIO standup, 12 June 2026" paragraph (Michael: "I'm not sure I have a use case for Hermes now that I understand it better"); watch-for list pruned to one live item (automated continual learning vs human curation, per Michael — viable option for non-curating teams); hands-on trial arm now optional/dormant, no longer a gate on registry status
 - updated: index.md — hermes line refreshed ([rejected, high] AIR-163)
 - notes: transcript-evidenced status change per /ai-registry workflow 5 (bulk updates from meeting transcripts); standup source: AIO 12 Jun 2026; dispatched by /standup orchestrator; git commit/push left to the orchestrating session per dispatch instruction
+
+## [2026-06-12 11:28] ingest | monday-crm | vendor evaluation (AIR-167)
+- filed source: (none — desk research; no inbox file)
+- created: vendors/monday-crm.md
+- updated: index.md (monday-crm added to Vendors section)
+- escalated: none
+- linear: AIR-167 created (Evaluating, High, Commercial / Office of CEO / Functional labels); Gate 1 Assessment comment posted (2026-06-12); Gate 1 PASS — all 5 criteria pass unconditionally
+- notes: Monday CRM is a separate product from Monday.com Work OS (AIR-83); the earlier decision [[2026-05-06-monday-not-an-ai-tool]] referred to Work OS. CRM product has AI-native features (AI Sales Agent, AI Lead Agent) and is an active candidate in the Janus CRM evaluation alongside Attio and Twenty CRM. Decision expected week of 16 June 2026. Stage 2 carry-forward: confirm SAML SSO tier cost (Enterprise only) and AI agent pricing tier.
