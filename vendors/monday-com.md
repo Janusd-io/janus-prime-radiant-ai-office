@@ -3,11 +3,11 @@ type: vendor
 title: Monday Com
 slug: monday-com
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-06-12
 status: Sandbox
-confidence: low
-sources: [2026-04-22-it-team-meeting]
-related: []
+confidence: medium
+sources: [2026-04-22-it-team-meeting, 2026-06-05-monday-crm-campaigns-demo]
+related: [janus-crm-selection, crm-evaluation-and-selection]
 audience: department
 captured_by: jehad-altoutou
 departments: []
@@ -74,6 +74,15 @@ Cloud-based work management platform built around customisable "boards". Suite i
 ## Relevance to Janus Digital
 
 Surfaced during CEO Executive Management System design (20 Apr 2026) as [[asana|Asana]] replacement. Bonaventure decided to retire Asana. Jehad raised Monday.com — full dashboard-oriented view suits CEO-level cross-departmental visibility; task/project model more mature than Notion databases. ISO 27001:2022 and SOC 2 Type II posture matches compliance bar Simon's ISO programme establishes. As of Andrew Weekly 5 May 2026, monday CRM under evaluation alongside HubSpot, [[attio|Attio]], Salesforce. Bundle pricing flagged as potential decision driver.
+
+## Monday CRM demo — 5 Jun 2026
+
+Demo: Javon Edwards (monday.com) <> Andrew Soane (+ DA present). Source: [[2026-06-05-monday-crm-campaigns-demo]] — **transcript heavily garbled** (Fireflies language misdetection); facts below from the legible passages, confidence accordingly limited.
+
+- **Pricing quoted:** monday CRM **$65/seat/mo**, Work Management **$52/seat/mo** — billed annually, per the [59:25] passage. (Materially higher than the public Basic/Standard/Pro tiers above — likely Enterprise-tier quote; reconcile before any commercial step.) Bundle discount offered if both products taken; seats self-served on Standard/Pro, Enterprise via sales.
+- **Demoed:** lead capture via embeddable web forms / shareable links / QR codes; lead scoring on configurable criteria with auto-assignment; events/RSVP workflow (subscription forms, reminders, attendance tracking, per-channel spend reporting, Gantt); contact/account/deal model with multi-stakeholder deals, account hierarchies (e.g., asset managers linked to operators à la JLL), parent-child relations.
+- **AI/integrations:** Monday AI Notetaker bundled with CRM (Fireflies integration unconfirmed — rep would check); WhatsApp integration via partner implementation (relevant for SG audience); Gmail/Outlook native email capture; automations bridging CRM ↔ Work Management products.
+- **Andrew's probes:** email-open-rate skepticism (WhatsApp preferred for SG C-suite), auto-enrichment of records from signals (rep: possible if the data reaches Monday — API/forms), Fireflies-transcript-to-record routing (rep: needs technical scoping). Free trial offered with imported contact list.
 
 ## Considerations
 

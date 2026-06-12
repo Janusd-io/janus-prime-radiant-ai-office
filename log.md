@@ -2935,3 +2935,15 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - escalated: none
 - linear: AIR-167 created (Evaluating, High, Commercial / Office of CEO / Functional labels); Gate 1 Assessment comment posted (2026-06-12); Gate 1 PASS — all 5 criteria pass unconditionally
 - notes: Monday CRM is a separate product from Monday.com Work OS (AIR-83); the earlier decision [[2026-05-06-monday-not-an-ai-tool]] referred to Work OS. CRM product has AI-native features (AI Sales Agent, AI Lead Agent) and is an active candidate in the Janus CRM evaluation alongside Attio and Twenty CRM. Decision expected week of 16 June 2026. Stage 2 carry-forward: confirm SAML SSO tier cost (Enterprise only) and AI agent pricing tier.
+
+## [2026-06-12 11:45] batch-ingest | inbox sweep: CRM evaluation sources | 5 items
+- filed sources:
+  - sources/meetings/2026-06-09-salesforce-janus-digital-global.md (Salesforce <> Janus discovery call, 9 Jun — Sam/Yasmin Dublin team; demo gated behind scoping call, "walks away from solo CRM projects"; CRM-only demo + sub-$20k implementation partner conceded after Andrew pushback; requirements list to be sent)
+  - sources/meetings/2026-06-05-monday-crm-campaigns-demo.md (Monday CRM/Campaigns demo, Andrew Soane + Javon Edwards — pricing $65 CRM / $52 WM per seat/mo annual; WhatsApp via partner; AI Notetaker bundled. Transcript mostly garbled into Chinese by Fireflies language misdetection — filed with low-confidence flag)
+  - sources/meetings/2026-06-08-aio-mktg-meeting-raw.md (full 74KB raw transcript of the 8 Jun AIO-Marketing meeting; the existing digest 2026-06-08-aio-mktg-meeting.md was built from a 2KB excerpt with a "raw inaccessible" note — gap now closed; digest left unmodified per sources-immutability rule)
+  - sources/misc/crm-requirements-high-level.md (internal CRM requirements doc, 9 functional areas, file dated 2026-04-23; the "requirements list" Andrew committed to send Salesforce; authorship attributed to andrew-soane by inference, hedged in source note)
+- duplicates: marketing-stack-technical-writeup.md → inbox/.processed/2026-06/ (identical body already filed at sources/articles/marketing-stack-technical-writeup.md since 2026-05-19)
+- updated: vendors/salesforce.md (Jun 9 discovery-call section; sources/updated frontmatter); vendors/monday-com.md (Jun 5 demo section, pricing, confidence low→medium); projects/janus-crm-selection.md (sprint table corrected — Monday demoed Jun 5 not Jun 9; Salesforce row added; Monday + Salesforce signals; crm-requirements-high-level linked as requirements baseline; "dropped vendor" hedge updated to note the Salesforce call matches the description, unconfirmed)
+- created: (no wiki pages)
+- escalated: none — no new entity pages required (salesforce, monday-com, twenty, attio all pre-exist)
+- notes: attribution — both meeting transcripts carry unreliable speaker labels (Salesforce call uses room labels "jdg-cr02 DXB Office"/"Dublin-Tower" = shared-mic artefact; Monday call garbled). Claims attributed at role/group level or hedged transcript-only per §5.1. Ingest counter ≥19 since 2026-06-05 lint — lint overdue, suggest running it.

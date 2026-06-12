@@ -8,8 +8,9 @@ labels: [Marketing, Commercial, Functional]
 departments: [marketing]
 url: https://linear.app/janusd/issue/AIR-93/salesforce
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-06-12
 captured_by: jehad-altoutou
+sources: [2026-06-09-salesforce-janus-digital-global]
 audience: department
 sensitivity: dept
 sensitivity_confidence: 0.9
@@ -67,4 +68,14 @@ Michael's note: "gold standard but probably too expensive/large." Janus as mid-s
 * **Workforce maturity** — Salesforce skills need to be hired or trained (multi-year)
 * **Lock-in** — heaviest data model investment of any major CRM
 
-*Evaluating. Functional tier. Benchmark/comparison anchor in Andrew Weekly 5 May 2026 CRM matrix.*
+## Discovery call — 9 Jun 2026
+
+Salesforce (Sam + Yasmin, Dublin tech-sector team covering Middle East) <> Janus (Andrew Soane, Michael Bruck, Jehad Altoutou, DXB office). Source: [[2026-06-09-salesforce-janus-digital-global]]. Speaker labels are room labels (shared mic) — quotes below rely on internal consistency, attribution `transcript-only`.
+
+- **Process friction is the headline.** Salesforce insists on its own evaluation sequence — scoping call with a technical resource → tailored demo → implementation planning + commercials — and explicitly declines to demo without scoping ("we don't do demos [from this team]; we've got solution engineers that run the demos"). Andrew pushed back hard, asking for a standard CRM demo that week; rep conceded only after Andrew flagged this as the third conversation without a demo and cited "big bloated machine" internal pushback.
+- **Standalone-CRM aversion.** Rep: Salesforce "walks away from solo CRM projects" — wants full-ecosystem (Data Cloud, Tableau, MuleSoft, Agentforce) engagements. Direct tension with Janus's start-small intent (~5 licences at signing, scale with country openings — 30 countries by end-2027 per the call).
+- **Pragmatic concessions offered:** CRM-only demo + fast pricing; implementation partner suggestion (Matthew Ansley, reportedly Claude-using) to keep setup under ~$20k; pitched Anthropic's own Salesforce pattern (Salesforce as system of record, Claude as engagement layer) as alignment with Janus's Claude/Slack-mediated architecture.
+- **Next step:** Andrew to send the CRM requirements list ([[crm-requirements-high-level]]); demo + commercial conversation targeted within the week. Janus stated timeline: shortlist 3 of 4 vendors, decision the following week.
+- **Read-across:** the call validates the existing "Considerations" above — process weight and ecosystem-bundling pressure showed up pre-sale. Whether Salesforce stays in the shortlist after this friction is recorded in [[janus-crm-selection]].
+
+*Evaluating. Functional tier. Benchmark/comparison anchor in Andrew Weekly 5 May 2026 CRM matrix; live discovery call 9 Jun 2026 as part of the June evaluation sprint.*

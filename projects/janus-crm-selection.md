@@ -3,12 +3,12 @@ type: project
 title: Janus CRM Selection
 slug: janus-crm-selection
 created: 2026-05-05
-updated: 2026-06-11
+updated: 2026-06-12
 status: active
 owner: michael-bruck
 captured_by: jehad-altoutou
 departments: [marketing, ai-office, office-of-ceo]
-sources: [2026-05-05-michael-jehad-andrew-weekly-meeting, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-06-10-andrew-soane-attio-demo, 2026-06-10-michael-bruck-twenty-crm-demo]
+sources: [2026-05-05-michael-jehad-andrew-weekly-meeting, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-06-10-andrew-soane-attio-demo, 2026-06-10-michael-bruck-twenty-crm-demo, 2026-06-05-monday-crm-campaigns-demo, 2026-06-08-aio-mktg-meeting, 2026-06-09-salesforce-janus-digital-global, crm-requirements-high-level]
 related: [crm-evaluation-and-selection, agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, marketing-prime-radiant, attio, twenty]
 audience: department
 ---
@@ -19,14 +19,21 @@ The Janus CRM platform decision. **Attio** was the leading candidate as of 2026-
 
 ## June 2026 evaluation sprint
 
-Week of June 9–13, 2026 — Andrew ran 5 vendor calls. One vendor dropped immediately (unnamed; described as corporate, inflexible, "their way or the highway" — likely Salesforce or HubSpot Enterprise). Four remaining:
+Week of June 9–13, 2026 — Andrew ran 5 vendor calls. One vendor dropped immediately (unnamed; described as corporate, inflexible, "their way or the highway" — the [[2026-06-09-salesforce-janus-digital-global|9 Jun Salesforce call]] matches this description closely, though the identification remains unconfirmed). The sprint was scoped at the [[2026-06-08-aio-mktg-meeting|8 Jun AIO-Marketing meeting]]: rerun the accumulated evaluation material (HubSpot analysis, [[crm-requirements-high-level|requirements doc]], [[ai-tool-evaluation]] criteria) through Prime Radiant for a vendor-neutral comparison, demo all candidates, shortlist three for commercial quotes (Bonaventure requires three competing proposals).
 
 | Vendor | Demo date | Status |
 |---|---|---|
 | [[attio\|Attio]] | Jun 10 (intro) + Jun 11 (full demo) | Active — top contender |
 | [[twenty\|Twenty CRM]] | Jun 10 | Active — top contender |
-| HubSpot | Jun 9 (referenced) | Lower-ranked per Andrew |
-| Monday.com | Jun 9 (referenced) | Possible; but board-model mismatch for CRM |
+| HubSpot | Demoed pre-sprint (May) | Lower-ranked per Andrew |
+| [[monday-com\|Monday.com]] | Jun 5 (CRM demo) | Possible; but board-model mismatch for CRM |
+| [[salesforce\|Salesforce]] | Jun 9 (discovery, no demo) | Friction — refused demo without scoping call |
+
+**Monday CRM signals (Jun 5 demo):** lead forms/scoring/RSVP workflows demoed; WhatsApp via partner integration; AI Notetaker bundled. Quoted $65/seat/mo CRM + $52/seat/mo Work Management (annual). Transcript quality poor — see [[2026-06-05-monday-crm-campaigns-demo]].
+
+**Salesforce signals (Jun 9 discovery):** insisted on scoping-call-before-demo; "walks away from solo CRM projects" (ecosystem-bundling posture); offered CRM-only demo + sub-$20k implementation partner only after Andrew pushed back. Requirements list ([[crm-requirements-high-level]]) to be sent; demo nominally within the week. Confirms the 2/3 reversibility/weight concerns below.
+
+**Requirements baseline:** [[crm-requirements-high-level]] — 9 functional areas; non-negotiables include account-based hierarchies, 60-month-cycle nurture/retention, partner/PRM integration, GDPR/PDPA compliance, and agentic record enrichment (9.3) as a day-one architectural requirement.
 
 **Twenty CRM signals (Jun 10 demo):** Open source, 3 years old, US company, founder Felix Malfait (prior company Kunai sold to Airbnb). Clients: Bayer (migrating from Salesforce), PwC. Fully configurable relational model; API/MCP-first; RBAC for agent scoping; Fuelty Edge for code-declared custom apps. Jehad code-reviewed it: "nicely built, well defined." Michael: "big fan of open source... more than I was expecting." Andrew: above HubSpot in ranking.
 
