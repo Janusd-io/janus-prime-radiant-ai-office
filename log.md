@@ -2893,3 +2893,18 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Hermes: requires web research to disambiguate from NousResearch Hermes (fine-tuned LLM) before creating vendor page; escalated
 - Jon Austin person page: held for Michael to confirm start date before creating
 - ingest counter: 16 (13 + 3) — lint counter accumulation continues; lint already run this session (count resets from last lint at session start)
+
+## [2026-06-12 09:44] curation | Hermes evaluation follow-up: Jon Austin email filed + vendor correction + Jono nickname
+
+### Created
+- presentations/2026-06-12-jon-austin-hermes-evaluation-email.md — email to Jon Austin closing the loop on the Hermes evaluation (NanoClaw verdict, three findings, hands-on trial arm pending, headless-Obsidian cloud-hosting thread picked up against his offer to help)
+- index.md: new `## Presentations` section (first indexed presentations entry)
+
+### Updated
+- vendors/hermes.md — **corrected**: the "same SKILL.md format Janus uses" claim (from the 2026-06-11 intro call) is falsified by the code-level evaluation — Hermes skills carry `metadata.hermes` blocks, not Anthropic-compatible; strategic angle (1) struck through; watch-for item resolved. New "Evaluation outcome — code-level pass (2026-06-11/12)" section: stay on NanoClaw (Claude-nativeness, isolation defaults, learning loop vs curation discipline); verdict architectural, hands-on arm specced; AIR-163 to move once arm completes.
+- people/jon-austin.md — informal name recorded: goes by "Jono" (Michael, in conversation 2026-06-12)
+
+### Notes
+- Evaluation working docs live outside the vault at ~/Code/hermes/ (assessment, deeper evaluation, trial spec incl. Phase 1b Hermes arm + Phase 2 headless-Obsidian cloud hosting). Candidate for a future briefs/ page once the hands-on arm produces empirical results.
+- 9 pre-existing presentations/ files (May 2026) remain unindexed — carry-forward candidate for next lint.
+- Email drafted and approved by Michael; sending is manual (outside the vault).
