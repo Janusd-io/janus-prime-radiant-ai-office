@@ -2914,3 +2914,10 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Evaluation working docs live outside the vault at ~/Code/hermes/ (assessment, deeper evaluation, trial spec incl. Phase 1b Hermes arm + Phase 2 headless-Obsidian cloud hosting). Candidate for a future briefs/ page once the hands-on arm produces empirical results.
 - 9 pre-existing presentations/ files (May 2026) remain unindexed — carry-forward candidate for next lint.
 - Email drafted and approved by Michael; sending is manual (outside the vault).
+
+## [2026-06-12 11:35] curation | log.md concurrency fix: union merge driver + author-tag escalation | jehad-altoutou
+- resolved: log.md append-append merge conflict (kept both 2026-06-12 09:40 / 09:44 entries chronologically); cleared stranded git locks (index.lock, HEAD.lock, MERGE_HEAD) that were blocking pulls
+- created: .gitattributes (`log.md merge=union` — append-only file, both sides auto-kept on merge, no conflict)
+- escalated: questions/log-md-author-attribution-and-union-merge.md — proposes author-slug in log entry headers (CLAUDE.md §5.1 edit, Michael to approve); rejects per-day merged blocks (would increase conflicts)
+- updated: index.md (new question indexed)
+- notes: this entry uses the proposed author-tag header format as a worked example

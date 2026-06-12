@@ -1,0 +1,3 @@
+# Append-only files: auto-combine both sides on merge instead of conflicting.
+# Safe because log.md entries are append-only and never rewrite existing lines.
+log.md merge=union

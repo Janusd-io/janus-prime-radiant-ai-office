@@ -337,6 +337,7 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Questions (open)
 
+- [log-md-author-attribution-and-union-merge](questions/log-md-author-attribution-and-union-merge.md) — log.md concurrency: union merge driver added (done), author-slug in entry headers proposed (CLAUDE.md §5.1 edit); per-day merged blocks rejected. [active]
 - [sandbox-eval-obsidian-headless](questions/sandbox-eval-obsidian-headless.md) — propose a time-boxed 1–2 day sandbox eval of `obsidian-headless` (Obsidian's open-beta CLI tool) before any in-container Prime Radiant integration. Pre-flight doc study surfaces three concerns: open-beta status, unconfirmed plugin support (Obsidian-Git specifically), and substrate-conflict with the [[prime-radiant-storage-substrate|GitHub-as-substrate]] decision. Decision tree exits to either integrate into the NanoClaw container build or fall back to pure-git container with bidirectional git ops. Drafted for Jehad standup discussion 2026-06-10. [active]
 - [ims-open-questions-for-simon](questions/ims-open-questions-for-simon.md) — open IMS questions for Simon; lint resolves from meetings. [live]
 - [ingest-2026-06-11-twenty-crm-vendor-page](questions/ingest-2026-06-11-twenty-crm-vendor-page.md) — create Twenty CRM vendor page; open-source CRM, Felix Malfait/founder, Bayer + PwC clients; in active evaluation alongside Attio; decision week of June 16. [active]
