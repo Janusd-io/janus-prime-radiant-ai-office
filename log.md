@@ -2899,3 +2899,19 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - proof run on Rosa's "Project Master Plan" (1-Janusd项目管理执行工序及标准-优化版.xlsx): 5 phases / 18 work packages / 71 tasks / 4 gates parsed; autonomy tags normalized 10 variants → manual 47 · ai-assisted 15 · agentic 8 · autonomous 1; 81 §TBD gaps surfaced (mostly raw Drive URLs needing Data Sources Registry resolution — the exact 22-May Simon feedback, now systematically detected).
 - outputs at ~/Desktop/Project Management - IMS Enrolment/: pm-master-plan.json (115 KB, PULS-ready), exports/signoff-sheet.html (Rosa-format review surface, gates highlighted, sign-off column), Technical v11 worked example for S001–S002+G1 (proposed C4-PM-01) + translation report (10 owner/Simon gaps incl. G1 "risk assessment" criterion with no backing task).
 - significance: second validation of the translation mechanism, from real departmental content, with zero interviews; table answered enough that per-process follow-up ≈ 15 min.
+=======
+
+## [2026-06-12 09:44] curation | Hermes evaluation follow-up: Jon Austin email filed + vendor correction + Jono nickname
+
+### Created
+- presentations/2026-06-12-jon-austin-hermes-evaluation-email.md — email to Jon Austin closing the loop on the Hermes evaluation (NanoClaw verdict, three findings, hands-on trial arm pending, headless-Obsidian cloud-hosting thread picked up against his offer to help)
+- index.md: new `## Presentations` section (first indexed presentations entry)
+
+### Updated
+- vendors/hermes.md — **corrected**: the "same SKILL.md format Janus uses" claim (from the 2026-06-11 intro call) is falsified by the code-level evaluation — Hermes skills carry `metadata.hermes` blocks, not Anthropic-compatible; strategic angle (1) struck through; watch-for item resolved. New "Evaluation outcome — code-level pass (2026-06-11/12)" section: stay on NanoClaw (Claude-nativeness, isolation defaults, learning loop vs curation discipline); verdict architectural, hands-on arm specced; AIR-163 to move once arm completes.
+- people/jon-austin.md — informal name recorded: goes by "Jono" (Michael, in conversation 2026-06-12)
+
+### Notes
+- Evaluation working docs live outside the vault at ~/Code/hermes/ (assessment, deeper evaluation, trial spec incl. Phase 1b Hermes arm + Phase 2 headless-Obsidian cloud hosting). Candidate for a future briefs/ page once the hands-on arm produces empirical results.
+- 9 pre-existing presentations/ files (May 2026) remain unindexed — carry-forward candidate for next lint.
+- Email drafted and approved by Michael; sending is manual (outside the vault).

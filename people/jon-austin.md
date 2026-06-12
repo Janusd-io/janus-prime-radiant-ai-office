@@ -3,7 +3,7 @@ type: person
 title: Jon Austin
 slug: jon-austin
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-12
 departments: [ai-office, office-of-ceo]
 status: active
 kind: internal
@@ -16,6 +16,7 @@ related: [bonaventure-wong, janus-prime-radiant-build, michael-bruck]
 # Jon Austin
 
 **Role:** Incoming CTO, Janus Digital. Start date: TBD.
+**Informal name:** Goes by **Jono** (typical Australian diminutive); use in informal/spoken contexts, "Jon" in formal correspondence.
 
 Australian. Background spans hardware/software engineering, enterprise pre-sales, and technical leadership. Describes his current direction as returning from management back to hands-on technical work — "back in the weeds."
 
