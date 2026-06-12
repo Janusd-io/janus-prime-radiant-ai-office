@@ -13,7 +13,7 @@ audience: department
 departments: [ai-office, hr]
 standup_skill_version: v3.24
 parser_version: 3
-related: [2881310536, 2990812837, 2891398195, 2991511246, 2991515327, 2991552538, 2991511267, 2991554791, 2991515496, 2991525989, 2991520017, 2991516040, 2991555314, AIR-168, AIR-9]
+related: [2881310536, 2990812837, 2891398195, 2991531764, 2991545790, 2991562985, 2991532135, 2991561461, 2991546268, 2991546933, 2884091280, 2884090820, 2884112593, 2884093357, 2884091103, 2987895946, 2910697070, AIR-168, AIR-9]
 ---
 
 ## Clean Meeting Summary
@@ -26,21 +26,21 @@ Jehad walked Theresa Wong (HR) through the full Assessify platform — all of he
 
 ## 📅 Next steps — this week (Claude Code implementation run, Mon 15 Jun)
 
-All owner Jehad, due 15 Jun, under [Assessify HR platform](https://janusd-company.monday.com/boards/5095012818/pulses/2881310536); each sub-item carries its full implementation spec:
+All owner Jehad, due/start 15 Jun, on the [HR Dashboard — Recruitment & Leave Management board](https://janusd-company.monday.com/boards/5095636727) (the dedicated Assessify execution board); each carries its full implementation spec:
 
-- [Rename MRF → RAF, UK English + HR-friendly labels](https://janusd-company.monday.com/boards/5095012849/pulses/2991511246)
-- [Requester field + HR CC Slack notifications on all RAF stages](https://janusd-company.monday.com/boards/5095012849/pulses/2991515327)
-- [Agency recruiter login system with locked auto-filled fields](https://janusd-company.monday.com/boards/5095012849/pulses/2991552538)
-- [Candidate score column, score/role filters, CV links](https://janusd-company.monday.com/boards/5095012849/pulses/2991511267)
-- [Duplicate-applicant handling with re-applicant flagging](https://janusd-company.monday.com/boards/5095012849/pulses/2991554791)
-- [Post-booking interviewer pack via Slack (PDF + CV)](https://janusd-company.monday.com/boards/5095012849/pulses/2991515496)
-- [Recruitment KPI reports — time-to-hire, volume, difficulty](https://janusd-company.monday.com/boards/5095012849/pulses/2991525989)
-- [Line-manager team leave calendar with team-scoped access](https://janusd-company.monday.com/boards/5095012849/pulses/2991520017)
-- [Candidate + recruiter acknowledgement messaging](https://janusd-company.monday.com/boards/5095012849/pulses/2991555314)
+- [Rename MRF → RAF, UK English + HR-friendly labels](https://janusd-company.monday.com/boards/5098349722/pulses/2991561461) — sub-item under the MRF/RAF item
+- [Requester field + HR CC Slack notifications on all RAF stages](https://janusd-company.monday.com/boards/5098349722/pulses/2991546268) — sub-item under the MRF/RAF item
+- [Agency recruiter login system with locked auto-filled fields](https://janusd-company.monday.com/boards/5095636727/pulses/2884091280) — existing "Recruitment agency portal" item, activated P3 → P1 with new spec
+- [Candidate score column, score/role filters](https://janusd-company.monday.com/boards/5095636727/pulses/2884090820) + [CV links on dashboard records](https://janusd-company.monday.com/boards/5095636727/pulses/2884112593) — specs added to existing items
+- [Duplicate-applicant handling with re-applicant flagging](https://janusd-company.monday.com/boards/5095636727/pulses/2991545790) — new, P1
+- [Post-booking interviewer pack via Slack (PDF + CV)](https://janusd-company.monday.com/boards/5098349722/pulses/2991546933) — sub-item under interview scheduling
+- [Recruitment KPI reports — time-to-hire, volume, difficulty](https://janusd-company.monday.com/boards/5095636727/pulses/2991562985) — new, P1
+- [Team leave calendar — access matrix added](https://janusd-company.monday.com/boards/5095636727/pulses/2884093357) — existing item, spec expanded
+- [Candidate + recruiter acknowledgement messaging](https://janusd-company.monday.com/boards/5095636727/pulses/2991532135) — new, P1
 
 ## 🏔️ Next steps — longer horizon
 
-- [People Profile employee portal — HRIS phase 1](https://janusd-company.monday.com/boards/5095012849/pulses/2991516040) — Owner: Jehad — start 15 Jun, largest build; visibility matrix config-driven pending Theresa's definitions
+- [People Profile employee portal — HRIS phase 1](https://janusd-company.monday.com/boards/5095636727/pulses/2991531764) — Owner: Jehad — new, P0 Critical — start 15 Jun, largest build; visibility matrix config-driven pending Theresa's definitions
 - [Ingest all historic CVs once delivered](https://janusd-company.monday.com/boards/5095012849/pulses/2891398195) — Owner: Jehad — blocked on Teresa/Mariam delivery
 - Payroll module (multi-country tax/pension/social-insurance), performance assessment + training records — future phases completing the Deel replacement; scope decision with Theresa
 
@@ -70,12 +70,20 @@ All owner Jehad, due 15 Jun, under [Assessify HR platform](https://janusd-compan
 
 ## Monday items touched
 
-- [Assessify HR platform](https://janusd-company.monday.com/boards/5095012818/pulses/2881310536) — source bump, meeting-summary Update, next-step stub
+**Automations board (bridge only):**
+
+- [Assessify HR platform](https://janusd-company.monday.com/boards/5095012818/pulses/2881310536) — source bump, meeting-summary Update, next-step stub, relocation-correction note
 - [Walk Teresa through updated Assessify platform](https://janusd-company.monday.com/boards/5095012849/pulses/2990812837) — marked **Done** (this meeting was the walkthrough)
 - [Collect sample CVs, JDs and interview outputs from Teresa / Mariam](https://janusd-company.monday.com/boards/5095012849/pulses/2891398195) — scope expanded to all historic CVs + 3H backfill
-- 10 new implementation sub-items created (listed above), each with a Step 3G implementation spec
 
-Coverage: ✅ 13 items, ⚠️ 1 backfilled, ➡️ 0 move-rationales, ❌ 0 coverage failures
+**HR Dashboard board (5095636727 — tactical execution, corrected location):**
+
+- Created: People Profile portal (P0), duplicate-applicant handling, KPI reports, acknowledgement messaging (P1); RAF rename + HR CC notification sub-items under the MRF/RAF item; interviewer-pack sub-item under interview scheduling — each with a full implementation spec
+- Updated: agency portal (activated P3 → P1 with move rationale), candidate view, CV auto-link, team leave calendar, Deel sync (strategy note)
+
+*Correction note: the 10 implementation tasks were initially mis-filed as sub-items on the Automations board and were deleted after recreation on the HR Dashboard board — the Automations Assessify item is the bridge only; tactical work lives on the HR board per the standing convention.*
+
+Coverage: ✅ all touched items covered (7 creates with specs, 1 backfill, move-rationale posted on the P3→P1 activation), ❌ 0 failures
 
 ## External / Other-Department Follow-ups
 
