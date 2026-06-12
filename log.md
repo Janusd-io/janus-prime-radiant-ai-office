@@ -2893,3 +2893,9 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - Hermes: requires web research to disambiguate from NousResearch Hermes (fine-tuned LLM) before creating vendor page; escalated
 - Jon Austin person page: held for Michael to confirm start date before creating
 - ingest counter: 16 (13 + 3) — lint counter accumulation continues; lint already run this session (count resets from last lint at session start)
+
+## [2026-06-12 09:40] curation | /ims-enrolment: sign-off sheet + table ingest built; proven on PM master plan
+- skill (repo + reinstalled, 32 files; zip rebuilt 38 files): new templates/signoff-sheet.md (review layer spec — Rosa-format columns, 4-value AI-autonomy vocabulary implementing Monday 2900836821, generated-never-hand-edited rule), new prompts/table-ingest.md (Phase I — existing spreadsheets → JSON → Technical docs, no re-interviewing), SKILL.md Phase I + Phase 5b.2 wiring.
+- proof run on Rosa's "Project Master Plan" (1-Janusd项目管理执行工序及标准-优化版.xlsx): 5 phases / 18 work packages / 71 tasks / 4 gates parsed; autonomy tags normalized 10 variants → manual 47 · ai-assisted 15 · agentic 8 · autonomous 1; 81 §TBD gaps surfaced (mostly raw Drive URLs needing Data Sources Registry resolution — the exact 22-May Simon feedback, now systematically detected).
+- outputs at ~/Desktop/Project Management - IMS Enrolment/: pm-master-plan.json (115 KB, PULS-ready), exports/signoff-sheet.html (Rosa-format review surface, gates highlighted, sign-off column), Technical v11 worked example for S001–S002+G1 (proposed C4-PM-01) + translation report (10 owner/Simon gaps incl. G1 "risk assessment" criterion with no backing task).
+- significance: second validation of the translation mechanism, from real departmental content, with zero interviews; table answered enough that per-process follow-up ≈ 15 min.
