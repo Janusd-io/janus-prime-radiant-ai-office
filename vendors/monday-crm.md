@@ -8,14 +8,14 @@ departments: [commercial, marketing, office-of-ceo]
 status: active
 confidence: high
 sources: []
-related: [monday, janus-crm-selection, attio, twenty-crm]
+related: [monday, monday-com, janus-crm-selection, attio, twenty]
 ---
 
 # Monday CRM (monday Sales CRM)
 
-Dedicated CRM product from monday.com (NASDAQ: MNDY), built on the same Work OS platform as [[monday|Monday.com Work OS]] (AIR-83) but separately licensed and purpose-built for sales pipeline management. As of June 2026, an active candidate in the Janus CRM evaluation alongside [[attio|Attio]] and [[twenty-crm|Twenty CRM]]; decision expected week of 16 June 2026. Linear AIR-167 (Evaluating, Gate 1 PASS 2026-06-12).
+Dedicated CRM product from monday.com (NASDAQ: MNDY), built on the same Work OS platform as [[monday-com|Monday.com Work OS]] (AIR-83) but separately licensed and purpose-built for sales pipeline management. Evaluated in the June 2026 Janus CRM sprint alongside [[attio|Attio]], [[twenty|Twenty CRM]], and HubSpot. **Outcome: not shortlisted as the Janus CRM** — board-model architecture mismatches a native CRM for Janus's use case; retained as the PM system of record. Per [[janus-crm-selection]] evaluation report, 2026-06-12. Linear AIR-167 (Evaluating, Gate 1 PASS 2026-06-12 — evaluation paused pending CRM decision; will close to Rejected or reassess depending on June 16 outcome).
 
-**Disambiguation:** This entry covers the *CRM product* (`monday.com/crm`). For Monday.com Work OS (project management, task boards, automation execution), see [[monday]]. The earlier decision [[2026-05-06-monday-not-an-ai-tool]] referred to Work OS; Monday CRM is a distinct product with AI-native features (AI Sales Agent, AI Lead Agent, AI email composition).
+**Disambiguation:** This entry covers the *CRM product* (`monday.com/crm`). For Monday.com Work OS (project management, task boards, automation execution), see [[monday-com]] (AIR-83). The earlier decision [[2026-05-06-monday-not-an-ai-tool]] referred to Work OS; Monday CRM is a distinct product with AI-native features (AI Sales Agent, AI Lead Agent, AI email composition).
 
 ## What it is
 
@@ -72,7 +72,6 @@ All five Gate 1 criteria pass unconditionally (AIR-167 Gate 1 comment, 2026-06-1
 
 ## Watch for
 
-- CRM decision outcome week of 16 June 2026 — if Attio or Twenty CRM wins, this entry moves to Rejected; file `decisions/2026-06-XX-select-crm.md`
-- AI agent tier pricing — not fully published; clarify before Stage 2 cost modelling
-- Platform continuity discount — does existing Work OS (AIR-83) subscription carry any bundled or discounted CRM pricing?
-- G2.2 flag: SAML SSO only on Enterprise; confirm whether Google SSO (Pro) is sufficient for Janus identity requirements
+- **CRM decision outcome week of 16 June 2026** — once decided, update AIR-167 to Rejected (if another CRM wins) or reconsider (if the PM-CRM bundle case strengthens). File `decisions/2026-06-XX-select-crm.md`.
+- **PM-CRM bundle case** — if Janus's chosen CRM (Attio or Twenty) later proves operationally weak on PM-side coordination, the monday.com bundle (Work OS + CRM, same platform) gains strength as a revisit candidate. Watch 6-month review.
+- AI agent tier pricing — not fully published; relevant only if this entry is revisited.

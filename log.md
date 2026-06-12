@@ -2956,3 +2956,7 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
   - projects/janus-crm-selection.md — dropped-vendor hedge resolved to Salesforce; evaluation-report section added; watch-for refreshed (quotes, diligence conditions, decision review wk of Jun 16)
   - index.md — decision + deck indexed; header updated
 - notes: deck recommendation (HubSpot as third finalist over Monday CRM) is the evaluation's data-driven proposal — final shortlist call rests with Michael/Andrew; Bonaventure + Ann make the selection from three commercial quotes.
+
+## [2026-06-12 12:15] lint
+- findings: 10 items (2 fixes applied, 8 carry-forward)
+- report: pulse/2026-06-12-lint.md

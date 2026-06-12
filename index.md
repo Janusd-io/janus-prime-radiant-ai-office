@@ -81,7 +81,7 @@ _Updated: 2026-05-20 (**Marketing stack batch ingest + lint + lint-followup.** M
 - [marp](entities/vendors/marp.md) — markdown-based slide/presentation tool. [active, high]
 - [microsoft-clarity](entities/vendors/microsoft-clarity.md) — website analytics and heatmapping tool (Microsoft, free); Marketing/Technology candidate (AIO-102, Backlog, Gate 1 BLOCKED). [active, low]
 - [monday](entities/vendors/monday.md) — work management; primary execution surface for Janus tasks/projects. [active, high]
-- [monday-crm](vendors/monday-crm.md) — monday.com's dedicated CRM product (separate licence from Work OS); active Janus CRM evaluation candidate; Gate 1 PASS 2026-06-12. [active, high] AIR-167
+- [monday-crm](vendors/monday-crm.md) — monday.com's dedicated CRM product (separate licence from Work OS); evaluated June 2026, not shortlisted as CRM (board-model mismatch); Gate 1 PASS. [active, high] AIR-167
 - [n8n](entities/vendors/n8n.md) — open-source workflow automation; self-hosted on Hostinger; operational plumbing for AIO ingestion pipelines. [active, medium]
 - [nanoclaw](entities/vendors/nanoclaw.md) — open-source self-hosted AI agent orchestration framework (NanocoAI); MIT licence; v2.0.64 deployed at Janus on Michael's MacBook as **NanoClaude / "Nano"** (one wired agent group `dm-with-michaelb`); Slack-DM Q&A live, read-only Prime Radiant access, OneCLI Agent Vault active, zero MCP connectors wired; AIR-103 Linear status (Evaluating) lags reality — install is now in dogfood/Sandbox. See [[nanoclaw-prime-radiant-wiring]]. [active, high]
 - [nemoclaw](entities/vendors/nemoclaw.md) — NVIDIA enterprise-hardened OpenClaw derivative; production tier-1 agent infrastructure (AIR-39). [active, medium]
@@ -386,6 +386,7 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Pulse
 
+- [2026-06-12-lint](pulse/2026-06-12-lint.md) — Lint pass: 12 ingests since prior lint; 5 CF items resolved, 2 agent-primary fixes applied (monday-crm contradiction + broken slug); 9 carry-forward items. [high]
 - [2026-06-11-amodei-policy-ai-exponential](pulse/2026-06-11-amodei-policy-ai-exponential.md) — Anthropic pivots to binding regulation; FAA model for frontier AI; Mythos as turning-point catalyst; 5 policy pillars including UBI and democratic AI coalition. [high]
 - [2026-06-11-jon-austin-intro-cto-hire](pulse/2026-06-11-jon-austin-intro-cto-hire.md) — Jon Austin joins as CTO; validates Prime Radiant continual-distillation; recommends Hermes framework; Claude Fable step-change confirmed; build vs buy pendulum massively shifted. [high]
 - [2026-06-10-haber-living-context-layer](pulse/2026-06-10-haber-living-context-layer.md) — a16z/Haber names "living context layer" as the new enterprise system of record; external validation of Prime Radiant thesis; product opportunity question raised. [high]
