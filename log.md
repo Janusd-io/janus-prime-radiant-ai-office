@@ -2947,3 +2947,12 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - created: (no wiki pages)
 - escalated: none — no new entity pages required (salesforce, monday-com, twenty, attio all pre-exist)
 - notes: attribution — both meeting transcripts carry unreliable speaker labels (Salesforce call uses room labels "jdg-cr02 DXB Office"/"Dublin-Tower" = shared-mic artefact; Monday call garbled). Claims attributed at role/group level or hedged transcript-only per §5.1. Ingest counter ≥19 since 2026-06-05 lint — lint overdue, suggest running it.
+
+## [2026-06-12 12:20] query | CRM evaluation report for finalist decision (deck deliverable)
+- pages read: 12 (crm-requirements-high-level, marketing-stack-technical-writeup, stack-composition-framework, janus-crm-selection, crm-evaluation-and-selection, vendors: attio/twenty/hubspot/monday-com/salesforce, demo sources Jun 5–11)
+- filed back: yes
+  - presentations/2026-06-12-crm-evaluation-deck.html — 12-slide Janus-branded HTML deck (janus-html-deck skill v1.0): 4 candidates (Attio, Twenty, HubSpot, Monday CRM) scored against the 9 requirement areas (crm-requirements-high-level) + Stack Composition Framework; recommended finalists Attio (1), Twenty (2), HubSpot (3); Monday CRM not shortlisted as CRM (board-model mismatch, retained as PM SoR); cost slide for Ann (5-seat year-one); diligence conditions per finalist
+  - decisions/2026-06-09-drop-salesforce-from-crm-shortlist.md — Salesforce dropped from the evaluation after the Jun 9 discovery call; confirmed by Michael in conversation 2026-06-12 (attribution: confirmed); decided_by set to the meeting slug (group decision)
+  - projects/janus-crm-selection.md — dropped-vendor hedge resolved to Salesforce; evaluation-report section added; watch-for refreshed (quotes, diligence conditions, decision review wk of Jun 16)
+  - index.md — decision + deck indexed; header updated
+- notes: deck recommendation (HubSpot as third finalist over Monday CRM) is the evaluation's data-driven proposal — final shortlist call rests with Michael/Andrew; Bonaventure + Ann make the selection from three commercial quotes.

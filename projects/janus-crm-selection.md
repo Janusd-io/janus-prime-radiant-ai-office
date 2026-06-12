@@ -9,7 +9,7 @@ owner: michael-bruck
 captured_by: jehad-altoutou
 departments: [marketing, ai-office, office-of-ceo]
 sources: [2026-05-05-michael-jehad-andrew-weekly-meeting, marketing-stack-technical-writeup, 2026-05-19-aio-mktg-meeting, 2026-06-10-andrew-soane-attio-demo, 2026-06-10-michael-bruck-twenty-crm-demo, 2026-06-05-monday-crm-campaigns-demo, 2026-06-08-aio-mktg-meeting, 2026-06-09-salesforce-janus-digital-global, crm-requirements-high-level]
-related: [crm-evaluation-and-selection, agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, marketing-prime-radiant, attio, twenty]
+related: [crm-evaluation-and-selection, agentic-lean-marketing-stack, stack-composition-framework, janus-website-cms, marketing-prime-radiant, attio, twenty, 2026-06-09-drop-salesforce-from-crm-shortlist]
 audience: department
 ---
 
@@ -19,7 +19,7 @@ The Janus CRM platform decision. **Attio** was the leading candidate as of 2026-
 
 ## June 2026 evaluation sprint
 
-Week of June 9–13, 2026 — Andrew ran 5 vendor calls. One vendor dropped immediately (unnamed; described as corporate, inflexible, "their way or the highway" — the [[2026-06-09-salesforce-janus-digital-global|9 Jun Salesforce call]] matches this description closely, though the identification remains unconfirmed). The sprint was scoped at the [[2026-06-08-aio-mktg-meeting|8 Jun AIO-Marketing meeting]]: rerun the accumulated evaluation material (HubSpot analysis, [[crm-requirements-high-level|requirements doc]], [[ai-tool-evaluation]] criteria) through Prime Radiant for a vendor-neutral comparison, demo all candidates, shortlist three for commercial quotes (Bonaventure requires three competing proposals).
+Week of June 9–13, 2026 — Andrew ran 5 vendor calls. **Salesforce was dropped after the [[2026-06-09-salesforce-janus-digital-global|9 Jun discovery call]]** — see [[2026-06-09-drop-salesforce-from-crm-shortlist]] (confirmed by Michael, 2026-06-12; this also resolves the earlier "unnamed dropped vendor" hedge). The sprint was scoped at the [[2026-06-08-aio-mktg-meeting|8 Jun AIO-Marketing meeting]]: rerun the accumulated evaluation material (HubSpot analysis, [[crm-requirements-high-level|requirements doc]], [[ai-tool-evaluation]] criteria) through Prime Radiant for a vendor-neutral comparison, demo all candidates, shortlist three for commercial quotes (Bonaventure requires three competing proposals).
 
 | Vendor | Demo date | Status |
 |---|---|---|
@@ -77,9 +77,16 @@ AIR-76. Status: Backlog as of 2026-05-19 — requirements list to be prepared by
 
 Singapore launch leads land in a Google Sheet workaround → migrate to Attio in the June post-launch window as seed data. Configure MCP for Claude Code so it can score, segment, and draft outreach against the CRM directly. Andrew operates campaigns through Claude Code rather than dedicated CRM UI for most workflows.
 
+## Evaluation report — 2026-06-12
+
+Full evaluation deck for the finalist decision: `presentations/2026-06-12-crm-evaluation-deck.html` — four candidates ([[attio|Attio]], [[twenty|Twenty]], HubSpot, [[monday-com|Monday CRM]]) scored against the [[crm-requirements-high-level|9 requirement areas]] and the [[stack-composition-framework]]. **Recommended finalists: Attio (1), Twenty (2), HubSpot (3)**; Monday CRM not shortlisted as CRM (board-model mismatch; retained as PM system of record). Andrew's stated preference: Twenty and Attio. Final selection by [[bonaventure-wong]] + Ann (Finance) from three commercial quotes.
+
+Diligence conditions attached: Attio — written AI-training exclusion; Twenty — Entra SSO + compliance certs + counterparty view; HubSpot — G1.4 (AI-training exclusion) confirmation.
+
 ## Watch for
 
-- Andrew's requirements list (due 2026-05-26).
+- Commercial quotes from the three finalists (Andrew + Ann).
+- Diligence conditions above (AI Office).
+- Decision review with Bonaventure + Ann — targeted week of 16 June.
 - Michael's holistic MarTech vendor assessment for Bonaventure (no hard due date).
-- Attio's Gate 1 outcome once requirements are submitted (expected to pass).
-- Migration of Google Sheet leads into Attio after Singapore launch settles.
+- Migration of Google Sheet leads into the chosen CRM after Singapore launch settles.

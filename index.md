@@ -1,5 +1,7 @@
 # Wiki Index
 
+_Updated: 2026-06-12 (**CRM evaluation report + Salesforce drop recorded.** New: [[2026-06-09-drop-salesforce-from-crm-shortlist]] (decision — Salesforce out of the CRM evaluation, confirmed by Michael; vendor-controlled process + standalone-CRM aversion + Apex risk); `presentations/2026-06-12-crm-evaluation-deck.html` (Janus-branded HTML deck — Attio/Twenty/HubSpot/Monday CRM scored against [[crm-requirements-high-level]] + [[stack-composition-framework]]; recommended finalists Attio, Twenty, HubSpot for Bonaventure + Ann). **Updated:** [[janus-crm-selection]] (dropped-vendor hedge resolved to Salesforce; evaluation-report section; watch-for refreshed to quotes/diligence/decision-review). Previous header below:_
+
 _Updated: 2026-06-12 (**Batch ingest — inbox sweep, 5 items (CRM evaluation sources).** Filed: [[2026-06-09-salesforce-janus-digital-global]] (Salesforce discovery call — demo friction, ecosystem-bundling posture); [[2026-06-05-monday-crm-campaigns-demo]] (Monday CRM demo, Andrew + Javon Edwards — pricing $65/$52 per seat/mo; transcript garbled, low confidence); [[2026-06-08-aio-mktg-meeting-raw]] (full 74KB raw transcript backfilling the [[2026-06-08-aio-mktg-meeting]] digest's missing-raw gap); [[crm-requirements-high-level]] (sources/misc — Andrew's 9-area CRM requirements doc, baseline for the vendor sprint). 1 duplicate ([[marketing-stack-technical-writeup]]) → inbox/.processed/2026-06/. **No new wiki pages.** **Updated:** [[salesforce]] (Jun 9 call section), [[monday-com]] (Jun 5 demo section, pricing), [[janus-crm-selection]] (sprint table corrected — Monday demo was Jun 5; Salesforce + Monday signals; requirements baseline linked). Ingest counter well past lint trigger (15+ since 2026-06-05 lint). Previous header below:_
 
 _Updated: 2026-06-12 (**Hermes evaluation follow-up.** New `## Presentations` section added; first entry: [[2026-06-12-jon-austin-hermes-evaluation-email]] (Hermes eval update to incoming CTO). `vendors/hermes.md` corrected — SKILL.md-compatibility claim from the intro call falsified by code-level evaluation; evaluation-outcome section added (stay on NanoClaw, hands-on trial arm pending). `people/jon-austin.md` — informal name "Jono" recorded. Note: pre-existing `presentations/` files (9, from May 2026) remain unindexed — lint carry-forward candidate. Previous header below:_
@@ -228,6 +230,7 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Decisions
 
+- [2026-06-09-drop-salesforce-from-crm-shortlist](decisions/2026-06-09-drop-salesforce-from-crm-shortlist.md) — Salesforce out of the CRM evaluation: vendor-controlled process, standalone-CRM aversion, Apex reversibility risk. Benchmark only. [resolved]
 - [2026-06-10-sandbox-to-production-process](decisions/2026-06-10-sandbox-to-production-process.md) — Formalised AIO→IT handover process: 6-phase (sandbox build, IT GitHub access, handover package, IT deployment, Zendesk acceptance gate, ongoing support). First deliverable: Assessify. [active]
 - [2026-05-18-ceo-global-kb-unified-market-ui](decisions/2026-05-18-ceo-global-kb-unified-market-ui.md) — CEO Bonaventure Wong: one unified global knowledge base, market-specific UI layer, open access. Singapore two-layer model (read-access to global + local vault feeds back). Obsidian single-repo limitation deferred. [active]
 - [2026-05-18-nanoclaw-as-personal-ai-coa-candidate](decisions/2026-05-18-nanoclaw-as-personal-ai-coa-candidate.md) — NanoClaw identified as personal AI chief-of-staff candidate for Slack bot sprawl resolution; one bot per person; AIR-103 Gate 1 PASS; Gate 2 pending. [active]
@@ -451,4 +454,5 @@ Everything for the **ISO department** lives in one area: `iso/` (Integrated Mana
 
 ## Presentations
 
+- [2026-06-12-crm-evaluation-deck](presentations/2026-06-12-crm-evaluation-deck.html) — HTML deck: 4-candidate CRM evaluation vs 9 requirement areas + Stack Composition Framework; finalists Attio/Twenty/HubSpot, for Bonaventure + Ann.
 - [2026-06-12-jon-austin-hermes-evaluation-email](presentations/2026-06-12-jon-austin-hermes-evaluation-email.md) — email to Jon Austin (Jono): Hermes evaluation outcome, NanoClaw verdict, cloud-hosting thread. (Older May-2026 presentations not yet indexed.)
