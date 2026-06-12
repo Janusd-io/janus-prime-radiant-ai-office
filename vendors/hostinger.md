@@ -8,7 +8,7 @@ labels: [Technology, AI Office Infrastructure, Core Infrastructure]
 departments: [it-ops, ai-office]
 url: https://linear.app/janusd/issue/AIR-79/hostinger
 created: 2026-04-20
-updated: 2026-05-12
+updated: 2026-06-12
 captured_by: jehad-altoutou
 audience: department
 sensitivity: dept
@@ -85,6 +85,10 @@ April GCP pilot exposed opaque, non-forecastable unit costs (egress, per-request
 Pragmatic compromise between full hyperscaler sprawl (GCP/AWS) and back-of-napkin side project. For 30-person AI Office needing to host N8N, NemoClaw, LLAMA, future SaaS pilots — but no DevOps team — Hostinger flat pricing and one-click deploys remove "become DevOps engineer first" tax that hit Jehad on GCP. Official API + MCP server means [[claude|Claude]] can drive VPS lifecycle programmatically.
 
 *Moved to Evaluating 20 Apr 2026 following reversal of 17 Apr GCP hosting decision. Promoted to Sandbox 22 Apr.*
+
+## Prospective use case: Prime Radiant SaaS web platform v0.1 (12 Jun 2026)
+
+As of 2026-06-12 (AIO standup), the Hostinger VPS is the named backend candidate for the **Prime Radiant SaaS web platform v0.1** — a VPS-hosted backend over the GitHub-canonical Prime Radiant vault, with a web frontend offering departmental logins (each login scoped to its department's instance), [[claude|Claude]] running in the cloud via the Agent SDK, and MCP access for external AI tools. Classic full-stack split: VPS backend, web dashboard frontend, Agent SDK as the Claude runtime. Prospective only — AIR-79 remains in Sandbox; a higher-tier VPS plan (32GB / 4-core) may be warranted if the Agent SDK runtime lands. Dated enrichment note added to AIR-79 same day. Owner: [[jehad-altoutou]].
 
 ## Merged from `entities/vendors/hostinger.md`
 

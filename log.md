@@ -2921,3 +2921,9 @@ Slugs in frontmatter updated to match new filenames; titles updated; H1 updated.
 - escalated: questions/log-md-author-attribution-and-union-merge.md — proposes author-slug in log entry headers (CLAUDE.md §5.1 edit, Michael to approve); rejects per-day merged blocks (would increase conflicts)
 - updated: index.md (new question indexed)
 - notes: this entry uses the proposed author-tag header format as a worked example
+
+## [2026-06-12 11:55] curation | AIR-163 Hermes rejection ratified: Linear status + vendor page closure (standup dispatch) | jehad-altoutou
+- Linear AIR-163 (Hermes Agent): Evaluating → **Rejected**; description rewritten with prominent "Evaluation Outcome — REJECTED (12 June 2026)" section (OpenAI-based not Claude-based; own database not markdown files/folders; no CLAUDE.md awareness; skill format not Anthropic-compatible; much heavier than NanoClaw); falsified SKILL.md-portability claims corrected in body; related-to link added to AIR-103 (NanoClaw, which remains chosen front-end in Sandbox)
+- updated: vendors/hermes.md — status evaluating → rejected, confidence medium → high; lede reflects rejection; new "Ratified at the AIO standup, 12 June 2026" paragraph (Michael: "I'm not sure I have a use case for Hermes now that I understand it better"); watch-for list pruned to one live item (automated continual learning vs human curation, per Michael — viable option for non-curating teams); hands-on trial arm now optional/dormant, no longer a gate on registry status
+- updated: index.md — hermes line refreshed ([rejected, high] AIR-163)
+- notes: transcript-evidenced status change per /ai-registry workflow 5 (bulk updates from meeting transcripts); standup source: AIO 12 Jun 2026; dispatched by /standup orchestrator; git commit/push left to the orchestrating session per dispatch instruction

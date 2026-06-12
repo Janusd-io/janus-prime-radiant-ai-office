@@ -5,15 +5,15 @@ slug: hermes
 created: 2026-06-11
 updated: 2026-06-12
 departments: [ai-office, it-ops]
-status: evaluating
-confidence: medium
+status: rejected
+confidence: high
 sources: [2026-06-11-jon-austin-cto-intro]
 related: [nanoclaw, janus-prime-radiant-build, jon-austin]
 ---
 
 # Hermes Agent
 
-Open-source autonomous AI agent framework by NousResearch. Released February 2026. MIT licence, self-hosted by default; FlyHermes is the managed cloud path. 64,000+ GitHub stars. In active evaluation as of 2026-06-11 (Linear AIR-163, Evaluating).
+Open-source autonomous AI agent framework by NousResearch. Released February 2026. MIT licence, self-hosted by default; FlyHermes is the managed cloud path. 64,000+ GitHub stars. Evaluated 2026-06-11/12 and **rejected** as a fit for Janus (Linear AIR-163 moved to Rejected on 2026-06-12); [[nanoclaw|NanoClaw]] (AIR-103) remains the chosen Prime Radiant front-end. Kept in the toolkit as awareness, not adoption.
 
 GitHub: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
 
@@ -45,11 +45,14 @@ Recommended by [[jon-austin|Jon Austin]] (incoming CTO) on 11 June 2026, citing 
 
 Deep code-level evaluation against [[nanoclaw|NanoClaw]] as the Prime Radiant front-end concluded **stay on NanoClaw**. Three findings: (1) Hermes runs its own OpenAI-compatible agent loop with Anthropic as one pluggable provider — it does not read CLAUDE.md, and its skill format is not Anthropic-compatible, so the Prime Radiant rulebook and the AIO skill fleet would need re-implementation; (2) default execution is on-host (containers opt-in), vs NanoClaw's per-session container isolation, mount allowlist, and request-time credential injection; (3) Hermes' autonomous memory/skill self-improvement loop competes with the wiki's human-curated discipline rather than serving it. Hermes' strengths (model-agnosticism, channel breadth, learning loop) point at a different problem than ours.
 
-Verdict is architectural, not yet empirical: a time-boxed hands-on arm (same acceptance tests as NanoClaw, same sandbox vault) is specced in the trial plan. Working docs: `~/Code/hermes/` (assessment, deeper evaluation, trial spec). Jon Austin updated by email 2026-06-12 — see [[2026-06-12-jon-austin-hermes-evaluation-email]]. Linear AIR-163 should move from Evaluating once the hands-on arm completes.
+The verdict from the code-level pass was architectural; a time-boxed hands-on arm (same acceptance tests as NanoClaw, same sandbox vault) was specced in the trial plan. Working docs: `~/Code/hermes/` (assessment, deeper evaluation, trial spec). Jon Austin updated by email 2026-06-12 — see [[2026-06-12-jon-austin-hermes-evaluation-email]].
+
+**Ratified at the AIO standup, 12 June 2026.** Michael confirmed the rejection without waiting on the hands-on arm: "I'm not sure I have a use case for Hermes now that I understand it better" — it's "not for us": OpenAI-based rather than Claude-based, its own database rather than plain markdown files and folders, no CLAUDE.md awareness, and a much bigger piece of software than NanoClaw. Linear AIR-163 moved Evaluating → **Rejected** on 2026-06-12 (cross-referenced to AIR-103 NanoClaw, which remains the chosen front-end in Sandbox). Two positives stand: it's still an impressive piece of software ("keep in our toolkit" as awareness), and its automated continual learning — unlike Prime Radiant's human-curated discipline — is worth watching as a viable option for people who don't want to do the human curation thing. The previously-specced hands-on trial arm is now optional/dormant rather than a gate on the registry status.
 
 ## Watch for
 
 - ~~SKILL.md format compatibility with Janus's existing Claude Code / Cowork skill format~~ — resolved 2026-06-12: it diverges; not compatible (see Evaluation outcome)
-- Whether Hermes can run reliably as a background daemon on Hostinger (Prime Radiant scheduled ingest use case)
-- NanoClaw vs Hermes: differentiation in practice for the persistent-Slack-agent use case
-- FlyHermes pricing when it surfaces
+- ~~Whether Hermes can run reliably as a background daemon on Hostinger~~ — moot as of 2026-06-12 rejection
+- ~~NanoClaw vs Hermes: differentiation in practice~~ — resolved 2026-06-12: NanoClaw chosen; AIR-163 Rejected
+- **Automated continual learning** — Hermes' autonomous memory/skill self-improvement loop, vs Prime Radiant's human-curated model. Watch whether it proves a viable option for teams that don't want to do human curation (per Michael, AIO standup 2026-06-12). This is the one live watch item.
+- FlyHermes pricing when it surfaces (low priority post-rejection)

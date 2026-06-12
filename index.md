@@ -64,7 +64,7 @@ _Updated: 2026-05-20 (**Marketing stack batch ingest + lint + lint-followup.** M
 - [claude-code](entities/vendors/claude-code.md) — Anthropic's CLI/IDE coding agent; thin pointer to umbrella [[claude]] entry. [active, high]
 - [deel](entities/vendors/deel.md) — HR/payroll platform; used as headless backend at Janus. [active, medium]
 - [fireflies](entities/vendors/fireflies.md) — meeting transcription; system of record for "what was said" at Janus. [active, high]
-- [hermes](vendors/hermes.md) — NousResearch open-source agent framework; provider-agnostic; persistent memory; SKILL.md open standard; FlyHermes cloud SaaS option. CTO Jon Austin recommendation. [evaluating, medium] AIR-163
+- [hermes](vendors/hermes.md) — NousResearch open-source agent framework; evaluated vs NanoClaw, rejected 2026-06-12 (OpenAI-based, own DB, no CLAUDE.md awareness); continual-learning watch item. [rejected, high] AIR-163
 - [gbrain](entities/vendors/gbrain.md) — open-source markdown-first agent memory layer (Garry Tan / YC); MIT licensed; PGLite + pgvector + RRF + 74-tool MCP surface; production-deployed at 146K-page scale. Closest external system to Prime Radiant pattern surfaced to date. [monitored, medium]
 - [github](entities/vendors/github.md) — code hosting + version control; confirmed substrate for Prime Radiant vault sync as of 2026-05-13. [active, high]
 - [google-cloud](entities/vendors/google-cloud.md) — GCP arm; Agentic Data Cloud, Skills Repo, A2A protocol push. [active, high]
